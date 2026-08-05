@@ -112,7 +112,7 @@ specify:
 - an equivalence, capability, or control-chart criterion appropriate to the
   production question.
 
-## Takeaway
+## Concepts
 
 A confidence interval describes uncertainty about the process mean. It can flag
 a mean that appears inconsistent with the intended target, but it is only one
