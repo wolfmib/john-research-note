@@ -9,21 +9,20 @@ author: Wei-Che Hung
 
 # Confidence Intervals for a Process Mean
 
-## Research Sketch
+## Confidence Interval
 
 <details open>
-<summary>Handwritten draft — confidence-interval quality-control workflow</summary>
+<summary>Confidence interval for process-mean quality assessment</summary>
 
-![Handwritten confidence-interval flowchart for a 100 cm tube-cutting quality-control example](media/handwritten-confidence-interval-quality-control-note.jpeg)
+![Confidence-interval workflow for assessing a 100 cm tube-cutting process mean](media/confidence-interval-process-mean-quality-control.jpeg)
 
 </details>
 
-The note is the starting point: it turns the statistical idea into a visual
-quality-control question, now with the \(\sqrt{n}\) denominator included in
-both confidence-interval formulas. The sections below supply the research
-context, refine the assumptions behind the t and z paths, and identify the
-follow-up checks needed before this idea becomes an operational quality-control
-method.
+The figure summarizes a statistical quality-control question: estimate the
+process mean from sampled tube lengths, construct an appropriate confidence
+interval using its standard error, and compare the interval with the intended
+100 cm target. The sections below formalize the assumptions, calculations, and
+limits of that interpretation.
 
 ## Research Question
 
