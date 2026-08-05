@@ -9,6 +9,24 @@ author: Wei-Che Hung
 
 # Confidence Intervals for a Process Mean
 
+## Research Sketch
+
+[Open the full-resolution handwritten note](media/handwritten-confidence-interval-quality-control-note.jpeg)
+
+<details open>
+<summary>Handwritten draft — confidence-interval quality-control workflow</summary>
+
+![Handwritten confidence-interval flowchart for a 100 cm tube-cutting quality-control example](media/handwritten-confidence-interval-quality-control-note.jpeg)
+
+</details>
+
+The note is the starting point: it turns the statistical idea into a visual
+quality-control question, now with the \(\sqrt{n}\) denominator included in
+both confidence-interval formulas. The sections below supply the research
+context, refine the assumptions behind the t and z paths, and identify the
+follow-up checks needed before this idea becomes an operational quality-control
+method.
+
 ## Research Question
 
 A worker intends to cut iron tubes to a target length of 100 cm. The observed
@@ -97,24 +115,8 @@ specify:
 - an equivalence, capability, or control-chart criterion appropriate to the
   production question.
 
-## Handwritten Source Note
-
-<details>
-<summary>Open the original handwritten confidence-interval note</summary>
-
-![Handwritten confidence-interval flowchart for a 100 cm tube-cutting quality-control example](media/handwritten-confidence-interval-quality-control-note.jpeg)
-
-The drawing captures the motivating workflow: sample tube lengths, estimate the
-mean and variability, construct an interval, and compare it with the 100 cm
-target. The equations and interpretation above refine two shortcuts in the
-drawing: the interval must use the standard error, and sample size alone does
-not determine whether a t or z procedure is appropriate.
-
-</details>
-
 ## Takeaway
 
 A confidence interval describes uncertainty about the process mean. It can flag
 a mean that appears inconsistent with the intended target, but it is only one
 part of a defensible manufacturing-quality assessment.
-
