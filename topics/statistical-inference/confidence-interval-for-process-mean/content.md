@@ -11,8 +11,6 @@ author: Wei-Che Hung
 
 ## Research Sketch
 
-[Open the full-resolution handwritten note](media/handwritten-confidence-interval-quality-control-note.jpeg)
-
 <details open>
 <summary>Handwritten draft — confidence-interval quality-control workflow</summary>
 
