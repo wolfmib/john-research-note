@@ -8,19 +8,19 @@
 
 ## Medical Imaging
 
-### UZH/BORL Newborn NIROT pre-application study
+### Diffuse Optical Imaging
 
-The BORL project can be understood as three connected technical functions:
+Three connected technical topics describe the measurement chain:
 
 | Function | Topic | Core question | Status |
 |---|---|---|---|
-| 1 | [Forward light-transport modelling](topics/medical-imaging/nirot-forward-light-transport/content.md) | How do tissue physics and neonatal geometry produce time-resolved SPAD measurements? | Initial literature study complete |
-| 2 | [Regularized and learned inverse reconstruction](topics/medical-imaging/nirot-inverse-reconstruction/content.md) | How can absorption and scattering maps be reconstructed stably from an ill-posed inverse problem? | Initial literature study complete |
-| 3 | [Quantitative oxygenation and clinical validation](topics/medical-imaging/nirot-oxygenation-validation/content.md) | How do multi-wavelength optical properties become trustworthy neonatal oxygenation maps? | Initial literature study complete |
+| 1 | [Photon transport in scattering tissue](topics/medical-imaging/photon-transport-in-tissue/content.md) | How do tissue optical properties produce time-resolved boundary measurements? | Concept note |
+| 2 | [Inverse reconstruction in optical tomography](topics/medical-imaging/inverse-reconstruction-in-optical-tomography/content.md) | How can absorption and scattering maps be reconstructed from an ill-posed inverse problem? | Concept note |
+| 3 | [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md) | How do multi-wavelength optical properties become quantitative oxygenation maps? | Concept note |
 
 The functions form one measurement chain:
 
-`pulsed NIR source -> light transport -> SPAD time-of-flight data -> inverse reconstruction -> spectral unmixing -> oxygenation map -> staged validation`
+`pulsed near-infrared source -> photon transport -> time-resolved measurements -> inverse reconstruction -> spectral unmixing -> oxygenation map`
 
 ## Physics
 

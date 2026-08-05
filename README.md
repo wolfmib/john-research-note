@@ -9,7 +9,7 @@ start with the [research index](index.md).
 ## Current Notes
 
 - [Confidence intervals for a process mean](topics/statistical-inference/confidence-interval-for-process-mean/content.md)
-- UZH/BORL newborn near-infrared optical tomography:
-  - [Forward light-transport modelling](topics/medical-imaging/nirot-forward-light-transport/content.md)
-  - [Regularized and learned inverse reconstruction](topics/medical-imaging/nirot-inverse-reconstruction/content.md)
-  - [Quantitative oxygenation and clinical validation](topics/medical-imaging/nirot-oxygenation-validation/content.md)
+- Diffuse optical imaging:
+  - [Photon transport in scattering tissue](topics/medical-imaging/photon-transport-in-tissue/content.md)
+  - [Inverse reconstruction in optical tomography](topics/medical-imaging/inverse-reconstruction-in-optical-tomography/content.md)
+  - [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md)
