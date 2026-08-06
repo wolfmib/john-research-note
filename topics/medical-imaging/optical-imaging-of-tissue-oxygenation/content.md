@@ -9,31 +9,31 @@ author: Wei-Che Hung
 ## Spectral Absorption
 
 Near-infrared measurements are sensitive to oxygenated and deoxygenated
-hemoglobin. At wavelength \(\lambda\), tissue absorption can be represented as
+hemoglobin. At wavelength $\lambda$, tissue absorption can be represented as
 a mixture of chromophore contributions:
 
-\[
+$$
 \mu_a(\lambda)=
 \epsilon_{\mathrm{HbO_2}}(\lambda)c_{\mathrm{HbO_2}}
 +\epsilon_{\mathrm{Hb}}(\lambda)c_{\mathrm{Hb}}
 +\sum_j\epsilon_j(\lambda)c_j,
-\]
+$$
 
-where \(\epsilon_j(\lambda)\) is the wavelength-dependent extinction
-coefficient of chromophore \(j\), and \(c_j\) is its concentration.
+where $\epsilon_j(\lambda)$ is the wavelength-dependent extinction
+coefficient of chromophore $j$, and $c_j$ is its concentration.
 
 Measurements at multiple wavelengths can separate oxygenated hemoglobin
-\(c_{\mathrm{HbO_2}}\) from deoxygenated hemoglobin \(c_{\mathrm{Hb}}\). Total
+$c_{\mathrm{HbO_2}}$ from deoxygenated hemoglobin $c_{\mathrm{Hb}}$. Total
 hemoglobin and tissue oxygen saturation are then
 
-\[
+$$
 \mathrm{HbT}=c_{\mathrm{HbO_2}}+c_{\mathrm{Hb}},
-\]
+$$
 
-\[
+$$
 \mathrm{StO_2}=\frac{c_{\mathrm{HbO_2}}}
 {c_{\mathrm{HbO_2}}+c_{\mathrm{Hb}}}.
-\]
+$$
 
 The calculation requires sufficiently distinct wavelengths and a calibrated
 spectral model. Other absorbers, wavelength-dependent scattering, and
@@ -56,12 +56,12 @@ function.
 
 A quantitative reconstruction chain is
 
-\[
+$$
 \text{time-resolved measurements}
 \rightarrow (\mu_a,\mu_s')_\lambda
 \rightarrow (\mathrm{HbO_2},\mathrm{Hb})
 \rightarrow (\mathrm{HbT},\mathrm{StO_2}).
-\]
+$$
 
 Uncertainty propagates through every stage. Relevant sources include:
 

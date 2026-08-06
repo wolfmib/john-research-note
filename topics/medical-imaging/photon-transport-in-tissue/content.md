@@ -20,14 +20,14 @@ sources, and optical properties.
 
 ## Optical Properties
 
-The absorption coefficient \(\mu_a\) describes photon loss by absorption. The
-scattering coefficient \(\mu_s\) describes the frequency of scattering events,
-while the anisotropy factor \(g\) describes their average directionality. The
+The absorption coefficient $\mu_a$ describes photon loss by absorption. The
+scattering coefficient $\mu_s$ describes the frequency of scattering events,
+while the anisotropy factor $g$ describes their average directionality. The
 reduced scattering coefficient is
 
-\[
+$$
 \mu_s'=\mu_s(1-g).
-\]
+$$
 
 This reduced coefficient is useful because many highly forward-directed
 scattering events can be represented as fewer effectively isotropic events.
@@ -47,19 +47,19 @@ When scattering dominates absorption and the region is sufficiently far from
 sources and boundaries, photon transport is often approximated by the
 time-domain diffusion equation
 
-\[
+$$
 \frac{1}{c}\frac{\partial \Phi(\mathbf r,t)}{\partial t}
 -\nabla\cdot\left[D(\mathbf r)\nabla\Phi(\mathbf r,t)\right]
 +\mu_a(\mathbf r)\Phi(\mathbf r,t)
 =q(\mathbf r,t),
-\]
+$$
 
-where \(\Phi\) is photon fluence rate, \(c\) is light speed in the medium,
-\(q\) is the source, and
+where $\Phi$ is photon fluence rate, $c$ is light speed in the medium,
+$q$ is the source, and
 
-\[
+$$
 D(\mathbf r)=\frac{1}{3\left(\mu_a(\mathbf r)+\mu_s'(\mathbf r)\right)}
-\]
+$$
 
 is a commonly used diffusion coefficient.
 

@@ -9,16 +9,16 @@ author: Wei-Che Hung
 ## Inverse Problem
 
 Diffuse optical tomography estimates internal absorption and scattering from
-light measured at the tissue boundary. Let \(x\) represent the unknown spatial
-optical properties and let \(F(x)\) be the forward light-transport model. The
+light measured at the tissue boundary. Let $x$ represent the unknown spatial
+optical properties and let $F(x)$ be the forward light-transport model. The
 measurement model is
 
-\[
+$$
 y=F(x)+\varepsilon+\delta,
-\]
+$$
 
-where \(y\) is the measured data, \(\varepsilon\) is measurement noise, and
-\(\delta\) is modelling error.
+where $y$ is the measured data, $\varepsilon$ is measurement noise, and
+$\delta$ is modelling error.
 
 The problem is ill-posed because diffuse scattering removes spatial detail and
 only limited boundary measurements are available. Multiple internal property
@@ -29,15 +29,15 @@ or model can consequently cause large changes in a naive solution.
 
 A common reconstruction estimates
 
-\[
+$$
 \hat{x}=\arg\min_x
 \frac{1}{2}\left\|W\left(y-F(x)\right)\right\|_2^2
 +\lambda R(x).
-\]
+$$
 
 The first term measures disagreement between predicted and observed data.
-\(W\) weights measurements according to their noise. The regularizer \(R(x)\)
-expresses prior assumptions, and \(\lambda\) controls the balance between data
+$W$ weights measurements according to their noise. The regularizer $R(x)$
+expresses prior assumptions, and $\lambda$ controls the balance between data
 agreement and stability.
 
 Possible regularizers include:
@@ -54,29 +54,29 @@ regularization can amplify noise and modelling artifacts.
 
 ## Linearization and the Jacobian
 
-For a nonlinear forward model, an iterative method starts from \(x_k\) and
+For a nonlinear forward model, an iterative method starts from $x_k$ and
 linearizes
 
-\[
+$$
 F(x_k+\Delta x)\approx F(x_k)+J_k\Delta x,
-\]
+$$
 
 where
 
-\[
+$$
 J_k=\frac{\partial F}{\partial x}\bigg|_{x_k}
-\]
+$$
 
 is the Jacobian or sensitivity matrix. A regularized least-squares update can
 take the form
 
-\[
+$$
 \Delta x=(J^T W^T WJ+\lambda L^TL)^{-1}
 J^T W^T W\left(y-F(x_k)\right).
-\]
+$$
 
-Each column of \(J\) describes how a change in one internal parameter affects
-the measurements. \(L\) defines the regularization structure. The forward
+Each column of $J$ describes how a change in one internal parameter affects
+the measurements. $L$ defines the regularization structure. The forward
 model, Jacobian, linear solver, and stopping rule determine both accuracy and
 computational cost.
 

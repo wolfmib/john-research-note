@@ -40,53 +40,53 @@ quality of every individual tube.
 Suppose a supervisor measures a random sample of tube lengths such as 99.2 cm,
 101.1 cm, and 98.7 cm. Let
 
-- \(n\) be the number of measured tubes;
-- \(\bar{x}\) be their sample mean;
-- \(s\) be their sample standard deviation; and
-- \(\mu\) be the unknown long-run process mean.
+- $n$ be the number of measured tubes;
+- $\bar{x}$ be their sample mean;
+- $s$ be their sample standard deviation; and
+- $\mu$ be the unknown long-run process mean.
 
 The sample standard deviation is
 
-\[
+$$
 s = \sqrt{\frac{\sum_{i=1}^{n}(x_i-\bar{x})^2}{n-1}}.
-\]
+$$
 
 The uncertainty of the estimated mean depends on the standard error
 
-\[
+$$
 \operatorname{SE}(\bar{x}) = \frac{s}{\sqrt{n}},
-\]
+$$
 
-not on \(s\) alone.
+not on $s$ alone.
 
 ## Choosing the Interval
 
 ### Population standard deviation unknown
 
-When the population standard deviation is unknown and estimated using \(s\), a
-two-sided \(100(1-\alpha)\%\) Student t confidence interval is
+When the population standard deviation is unknown and estimated using $s$, a
+two-sided $100(1-\alpha)\%$ Student t confidence interval is
 
-\[
+$$
 \bar{x} \pm t_{1-\alpha/2,\,n-1}\frac{s}{\sqrt{n}}.
-\]
+$$
 
-For example, with \(n=10\) and 99% confidence, there are 9 degrees of freedom
-and the critical value is approximately \(t_{0.995,9}=3.250\).
+For example, with $n=10$ and 99% confidence, there are 9 degrees of freedom
+and the critical value is approximately $t_{0.995,9}=3.250$.
 
 ### Population standard deviation known
 
-If a trustworthy population standard deviation \(\sigma\) is known from prior
+If a trustworthy population standard deviation $\sigma$ is known from prior
 process evidence, the corresponding z interval is
 
-\[
+$$
 \bar{x} \pm z_{1-\alpha/2}\frac{\sigma}{\sqrt{n}}.
-\]
+$$
 
-At 99% confidence, \(z_{0.995}\approx2.576\).
+At 99% confidence, $z_{0.995}\approx2.576$.
 
-For a large sample, a z-style normal approximation using \(s\) is often close
+For a large sample, a z-style normal approximation using $s$ is often close
 to the t interval. However, **30 is not a universal switch** between t and z.
-The choice depends on whether \(\sigma\) is known, whether the observations are
+The choice depends on whether $\sigma$ is known, whether the observations are
 independent and representative, and whether the sampling distribution of the
 mean is sufficiently well approximated.
 
