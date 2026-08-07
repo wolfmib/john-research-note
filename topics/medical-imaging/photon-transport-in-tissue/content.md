@@ -32,6 +32,10 @@ $$
 This reduced coefficient is useful because many highly forward-directed
 scattering events can be represented as fewer effectively isotropic events.
 
+The meaning of directional memory, transport length, and the approximation
+behind $\mu_s'=\mu_s(1-g)$ are developed in
+[Reduced Scattering Coefficient in Biomedical Optics](../reduced-scattering-coefficient/content.md).
+
 The microscopic origin of an interaction coefficient and its exponential
 survival law are derived separately in
 [From Cross Section to Interaction Coefficient](../cross-section-to-interaction-coefficient/content.md).
@@ -113,6 +117,9 @@ and computational speed therefore directly affect reconstruction quality.
 - Lu et al., “New nonlocal forward model for diffuse optical tomography.”
   [Open full text](https://pmc.ncbi.nlm.nih.gov/articles/PMC6913415/)
   ([DOI](https://doi.org/10.1364/BOE.10.006227)).
+- Jacques, “Optical properties of biological tissues: a review.”
+  [Review and open data](https://omlc.org/news/dec14/Jacques_PMB2013/index.html)
+  ([DOI](https://doi.org/10.1088/0031-9155/58/11/R37)).
 
 ## Concepts
 

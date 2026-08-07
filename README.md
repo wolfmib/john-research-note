@@ -11,6 +11,7 @@ start with the [research index](index.md).
 - [Confidence intervals for a process mean](topics/statistical-inference/confidence-interval-for-process-mean/content.md)
 - Diffuse optical imaging:
   - [From cross section to interaction coefficient](topics/medical-imaging/cross-section-to-interaction-coefficient/content.md)
+  - [Reduced scattering coefficient in biomedical optics](topics/medical-imaging/reduced-scattering-coefficient/content.md)
   - [Photon transport in scattering tissue](topics/medical-imaging/photon-transport-in-tissue/content.md)
   - [Inverse reconstruction in optical tomography](topics/medical-imaging/inverse-reconstruction-in-optical-tomography/content.md)
   - [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md)
