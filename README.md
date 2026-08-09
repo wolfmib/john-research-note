@@ -8,7 +8,7 @@ start with the [research index](index.md).
 
 ## Current Notes
 
-- [Confidence intervals for a process mean](topics/statistical-inference/confidence-interval-for-process-mean/content.md)
+- [Confidence intervals for a process mean](topics/statistics/confidence-interval-for-process-mean/content.md)
 - Diffuse optical imaging:
   - [From cross section to interaction coefficient](topics/medical-imaging/cross-section-to-interaction-coefficient/content.md)
   - [Reduced scattering coefficient in biomedical optics](topics/medical-imaging/reduced-scattering-coefficient/content.md)

@@ -1,6 +1,6 @@
 ---
 title: "Confidence Intervals for a Process Mean"
-topic: statistical-inference
+topic: statistics
 example: manufacturing-quality-control
 status: concept-note
 created: 2026-08-05
