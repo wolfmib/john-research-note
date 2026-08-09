@@ -30,4 +30,6 @@ No public topic added yet.
 
 ## Quantum Computing
 
-No public topic added yet.
+| Topic | Question | Status |
+|---|---|---|
+| [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md) | How does a verification rule become a phase oracle that amplitude amplification can amplify? | Concept note |
