@@ -12,29 +12,37 @@ author: Wei-Che Hung
 ## Working Notes
 
 <details open>
-<summary>1 / 3 — superposition over all 64 candidates, and the joint search ⊗ workspace state</summary>
+<summary>1 / 4 — the problem, and why classical costs N while quantum costs about √N</summary>
 
-![Handwritten note: six qubits Q0-Q5 placed in superposition to represent 64 candidate states at once, then the joint state written as the search register tensored with a temporary workspace, with the register map for search, sum, carry and control qubits and the target 75 in binary](media/grover-subset-sum-note-1-superposition-and-join-state.jpg)
-
-</details>
-
-<details open>
-<summary>2 / 3 — phase marking, inversion about the mean, and why the loop runs six times</summary>
-
-![Handwritten note: applying the phase and amplifying, the state written as a negative amplitude on the answer plus the remaining 63 terms, a sketched probability histogram showing one tall bar among 64, and the loop repeated six times before measuring](media/grover-subset-sum-note-2-phase-and-amplification.jpg)
+![Handwritten note: the subset-sum problem written out for six bits with the weighted sum equal to 75, the classical approach of looping over each value once and checking the answer at a process time of order N equal 64, and beside it the quantum approach holding all 64 possibilities at once, checking, iterating six times, and measuring a dominant answer at 98 percent for a process time of order root N](media/grover-subset-sum-note-1-problem-and-classical-cost.jpg)
 
 </details>
 
 <details open>
-<summary>3 / 3 — verifying the answer, the qubit budget, and the rotation angle</summary>
+<summary>2 / 4 — superposition over all 64 candidates, and the joint search ⊗ workspace state</summary>
 
-![Handwritten note: substituting the answer into the weighted sum to confirm it equals 75, a four-point summary of what each group of qubits costs, and a fan diagram of the rotation angle advancing by two theta per iteration to a maximum at step six](media/grover-subset-sum-note-3-verification-and-rotation-angle.jpg)
+![Handwritten note: six qubits Q0-Q5 placed in superposition to represent 64 candidate states at once, then the joint state written as the search register tensored with a temporary workspace, with the register map for search, sum, carry and control qubits and the target 75 in binary](media/grover-subset-sum-note-2-superposition-and-join-state.jpg)
+
+</details>
+
+<details open>
+<summary>3 / 4 — phase marking, inversion about the mean, and why the loop runs six times</summary>
+
+![Handwritten note: applying the phase and amplifying, the state written as a negative amplitude on the answer plus the remaining 63 terms, a sketched probability histogram showing one tall bar among 64, and the loop repeated six times before measuring](media/grover-subset-sum-note-3-phase-and-amplification.jpg)
+
+</details>
+
+<details open>
+<summary>4 / 4 — verifying the answer, the qubit budget, and the rotation angle</summary>
+
+![Handwritten note: substituting the answer into the weighted sum to confirm it equals 75, a four-point summary of what each group of qubits costs, and a fan diagram of the rotation angle advancing by two theta per iteration to a maximum at step six](media/grover-subset-sum-note-4-verification-and-rotation-angle.jpg)
 
 </details>
 
 These are the working notes this article is built from. They set out the whole
-argument before any code: put six qubits into superposition so all 64 candidates
-are considered at once, carry a separate workspace register for the arithmetic,
+argument before any code: state the rule and the classical cost of checking all
+64 candidates one at a time, put six qubits into superposition so the candidates
+are considered together, carry a separate workspace register for the arithmetic,
 mark the satisfying state with a phase, amplify, and repeat a number of times
 fixed by $\theta=\arcsin(1/\sqrt{N})$ rather than by taste. The sections below
 formalize each of those steps and check them against simulation.
