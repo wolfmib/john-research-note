@@ -9,20 +9,35 @@ author: Wei-Che Hung
 
 # Grover Search for a Subset-Sum Problem
 
-<details open>
-<summary>One Grover iteration: a phase oracle over all qubits, a reflection over the search register only</summary>
+## Working Notes
 
-![Grover operator showing the arithmetic oracle across twenty-two qubits followed by a diffusion operator acting on the six search qubits](media/grover-subset-sum-grover-operator.png)
+<details open>
+<summary>1 / 3 — superposition over all 64 candidates, and the joint search ⊗ workspace state</summary>
+
+![Handwritten note: six qubits Q0-Q5 placed in superposition to represent 64 candidate states at once, then the joint state written as the search register tensored with a temporary workspace, with the register map for search, sum, carry and control qubits and the target 75 in binary](media/grover-subset-sum-note-1-superposition-and-join-state.jpg)
 
 </details>
 
-The figure shows a single Grover iteration for a constraint-satisfaction
-problem. The left block evaluates the problem rule reversibly and imprints its
-answer as a phase; the right block reflects the amplitude distribution about
-its mean. Neither block contains the solution. The sections below develop how a
-verification rule becomes a phase condition, why the reflection must be
-restricted to the search register, and what the resulting speedup does and does
-not claim.
+<details open>
+<summary>2 / 3 — phase marking, inversion about the mean, and why the loop runs six times</summary>
+
+![Handwritten note: applying the phase and amplifying, the state written as a negative amplitude on the answer plus the remaining 63 terms, a sketched probability histogram showing one tall bar among 64, and the loop repeated six times before measuring](media/grover-subset-sum-note-2-phase-and-amplification.jpg)
+
+</details>
+
+<details open>
+<summary>3 / 3 — verifying the answer, the qubit budget, and the rotation angle</summary>
+
+![Handwritten note: substituting the answer into the weighted sum to confirm it equals 75, a four-point summary of what each group of qubits costs, and a fan diagram of the rotation angle advancing by two theta per iteration to a maximum at step six](media/grover-subset-sum-note-3-verification-and-rotation-angle.jpg)
+
+</details>
+
+These are the working notes this article is built from. They set out the whole
+argument before any code: put six qubits into superposition so all 64 candidates
+are considered at once, carry a separate workspace register for the arithmetic,
+mark the satisfying state with a phase, amplify, and repeat a number of times
+fixed by $\theta=\arcsin(1/\sqrt{N})$ rather than by taste. The sections below
+formalize each of those steps and check them against simulation.
 
 ## Research Question
 
@@ -214,10 +229,20 @@ D = P\bigl(2|0\rangle\langle0| - I\bigr)P^{\dagger}\otimes I_{a},
 P = H^{\otimes 6}\otimes I_{a},
 $$
 
-so the workspace passes through untouched. This restriction is visible in the
-lead figure: the diffusion block spans only the top six wires. Reflecting over
-all twenty-two qubits would reflect about a $2^{22}$-dimensional uniform state
-rather than the $64$-candidate one, and the algorithm would fail.
+so the workspace passes through untouched.
+
+<details open>
+<summary>One Grover iteration: a phase oracle over all qubits, a reflection over the search register only</summary>
+
+![Grover operator showing the arithmetic oracle across twenty-two qubits followed by a diffusion operator acting on the six search qubits](media/grover-subset-sum-grover-operator.png)
+
+</details>
+
+The circuit shows the restriction directly: the oracle spans all twenty-two
+wires, while the diffusion block spans only the top six and the workspace wires
+run flat through it. Reflecting over all twenty-two qubits would reflect about a
+$2^{22}$-dimensional uniform state rather than the $64$-candidate one, and the
+algorithm would fail.
 
 <details open>
 <summary>Complete search circuit: state preparation, six iterations, measurement</summary>
