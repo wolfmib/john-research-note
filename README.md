@@ -16,3 +16,4 @@ start with the [research index](index.md).
   - [Inverse reconstruction in optical tomography](topics/medical-imaging/inverse-reconstruction-in-optical-tomography/content.md)
   - [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md)
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
+- [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
