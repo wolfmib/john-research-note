@@ -9,6 +9,8 @@ start with the [research index](index.md).
 ## Current Notes
 
 - [Confidence intervals for a process mean](topics/statistics/confidence-interval-for-process-mean/content.md)
+- [TRC vector geometry: projection, correlation, and distance](topics/statistics/trc-vector-geometry/content.md)
+- [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/content.md)
 - Diffuse optical imaging:
   - [From cross section to interaction coefficient](topics/medical-imaging/cross-section-to-interaction-coefficient/content.md)
   - [Reduced scattering coefficient in biomedical optics](topics/medical-imaging/reduced-scattering-coefficient/content.md)

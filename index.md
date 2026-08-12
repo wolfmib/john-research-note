@@ -5,6 +5,13 @@
 | Topic | Question | Status |
 |---|---|---|
 | [Confidence intervals for a process mean](topics/statistics/confidence-interval-for-process-mean/content.md) | Does a sample support the intended 100 cm process mean? | Concept note |
+| [TRC vector geometry: projection, correlation, and distance](topics/statistics/trc-vector-geometry/content.md) | How do thermal recovery curves become 600-dimensional vectors, and which metric answers shape, direction, or distance? | Concept note |
+
+## Thermal Dynamics
+
+| Topic | Question | Status |
+|---|---|---|
+| [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/content.md) | How do lesion recovery, coupled thermal diffusion, and TRC-vector comparison combine into one paper-ready study framework? | Concept note |
 
 ## Medical Imaging
 
