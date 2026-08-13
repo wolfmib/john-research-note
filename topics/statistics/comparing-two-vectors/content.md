@@ -24,7 +24,7 @@ that they are similar? Three common comparisons answer different questions:
 The scalar component of $f_1$ along $f_2$ is
 
 $$
-\operatorname{comp}_{f_2}(f_1)
+\mathrm{comp}_{f_2}(f_1)
 =\frac{f_1^T f_2}{\|f_2\|_2}
 =\|f_1\|_2\cos\theta.
 $$
@@ -32,7 +32,7 @@ $$
 The corresponding vector projection is
 
 $$
-\operatorname{proj}_{f_2}(f_1)
+\mathrm{proj}_{f_2}(f_1)
 =\frac{f_1^T f_2}{f_2^T f_2}f_2.
 $$
 
