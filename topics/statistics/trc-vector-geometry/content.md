@@ -377,3 +377,6 @@ $$
 This is the cleanest geometric way to understand why Pearson is useful for
 comparing recovery-shape patterns while raw vector similarity is sensitive to
 baseline temperature levels.
+
+For the metric definitions independent of the TRC application, see
+[Comparing Two Vectors: Projection, Correlation, and Distance](../comparing-two-vectors/content.md).

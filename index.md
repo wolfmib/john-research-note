@@ -11,6 +11,8 @@ enough to become topics are tracked in the
 | Topic | Question | Status |
 |---|---|---|
 | [Confidence intervals for a process mean](topics/statistics/confidence-interval-for-process-mean/content.md) | Does a sample support the intended 100 cm process mean? | Concept note |
+| [Comparing two vectors: projection, correlation, and distance](topics/statistics/comparing-two-vectors/content.md) | Does similarity mean directional alignment, centered-pattern agreement, or numerical proximity? | Concept note |
+| [Reference-to-group vector features with mean and standard deviation](topics/statistics/comparing-two-groups-of-vectors/content.md) | How can projection, correlation, and distance to a reference reduce each vector group to six fixed features? | Concept note |
 | [TRC vector geometry: projection, correlation, and distance](topics/statistics/trc-vector-geometry/content.md) | How do thermal recovery curves become 600-dimensional vectors, and which metric answers shape, direction, or distance? | Concept note |
 
 ## Thermal Dynamics

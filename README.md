@@ -12,6 +12,8 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 ## Current Notes
 
 - [Confidence intervals for a process mean](topics/statistics/confidence-interval-for-process-mean/content.md)
+- [Comparing two vectors: projection, correlation, and distance](topics/statistics/comparing-two-vectors/content.md)
+- [Reference-to-group vector features with mean and standard deviation](topics/statistics/comparing-two-groups-of-vectors/content.md)
 - [TRC vector geometry: projection, correlation, and distance](topics/statistics/trc-vector-geometry/content.md)
 - [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/content.md)
 - Diffuse optical imaging:
