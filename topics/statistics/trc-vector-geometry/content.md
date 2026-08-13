@@ -110,7 +110,7 @@ they point in opposite directions.
 The scalar projection of $f_m$ onto $f_n$ is
 
 $$
-\operatorname{proj}_{f_n}(f_m) = (f_n^T f_m) f_n,
+\mathrm{proj}_{f_n}(f_m) = (f_n^T f_m) f_n,
 $$
 
 when $f_n$ is unit length. This says: how much of $f_m$ is aligned with the
@@ -143,8 +143,7 @@ $$
 Then Pearson correlation is
 
 $$
-\rho(f_n,f_m)
-=
+\rho(f_n,f_m) =
 \frac{(f_n^c)^T f_m^c}{\|f_n^c\|_2\,\|f_m^c\|_2}.
 $$
 
@@ -199,8 +198,7 @@ recovery itself.
 The covariance between two centered curves is
 
 $$
-\operatorname{Cov}(f_n,f_m)
-=
+\mathrm{Cov}(f_n,f_m) =
 \frac{1}{N}\sum_{i=1}^{N}(f_{n,i}-\bar{f}_n)(f_{m,i}-\bar{f}_m).
 $$
 
@@ -218,9 +216,8 @@ Pearson correlation normalizes this covariance by the standard deviations of the
 two curves:
 
 $$
-\rho(f_n,f_m)
-=
-\frac{\operatorname{Cov}(f_n,f_m)}{\sigma_n\sigma_m}.
+\rho(f_n,f_m) =
+\frac{\mathrm{Cov}(f_n,f_m)}{\sigma_n\sigma_m}.
 $$
 
 This removes scaling effects. If one curve is simply multiplied by a constant,
@@ -245,16 +242,14 @@ For a 60-second TRC sampled at 10 Hz, the natural average error per sample is th
 root mean squared error (RMSE):
 
 $$
-\operatorname{RMSE}(f_n,f_m)
-=
+\mathrm{RMSE}(f_n,f_m) =
 \sqrt{\frac{1}{600}\sum_{i=1}^{600}(f_{m,i}-f_{n,i})^2}.
 $$
 
 This is equivalent to
 
 $$
-\operatorname{RMSE}(f_n,f_m)
-=
+\mathrm{RMSE}(f_n,f_m) =
 \frac{\|f_m-f_n\|_2}{\sqrt{600}}.
 $$
 
@@ -322,7 +317,7 @@ $$
 \mathbf{x}_{nm} =
 \begin{bmatrix}
 \rho(f_n,f_m)\\
-\operatorname{RMSE}(f_n,f_m)\\
+\mathrm{RMSE}(f_n,f_m)\\
 |\Delta T_n - \Delta T_m|\\
 |\tau_n - \tau_m|
 \end{bmatrix},

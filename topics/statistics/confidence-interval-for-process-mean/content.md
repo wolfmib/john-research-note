@@ -54,7 +54,7 @@ $$
 The uncertainty of the estimated mean depends on the standard error
 
 $$
-\operatorname{SE}(\bar{x}) = \frac{s}{\sqrt{n}},
+\mathrm{SE}(\bar{x}) = \frac{s}{\sqrt{n}},
 $$
 
 not on $s$ alone.

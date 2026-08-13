@@ -54,7 +54,7 @@ For every $f_{g,i}\in G_g$, define its scalar projection onto $r$ by
 
 $$
 p_{r,g,i}
-=\operatorname{comp}_{r}(f_{g,i})
+=\mathrm{comp}_{r}(f_{g,i})
 =\frac{r^T f_{g,i}}{\|r\|_2}.
 $$
 
