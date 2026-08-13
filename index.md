@@ -1,5 +1,11 @@
 # Research Note Index
 
+## Reading Queue
+
+Suggested papers that have been collected but are not yet understood well
+enough to become topics are tracked in the
+[ready-to-read paper index](papers/index.md).
+
 ## Statistics
 
 | Topic | Question | Status |

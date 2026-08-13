@@ -6,6 +6,9 @@ Each topic has its own folder, with the explanation, source notes, figures, and
 supporting calculations kept together. For a categorized view of every topic,
 start with the [research index](index.md).
 
+Papers collected for future study, but not yet promoted into understood topic
+notes, are tracked in the [ready-to-read paper index](papers/index.md).
+
 ## Current Notes
 
 - [Confidence intervals for a process mean](topics/statistics/confidence-interval-for-process-mean/content.md)
