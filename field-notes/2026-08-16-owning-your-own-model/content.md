@@ -10,9 +10,11 @@ author: Wei-Che Hung
 
 # Owning Your Own Model
 
-Local LLM deployment has reached the point where running a capable model yourself is
-ordinary rather than specialist. The note below works that idea through in English, French,
-German and Maltese, with the vocabulary each language needed for it.
+Today, I realized something important: local LLM deployment has improved dramatically.
+Models such as Qwen are becoming capable enough that running a useful AI system locally is
+no longer only for researchers or large companies. In the coming AI era, deploying and
+controlling your own LLM will become a basic technical skill; the next generation should
+learn not only how to use AI, but how to build and own it.
 
 ## Pages
 
@@ -26,14 +28,6 @@ German and Maltese, with the vocabulary each language needed for it.
 ![Page 3 — Maltese verbs with their inflected forms, and Maltese nouns and phrases](media/2026-08-16-owning-your-own-model-page-3.jpg)
 
 </details>
-
-## English
-
-Today, I realized something important: local LLM deployment has improved dramatically.
-Models such as Qwen are becoming capable enough that running a useful AI system locally is
-no longer only for researchers or large companies. In the coming AI era, deploying and
-controlling your own LLM will become a basic technical skill; the next generation should
-learn not only how to use AI, but how to build and own it.
 
 ## Français
 
