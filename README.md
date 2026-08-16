@@ -24,3 +24,8 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
   - [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md)
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
+
+## Field Notes
+
+Short notes on one idea at a time, worked through in several languages with the vocabulary
+alongside. See the [field note index](field-notes/index.md).

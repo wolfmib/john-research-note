@@ -49,3 +49,8 @@ No public topic added yet.
 |---|---|---|
 | [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md) | How does a verification rule become a phase oracle that amplitude amplification can amplify? | Concept note |
 | [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md) | How does a rectangular least-squares fit become a polynomial applied to singular values, read out by postselection? | Concept note |
+
+## Field Notes
+
+Short notes on one idea at a time, worked through in several languages with the vocabulary
+alongside. See the [field note index](field-notes/index.md).
