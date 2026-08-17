@@ -6,3 +6,4 @@ alongside.
 | Date | Note | Languages | Theme |
 |---|---|---|---|
 | 2026-08-16 | [Owning Your Own Model](2026-08-16-owning-your-own-model/content.md) | EN · FR · DE · MT | Local LLM deployment |
+| 2026-08-17 | [Two Measurements, One Bell State](2026-08-17-two-measurements-one-bell-state/content.md) | EN · FR · DE · MT | Bell-state measurement |
