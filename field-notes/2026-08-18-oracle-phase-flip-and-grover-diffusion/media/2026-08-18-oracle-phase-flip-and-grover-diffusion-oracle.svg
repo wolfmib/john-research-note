@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420" role="img"
+     aria-label="Animated circuit: X on a1 converts the target pattern 1101 to all ones, a multi-controlled Z applies the minus one phase, then X on a1 restores the pattern.">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c9791a"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="420" rx="14" fill="#fbfbfd" stroke="#e3e6ee" stroke-width="2"/>
+
+  <text x="40" y="52" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="21" font-weight="600" fill="#1f2330">Marking the target state with a multi-controlled Z</text>
+
+  <!-- register readout -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" text-anchor="end">
+    <text x="700" y="94" fill="#2f6fd0">target  1101
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.2444;0.2778;1" values="1;1;0;0"/>
+    </text>
+    <text x="700" y="94" fill="#c0392b">all ones  1111
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.2444;0.2778;0.7333;0.7667;1" values="0;0;1;1;0;0"/>
+    </text>
+    <text x="700" y="94" fill="#2f6fd0">restored  1101
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.7333;0.7667;0.9556;0.9889;1" values="0;0;1;1;0;0"/>
+    </text>
+  </g>
+
+  <!-- wires -->
+  <g stroke="#8a91a4" stroke-width="2">
+    <line x1="140" y1="132" x2="660" y2="132"/>
+    <line x1="140" y1="180" x2="660" y2="180"/>
+    <line x1="140" y1="228" x2="660" y2="228"/>
+    <line x1="140" y1="276" x2="660" y2="276"/>
+  </g>
+
+  <!-- a1 converted segment -->
+  <line x1="318" y1="228" x2="522" y2="228" stroke="#c0392b" stroke-width="3.5">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.1889;0.2222;0.6556;0.6889;1" values="0;0;1;1;0;0"/>
+  </line>
+
+  <!-- wire names -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" fill="#1f2330" text-anchor="end">
+    <text x="86" y="138">a3</text><text x="86" y="186">a2</text><text x="86" y="234">a1</text><text x="86" y="282">a0</text>
+  </g>
+
+  <!-- bit values -->
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="17" text-anchor="middle" fill="#2f6fd0">
+    <text x="114" y="138">1</text><text x="114" y="186">1</text><text x="114" y="282">1</text>
+    <text x="114" y="234">0
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.2444;0.2778;1" values="1;1;0;0"/>
+    </text>
+    <text x="114" y="234" fill="#c0392b">1
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.2444;0.2778;0.7333;0.7667;1" values="0;0;1;1;0;0"/>
+    </text>
+    <text x="114" y="234">0
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.7333;0.7667;0.9556;0.9889;1" values="0;0;1;1;0;0"/>
+    </text>
+  </g>
+
+  <!-- arrow 1 -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.0667;0.1;0.3333;0.3667;1" values="0;0;1;1;0;0"/>
+    <path d="M 248 194 Q 276 196 294 218" fill="none" stroke="#c9791a" stroke-width="2.5" marker-end="url(#ah)"/>
+    <text x="244" y="190" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#c9791a" text-anchor="end">apply X</text>
+  </g>
+
+  <!-- X gate 1 -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.1556;0.1889;0.9556;0.9889;1" values="0;0;1;1;0;0"/>
+    <rect x="282" y="210" width="36" height="36" rx="6" fill="#ffffff" stroke="#1f2330" stroke-width="2.5"/>
+    <text x="300" y="235" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" fill="#1f2330" text-anchor="middle">X</text>
+  </g>
+
+  <!-- multi-controlled Z -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.3778;0.4111;0.9556;0.9889;1" values="0;0;1;1;0;0"/>
+    <line x1="420" y1="132" x2="420" y2="276" stroke="#1f2330" stroke-width="2.5"/>
+    <circle cx="420" cy="132" r="7" fill="#1f2330"/>
+    <circle cx="420" cy="180" r="7" fill="#1f2330"/>
+    <circle cx="420" cy="228" r="7" fill="#1f2330"/>
+    <rect x="402" y="258" width="36" height="36" rx="6" fill="#ffffff" stroke="#1f2330" stroke-width="2.5"/>
+    <text x="420" y="283" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" fill="#1f2330" text-anchor="middle">Z</text>
+  </g>
+
+  <!-- phase flip -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.4889;0.5222;0.9556;0.9889;1" values="0;0;1;1;0;0"/>
+    <text x="452" y="286" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" font-weight="600" fill="#c0392b">phase &#x2212;1</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.6222;0.6556;0.8222;0.8556;1" values="0;0;1;1;0;0"/>
+    <path d="M 488 194 Q 516 196 534 218" fill="none" stroke="#c9791a" stroke-width="2.5" marker-end="url(#ah)"/>
+    <text x="484" y="190" font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="15" fill="#c9791a" text-anchor="end">undo X</text>
+  </g>
+
+  <!-- X gate 2 -->
+  <g opacity="0">
+    <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.6222;0.6556;0.9556;0.9889;1" values="0;0;1;1;0;0"/>
+    <rect x="522" y="210" width="36" height="36" rx="6" fill="#ffffff" stroke="#1f2330" stroke-width="2.5"/>
+    <text x="540" y="235" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="19" fill="#1f2330" text-anchor="middle">X</text>
+  </g>
+
+  <!-- stage captions -->
+  <g font-family="system-ui, -apple-system, Segoe UI, sans-serif" font-size="17" fill="#1f2330">
+    <text x="40" y="366">1 &#183; X on a1 converts the target pattern into all ones
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.0667;0.1;0.3778;0.4111;1" values="0;0;1;1;0;0"/>
+    </text>
+    <text x="40" y="366">2 &#183; the multi-controlled Z marks that one state with &#x2212;1
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.3778;0.4111;0.6222;0.6556;1" values="0;0;1;1;0;0"/>
+    </text>
+    <text x="40" y="366">3 &#183; X on a1 restores the pattern, then Grover diffusion &#8212; and the loop repeats
+      <animate attributeName="opacity" dur="9s" repeatCount="indefinite" keyTimes="0;0.6222;0.6556;0.9667;0.9889;1" values="0;0;1;1;0;0"/>
+    </text>
+  </g>
+</svg>
