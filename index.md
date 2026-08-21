@@ -15,6 +15,23 @@ enough to become topics are tracked in the
 | [Reference-to-group vector features with mean and standard deviation](topics/statistics/comparing-two-groups-of-vectors/content.md) | How can projection, correlation, and distance to a reference reduce each vector group to six fixed features? | Concept note |
 | [TRC vector geometry: projection, correlation, and distance](topics/statistics/trc-vector-geometry/content.md) | How do thermal recovery curves become 600-dimensional vectors, and which metric answers shape, direction, or distance? | Concept note |
 
+## Machine Learning
+
+The classical classification family, told as characters — one overview with the
+handwritten pages, then one note per method (math + worked example + SVG figure).
+
+| Topic | Question | Status |
+|---|---|---|
+| [The ML family for medical classification](topics/machine-learning/ml-family-for-medical-classification/content.md) | Which classical ML methods form the skin-cancer toolkit, and what one question does each ask? | Concept note |
+| [PCA — Mr. Variance](topics/machine-learning/pca-mr-variance/content.md) | Which directions carry the variance of unlabeled lesion data? | Concept note |
+| [ICA — The Source Detective](topics/machine-learning/ica-source-detective/content.md) | Can independent hidden sources be recovered from mixed measurements? | Concept note |
+| [KNN — Ask Your Neighbours](topics/machine-learning/knn-ask-your-neighbours/content.md) | Can a new case be classified purely by its closest labelled neighbours? | Concept note |
+| [Decision Tree — The Question Man](topics/machine-learning/decision-tree-question-man/content.md) | Which yes/no question splits the diagnosis best, and how is that measured? | Concept note |
+| [Random Forest — The Tree Army](topics/machine-learning/random-forest-tree-army/content.md) | Can many deliberately different trees vote their way past one tree's overfitting? | Concept note |
+| [LDA — The Class Separator](topics/machine-learning/lda-class-separator/content.md) | Which direction makes the classes look most separated — far between, tight within? | Concept note |
+| [SVM — The Margin Master](topics/machine-learning/svm-margin-master/content.md) | Among all separating hyperplanes, why is the widest corridor the one to trust? | Concept note |
+| [RBF-SVM — SVM Learns to Curve](topics/machine-learning/rbf-svm-curved-margin/content.md) | How does the margin philosophy survive when the boundary must bend? | Concept note |
+
 ## Thermal Dynamics
 
 | Topic | Question | Status |

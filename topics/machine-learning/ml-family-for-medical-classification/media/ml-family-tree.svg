@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="440" viewBox="0 0 960 440" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="white"/>
+<!-- root -->
+<rect x="300" y="30" width="360" height="48" rx="12" fill="#111827"/>
+<text x="480" y="60" text-anchor="middle" font-size="17" font-weight="bold" fill="white">MACHINE LEARNING &#8212; classification</text>
+<!-- branch lines -->
+<g stroke="#9ca3af" stroke-width="1.8" fill="none">
+<path d="M480 78 v22 h-240 v22"/>
+<path d="M480 78 v22 h230 v22"/>
+</g>
+<!-- unsupervised -->
+<rect x="140" y="122" width="200" height="42" rx="10" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+<text x="240" y="149" text-anchor="middle" font-size="15" font-weight="bold" fill="#0e7490">UNSUPERVISED</text>
+<g stroke="#67e8f9" stroke-width="1.6" fill="none">
+<path d="M240 164 v20 h-90 v20"/>
+<path d="M240 164 v20 h90 v20"/>
+</g>
+<rect x="70" y="204" width="160" height="58" rx="10" fill="white" stroke="#0891b2" stroke-width="1.6"/>
+<text x="150" y="228" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#0e7490">PCA</text>
+<text x="150" y="248" text-anchor="middle" font-size="12" fill="#6b7280">variance</text>
+<rect x="250" y="204" width="160" height="58" rx="10" fill="white" stroke="#0891b2" stroke-width="1.6"/>
+<text x="330" y="228" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#0e7490">ICA</text>
+<text x="330" y="248" text-anchor="middle" font-size="12" fill="#6b7280">independence</text>
+<text x="240" y="300" text-anchor="middle" font-size="12.5" font-style="italic" fill="#0e7490">&#8220;no labels &#8212; find the structure&#8221;</text>
+<!-- supervised -->
+<rect x="610" y="122" width="200" height="42" rx="10" fill="#eef2ff" stroke="#4f46e5" stroke-width="2"/>
+<text x="710" y="149" text-anchor="middle" font-size="15" font-weight="bold" fill="#4338ca">SUPERVISED</text>
+<g stroke="#c7d2fe" stroke-width="1.6" fill="none">
+<path d="M710 164 v18 h-160 v22"/>
+<path d="M710 164 v18 v22"/>
+<path d="M710 164 v18 h160 v22"/>
+<path d="M550 264 v26"/>
+<path d="M710 264 v26"/>
+<path d="M870 264 v26"/>
+</g>
+<rect x="475" y="204" width="150" height="58" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.6"/>
+<text x="550" y="228" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#4338ca">KNN</text>
+<text x="550" y="248" text-anchor="middle" font-size="12" fill="#6b7280">neighbours</text>
+<rect x="635" y="204" width="150" height="58" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.6"/>
+<text x="710" y="228" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#4338ca">Decision Tree</text>
+<text x="710" y="248" text-anchor="middle" font-size="12" fill="#6b7280">questions</text>
+<rect x="795" y="204" width="150" height="58" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.6"/>
+<text x="870" y="228" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#4338ca">Random Forest</text>
+<text x="870" y="248" text-anchor="middle" font-size="12" fill="#6b7280">forest vote</text>
+<rect x="475" y="292" width="150" height="58" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.6"/>
+<text x="550" y="316" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#4338ca">LDA</text>
+<text x="550" y="336" text-anchor="middle" font-size="12" fill="#6b7280">class separation</text>
+<rect x="635" y="292" width="150" height="58" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.6"/>
+<text x="710" y="316" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#4338ca">SVM</text>
+<text x="710" y="336" text-anchor="middle" font-size="12" fill="#6b7280">maximum margin</text>
+<rect x="795" y="292" width="150" height="58" rx="10" fill="white" stroke="#4f46e5" stroke-width="1.6"/>
+<text x="870" y="316" text-anchor="middle" font-size="14.5" font-weight="bold" fill="#4338ca">RBF-SVM</text>
+<text x="870" y="336" text-anchor="middle" font-size="12" fill="#6b7280">curved margin</text>
+<text x="710" y="382" text-anchor="middle" font-size="12.5" font-style="italic" fill="#4338ca">&#8220;labels known &#8212; learn the boundary&#8221;</text>
+<!-- punchlines -->
+<text x="480" y="420" text-anchor="middle" font-size="13" fill="#374151">PCA asks <tspan font-weight="bold">what varies</tspan> &#183; ICA asks <tspan font-weight="bold">what is independent</tspan> &#183; LDA asks <tspan font-weight="bold">what separates</tspan> &#183; SVM asks <tspan font-weight="bold">where the safest border is</tspan></text>
+</svg>

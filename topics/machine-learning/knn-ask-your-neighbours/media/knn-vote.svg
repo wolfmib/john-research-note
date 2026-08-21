@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" font-family="Helvetica, Arial, sans-serif">
+<rect width="100%" height="100%" fill="white"/>
+<text x="380" y="28" text-anchor="middle" font-size="19" font-weight="bold" fill="#111">KNN — the new case asks its k = 3 nearest neighbours</text>
+<!-- Group A -->
+<g fill="#2563eb">
+<circle cx="180" cy="300" r="6"/><circle cx="210" cy="268" r="6"/><circle cx="160" cy="258" r="6"/>
+<circle cx="232" cy="312" r="6"/><circle cx="200" cy="332" r="6"/><circle cx="252" cy="286" r="6"/>
+<circle cx="176" cy="224" r="6"/><circle cx="295" cy="265" r="6"/><circle cx="300" cy="185" r="6"/>
+</g>
+<!-- Group B -->
+<g fill="none" stroke="#dc2626" stroke-width="2.5">
+<circle cx="480" cy="150" r="6"/><circle cx="520" cy="180" r="6"/><circle cx="555" cy="140" r="6"/>
+<circle cx="500" cy="110" r="6"/><circle cx="562" cy="192" r="6"/><circle cx="592" cy="160" r="6"/>
+<circle cx="445" cy="205" r="6"/>
+</g>
+<!-- neighbour circle -->
+<circle cx="360" cy="230" r="112" fill="none" stroke="#f59e0b" stroke-width="1.8" stroke-dasharray="7 6"/>
+<!-- links -->
+<g stroke="#f59e0b" stroke-width="1.5">
+<line x1="360" y1="230" x2="295" y2="265"/><line x1="360" y1="230" x2="300" y2="185"/><line x1="360" y1="230" x2="445" y2="205"/>
+</g>
+<!-- test star -->
+<polygon points="360,216 363.5,225.1 373.3,225.7 365.7,231.9 368.2,241.3 360,236 351.8,241.3 354.3,231.9 346.7,225.7 356.5,225.1" fill="#f59e0b" stroke="#b45309" stroke-width="1"/>
+<!-- legend -->
+<g font-size="13" fill="#111">
+<circle cx="590" cy="290" r="6" fill="#2563eb"/><text x="604" y="295">Group A (benign)</text>
+<circle cx="590" cy="315" r="6" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="604" y="320">Group B (malignant)</text>
+<polygon points="590,336 592.5,342.5 599.5,343 594.1,347.4 595.9,354 590,350.3 584.1,354 585.9,347.4 580.5,343 587.5,342.5" fill="#f59e0b" stroke="#b45309" stroke-width="0.8"/>
+<text x="604" y="349">new case</text>
+</g>
+<!-- verdict -->
+<rect x="80" y="80" width="270" height="50" rx="9" fill="#fffbeb" stroke="#f59e0b"/>
+<text x="215" y="101" text-anchor="middle" font-size="13.5" fill="#92400e">k = 3 &#8594; 2 votes Group A, 1 vote Group B</text>
+<text x="215" y="120" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#92400e">majority &#8594; new case joins Group A</text>
+<text x="380" y="405" text-anchor="middle" font-size="13" fill="#374151">closeness is plain Euclidean distance: d(x&#7522;, x&#11388;) = &#8730;&#931;&#8342;(x&#7522;&#8342; &#8722; x&#11388;&#8342;)&#178; &#8212; no training, just gossip</text>
+</svg>
