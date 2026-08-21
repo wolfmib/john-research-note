@@ -23,7 +23,7 @@ Train $B$ trees, each on a bootstrap sample of the data and a random subset of
 features at every split. Classification is the committee's mode:
 
 $$
-\hat y=\operatorname{mode}\{\,T_1(x),\,T_2(x),\,\ldots,\,T_B(x)\,\}.
+\hat y=\mathrm{mode}\{\,T_1(x),\,T_2(x),\,\ldots,\,T_B(x)\,\}.
 $$
 
 Averaging many high-variance, weakly correlated trees slashes variance without
@@ -38,7 +38,7 @@ T_1\to M,\quad T_2\to M,\quad T_3\to B,\quad T_4\to M,\quad T_5\to B
 $$
 
 $$
-\hat y=\operatorname{mode}\{M,M,B,M,B\}=M \quad (3\text{ of }5).
+\hat y=\mathrm{mode}\{M,M,B,M,B\}=M \quad (3\text{ of }5).
 $$
 
 The vote count doubles as a confidence signal: 3/5 is a much more hesitant

@@ -32,7 +32,7 @@ boundary comes back curved down here. The decision function is built from the
 support vectors alone:
 
 $$
-f(x)=\operatorname{sign}\!\Big(\sum_i \alpha_i\, y_i\, K(x_i,x)+b\Big).
+f(x)=\mathrm{sign}\!\Big(\sum_i \alpha_i\, y_i\, K(x_i,x)+b\Big).
 $$
 
 Two knobs rule everything:

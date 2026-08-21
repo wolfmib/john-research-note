@@ -23,7 +23,7 @@ The first principal direction is the unit vector that maximises projected
 variance:
 
 $$
-w_1=\arg\max_{\|w\|=1}\operatorname{Var}(w^T X).
+w_1=\arg\max_{\|w\|=1}\mathrm{Var}(w^T X).
 $$
 
 All principal directions are eigenvectors of the covariance matrix $\Sigma$,

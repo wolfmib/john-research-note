@@ -29,7 +29,7 @@ and the decision is a majority vote among the $k$ nearest neighbours
 $N_k(x)$:
 
 $$
-\hat y=\operatorname{mode}\{\,y_i : i\in N_k(x)\,\}.
+\hat y=\mathrm{mode}\{\,y_i : i\in N_k(x)\,\}.
 $$
 
 There is no real training phase — the dataset *is* the model.

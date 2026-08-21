@@ -51,7 +51,7 @@ $\mu_1-\mu_0=(2,2)$.
 - If both classes scatter equally in all directions, $S_W=I$ and
   $w\propto(2,2)$ — simply aim from one mean to the other.
 - If instead the second feature is noisy within each class,
-  $S_W=\operatorname{diag}(1,4)$, then
+  $S_W=\mathrm{diag}(1,4)$, then
 
 $$
 w = S_W^{-1}(\mu_1-\mu_0) = (2,\ 0.5),

@@ -15,6 +15,16 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Comparing two vectors: projection, correlation, and distance](topics/statistics/comparing-two-vectors/content.md)
 - [Reference-to-group vector features with mean and standard deviation](topics/statistics/comparing-two-groups-of-vectors/content.md)
 - [TRC vector geometry: projection, correlation, and distance](topics/statistics/trc-vector-geometry/content.md)
+- Machine learning for medical classification:
+  - [The ML family — overview, story, and handwritten pages](topics/machine-learning/ml-family-for-medical-classification/content.md)
+  - [PCA — Mr. Variance](topics/machine-learning/pca-mr-variance/content.md)
+  - [ICA — The Source Detective](topics/machine-learning/ica-source-detective/content.md)
+  - [KNN — Ask Your Neighbours](topics/machine-learning/knn-ask-your-neighbours/content.md)
+  - [Decision Tree — The Question Man](topics/machine-learning/decision-tree-question-man/content.md)
+  - [Random Forest — The Tree Army](topics/machine-learning/random-forest-tree-army/content.md)
+  - [LDA — The Class Separator](topics/machine-learning/lda-class-separator/content.md)
+  - [SVM — The Margin Master](topics/machine-learning/svm-margin-master/content.md)
+  - [RBF-SVM — SVM Learns to Curve](topics/machine-learning/rbf-svm-curved-margin/content.md)
 - [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/content.md)
 - Diffuse optical imaging:
   - [From cross section to interaction coefficient](topics/medical-imaging/cross-section-to-interaction-coefficient/content.md)
