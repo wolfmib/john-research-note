@@ -39,12 +39,8 @@ product — new coordinates in the $(w_1,w_2)$ space:
 $$
 \hat Y = W^T X =
 \begin{bmatrix} w_1^T \\ w_2^T \end{bmatrix}
-\begin{bmatrix} x_1, x_2, x_3, x_4 \end{bmatrix}
-=
-\begin{bmatrix}
-w_1^T x_1 & \cdots & w_1^T x_4 \\
-w_2^T x_1 & \cdots & w_2^T x_4
-\end{bmatrix}.
+\begin{bmatrix} x_1, x_2, x_3, x_4 \end{bmatrix} =
+\begin{bmatrix} w_1^T x_1 & \cdots & w_1^T x_4 \\ w_2^T x_1 & \cdots & w_2^T x_4 \end{bmatrix}.
 $$
 
 ## Worked example
