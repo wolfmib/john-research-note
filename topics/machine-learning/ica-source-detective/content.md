@@ -46,17 +46,17 @@ Music  ──┘
 
 Two independent square-ish sources over four time steps, and a mixing matrix:
 
-$$
+```math
 S=\begin{bmatrix} 1 & -1 & 1 & -1 \\ 1 & 1 & -1 & -1 \end{bmatrix},
 \qquad
 A=\begin{bmatrix} 1 & 0.5 \\ 0.5 & 1 \end{bmatrix}.
-$$
+```
 
 The microphones record only the blend:
 
-$$
+```math
 X = AS = \begin{bmatrix} 1.5 & -0.5 & 0.5 & -1.5 \\ 1.5 & 0.5 & -0.5 & -1.5 \end{bmatrix}.
-$$
+```
 
 Neither row of $X$ looks like a clean source — yet $\hat S = WX$ with
 $W \approx A^{-1}$ recovers both, up to two unavoidable ambiguities: the

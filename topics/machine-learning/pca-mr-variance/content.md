@@ -36,29 +36,29 @@ $$
 Stacking the directions $W=[w_1, w_2]$ turns projection into one matrix
 product — new coordinates in the $(w_1,w_2)$ space:
 
-$$
+```math
 \hat Y = W^T X =
 \begin{bmatrix} w_1^T \\ w_2^T \end{bmatrix}
 \begin{bmatrix} x_1, x_2, x_3, x_4 \end{bmatrix} =
 \begin{bmatrix} w_1^T x_1 & \cdots & w_1^T x_4 \\ w_2^T x_1 & \cdots & w_2^T x_4 \end{bmatrix}.
-$$
+```
 
 ## Worked example
 
 Four samples in the traditional $(x,y)$ 2D space (from the handwritten page):
 
-$$
+```math
 X=\begin{bmatrix} 1 & 2.1 & 2.05 & 3.3 \\ 1.9 & 2.2 & 3.3 & 3 \end{bmatrix}.
-$$
+```
 
 Center the data (mean $\approx(2.11,\,2.60)$) and form the covariance matrix:
 
-$$
+```math
 \Sigma \approx
 \begin{bmatrix} 0.88 & 0.41 \\ 0.41 & 0.43 \end{bmatrix}
 \quad\Rightarrow\quad
 \lambda_1\approx 1.12,\;\; \lambda_2\approx 0.20 .
-$$
+```
 
 - $w_1 \approx (0.86,\,0.51)$ — the cloud's long axis, a line $y \approx a\cdot x$
 - $w_2 \perp w_1$ — whatever variation is left
