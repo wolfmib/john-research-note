@@ -201,7 +201,7 @@ different phase and scramble $\beta$.
 
 **Implemented:** because $U_A$ is real, $V(-\Phi) = \overline{V(\Phi)}$, so a Hadamard
 sandwich on one extra qubit with postselection on $|0\rangle$ yields
-$\tfrac{1}{2}(V(\Phi) + \overline{V(\Phi)}) = \operatorname{Re}V(\Phi)$. Only the phase
+$\tfrac{1}{2}(V(\Phi) + \overline{V(\Phi)}) = \mathrm{Re}V(\Phi)$. Only the phase
 rotations need to see that qubit — a single `RZZ(anc, lcu)` flips their sign — so $U_A$
 itself is never controlled.
 

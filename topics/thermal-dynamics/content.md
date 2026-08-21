@@ -232,7 +232,7 @@ $$
 $$
 
 $$
-\operatorname{RMSE}(f_n,f_m)=\sqrt{\frac{1}{600}\sum_{i=1}^{600}(f_{n,i}-f_{m,i})^2},
+\mathrm{RMSE}(f_n,f_m)=\sqrt{\frac{1}{600}\sum_{i=1}^{600}(f_{n,i}-f_{m,i})^2},
 $$
 
 and sometimes

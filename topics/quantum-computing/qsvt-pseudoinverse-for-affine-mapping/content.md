@@ -208,7 +208,7 @@ Because $U_A$ is real, $V(-\Phi)=\overline{V(\Phi)}$, so a Hadamard sandwich on 
 additional qubit, with postselection on $|0\rangle$, extracts
 
 $$
-\tfrac{1}{2}\left(V(\Phi)+\overline{V(\Phi)}\right)=\operatorname{Re}V(\Phi).
+\tfrac{1}{2}\left(V(\Phi)+\overline{V(\Phi)}\right)=\mathrm{Re}V(\Phi).
 $$
 
 The construction is cheaper than it first appears: only the phase angles need to know
@@ -336,7 +336,7 @@ B_{\mathrm{quantum}}=\begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatri
 $$
 
 The block itself matches the scaled classical pseudoinverse to
-$\|\Pi_R\operatorname{Re}[V]\Pi_L-C\alpha Z^{+}\|=4.2\times10^{-15}$, and the Qiskit
+$\|\Pi_R\mathrm{Re}[V]\Pi_L-C\alpha Z^{+}\|=4.2\times10^{-15}$, and the Qiskit
 circuit reproduces the numpy reference amplitude by amplitude to $2.5\times10^{-15}$.
 
 ## Circuit Cost

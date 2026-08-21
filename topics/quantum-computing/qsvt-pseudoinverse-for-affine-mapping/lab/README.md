@@ -202,7 +202,7 @@ component by a different phase, which scrambles $\beta$ into nonsense.
 
 Since $U_A$ is real, $V(-\Phi) = \overline{V(\Phi)}$, so a Hadamard sandwich on one extra
 qubit with postselection on $|0\rangle$ picks out
-$\tfrac{1}{2}(V(\Phi) + \overline{V(\Phi)}) = \operatorname{Re}V(\Phi)$.
+$\tfrac{1}{2}(V(\Phi) + \overline{V(\Phi)}) = \mathrm{Re}V(\Phi)$.
 
 The cheap part: only the *phase angles* need to know about that qubit. A single
 `RZZ(anc, lcu)` flips their sign, so $U_A$ is never controlled.
