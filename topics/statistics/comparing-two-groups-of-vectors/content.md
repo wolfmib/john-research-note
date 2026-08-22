@@ -36,13 +36,13 @@ each of its $n_g$ rows is one vector with the same dimension $p$ as $r$. The
 reference-to-group operation first converts the vectors in $G_g$ into three
 score vectors,
 
-$$
+```math
 \begin{aligned}
 \mathbf p_{r,G_g} &\in\mathbb{R}^{n_g},\\
 \boldsymbol\rho_{r,G_g} &\in\mathbb{R}^{n_g},\\
 \mathbf d_{r,G_g} &\in\mathbb{R}^{n_g}.
 \end{aligned}
-$$
+```
 
 and then reduces each score vector to its mean and standard deviation. This is
 the key feature-extraction step; comparing $G_1$ with $G_2$ is a later use of
@@ -75,14 +75,14 @@ $$
 
 Therefore the four projection features for the two groups are
 
-$$
+```math
 \begin{aligned}
 G_1:&\quad \mu_{\mathrm{proj}}(r,G_1),\quad
 \sigma_{\mathrm{proj}}(r,G_1),\\
 G_2:&\quad \mu_{\mathrm{proj}}(r,G_2),\quad
 \sigma_{\mathrm{proj}}(r,G_2).
 \end{aligned}
-$$
+```
 
 If only direction is wanted, replace scalar projection by cosine similarity;
 the selected definition must be used consistently for every vector.
@@ -111,14 +111,14 @@ $$
 
 For $G_1$ and $G_2$, this produces
 
-$$
+```math
 \begin{aligned}
 G_1:&\quad \mu_{\mathrm{corr}}(r,G_1),\quad
 \sigma_{\mathrm{corr}}(r,G_1),\\
 G_2:&\quad \mu_{\mathrm{corr}}(r,G_2),\quad
 \sigma_{\mathrm{corr}}(r,G_2).
 \end{aligned}
-$$
+```
 
 ## 3. Distance features relative to the reference
 
@@ -144,20 +144,20 @@ $$
 
 For the two groups, the resulting features are
 
-$$
+```math
 \begin{aligned}
 G_1:&\quad \mu_{\mathrm{dist}}(r,G_1),\quad
 \sigma_{\mathrm{dist}}(r,G_1),\\
 G_2:&\quad \mu_{\mathrm{dist}}(r,G_2),\quad
 \sigma_{\mathrm{dist}}(r,G_2).
 \end{aligned}
-$$
+```
 
 ## 4. Six-dimensional feature vector for each group
 
 The complete reference-to-group representation is
 
-$$
+```math
 \Phi(r,G_g)=
 \begin{bmatrix}
 \mu_{\mathrm{proj}}(r,G_g)\\
@@ -168,29 +168,29 @@ $$
 \sigma_{\mathrm{dist}}(r,G_g)
 \end{bmatrix}
 \in\mathbb{R}^{6}.
-$$
+```
 
 Thus
 
-$$
+```math
 \begin{aligned}
 (r,G_1)&\longmapsto\Phi(r,G_1)\in\mathbb{R}^{6},\\
 (r,G_2)&\longmapsto\Phi(r,G_2)\in\mathbb{R}^{6}.
 \end{aligned}
-$$
+```
 
 The original inputs contain $p$ components per vector and $n_g$ vectors per
 group. Relative to the fixed reference $r$, each entire group is summarized by
 six scalar features. Concatenating both group representations gives
 
-$$
+```math
 \Phi(r,G_1,G_2)
 =\begin{bmatrix}
 \Phi(r,G_1)\\
 \Phi(r,G_2)
 \end{bmatrix}
 \in\mathbb{R}^{12}.
-$$
+```
 
 This dimensional statement is central: the method maps two variable-sized
 collections of $p$-dimensional vectors into a fixed 12-dimensional feature

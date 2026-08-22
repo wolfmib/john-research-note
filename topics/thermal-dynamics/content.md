@@ -41,7 +41,7 @@ recovery trajectory that is coupled to the surrounding thermal field.
 For a sequence sampled at 10 Hz over 60 seconds, each recovery trace contains 600
 samples. A single region or pixel gives a vector
 
-$$
+```math
 f_n =
 \begin{bmatrix}
 T_n(0.0)\\
@@ -50,7 +50,7 @@ T_n(0.1)\\
 T_n(59.9)
 \end{bmatrix}
 \in \mathbb{R}^{600}.
-$$
+```
 
 This is the same geometric idea as the previous TRC note: a full recovery trace
 is a point in a 600-dimensional space. The task is then to compare multiple
@@ -254,13 +254,13 @@ This makes the analysis physically interpretable and statistically disciplined.
 In addition to geometric comparisons, each recovery trace can be summarized by a
 small set of physically motivated scalar parameters, such as
 
-$$
+```math
 \theta_n =
 \begin{bmatrix}
 \Delta T_n \\
 \tau_n \\\n\alpha_n \\\n\text{slope}_n \\\n\text{recovery-rate}_n
 \end{bmatrix},
-$$
+```
 
 where $\Delta T_n$ is the total recovery change, $\tau_n$ is a characteristic
 recovery time, $\alpha_n$ is a fitted diffusion or relaxation parameter, and the

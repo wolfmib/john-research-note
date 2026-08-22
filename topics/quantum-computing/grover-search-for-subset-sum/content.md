@@ -151,7 +151,7 @@ and measuring $s$ at this point would collapse the candidate superposition.
 
 Grover's algorithm requires the rule as a *phase*,
 
-$$
+```math
 \boxed{
 |x\rangle \longmapsto (-1)^{f(x)}|x\rangle,
 \qquad
@@ -160,7 +160,7 @@ f(x)=
 1, & S(x)=T\\
 0, & S(x)\neq T
 \end{cases}}
-$$
+```
 
 with the workspace returned to $|0\rangle$. This is achieved by conjugation:
 compute the sum, mark the target value, then undo the computation,

@@ -34,18 +34,18 @@ values of the data matrix, rather than by solving the normal equations?
 Concretely, let the source points be written in homogeneous form, $Z_i=[x_i,\ y_i,\ 1]$,
 and collected into
 
-$$
+```math
 Z=\begin{bmatrix} 0&0&1 \\ 1&0&1 \\ 0&1&1 \\ 1&1&1 \\ 2&-1&1 \end{bmatrix}
 \in\mathbb{R}^{5\times3},
-$$
+```
 
 and let an unknown $B\in\mathbb{R}^{3\times2}$ act on them so that $Y=ZB$, with
 
-$$
+```math
 B_{\mathrm{true}}=\begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatrix},
 \qquad
 Y=\begin{bmatrix} 2.0&-1.0 \\ 3.2&-1.4 \\ 2.5&0.1 \\ 3.7&-0.3 \\ 3.9&-2.9 \end{bmatrix}.
-$$
+```
 
 After $Y$ is generated, $B_{\mathrm{true}}$ is discarded and the task is to recover it from
 $Z$ and $Y$ alone.
@@ -90,9 +90,9 @@ The padding only exists if the matrix is a contraction, so $Z$ is first normaliz
 $\alpha=\|Z\|_2=3.0875$, giving $A=Z/\alpha$ with every singular value in $[0,1]$. Then
 the Halmos dilation
 
-$$
+```math
 U_A=\begin{bmatrix} A & \sqrt{I_5-AA^{T}} \\ \sqrt{I_3-A^{T}A} & -A^{T} \end{bmatrix}
-$$
+```
 
 is unitary. The verification is short and worth seeing, because it is the intertwining
 identity $A^{T}f(AA^{T})=f(A^{T}A)A^{T}$ doing all the work. The two column blocks have
@@ -329,11 +329,11 @@ $-|\beta\rangle$ are the same physical state.
 
 Assembling both columns:
 
-$$
+```math
 B_{\mathrm{quantum}}=\begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatrix},
 \qquad
 \|B_{\mathrm{quantum}}-B_{\mathrm{true}}\|_F=2.9\times10^{-14}.
-$$
+```
 
 The block itself matches the scaled classical pseudoinverse to
 $\|\Pi_R\mathrm{Re}[V]\Pi_L-C\alpha Z^{+}\|=4.2\times10^{-15}$, and the Qiskit

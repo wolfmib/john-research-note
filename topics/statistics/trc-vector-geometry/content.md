@@ -23,7 +23,7 @@ $$
 
 and define the vector
 
-$$
+```math
 f_n =
 \begin{bmatrix}
 T_n(0.0)\\
@@ -32,11 +32,11 @@ T_n(0.1)\\
 T_n(59.9)
 \end{bmatrix}
 \in \mathbb{R}^{600}.
-$$
+```
 
 Likewise, for a second independent recovery curve,
 
-$$
+```math
 f_m =
 \begin{bmatrix}
 T_m(0.0)\\
@@ -45,7 +45,7 @@ T_m(0.1)\\
 T_m(59.9)
 \end{bmatrix}
 \in \mathbb{R}^{600}.
-$$
+```
 
 This viewpoint is useful because several comparison metrics become geometric
 operations on these two vectors: projection, angular similarity, centering-based
@@ -313,7 +313,7 @@ questions is scientifically relevant.
 
 For thermal recovery recovery analysis, a good feature set is often
 
-$$
+```math
 \mathbf{x}_{nm} =
 \begin{bmatrix}
 \rho(f_n,f_m)\\
@@ -321,7 +321,7 @@ $$
 |\Delta T_n - \Delta T_m|\\
 |\tau_n - \tau_m|
 \end{bmatrix},
-$$
+```
 
 where $\Delta T$ is the total temperature recovery change and $\tau$ is a
 recovery time constant or slope-based characteristic time.

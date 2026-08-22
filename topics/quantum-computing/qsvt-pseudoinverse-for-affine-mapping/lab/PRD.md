@@ -13,7 +13,9 @@ $$Z \in \mathbb{R}^{5\times3}, \qquad Y \in \mathbb{R}^{5\times2}, \qquad B \in 
 
 Rows of $Z$ are 2D source coordinates in homogeneous form, $Z_i = [x_i,\ y_i,\ 1]$, and
 
-$$B = \begin{bmatrix} a & d \\ b & e \\ c & f \end{bmatrix}$$
+```math
+B = \begin{bmatrix} a & d \\ b & e \\ c & f \end{bmatrix}
+```
 
 is the unknown affine transformation, so $[x_i',\ y_i'] = [x_i,\ y_i,\ 1]\,B$.
 
@@ -27,11 +29,13 @@ The quantum implementation must not use $Z^TZ$ internally.
 
 ## 2. Concrete dataset
 
-$$Z = \begin{bmatrix} 0&0&1 \\ 1&0&1 \\ 0&1&1 \\ 1&1&1 \\ 2&-1&1 \end{bmatrix},
+```math
+Z = \begin{bmatrix} 0&0&1 \\ 1&0&1 \\ 0&1&1 \\ 1&1&1 \\ 2&-1&1 \end{bmatrix},
 \qquad
 B_{\mathrm{true}} = \begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatrix},
 \qquad
-Y = ZB_{\mathrm{true}} = \begin{bmatrix} 2.0&-1.0 \\ 3.2&-1.4 \\ 2.5&0.1 \\ 3.7&-0.3 \\ 3.9&-2.9 \end{bmatrix}.$$
+Y = ZB_{\mathrm{true}} = \begin{bmatrix} 2.0&-1.0 \\ 3.2&-1.4 \\ 2.5&0.1 \\ 3.7&-0.3 \\ 3.9&-2.9 \end{bmatrix}.
+```
 
 After generating $Y$, treat $B_{\mathrm{true}}$ as unknown.
 
@@ -64,7 +68,9 @@ $|y\rangle = y/\|y\|$. The two normalizations are different things.
 
 No ready-made block-encoding operation. For $A \in \mathbb{R}^{5\times3}$ construct
 
-$$U_A = \begin{bmatrix} A & \sqrt{I_5 - AA^T} \\ \sqrt{I_3 - A^TA} & -A^T \end{bmatrix},$$
+```math
+U_A = \begin{bmatrix} A & \sqrt{I_5 - AA^T} \\ \sqrt{I_3 - A^TA} & -A^T \end{bmatrix},
+```
 
 an $8\times8$ unitary; $8 = 2^3$, so the dilation fits 3 qubits. Provide
 `build_rectangular_block_unitary(A)` which verifies the shape, verifies $\|A\|_2 \le 1$,

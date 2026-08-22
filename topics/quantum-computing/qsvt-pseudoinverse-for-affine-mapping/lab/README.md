@@ -31,9 +31,11 @@ every one of 22 validation checks passing.
 Five source points in homogeneous form, an unknown $3\times2$ affine map, five target
 points:
 
-$$Z = \begin{bmatrix} 0&0&1 \\ 1&0&1 \\ 0&1&1 \\ 1&1&1 \\ 2&-1&1 \end{bmatrix}
+```math
+Z = \begin{bmatrix} 0&0&1 \\ 1&0&1 \\ 0&1&1 \\ 1&1&1 \\ 2&-1&1 \end{bmatrix}
 \qquad
-Y = ZB, \qquad B_{\mathrm{true}} = \begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatrix}$$
+Y = ZB, \qquad B_{\mathrm{true}} = \begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatrix}
+```
 
 $B_{\mathrm{true}}$ generates $Y$ and is then treated as unknown. Because $Y$ is generated
 without noise and $Z$ has full column rank, the least-squares answer is exactly
@@ -97,8 +99,10 @@ Requires `qiskit 2.2.3`, `qiskit-aer 0.17.2`, `scipy`, `numpy`, `matplotlib` and
 | $\|\beta\|$ recovered from $P_S$ | 2.3853700 (true 2.3853700) | 1.5394804 (true 1.5394804) |
 | Recovered $\beta$ | $(1.2,\ 0.5,\ 2.0)$ | $(-0.4,\ 1.1,\ -1.0)$ |
 
-$$B_{\mathrm{quantum}} = \begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatrix},
-\qquad \|B_{\mathrm{quantum}} - B_{\mathrm{true}}\|_F = 2.9\times10^{-14}$$
+```math
+B_{\mathrm{quantum}} = \begin{bmatrix} 1.2&-0.4 \\ 0.5&1.1 \\ 2.0&-1.0 \end{bmatrix},
+\qquad \|B_{\mathrm{quantum}} - B_{\mathrm{true}}\|_F = 2.9\times10^{-14}
+```
 
 Circuit: 5 qubits, depth 77, 84 operations. Full run 2.8 s.
 
@@ -120,7 +124,9 @@ Quantum evolution is unitary; $Z$ is $5\times3$ and not even square. The fix is 
 **dilation**: embed $A = Z/\alpha$ in the corner of a larger unitary, padding with
 whatever makes the columns orthonormal. For $\|A\|_2 \le 1$ the Halmos construction
 
-$$U_A = \begin{bmatrix} A & \sqrt{I_5 - AA^T} \\ \sqrt{I_3 - A^TA} & -A^T \end{bmatrix}$$
+```math
+U_A = \begin{bmatrix} A & \sqrt{I_5 - AA^T} \\ \sqrt{I_3 - A^TA} & -A^T \end{bmatrix}
+```
 
 does it, and unitarity follows from the intertwining identity
 $A^T f(AA^T) = f(A^TA)A^T$: the two column blocks have Gram matrices $I_3$ and $I_5$, and
