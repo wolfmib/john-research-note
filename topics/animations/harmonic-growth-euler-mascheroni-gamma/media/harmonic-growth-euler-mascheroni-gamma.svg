@@ -2,7 +2,7 @@
   
   <style>
     /* ------------------------------------------------------------------
-       COLOR PALETTE & BASE STYLES
+       COLOR PALETTE &amp; BASE STYLES
        ------------------------------------------------------------------ */
     .bg { fill: #0b0c10; }
     .text-main { fill: #f0f4f8; }
@@ -17,7 +17,7 @@
     .ln-text { fill: #facc15; }
     .gamma-text { fill: #f43f5e; }
 
-    /* Axes & Geometry */
+    /* Axes &amp; Geometry */
     .axis { stroke: #475569; stroke-width: 1.5; stroke-linecap: round; }
     .grid-line { stroke: #1e293b; stroke-width: 1; stroke-dasharray: 4 4; }
     
@@ -38,7 +38,7 @@
       100% { opacity: 0; }
     }
 
-    /* Scene 2 & 3: Plot Construction (4s -> 18s) */
+    /* Scene 2 &amp; 3: Plot Construction (4s -> 18s) */
     .staircase-path {
       stroke: #38bdf8;
       stroke-width: 2.5;
@@ -77,7 +77,7 @@
       100% { stroke-dashoffset: 1200; }
     }
 
-    /* Scene 4 & 5: Gap Highlight & Constant Reveal (9s -> 18s) */
+    /* Scene 4 &amp; 5: Gap Highlight &amp; Constant Reveal (9s -> 18s) */
     .gap-region {
       fill: rgba(244, 63, 94, 0.15);
       stroke: none; /* Removed to avoid the red dotted staircase artifact */
@@ -143,17 +143,17 @@
   <!-- Background -->
   <rect width="1000" height="640" class="bg" />
 
-  <!-- ------------------------------------------------------------------
+  <!-- ==================================================================
        TITLE & HEADER
-       ------------------------------------------------------------------ -->
+       ================================================================== -->
   <g transform="translate(50, 45)">
     <text class="text-main" font-size="22" font-weight="bold" letter-spacing="0.5">Harmonic Growth &amp; the Euler–Mascheroni Constant</text>
     <text y="22" class="text-sub" font-size="13">Exploring the asymptotic behavior of H<tspan font-size="10" dy="2">N</tspan><tspan font-size="13" dy="-2"> as N approaches infinity</tspan></text>
   </g>
 
-  <!-- ------------------------------------------------------------------
+  <!-- ==================================================================
        SCENE 1: THREE MATHEMATICAL OBJECTS (Top Card Bar)
-       ------------------------------------------------------------------ -->
+       ================================================================== -->
   <g transform="translate(50, 100)">
     
     <!-- Object 1: H_N -->
@@ -184,12 +184,12 @@
   </g>
   </g>
 
-  <!-- ------------------------------------------------------------------
+  <!-- ==================================================================
        GRAPH CANVAS
        Origin at (100, 560), Width = 840, Height = 360
        Y Scale: Y(v) = 560 - (v * 100)
        gamma ≈ 0.5772 => 57.72 pixels
-       ------------------------------------------------------------------ -->
+       ================================================================== -->
   <g transform="translate(0, 0)">
     
     <!-- Grid Lines (Y = 1.0, 2.0, 3.0) -->
@@ -224,9 +224,9 @@
       <text x="880" y="580">10</text>
     </g>
 
-    <!-- ------------------------------------------------------------------
+    <!-- ==================================================================
          DATA PLOTS
-         ------------------------------------------------------------------ -->
+         ================================================================== -->
 
     <!-- GAP SHADING REGION (H_N - ln N Difference) -->
     <!-- Illustrates the total difference H_N - ln N that approaches gamma. 
@@ -265,9 +265,9 @@
 
   </g>
 
-  <!-- ------------------------------------------------------------------
+  <!-- ==================================================================
        SCENE 4 & 5: EULER-MASCHERONI CONSTANT GAP CALLOUT
-       ------------------------------------------------------------------ -->
+       ================================================================== -->
   <g transform="translate(725, 170)">
     <g class="gamma-annotation">
     
@@ -278,9 +278,9 @@
   </g>
   </g>
 
-  <!-- ------------------------------------------------------------------
+  <!-- ==================================================================
        SCENE 6: FINAL ASYMPTOTIC SUMMARY BOX (Center Right Overlay)
-       ------------------------------------------------------------------ -->
+       ================================================================== -->
   <g transform="translate(280, 175)">
     <g class="final-box">
     <rect x="0" y="0" width="440" height="70" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.5))"/>
