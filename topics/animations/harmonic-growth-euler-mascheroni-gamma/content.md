@@ -35,7 +35,7 @@ The harmonic series diverges, but only as slowly as $\ln N$; the offset between 
 
 ### 繁體中文
 
-調和級數發散，但其增長速度僅與 $\ln N$ 相同；兩者之間的差距收斂到固定常數 $\gamma \approx 0.5772$。因此，每當出現倒數之和時，$H_N \approx \ln N + \gamma$ 就是標準的估計式。
+調和級數發散，但其增長速度僅與 $\ln N$ 相同；兩者之間的差距收斂到固定常數 $\gamma \approx 0.5772$ 。因此，每當出現倒數之和時， $H_N \approx \ln N + \gamma$ 就是標準的估計式。
 
 ### Français
 
