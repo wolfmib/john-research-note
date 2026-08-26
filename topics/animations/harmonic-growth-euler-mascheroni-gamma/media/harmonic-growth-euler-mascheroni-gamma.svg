@@ -1,0 +1,302 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" style="background-color: #0b0c10; font-family: 'STIX Two Math', 'Times New Roman', 'CMU Serif', Georgia, serif;">
+  
+  <style>
+    /* ------------------------------------------------------------------
+       COLOR PALETTE & BASE STYLES
+       ------------------------------------------------------------------ */
+    .bg { fill: #0b0c10; }
+    .text-main { fill: #f0f4f8; }
+    .text-sub { fill: #8a99ad; font-family: system-ui, -apple-system, sans-serif; }
+    
+    /* Mathematical Object Accent Colors */
+    .hn-color { fill: #38bdf8; stroke: #38bdf8; }
+    .ln-color { fill: #facc15; stroke: #facc15; }
+    .gamma-color { fill: #f43f5e; stroke: #f43f5e; }
+    
+    .hn-text { fill: #38bdf8; }
+    .ln-text { fill: #facc15; }
+    .gamma-text { fill: #f43f5e; }
+
+    /* Axes & Geometry */
+    .axis { stroke: #475569; stroke-width: 1.5; stroke-linecap: round; }
+    .grid-line { stroke: #1e293b; stroke-width: 1; stroke-dasharray: 4 4; }
+    
+    /* ------------------------------------------------------------------
+       ANIMATION TIMELINE (Total Cycle: 22s)
+       ------------------------------------------------------------------ */
+    
+    /* Scene 1: Formula Introductions (0s -> 4s) */
+    .scene1-item1 { animation: fadeInOut 22s infinite; animation-delay: 0.5s; opacity: 0; }
+    .scene1-item2 { animation: fadeInOut 22s infinite; animation-delay: 1.5s; opacity: 0; }
+    .scene1-item3 { animation: fadeInOut 22s infinite; animation-delay: 2.5s; opacity: 0; }
+    
+    @keyframes fadeInOut {
+      0% { opacity: 0; transform: translateY(6px); }
+      5% { opacity: 1; transform: translateY(0); }
+      85% { opacity: 1; }
+      92% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    /* Scene 2 & 3: Plot Construction (4s -> 18s) */
+    .staircase-path {
+      stroke: #38bdf8;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+      animation: drawCurve 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation-delay: 4.5s;
+    }
+
+    .ln-curve {
+      stroke: #facc15;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: drawCurve 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation-delay: 6s;
+    }
+
+    .gamma-curve {
+      stroke: #f43f5e;
+      stroke-width: 2.5;
+      fill: none;
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: drawCurve 22s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      animation-delay: 7.5s;
+    }
+
+    @keyframes drawCurve {
+      0% { stroke-dashoffset: 1200; }
+      25% { stroke-dashoffset: 0; }
+      85% { stroke-dashoffset: 0; }
+      95% { stroke-dashoffset: 1200; }
+      100% { stroke-dashoffset: 1200; }
+    }
+
+    /* Scene 4 & 5: Gap Highlight & Constant Reveal (9s -> 18s) */
+    .gap-region {
+      fill: rgba(244, 63, 94, 0.15);
+      stroke: none; /* Removed to avoid the red dotted staircase artifact */
+      opacity: 0;
+      animation: revealGap 22s ease-in-out infinite;
+      animation-delay: 9s;
+    }
+
+    @keyframes revealGap {
+      0%, 5% { opacity: 0; transform: scaleY(0.95); }
+      15%, 85% { opacity: 1; transform: scaleY(1); }
+      92%, 100% { opacity: 0; }
+    }
+
+    .gamma-annotation {
+      opacity: 0;
+      animation: revealGammaText 22s ease-in-out infinite;
+      animation-delay: 10.5s;
+    }
+
+    @keyframes revealGammaText {
+      0%, 5% { opacity: 0; transform: translateX(-10px); }
+      15%, 85% { opacity: 1; transform: translateX(0); }
+      92%, 100% { opacity: 0; }
+    }
+
+    /* Scene 6: Final Asymptotic Box (13s -> 20s) */
+    .final-box {
+      opacity: 0;
+      animation: revealFinalBox 22s ease-in-out infinite;
+      animation-delay: 13s;
+    }
+
+    @keyframes revealFinalBox {
+      0%, 5% { opacity: 0; transform: translateY(10px); }
+      15%, 85% { opacity: 1; transform: translateY(0); }
+      92%, 100% { opacity: 0; }
+    }
+  </style>
+
+  <defs>
+    <!-- Arrowhead markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569"/>
+    </marker>
+    
+    <!-- Shared ln(N) mathematical path definition -->
+    <path id="lnCurvePath" d="
+      M 100, 560 
+      C 130, 560 155, 510 178, 490.7 
+      C 205, 468 230, 458 256, 450.1 
+      C 282, 442 308, 428 334, 421.4 
+      C 360, 414 386, 404 412, 399.1 
+      C 438, 394 464, 385 490, 380.8 
+      C 516, 376 542, 369 568, 365.4 
+      C 594, 361 620, 355 646, 352.1 
+      C 672, 348 698, 343 724, 340.3 
+      C 750, 336 776, 332 802, 329.7 
+      C 828, 326 854, 322 880, 320.0
+    " />
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="640" class="bg" />
+
+  <!-- ------------------------------------------------------------------
+       TITLE & HEADER
+       ------------------------------------------------------------------ -->
+  <g transform="translate(50, 45)">
+    <text class="text-main" font-size="22" font-weight="bold" letter-spacing="0.5">Harmonic Growth &amp; the Euler–Mascheroni Constant</text>
+    <text y="22" class="text-sub" font-size="13">Exploring the asymptotic behavior of H<tspan font-size="10" dy="2">N</tspan><tspan font-size="13" dy="-2"> as N approaches infinity</tspan></text>
+  </g>
+
+  <!-- ------------------------------------------------------------------
+       SCENE 1: THREE MATHEMATICAL OBJECTS (Top Card Bar)
+       ------------------------------------------------------------------ -->
+  <g transform="translate(50, 100)">
+    
+    <!-- Object 1: H_N -->
+    <g transform="translate(0, 0)">
+    <g class="scene1-item1">
+      <rect x="0" y="0" width="270" height="64" rx="8" fill="#131924" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" class="hn-text" font-size="18" font-weight="bold">H<tspan font-size="12" dy="3">N</tspan><tspan font-size="18" dy="-3"> = 1 + ½ + ⅓ + … + 1/N</tspan></text>
+      <text x="16" y="48" class="text-sub" font-size="12">Harmonic number</text>
+    </g>
+  </g>
+
+    <!-- Object 2: ln(N) -->
+    <g transform="translate(315, 0)">
+    <g class="scene1-item2">
+      <rect x="0" y="0" width="270" height="64" rx="8" fill="#131924" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" class="ln-text" font-size="18" font-weight="bold">ln(N)</text>
+      <text x="16" y="48" class="text-sub" font-size="12">Natural logarithm</text>
+    </g>
+  </g>
+
+    <!-- Object 3: gamma -->
+    <g transform="translate(630, 0)">
+    <g class="scene1-item3">
+      <rect x="0" y="0" width="270" height="64" rx="8" fill="#131924" stroke="#1e293b" stroke-width="1.5"/>
+      <text x="16" y="28" class="gamma-text" font-size="18" font-weight="bold">γ = lim<tspan font-size="11" dy="4">N→∞</tspan><tspan font-size="18" dy="-4"> (H<tspan font-size="12" dy="3">N</tspan><tspan font-size="18" dy="-3"> − ln N)</tspan></tspan></text>
+      <text x="16" y="48" class="text-sub" font-size="12">Euler–Mascheroni constant</text>
+    </g>
+  </g>
+  </g>
+
+  <!-- ------------------------------------------------------------------
+       GRAPH CANVAS
+       Origin at (100, 560), Width = 840, Height = 360
+       Y Scale: Y(v) = 560 - (v * 100)
+       gamma ≈ 0.5772 => 57.72 pixels
+       ------------------------------------------------------------------ -->
+  <g transform="translate(0, 0)">
+    
+    <!-- Grid Lines (Y = 1.0, 2.0, 3.0) -->
+    <line x1="100" y1="460" x2="900" y2="460" class="grid-line" />
+    <line x1="100" y1="360" x2="900" y2="360" class="grid-line" />
+    <line x1="100" y1="260" x2="900" y2="260" class="grid-line" />
+    
+    <!-- Grid Labels Y-axis -->
+    <text x="85" y="564" class="text-sub" font-size="12" text-anchor="end">0</text>
+    <text x="85" y="464" class="text-sub" font-size="12" text-anchor="end">1</text>
+    <text x="85" y="364" class="text-sub" font-size="12" text-anchor="end">2</text>
+    <text x="85" y="264" class="text-sub" font-size="12" text-anchor="end">3</text>
+
+    <!-- Main Axes -->
+    <line x1="100" y1="560" x2="920" y2="560" class="axis" marker-end="url(#arrow)" />
+    <line x1="100" y1="560" x2="100" y2="210" class="axis" marker-end="url(#arrow)" />
+
+    <text x="930" y="564" class="text-sub" font-size="14" font-style="italic">N</text>
+    <text x="100" y="195" class="text-sub" font-size="14" text-anchor="middle" font-style="italic">Value</text>
+
+    <!-- X Axis Ticks & Labels (N = 1 to 10) -->
+    <g class="text-sub" font-size="12" text-anchor="middle">
+      <text x="178" y="580">1</text>
+      <text x="256" y="580">2</text>
+      <text x="334" y="580">3</text>
+      <text x="412" y="580">4</text>
+      <text x="490" y="580">5</text>
+      <text x="568" y="580">6</text>
+      <text x="646" y="580">7</text>
+      <text x="724" y="580">8</text>
+      <text x="802" y="580">9</text>
+      <text x="880" y="580">10</text>
+    </g>
+
+    <!-- ------------------------------------------------------------------
+         DATA PLOTS
+         ------------------------------------------------------------------ -->
+
+    <!-- GAP SHADING REGION (H_N - ln N Difference) -->
+    <!-- Illustrates the total difference H_N - ln N that approaches gamma. 
+         No stroke border to keep it strictly a background fill. -->
+    <path class="gap-region" d="
+      M 178,460 L 256,460 L 256,410 L 334,410 L 334,376.7 L 412,376.7 L 412,351.7 L 490,351.7 L 490,331.7 L 568,331.7 L 568,315 L 646,315 L 646,300.7 L 724,300.7 L 724,288.2 L 802,288.2 L 802,277.1 L 880,277.1 
+      L 880,320.0 C 854,322 828,326 802,329.7 C 776,332 750,336 724,340.3 C 698,343 672,348 646,352.1 C 620,355 594,361 568,365.4 C 542,369 516,376 490,380.8 C 464,385 438,394 412,399.1 C 386,404 360,414 334,421.4 C 308,428 282,442 256,450.1 C 230,458 205,468 178,490.7 Z
+    "/>
+
+    <!-- MATHEMATICAL CURVE 1: STAIRCASE PATH (H_N) -->
+    <path class="staircase-path" d="
+      M 100,460 
+      H 178 V 410 
+      H 256 V 376.7 
+      H 334 V 351.7 
+      H 412 V 331.7 
+      H 490 V 315 
+      H 568 V 300.7 
+      H 646 V 288.2 
+      H 724 V 277.1 
+      H 802 V 267.1 
+      H 880
+    "/>
+
+    <!-- MATHEMATICAL CURVE 2: SMOOTH YELLOW (ln N) -->
+    <use href="#lnCurvePath" class="ln-curve" />
+
+    <!-- MATHEMATICAL CURVE 3: SMOOTH RED (ln N + gamma) -->
+    <!-- The exact curve of ln N shifted up by gamma (57.72px) -->
+    <use href="#lnCurvePath" transform="translate(0, -57.72)" class="gamma-curve" />
+
+    <!-- Curve Annotations -->
+    <text x="800" y="258" class="hn-text" font-size="15" font-weight="bold">H<tspan font-size="10" dy="2">N</tspan></text>
+    <text x="800" y="293" class="gamma-text" font-size="15" font-weight="bold">ln(N) + γ</text>
+    <text x="800" y="348" class="ln-text" font-size="15" font-weight="bold">ln(N)</text>
+
+  </g>
+
+  <!-- ------------------------------------------------------------------
+       SCENE 4 & 5: EULER-MASCHERONI CONSTANT GAP CALLOUT
+       ------------------------------------------------------------------ -->
+  <g transform="translate(725, 170)">
+    <g class="gamma-annotation">
+    
+    <!-- Floating Box -->
+    <rect x="0" y="0" width="220" height="52" rx="6" fill="#180e15" stroke="#f43f5e" stroke-width="1.5"/>
+    <text x="14" y="22" class="gamma-text" font-size="14" font-weight="bold">Gap: H<tspan font-size="10" dy="2">N</tspan><tspan font-size="14" dy="-2"> − ln N  →  γ</tspan></text>
+    <text x="14" y="40" class="text-main" font-size="14" font-weight="bold">γ ≈ 0.57721...</text>
+  </g>
+  </g>
+
+  <!-- ------------------------------------------------------------------
+       SCENE 6: FINAL ASYMPTOTIC SUMMARY BOX (Center Right Overlay)
+       ------------------------------------------------------------------ -->
+  <g transform="translate(280, 175)">
+    <g class="final-box">
+    <rect x="0" y="0" width="440" height="70" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="2" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.5))"/>
+    
+    <text x="220" y="32" text-anchor="middle" font-size="22" font-weight="bold">
+      <tspan class="hn-text">H<tspan font-size="14" dy="3">N</tspan></tspan>
+      <tspan class="text-main" dy="-3"> ≈ </tspan>
+      <tspan class="ln-text">ln N</tspan>
+      <tspan class="text-main"> + </tspan>
+      <tspan class="gamma-text">γ</tspan>
+    </text>
+    
+    <text x="220" y="54" text-anchor="middle" class="text-sub" font-size="12">
+      The harmonic numbers differ from ln N by an almost constant offset.
+    </text>
+  </g>
+  </g>
+
+</svg>
