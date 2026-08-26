@@ -67,6 +67,15 @@ No public topic added yet.
 | [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md) | How does a verification rule become a phase oracle that amplitude amplification can amplify? | Concept note |
 | [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md) | How does a rectangular least-squares fit become a polynomial applied to singular values, read out by postselection? | Concept note |
 
+## Animations
+
+Animated SVG concept figures (GitHub plays the SMIL animation inline; a YouTube
+render exists for each).
+
+| Topic | Question | Status |
+|---|---|---|
+| [Grover's iteration: the 2θ rotation](topics/animations/grover-iteration-2theta-rotation/content.md) | Why do the oracle reflection and the diffusion reflection compose into one rotation by 2θ toward the marked state? | Concept note |
+
 ## Field Notes
 
 Short notes on one idea at a time, worked through in several languages with the vocabulary

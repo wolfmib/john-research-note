@@ -34,6 +34,8 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
   - [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md)
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
+- Animations:
+  - [Grover's iteration: the 2θ rotation](topics/animations/grover-iteration-2theta-rotation/content.md)
 
 ## Field Notes
 
