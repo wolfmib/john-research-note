@@ -69,8 +69,7 @@ No public topic added yet.
 
 ## Animations
 
-Animated SVG concept figures (GitHub plays the SMIL animation inline; a YouTube
-render exists for each).
+Animated SVG concept figures (GitHub plays the SMIL animation inline).
 
 | Topic | Question | Status |
 |---|---|---|
