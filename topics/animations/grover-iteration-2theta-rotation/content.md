@@ -9,7 +9,7 @@ author: Wei-Che Hung
 
 # Grover's iteration: the 2θ rotation
 
-![Animated plane spanned by the bad and good axes: the state vector starts at angle theta, the oracle reflects it across the bad axis to minus theta, the diffusion step reflects it across the dashed initial line to three theta, a net rotation of two theta](media/grover-iteration-2theta-rotation.svg)
+![Grover's iteration: the 2θ rotation](media/grover-iteration-2theta-rotation.svg)
 
 The figure above is an animated SVG; GitHub plays it inline (SMIL timeline, loops
 automatically).
