@@ -1,43 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'CMU Serif',Georgia,serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif">
 <title>Derivation of the Harmonic Sum Identity</title>
 <style>
-.bg{fill:#0b0c10}.tm{fill:#f0f4f8}.ts{fill:#8a99ad;font-family:system-ui,sans-serif}.cy{fill:#38bdf8}.gr{fill:#4cf26d}line.gr{stroke:#4cf26d}.ye{fill:#facc15;stroke:none}.rd{fill:#ff4d4d}
+.bg{fill:#0b0c10}.tm{fill:#f0f4f8}.ts{fill:#8a99ad;font-family:system-ui,sans-serif}.cy{fill:#38bdf8}.gr{fill:#4cf26d}line.gr{stroke:#4cf26d}.ye{fill:#facc15}.rd{fill:#ff4d4d}
 .axis{stroke:#475569;stroke-width:1.5}.callout{stroke-width:1.5;fill:none}line.ye{stroke:#facc15}
-/* timeline: 26 s cycle, three pages (0-9 s, 9-17 s, 17-26 s); opacity-only keyframes */
-.page1{opacity:0;animation:k_page1 26s linear infinite}@keyframes k_page1{1.538%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-title{opacity:0;animation:k_p1_title 26s linear infinite}@keyframes k_p1_title{0%{opacity:0}1.150%{opacity:0}2.692%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-main{opacity:0;animation:k_p1_main 26s linear infinite}@keyframes k_p1_main{0%{opacity:0}4.612%{opacity:0}6.154%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-intro{opacity:0;animation:k_p1_intro 26s linear infinite}@keyframes k_p1_intro{0%{opacity:0}8.458%{opacity:0}10.000%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-r0{opacity:0;animation:k_p1_r0 26s linear infinite}@keyframes k_p1_r0{0%{opacity:0}11.535%{opacity:0}13.077%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-r1{opacity:0;animation:k_p1_r1 26s linear infinite}@keyframes k_p1_r1{0%{opacity:0}12.688%{opacity:0}14.231%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-r2{opacity:0;animation:k_p1_r2 26s linear infinite}@keyframes k_p1_r2{0%{opacity:0}13.842%{opacity:0}15.385%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-r3{opacity:0;animation:k_p1_r3 26s linear infinite}@keyframes k_p1_r3{0%{opacity:0}14.996%{opacity:0}16.538%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-r4{opacity:0;animation:k_p1_r4 26s linear infinite}@keyframes k_p1_r4{0%{opacity:0}16.150%{opacity:0}17.692%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-sep{opacity:0;animation:k_p1_sep 26s linear infinite}@keyframes k_p1_sep{0%{opacity:0}16.919%{opacity:0}18.462%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-sum{opacity:0;animation:k_p1_sum 26s linear infinite}@keyframes k_p1_sum{0%{opacity:0}16.919%{opacity:0}18.462%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-c0{opacity:0;animation:k_p1_c0 26s linear infinite}@keyframes k_p1_c0{0%{opacity:0}17.688%{opacity:0}19.231%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-c1{opacity:0;animation:k_p1_c1 26s linear infinite}@keyframes k_p1_c1{0%{opacity:0}20.381%{opacity:0}21.923%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-c2{opacity:0;animation:k_p1_c2 26s linear infinite}@keyframes k_p1_c2{0%{opacity:0}23.073%{opacity:0}24.615%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-c3{opacity:0;animation:k_p1_c3 26s linear infinite}@keyframes k_p1_c3{0%{opacity:0}25.765%{opacity:0}27.308%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-csum{opacity:0;animation:k_p1_csum 26s linear infinite}@keyframes k_p1_csum{0%{opacity:0}28.073%{opacity:0}29.615%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.p1-gen{opacity:0;animation:k_p1_gen 26s linear infinite}@keyframes k_p1_gen{0%{opacity:0}30.765%{opacity:0}32.308%{opacity:1}33.077%{opacity:1}34.615%{opacity:0}100%{opacity:0}}
-.page2{opacity:0;animation:k_page2 26s linear infinite}@keyframes k_page2{0%{opacity:0}34.612%{opacity:0}36.154%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.p2-title{opacity:0;animation:k_p2_title 26s linear infinite}@keyframes k_p2_title{0%{opacity:0}35.765%{opacity:0}37.308%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.p2-main{opacity:0;animation:k_p2_main 26s linear infinite}@keyframes k_p2_main{0%{opacity:0}38.458%{opacity:0}40.000%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.p2-s1l{opacity:0;animation:k_p2_s1l 26s linear infinite}@keyframes k_p2_s1l{0%{opacity:0}42.304%{opacity:0}43.846%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.p2-s2l{opacity:0;animation:k_p2_s2l 26s linear infinite}@keyframes k_p2_s2l{0%{opacity:0}46.150%{opacity:0}47.692%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.p2-s3l{opacity:0;animation:k_p2_s3l 26s linear infinite}@keyframes k_p2_s3l{0%{opacity:0}59.612%{opacity:0}61.154%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.p2-d0{opacity:0;animation:k_p2_d0 26s linear infinite}@keyframes k_p2_d0{0%{opacity:0}51.919%{opacity:0}53.462%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.p2-d1{opacity:0;animation:k_p2_d1 26s linear infinite}@keyframes k_p2_d1{0%{opacity:0}51.919%{opacity:0}53.462%{opacity:1}63.846%{opacity:1}65.385%{opacity:0}100%{opacity:0}}
-.page3{opacity:0;animation:k_page3 26s linear infinite}@keyframes k_page3{0%{opacity:0}65.381%{opacity:0}66.923%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-title{opacity:0;animation:k_p3_title 26s linear infinite}@keyframes k_p3_title{0%{opacity:0}66.535%{opacity:0}68.077%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-main{opacity:0;animation:k_p3_main 26s linear infinite}@keyframes k_p3_main{0%{opacity:0}69.227%{opacity:0}70.769%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-id{opacity:0;animation:k_p3_id 26s linear infinite}@keyframes k_p3_id{0%{opacity:0}73.073%{opacity:0}74.615%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-s1{opacity:0;animation:k_p3_s1 26s linear infinite}@keyframes k_p3_s1{0%{opacity:0}76.919%{opacity:0}78.462%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-s2{opacity:0;animation:k_p3_s2 26s linear infinite}@keyframes k_p3_s2{0%{opacity:0}80.765%{opacity:0}82.308%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-s3{opacity:0;animation:k_p3_s3 26s linear infinite}@keyframes k_p3_s3{0%{opacity:0}84.612%{opacity:0}86.154%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-s4{opacity:0;animation:k_p3_s4 26s linear infinite}@keyframes k_p3_s4{0%{opacity:0}88.458%{opacity:0}90.000%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
-.p3-qed{opacity:0;animation:k_p3_qed 26s linear infinite}@keyframes k_p3_qed{0%{opacity:0}92.304%{opacity:0}93.846%{opacity:1}96.923%{opacity:1}98.462%{opacity:0}100%{opacity:0}}
+/* timeline: 36 s cycle, pages 0-16 / 16-26 / 26-36 s; opacity-only keyframes */
+.page1{opacity:0;animation:k_page1 36s linear infinite}@keyframes k_page1{1.111%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-title{opacity:0;animation:k_p1_title 36s linear infinite}@keyframes k_p1_title{0%{opacity:0}0.831%{opacity:0}1.944%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-main{opacity:0;animation:k_shake 36s linear infinite, k_p1_main 36s linear infinite}@keyframes k_p1_main{0%{opacity:0}3.331%{opacity:0}4.444%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-goal{opacity:0;animation:k_p1_goal 36s linear infinite}@keyframes k_p1_goal{0%{opacity:0}9.997%{opacity:0}11.111%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-r0{opacity:0;animation:k_p1_r0 36s linear infinite}@keyframes k_p1_r0{0%{opacity:0}13.886%{opacity:0}15.000%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-r1{opacity:0;animation:k_p1_r1 36s linear infinite}@keyframes k_p1_r1{0%{opacity:0}15.275%{opacity:0}16.389%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-r2{opacity:0;animation:k_p1_r2 36s linear infinite}@keyframes k_p1_r2{0%{opacity:0}16.664%{opacity:0}17.778%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-r3{opacity:0;animation:k_p1_r3 36s linear infinite}@keyframes k_p1_r3{0%{opacity:0}18.053%{opacity:0}19.167%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-r4{opacity:0;animation:k_p1_r4 36s linear infinite}@keyframes k_p1_r4{0%{opacity:0}19.442%{opacity:0}20.556%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-sep{opacity:0;animation:k_p1_sep 36s linear infinite}@keyframes k_p1_sep{0%{opacity:0}20.553%{opacity:0}21.667%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-sum{opacity:0;animation:k_p1_sum 36s linear infinite}@keyframes k_p1_sum{0%{opacity:0}20.553%{opacity:0}21.667%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-c0{opacity:0;animation:k_p1_c0 36s linear infinite}@keyframes k_p1_c0{0%{opacity:0}22.219%{opacity:0}23.333%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-c1{opacity:0;animation:k_p1_c1 36s linear infinite}@keyframes k_p1_c1{0%{opacity:0}24.719%{opacity:0}25.833%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-c2{opacity:0;animation:k_p1_c2 36s linear infinite}@keyframes k_p1_c2{0%{opacity:0}27.219%{opacity:0}28.333%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-c3{opacity:0;animation:k_p1_c3 36s linear infinite}@keyframes k_p1_c3{0%{opacity:0}29.719%{opacity:0}30.833%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-csum{opacity:0;animation:k_p1_csum 36s linear infinite}@keyframes k_p1_csum{0%{opacity:0}31.664%{opacity:0}32.778%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-gen{opacity:0;animation:k_p1_gen 36s linear infinite}@keyframes k_p1_gen{0%{opacity:0}34.442%{opacity:0}35.556%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.p1-box{opacity:0;animation:k_p1_box 36s linear infinite}@keyframes k_p1_box{0%{opacity:0}36.664%{opacity:0}37.778%{opacity:1}43.333%{opacity:1}44.444%{opacity:0}100%{opacity:0}}
+.page2{opacity:0;animation:k_page2 36s linear infinite}@keyframes k_page2{0%{opacity:0}44.442%{opacity:0}45.556%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-title{opacity:0;animation:k_p2_title 36s linear infinite}@keyframes k_p2_title{0%{opacity:0}45.275%{opacity:0}46.389%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-main{opacity:0;animation:k_p2_main 36s linear infinite}@keyframes k_p2_main{0%{opacity:0}47.219%{opacity:0}48.333%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-s1l{opacity:0;animation:k_p2_s1l 36s linear infinite}@keyframes k_p2_s1l{0%{opacity:0}50.553%{opacity:0}51.667%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-s2l{opacity:0;animation:k_p2_s2l 36s linear infinite}@keyframes k_p2_s2l{0%{opacity:0}54.442%{opacity:0}55.556%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-s3l{opacity:0;animation:k_p2_s3l 36s linear infinite}@keyframes k_p2_s3l{0%{opacity:0}63.331%{opacity:0}64.444%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-d0{opacity:0;animation:k_p2_d0 36s linear infinite}@keyframes k_p2_d0{0%{opacity:0}58.331%{opacity:0}59.444%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-d1{opacity:0;animation:k_p2_d1 36s linear infinite}@keyframes k_p2_d1{0%{opacity:0}58.331%{opacity:0}59.444%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.p2-box{opacity:0;animation:k_p2_box 36s linear infinite}@keyframes k_p2_box{0%{opacity:0}66.108%{opacity:0}67.222%{opacity:1}71.111%{opacity:1}72.222%{opacity:0}100%{opacity:0}}
+.page3{opacity:0;animation:k_page3 36s linear infinite}@keyframes k_page3{0%{opacity:0}72.219%{opacity:0}73.333%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-title{opacity:0;animation:k_p3_title 36s linear infinite}@keyframes k_p3_title{0%{opacity:0}73.053%{opacity:0}74.167%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-main{opacity:0;animation:k_p3_main 36s linear infinite}@keyframes k_p3_main{0%{opacity:0}74.997%{opacity:0}76.111%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-id{opacity:0;animation:k_p3_id 36s linear infinite}@keyframes k_p3_id{0%{opacity:0}77.775%{opacity:0}78.889%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-s1{opacity:0;animation:k_p3_s1 36s linear infinite}@keyframes k_p3_s1{0%{opacity:0}81.108%{opacity:0}82.222%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-s2{opacity:0;animation:k_p3_s2 36s linear infinite}@keyframes k_p3_s2{0%{opacity:0}84.442%{opacity:0}85.556%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-s3{opacity:0;animation:k_p3_s3 36s linear infinite}@keyframes k_p3_s3{0%{opacity:0}87.775%{opacity:0}88.889%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-s4{opacity:0;animation:k_p3_s4 36s linear infinite}@keyframes k_p3_s4{0%{opacity:0}90.553%{opacity:0}91.667%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-qed{opacity:0;animation:k_p3_qed 36s linear infinite}@keyframes k_p3_qed{0%{opacity:0}92.775%{opacity:0}93.889%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+.p3-box{opacity:0;animation:k_p3_box 36s linear infinite}@keyframes k_p3_box{0%{opacity:0}93.331%{opacity:0}94.444%{opacity:1}97.778%{opacity:1}98.889%{opacity:0}100%{opacity:0}}
+@keyframes k_shake{0%,6.111%{transform:translateX(0)}6.389%{transform:translateX(-6px)}6.667%{transform:translateX(6px)}6.944%{transform:translateX(-5px)}7.222%{transform:translateX(5px)}7.500%{transform:translateX(-3px)}7.778%{transform:translateX(3px)}8.056%,100%{transform:translateX(0)}}
+.p1-box.draw{animation:k_p1_box 36s linear infinite, k_p1_box_draw 36s linear infinite}@keyframes k_p1_box_draw{0%,36.667%{stroke-dashoffset:1032}39.167%,100%{stroke-dashoffset:0}}
+.p2-box.draw{animation:k_p2_box 36s linear infinite, k_p2_box_draw 36s linear infinite}@keyframes k_p2_box_draw{0%,66.111%{stroke-dashoffset:752}68.611%,100%{stroke-dashoffset:0}}
+.p3-box.draw{animation:k_p3_box 36s linear infinite, k_p3_box_draw 36s linear infinite}@keyframes k_p3_box_draw{0%,93.333%{stroke-dashoffset:780}95.833%,100%{stroke-dashoffset:0}}
 </style>
 <defs>
 <marker id="arrow-gr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#4cf26d"/></marker>
@@ -46,49 +53,52 @@
 <rect width="1000" height="640" class="bg"/>
 <g class="page1">
 <text class="tm p1-title" x="500" y="60" font-size="26" text-anchor="middle" font-weight="bold">Derivation of the Harmonic Sum Identity</text>
-<text class="tm p1-main" x="500" y="110" font-size="26" text-anchor="middle" font-weight="bold"><tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N</tspan><tspan font-size="11" baseline-shift="sub" dx="-6">r=1</tspan> H<tspan font-size="12" baseline-shift="sub">r−1</tspan> = N(H<tspan font-size="12" baseline-shift="sub">N</tspan> − 1)</text>
-<text class="ts p1-intro" x="500" y="145" font-size="16" text-anchor="middle">Take N = 5: write out H₀ … H₄ and count how often each fraction appears</text>
-<text class="tm p1-r0" x="90" y="205" font-size="22" >H₀ = 0</text>
-<text class="tm p1-r1" x="90" y="247" font-size="22" >H₁ = 1</text>
-<text class="tm p1-r2" x="90" y="289" font-size="22" >H₂ = 1 + ½</text>
-<text class="tm p1-r3" x="90" y="331" font-size="22" >H₃ = 1 + ½ + ⅓</text>
-<text class="tm p1-r4" x="90" y="373" font-size="22" >H₄ = 1 + ½ + ⅓ + ¼</text>
+<text class="tm p1-main shake" x="500" y="112" font-size="28" text-anchor="middle"><tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan></tspan><tspan font-size="13" baseline-shift="sub" dx="-7"><tspan font-style="italic">r</tspan>=1</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">r</tspan>−1</tspan> = <tspan font-style="italic">N</tspan>(<tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> − 1)</text>
+<text class="ts p1-goal" x="500" y="148" font-size="16" text-anchor="middle">Goal: prove this identity. Take <tspan font-style="italic">N</tspan> = 5, write out <tspan font-style="italic">H</tspan><tspan font-size="10" baseline-shift="sub">0</tspan> … <tspan font-style="italic">H</tspan><tspan font-size="10" baseline-shift="sub">4</tspan> and count how often each fraction appears.</text>
+<text class="tm p1-r0" x="90" y="205" font-size="22" ><tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub">0</tspan> = 0</text>
+<text class="tm p1-r1" x="90" y="247" font-size="22" ><tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub">1</tspan> = 1</text>
+<text class="tm p1-r2" x="90" y="289" font-size="22" ><tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub">2</tspan> = 1 + ½</text>
+<text class="tm p1-r3" x="90" y="331" font-size="22" ><tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub">3</tspan> = 1 + ½ + ⅓</text>
+<text class="tm p1-r4" x="90" y="373" font-size="22" ><tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub">4</tspan> = 1 + ½ + ⅓ + ¼</text>
 <line class="p1-sep axis" x1="80" y1="385" x2="360" y2="385"/>
-<text class="tm p1-sum" x="90" y="420" font-size="22" ><tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">5</tspan><tspan font-size="11" baseline-shift="sub" dx="-6">r=1</tspan> H<tspan font-size="12" baseline-shift="sub">r−1</tspan></text>
+<text class="tm p1-sum" x="90" y="420" font-size="22" ><tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super">5</tspan><tspan font-size="13" baseline-shift="sub" dx="-7"><tspan font-style="italic">r</tspan>=1</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">r</tspan>−1</tspan></text>
 <text class="ts p1-c0" x="470" y="247" font-size="17" >'1' appears 4 times</text>
-<text class="cy p1-c0" x="720" y="247" font-size="20" font-weight="bold">→  4 · 1</text>
+<text class="cy p1-c0" x="720" y="247" font-size="20" >→  4 · 1</text>
 <text class="ts p1-c1" x="470" y="289" font-size="17" >'½' appears 3 times</text>
-<text class="cy p1-c1" x="720" y="289" font-size="20" font-weight="bold">→  3 · ½</text>
+<text class="cy p1-c1" x="720" y="289" font-size="20" >→  3 · ½</text>
 <text class="ts p1-c2" x="470" y="331" font-size="17" >'⅓' appears 2 times</text>
-<text class="cy p1-c2" x="720" y="331" font-size="20" font-weight="bold">→  2 · ⅓</text>
+<text class="cy p1-c2" x="720" y="331" font-size="20" >→  2 · ⅓</text>
 <text class="ts p1-c3" x="470" y="373" font-size="17" >'¼' appears 1 time</text>
-<text class="cy p1-c3" x="720" y="373" font-size="20" font-weight="bold">→  1 · ¼</text>
-<text class="cy p1-csum" x="720" y="420" font-size="22" font-weight="bold">= <tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">4</tspan><tspan font-size="11" baseline-shift="sub" dx="-6">k=1</tspan> (5 − k) · 1/k</text>
-<text class="tm p1-gen" x="500" y="560" font-size="24" text-anchor="middle" font-weight="bold">In general:  <tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N</tspan><tspan font-size="11" baseline-shift="sub" dx="-6">r=1</tspan> H<tspan font-size="12" baseline-shift="sub">r−1</tspan> = <tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N−1</tspan><tspan font-size="11" baseline-shift="sub" dx="-19">k=1</tspan> (N − k) · 1/k</text>
+<text class="cy p1-c3" x="720" y="373" font-size="20" >→  1 · ¼</text>
+<text class="cy p1-csum" x="720" y="420" font-size="22" >= <tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super">4</tspan><tspan font-size="13" baseline-shift="sub" dx="-7"><tspan font-style="italic">k</tspan>=1</tspan> (5 − <tspan font-style="italic">k</tspan>) · 1/<tspan font-style="italic">k</tspan></text>
+<text class="tm p1-gen" x="500" y="560" font-size="24" text-anchor="middle">In general:  <tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan></tspan><tspan font-size="13" baseline-shift="sub" dx="-7"><tspan font-style="italic">r</tspan>=1</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">r</tspan>−1</tspan> = <tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan>−1</tspan><tspan font-size="13" baseline-shift="sub" dx="-22"><tspan font-style="italic">k</tspan>=1</tspan> (<tspan font-style="italic">N</tspan> − <tspan font-style="italic">k</tspan>) · 1/<tspan font-style="italic">k</tspan></text>
+<rect class="p1-box draw" x="270" y="522" width="460" height="56" rx="8" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="1032" stroke-dashoffset="1032"/>
 </g>
 <g class="page2">
 <text class="tm p2-title" x="500" y="60" font-size="26" text-anchor="middle" font-weight="bold">Algebraic Simplification</text>
-<text class="tm p2-main" x="500" y="110" font-size="26" text-anchor="middle" font-weight="bold"><tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N</tspan><tspan font-size="11" baseline-shift="sub" dx="-6">r=1</tspan> H<tspan font-size="12" baseline-shift="sub">r−1</tspan> = <tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N−1</tspan><tspan font-size="11" baseline-shift="sub" dx="-19">k=1</tspan>  (N − k)/k</text>
-<text class="ts p2-s1l" x="70" y="200" font-size="16" >Step 1 — distribute 1/k:</text>
-<text class="tm p2-s1l" x="70" y="235" font-size="22" >= <tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N−1</tspan><tspan font-size="11" baseline-shift="sub" dx="-19">k=1</tspan> ( N/k − k/k )</text>
+<text class="tm p2-main" x="500" y="112" font-size="28" text-anchor="middle"><tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan></tspan><tspan font-size="13" baseline-shift="sub" dx="-7"><tspan font-style="italic">r</tspan>=1</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">r</tspan>−1</tspan> = <tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan>−1</tspan><tspan font-size="13" baseline-shift="sub" dx="-22"><tspan font-style="italic">k</tspan>=1</tspan>  (<tspan font-style="italic">N</tspan> − <tspan font-style="italic">k</tspan>)/<tspan font-style="italic">k</tspan></text>
+<text class="ts p2-s1l" x="70" y="200" font-size="16" >Step 1 — distribute 1/<tspan font-style="italic">k</tspan>:</text>
+<text class="tm p2-s1l" x="70" y="235" font-size="22" >= <tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan>−1</tspan><tspan font-size="13" baseline-shift="sub" dx="-22"><tspan font-style="italic">k</tspan>=1</tspan> ( <tspan font-style="italic">N</tspan>/<tspan font-style="italic">k</tspan> − <tspan font-style="italic">k</tspan>/<tspan font-style="italic">k</tspan> )</text>
 <text class="ts p2-s2l" x="70" y="300" font-size="16" >Step 2 — separate the sums:</text>
-<text class="tm p2-s2l" x="70" y="335" font-size="22" >= N <tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N−1</tspan><tspan font-size="11" baseline-shift="sub" dx="-19">k=1</tspan>  1/k  −  <tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N−1</tspan><tspan font-size="11" baseline-shift="sub" dx="-19">k=1</tspan>  1</text>
+<text class="tm p2-s2l" x="70" y="335" font-size="22" >= <tspan font-style="italic">N</tspan> <tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan>−1</tspan><tspan font-size="13" baseline-shift="sub" dx="-22"><tspan font-style="italic">k</tspan>=1</tspan>  1/<tspan font-style="italic">k</tspan>  −  <tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan>−1</tspan><tspan font-size="13" baseline-shift="sub" dx="-22"><tspan font-style="italic">k</tspan>=1</tspan>  1</text>
 <text class="ts p2-s3l" x="70" y="430" font-size="16" >Step 3 — substitute the definitions:</text>
-<text class="tm p2-s3l" x="70" y="465" font-size="22" >= N H<tspan font-size="12" baseline-shift="sub">N−1</tspan> − (N − 1)</text>
-<g class="p2-d0"><rect x="600" y="290" width="330" height="70" rx="8" fill="#131924" stroke="#4cf26d" stroke-width="1.5"/><line x1="560" y1="325" x2="596" y2="325" class="callout gr" marker-end="url(#arrow-gr)"/><text class="gr" x="620" y="324" font-size="20" font-weight="bold"><tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N−1</tspan><tspan font-size="11" baseline-shift="sub" dx="-19">k=1</tspan>  1/k = H<tspan font-size="12" baseline-shift="sub">N−1</tspan></text><text class="ts" x="620" y="348" font-size="14">definition of H<tspan font-size="10" baseline-shift="sub">N−1</tspan></text></g>
-<g class="p2-d1"><rect x="600" y="390" width="330" height="70" rx="8" fill="#131924" stroke="#4cf26d" stroke-width="1.5"/><line x1="560" y1="425" x2="596" y2="425" class="callout gr" marker-end="url(#arrow-gr)"/><text class="gr" x="620" y="424" font-size="20" font-weight="bold"><tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N−1</tspan><tspan font-size="11" baseline-shift="sub" dx="-19">k=1</tspan>  1 = N − 1</text><text class="ts" x="620" y="448" font-size="14">N − 1 ones</text></g>
+<text class="tm p2-s3l" x="70" y="465" font-size="22" >= <tspan font-style="italic">N</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan>−1</tspan> − (<tspan font-style="italic">N</tspan> − 1)</text>
+<g class="p2-d0"><rect x="600" y="290" width="330" height="70" rx="8" fill="#131924" stroke="#4cf26d" stroke-width="1.5"/><line x1="560" y1="325" x2="596" y2="325" class="callout gr" marker-end="url(#arrow-gr)"/><text class="gr" x="620" y="324" font-size="20"><tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan>−1</tspan><tspan font-size="13" baseline-shift="sub" dx="-22"><tspan font-style="italic">k</tspan>=1</tspan>  1/<tspan font-style="italic">k</tspan> = <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan>−1</tspan></text><text class="ts" x="620" y="348" font-size="14">definition of <tspan font-style="italic">H</tspan><tspan font-size="10" baseline-shift="sub"><tspan font-style="italic">N</tspan>−1</tspan></text></g>
+<g class="p2-d1"><rect x="600" y="390" width="330" height="70" rx="8" fill="#131924" stroke="#4cf26d" stroke-width="1.5"/><line x1="560" y1="425" x2="596" y2="425" class="callout gr" marker-end="url(#arrow-gr)"/><text class="gr" x="620" y="424" font-size="20"><tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan>−1</tspan><tspan font-size="13" baseline-shift="sub" dx="-22"><tspan font-style="italic">k</tspan>=1</tspan>  1 = <tspan font-style="italic">N</tspan> − 1</text><text class="ts" x="620" y="448" font-size="14"><tspan font-style="italic">N</tspan> − 1 ones</text></g>
+<rect class="p2-box draw" x="55" y="438" width="330" height="46" rx="8" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="752" stroke-dashoffset="752"/>
 </g>
 <g class="page3">
 <text class="tm p3-title" x="500" y="60" font-size="26" text-anchor="middle" font-weight="bold">Fundamental Identity &amp; Final Proof</text>
-<text class="tm p3-main" x="500" y="110" font-size="26" text-anchor="middle" font-weight="bold"><tspan font-size="26">Σ</tspan><tspan font-size="11" baseline-shift="super">N</tspan><tspan font-size="11" baseline-shift="sub" dx="-6">r=1</tspan> H<tspan font-size="12" baseline-shift="sub">r−1</tspan> = N H<tspan font-size="12" baseline-shift="sub">N−1</tspan> − (N − 1)</text>
-<g class="p3-id"><rect x="600" y="160" width="330" height="96" rx="8" fill="#131924" stroke="#facc15" stroke-width="1.5"/><text class="ye" x="620" y="188" font-size="17" font-weight="bold">Fundamental identity</text><text class="ye" x="620" y="216" font-size="18">H<tspan font-size="12" baseline-shift="sub">N</tspan> = H<tspan font-size="12" baseline-shift="sub">N−1</tspan> + 1/N</text><text class="ye" x="620" y="244" font-size="18">so  H<tspan font-size="12" baseline-shift="sub">N−1</tspan> = H<tspan font-size="12" baseline-shift="sub">N</tspan> − 1/N</text><line x1="560" y1="205" x2="596" y2="205" class="callout ye" marker-end="url(#arrow-ye)"/></g>
+<text class="tm p3-main" x="500" y="112" font-size="28" text-anchor="middle"><tspan font-size="26">Σ</tspan><tspan font-size="13" baseline-shift="super"><tspan font-style="italic">N</tspan></tspan><tspan font-size="13" baseline-shift="sub" dx="-7"><tspan font-style="italic">r</tspan>=1</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">r</tspan>−1</tspan> = <tspan font-style="italic">N</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan>−1</tspan> − (<tspan font-style="italic">N</tspan> − 1)</text>
+<g class="p3-id"><rect x="600" y="160" width="330" height="96" rx="8" fill="#131924" stroke="#facc15" stroke-width="1.5"/><text class="ye" x="620" y="188" font-size="17" font-weight="bold">Fundamental identity</text><text class="ye" x="620" y="216" font-size="18"><tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> = <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan>−1</tspan> + 1/<tspan font-style="italic">N</tspan></text><text class="ye" x="620" y="244" font-size="18">so  <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan>−1</tspan> = <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> − 1/<tspan font-style="italic">N</tspan></text><line x1="560" y1="205" x2="596" y2="205" class="callout ye" marker-end="url(#arrow-ye)"/></g>
 <text class="ts p3-s1" x="70" y="180" font-size="16" >Substitute the identity:</text>
-<text class="tm p3-s1" x="70" y="215" font-size="22" >= N ( H<tspan font-size="12" baseline-shift="sub">N</tspan> − 1/N ) − (N − 1)</text>
+<text class="tm p3-s1" x="70" y="215" font-size="22" >= <tspan font-style="italic">N</tspan> ( <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> − 1/<tspan font-style="italic">N</tspan> ) − (<tspan font-style="italic">N</tspan> − 1)</text>
 <text class="ts p3-s2" x="70" y="290" font-size="16" >Expand:</text>
-<text class="tm p3-s2" x="70" y="325" font-size="22" >= N H<tspan font-size="12" baseline-shift="sub">N</tspan> − 1 − (N − 1)</text>
+<text class="tm p3-s2" x="70" y="325" font-size="22" >= <tspan font-style="italic">N</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> − 1 − (<tspan font-style="italic">N</tspan> − 1)</text>
 <text class="ts p3-s3" x="70" y="400" font-size="16" >Simplify:</text>
-<text class="tm p3-s3" x="70" y="435" font-size="22" >= N H<tspan font-size="12" baseline-shift="sub">N</tspan> − 1 − N + 1</text>
-<text class="tm p3-s4" x="70" y="480" font-size="22" >= N H<tspan font-size="12" baseline-shift="sub">N</tspan> − N</text>
-<g class="p3-qed"><rect x="55" y="520" width="330" height="60" rx="8" fill="none" stroke="#ff4d4d" stroke-width="2.5"/><text class="rd" x="70" y="560" font-size="26" font-weight="bold">= N ( H<tspan font-size="13" baseline-shift="sub">N</tspan> − 1 )</text><text class="ye" x="320" y="560" font-size="20" font-weight="bold">QED</text></g>
+<text class="tm p3-s3" x="70" y="435" font-size="22" >= <tspan font-style="italic">N</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> − 1 − <tspan font-style="italic">N</tspan> + 1</text>
+<text class="tm p3-s4" x="70" y="480" font-size="22" >= <tspan font-style="italic">N</tspan> <tspan font-style="italic">H</tspan><tspan font-size="12" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> − <tspan font-style="italic">N</tspan></text>
+<g class="p3-qed"><text class="rd" x="70" y="560" font-size="26">= <tspan font-style="italic">N</tspan> ( <tspan font-style="italic">H</tspan><tspan font-size="13" baseline-shift="sub"><tspan font-style="italic">N</tspan></tspan> − 1 )</text><text class="ye" x="320" y="560" font-size="20" font-weight="bold">QED</text></g>
+<rect class="p3-box draw" x="55" y="520" width="330" height="60" rx="8" fill="none" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="780" stroke-dashoffset="780"/>
 </g>
 </svg>
