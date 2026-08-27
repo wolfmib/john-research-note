@@ -35,6 +35,7 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
 - Animations:
+  - [Derivation of the Harmonic Sum Identity](topics/animations/harmonic-sum-identity-derivation/content.md)
   - [Harmonic Growth and the Euler–Mascheroni Constant](topics/animations/harmonic-growth-euler-mascheroni-gamma/content.md)
   - [Grover's iteration: the 2θ rotation](topics/animations/grover-iteration-2theta-rotation/content.md)
 
