@@ -76,6 +76,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [Grover's iteration: the 2θ rotation](topics/animations/grover-iteration-2theta-rotation/content.md) | Why do the oracle reflection and the diffusion reflection compose into one rotation by 2θ toward the marked state? | Concept note |
 | [Harmonic Growth and the Euler–Mascheroni Constant](topics/animations/harmonic-growth-euler-mascheroni-gamma/content.md) | Why does H_N − ln N settle to γ ≈ 0.5772? | Concept note |
 | [Derivation of the Harmonic Sum Identity](topics/animations/harmonic-sum-identity-derivation/content.md) | Why does the running sum of harmonic numbers equal N(H_N − 1)? | Concept note |
+| [Removable Discontinuity — The Hole in a Rational Function](topics/animations/removable-discontinuity-hole-rational-function/content.md) | Why does cancelling a common factor leave a hole at (4, 2) instead of an asymptote? | Concept note |
 
 ## Field Notes
 

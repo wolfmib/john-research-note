@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif">
+<title>Removable Discontinuity — The Hole in a Rational Function</title>
+<style>
+.bg{fill:#0b0c10}.tm{fill:#f0f4f8}.ts{fill:#8a99ad;font-family:system-ui,sans-serif}.cy{fill:#38bdf8}.ye{fill:#facc15}.rd{fill:#ff4d4d}.as{fill:#64748b;font-family:system-ui,sans-serif}
+.axis{stroke:#475569;stroke-width:1.5}.grid{stroke:#1e293b;stroke-width:1;stroke-dasharray:4 4}.asy{stroke:#64748b;stroke-width:2;stroke-dasharray:8 6}.guide{stroke:#facc15;stroke-width:1;stroke-dasharray:4 4}
+/* timeline: 24 s, plays ONCE (forwards) and holds on the final graph; opacity-only keyframes */
+.title{opacity:0;animation:k_title 24s linear forwards}@keyframes k_title{0%{opacity:0}1.246%{opacity:0}2.917%{opacity:1}100%{opacity:1}}
+.orig{opacity:0;animation:k_orig 24s linear forwards}@keyframes k_orig{0%{opacity:0}4.996%{opacity:0}6.667%{opacity:1}100%{opacity:1}}
+.goal{opacity:0;animation:k_goal 24s linear forwards}@keyframes k_goal{0%{opacity:0}14.996%{opacity:0}16.667%{opacity:1}100%{opacity:1}}
+.strike-lbl{opacity:0;animation:k_strike_lbl 24s linear forwards}@keyframes k_strike_lbl{0%{opacity:0}23.329%{opacity:0}25.000%{opacity:1}100%{opacity:1}}
+.simp{opacity:0;animation:k_simp 24s linear forwards}@keyframes k_simp{0%{opacity:0}30.204%{opacity:0}31.875%{opacity:1}100%{opacity:1}}
+.asym{opacity:0;animation:k_asym 24s linear forwards}@keyframes k_asym{0%{opacity:0}39.579%{opacity:0}41.250%{opacity:1}100%{opacity:1}}
+.lim{opacity:0;animation:k_lim 24s linear forwards}@keyframes k_lim{0%{opacity:0}48.954%{opacity:0}50.625%{opacity:1}100%{opacity:1}}
+.lim2{opacity:0;animation:k_lim2 24s linear forwards}@keyframes k_lim2{0%{opacity:0}55.829%{opacity:0}57.500%{opacity:1}100%{opacity:1}}
+.res{opacity:0;animation:k_res 24s linear forwards}@keyframes k_res{0%{opacity:0}80.204%{opacity:0}81.875%{opacity:1}100%{opacity:1}}
+.res-box{opacity:0;animation:k_res_box 24s linear forwards}@keyframes k_res_box{0%{opacity:0}80.204%{opacity:0}81.875%{opacity:1}100%{opacity:1}}
+.axes{opacity:0;animation:k_axes 24s linear forwards}@keyframes k_axes{0%{opacity:0}1.246%{opacity:0}2.917%{opacity:1}100%{opacity:1}}
+.asym-g{opacity:0;animation:k_asym_g 24s linear forwards}@keyframes k_asym_g{0%{opacity:0}39.579%{opacity:0}41.250%{opacity:1}100%{opacity:1}}
+.hole{opacity:0;animation:k_hole 24s linear forwards}@keyframes k_hole{0%{opacity:0}69.787%{opacity:0}71.458%{opacity:1}100%{opacity:1}}
+.hole-lbl{opacity:0;animation:k_hole_lbl 24s linear forwards}@keyframes k_hole_lbl{0%{opacity:0}76.037%{opacity:0}77.708%{opacity:1}100%{opacity:1}}
+.strike.draw{animation:k_strike_draw 24s linear forwards}@keyframes k_strike_draw{0%,20.833%{stroke-dashoffset:72}23.333%,100%{stroke-dashoffset:0}}
+.res-box.draw{animation:k_res_box 24s linear forwards, k_res_box_draw 24s linear forwards}@keyframes k_res_box_draw{0%,80.208%{stroke-dashoffset:872}83.958%,100%{stroke-dashoffset:0}}
+.cL.draw{animation:k_cL_draw 24s linear forwards}@keyframes k_cL_draw{0%,61.458%{stroke-dashoffset:544.676530486834}66.458%,100%{stroke-dashoffset:0}}
+.cR1.draw{animation:k_cR1_draw 24s linear forwards}@keyframes k_cR1_draw{0%,66.458%{stroke-dashoffset:201.9341495240179}69.792%,100%{stroke-dashoffset:0}}
+.cR2.draw{animation:k_cR2_draw 24s linear forwards}@keyframes k_cR2_draw{0%,71.458%{stroke-dashoffset:143.98399575713913}74.792%,100%{stroke-dashoffset:0}}
+.shake{animation:k_shake 24s linear forwards}@keyframes k_shake{0%,9.167%{transform:translateX(0)}9.583%{transform:translateX(-6px)}10.000%{transform:translateX(6px)}10.417%{transform:translateX(-5px)}10.833%{transform:translateX(5px)}11.250%{transform:translateX(-3px)}11.667%{transform:translateX(3px)}12.083%,100%{transform:translateX(0)}}
+</style>
+<rect width="1000" height="640" class="bg"/>
+<text class="tm title" x="50" y="60" font-size="24" font-weight="bold">Removable Discontinuity — The Hole in a Rational Function</text>
+<line class="title axis" x1="50" y1="74" x2="640" y2="74"/>
+<text class="ts orig" x="50" y="108" font-size="14" >1. Original rational function:</text>
+<g class="orig"><g class="shake">
+<text class="cy" x="60" y="141" font-size="22" ><tspan font-style="italic">f</tspan>(<tspan font-style="italic">x</tspan>) =</text>
+<text class="tm" x="215.0" y="126" font-size="20" text-anchor="middle">(<tspan font-style="italic">x</tspan> − 4)(<tspan font-style="italic">x</tspan> + 2)</text>
+<text class="tm" x="215.0" y="156" font-size="20" text-anchor="middle">(<tspan font-style="italic">x</tspan> − 4)(<tspan font-style="italic">x</tspan> − 1)</text>
+<line class="tm" x1="140" y1="134" x2="290" y2="134" stroke="#f0f4f8" stroke-width="1.6"/>
+</g></g>
+<text class="ts goal" x="50" y="190" font-size="15" >Goal: find where <tspan font-style="italic">f</tspan> has a hole (removable discontinuity)</text>
+<text class="ts goal" x="50" y="210" font-size="15" >and where it has a vertical asymptote.</text>
+<line class="strike draw" x1="146" y1="128" x2="212" y2="112" stroke="#facc15" stroke-width="3" stroke-linecap="round" stroke-dasharray="72" stroke-dashoffset="72"/>
+<line class="strike draw" x1="146" y1="158" x2="212" y2="142" stroke="#facc15" stroke-width="3" stroke-linecap="round" stroke-dasharray="72" stroke-dashoffset="72"/>
+<text class="ye strike-lbl" x="305" y="141" font-size="15" >← common factor</text>
+<text class="ts simp" x="50" y="250" font-size="14" >2. Cancel the common factor (keep the domain restriction):</text>
+<text class="cy simp" x="60" y="283" font-size="22" ><tspan font-style="italic">f</tspan>(<tspan font-style="italic">x</tspan>) =</text>
+<text class="tm simp" x="170.0" y="268" font-size="20" text-anchor="middle"><tspan font-style="italic">x</tspan> + 2</text>
+<text class="tm simp" x="170.0" y="298" font-size="20" text-anchor="middle"><tspan font-style="italic">x</tspan> − 1</text>
+<line class="tm simp" x1="140" y1="276" x2="200" y2="276" stroke="#f0f4f8" stroke-width="1.6"/>
+<text class="ye simp" x="215" y="283" font-size="20" >,   <tspan font-style="italic">x</tspan> ≠ 4</text>
+<text class="ts asym" x="50" y="330" font-size="14" >3. Denominator zero at <tspan font-style="italic">x</tspan> = 1 → vertical asymptote <tspan font-style="italic">x</tspan> = 1;</text>
+<text class="ts asym" x="50" y="349" font-size="14" >equal degrees → horizontal asymptote <tspan font-style="italic">y</tspan> = 1.</text>
+<text class="ts lim" x="50" y="388" font-size="14" >4. Limit as <tspan font-style="italic">x</tspan> → 4 gives the height of the hole:</text>
+<text class="tm lim" x="60" y="424" font-size="20" ><tspan font-style="italic">y</tspan> =</text>
+<text class="tm lim" x="125.0" y="409" font-size="20" text-anchor="middle">4 + 2</text>
+<text class="tm lim" x="125.0" y="439" font-size="20" text-anchor="middle">4 − 1</text>
+<line class="tm lim" x1="100" y1="417" x2="150" y2="417" stroke="#f0f4f8" stroke-width="1.6"/>
+<text class="tm lim" x="163" y="424" font-size="20" >=</text>
+<text class="tm lim" x="194.0" y="409" font-size="20" text-anchor="middle">6</text>
+<text class="tm lim" x="194.0" y="439" font-size="20" text-anchor="middle">3</text>
+<line class="tm lim" x1="183" y1="417" x2="205" y2="417" stroke="#f0f4f8" stroke-width="1.6"/>
+<text class="cy lim2" x="218" y="424" font-size="22" >=  2</text>
+<text class="rd res" x="70" y="513" font-size="20" >Removable discontinuity (hole) at (4, 2)</text>
+<rect class="res-box draw" x="50" y="478" width="380" height="56" rx="8" fill="none" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="872" stroke-dashoffset="872"/>
+<g transform="translate(680,320)">
+<g class="axes">
+<line class="grid" x1="-280" y1="-200" x2="-280" y2="240"/>
+<line class="grid" x1="-120" y1="-200" x2="-120" y2="240"/>
+<line class="grid" x1="40" y1="-200" x2="40" y2="240"/>
+<line class="grid" x1="200" y1="-200" x2="200" y2="240"/>
+<line class="grid" x1="-280" y1="-120" x2="280" y2="-120"/>
+<line class="grid" x1="-280" y1="40" x2="280" y2="40"/>
+<line class="grid" x1="-280" y1="120" x2="280" y2="120"/>
+<line class="grid" x1="-280" y1="200" x2="280" y2="200"/>
+<line class="axis" x1="-300" y1="0" x2="300" y2="0"/><line class="axis" x1="0" y1="-240" x2="0" y2="260"/>
+<text class="ts" x="285" y="-10" font-size="14" ><tspan font-style="italic">x</tspan></text>
+<text class="ts" x="-15" y="-230" font-size="14" ><tspan font-style="italic">y</tspan></text>
+<text class="ts" x="-15" y="16" font-size="12" >0</text>
+<line class="axis" x1="40" y1="-4" x2="40" y2="4"/>
+<text class="ts" x="36" y="18" font-size="12" >1</text>
+<line class="axis" x1="160" y1="-4" x2="160" y2="4"/>
+<text class="ts" x="156" y="18" font-size="12" >4</text>
+<line class="axis" x1="-4" y1="-80" x2="4" y2="-80"/>
+<text class="ts" x="-16" y="-75" font-size="12" >2</text>
+</g>
+<g class="asym-g">
+<line class="asy" x1="40" y1="-240" x2="40" y2="260"/><line class="asy" x1="-300" y1="-40" x2="300" y2="-40"/>
+<text class="as" x="48" y="250" font-size="13" ><tspan font-style="italic">x</tspan> = 1  (vertical asymptote)</text>
+<text class="as" x="-290" y="-48" font-size="13" ><tspan font-style="italic">y</tspan> = 1  (horizontal asymptote)</text>
+</g>
+<polyline class="cL draw" points="-260.0,-24.0 -252.6,-23.6 -245.3,-23.2 -237.9,-22.7 -230.6,-22.3 -223.2,-21.8 -215.9,-21.2 -208.5,-20.7 -201.2,-20.1 -193.8,-19.5 -186.5,-18.8 -179.1,-18.1 -171.8,-17.3 -164.4,-16.5 -157.1,-15.6 -149.7,-14.7 -142.4,-13.7 -135.0,-12.6 -127.7,-11.4 -120.3,-10.1 -113.0,-8.6 -105.6,-7.0 -98.3,-5.3 -90.9,-3.3 -83.6,-1.2 -76.2,1.3 -68.9,4.1 -61.5,7.3 -54.2,11.0 -46.8,15.3 -39.5,20.4 -32.1,26.6 -24.8,34.1 -17.4,43.6 -10.1,55.9 -2.7,72.4 4.6,95.7 12.0,131.3 19.3,192.2 26.7,320.4" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-dasharray="544.676530486834" stroke-dashoffset="544.676530486834"/>
+<polyline class="cR1 draw" points="64.0,-240.0 66.5,-221.4 68.9,-206.0 71.4,-192.9 73.8,-181.8 76.3,-172.2 78.8,-163.8 81.2,-156.4 83.7,-149.9 86.2,-144.0 88.6,-138.7 91.1,-134.0 93.5,-129.7 96.0,-125.7 98.5,-122.1 100.9,-118.8 103.4,-115.7 105.8,-112.9 108.3,-110.3 110.8,-107.8 113.2,-105.5 115.7,-103.4 118.2,-101.4 120.6,-99.5 123.1,-97.8 125.5,-96.1 128.0,-94.5 130.5,-93.1 132.9,-91.7 135.4,-90.3 137.8,-89.1 140.3,-87.9 142.8,-86.7 145.2,-85.6 147.7,-84.6 150.2,-83.6 152.6,-82.6 155.1,-81.7 157.5,-80.8 160.0,-80.0" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-dasharray="201.9341495240179" stroke-dashoffset="201.9341495240179"/>
+<circle class="hole" cx="160" cy="-80" r="6" fill="#0b0c10" stroke="#facc15" stroke-width="3.5"/>
+<polyline class="cR2 draw" points="160.0,-80.0 163.6,-78.8 167.2,-77.7 170.8,-76.7 174.4,-75.7 177.9,-74.8 181.5,-73.9 185.1,-73.1 188.7,-72.3 192.3,-71.5 195.9,-70.8 199.5,-70.1 203.1,-69.4 206.7,-68.8 210.3,-68.2 213.8,-67.6 217.4,-67.1 221.0,-66.5 224.6,-66.0 228.2,-65.5 231.8,-65.0 235.4,-64.6 239.0,-64.1 242.6,-63.7 246.2,-63.3 249.7,-62.9 253.3,-62.5 256.9,-62.1 260.5,-61.8 264.1,-61.4 267.7,-61.1 271.3,-60.8 274.9,-60.4 278.5,-60.1 282.1,-59.8 285.6,-59.5 289.2,-59.3 292.8,-59.0 296.4,-58.7 300.0,-58.5" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-dasharray="143.98399575713913" stroke-dashoffset="143.98399575713913"/>
+<g class="hole-lbl">
+<text class="ye" x="172" y="-92" font-size="15" >(4, 2)</text>
+<line class="guide" x1="0" y1="-80" x2="154" y2="-80"/><line class="guide" x1="160" y1="0" x2="160" y2="-74"/></g>
+</g>
+</svg>
