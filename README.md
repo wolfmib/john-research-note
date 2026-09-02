@@ -35,6 +35,7 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
 - Animations:
+  - [NumPy to Geometry — A (4, 2) Marker Array and Its Centroid](topics/animations/numpy-marker-array-centroid-mean-axis0/content.md)
   - [Removable Discontinuity — The Hole in a Rational Function](topics/animations/removable-discontinuity-hole-rational-function/content.md)
   - [Derivation of the Harmonic Sum Identity](topics/animations/harmonic-sum-identity-derivation/content.md)
   - [Harmonic Growth and the Euler–Mascheroni Constant](topics/animations/harmonic-growth-euler-mascheroni-gamma/content.md)

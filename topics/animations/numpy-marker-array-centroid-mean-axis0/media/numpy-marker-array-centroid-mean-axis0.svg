@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10">
+<style>
+.s0_5{animation:ks0_5 25s linear forwards;opacity:0}
+@keyframes ks0_5{0%{opacity:0}2.000%{opacity:0}4.400%{opacity:1}100%{opacity:1}}
+.s3_0{animation:ks3_0 25s linear forwards;opacity:0}
+@keyframes ks3_0{0%{opacity:0}12.000%{opacity:0}14.400%{opacity:1}100%{opacity:1}}
+.s5_0{animation:ks5_0 25s linear forwards;opacity:0}
+@keyframes ks5_0{0%{opacity:0}20.000%{opacity:0}22.400%{opacity:1}100%{opacity:1}}
+.s7_0{animation:ks7_0 25s linear forwards;opacity:0}
+@keyframes ks7_0{0%{opacity:0}28.000%{opacity:0}30.400%{opacity:1}100%{opacity:1}}
+.s9_0{animation:ks9_0 25s linear forwards;opacity:0}
+@keyframes ks9_0{0%{opacity:0}36.000%{opacity:0}38.400%{opacity:1}100%{opacity:1}}
+.s12_0{animation:ks12_0 25s linear forwards;opacity:0}
+@keyframes ks12_0{0%{opacity:0}48.000%{opacity:0}50.400%{opacity:1}100%{opacity:1}}
+.s15_0{animation:ks15_0 25s linear forwards;opacity:0}
+@keyframes ks15_0{0%{opacity:0}60.000%{opacity:0}62.400%{opacity:1}100%{opacity:1}}
+.s17_0{animation:ks17_0 25s linear forwards;opacity:0}
+@keyframes ks17_0{0%{opacity:0}68.000%{opacity:0}70.400%{opacity:1}100%{opacity:1}}
+.s19_5{animation:ks19_5 25s linear forwards;opacity:0}
+@keyframes ks19_5{0%{opacity:0}78.000%{opacity:0}80.400%{opacity:1}100%{opacity:1}}
+</style>
+<rect width="1000" height="640" fill="#0b0c10"/>
+<g class="s0_5"><text x="40" y="50" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="24" font-weight="bold" fill="#f0f4f8">NumPy to geometry: a (4, 2) marker array and its centroid</text></g>
+<g class="s0_5"><rect x="40" y="80" width="450" height="250" rx="8" fill="#131924" stroke="#1e293b" stroke-width="2"/></g>
+<g class="s0_5"><text x="55" y="110" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#f0f4f8">DEVICE_W, DEVICE_H = </tspan><tspan fill="#d19a66">640</tspan><tspan fill="#f0f4f8">, </tspan><tspan fill="#d19a66">480</tspan></text></g>
+<g class="s3_0"><text x="55" y="145" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#f0f4f8">markers = </tspan><tspan fill="#61afef">np.array</tspan><tspan fill="#abb2bf">([</tspan></text></g>
+<g class="s3_0"><text x="55" y="170" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#abb2bf">    [</tspan><tspan fill="#d19a66">120.0</tspan><tspan fill="#f0f4f8">, </tspan><tspan fill="#d19a66">110.0</tspan><tspan fill="#abb2bf">],   </tspan><tspan fill="#5c6370"># M1  top-left</tspan></text></g>
+<g class="s5_0"><text x="55" y="195" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#abb2bf">    [</tspan><tspan fill="#d19a66">510.0</tspan><tspan fill="#f0f4f8">, </tspan><tspan fill="#d19a66">130.0</tspan><tspan fill="#abb2bf">],   </tspan><tspan fill="#5c6370"># M2  top-right</tspan></text></g>
+<g class="s7_0"><text x="55" y="220" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#abb2bf">    [</tspan><tspan fill="#d19a66">300.0</tspan><tspan fill="#f0f4f8">, </tspan><tspan fill="#d19a66">400.0</tspan><tspan fill="#abb2bf">],   </tspan><tspan fill="#5c6370"># M3  bottom-centre</tspan></text></g>
+<g class="s9_0"><text x="55" y="245" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#abb2bf">    [</tspan><tspan fill="#d19a66">150.0</tspan><tspan fill="#f0f4f8">, </tspan><tspan fill="#d19a66">380.0</tspan><tspan fill="#abb2bf">],   </tspan><tspan fill="#5c6370"># M4  bottom-left</tspan></text></g>
+<g class="s9_0"><text x="55" y="270" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#abb2bf">], dtype=</tspan><tspan fill="#61afef">np.float64</tspan><tspan fill="#abb2bf">)</tspan></text></g>
+<g class="s15_0"><text x="55" y="310" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#f0f4f8">c_M = markers.</tspan><tspan fill="#61afef">mean</tspan><tspan fill="#abb2bf">(axis=</tspan><tspan fill="#d19a66">0</tspan><tspan fill="#abb2bf">)</tspan><tspan fill="#5c6370">   # (4, 2) → (2,)</tspan></text></g>
+<g class="s12_0"><rect x="40" y="350" width="450" height="46" rx="6" fill="#131924" stroke="#475569" stroke-width="1.5"/><text x="56" y="380" font-family="system-ui,sans-serif" font-size="16" font-weight="bold" fill="#f0f4f8">Shape (4, 2)  →  4 markers × (x, y)</text></g>
+<g class="s17_0"><rect x="40" y="410" width="450" height="205" rx="6" fill="#131924" stroke="#c084fc" stroke-width="1.5"/>
+<text x="56" y="432" font-family="system-ui,sans-serif" font-size="14" fill="#8a99ad">Centroid = mean over the marker rows (axis = 0):</text>
+<text font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="22" fill="#f0f4f8"><tspan x="70" y="475"><tspan font-style="italic">c</tspan><tspan baseline-shift="sub" font-size="14">M</tspan> =</tspan></text>
+<text x="142" y="462" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="20" fill="#f0f4f8" text-anchor="middle">1</text>
+<text x="142" y="488" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="20" fill="#f0f4f8" text-anchor="middle">4</text>
+<line x1="130" y1="468" x2="154" y2="468" stroke="#f0f4f8" stroke-width="1.6"/>
+<text x="182" y="478" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="30" fill="#f0f4f8" text-anchor="middle">Σ</text>
+<text x="182" y="452" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="12" fill="#f0f4f8" text-anchor="middle">4</text>
+<text x="182" y="496" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="12" fill="#f0f4f8" text-anchor="middle"><tspan font-style="italic">i</tspan> = 1</text>
+<text x="204" y="475" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="22" fill="#f0f4f8"><tspan font-style="italic">m</tspan><tspan baseline-shift="sub" font-size="14" font-style="italic">i</tspan></text>
+<text x="56" y="514" font-family="system-ui,sans-serif" font-size="14" fill="#8a99ad">axis = 0 collapses the 4 rows, one column at a time:</text>
+<text x="70" y="538" font-family="system-ui,sans-serif" font-size="16" fill="#f0f4f8">x :  (120 + 510 + 300 + 150) / 4  =  <tspan fill="#d19a66" font-weight="bold">270</tspan></text>
+<text x="70" y="561" font-family="system-ui,sans-serif" font-size="16" fill="#f0f4f8">y :  (110 + 130 + 400 + 380) / 4  =  <tspan fill="#d19a66" font-weight="bold">255</tspan></text>
+</g>
+<g class="s19_5"><text x="70" y="596" font-family="system-ui,sans-serif" font-size="18" font-weight="bold" fill="#c084fc">→  <tspan font-style="italic">c</tspan><tspan baseline-shift="sub" font-size="12">M</tspan> = (270, 255)   <tspan fill="#8a99ad" font-weight="normal" font-size="14">inside the marker hull</tspan></text></g>
+<g transform="translate(500, 80)">
+<g class="s0_5"><rect x="0" y="0" width="480" height="360" fill="#0f172a"/><text x="474" y="16" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="14" font-weight="bold" fill="#8a99ad" text-anchor="end">Device space <tspan font-style="italic">D</tspan> = [0, 640) × [0, 480)</text>
+<line x1="75.0" y1="0" x2="75.0" y2="360" stroke="#1e293b" stroke-width="1"/>
+<line x1="150.0" y1="0" x2="150.0" y2="360" stroke="#1e293b" stroke-width="1"/>
+<line x1="225.0" y1="0" x2="225.0" y2="360" stroke="#1e293b" stroke-width="1"/>
+<line x1="300.0" y1="0" x2="300.0" y2="360" stroke="#1e293b" stroke-width="1"/>
+<line x1="375.0" y1="0" x2="375.0" y2="360" stroke="#1e293b" stroke-width="1"/>
+<line x1="450.0" y1="0" x2="450.0" y2="360" stroke="#1e293b" stroke-width="1"/>
+<line x1="0" y1="75.0" x2="480" y2="75.0" stroke="#1e293b" stroke-width="1"/>
+<line x1="0" y1="150.0" x2="480" y2="150.0" stroke="#1e293b" stroke-width="1"/>
+<line x1="0" y1="225.0" x2="480" y2="225.0" stroke="#1e293b" stroke-width="1"/>
+<line x1="0" y1="300.0" x2="480" y2="300.0" stroke="#1e293b" stroke-width="1"/>
+<rect x="0" y="0" width="480" height="360" fill="none" stroke="#475569" stroke-width="2"/>
+<text x="5" y="14" font-family="system-ui,sans-serif" font-size="12" fill="#8a99ad">(0, 0)</text><text x="478" y="374" font-family="system-ui,sans-serif" font-size="12" fill="#8a99ad" text-anchor="end">x = 640</text><text x="2" y="374" font-family="system-ui,sans-serif" font-size="12" fill="#8a99ad">y = 480 (image rows, downward)</text></g>
+<g class="s19_5">
+<line x1="90.0" y1="82.5" x2="202.5" y2="191.25" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+<line x1="382.5" y1="97.5" x2="202.5" y2="191.25" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+<line x1="225.0" y1="300.0" x2="202.5" y2="191.25" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+<line x1="112.5" y1="285.0" x2="202.5" y2="191.25" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.6"/>
+</g>
+<g transform="translate(90.0, 82.5)"><g class="s3_0"><circle r="6" fill="#f43f5e"/><text x="0" y="-14" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#f43f5e" text-anchor="middle">M1 (120, 110)</text></g></g>
+<g transform="translate(382.5, 97.5)"><g class="s5_0"><circle r="6" fill="#4cf26d"/><text x="0" y="-14" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#4cf26d" text-anchor="middle">M2 (510, 130)</text></g></g>
+<g transform="translate(225.0, 300.0)"><g class="s7_0"><circle r="6" fill="#38bdf8"/><text x="0" y="24" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#38bdf8" text-anchor="middle">M3 (300, 400)</text></g></g>
+<g transform="translate(112.5, 285.0)"><g class="s9_0"><circle r="6" fill="#facc15"/><text x="0" y="24" font-family="system-ui,sans-serif" font-size="13" font-weight="bold" fill="#facc15" text-anchor="middle">M4 (150, 380)</text></g></g>
+<g transform="translate(202.5, 191.25)"><g class="s19_5"><circle r="8" fill="#c084fc"/><circle r="14" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.6"/><rect x="18" y="4" width="150" height="42" rx="4" fill="#131924" stroke="#c084fc" stroke-width="1.5"/><text x="26" y="22" font-family="'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif" font-size="15" font-weight="bold" fill="#c084fc"><tspan font-style="italic">c</tspan><tspan baseline-shift="sub" font-size="10">M</tspan> = centroid</text><text x="26" y="39" font-family="system-ui,sans-serif" font-size="12" fill="#f0f4f8">(270, 255)</text></g></g>
+</g>
+</svg>
