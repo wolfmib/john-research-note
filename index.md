@@ -82,6 +82,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [Graphing a Rational Function — Zeros, Intercept, Asymptotes](topics/animations/rational-function-graph-zeros-intercept-asymptotes/content.md) | How do the zeros, the y-intercept, the slant asymptote from polynomial division and the vertical asymptote fix the graph of f(x) = (x−2)(x+1)/(x−3)? | Concept note |
 | [1.1 Change in Tandem](topics/animations/ap-precalc-1-1-change-in-tandem/content.md) | How do the input x and the output y of the function machine y = 4x + 3 change together, and what happens to y as x → +∞? | Concept note |
 | [1.2 Rates of Change](topics/animations/ap-precalc-1-2-rates-of-change/content.md) | Why is the average rate of change (f(b) − f(a))/(b − a) the same as rise over run Δy/Δx, and why does it equal the slope of the secant line? | Concept note |
+| [Random Forest, Part 1 — From One Big Tree to a Voting Forest](topics/animations/random-forest-part1-one-big-tree-to-voting-forest/content.md) | Why does a forest of 100 small trees, each grown on its own bootstrap sample and voting together, beat one big decision tree? | Concept note |
 
 ## Field Notes
 
