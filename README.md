@@ -35,6 +35,7 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
 - Animations:
+  - [Graphing a Rational Function — Zeros, Intercept, Asymptotes](topics/animations/rational-function-graph-zeros-intercept-asymptotes/content.md)
   - [Design Matrix Rows [x, y, 1] with reshape and hstack](topics/animations/numpy-design-matrix-reshape-hstack/content.md)
   - [NumPy to Geometry — A (4, 2) Marker Array and Its Centroid](topics/animations/numpy-marker-array-centroid-mean-axis0/content.md)
   - [Removable Discontinuity — The Hole in a Rational Function](topics/animations/removable-discontinuity-hole-rational-function/content.md)
