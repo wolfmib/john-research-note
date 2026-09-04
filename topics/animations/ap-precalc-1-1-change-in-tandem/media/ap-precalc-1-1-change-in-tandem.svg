@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif">
+<title>1.1 Change in Tandem</title>
+<style>
+.bg{fill:#0b0c10}.tm{fill:#f0f4f8}.ts{fill:#8a99ad;font-family:system-ui,sans-serif}.cy{fill:#38bdf8}.ye{fill:#facc15}.gr{fill:#4cf26d}
+.axis{stroke:#475569;stroke-width:1.5}
+/* timeline: 30 s, plays ONCE (forwards) and holds; opacity fades (+ fade-out for per-scene blocks), translateX slides on inner groups */
+.title{opacity:0;animation:k_title 30s linear forwards}@keyframes k_title{0%{opacity:0}0.997%{opacity:0}2.333%{opacity:1}100%{opacity:1}}
+.defn{opacity:0;animation:k_defn 30s linear forwards}@keyframes k_defn{0%{opacity:0}3.330%{opacity:0}4.667%{opacity:1}100%{opacity:1}}
+.mach{opacity:0;animation:k_mach 30s linear forwards}@keyframes k_mach{0%{opacity:0}6.663%{opacity:0}8.000%{opacity:1}100%{opacity:1}}
+.Aing{opacity:0;animation:k_Aing 30s linear forwards}@keyframes k_Aing{0%{opacity:0}13.330%{opacity:0}14.667%{opacity:1}32.000%{opacity:1}33.333%{opacity:0}100%{opacity:0}}
+.Acalc{opacity:0;animation:k_Acalc 30s linear forwards}@keyframes k_Acalc{0%{opacity:0}17.330%{opacity:0}18.667%{opacity:1}32.000%{opacity:1}33.333%{opacity:0}100%{opacity:0}}
+.Aoutg{opacity:0;animation:k_Aoutg 30s linear forwards}@keyframes k_Aoutg{0%{opacity:0}20.663%{opacity:0}22.000%{opacity:1}32.000%{opacity:1}33.333%{opacity:0}100%{opacity:0}}
+.Anote{opacity:0;animation:k_Anote 30s linear forwards}@keyframes k_Anote{0%{opacity:0}23.330%{opacity:0}24.667%{opacity:1}32.000%{opacity:1}33.333%{opacity:0}100%{opacity:0}}
+.Bing{opacity:0;animation:k_Bing 30s linear forwards}@keyframes k_Bing{0%{opacity:0}33.330%{opacity:0}34.667%{opacity:1}52.000%{opacity:1}53.333%{opacity:0}100%{opacity:0}}
+.Bcalc{opacity:0;animation:k_Bcalc 30s linear forwards}@keyframes k_Bcalc{0%{opacity:0}37.330%{opacity:0}38.667%{opacity:1}52.000%{opacity:1}53.333%{opacity:0}100%{opacity:0}}
+.Boutg{opacity:0;animation:k_Boutg 30s linear forwards}@keyframes k_Boutg{0%{opacity:0}40.663%{opacity:0}42.000%{opacity:1}52.000%{opacity:1}53.333%{opacity:0}100%{opacity:0}}
+.Bnote{opacity:0;animation:k_Bnote 30s linear forwards}@keyframes k_Bnote{0%{opacity:0}43.330%{opacity:0}44.667%{opacity:1}52.000%{opacity:1}53.333%{opacity:0}100%{opacity:0}}
+.Cing{opacity:0;animation:k_Cing 30s linear forwards}@keyframes k_Cing{0%{opacity:0}53.330%{opacity:0}54.667%{opacity:1}72.000%{opacity:1}73.333%{opacity:0}100%{opacity:0}}
+.Ccalc{opacity:0;animation:k_Ccalc 30s linear forwards}@keyframes k_Ccalc{0%{opacity:0}57.330%{opacity:0}58.667%{opacity:1}72.000%{opacity:1}73.333%{opacity:0}100%{opacity:0}}
+.Coutg{opacity:0;animation:k_Coutg 30s linear forwards}@keyframes k_Coutg{0%{opacity:0}60.663%{opacity:0}62.000%{opacity:1}72.000%{opacity:1}73.333%{opacity:0}100%{opacity:0}}
+.Cnote{opacity:0;animation:k_Cnote 30s linear forwards}@keyframes k_Cnote{0%{opacity:0}63.330%{opacity:0}64.667%{opacity:1}72.000%{opacity:1}73.333%{opacity:0}100%{opacity:0}}
+.Ding{opacity:0;animation:k_Ding 30s linear forwards}@keyframes k_Ding{0%{opacity:0}73.330%{opacity:0}74.667%{opacity:1}100%{opacity:1}}
+.Dcalc{opacity:0;animation:k_Dcalc 30s linear forwards}@keyframes k_Dcalc{0%{opacity:0}77.330%{opacity:0}78.667%{opacity:1}100%{opacity:1}}
+.Doutg{opacity:0;animation:k_Doutg 30s linear forwards}@keyframes k_Doutg{0%{opacity:0}80.663%{opacity:0}82.000%{opacity:1}100%{opacity:1}}
+.Dnote{opacity:0;animation:k_Dnote 30s linear forwards}@keyframes k_Dnote{0%{opacity:0}83.330%{opacity:0}84.667%{opacity:1}100%{opacity:1}}
+.tabh{opacity:0;animation:k_tabh 30s linear forwards}@keyframes k_tabh{0%{opacity:0}23.330%{opacity:0}24.667%{opacity:1}100%{opacity:1}}
+.row0{opacity:0;animation:k_row0 30s linear forwards}@keyframes k_row0{0%{opacity:0}23.330%{opacity:0}24.667%{opacity:1}100%{opacity:1}}
+.row1{opacity:0;animation:k_row1 30s linear forwards}@keyframes k_row1{0%{opacity:0}43.330%{opacity:0}44.667%{opacity:1}100%{opacity:1}}
+.row2{opacity:0;animation:k_row2 30s linear forwards}@keyframes k_row2{0%{opacity:0}63.330%{opacity:0}64.667%{opacity:1}100%{opacity:1}}
+.row3{opacity:0;animation:k_row3 30s linear forwards}@keyframes k_row3{0%{opacity:0}83.330%{opacity:0}84.667%{opacity:1}100%{opacity:1}}
+.sum{opacity:0;animation:k_sum 30s linear forwards}@keyframes k_sum{0%{opacity:0}89.997%{opacity:0}91.333%{opacity:1}100%{opacity:1}}
+.Ain{animation:k_Ain_slide 30s linear forwards}@keyframes k_Ain_slide{0%,13.333%{transform:translateX(-150px)}16.000%,100%{transform:translateX(0)}}
+.Aout{animation:k_Aout_slide 30s linear forwards}@keyframes k_Aout_slide{0%,20.667%{transform:translateX(-120px)}23.333%,100%{transform:translateX(0)}}
+.Bin{animation:k_Bin_slide 30s linear forwards}@keyframes k_Bin_slide{0%,33.333%{transform:translateX(-150px)}36.000%,100%{transform:translateX(0)}}
+.Bout{animation:k_Bout_slide 30s linear forwards}@keyframes k_Bout_slide{0%,40.667%{transform:translateX(-120px)}43.333%,100%{transform:translateX(0)}}
+.Cin{animation:k_Cin_slide 30s linear forwards}@keyframes k_Cin_slide{0%,53.333%{transform:translateX(-150px)}56.000%,100%{transform:translateX(0)}}
+.Cout{animation:k_Cout_slide 30s linear forwards}@keyframes k_Cout_slide{0%,60.667%{transform:translateX(-120px)}63.333%,100%{transform:translateX(0)}}
+.Din{animation:k_Din_slide 30s linear forwards}@keyframes k_Din_slide{0%,73.333%{transform:translateX(-150px)}76.000%,100%{transform:translateX(0)}}
+.Dout{animation:k_Dout_slide 30s linear forwards}@keyframes k_Dout_slide{0%,80.667%{transform:translateX(-120px)}83.333%,100%{transform:translateX(0)}}
+</style>
+<rect width="1000" height="640" class="bg"/>
+<text class="tm title" x="50" y="44" font-size="24" font-weight="bold">1.1 <tspan font-style="italic">Change</tspan> <tspan font-style="italic">in</tspan> <tspan font-style="italic">Tandem</tspan></text>
+<text class="ts title" x="950" y="44" font-size="14" font-family="system-ui,sans-serif" text-anchor="end">AP Precalculus · Unit 1</text>
+<line class="title axis" x1="50" y1="58" x2="950" y2="58"/>
+<text class="ts defn" x="50" y="92" font-size="17" font-family="system-ui,sans-serif" fill="#f0f4f8">Two quantities change in tandem when a change in one quantity</text>
+<text class="ts defn" x="50" y="116" font-size="17" font-family="system-ui,sans-serif" fill="#f0f4f8">produces a related change in the other.</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8a99ad"/></marker></defs>
+<g class="mach">
+<rect x="380" y="200" width="240" height="130" rx="14" fill="#131924" stroke="#64748b" stroke-width="2.5"/>
+<text class="ts" x="500.0" y="188" font-size="13" font-family="system-ui,sans-serif" text-anchor="middle">function machine (black box)</text>
+<text class="cy" x="500.0" y="252" font-size="26" text-anchor="middle"><tspan font-style="italic">y</tspan> = <tspan font-style="italic">f</tspan>(<tspan font-style="italic">x</tspan>) = 4<tspan font-style="italic">x</tspan> + 3</text>
+<line x1="327.0" y1="265" x2="372" y2="265" stroke="#8a99ad" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="628" y1="265" x2="673.0" y2="265" stroke="#8a99ad" stroke-width="2" marker-end="url(#arr)"/>
+<text class="ts" x="260" y="222" font-size="14" font-family="system-ui,sans-serif" text-anchor="middle">input  x</text>
+<text class="ts" x="740" y="222" font-size="14" font-family="system-ui,sans-serif" text-anchor="middle">output  y</text>
+</g>
+<g transform="translate(260,265)"><g class="Aing"><g class="Ain">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#f59e0b"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">x</tspan> = 0</text>
+</g></g></g>
+<text class="ye Acalc" x="500.0" y="304" font-size="20" text-anchor="middle">4(0) + 3 = 3</text>
+<g transform="translate(740,265)"><g class="Aoutg"><g class="Aout">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#4cf26d"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">y</tspan> = 3</text>
+</g></g></g>
+<text class="ts Anote" x="500" y="372" font-size="16" font-family="system-ui,sans-serif" text-anchor="middle" fill="#f0f4f8">when x = 0, the output is y = 3 &gt; 0</text>
+<g transform="translate(260,265)"><g class="Bing"><g class="Bin">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#f59e0b"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">x</tspan> = 1</text>
+</g></g></g>
+<text class="ye Bcalc" x="500.0" y="304" font-size="20" text-anchor="middle">4(1) + 3 = 7</text>
+<g transform="translate(740,265)"><g class="Boutg"><g class="Bout">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#4cf26d"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">y</tspan> = 7</text>
+</g></g></g>
+<text class="ts Bnote" x="500" y="372" font-size="16" font-family="system-ui,sans-serif" text-anchor="middle" fill="#f0f4f8">when x = 1, y = 7:  x up by 1, y up by 4</text>
+<g transform="translate(260,265)"><g class="Cing"><g class="Cin">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#f59e0b"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">x</tspan> = −2</text>
+</g></g></g>
+<text class="ye Ccalc" x="500.0" y="304" font-size="20" text-anchor="middle">4(−2) + 3 = −5</text>
+<g transform="translate(740,265)"><g class="Coutg"><g class="Cout">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#4cf26d"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">y</tspan> = −5</text>
+</g></g></g>
+<text class="ts Cnote" x="500" y="372" font-size="16" font-family="system-ui,sans-serif" text-anchor="middle" fill="#f0f4f8">when x = −2, y = −5:  x down by 2, y down by 8</text>
+<g transform="translate(260,265)"><g class="Ding"><g class="Din">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#f59e0b"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">x</tspan> → +∞</text>
+</g></g></g>
+<text class="ye Dcalc" x="500.0" y="304" font-size="20" text-anchor="middle">4<tspan font-style="italic">x</tspan> + 3 → +∞</text>
+<g transform="translate(740,265)"><g class="Doutg"><g class="Dout">
+<rect x="-55.0" y="-28.0" width="110" height="56" rx="8" fill="#4cf26d"/>
+<text x="0" y="8" font-size="22" text-anchor="middle" fill="#0b0c10"><tspan font-style="italic">y</tspan> → +∞</text>
+</g></g></g>
+<text class="ts Dnote" x="500" y="372" font-size="16" font-family="system-ui,sans-serif" text-anchor="middle" fill="#f0f4f8">as x → +∞ the output y = 4x + 3 → +∞ (grows without bound)</text>
+<text class="ts tabh" x="50" y="425" font-size="14" font-family="system-ui,sans-serif">Inputs and outputs so far:</text>
+<text class="tm tabh" x="110" y="452" font-size="18" text-anchor="end" fill="#f59e0b"><tspan font-style="italic">x</tspan></text>
+<text class="tm tabh" x="210" y="452" font-size="18" text-anchor="end" fill="#4cf26d"><tspan font-style="italic">y</tspan></text>
+<line class="tabh axis" x1="60" y1="459" x2="230" y2="459"/>
+<text class="tm row0" x="110" y="484" font-size="18" text-anchor="end">0</text>
+<text class="tm row0" x="210" y="484" font-size="18" text-anchor="end">3</text>
+<text class="tm row1" x="110" y="510" font-size="18" text-anchor="end">1</text>
+<text class="tm row1" x="210" y="510" font-size="18" text-anchor="end">7</text>
+<text class="tm row2" x="110" y="536" font-size="18" text-anchor="end">−2</text>
+<text class="tm row2" x="210" y="536" font-size="18" text-anchor="end">−5</text>
+<text class="tm row3" x="110" y="562" font-size="18" text-anchor="end">→ +∞</text>
+<text class="tm row3" x="210" y="562" font-size="18" text-anchor="end">→ +∞</text>
+<text class="gr sum" x="300" y="500" font-size="16" font-family="system-ui,sans-serif">y changes in tandem with x: every change in x produces a related change in y.</text>
+<text class="ts sum" x="300" y="526" font-size="15" font-family="system-ui,sans-serif">The multiplier 4 is positive, so when x increases, y increases; as x → +∞, y → +∞.</text>
+</svg>

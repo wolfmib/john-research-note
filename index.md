@@ -80,6 +80,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [NumPy to Geometry — A (4, 2) Marker Array and Its Centroid](topics/animations/numpy-marker-array-centroid-mean-axis0/content.md) | What does markers.mean(axis=0) compute, geometrically, for a (4, 2) array of point coordinates? | Concept note |
 | [Design Matrix Rows [x, y, 1] with reshape and hstack](topics/animations/numpy-design-matrix-reshape-hstack/content.md) | How do reshape(-1, 2), np.ones and np.hstack build the affine design matrix whose rows are [x, y, 1]? | Concept note |
 | [Graphing a Rational Function — Zeros, Intercept, Asymptotes](topics/animations/rational-function-graph-zeros-intercept-asymptotes/content.md) | How do the zeros, the y-intercept, the slant asymptote from polynomial division and the vertical asymptote fix the graph of f(x) = (x−2)(x+1)/(x−3)? | Concept note |
+| [1.1 Change in Tandem](topics/animations/ap-precalc-1-1-change-in-tandem/content.md) | How do the input x and the output y of the function machine y = 4x + 3 change together, and what happens to y as x → +∞? | Concept note |
 
 ## Field Notes
 
