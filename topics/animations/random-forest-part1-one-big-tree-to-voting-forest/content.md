@@ -22,10 +22,10 @@ author: Wei-Che Hung
 
 ## Concept
 
-$$
-\hat{y}(x) = \operatorname{majority}\bigl\{ h_1(x),\, h_2(x),\, \dots,\, h_{100}(x) \bigr\},
+```math
+\hat{y}(x) = \mathrm{majority}\bigl\{ h_1(x),\, h_2(x),\, \dots,\, h_{100}(x) \bigr\},
 \qquad h_k \text{ grown on bootstrap sample } D_k \text{ drawn with replacement from } D
-$$
+```
 
 This is bagging, bootstrap aggregating. A single deep tree has low bias but high variance: small changes in the data move its splits and its answers. Each tree in the forest sees a resampled copy of the data, so the trees make different mistakes, and a majority vote over many such trees cancels much of that noise. The forest keeps the low bias of deep trees and cuts the variance. Part 2 adds the second source of randomness, a random subset of features at every split, which makes the trees even less alike.
 
