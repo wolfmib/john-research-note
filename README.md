@@ -35,6 +35,7 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
 - Animations:
+  - [Random Forest, Part 3 — Missing Data in the Training Set](topics/animations/random-forest-part3-missing-data-in-the-training-set/content.md)
   - [Random Forest, Part 2 — Random Feature Subsets and Out-of-Bag Error](topics/animations/random-forest-part2-random-features-and-oob-error/content.md)
   - [Random Forest, Part 1 — From One Big Tree to a Voting Forest](topics/animations/random-forest-part1-one-big-tree-to-voting-forest/content.md)
   - [1.2 Rates of Change](topics/animations/ap-precalc-1-2-rates-of-change/content.md)

@@ -84,6 +84,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [1.2 Rates of Change](topics/animations/ap-precalc-1-2-rates-of-change/content.md) | Why is the average rate of change (f(b) − f(a))/(b − a) the same as rise over run Δy/Δx, and why does it equal the slope of the secant line? | Concept note |
 | [Random Forest, Part 1 — From One Big Tree to a Voting Forest](topics/animations/random-forest-part1-one-big-tree-to-voting-forest/content.md) | Why does a forest of 100 small trees, each grown on its own bootstrap sample and voting together, beat one big decision tree? | Concept note |
 | [Random Forest, Part 2 — Random Feature Subsets and Out-of-Bag Error](topics/animations/random-forest-part2-random-features-and-oob-error/content.md) | Why does trying only m of the columns at each split keep the trees different, and how does the out-of-bag error choose m? | Concept note |
+| [Random Forest, Part 3 — Missing Data in the Training Set](topics/animations/random-forest-part3-missing-data-in-the-training-set/content.md) | How does a random forest fill gaps in its own training data? | Concept note |
 
 ## Field Notes
 
