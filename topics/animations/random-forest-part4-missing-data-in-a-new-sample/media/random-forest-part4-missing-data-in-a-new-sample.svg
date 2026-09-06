@@ -1,0 +1,509 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif">
+  <title>Random Forest, Part 4 — Missing Data in a New Sample</title>
+  <rect width="1000" height="640" fill="#0b0c10"/>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a99ad"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff4d4d"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    
+    <g id="tree">
+      <rect x="-1.5" y="0" width="3" height="12" fill="#8b5a2b"/>
+      <circle cx="0" cy="-3" r="6" fill="#3f9d5a"/>
+    </g>
+
+    <g id="row10">
+      <use href="#tree" x="0"/><use href="#tree" x="12"/><use href="#tree" x="24"/><use href="#tree" x="36"/><use href="#tree" x="48"/>
+      <use href="#tree" x="60"/><use href="#tree" x="72"/><use href="#tree" x="84"/><use href="#tree" x="96"/><use href="#tree" x="108"/>
+    </g>
+    <g id="row50">
+      <use href="#row10" x="0"/><use href="#row10" x="120"/><use href="#row10" x="240"/><use href="#row10" x="360"/><use href="#row10" x="480"/>
+    </g>
+  </defs>
+
+  <style>
+    /* Table / Card appearances */
+    .k2s { animation: a2s 200s linear forwards; opacity: 0; }
+    @keyframes a2s { 0%, 0.6% {opacity:0} 1%, 100% {opacity:1} }
+    
+    .k6s { animation: a6s 200s linear forwards; opacity: 0; }
+    @keyframes a6s { 0%, 2.6% {opacity:0} 3%, 100% {opacity:1} }
+
+    .k11s_out16s { animation: a11s_16s 200s linear forwards; opacity: 0; }
+    @keyframes a11s_16s { 0%, 5.1% {opacity:0} 5.5%, 7.6% {opacity:1} 8%, 100% {opacity:0} }
+
+    .k6s_out181s { animation: a6s_181s 200s linear forwards; opacity: 0; }
+    @keyframes a6s_181s { 0%, 2.6% {opacity:0} 3%, 90.1% {opacity:1} 90.5%, 100% {opacity:0} }
+
+    .k181s { animation: a181s 200s linear forwards; opacity: 0; }
+    @keyframes a181s { 0%, 90.1% {opacity:0} 90.5%, 100% {opacity:1} }
+
+    /* patched: formulas persist; "filled" labels leave before the votes arrive */
+    .k18s { animation: a18s 200s linear forwards; opacity: 0; }
+    @keyframes a18s { 0%, 8.6% {opacity:0} 9%, 100% {opacity:1} }
+    .k62s { animation: a62s 200s linear forwards; opacity: 0; }
+    @keyframes a62s { 0%, 30.6% {opacity:0} 31%, 100% {opacity:1} }
+    .k96s { animation: a96s 200s linear forwards; opacity: 0; }
+    @keyframes a96s { 0%, 47.6% {opacity:0} 48%, 100% {opacity:1} }
+    .k80s_out118s { animation: a80s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a80s_118s { 0%, 39.6% {opacity:0} 40%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+    .k113s_out118s { animation: a113s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a113s_118s { 0%, 56.1% {opacity:0} 56.5%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    /* Scene 2 */
+    .k18s_out29s { animation: a18s_29s 200s linear forwards; opacity: 0; }
+    @keyframes a18s_29s { 0%, 8.6% {opacity:0} 9%, 14.1% {opacity:1} 14.5%, 100% {opacity:0} }
+
+    .k23s_out36s { animation: a23s_36s 200s linear forwards; opacity: 0; }
+    @keyframes a23s_36s { 0%, 11.1% {opacity:0} 11.5%, 17.6% {opacity:1} 18%, 100% {opacity:0} }
+
+    /* Scene 3 */
+    .k38s_out56s { animation: a38s_56s 200s linear forwards; opacity: 0; }
+    @keyframes a38s_56s { 0%, 18.6% {opacity:0} 19%, 27.6% {opacity:1} 28%, 100% {opacity:0} }
+
+    .k41s { animation: a41s 200s linear forwards; opacity: 0; }
+    @keyframes a41s { 0%, 20.1% {opacity:0} 20.5%, 100% {opacity:1} }
+    
+    .k46s { animation: a46s 200s linear forwards; opacity: 0; }
+    @keyframes a46s { 0%, 22.6% {opacity:0} 23%, 100% {opacity:1} }
+
+    .k51s_out56s { animation: a51s_56s 200s linear forwards; opacity: 0; }
+    @keyframes a51s_56s { 0%, 25.1% {opacity:0} 25.5%, 27.6% {opacity:1} 28%, 100% {opacity:0} }
+
+    /* Scene 4 */
+    .k58s_out90s { animation: a58s_90s 200s linear forwards; opacity: 0; }
+    @keyframes a58s_90s { 0%, 28.6% {opacity:0} 29%, 44.6% {opacity:1} 45%, 100% {opacity:0} }
+
+    .k62s_out118s { animation: a62s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a62s_118s { 0%, 30.6% {opacity:0} 31%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    .k68s_out118s { animation: a68s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a68s_118s { 0%, 33.6% {opacity:0} 34%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    .k74s_out118s { animation: a74s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a74s_118s { 0%, 36.6% {opacity:0} 37%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    .k41s_out80s { animation: a41s_80s 200s linear forwards; opacity: 0; }
+    @keyframes a41s_80s { 0%, 20.1% {opacity:0} 20.5%, 39.6% {opacity:1} 40%, 100% {opacity:0} }
+
+    .k80s { animation: a80s 200s linear forwards; opacity: 0; }
+    @keyframes a80s { 0%, 39.6% {opacity:0} 40%, 100% {opacity:1} }
+
+    /* Scene 5 */
+    .k92s_out118s { animation: a92s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a92s_118s { 0%, 45.6% {opacity:0} 46%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    .k96s_out118s { animation: a96s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a96s_118s { 0%, 47.6% {opacity:0} 48%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    .k102s_out118s { animation: a102s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a102s_118s { 0%, 50.6% {opacity:0} 51%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    .k108s_out118s { animation: a108s_118s 200s linear forwards; opacity: 0; }
+    @keyframes a108s_118s { 0%, 53.6% {opacity:0} 54%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    .k46s_out113s { animation: a46s_113s 200s linear forwards; opacity: 0; }
+    @keyframes a46s_113s { 0%, 22.6% {opacity:0} 23%, 56.1% {opacity:1} 56.5%, 100% {opacity:0} }
+
+    .k113s { animation: a113s 200s linear forwards; opacity: 0; }
+    @keyframes a113s { 0%, 56.1% {opacity:0} 56.5%, 100% {opacity:1} }
+
+    /* Track Dimming */
+    .trackA_dim { animation: a_trkA 200s linear forwards; }
+    @keyframes a_trkA { 0%, 44.6% {opacity:1} 45%, 58.6% {opacity:0.4} 59%, 100% {opacity:1} }
+    
+    .trackB_dim { animation: a_trkB 200s linear forwards; }
+    @keyframes a_trkB { 0%, 27.6% {opacity:1} 28%, 44.6% {opacity:0.4} 45%, 84.6% {opacity:1} 85%, 100% {opacity:0.4} }
+
+    /* Scene 6 */
+    .k120s { animation: a120s 200s linear forwards; opacity: 0; }
+    @keyframes a120s { 0%, 59.6% {opacity:0} 60%, 100% {opacity:1} }
+
+    .k126s { animation: a126s 200s linear forwards; opacity: 0; }
+    @keyframes a126s { 0%, 62.6% {opacity:0} 63%, 100% {opacity:1} }
+    .k129s { animation: a129s 200s linear forwards; opacity: 0; }
+    @keyframes a129s { 0%, 64.1% {opacity:0} 64.5%, 100% {opacity:1} }
+    .k132s { animation: a132s 200s linear forwards; opacity: 0; }
+    @keyframes a132s { 0%, 65.6% {opacity:0} 66%, 100% {opacity:1} }
+
+    .k136s { animation: a136s 200s linear forwards; opacity: 0; }
+    @keyframes a136s { 0%, 67.6% {opacity:0} 68%, 100% {opacity:1} }
+
+    .k144s { animation: a144s 200s linear forwards; opacity: 0; }
+    @keyframes a144s { 0%, 71.6% {opacity:0} 72%, 100% {opacity:1} }
+    .k147s { animation: a147s 200s linear forwards; opacity: 0; }
+    @keyframes a147s { 0%, 73.1% {opacity:0} 73.5%, 100% {opacity:1} }
+    .k150s { animation: a150s 200s linear forwards; opacity: 0; }
+    @keyframes a150s { 0%, 74.6% {opacity:0} 75%, 100% {opacity:1} }
+
+    .k154s { animation: a154s 200s linear forwards; opacity: 0; }
+    @keyframes a154s { 0%, 76.6% {opacity:0} 77%, 100% {opacity:1} }
+
+    .k162s_out168s { animation: a162s_168s 200s linear forwards; opacity: 0; }
+    @keyframes a162s_168s { 0%, 80.6% {opacity:0} 81%, 83.6% {opacity:1} 84%, 100% {opacity:0} }
+
+    /* Scene 7 and 8 */
+    .k170s { animation: a170s 200s linear forwards; opacity: 0; }
+    @keyframes a170s { 0%, 84.6% {opacity:0} 85%, 100% {opacity:1} }
+
+    .k175s { animation: a175s 200s linear forwards; opacity: 0; }
+    @keyframes a175s { 0%, 87.1% {opacity:0} 87.5%, 100% {opacity:1} }
+
+    .k192s { animation: a192s 200s linear forwards; opacity: 0; }
+    @keyframes a192s { 0%, 95.6% {opacity:0} 96%, 100% {opacity:1} }
+
+    /* Formula Backgrounds */
+    .bg18_36 { animation: abg18_36 200s linear forwards; opacity: 0; }
+    @keyframes abg18_36 { 0%, 8.6% {opacity:0} 9%, 17.6% {opacity:1} 18%, 100% {opacity:0} }
+    .bg41_56 { animation: abg41_56 200s linear forwards; opacity: 0; }
+    @keyframes abg41_56 { 0%, 20.1% {opacity:0} 20.5%, 27.6% {opacity:1} 28%, 100% {opacity:0} }
+    .bg62_90 { animation: abg62_90 200s linear forwards; opacity: 0; }
+    @keyframes abg62_90 { 0%, 30.6% {opacity:0} 31%, 44.6% {opacity:1} 45%, 100% {opacity:0} }
+    .bg96_118 { animation: abg96_118 200s linear forwards; opacity: 0; }
+    @keyframes abg96_118 { 0%, 47.6% {opacity:0} 48%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+    .bg126_144 { animation: abg126_144 200s linear forwards; opacity: 0; }
+    @keyframes abg126_144 { 0%, 62.6% {opacity:0} 63%, 71.6% {opacity:1} 72%, 100% {opacity:0} }
+    .bg144_168 { animation: abg144_168 200s linear forwards; opacity: 0; }
+    @keyframes abg144_168 { 0%, 71.6% {opacity:0} 72%, 83.6% {opacity:1} 84%, 100% {opacity:0} }
+    .bg170_190 { animation: abg170_190 200s linear forwards; opacity: 0; }
+    @keyframes abg170_190 { 0%, 84.6% {opacity:0} 85%, 94.6% {opacity:1} 95%, 100% {opacity:0} }
+  </style>
+
+  <text x="40" y="64" fill="#f0f4f8" font-size="24" font-weight="bold">Random Forest, Part 4 — Missing Data in a New Sample</text>
+
+  <!-- ======================= TABLE ZONE ======================= -->
+  <!-- Highlights -->
+  <g class="k18s_out29s">
+    <rect x="30" y="115" width="600" height="42" fill="#38bdf8" opacity="0.15" rx="4"/>
+    <rect x="30" y="157" width="600" height="21" fill="#38bdf8" opacity="0.15" rx="4"/>
+    <rect x="30" y="94" width="600" height="21" fill="#ff4d4d" opacity="0.15" rx="4"/>
+    <rect x="30" y="178" width="600" height="21" fill="#ff4d4d" opacity="0.15" rx="4"/>
+    <text x="400" y="244" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">same-label rows</text>
+  </g>
+  <g class="k58s_out90s">
+    <rect x="30" y="115" width="600" height="63" fill="#38bdf8" opacity="0.15" rx="4"/>
+    <text x="400" y="244" fill="#38bdf8" font-size="15" font-family="system-ui,sans-serif">Yes rows only</text>
+  </g>
+  <g class="k92s_out118s">
+    <rect x="30" y="94" width="600" height="21" fill="#ff4d4d" opacity="0.15" rx="4"/>
+    <rect x="30" y="178" width="600" height="21" fill="#ff4d4d" opacity="0.15" rx="4"/>
+    <text x="400" y="244" fill="#ff4d4d" font-size="15" font-family="system-ui,sans-serif">No rows only</text>
+  </g>
+
+  <g class="k2s">
+    <text x="40" y="90" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">#</text>
+    <text x="80" y="90" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">Chest Pain</text>
+    <text x="180" y="90" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">Good Blood Circ.</text>
+    <text x="330" y="90" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">Blocked Arteries</text>
+    <text x="480" y="90" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">Weight</text>
+    <text x="560" y="90" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">Heart Disease</text>
+
+    <!-- Row 1 -->
+    <text x="40" y="110" fill="#f0f4f8" font-size="13">1</text>
+    <text x="80" y="110" fill="#ff4d4d" font-size="13">No</text>
+    <text x="180" y="110" fill="#ff4d4d" font-size="13">No</text>
+    <text x="330" y="110" fill="#ff4d4d" font-size="13">No</text>
+    <text x="480" y="110" fill="#f0f4f8" font-size="13">125</text>
+    <text x="560" y="110" fill="#ff4d4d" font-size="13">No</text>
+
+    <!-- Row 2 -->
+    <text x="40" y="131" fill="#f0f4f8" font-size="13">2</text>
+    <text x="80" y="131" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="180" y="131" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="330" y="131" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="480" y="131" fill="#f0f4f8" font-size="13">180</text>
+    <text x="560" y="131" fill="#38bdf8" font-size="13">Yes</text>
+
+    <!-- Row 3 -->
+    <text x="40" y="152" fill="#f0f4f8" font-size="13">3</text>
+    <text x="80" y="152" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="180" y="152" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="330" y="152" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="480" y="152" fill="#f0f4f8" font-size="13">210</text>
+    <text x="560" y="152" fill="#38bdf8" font-size="13">Yes</text>
+
+    <!-- Row 4 -->
+    <text x="40" y="173" fill="#f0f4f8" font-size="13">4</text>
+    <text x="80" y="173" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="180" y="173" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="330" y="173" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="480" y="173" fill="#f0f4f8" font-size="13">181.4</text>
+    <text x="560" y="173" fill="#38bdf8" font-size="13">Yes</text>
+
+    <!-- Row 5 -->
+    <text x="40" y="194" fill="#f0f4f8" font-size="13">5</text>
+    <text x="80" y="194" fill="#ff4d4d" font-size="13">No</text>
+    <text x="180" y="194" fill="#38bdf8" font-size="13">Yes</text>
+    <text x="330" y="194" fill="#ff4d4d" font-size="13">No</text>
+    <text x="480" y="194" fill="#f0f4f8" font-size="13">167</text>
+    <text x="560" y="194" fill="#ff4d4d" font-size="13">No</text>
+  </g>
+
+  <!-- New Card -->
+  <g class="k6s">
+    <rect x="30" y="204" width="600" height="24" fill="#131924" stroke="#475569" rx="3"/>
+    <text x="40" y="220" fill="#facc15" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">new</text>
+    <text x="80" y="220" fill="#38bdf8" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+    <text x="180" y="220" fill="#38bdf8" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+    <text x="480" y="220" fill="#f0f4f8" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">168</text>
+    <text x="40" y="244" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">new patient</text>
+  </g>
+
+  <!-- Pulse -->
+  <g class="k11s_out16s">
+    <rect x="325" y="206" width="35" height="20" fill="#facc15" opacity="0.4" rx="2"/>
+    <rect x="555" y="206" width="35" height="20" fill="#facc15" opacity="0.4" rx="2"/>
+    <text x="150" y="244" fill="#facc15" font-size="15" font-family="system-ui,sans-serif">two unknowns</text>
+  </g>
+
+  <g class="k6s_out181s">
+    <rect x="325" y="206" width="35" height="20" fill="none" stroke="#facc15" stroke-dasharray="3 3"/>
+    <text x="330" y="220" fill="#facc15" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">???</text>
+    
+    <rect x="555" y="206" width="35" height="20" fill="none" stroke="#facc15" stroke-dasharray="3 3"/>
+    <text x="560" y="220" fill="#facc15" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">???</text>
+  </g>
+
+  <!-- Final Card Fill -->
+  <g class="k181s">
+    <text x="330" y="220" fill="#4cf26d" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+    <text x="560" y="220" fill="#4cf26d" font-size="13" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+    <text x="150" y="244" fill="#4cf26d" font-size="15" font-family="system-ui,sans-serif">kept: A's story</text>
+  </g>
+
+  <!-- Scene 2: ✗ -->
+  <g class="k23s_out36s">
+    <path d="M 600 204 L 600 190" fill="none" stroke="#ff4d4d" stroke-width="2" marker-end="url(#arrowRed)"/>
+    <text x="618" y="200" fill="#ff4d4d" font-size="24" font-weight="bold" text-anchor="middle">✗</text>
+    <text x="150" y="244" fill="#ff4d4d" font-size="15" font-family="system-ui,sans-serif">which rows? label unknown</text>
+  </g>
+
+  <!-- ======================= STAGE ZONE ======================= -->
+  <!-- Scene 3: Arrows out -->
+  <g class="k38s_out56s">
+    <path d="M 320 230 C 200 250 180 250 180 256" fill="none" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+    <path d="M 570 230 C 500 250 480 250 480 256" fill="none" stroke="#ff4d4d" stroke-width="2" marker-end="url(#arrowRed)"/>
+  </g>
+  <g class="k51s_out56s">
+    <text x="330" y="260" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle">one patient, two stories</text>
+  </g>
+  <g class="k41s"><line x1="330" y1="280" x2="330" y2="520" stroke="#475569" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5"/></g>
+
+  <!-- TRACK A (Left) -->
+  <g class="trackA_dim">
+    <g class="k41s">
+      <text x="40" y="280" fill="#38bdf8" font-size="15" font-family="system-ui,sans-serif">Copy A — assume Heart Disease = Yes</text>
+      <!-- Copy A Card -->
+      <rect x="40" y="295" width="280" height="24" fill="#131924" stroke="#475569" rx="3"/>
+      <text x="45" y="312" fill="#38bdf8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+      <text x="80" y="312" fill="#38bdf8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+      <text x="180" y="312" fill="#f0f4f8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">168</text>
+      <text x="235" y="312" fill="#38bdf8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+    </g>
+    <g class="k41s_out80s">
+      <rect x="135" y="297" width="30" height="20" fill="none" stroke="#facc15" stroke-dasharray="3 3"/>
+      <text x="140" y="312" fill="#facc15" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">???</text>
+    </g>
+    <g class="k80s">
+      <text x="140" y="312" fill="#38bdf8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+      </g><g class="k80s_out118s"><text x="40" y="500" fill="#38bdf8" font-size="15" font-family="system-ui,sans-serif">A filled</text>
+    </g>
+
+    <g class="k62s_out118s">
+      <text x="120" y="340" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">Part 3 loop, 6–7 rounds</text>
+      <use href="#row10" x="40" y="360"/>
+      <use href="#row10" x="40" y="375"/>
+    </g>
+    
+    <g class="k68s_out118s">
+      <rect x="40" y="395" width="60" height="35" fill="#38bdf8" opacity="0.6" rx="2"/>
+      <text x="70" y="410" fill="#0b0c10" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">to 2</text>
+      <text x="70" y="425" fill="#0b0c10" font-size="15" text-anchor="middle">0.6</text>
+      
+      <rect x="105" y="395" width="60" height="35" fill="#38bdf8" opacity="0.2" rx="2"/>
+      <text x="135" y="410" fill="#f0f4f8" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">to 3</text>
+      <text x="135" y="425" fill="#f0f4f8" font-size="15" text-anchor="middle">0.2</text>
+      
+      <rect x="170" y="395" width="60" height="35" fill="#38bdf8" opacity="0.7" rx="2"/>
+      <text x="200" y="410" fill="#0b0c10" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">to 4</text>
+      <text x="200" y="425" fill="#0b0c10" font-size="15" text-anchor="middle">0.7</text>
+    </g>
+
+    <g class="k74s_out118s">
+      <text x="40" y="450" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">Blocked Arteries among Yes rows</text>
+      <text x="40" y="475" fill="#f0f4f8" font-size="15">Yes 0.6 + 0.2 + 0.7 = 1.5   No 0.0 → Yes</text>
+    </g>
+  </g>
+
+  <!-- TRACK B (Right) -->
+  <g class="trackB_dim">
+    <g class="k46s">
+      <text x="350" y="280" fill="#ff4d4d" font-size="15" font-family="system-ui,sans-serif">Copy B — assume Heart Disease = No</text>
+      <!-- Copy B Card -->
+      <rect x="350" y="295" width="280" height="24" fill="#131924" stroke="#475569" rx="3"/>
+      <text x="355" y="312" fill="#38bdf8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+      <text x="390" y="312" fill="#38bdf8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">Yes</text>
+      <text x="490" y="312" fill="#f0f4f8" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">168</text>
+      <text x="545" y="312" fill="#ff4d4d" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">No</text>
+    </g>
+    <g class="k46s_out113s">
+      <rect x="445" y="297" width="30" height="20" fill="none" stroke="#facc15" stroke-dasharray="3 3"/>
+      <text x="450" y="312" fill="#facc15" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">???</text>
+    </g>
+    <g class="k113s">
+      <text x="450" y="312" fill="#ff4d4d" font-size="12" font-family="'DejaVu Sans Mono',Menlo,Consolas,monospace">No</text>
+      </g><g class="k113s_out118s"><text x="350" y="500" fill="#ff4d4d" font-size="15" font-family="system-ui,sans-serif">B filled</text>
+    </g>
+
+    <g class="k96s_out118s">
+      <text x="430" y="340" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">Part 3 loop, 6–7 rounds</text>
+      <use href="#row10" x="350" y="360"/>
+      <use href="#row10" x="350" y="375"/>
+    </g>
+
+    <g class="k102s_out118s">
+      <rect x="350" y="395" width="60" height="35" fill="#38bdf8" opacity="0.2" rx="2"/>
+      <text x="380" y="410" fill="#f0f4f8" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">to 1</text>
+      <text x="380" y="425" fill="#f0f4f8" font-size="15" text-anchor="middle">0.2</text>
+      
+      <rect x="415" y="395" width="60" height="35" fill="#38bdf8" opacity="0.8" rx="2"/>
+      <text x="445" y="410" fill="#0b0c10" font-size="12" font-family="system-ui,sans-serif" text-anchor="middle">to 5</text>
+      <text x="445" y="425" fill="#0b0c10" font-size="15" text-anchor="middle">0.8</text>
+    </g>
+
+    <g class="k108s_out118s">
+      <text x="350" y="450" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">Blocked Arteries among No rows</text>
+      <text x="350" y="475" fill="#f0f4f8" font-size="15">No 0.2 + 0.8 = 1.0   Yes 0.0 → No</text>
+    </g>
+  </g>
+
+  <!-- Scene 6: Both copies down trained forest -->
+  <g class="k120s">
+    <path d="M 170 330 L 170 360" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+    <path d="M 480 330 L 480 360" stroke="#ff4d4d" stroke-width="2" marker-end="url(#arrowRed)"/>
+    
+    <text x="330" y="360" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle">the same 100 trained trees</text>
+    
+    <!-- 100 Trees in two rows -->
+    <use href="#row50" x="40" y="390"/>
+    <use href="#row50" x="40" y="410"/>
+  </g>
+
+  <!-- Votes A -->
+  <g class="k126s">
+    <circle cx="40" cy="392" r="9" fill="none" stroke="#facc15" stroke-width="2"/>
+    <text x="40" y="445" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">tree 1: Yes <tspan fill="#4cf26d">✓</tspan></text>
+  </g>
+  <g class="k129s">
+    <circle cx="52" cy="392" r="9" fill="none" stroke="#facc15" stroke-width="2"/>
+    <text x="40" y="465" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">tree 2: Yes <tspan fill="#4cf26d">✓</tspan></text>
+  </g>
+  <g class="k132s">
+    <circle cx="64" cy="392" r="9" fill="none" stroke="#facc15" stroke-width="2"/>
+    <text x="40" y="485" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">tree 3: No <tspan fill="#ff4d4d">✗</tspan></text>
+  </g>
+  <g class="k136s">
+    <text x="40" y="505" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">… tree 100</text>
+    <text x="160" y="445" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">trees that say Yes for A</text>
+    <text x="160" y="475" fill="#38bdf8" font-size="24">81 of 100</text>
+  </g>
+
+  <!-- Votes B -->
+  <g class="k144s">
+    <circle cx="40" cy="392" r="9" fill="none" stroke="#facc15" stroke-width="2"/>
+    <text x="350" y="445" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">tree 1: Yes <tspan fill="#ff4d4d">✗</tspan></text>
+  </g>
+  <g class="k147s">
+    <circle cx="52" cy="392" r="9" fill="none" stroke="#facc15" stroke-width="2"/>
+    <text x="350" y="465" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">tree 2: No <tspan fill="#4cf26d">✓</tspan></text>
+  </g>
+  <g class="k150s">
+    <circle cx="64" cy="392" r="9" fill="none" stroke="#facc15" stroke-width="2"/>
+    <text x="350" y="485" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">tree 3: Yes <tspan fill="#ff4d4d">✗</tspan></text>
+  </g>
+  <g class="k154s">
+    <text x="350" y="505" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif">… tree 100</text>
+    <text x="470" y="445" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">trees that say No for B</text>
+    <text x="470" y="475" fill="#ff4d4d" font-size="24">34 of 100</text>
+  </g>
+
+  <g class="k162s_out168s">
+    <text x="330" y="522" fill="#facc15" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle">A and B are different patients to the forest</text>
+  </g>
+
+  <!-- Scene 7: Winner -->
+  <g class="k170s">
+    <rect x="150" y="450" width="120" height="35" fill="none" stroke="#4cf26d" stroke-width="2" rx="4"/>
+    <text x="280" y="475" fill="#4cf26d" font-size="24">✓</text>
+  </g>
+  <g class="k175s">
+    <text x="320" y="522" fill="#f0f4f8" font-size="15" text-anchor="middle">81 &gt; 34</text>
+    <text x="320" y="547" fill="#4cf26d" font-size="20" text-anchor="middle">the forest is consistent with A</text>
+  </g>
+
+  <!-- Scene 8: Method Loop -->
+  <g class="k192s">
+    <rect x="110" y="570" width="100" height="35" fill="#131924" stroke="#475569" rx="3"/>
+    <text x="160" y="592" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle">copy twice</text>
+    <path d="M 215 587 L 240 587" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <rect x="245" y="570" width="135" height="35" fill="#131924" stroke="#475569" rx="3"/>
+    <text x="312" y="592" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle">fill each with its class</text>
+    <path d="M 385 587 L 410 587" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="415" y="570" width="165" height="35" fill="#131924" stroke="#475569" rx="3"/>
+    <text x="497" y="592" fill="#f0f4f8" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle">vote in the trained forest</text>
+    <path d="M 585 587 L 610 587" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="615" y="570" width="175" height="35" fill="#131924" stroke="#4cf26d" rx="3"/>
+    <text x="702" y="592" fill="#4cf26d" font-size="15" font-family="system-ui,sans-serif" text-anchor="middle">keep the consistent copy</text>
+  </g>
+
+  <!-- ======================= FORMULA ZONE ======================= -->
+  <!-- Yellow Background Highlights -->
+  <g class="bg18_36"><rect x="650" y="92" width="330" height="54" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bg41_56"><rect x="650" y="152" width="330" height="54" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bg62_90"><rect x="650" y="216" width="330" height="40" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bg96_118"><rect x="650" y="266" width="330" height="40" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bg126_144"><rect x="650" y="316" width="330" height="40" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bg144_168"><rect x="650" y="366" width="330" height="40" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bg170_190"><rect x="650" y="416" width="330" height="54" fill="#facc15" opacity="0.1" rx="4"/></g>
+
+  <g class="k18s">
+    <text x="660" y="112" fill="#f0f4f8" font-size="20"><tspan font-style="italic">x&#x0302;</tspan><tspan baseline-shift="super" font-size="12">(0)</tspan> = mode{ <tspan font-style="italic">x</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">j</tspan> : <tspan font-style="italic">y</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">j</tspan> = <tspan font-style="italic">y&#x0302;</tspan> }</text>
+    <text x="660" y="136" fill="#f0f4f8" font-size="20"><tspan font-style="italic">y&#x0302;</tspan> = <tspan fill="#facc15">???</tspan></text>
+  </g>
+
+  <g class="k41s">
+    <text x="660" y="172" fill="#f0f4f8" font-size="20">A = ( <tspan font-style="italic">x</tspan><tspan baseline-shift="sub" font-size="12">new</tspan> , <tspan font-style="italic">y&#x0302;</tspan> = Yes )</text>
+    <text x="660" y="196" fill="#f0f4f8" font-size="20">B = ( <tspan font-style="italic">x</tspan><tspan baseline-shift="sub" font-size="12">new</tspan> , <tspan font-style="italic">y&#x0302;</tspan> = No )</text>
+  </g>
+
+  <g class="k62s">
+    <text x="660" y="236" fill="#f0f4f8" font-size="20"><tspan font-style="italic">x&#x0302;</tspan><tspan baseline-shift="sub" font-size="12">A</tspan> = fill { <tspan font-style="italic">j</tspan> : <tspan font-style="italic">y</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">j</tspan> = Yes }</text>
+  </g>
+
+  <g class="k96s">
+    <text x="660" y="286" fill="#f0f4f8" font-size="20"><tspan font-style="italic">x&#x0302;</tspan><tspan baseline-shift="sub" font-size="12">B</tspan> = fill { <tspan font-style="italic">j</tspan> : <tspan font-style="italic">y</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">j</tspan> = No }</text>
+  </g>
+
+  <g class="k126s">
+    <text x="660" y="336" fill="#f0f4f8" font-size="20">votes<tspan baseline-shift="sub" font-size="12">A</tspan> = #{ <tspan font-style="italic">b</tspan> : <tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">b</tspan>(<tspan font-style="italic">x&#x0302;</tspan><tspan baseline-shift="sub" font-size="12">A</tspan>) = Yes }</text>
+  </g>
+
+  <g class="k144s">
+    <text x="660" y="386" fill="#f0f4f8" font-size="20">votes<tspan baseline-shift="sub" font-size="12">B</tspan> = #{ <tspan font-style="italic">b</tspan> : <tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">b</tspan>(<tspan font-style="italic">x&#x0302;</tspan><tspan baseline-shift="sub" font-size="12">B</tspan>) = No }</text>
+  </g>
+
+  <g class="k170s">
+    <text x="660" y="436" fill="#f0f4f8" font-size="20"><tspan font-style="italic">y&#x0302;</tspan> = Yes ,  <tspan font-style="italic">x&#x0302;</tspan> = <tspan font-style="italic">x&#x0302;</tspan><tspan baseline-shift="sub" font-size="12">A</tspan></text>
+    <text x="660" y="460" fill="#f0f4f8" font-size="20">if votes<tspan baseline-shift="sub" font-size="12">A</tspan> &gt; votes<tspan baseline-shift="sub" font-size="12">B</tspan></text>
+  </g>
+
+</svg>
