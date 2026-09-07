@@ -1,0 +1,283 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif">
+  <title>Dürr–Høyer Runtime Accounting Formula</title>
+  <rect width="1000" height="640" fill="#0b0c10"/>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a99ad"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowYellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#facc15"/>
+    </marker>
+
+    <!-- Grover iteration block -->
+    <g id="G_block">
+      <rect x="0" y="0" width="30" height="30" fill="#131924" stroke="#38bdf8" stroke-width="1.5" rx="3"/>
+      <text x="15" y="20" fill="#38bdf8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">G</text>
+    </g>
+
+    <g id="brace_search">
+      <path d="M 0 0 L 0 10 L 50 10 L 50 20 L 50 10 L 100 10 L 100 0" fill="none" stroke="#38bdf8" stroke-width="1.5"/>
+    </g>
+    <g id="brace_setup">
+      <path d="M 0 0 L 0 10 L 52.5 10 L 52.5 20 L 52.5 10 L 105 10 L 105 0" fill="none" stroke="#facc15" stroke-width="1.5"/>
+    </g>
+    <g id="brace_meas">
+      <path d="M 0 0 L 0 10 L 49 10 L 49 20 L 49 10 L 98 10 L 98 0" fill="none" stroke="#4cf26d" stroke-width="1.5"/>
+    </g>
+  </defs>
+
+  <style>
+    /* Scene 1 (Search): 0 - 25s */
+    .s1a { animation: k_s1a 200s linear forwards; opacity: 0; }
+    .s1b { animation: k_s1b 200s linear forwards; opacity: 0; }
+    .s1c { animation: k_s1c 200s linear forwards; opacity: 0; }
+    
+    @keyframes k_s1a { 0%, 1% {opacity:0} 2%, 24% {opacity:1} 25%, 100% {opacity:0} }
+    @keyframes k_s1b { 0%, 5% {opacity:0} 6%, 24% {opacity:1} 25%, 100% {opacity:0} }
+    @keyframes k_s1c { 0%, 10% {opacity:0} 11%, 24% {opacity:1} 25%, 100% {opacity:0} }
+
+    /* Scene 2 (Setup): 25 - 50s */
+    .s2a { animation: k_s2a 200s linear forwards; opacity: 0; }
+    .s2b { animation: k_s2b 200s linear forwards; opacity: 0; }
+    .s2c { animation: k_s2c 200s linear forwards; opacity: 0; }
+    
+    @keyframes k_s2a { 0%, 26% {opacity:0} 27%, 49% {opacity:1} 50%, 100% {opacity:0} }
+    @keyframes k_s2b { 0%, 30% {opacity:0} 31%, 49% {opacity:1} 50%, 100% {opacity:0} }
+    @keyframes k_s2c { 0%, 35% {opacity:0} 36%, 49% {opacity:1} 50%, 100% {opacity:0} }
+
+    /* Scene 3 (Measure): 50 - 75s */
+    .s3a { animation: k_s3a 200s linear forwards; opacity: 0; }
+    .s3b { animation: k_s3b 200s linear forwards; opacity: 0; }
+    .s3c { animation: k_s3c 200s linear forwards; opacity: 0; }
+    
+    @keyframes k_s3a { 0%, 51% {opacity:0} 52%, 74% {opacity:1} 75%, 100% {opacity:0} }
+    @keyframes k_s3b { 0%, 56% {opacity:0} 57%, 74% {opacity:1} 75%, 100% {opacity:0} }
+    @keyframes k_s3c { 0%, 61% {opacity:0} 62%, 74% {opacity:1} 75%, 100% {opacity:0} }
+
+    /* Scene 4 (Final): 75 - 100s */
+    .s4a { animation: k_s4a 200s linear forwards; opacity: 0; }
+    .s4b { animation: k_s4b 200s linear forwards; opacity: 0; }
+    .s4c { animation: k_s4c 200s linear forwards; opacity: 0; }
+    
+    @keyframes k_s4a { 0%, 76% {opacity:0} 77%, 100% {opacity:1} }
+    @keyframes k_s4b { 0%, 81% {opacity:0} 82%, 100% {opacity:1} }
+    @keyframes k_s4c { 0%, 86% {opacity:0} 87%, 100% {opacity:1} }
+  </style>
+
+  <!-- Title and Master Formula -->
+  <text x="40" y="50" fill="#f0f4f8" font-size="24" font-weight="bold">Dürr–Høyer Runtime Accounting Formula</text>
+  
+  <rect x="200" y="80" width="600" height="65" fill="#0f172a" stroke="#475569" stroke-width="2" rx="6"/>
+  
+  <!-- Master Formula Highlights -->
+  <g class="s1a">
+    <rect x="360" y="93" width="100" height="40" fill="#38bdf8" opacity="0.2" rx="4"/>
+    <rect x="360" y="93" width="100" height="40" fill="none" stroke="#38bdf8" stroke-width="1.5" rx="4"/>
+  </g>
+  <g class="s2a">
+    <rect x="502" y="93" width="105" height="40" fill="#facc15" opacity="0.2" rx="4"/>
+    <rect x="502" y="93" width="105" height="40" fill="none" stroke="#facc15" stroke-width="1.5" rx="4"/>
+  </g>
+  <g class="s3a">
+    <rect x="649" y="93" width="98" height="40" fill="#4cf26d" opacity="0.2" rx="4"/>
+    <rect x="649" y="93" width="98" height="40" fill="none" stroke="#4cf26d" stroke-width="1.5" rx="4"/>
+  </g>
+
+  <!-- Master Formula Text -->
+  <g transform="translate(298, 120)">
+    <text x="0" y="0" fill="#f0f4f8" font-size="24">
+      <tspan font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="14">DH</tspan>
+      =
+      <tspan font-style="italic" dx="10">Q</tspan><tspan baseline-shift="sub" font-size="14">search</tspan>
+      <tspan font-style="italic" dx="2">t</tspan><tspan baseline-shift="sub" font-size="14">iter</tspan>
+      <tspan dx="15">+</tspan>
+      <tspan font-style="italic" dx="15">Q</tspan><tspan baseline-shift="sub" font-size="14">setup</tspan>
+      <tspan font-style="italic" dx="2">t</tspan><tspan baseline-shift="sub" font-size="14">setup</tspan>
+      <tspan dx="15">+</tspan>
+      <tspan font-style="italic" dx="15">n</tspan><tspan baseline-shift="sub" font-size="14">meas</tspan>
+      <tspan font-style="italic" dx="2">t</tspan><tspan baseline-shift="sub" font-size="14">score</tspan>
+    </text>
+  </g>
+
+
+  <!-- ==================== SCENE 1: SEARCH ==================== -->
+  <g class="s1a">
+    <text x="50" y="200" fill="#38bdf8" font-size="20" font-family="system-ui,sans-serif" font-weight="bold">1. The search term</text>
+    <text x="50" y="240" fill="#f0f4f8" font-size="20">Dürr–Høyer uses repeated BBHT/Grover search rounds.</text>
+    <text x="50" y="270" fill="#f0f4f8" font-size="20">In BBHT round <tspan font-style="italic">r</tspan>, a random depth <tspan font-style="italic">j</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">r</tspan> is selected and <tspan font-style="italic">j</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">r</tspan> Grover iterations are executed.</text>
+  </g>
+  <g class="s1b">
+    <rect x="50" y="310" width="160" height="45" fill="#131924" stroke="#38bdf8" stroke-width="1.5" rx="4"/>
+    <text x="65" y="340" fill="#38bdf8" font-size="20"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">search</tspan> = ∑<tspan baseline-shift="sub" font-size="12" font-style="italic">r</tspan> <tspan font-style="italic">j</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">r</tspan></text>
+    
+    <text x="560" y="335" fill="#f0f4f8" font-size="18">Example: <tspan font-style="italic">j</tspan> = [1, 3, 2, 4]</text>
+
+    <!-- Visual Grover Rounds -->
+    <text x="560" y="380" fill="#8a99ad" font-size="15"><tspan font-style="italic">r</tspan>=1</text>
+    <use href="#G_block" x="600" y="358"/>
+
+    <text x="560" y="420" fill="#8a99ad" font-size="15"><tspan font-style="italic">r</tspan>=2</text>
+    <use href="#G_block" x="600" y="398"/>
+    <use href="#G_block" x="635" y="398"/>
+    <use href="#G_block" x="670" y="398"/>
+
+    <text x="560" y="460" fill="#8a99ad" font-size="15"><tspan font-style="italic">r</tspan>=3</text>
+    <use href="#G_block" x="600" y="438"/>
+    <use href="#G_block" x="635" y="438"/>
+
+    <text x="560" y="500" fill="#8a99ad" font-size="15"><tspan font-style="italic">r</tspan>=4</text>
+    <use href="#G_block" x="600" y="478"/>
+    <use href="#G_block" x="635" y="478"/>
+    <use href="#G_block" x="670" y="478"/>
+    <use href="#G_block" x="705" y="478"/>
+  </g>
+  <g class="s1c">
+    <text x="50" y="420" fill="#f0f4f8" font-size="20"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">search</tspan> = 1 + 3 + 2 + 4 = 10.</text>
+    <text x="50" y="480" fill="#f0f4f8" font-size="20">Note: <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="12">iter</tspan> is the physical time</text>
+    <text x="50" y="505" fill="#f0f4f8" font-size="20">required for one complete</text>
+    <text x="50" y="530" fill="#f0f4f8" font-size="20">Grover step/unit.</text>
+    
+    <rect x="50" y="560" width="220" height="40" fill="#131924" stroke="#475569" stroke-width="1.5" rx="4"/>
+    <text x="65" y="587" fill="#f0f4f8" font-size="20"><tspan font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="12">search</tspan> = <tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">search</tspan> <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="12">iter</tspan></text>
+  </g>
+
+
+  <!-- ==================== SCENE 2: SETUP ==================== -->
+  <g class="s2a">
+    <text x="50" y="200" fill="#facc15" font-size="20" font-family="system-ui,sans-serif" font-weight="bold">2. The setup term</text>
+    <text x="50" y="240" fill="#f0f4f8" font-size="20">Before each normal BBHT search attempt, the quantum search state is prepared:</text>
+    
+    <rect x="50" y="270" width="280" height="45" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="4"/>
+    <text x="65" y="300" fill="#facc15" font-size="20">|0···0⟩ → (1/√<tspan font-style="italic">N</tspan>) ∑<tspan baseline-shift="sub" font-size="12" font-style="italic">z</tspan> |<tspan font-style="italic">z</tspan>⟩</text>
+  </g>
+  <g class="s2b">
+    <rect x="50" y="360" width="120" height="40" fill="#131924" stroke="#475569" stroke-width="1.5" rx="4"/>
+    <text x="110" y="386" fill="#f0f4f8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">SETUP</text>
+    <line x1="175" y1="380" x2="225" y2="380" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <rect x="235" y="360" width="180" height="40" fill="#131924" stroke="#38bdf8" stroke-width="1.5" rx="4"/>
+    <text x="325" y="386" fill="#f0f4f8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif"><tspan font-style="italic" font-family="'Latin Modern Roman','CMU Serif'">j<tspan baseline-shift="sub" font-size="12">r</tspan></tspan> Grover iterations</text>
+    <line x1="420" y1="380" x2="470" y2="380" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="480" y="360" width="120" height="40" fill="#131924" stroke="#4cf26d" stroke-width="1.5" rx="4"/>
+    <text x="540" y="386" fill="#f0f4f8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">MEASURE</text>
+
+    <!-- Loop arrow -->
+    <path d="M 540 405 L 540 430 L 110 430 L 110 405" fill="none" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="4 4"/>
+  </g>
+  <g class="s2c">
+    <text x="50" y="490" fill="#f0f4f8" font-size="20"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan> counts these state-preparation/setup events.</text>
+    <text x="50" y="530" fill="#f0f4f8" font-size="20"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan> is the physical time assigned to one setup.</text>
+    
+    <rect x="50" y="560" width="220" height="40" fill="#131924" stroke="#475569" stroke-width="1.5" rx="4"/>
+    <text x="65" y="587" fill="#f0f4f8" font-size="20"><tspan font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan> = <tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan> <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan></text>
+  </g>
+
+
+  <!-- ==================== SCENE 3: MEASUREMENT ==================== -->
+  <g class="s3a">
+    <text x="50" y="200" fill="#4cf26d" font-size="20" font-family="system-ui,sans-serif" font-weight="bold">3. The measurement term: classical checks</text>
+    <text x="50" y="240" fill="#f0f4f8" font-size="20">After each BBHT search attempt, the candidate <tspan font-style="italic">z'</tspan> must be classically evaluated:</text>
+    
+    <rect x="50" y="270" width="460" height="45" fill="#131924" stroke="#4cf26d" stroke-width="1.5" rx="4"/>
+    <text x="65" y="300" fill="#4cf26d" font-size="20"><tspan font-style="italic">z'</tspan> → <tspan font-style="italic">L</tspan>(<tspan font-style="italic">z'</tspan>) → compare with current threshold.</text>
+  </g>
+  <g class="s3b">
+    <text x="50" y="360" fill="#f0f4f8" font-size="18">Example sequence of measurements:</text>
+    
+    <rect x="50" y="380" width="40" height="40" fill="#0f172a" stroke="#ff4d4d" stroke-width="2" rx="4"/>
+    <text x="70" y="407" fill="#ff4d4d" font-size="20" text-anchor="middle">F</text>
+    
+    <rect x="100" y="380" width="40" height="40" fill="#0f172a" stroke="#ff4d4d" stroke-width="2" rx="4"/>
+    <text x="120" y="407" fill="#ff4d4d" font-size="20" text-anchor="middle">F</text>
+    
+    <rect x="150" y="380" width="40" height="40" fill="#0f172a" stroke="#ff4d4d" stroke-width="2" rx="4"/>
+    <text x="170" y="407" fill="#ff4d4d" font-size="20" text-anchor="middle">F</text>
+    
+    <rect x="200" y="380" width="40" height="40" fill="#0f172a" stroke="#4cf26d" stroke-width="2" rx="4"/>
+    <text x="220" y="407" fill="#4cf26d" font-size="20" text-anchor="middle">S</text>
+    
+    <rect x="250" y="380" width="40" height="40" fill="#0f172a" stroke="#ff4d4d" stroke-width="2" rx="4"/>
+    <text x="270" y="407" fill="#ff4d4d" font-size="20" text-anchor="middle">F</text>
+    
+    <rect x="300" y="380" width="40" height="40" fill="#0f172a" stroke="#4cf26d" stroke-width="2" rx="4"/>
+    <text x="320" y="407" fill="#4cf26d" font-size="20" text-anchor="middle">S</text>
+
+    <text x="380" y="395" fill="#f0f4f8" font-size="20">6 measured candidates: <tspan font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="12">meas</tspan> = 6.</text>
+    <text x="380" y="420" fill="#f0f4f8" font-size="20">2 successfully improve threshold: <tspan font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="12">thr</tspan> = 2.</text>
+  </g>
+  <g class="s3c">
+    <rect x="50" y="450" width="120" height="45" fill="#0f172a" stroke="#facc15" stroke-width="2" rx="4"/>
+    <text x="110" y="480" fill="#facc15" font-size="20" text-anchor="middle"><tspan font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="12">meas</tspan> ≠ <tspan font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="12">thr</tspan></text>
+    
+    <text x="190" y="465" fill="#f0f4f8" font-size="18">The term counts ALL measured candidates</text>
+    <text x="190" y="490" fill="#f0f4f8" font-size="18">requiring a classical check/score.</text>
+
+    <rect x="50" y="520" width="220" height="40" fill="#131924" stroke="#475569" stroke-width="1.5" rx="4"/>
+    <text x="65" y="547" fill="#f0f4f8" font-size="20"><tspan font-style="italic">T</tspan><tspan baseline-shift="sub" font-size="12">check</tspan> = <tspan font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="12">meas</tspan> <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="12">score</tspan></text>
+    <text x="290" y="545" fill="#8a99ad" font-size="15" font-family="system-ui,sans-serif">(<tspan font-style="italic" font-family="'Latin Modern Roman','CMU Serif'">t<tspan baseline-shift="sub" font-size="10">score</tspan></tspan> = time for one classical check)</text>
+  </g>
+
+
+  <!-- ==================== SCENE 4: FINAL ==================== -->
+  <g class="s4a">
+    <text x="50" y="200" fill="#f0f4f8" font-size="20" font-family="system-ui,sans-serif" font-weight="bold">4. All three terms together</text>
+    
+    <!-- Flow Sequence -->
+    <rect x="50" y="230" width="80" height="35" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="3"/>
+    <text x="90" y="253" fill="#f0f4f8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">SETUP</text>
+    <line x1="135" y1="247" x2="155" y2="247" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="165" y="230" width="60" height="35" fill="#131924" stroke="#38bdf8" stroke-width="1.5" rx="3"/>
+    <text x="195" y="253" fill="#f0f4f8" font-size="18" text-anchor="middle"><tspan font-style="italic">G</tspan><tspan baseline-shift="super" font-size="12" font-style="italic">j</tspan><tspan baseline-shift="super" font-size="8">1</tspan></text>
+    <line x1="230" y1="247" x2="250" y2="247" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="260" y="230" width="140" height="35" fill="#131924" stroke="#4cf26d" stroke-width="1.5" rx="3"/>
+    <text x="330" y="253" fill="#f0f4f8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">MEASURE/CHECK</text>
+    <line x1="405" y1="247" x2="425" y2="247" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="435" y="230" width="80" height="35" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="3"/>
+    <text x="475" y="253" fill="#f0f4f8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">SETUP</text>
+    <line x1="520" y1="247" x2="540" y2="247" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="550" y="230" width="60" height="35" fill="#131924" stroke="#38bdf8" stroke-width="1.5" rx="3"/>
+    <text x="580" y="253" fill="#f0f4f8" font-size="18" text-anchor="middle"><tspan font-style="italic">G</tspan><tspan baseline-shift="super" font-size="12" font-style="italic">j</tspan><tspan baseline-shift="super" font-size="8">2</tspan></text>
+    <line x1="615" y1="247" x2="635" y2="247" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="645" y="230" width="140" height="35" fill="#131924" stroke="#4cf26d" stroke-width="1.5" rx="3"/>
+    <text x="715" y="253" fill="#f0f4f8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">MEASURE/CHECK</text>
+    <line x1="790" y1="247" x2="810" y2="247" stroke="#8a99ad" stroke-width="2" marker-end="url(#arrow)"/>
+    
+    <text x="830" y="255" fill="#f0f4f8" font-size="24">⋯</text>
+  </g>
+  <g class="s4b">
+    <!-- Remapping braces to master formula -->
+    <use href="#brace_search" x="360" y="150"/>
+    <text x="410" y="185" fill="#38bdf8" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">Grover/search work</text>
+    
+    <use href="#brace_setup" x="502" y="150"/>
+    <text x="554" y="203" fill="#facc15" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">state preparation</text>
+    
+    <use href="#brace_meas" x="649" y="150"/>
+    <text x="698" y="185" fill="#4cf26d" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">classical candidate checks</text>
+
+    <!-- Key Takeaways -->
+    <rect x="50" y="320" width="700" height="150" fill="#0f172a" stroke="#475569" stroke-width="1.5" rx="4"/>
+    
+    <text x="80" y="360" fill="#38bdf8" font-size="20"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">search</tspan> = ∑<tspan baseline-shift="sub" font-size="12" font-style="italic">r</tspan> <tspan font-style="italic">j</tspan><tspan baseline-shift="sub" font-size="12" font-style="italic">r</tspan></text>
+    <text x="80" y="400" fill="#facc15" font-size="20"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan> = # state preparations</text>
+    <text x="80" y="440" fill="#4cf26d" font-size="20"><tspan font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="12">meas</tspan> = # measured candidates/checks</text>
+  </g>
+  <g class="s4c">
+    <rect x="50" y="500" width="180" height="40" fill="#131924" stroke="#facc15" stroke-dasharray="4 4" stroke-width="1.5" rx="4"/>
+    <text x="140" y="527" fill="#facc15" font-size="20" text-anchor="middle"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan> ~ <tspan font-style="italic">n</tspan><tspan baseline-shift="sub" font-size="12">meas</tspan></text>
+    
+    <text x="250" y="515" fill="#f0f4f8" font-size="18">They remain separate terms because</text>
+    <text x="250" y="540" fill="#f0f4f8" font-size="18">per-event physical costs differ: <tspan fill="#ff4d4d"><tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="12">setup</tspan> ≠ <tspan font-style="italic">t</tspan><tspan baseline-shift="sub" font-size="12">score</tspan></tspan>.</text>
+  </g>
+
+</svg>
