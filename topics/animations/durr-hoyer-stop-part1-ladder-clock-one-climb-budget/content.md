@@ -14,42 +14,42 @@ author: Wei-Che Hung
 
 ## What happens
 
-1. One quantum search round. Among $N = 64$ rows a threshold row $y$ is held, and the $M$ rows whose value lies below the threshold form the marked set. A depth $j$ is drawn, $j$ Grover iterations rotate the state by $(2j+1)\theta$, one row $z$ is measured, and a single classical comparison, $L_z < L_y$, decides success or failure. That comparison is the only classical read in the round.
+1. One quantum search round. Among $N = 64$ rows a threshold row $y$ is held, and the $M$ rows whose value lies below the threshold form the marked set. A depth $j$ is drawn, $j$ Grover iterations rotate the state by $(2j+1)\theta$, one row $z$ is measured, and a single classical comparison, $L_z \lt L_y$, decides success or failure. That comparison is the only classical read in the round.
 2. The BBHT ladder (Boyer, Brassard, Høyer and Tapp). Each failure multiplies the range $m$ by $\lambda = 6/5$ and the depth is drawn uniformly below $m$; the range is capped at $\sqrt{N}$. A success resets $m$ to 1 and moves the threshold to the measured row.
 3. The descent and the silent minimum. On the worked run the threshold drops from rank 8 to rank 6, 3 and 1 in three successes; about $H_N - 1$ updates are expected in general. Once the threshold is the minimum, $M = 0$ and $\theta = 0$, so every round fails, and a failure is indistinguishable from bad luck. The search count therefore splits into the improvement work and the stopping work, and a stopping rule has to decide where the second part ends.
 4. Rule A, the global clock. Every Grover iteration and every state preparation is charged to one clock. When the clock passes $22.5\sqrt{N} + 1.4\lg^2 N$, the run is interrupted and the current threshold is returned; Dürr and Høyer show that this returns the minimum with probability at least one half.
-5. The price of one climb. A round at range $m$ costs fewer than $m/2$ iterations on average, so the climb from $m = 1$ to the critical range $m_0$ costs less than half a geometric sum, which is at most $\tfrac{1}{2}\,\tfrac{\lambda}{\lambda-1}\,m_0$. For $\lambda = 6/5$ that is $3m_0$: the constant is a property of the ladder, not a choice.
-6. Rule B, the one-climb budget. Inside one threshold visit the iterations are summed; when the sum reaches $\tfrac{1}{2}\,\tfrac{\lambda}{\lambda-1}\,\sqrt{N}$, the cost of one full climb to the cap, the search stops and the threshold is returned. On the worked run the budget is 24 and the final visit crosses it at 27.
+5. The price of one climb. A round at range $m$ costs fewer than $m/2$ iterations on average, so the climb from $m = 1$ to the critical range $m_0$ costs less than half a geometric sum, which is at most $\tfrac{1}{2} \tfrac{\lambda}{\lambda-1} m_0$. For $\lambda = 6/5$ that is $3m_0$: the constant is a property of the ladder, not a choice.
+6. Rule B, the one-climb budget. Inside one threshold visit the iterations are summed; when the sum reaches $\tfrac{1}{2} \tfrac{\lambda}{\lambda-1} \sqrt{N}$, the cost of one full climb to the cap, the search stops and the threshold is returned. On the worked run the budget is 24 and the final visit crosses it at 27.
 
 ## Concept
 
 One round succeeds with the Grover probability, where $M$ counts the rows better than the threshold:
 
-$$
-\sin\theta = \sqrt{\frac{M}{N}}, \qquad P_{\mathrm{succ}}(j) = \sin^2\big((2j+1)\,\theta\big)
-$$
+```math
+\sin\theta = \sqrt{\frac{M}{N}}, \qquad P_{\mathrm{succ}}(j) = \sin^2\big((2j+1) \theta\big)
+```
 
 The BBHT loop draws the depth from a growing range and resets it on success:
 
-$$
-j \sim \mathcal{U}\{0, \dots, \lceil m \rceil - 1\}, \qquad \text{fail: } m \to \min(\lambda m, \sqrt{N}), \qquad \text{success: } y \to z,\; m \to 1
-$$
+```math
+j \sim \mathcal{U}\{0, \dots, \lceil m \rceil - 1\}, \qquad \text{fail: } m \to \min(\lambda m, \sqrt{N}), \qquad \text{success: } y \to z, m \to 1
+```
 
 Rule A watches the whole run against one cap:
 
-$$
-\text{clock} = \sum j + \lg N \,(1 + u) \;\ge\; 22.5\sqrt{N} + 1.4\lg^2 N
-$$
+```math
+\text{clock} = \sum j + \lg N \cdot (1 + u) \ge 22.5\sqrt{N} + 1.4\lg^2 N
+```
 
 Rule B watches one visit against the cost of one climb. The bound on that cost comes from the proof of Theorem 3 in the BBHT paper: a round at range $m$ costs fewer than $m/2$ iterations on average, and the ranges form a geometric sequence,
 
-$$
-\text{climb to } m_0 \;<\; \tfrac{1}{2} \sum_{s=1}^{S} \lambda^{s-1} \;<\; \tfrac{1}{2}\,\frac{\lambda}{\lambda-1}\, m_0 \;=\; 3\,m_0 \quad (\lambda = 6/5)
-$$
+```math
+\text{climb to } m_0 \lt \tfrac{1}{2} \sum_{s=1}^{S} \lambda^{s-1} \lt \tfrac{1}{2} \frac{\lambda}{\lambda-1} m_0 = 3 m_0 \quad (\lambda = 6/5)
+```
 
-$$
-\text{spent} = \sum_{\text{visit}} j \;\ge\; \tfrac{1}{2}\,\frac{\lambda}{\lambda-1}\,\sqrt{N}
-$$
+```math
+\text{spent} = \sum_{\text{visit}} j \ge \tfrac{1}{2} \frac{\lambda}{\lambda-1} \sqrt{N}
+```
 
 The two rules differ in what they watch and in what they promise. Rule A charges everything to one clock and inherits a theorem for its cap; rule B is much cheaper, because it charges only the current visit and gives the ladder exactly one climb to the cap before it stops, but the rule itself says nothing about how often it stops one round too early. The next part builds stopping rules that state that number. Related: [Dürr–Høyer runtime accounting](../durr-hoyer-runtime-three-terms/content.md), [Grover's iteration as a $2\theta$ rotation](../grover-iteration-2theta-rotation/content.md), and [harmonic growth](../harmonic-growth-euler-mascheroni-gamma/content.md) for the $H_N - 1$ expected updates.
 
