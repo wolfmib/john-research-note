@@ -1,0 +1,659 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif">
+  <title>Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget</title>
+  <rect width="1000" height="640" fill="#0b0c10"/>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a99ad"/>
+    </marker>
+    <marker id="arrowYellow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#facc15"/>
+    </marker>
+    
+    <!-- Grid pattern for 8x8 -->
+    <pattern id="grid8x8" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="none" stroke="#475569" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <style>
+    /* Scene 1 (1s - 28s -> 0.5% - 14%) */
+    .f1_14 { animation: k1_14 200s linear forwards; opacity: 0; } @keyframes k1_14 { 0%, 0.6% {opacity:0} 1%, 13.6% {opacity:1} 14%, 100% {opacity:0} }
+    .f3_14 { animation: k3_14 200s linear forwards; opacity: 0; } @keyframes k3_14 { 0%, 2.6% {opacity:0} 3%, 13.6% {opacity:1} 14%, 100% {opacity:0} }
+    .f5_14 { animation: k5_14 200s linear forwards; opacity: 0; } @keyframes k5_14 { 0%, 4.6% {opacity:0} 5%, 13.6% {opacity:1} 14%, 100% {opacity:0} }
+    .f7_14 { animation: k7_14 200s linear forwards; opacity: 0; } @keyframes k7_14 { 0%, 6.6% {opacity:0} 7%, 13.6% {opacity:1} 14%, 100% {opacity:0} }
+    .f9_14 { animation: k9_14 200s linear forwards; opacity: 0; } @keyframes k9_14 { 0%, 9.1% {opacity:0} 9.5%, 13.6% {opacity:1} 14%, 100% {opacity:0} }
+    .f11_14 { animation: k11_14 200s linear forwards; opacity: 0; } @keyframes k11_14 { 0%, 11.1% {opacity:0} 11.5%, 13.6% {opacity:1} 14%, 100% {opacity:0} }
+    
+    .dim_s1 { animation: kdim_s1 200s linear forwards; } @keyframes kdim_s1 { 0%, 6.6% {opacity:1} 7%, 13.6% {opacity:0.4} 14%, 100% {opacity:0} }
+
+    /* Scene 2 (28s - 52s -> 14% - 26%) */
+    .f15_26 { animation: k15_26 200s linear forwards; opacity: 0; } @keyframes k15_26 { 0%, 14.6% {opacity:0} 15%, 25.6% {opacity:1} 26%, 100% {opacity:0} }
+    .f18_26 { animation: k18_26 200s linear forwards; opacity: 0; } @keyframes k18_26 { 0%, 17.6% {opacity:0} 18%, 25.6% {opacity:1} 26%, 100% {opacity:0} }
+    .f22_26 { animation: k22_26 200s linear forwards; opacity: 0; } @keyframes k22_26 { 0%, 21.6% {opacity:0} 22%, 25.6% {opacity:1} 26%, 100% {opacity:0} }
+    
+    .dim_s2 { animation: kdim_s2 200s linear forwards; opacity: 0; } @keyframes kdim_s2 { 0%, 14.6% {opacity:0} 15%, 21.6% {opacity:1} 22%, 25.6% {opacity:0.4} 26%, 100% {opacity:0} }
+
+    /* Scene 3 (52s - 82s -> 26% - 41%) */
+    .f27_41 { animation: k27_41 200s linear forwards; opacity: 0; } @keyframes k27_41 { 0%, 26.6% {opacity:0} 27%, 40.6% {opacity:1} 41%, 100% {opacity:0} }
+    .f29_41 { animation: k29_41 200s linear forwards; opacity: 0; } @keyframes k29_41 { 0%, 29.1% {opacity:0} 29.5%, 40.6% {opacity:1} 41%, 100% {opacity:0} }
+    .f31_41 { animation: k31_41 200s linear forwards; opacity: 0; } @keyframes k31_41 { 0%, 31.1% {opacity:0} 31.5%, 40.6% {opacity:1} 41%, 100% {opacity:0} }
+    .f33_41 { animation: k33_41 200s linear forwards; opacity: 0; } @keyframes k33_41 { 0%, 33.1% {opacity:0} 33.5%, 40.6% {opacity:1} 41%, 100% {opacity:0} }
+    .f35_41 { animation: k35_41 200s linear forwards; opacity: 0; } @keyframes k35_41 { 0%, 35.1% {opacity:0} 35.5%, 40.6% {opacity:1} 41%, 100% {opacity:0} }
+    .f38_41 { animation: k38_41 200s linear forwards; opacity: 0; } @keyframes k38_41 { 0%, 37.6% {opacity:0} 38%, 40.6% {opacity:1} 41%, 100% {opacity:0} }
+
+    /* Scene 4 (82s - 118s -> 41% - 59%) */
+    .f42_59 { animation: k42_59 200s linear forwards; opacity: 0; } @keyframes k42_59 { 0%, 41.6% {opacity:0} 42%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+    .f43_59 { animation: k43_59 200s linear forwards; opacity: 0; } @keyframes k43_59 { 0%, 43.1% {opacity:0} 43.5%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+    .f46_59 { animation: k46_59 200s linear forwards; opacity: 0; } @keyframes k46_59 { 0%, 45.6% {opacity:0} 46%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+    .f48_59 { animation: k48_59 200s linear forwards; opacity: 0; } @keyframes k48_59 { 0%, 48.1% {opacity:0} 48.5%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+    .f52_59 { animation: k52_59 200s linear forwards; opacity: 0; } @keyframes k52_59 { 0%, 52.1% {opacity:0} 52.5%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+    .f55_59 { animation: k55_59 200s linear forwards; opacity: 0; } @keyframes k55_59 { 0%, 55.1% {opacity:0} 55.5%, 58.6% {opacity:1} 59%, 100% {opacity:0} }
+
+    /* Scene 5 (118s - 162s -> 59% - 81%) */
+    .f60_81 { animation: k60_81 200s linear forwards; opacity: 0; } @keyframes k60_81 { 0%, 59.6% {opacity:0} 60%, 80.6% {opacity:1} 81%, 100% {opacity:0} }
+    .f62_81 { animation: k62_81 200s linear forwards; opacity: 0; } @keyframes k62_81 { 0%, 62.1% {opacity:0} 62.5%, 80.6% {opacity:1} 81%, 100% {opacity:0} }
+    .f65_81 { animation: k65_81 200s linear forwards; opacity: 0; } @keyframes k65_81 { 0%, 65.1% {opacity:0} 65.5%, 80.6% {opacity:1} 81%, 100% {opacity:0} }
+    .f69_81 { animation: k69_81 200s linear forwards; opacity: 0; } @keyframes k69_81 { 0%, 68.6% {opacity:0} 69%, 80.6% {opacity:1} 81%, 100% {opacity:0} }
+    .f72_81 { animation: k72_81 200s linear forwards; opacity: 0; } @keyframes k72_81 { 0%, 72.1% {opacity:0} 72.5%, 80.6% {opacity:1} 81%, 100% {opacity:0} }
+    .f76_81 { animation: k76_81 200s linear forwards; opacity: 0; } @keyframes k76_81 { 0%, 75.6% {opacity:0} 76%, 80.6% {opacity:1} 81%, 100% {opacity:0} }
+    .f78_81 { animation: k78_81 200s linear forwards; opacity: 0; } @keyframes k78_81 { 0%, 78.1% {opacity:0} 78.5%, 80.6% {opacity:1} 81%, 100% {opacity:0} }
+
+    /* Scene 6 (162s - 200s -> 81% - 100%) */
+    .f82_100 { animation: k82_100 200s linear forwards; opacity: 0; } @keyframes k82_100 { 0%, 81.6% {opacity:0} 82%, 100% {opacity:1} }
+    .f84_100 { animation: k84_100 200s linear forwards; opacity: 0; } @keyframes k84_100 { 0%, 84.1% {opacity:0} 84.5%, 100% {opacity:1} }
+    .f86_100 { animation: k86_100 200s linear forwards; opacity: 0; } @keyframes k86_100 { 0%, 86.1% {opacity:0} 86.5%, 100% {opacity:1} }
+    .f90_100 { animation: k90_100 200s linear forwards; opacity: 0; } @keyframes k90_100 { 0%, 89.6% {opacity:0} 90%, 100% {opacity:1} }
+    .f93_100 { animation: k93_100 200s linear forwards; opacity: 0; } @keyframes k93_100 { 0%, 92.6% {opacity:0} 93%, 100% {opacity:1} }
+
+    /* Run Strip stays from 27% to 100% */
+    .f27_100 { animation: k27_100 200s linear forwards; opacity: 0; } @keyframes k27_100 { 0%, 26.6% {opacity:0} 27%, 100% {opacity:1} }
+    .f29_100 { animation: k29_100 200s linear forwards; opacity: 0; } @keyframes k29_100 { 0%, 29.1% {opacity:0} 29.5%, 100% {opacity:1} }
+    .f31_100 { animation: k31_100 200s linear forwards; opacity: 0; } @keyframes k31_100 { 0%, 31.1% {opacity:0} 31.5%, 100% {opacity:1} }
+    .f35_100 { animation: k35_100 200s linear forwards; opacity: 0; } @keyframes k35_100 { 0%, 35.1% {opacity:0} 35.5%, 100% {opacity:1} }
+    .f55_100 { animation: k55_100 200s linear forwards; opacity: 0; } @keyframes k55_100 { 0%, 55.1% {opacity:0} 55.5%, 100% {opacity:1} }
+
+    /* Formulas Stay on screen */
+    .F1 { animation: aF1 200s linear forwards; opacity: 0; } @keyframes aF1 { 0%, 2.6% {opacity:0} 3%, 100% {opacity:1} }
+    .F2 { animation: aF2 200s linear forwards; opacity: 0; } @keyframes aF2 { 0%, 6.6% {opacity:0} 7%, 100% {opacity:1} }
+    .F3 { animation: aF3 200s linear forwards; opacity: 0; } @keyframes aF3 { 0%, 14.6% {opacity:0} 15%, 100% {opacity:1} }
+    .F4 { animation: aF4 200s linear forwards; opacity: 0; } @keyframes aF4 { 0%, 29.1% {opacity:0} 29.5%, 100% {opacity:1} }
+    .F5 { animation: aF5 200s linear forwards; opacity: 0; } @keyframes aF5 { 0%, 35.1% {opacity:0} 35.5%, 100% {opacity:1} }
+    .F6 { animation: aF6 200s linear forwards; opacity: 0; } @keyframes aF6 { 0%, 43.1% {opacity:0} 43.5%, 55.1% {opacity:1} 55.5%, 100% {opacity:0.35} }
+    .F7 { animation: aF7 200s linear forwards; opacity: 0; } @keyframes aF7 { 0%, 62.1% {opacity:0} 62.5%, 100% {opacity:1} }
+    .F7b { animation: aF7b 200s linear forwards; opacity: 0; } @keyframes aF7b { 0%, 68.6% {opacity:0} 69%, 100% {opacity:1} }
+    .F8 { animation: aF8 200s linear forwards; opacity: 0; } @keyframes aF8 { 0%, 81.6% {opacity:0} 82%, 92.6% {opacity:1} 93%, 100% {opacity:0.35} }
+
+    /* Yellow Formula Backgrounds per Scene */
+    .bgS1 { animation: kbg1 200s linear forwards; opacity: 0; } @keyframes kbg1 { 0%, 2.6%{opacity:0} 3%, 13.6%{opacity:1} 14%, 100%{opacity:0} }
+    .bgS2 { animation: kbg2 200s linear forwards; opacity: 0; } @keyframes kbg2 { 0%, 14.6%{opacity:0} 15%, 25.6%{opacity:1} 26%, 100%{opacity:0} }
+    .bgS3 { animation: kbg3 200s linear forwards; opacity: 0; } @keyframes kbg3 { 0%, 29.1%{opacity:0} 29.5%, 40.6%{opacity:1} 41%, 100%{opacity:0} }
+    .bgS4 { animation: kbg4 200s linear forwards; opacity: 0; } @keyframes kbg4 { 0%, 43.1%{opacity:0} 43.5%, 58.6%{opacity:1} 59%, 100%{opacity:0} }
+    .bgS5 { animation: kbg5 200s linear forwards; opacity: 0; } @keyframes kbg5 { 0%, 62.1%{opacity:0} 62.5%, 80.6%{opacity:1} 81%, 100%{opacity:0} }
+    .bgS6 { animation: kbg6 200s linear forwards; opacity: 0; } @keyframes kbg6 { 0%, 81.6%{opacity:0} 82%, 92.6%{opacity:1} 93%, 100%{opacity:0} }
+    /* patch: replacing threshold states (scene 3) and the tick text before the red 27 >= 24 (scene 6) */
+    .f27_29 { animation: k27_29 200s linear forwards; opacity: 0; } @keyframes k27_29 { 0%, 26.6% {opacity:0} 27%, 29.1% {opacity:1} 29.5%, 100% {opacity:0} }
+    .f29_31 { animation: k29_31 200s linear forwards; opacity: 0; } @keyframes k29_31 { 0%, 29.1% {opacity:0} 29.5%, 31.1% {opacity:1} 31.5%, 100% {opacity:0} }
+    .f31_33 { animation: k31_33 200s linear forwards; opacity: 0; } @keyframes k31_33 { 0%, 31.1% {opacity:0} 31.5%, 33.1% {opacity:1} 33.5%, 100% {opacity:0} }
+    .f86_90 { animation: k86_90 200s linear forwards; opacity: 0; } @keyframes k86_90 { 0%, 86.1% {opacity:0} 86.5%, 89.6% {opacity:1} 90%, 100% {opacity:0} }
+    /* patch: title in scene 1 only; the two stop equations in the bottom band */
+    .title_s1 { animation: ktitle 200s linear forwards; } @keyframes ktitle { 0%, 13.6% {opacity:1} 14%, 100% {opacity:0} }
+    .bottomA { animation: kbotA 200s linear forwards; opacity: 0; } @keyframes kbotA { 0%, 55.1% {opacity:0} 55.5%, 100% {opacity:1} }
+    .bottomB { animation: kbotB 200s linear forwards; opacity: 0; } @keyframes kbotB { 0%, 92.6% {opacity:0} 93%, 100% {opacity:1} }
+  </style>
+
+  <!-- TITLE -->
+  <text class="title_s1" x="40" y="35" fill="#f0f4f8" font-size="22" font-weight="bold">Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget</text>
+
+  <!-- FORMULA COLUMN (Right Zone) - regenerated by patch_dh_stop_part1.py: 14 px, inside x 670..960 -->
+  <g class="bgS1"><rect x="670" y="86" width="290" height="50" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bgS2"><rect x="670" y="144" width="290" height="58" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bgS3"><rect x="670" y="210" width="290" height="66" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bgS4"><rect x="670" y="284" width="290" height="40" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bgS5"><rect x="670" y="332" width="290" height="76" fill="#facc15" opacity="0.1" rx="4"/></g>
+  <g class="bgS6"><rect x="670" y="416" width="290" height="58" fill="#facc15" opacity="0.1" rx="4"/></g>
+
+  <g class="F1">
+    <text x="680" y="100" fill="#f0f4f8" font-size="14">sin <tspan font-style="italic">θ</tspan> = √(<tspan font-style="italic">M</tspan> / <tspan font-style="italic">N</tspan>) ,   <tspan font-style="italic">M</tspan> = #{ <tspan font-style="italic">z</tspan> : <tspan font-style="italic">L</tspan><tspan baseline-shift="sub" font-size="10">z</tspan> &lt; <tspan font-style="italic">L</tspan><tspan baseline-shift="sub" font-size="10">y</tspan> }</text>
+  </g>
+  <g class="F2">
+    <text x="680" y="128" fill="#f0f4f8" font-size="14"><tspan font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10">succ</tspan>(<tspan font-style="italic">j</tspan>) = sin²((2<tspan font-style="italic">j</tspan> + 1) <tspan font-style="italic">θ</tspan>)</text>
+  </g>
+  <g class="F3">
+    <text x="680" y="158" fill="#f0f4f8" font-size="14"><tspan font-style="italic">j</tspan> ~ U{ 0, …, ⌈<tspan font-style="italic">m</tspan>⌉ − 1 } ;</text>
+    <text x="680" y="176" fill="#f0f4f8" font-size="14">fail: <tspan font-style="italic">m</tspan> → min(<tspan font-style="italic">λ</tspan> <tspan font-style="italic">m</tspan>, √<tspan font-style="italic">N</tspan>) ,   <tspan font-style="italic">λ</tspan> = 6/5 ;</text>
+    <text x="680" y="194" fill="#f0f4f8" font-size="14">success: <tspan font-style="italic">y</tspan> → <tspan font-style="italic">z</tspan> ,   <tspan font-style="italic">m</tspan> → 1</text>
+  </g>
+  <g class="F4">
+    <text x="680" y="224" fill="#f0f4f8" font-size="14">E[ threshold updates ] = <tspan font-style="italic">H</tspan><tspan baseline-shift="sub" font-size="10">N</tspan> − 1 ≈ 3.74   (<tspan font-style="italic">N</tspan> = 64)</text>
+  </g>
+  <g class="F5">
+    <text x="680" y="250" fill="#f0f4f8" font-size="14"><tspan font-style="italic">M</tspan> = 0 ⇒ <tspan font-style="italic">θ</tspan> = 0 ⇒ <tspan font-style="italic">P</tspan><tspan baseline-shift="sub" font-size="10">succ</tspan>(<tspan font-style="italic">j</tspan>) = 0 for every <tspan font-style="italic">j</tspan> ;</text>
+    <text x="680" y="268" fill="#f0f4f8" font-size="14"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="10">search</tspan> = <tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="10">imp</tspan> + <tspan font-style="italic">Q</tspan><tspan baseline-shift="sub" font-size="10">stop</tspan></text>
+  </g>
+  <g class="F6">
+    <text x="680" y="298" fill="#f0f4f8" font-size="14">clock = Σ <tspan font-style="italic">j</tspan> + lg <tspan font-style="italic">N</tspan> · (1 + <tspan font-style="italic">u</tspan>) ;</text>
+    <text x="680" y="316" fill="#f0f4f8" font-size="14">stop when clock ≥ 22.5 √<tspan font-style="italic">N</tspan> + 1.4 lg² <tspan font-style="italic">N</tspan> = 230.4</text>
+  </g>
+  <g class="F7">
+    <text x="680" y="346" fill="#f0f4f8" font-size="14">E[ <tspan font-style="italic">j</tspan> | <tspan font-style="italic">m</tspan> ] &lt; <tspan font-style="italic">m</tspan> / 2 ,   <tspan font-style="italic">m</tspan>₀ = 1 / sin 2<tspan font-style="italic">θ</tspan></text>
+    <text x="680" y="362" fill="#8a99ad" font-size="11">(<tspan font-style="italic">m</tspan>₀ is the critical <tspan font-style="italic">m</tspan>, see Part 2)</text>
+  </g>
+  <g class="F7b">
+    <text x="680" y="382" fill="#f0f4f8" font-size="14">climb to <tspan font-style="italic">m</tspan>₀  &lt;  ½ Σ<tspan baseline-shift="sub" font-size="10">s=1</tspan><tspan baseline-shift="super" font-size="10">S</tspan> <tspan font-style="italic">λ</tspan><tspan baseline-shift="super" font-size="10">s−1</tspan></text>
+    <text x="680" y="400" fill="#f0f4f8" font-size="14">&lt;  ½ · <tspan font-style="italic">λ</tspan>/(<tspan font-style="italic">λ</tspan>−1) · <tspan font-style="italic">m</tspan>₀  =  3 <tspan font-style="italic">m</tspan>₀   (<tspan font-style="italic">λ</tspan> = 6/5)</text>
+  </g>
+  <g class="F8">
+    <text x="680" y="430" fill="#f0f4f8" font-size="14">spent = Σ<tspan baseline-shift="sub" font-size="10">visit</tspan> <tspan font-style="italic">j</tspan> ;</text>
+    <text x="680" y="448" fill="#f0f4f8" font-size="14">stop when spent ≥ ½ · <tspan font-style="italic">λ</tspan>/(<tspan font-style="italic">λ</tspan>−1) · √<tspan font-style="italic">N</tspan></text>
+    <text x="680" y="466" fill="#f0f4f8" font-size="14">(<tspan font-style="italic">λ</tspan> = 6/5:   3 √<tspan font-style="italic">N</tspan> = 24)</text>
+  </g>
+
+
+  <!-- RUN STRIP (Stay from 27%) -->
+  <g class="f27_100">
+    <!-- Base text -->
+    <text x="40" y="80" fill="#f0f4f8" font-size="15"><tspan font-style="italic">j</tspan></text>
+    
+    <!-- Visit 1 -->
+    <rect x="60" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="68" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="68" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">0</text>
+    <rect x="80" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="88" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="88" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <rect x="100" y="55" width="16" height="16" fill="#4cf26d" rx="2"/> <text x="108" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">S</text> <text x="108" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <line x1="120" y1="50" x2="120" y2="90" stroke="#475569" stroke-width="1.5"/>
+  </g>
+  <g class="f29_100">
+    <!-- Visit 2 -->
+    <rect x="125" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="133" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="133" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">0</text>
+    <rect x="145" y="55" width="16" height="16" fill="#4cf26d" rx="2"/> <text x="153" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">S</text> <text x="153" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <line x1="165" y1="50" x2="165" y2="90" stroke="#475569" stroke-width="1.5"/>
+  </g>
+  <g class="f31_100">
+    <!-- Visit 3 -->
+    <rect x="170" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="178" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="178" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">0</text>
+    <rect x="190" y="55" width="16" height="16" fill="#4cf26d" rx="2"/> <text x="198" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">S</text> <text x="198" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <line x1="210" y1="50" x2="210" y2="90" stroke="#475569" stroke-width="1.5"/>
+  </g>
+  <g class="f35_100">
+    <!-- Visit 4 (starts with 3 Fs) -->
+    <rect x="215" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="223" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="223" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">0</text>
+    <rect x="235" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="243" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="243" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <rect x="255" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="263" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="263" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">0</text>
+    
+    <rect x="275" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="283" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="283" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <rect x="295" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="303" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="303" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <rect x="315" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="323" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="323" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">0</text>
+
+    <!-- Lots more Fs -->
+    <rect x="335" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="343" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="343" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">2</text>
+    <rect x="355" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="363" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="363" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <rect x="375" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="383" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="383" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <rect x="395" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="403" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="403" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">2</text>
+    <rect x="415" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="423" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="423" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">5</text>
+    <rect x="435" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="443" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="443" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">6</text>
+    <rect x="455" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="463" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="463" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">1</text>
+    <rect x="475" y="55" width="16" height="16" fill="#ff4d4d" rx="2"/> <text x="483" y="67" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">F</text> <text x="483" y="85" fill="#f0f4f8" font-size="13" text-anchor="middle">6</text>
+    
+    <text x="505" y="70" fill="#f0f4f8" font-size="18">…</text>
+  </g>
+
+  <!-- Cut Marks Rule B & Rule A -->
+  <g class="f90_100">
+    <!-- Rule B Cut -->
+    <line x1="470" y1="50" x2="470" y2="96" stroke="#ff4d4d" stroke-width="3"/>
+    <text x="470" y="110" fill="#ff4d4d" font-size="15" font-weight="bold" text-anchor="middle">B</text>
+  </g>
+  <g class="f55_100">
+    <!-- Rule A Cut -->
+    <line x1="535" y1="50" x2="535" y2="96" stroke="#ff4d4d" stroke-width="3"/>
+    <text x="535" y="110" fill="#ff4d4d" font-size="15" font-weight="bold" text-anchor="middle">A</text>
+  </g>
+
+  <!-- ==================== STAGE ==================== -->
+
+  <!-- SCENE 1: Search Round -->
+  <g class="f1_14">
+    <!-- one row of 64 cells (patch: a 1-D list, not a grid) -->
+    <rect x="40" y="200" width="576" height="28" fill="#0f172a"/>
+    <line x1="49" y1="200" x2="49" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="58" y1="200" x2="58" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="67" y1="200" x2="67" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="76" y1="200" x2="76" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="85" y1="200" x2="85" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="94" y1="200" x2="94" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="103" y1="200" x2="103" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="112" y1="200" x2="112" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="121" y1="200" x2="121" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="130" y1="200" x2="130" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="139" y1="200" x2="139" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="148" y1="200" x2="148" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="157" y1="200" x2="157" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="166" y1="200" x2="166" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="175" y1="200" x2="175" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="184" y1="200" x2="184" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="193" y1="200" x2="193" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="202" y1="200" x2="202" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="211" y1="200" x2="211" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="220" y1="200" x2="220" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="229" y1="200" x2="229" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="238" y1="200" x2="238" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="247" y1="200" x2="247" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="256" y1="200" x2="256" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="265" y1="200" x2="265" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="274" y1="200" x2="274" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="283" y1="200" x2="283" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="292" y1="200" x2="292" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="301" y1="200" x2="301" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="310" y1="200" x2="310" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="319" y1="200" x2="319" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="328" y1="200" x2="328" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="337" y1="200" x2="337" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="346" y1="200" x2="346" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="355" y1="200" x2="355" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="364" y1="200" x2="364" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="373" y1="200" x2="373" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="382" y1="200" x2="382" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="391" y1="200" x2="391" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="400" y1="200" x2="400" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="409" y1="200" x2="409" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="418" y1="200" x2="418" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="427" y1="200" x2="427" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="436" y1="200" x2="436" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="445" y1="200" x2="445" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="454" y1="200" x2="454" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="463" y1="200" x2="463" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="472" y1="200" x2="472" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="481" y1="200" x2="481" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="490" y1="200" x2="490" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="499" y1="200" x2="499" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="508" y1="200" x2="508" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="517" y1="200" x2="517" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="526" y1="200" x2="526" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="535" y1="200" x2="535" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="544" y1="200" x2="544" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="553" y1="200" x2="553" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="562" y1="200" x2="562" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="571" y1="200" x2="571" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="580" y1="200" x2="580" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="589" y1="200" x2="589" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="598" y1="200" x2="598" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <line x1="607" y1="200" x2="607" y2="228" stroke="#1f2937" stroke-width="1"/>
+    <rect x="40" y="200" width="576" height="28" fill="none" stroke="#f0f4f8" stroke-width="2"/>
+    <text x="40" y="252" fill="#f0f4f8" font-size="15"><tspan font-style="italic">N</tspan> = 64 rows</text>
+  </g>
+  
+  <g class="f3_14">
+    <!-- Threshold y -->
+    <rect x="310" y="200" width="9" height="28" fill="#facc15"/>
+    <!-- 7 better rows in cyan -->
+    <rect x="67" y="200" width="9" height="28" fill="#38bdf8"/>
+    <rect x="139" y="200" width="9" height="28" fill="#38bdf8"/>
+    <rect x="211" y="200" width="9" height="28" fill="#38bdf8"/>
+    <rect x="283" y="200" width="9" height="28" fill="#38bdf8"/>
+    <rect x="382" y="200" width="9" height="28" fill="#38bdf8"/>
+    <rect x="463" y="200" width="9" height="28" fill="#38bdf8"/>
+    <rect x="562" y="200" width="9" height="28" fill="#38bdf8"/>
+    <text x="150" y="252" fill="#38bdf8" font-size="15">better than <tspan font-style="italic">y</tspan>: <tspan font-style="italic">M</tspan> = 7</text>
+  </g>
+  
+  <g class="f5_14">
+    <!-- Dial -->
+    <path d="M 400 280 A 80 80 0 0 0 320 360" fill="none" stroke="#475569" stroke-width="2"/>
+    <line x1="320" y1="360" x2="420" y2="360" stroke="#f0f4f8" stroke-width="2"/> <!-- horizontal bad -->
+    <line x1="320" y1="360" x2="320" y2="260" stroke="#f0f4f8" stroke-width="2"/> <!-- vertical good -->
+    <text x="430" y="365" fill="#f0f4f8" font-size="15">bad</text>
+    <text x="310" y="250" fill="#f0f4f8" font-size="15" text-anchor="middle">good</text>
+
+    <text x="320" y="420" fill="#8a99ad" font-size="15">sin <tspan font-style="italic">θ</tspan> = √(7 / 64)</text>
+    <text x="320" y="445" fill="#f0f4f8" font-size="20"><tspan font-style="italic">θ</tspan> ≈ 19°</text>
+  </g>
+
+  <g class="dim_s1">
+    <line x1="320" y1="360" x2="395" y2="335" stroke="#f0f4f8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="405" y="335" fill="#f0f4f8" font-size="15"><tspan font-style="italic">θ</tspan></text>
+  </g>
+
+  <g class="f7_14">
+    <!-- 3θ arrow -->
+    <line x1="320" y1="360" x2="365" y2="295" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="375" y="295" fill="#38bdf8" font-size="15">3<tspan font-style="italic">θ</tspan></text>
+
+    <!-- G block -->
+    <rect x="360" y="375" width="24" height="24" fill="#38bdf8" rx="2"/>
+    <text x="372" y="392" fill="#0b0c10" font-size="15" font-weight="bold" text-anchor="middle">G</text>
+
+    <text x="450" y="420" fill="#38bdf8" font-size="15"><tspan font-style="italic">j</tspan> Grover iterations: angle (2<tspan font-style="italic">j</tspan> + 1) <tspan font-style="italic">θ</tspan></text>
+  </g>
+  
+  <g class="f9_14">
+    <!-- Outline z -->
+    <rect x="139" y="200" width="9" height="28" fill="none" stroke="#f0f4f8" stroke-width="2.5"/>
+    <text x="143" y="176" fill="#f0f4f8" font-size="15" text-anchor="middle">measure → <tspan font-style="italic">z</tspan></text>
+    <line x1="143" y1="180" x2="143" y2="197" stroke="#f0f4f8" stroke-width="2" marker-end="url(#arrow)"/>
+  </g>
+
+  <g class="f11_14">
+    <text x="160" y="465" fill="#8a99ad" font-size="15" text-anchor="middle"><tspan font-style="italic">L</tspan><tspan baseline-shift="sub">z</tspan> &lt; <tspan font-style="italic">L</tspan><tspan baseline-shift="sub">y</tspan> ?</text>
+    
+    <rect x="110" y="480" width="30" height="30" fill="#4cf26d" rx="4"/>
+    <text x="125" y="500" fill="#0b0c10" font-size="20" font-weight="bold" text-anchor="middle">S</text>
+    
+    <rect x="150" y="480" width="30" height="30" fill="#ff4d4d" rx="4"/>
+    <text x="165" y="500" fill="#0b0c10" font-size="20" font-weight="bold" text-anchor="middle">F</text>
+    
+    <text x="160" y="535" fill="#f0f4f8" font-size="15" text-anchor="middle">the only classical read</text>
+  </g>
+
+  <!-- SCENE 2: Ladder -->
+  <g class="f15_26">
+    <text x="40" y="150" fill="#8a99ad" font-size="15">each failure: <tspan font-style="italic">m</tspan> → <tspan font-style="italic">λ</tspan> <tspan font-style="italic">m</tspan>, <tspan font-style="italic">λ</tspan> = 6/5</text>
+    
+    <!-- Step 1 -->
+    <rect x="40" y="420" width="30" height="20" fill="#131924" stroke="#475569"/>
+    <text x="55" y="460" fill="#38bdf8" font-size="15" text-anchor="middle"><tspan font-style="italic">j</tspan> ∈ {0}</text>
+    
+    <!-- Step 2 -->
+    <rect x="70" y="416" width="30" height="24" fill="#131924" stroke="#475569"/>
+    <text x="85" y="480" fill="#38bdf8" font-size="15" text-anchor="middle">{0, 1}</text>
+    
+    <!-- Step 3 -->
+    <rect x="100" y="411" width="30" height="29" fill="#131924" stroke="#475569"/>
+  </g>
+  <g class="dim_s2">
+    <!-- Step 4..13 -->
+    <rect x="130" y="405" width="30" height="35" fill="#131924" stroke="#475569"/>
+    <rect x="160" y="398" width="30" height="42" fill="#131924" stroke="#475569"/>
+    <text x="175" y="460" fill="#38bdf8" font-size="15" text-anchor="middle">{0, 1, 2}</text>
+    <rect x="190" y="390" width="30" height="50" fill="#131924" stroke="#475569"/>
+    <rect x="220" y="380" width="30" height="60" fill="#131924" stroke="#475569"/>
+    <rect x="250" y="368" width="30" height="72" fill="#131924" stroke="#475569"/>
+    <rect x="280" y="354" width="30" height="86" fill="#131924" stroke="#475569"/>
+    <rect x="310" y="336" width="30" height="104" fill="#131924" stroke="#475569"/>
+    <rect x="340" y="316" width="30" height="124" fill="#131924" stroke="#475569"/>
+    <rect x="370" y="291" width="30" height="149" fill="#131924" stroke="#475569"/>
+    <rect x="400" y="280" width="30" height="160" fill="#131924" stroke="#475569"/>
+    <text x="415" y="460" fill="#38bdf8" font-size="15" text-anchor="middle">{0 … 7}</text>
+  </g>
+  <g class="f18_26">
+    <line x1="40" y1="280" x2="450" y2="280" stroke="#f0f4f8" stroke-dasharray="4 4" stroke-width="2"/>
+    <text x="460" y="275" fill="#8a99ad" font-size="15">cap √<tspan font-style="italic">N</tspan></text>
+    <text x="460" y="295" fill="#f0f4f8" font-size="20">8</text>
+    <text x="250" y="260" fill="#8a99ad" font-size="15" text-anchor="middle">capped at √<tspan font-style="italic">N</tspan></text>
+  </g>
+  <g class="f22_26">
+    <!-- Success chip lands on step 3 -->
+    <rect x="107" y="391" width="16" height="16" fill="#4cf26d" rx="2"/> <text x="115" y="403" fill="#0b0c10" font-size="13" font-weight="bold" text-anchor="middle">S</text>
+    <!-- New step 1 right of step 3 -->
+    <rect x="130" y="420" width="30" height="20" fill="#131924" stroke="#4cf26d" stroke-width="1.5"/>
+    <text x="180" y="435" fill="#4cf26d" font-size="15">success: <tspan font-style="italic">m</tspan> = 1, new threshold</text>
+  </g>
+
+  <!-- SCENE 3: The Descent -->
+  <g class="f27_41">
+    <!-- Column background -->
+    <rect x="40" y="160" width="40" height="256" fill="#0f172a" stroke="#475569"/>
+    
+    <!-- Dial -->
+    <path d="M 280 180 A 60 60 0 0 0 220 240" fill="none" stroke="#475569" stroke-width="2"/>
+    <line x1="220" y1="240" x2="295" y2="240" stroke="#f0f4f8" stroke-width="2"/> 
+    <line x1="220" y1="240" x2="220" y2="165" stroke="#f0f4f8" stroke-width="2"/> 
+
+  </g>
+  <g class="f38_41">
+    <!-- Q_imp bracket (76 s) -->
+    <path d="M 60 110 L 60 120 L 210 120 L 210 110" fill="none" stroke="#4cf26d" stroke-width="2"/>
+    <text x="135" y="133" fill="#8a99ad" font-size="15" text-anchor="middle"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub">imp</tspan></text>
+    <text x="135" y="161" fill="#4cf26d" font-size="20" text-anchor="middle">4</text>
+  </g>
+
+  <g class="f38_41">
+    <path d="M 215 110 L 215 120 L 520 120" fill="none" stroke="#ff4d4d" stroke-width="2"/>
+    <text x="365" y="133" fill="#8a99ad" font-size="15" text-anchor="middle"><tspan font-style="italic">Q</tspan><tspan baseline-shift="sub">stop</tspan></text>
+    <text x="365" y="161" fill="#ff4d4d" font-size="20" text-anchor="middle">?</text>
+    <text x="390" y="184" fill="#f0f4f8" font-size="15" text-anchor="middle">the rule decides where ? ends</text>
+  </g>
+
+  <!-- Visit 1 State -->
+  <g class="f27_29">
+    <!-- Rank 8 Threshold & Band -->
+    <rect x="40" y="388" width="40" height="28" fill="#38bdf8"/>
+    <line x1="90" y1="388" x2="82" y2="388" stroke="#facc15" stroke-width="2" marker-end="url(#arrowYellow)"/>
+    <text x="95" y="392" fill="#facc15" font-size="15">rank 8</text>
+    <line x1="220" y1="240" x2="275" y2="220" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  </g>
+
+  <!-- Visit 2 State -->
+  <g class="f29_31">
+    <!-- Rank 6 Threshold & Band -->
+    <rect x="40" y="388" width="40" height="28" fill="#0f172a"/>
+    <rect x="40" y="396" width="40" height="20" fill="#38bdf8"/>
+    <line x1="90" y1="396" x2="82" y2="396" stroke="#facc15" stroke-width="2" marker-end="url(#arrowYellow)"/>
+    <text x="95" y="400" fill="#facc15" font-size="15">rank 6</text>
+    <line x1="220" y1="240" x2="277" y2="224" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  </g>
+
+  <!-- Visit 3 State -->
+  <g class="f31_33">
+    <!-- Rank 3 Threshold & Band -->
+    <rect x="40" y="396" width="40" height="20" fill="#0f172a"/>
+    <rect x="40" y="408" width="40" height="8" fill="#38bdf8"/>
+    <line x1="90" y1="408" x2="82" y2="408" stroke="#facc15" stroke-width="2" marker-end="url(#arrowYellow)"/>
+    <text x="95" y="412" fill="#facc15" font-size="15">rank 3</text>
+    <line x1="220" y1="240" x2="279" y2="230" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+  </g>
+
+  <!-- Visit 4 State -->
+  <g class="f33_41">
+    <!-- Rank 1 Threshold & Band Empty -->
+    <rect x="40" y="408" width="40" height="8" fill="#0f172a"/>
+    <line x1="90" y1="416" x2="82" y2="416" stroke="#facc15" stroke-width="2" marker-end="url(#arrowYellow)"/>
+    <text x="95" y="420" fill="#facc15" font-size="15">rank 1</text>
+    
+    <line x1="220" y1="240" x2="280" y2="240" stroke="#ff4d4d" stroke-width="3" marker-end="url(#arrow)"/>
+    <text x="220" y="270" fill="#f0f4f8" font-size="15"><tspan font-style="italic">M</tspan> = 0: <tspan font-style="italic">θ</tspan> = 0</text>
+  </g>
+
+  <g class="f35_41">
+    <text x="220" y="300" fill="#f0f4f8" font-size="15">every round fails, and looks like before</text>
+  </g>
+
+
+  <!-- SCENE 4: Rule A -->
+  <g class="f42_59">
+    <text x="40" y="160" fill="#f0f4f8" font-size="15">the whole run on one clock</text>
+    
+    <!-- Empty bar -->
+    <rect x="40" y="180" width="560" height="30" fill="#0f172a" stroke="#475569"/>
+    
+    <!-- Cap line -->
+    <line x1="560" y1="160" x2="560" y2="220" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="552" y="170" fill="#8a99ad" font-size="15" text-anchor="end">cap 22.5 √<tspan font-style="italic">N</tspan> + 1.4 lg² <tspan font-style="italic">N</tspan></text>
+    <text x="565" y="195" fill="#f0f4f8" font-size="20">230.4</text>
+  </g>
+
+  <!-- Scale for clock: ~2.26px per unit (230.4 -> 520px total) -->
+  <g class="f43_59">
+    <!-- lg N = 6 --> <rect x="40" y="180" width="13.5" height="30" fill="#facc15"/>
+    <!-- V1: 0 --> <rect x="53.5" y="180" width="1" height="30" fill="#38bdf8"/>
+    <!-- V1: 1 --> <rect x="54.5" y="180" width="2.2" height="30" fill="#38bdf8"/>
+    <!-- V1: 1 --> <rect x="56.7" y="180" width="2.2" height="30" fill="#38bdf8"/>
+    <!-- V1: update --> <rect x="58.9" y="180" width="13.5" height="30" fill="#facc15"/>
+    
+    <text x="75" y="240" fill="#8a99ad" font-size="15" text-anchor="middle">clock</text>
+    <text x="75" y="265" fill="#f0f4f8" font-size="20" text-anchor="middle">14</text>
+  </g>
+
+  <g class="f46_59">
+    <!-- V2: 0, 1 --> 
+    <rect x="72.4" y="180" width="1" height="30" fill="#38bdf8"/>
+    <rect x="73.4" y="180" width="2.2" height="30" fill="#38bdf8"/>
+    <rect x="75.6" y="180" width="13.5" height="30" fill="#facc15"/>
+    <!-- V3: 0, 1 -->
+    <rect x="89.1" y="180" width="1" height="30" fill="#38bdf8"/>
+    <rect x="90.1" y="180" width="2.2" height="30" fill="#38bdf8"/>
+    <rect x="92.3" y="180" width="13.5" height="30" fill="#facc15"/>
+
+    <text x="105" y="265" fill="#f0f4f8" font-size="20" text-anchor="middle">28</text>
+  </g>
+
+  <g class="f48_59">
+    <!-- V4 filling -->
+    <rect x="105.8" y="180" width="450" height="30" fill="url(#grid8x8)" fill-opacity="0.3"/>
+    <rect x="105.8" y="180" width="450" height="30" fill="#38bdf8" opacity="0.6"/>
+    <text x="330" y="240" fill="#f0f4f8" font-size="15" text-anchor="middle">no per-visit stop</text>
+  </g>
+
+  <g class="f52_59">
+    <!-- Caps over -->
+    <rect x="555.8" y="180" width="10" height="30" fill="#38bdf8"/>
+    <text x="540" y="265" fill="#ff4d4d" font-size="20" text-anchor="middle">233 ≥ 230.4</text>
+  </g>
+
+  <g class="f55_59">
+    <line x1="565" y1="180" x2="565" y2="210" stroke="#ff4d4d" stroke-width="3"/>
+    <text x="565" y="235" fill="#ff4d4d" font-size="15" text-anchor="middle">interrupted: return <tspan font-style="italic">y</tspan></text>
+    
+    <text x="40" y="295" fill="#8a99ad" font-size="12">Dürr–Høyer 1996: P(<tspan font-style="italic">y</tspan> = minimum) ≥ 1/2</text>
+  </g>
+
+
+  <!-- SCENE 5: Climb Constant -->
+  <!-- Re-use Staircase logic, scaling is similar -->
+  <g class="f60_81">
+    <!-- Same steps as Scene 2 but static up to 12 -->
+    <rect x="40" y="420" width="30" height="20" fill="#131924" stroke="#475569"/>
+    <text x="55" y="460" fill="#8a99ad" font-size="13" text-anchor="middle">s = 1</text>
+    <rect x="70" y="416" width="30" height="24" fill="#131924" stroke="#475569"/>
+    <text x="85" y="480" fill="#8a99ad" font-size="13" text-anchor="middle">2</text>
+    <rect x="100" y="411" width="30" height="29" fill="#131924" stroke="#475569"/>
+    <text x="115" y="460" fill="#8a99ad" font-size="13" text-anchor="middle">3</text>
+    <rect x="130" y="405" width="30" height="35" fill="#131924" stroke="#475569"/>
+    <text x="145" y="480" fill="#8a99ad" font-size="13" text-anchor="middle">…</text>
+    <rect x="160" y="398" width="30" height="42" fill="#131924" stroke="#475569"/>
+    <rect x="190" y="390" width="30" height="50" fill="#131924" stroke="#475569"/>
+    <rect x="220" y="380" width="30" height="60" fill="#131924" stroke="#475569"/>
+    <rect x="250" y="368" width="30" height="72" fill="#131924" stroke="#475569"/>
+    <rect x="280" y="354" width="30" height="86" fill="#131924" stroke="#475569"/>
+    <rect x="310" y="336" width="30" height="104" fill="#131924" stroke="#475569"/>
+    <rect x="340" y="316" width="30" height="124" fill="#131924" stroke="#475569"/>
+    <rect x="370" y="291" width="30" height="149" fill="#131924" stroke="#475569"/>
+    <text x="385" y="460" fill="#8a99ad" font-size="13" text-anchor="middle">12</text>
+    <line x1="40" y1="280" x2="420" y2="280" stroke="#f0f4f8" stroke-dasharray="4 4" stroke-width="2"/>
+    <text x="430" y="285" fill="#f0f4f8" font-size="15">8</text>
+  </g>
+
+  <g class="f62_81">
+    <!-- Half shaded boxes inside the steps -->
+    <rect x="40" y="430" width="30" height="10" fill="#38bdf8" opacity="0.5"/>
+    <rect x="70" y="428" width="30" height="12" fill="#38bdf8" opacity="0.5"/>
+    <rect x="100" y="426.5" width="30" height="14.5" fill="#38bdf8" opacity="0.5"/>
+    <rect x="130" y="422.5" width="30" height="17.5" fill="#38bdf8" opacity="0.5"/>
+    <rect x="160" y="419" width="30" height="21" fill="#38bdf8" opacity="0.5"/>
+    <rect x="190" y="415" width="30" height="25" fill="#38bdf8" opacity="0.5"/>
+    <rect x="220" y="410" width="30" height="30" fill="#38bdf8" opacity="0.5"/>
+    <rect x="250" y="404" width="30" height="36" fill="#38bdf8" opacity="0.5"/>
+    <rect x="280" y="397" width="30" height="43" fill="#38bdf8" opacity="0.5"/>
+    <rect x="310" y="388" width="30" height="52" fill="#38bdf8" opacity="0.5"/>
+    <rect x="340" y="378" width="30" height="62" fill="#38bdf8" opacity="0.5"/>
+    <rect x="370" y="365.5" width="30" height="74.5" fill="#38bdf8" opacity="0.5"/>
+
+    <text x="215" y="500" fill="#f0f4f8" font-size="15" text-anchor="middle">a round costs less than <tspan font-style="italic">m</tspan> / 2</text>
+  </g>
+
+  <g class="f65_81">
+    <!-- The stacked column of halves (Total height roughly 19.8/24 * 160 = 132px) -->
+    <!-- Base at 440, top at 308 -->
+    <rect x="460" y="308" width="30" height="132" fill="#38bdf8" opacity="0.8"/>
+    
+    <text x="475" y="460" fill="#8a99ad" font-size="15" text-anchor="middle">½ Σ <tspan font-style="italic">λ</tspan><tspan baseline-shift="super" font-size="12" font-style="italic">s</tspan><tspan baseline-shift="super" font-size="12">−1</tspan></text>
+    <text x="475" y="485" fill="#f0f4f8" font-size="20" text-anchor="middle">19.8</text>
+  </g>
+
+  <g class="f69_81">
+    <!-- The dashed bound box, height = 24/8 * 160 / 2 ?? No wait, m0 = 8, 3*m0 = 24.
+         Since 1 unit = 20px in scene 2 (height 160 for cap 8).
+         If sum is 19.8, height = 19.8 * 20 = 396px. That breaks the layout.
+         Let's just draw it abstractly relative to the column. -->
+    <rect x="455" y="280" width="40" height="160" fill="none" stroke="#facc15" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="510" y="330" fill="#8a99ad" font-size="15">½ · <tspan font-style="italic">λ</tspan>/(<tspan font-style="italic">λ</tspan>−1) · <tspan font-style="italic">m</tspan>₀</text>
+    <text x="510" y="355" fill="#f0f4f8" font-size="20">24</text>
+    <text x="510" y="300" fill="#facc15" font-size="15">geometric sum, bounded</text>
+  </g>
+
+  <g class="f72_81">
+    <text x="510" y="400" fill="#f0f4f8" font-size="15"><tspan font-style="italic">λ</tspan> = 6/5</text>
+  </g>
+  <g class="f76_81">
+    <text x="510" y="420" fill="#f0f4f8" font-size="15"><tspan font-style="italic">λ</tspan>/(<tspan font-style="italic">λ</tspan>−1) = 6</text>
+  </g>
+
+  <g class="f78_81">
+    <text x="510" y="500" fill="#f0f4f8" font-size="15">the cap √<tspan font-style="italic">N</tspan> = 8 in place of <tspan font-style="italic">m</tspan>₀</text>
+    <text x="510" y="525" fill="#4cf26d" font-size="20">24</text>
+    
+    <text x="40" y="540" fill="#8a99ad" font-size="12">BBHT 1998, proof of Theorem 3</text>
+  </g>
+
+
+  <!-- SCENE 6: Rule B -->
+  <g class="f82_100">
+    <rect x="40" y="160" width="240" height="30" fill="#0f172a" stroke="#475569"/>
+    <line x1="280" y1="150" x2="280" y2="200" stroke="#ff4d4d" stroke-width="2" stroke-dasharray="4 4"/>
+    <text x="290" y="138" fill="#8a99ad" font-size="15">½ · <tspan font-style="italic">λ</tspan>/(<tspan font-style="italic">λ</tspan>−1) · √<tspan font-style="italic">N</tspan></text>
+    <text x="290" y="157" fill="#f0f4f8" font-size="20">24</text>
+    <text x="290" y="215" fill="#f0f4f8" font-size="15">resets at every success</text>
+  </g>
+
+  <g class="f84_100">
+    <!-- Visit 1 fills it to 2 -->
+    <rect x="40" y="160" width="20" height="30" fill="#38bdf8"/>
+    <text x="50" y="215" fill="#8a99ad" font-size="15" text-anchor="middle">spent</text>
+    <text x="50" y="240" fill="#f0f4f8" font-size="20" text-anchor="middle">2</text>
+  </g>
+  <!-- In a real animation this empties, but opacity keyframes limit looping easily. 
+       So we represent the final Visit 4 filling process instead. -->
+  <g class="f86_100">
+    <!-- Blanking the V1 state by covering it -->
+    <rect x="38" y="158" width="244" height="34" fill="#0b0c10"/>
+    <rect x="40" y="160" width="240" height="30" fill="#0f172a" stroke="#475569"/>
+  </g>
+  
+  <g class="f86_100">
+    <!-- Visit 4 ticking (spent reaches 27) -->
+    <!-- 27 means it crosses 24 line (x=280) -->
+    <rect x="40" y="160" width="210" height="30" fill="#38bdf8"/>
+    <text x="175" y="215" fill="#8a99ad" font-size="15" text-anchor="middle">spent</text>
+    <text class="f86_90" x="175" y="240" fill="#f0f4f8" font-size="20" text-anchor="middle">0 · 1 · 1 · …</text>
+  </g>
+
+  <g class="f90_100">
+    <rect x="40" y="160" width="270" height="30" fill="#38bdf8"/>
+    <line x1="285" y1="160" x2="285" y2="190" stroke="#ff4d4d" stroke-width="3"/>
+    <text x="175" y="240" fill="#ff4d4d" font-size="20" text-anchor="middle">27 ≥ 24</text> <!-- Overlay red text -->
+  </g>
+
+  <g class="f93_100">
+    <text x="40" y="280" fill="#f0f4f8" font-size="15">one full climb, then stop the search</text>
+  </g>
+
+  <!-- step sub-titles in the title's place from scene 2 (patch, John's ruling) -->
+  <text class="f1_14" x="40" y="62" fill="#8a99ad" font-size="16">1. One quantum search round</text>
+  <text class="f15_26" x="40" y="35" fill="#f0f4f8" font-size="20" font-weight="bold">2. The BBHT ladder</text>
+  <text class="f27_41" x="40" y="35" fill="#f0f4f8" font-size="20" font-weight="bold">3. The descent and the silent minimum</text>
+  <text class="f42_59" x="40" y="35" fill="#f0f4f8" font-size="20" font-weight="bold">4. Rule A — the global clock</text>
+  <text class="f60_81" x="40" y="35" fill="#f0f4f8" font-size="20" font-weight="bold">5. The price of one climb</text>
+  <text class="f82_100" x="40" y="35" fill="#f0f4f8" font-size="20" font-weight="bold">6. Rule B — the one-climb budget</text>
+  <!-- bottom band: the two stop equations of this part (patch, John's ruling) -->
+  <g class="bottomA">
+    <rect x="330" y="549" width="310" height="58" fill="#facc15" fill-opacity="0.12" stroke="#facc15" stroke-width="1.5" rx="4"/>
+    <text x="340" y="565" fill="#facc15" font-size="12">A · the global clock</text>
+    <text x="340" y="583" fill="#f0f4f8" font-size="15">clock = Σ <tspan font-style="italic">j</tspan> + lg <tspan font-style="italic">N</tspan> · (1 + <tspan font-style="italic">u</tspan>) ;</text>
+    <text x="340" y="600" fill="#f0f4f8" font-size="15">stop when clock ≥ 22.5 √<tspan font-style="italic">N</tspan> + 1.4 lg² <tspan font-style="italic">N</tspan> = 230.4</text>
+  </g>
+  <g class="bottomB">
+    <rect x="655" y="532" width="305" height="75" fill="#facc15" fill-opacity="0.12" stroke="#facc15" stroke-width="1.5" rx="4"/>
+    <text x="665" y="548" fill="#facc15" font-size="12">B · the one-climb budget</text>
+    <text x="665" y="566" fill="#f0f4f8" font-size="15">spent = Σ<tspan baseline-shift="sub" font-size="10">visit</tspan> <tspan font-style="italic">j</tspan> ;</text>
+    <text x="665" y="583" fill="#f0f4f8" font-size="15">stop when spent ≥ ½ · <tspan font-style="italic">λ</tspan>/(<tspan font-style="italic">λ</tspan>−1) · √<tspan font-style="italic">N</tspan></text>
+    <text x="665" y="600" fill="#f0f4f8" font-size="15">(<tspan font-style="italic">λ</tspan> = 6/5:   3 √<tspan font-style="italic">N</tspan> = 24)</text>
+  </g>
+</svg>

@@ -35,6 +35,7 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
 - Animations:
+  - [Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget](topics/animations/durr-hoyer-stop-part1-ladder-clock-one-climb-budget/content.md)
   - [Dürr–Høyer Runtime Accounting Formula](topics/animations/durr-hoyer-runtime-three-terms/content.md)
   - [Random Forest, Part 4 — Missing Data in a New Sample](topics/animations/random-forest-part4-missing-data-in-a-new-sample/content.md)
   - [Random Forest, Part 3 — Missing Data in the Training Set](topics/animations/random-forest-part3-missing-data-in-the-training-set/content.md)
