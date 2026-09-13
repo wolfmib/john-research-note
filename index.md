@@ -66,6 +66,7 @@ No public topic added yet.
 |---|---|---|
 | [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md) | How does a verification rule become a phase oracle that amplitude amplification can amplify? | Concept note |
 | [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md) | How does a rectangular least-squares fit become a polynomial applied to singular values, read out by postselection? | Concept note |
+| [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md) | How often does a repeated quantum search return the best set, and how far off are the misses on average? | Concept note |
 
 ## Animations
 

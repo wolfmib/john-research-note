@@ -34,6 +34,7 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
   - [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md)
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
+- [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md)
 - Animations:
   - [Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget](topics/animations/durr-hoyer-stop-part1-ladder-clock-one-climb-budget/content.md)
   - [Dürr–Høyer Runtime Accounting Formula](topics/animations/durr-hoyer-runtime-three-terms/content.md)
