@@ -14,12 +14,12 @@ author: Wei-Che Hung
 
 ## What happens
 
-1. The expansion is introduced as a choice problem: each factor in $(x+a)^n$ contributes either an $x$ or an $a$.
-2. For $(x+a)^3$, the $k = 0$ term chooses no $a$'s, so all three factors contribute $x$ and give $x^3$.
-3. The $k = 1$ term chooses one factor to contribute $a$ and the other two to contribute $x$; there are three such choices, so the term is $3x^2a$.
-4. The $k = 2$ term chooses two factors to contribute $a$; again there are three choices, so the term is $3xa^2$.
-5. The $k = 3$ term chooses all three factors to contribute $a$, giving $a^3$.
-6. The same counting rule gives the general term: choosing $k$ of the $n$ factors to contribute $a$ gives $\binom{n}{k}x^{n-k}a^k$.
+1. The expansion is introduced as a choice problem: each factor in $(x+a)^n$ contributes either an $x$ or an $a$ .
+2. For $(x+a)^3$ , the $k = 0$ term chooses no $a$'s, so all three factors contribute $x$ and give $x^3$ .
+3. The $k = 1$ term chooses one factor to contribute $a$ and the other two to contribute $x$ ; there are three such choices, so the term is $3x^2a$ .
+4. The $k = 2$ term chooses two factors to contribute $a$ ; again there are three choices, so the term is $3xa^2$ .
+5. The $k = 3$ term chooses all three factors to contribute $a$ , giving $a^3$ .
+6. The same counting rule gives the general term: choosing $k$ of the $n$ factors to contribute $a$ gives $\binom{n}{k}x^{n-k}a^k$ .
 
 ## Concept
 
@@ -30,9 +30,9 @@ $$
 \binom{n}{k} = \frac{n!}{k!(n-k)!}
 $$
 
-The binomial theorem is a counting statement. In the product $(x+a)^n$, a term is formed by taking one piece from each of the $n$ identical factors. If exactly $k$ factors contribute $a$, then the other $n-k$ factors contribute $x$, producing $x^{n-k}a^k$. The coefficient counts how many ways to choose those $k$ factors: $\binom{n}{k}$.
+The binomial theorem is a counting statement. In the product $(x+a)^n$ , a term is formed by taking one piece from each of the $n$ identical factors. If exactly $k$ factors contribute $a$ , then the other $n-k$ factors contribute $x$ , producing $x^{n-k}a^k$ . The coefficient counts how many ways to choose those $k$ factors: $\binom{n}{k}$ .
 
-For $n=3$, the coefficients are $1, 3, 3, 1$, so
+For $n=3$ , the coefficients are $1, 3, 3, 1$ , so
 
 $$
 (x+a)^3 = x^3 + 3x^2a + 3xa^2 + a^3 .
@@ -40,7 +40,7 @@ $$
 
 ## Summary
 
-The binomial theorem says that each term of $(x+a)^n$ comes from choosing which $k$ factors contribute $a$ and which $n-k$ factors contribute $x$. The coefficient $\binom{n}{k}$ is the number of such choices, so for $n=3$ the expansion is $x^3 + 3x^2a + 3xa^2 + a^3$.
+The binomial theorem says that each term of $(x+a)^n$ comes from choosing which $k$ factors contribute $a$ and which $n-k$ factors contribute $x$ . The coefficient $\binom{n}{k}$ is the number of such choices, so for $n=3$ the expansion is $x^3 + 3x^2a + 3xa^2 + a^3$ .
 
 ### 繁體中文
 
