@@ -1,16 +1,16 @@
 ---
-title: "Binomial Theorem"
+title: "1.11 Binomial Theorem"
 topic: animations
-example: binomial-theorem
+example: ap-precalc-1-11-binomial-theorem
 status: concept-note
 languages: [en, zh-TW, fr, de, ru]
 created: 2026-09-15
 author: Wei-Che Hung
 ---
 
-# Binomial Theorem
+# 1.11 Binomial Theorem
 
-![Binomial Theorem](media/binomial-theorem.svg)
+![1.11 Binomial Theorem](media/ap-precalc-1-11-binomial-theorem.svg)
 
 ## What happens
 
