@@ -10,6 +10,10 @@ author: Wei-Che Hung
 
 # 1.11 Binomial Theorem
 
+![John's original handwritten draft: binomial theorem example for n=3](media/ap-precalc-1-11-binomial-theorem-john-hand-draft.jpg)
+
+*John's original handwritten draft: binomial theorem example for n=3.*
+
 ![1.11 Binomial Theorem](media/ap-precalc-1-11-binomial-theorem.svg)
 
 ## What happens
