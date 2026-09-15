@@ -1,0 +1,311 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Kalam:wght@400;700&amp;display=swap');
+      
+      text { font-family: 'Kalam', 'Comic Sans MS', cursive; fill: #0d47a1; }
+      .title { font-size: 42px; font-weight: bold; }
+      .subtitle { font-size: 32px; fill: #1565c0; font-weight: bold; }
+      .solid-line { stroke: #1976d2; stroke-width: 3; stroke-linecap: round; }
+      
+      .math { font-family: 'Caveat', 'Comic Sans MS', cursive; font-size: 36px; }
+      .math-lg { font-family: 'Caveat', 'Comic Sans MS', cursive; font-size: 48px; }
+      .math-sm { font-family: 'Caveat', 'Comic Sans MS', cursive; font-size: 24px; }
+      
+      .hl-x { fill: #2e7d32; font-weight: bold; }
+      .hl-a { fill: #d84315; font-weight: bold; }
+      .hl-c { fill: #6a1b9a; font-weight: bold; }
+      
+      .sup { baseline-shift: super; font-size: 0.7em; }
+
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes fadeOut { from { opacity: 1; } to { opacity: 0; } }
+      @keyframes dropIn { from { opacity: 0; transform: translateY(-30px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes highlightColor { 0% { fill: #0d47a1; } 100% { fill: #d50000; font-weight: bold; } }
+
+      /* Main Scene Timings */
+      .sc-0 { opacity: 0; animation: fadeIn 0.5s forwards 0s, fadeOut 0.5s forwards 3.5s; }
+      .sc-1 { opacity: 0; animation: fadeIn 0.5s forwards 4s, fadeOut 0.5s forwards 12.5s; }
+      .sc-2 { opacity: 0; animation: fadeIn 0.5s forwards 13s, fadeOut 0.5s forwards 21.5s; }
+      .sc-3 { opacity: 0; animation: fadeIn 0.5s forwards 22s, fadeOut 0.5s forwards 30.5s; }
+      .sc-4 { opacity: 0; animation: fadeIn 0.5s forwards 31s, fadeOut 0.5s forwards 39.5s; }
+      .sc-5 { opacity: 0; animation: fadeIn 0.5s forwards 40s, fadeOut 0.5s forwards 48.5s; }
+      .sc-6 { opacity: 0; animation: fadeIn 0.5s forwards 49s, fadeOut 0.5s forwards 56.5s; }
+      .sc-7 { opacity: 0; animation: fadeIn 1.0s forwards 57s; }
+
+      /* Sub-timings inside scenes */
+      .sc-1-1 { opacity: 0; animation: fadeIn 1s forwards 5s; }
+      .sc-1-2 { opacity: 0; animation: fadeIn 1s forwards 7s; }
+      .sc-1-3 { opacity: 0; animation: fadeIn 1s forwards 10s; }
+
+      .sc-2-1 { opacity: 0; animation: fadeIn 0.5s forwards 14s; }
+      .sc-2-2 { opacity: 0; animation: fadeIn 0.5s forwards 15s; }
+      .sc-2-3 { opacity: 0; animation: fadeIn 0.5s forwards 17s; }
+      .sc-2-4 { opacity: 0; animation: fadeIn 0.5s forwards 18s; }
+
+      .sc-3-1 { opacity: 0; animation: fadeIn 0.5s forwards 23s; }
+      .sc-3-2 { opacity: 0; animation: fadeIn 0.5s forwards 24s; }
+      .sc-3-3 { opacity: 0; animation: fadeIn 0.5s forwards 25s; }
+      .sc-3-4 { opacity: 0; animation: fadeIn 0.5s forwards 27s; }
+
+      .sc-4-1 { opacity: 0; animation: fadeIn 0.5s forwards 32s; }
+      .sc-4-2 { opacity: 0; animation: fadeIn 0.5s forwards 33s; }
+      .sc-4-3 { opacity: 0; animation: fadeIn 0.5s forwards 34s; }
+      .sc-4-4 { opacity: 0; animation: fadeIn 0.5s forwards 36s; }
+
+      .sc-5-1 { opacity: 0; animation: fadeIn 0.5s forwards 41s; }
+      .sc-5-2 { opacity: 0; animation: fadeIn 0.5s forwards 42s; }
+      .sc-5-3 { opacity: 0; animation: fadeIn 0.5s forwards 44s; }
+      .sc-5-4 { opacity: 0; animation: fadeIn 0.5s forwards 45s; }
+
+      /* Bottom elements */
+      .bt-eq { opacity: 0; animation: fadeIn 1s forwards 51s; }
+      .bt-plus { opacity: 0; animation: fadeIn 1s forwards 49s; }
+      .bt-hl { animation: highlightColor 1s forwards 53s; }
+
+      .sc-7-1 { opacity: 0; animation: fadeIn 1s forwards 58s; }
+      .sc-7-2 { opacity: 0; animation: fadeIn 1s forwards 62s; }
+    </style>
+  </defs>
+
+  <!-- Background / Grid -->
+  <rect width="1000" height="700" fill="#f8f9fa"/>
+  <line x1="0" y1="80" x2="1000" y2="80" class="solid-line" stroke-opacity="0.3"/>
+  <line x1="450" y1="80" x2="450" y2="550" class="solid-line" stroke-opacity="0.3"/>
+  <line x1="0" y1="550" x2="1000" y2="550" class="solid-line" stroke-opacity="0.3"/>
+
+  <!-- SCENE 0: Title -->
+  <g class="sc-0">
+    <text x="500" y="300" text-anchor="middle" class="title">Binomial Theorem</text>
+    <text x="500" y="380" text-anchor="middle" class="math">Warm up: Expand (x+a)<tspan class="sup">4</tspan> = ?</text>
+  </g>
+
+  <!-- TOP STRIP: Subtitles -->
+  <text x="500" y="55" text-anchor="middle" class="subtitle sc-1">Introduction to the Binomial Expansion</text>
+  <text x="500" y="55" text-anchor="middle" class="subtitle sc-2">Step 1: Choose 0 copies of a (k = 0)</text>
+  <text x="500" y="55" text-anchor="middle" class="subtitle sc-3">Step 2: Choose 1 copy of a (k = 1)</text>
+  <text x="500" y="55" text-anchor="middle" class="subtitle sc-4">Step 3: Choose 2 copies of a (k = 2)</text>
+  <text x="500" y="55" text-anchor="middle" class="subtitle sc-5">Step 4: Choose 3 copies of a (k = 3)</text>
+  <text x="500" y="55" text-anchor="middle" class="subtitle sc-6">Final Assembly</text>
+  <text x="500" y="55" text-anchor="middle" class="subtitle sc-7">Generalization</text>
+
+  <!-- SCENE 1 -->
+  <g class="sc-1">
+    <g class="sc-1-1">
+      <text x="40" y="200" class="math">(x+a)<tspan class="sup">n</tspan> = Σ</text>
+      <text x="175" y="160" class="math-sm">n</text>
+      <text x="160" y="235" class="math-sm">k=0</text>
+      
+      <text x="210" y="200" class="math">(</text>
+      <text x="225" y="180" class="math-sm">n</text>
+      <text x="225" y="215" class="math-sm">k</text>
+      <text x="245" y="200" class="math">)</text>
+      
+      <text x="265" y="200" class="math">x<tspan class="sup">n-k</tspan> a<tspan class="sup">k</tspan></text>
+
+      <text x="80" y="310" class="math">(</text>
+      <text x="95" y="290" class="math-sm">n</text>
+      <text x="95" y="325" class="math-sm">k</text>
+      <text x="115" y="310" class="math">) = </text>
+      <text x="190" y="285" class="math">n!</text>
+      <line x1="165" y1="295" x2="250" y2="295" stroke="#0d47a1" stroke-width="2"/>
+      <text x="165" y="325" class="math-sm">k!(n-k)!</text>
+    </g>
+    <g class="sc-1-2">
+      <text x="520" y="220" class="math-lg hl-c">For n = 3 :</text>
+      <text x="520" y="300" class="math">(x+a)<tspan class="sup">3</tspan> = (x+a)(x+a)(x+a)</text>
+    </g>
+    <g class="sc-1-3">
+      <text x="40" y="440" class="math hl-c">➔</text>
+      <text x="100" y="440" class="math">(x+a)<tspan class="sup">3</tspan> = Σ</text>
+      <text x="245" y="400" class="math-sm">3</text>
+      <text x="230" y="475" class="math-sm">k=0</text>
+      <text x="280" y="440" class="math">(</text>
+      <text x="295" y="420" class="math-sm">3</text>
+      <text x="295" y="455" class="math-sm">k</text>
+      <text x="315" y="440" class="math">)</text>
+      <text x="335" y="440" class="math">x<tspan class="sup">3-k</tspan> a<tspan class="sup">k</tspan></text>
+    </g>
+  </g>
+
+  <!-- SCENE 2 (k=0) -->
+  <g class="sc-2">
+    <g class="sc-2-1">
+      <text x="50" y="250" class="math-lg">Term: k = 0</text>
+      <text x="50" y="330" class="math-lg">(</text>
+      <text x="70" y="305" class="math">3</text>
+      <text x="70" y="350" class="math">0</text>
+      <text x="95" y="330" class="math-lg">)</text>
+      <text x="130" y="330" class="math hl-x">x<tspan class="sup">3</tspan><tspan class="hl-a"> a<tspan class="sup">0</tspan></tspan></text>
+    </g>
+    <g class="sc-2-2">
+      <text x="480" y="200" class="math">Choosing 0 'a's means 3 'x's:</text>
+      <text x="550" y="280" class="math">(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-x">x</tspan>+a)</text>
+    </g>
+    <g class="sc-2-3">
+      <text x="550" y="370" class="math hl-x">x · x · x = x<tspan class="sup">3</tspan></text>
+      <text x="550" y="430" class="math-sm">(Only 1 variation)</text>
+    </g>
+    <g class="sc-2-4">
+      <text x="50" y="430" class="math">(</text>
+      <text x="65" y="410" class="math-sm">3</text>
+      <text x="65" y="445" class="math-sm">0</text>
+      <text x="85" y="430" class="math">) = </text>
+      <text x="145" y="405" class="math">3!</text>
+      <line x1="130" y1="415" x2="195" y2="415" stroke="#0d47a1" stroke-width="2"/>
+      <text x="135" y="445" class="math-sm">0!3!</text>
+      <text x="210" y="430" class="math"> = 1</text>
+    </g>
+  </g>
+
+  <!-- SCENE 3 (k=1) -->
+  <g class="sc-3">
+    <g class="sc-3-1">
+      <text x="50" y="250" class="math-lg">Term: k = 1</text>
+      <text x="50" y="330" class="math-lg">(</text>
+      <text x="70" y="305" class="math">3</text>
+      <text x="70" y="350" class="math">1</text>
+      <text x="95" y="330" class="math-lg">)</text>
+      <text x="130" y="330" class="math hl-x">x<tspan class="sup">2</tspan><tspan class="hl-a"> a<tspan class="sup">1</tspan></tspan></text>
+    </g>
+    <g class="sc-3-2">
+      <text x="480" y="200" class="math">Choosing 1 'a' means 2 'x's:</text>
+      <text x="520" y="270" class="math">(<tspan class="hl-a">a</tspan>+x)(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-x">x</tspan>+a) ➔ <tspan class="hl-a">a</tspan>·<tspan class="hl-x">x</tspan>·<tspan class="hl-x">x</tspan></text>
+    </g>
+    <g class="sc-3-3">
+      <text x="520" y="330" class="math">(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-a">a</tspan>+x)(<tspan class="hl-x">x</tspan>+a) ➔ <tspan class="hl-x">x</tspan>·<tspan class="hl-a">a</tspan>·<tspan class="hl-x">x</tspan></text>
+      <text x="520" y="390" class="math">(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-a">a</tspan>+x) ➔ <tspan class="hl-x">x</tspan>·<tspan class="hl-x">x</tspan>·<tspan class="hl-a">a</tspan></text>
+      <text x="820" y="330" class="math hl-c">} 3 ways</text>
+    </g>
+    <g class="sc-3-4">
+      <text x="50" y="430" class="math">(</text>
+      <text x="65" y="410" class="math-sm">3</text>
+      <text x="65" y="445" class="math-sm">1</text>
+      <text x="85" y="430" class="math">) = </text>
+      <text x="145" y="405" class="math">3!</text>
+      <line x1="130" y1="415" x2="195" y2="415" stroke="#0d47a1" stroke-width="2"/>
+      <text x="135" y="445" class="math-sm">1!2!</text>
+      <text x="210" y="430" class="math"> = 3</text>
+    </g>
+  </g>
+
+  <!-- SCENE 4 (k=2) -->
+  <g class="sc-4">
+    <g class="sc-4-1">
+      <text x="50" y="250" class="math-lg">Term: k = 2</text>
+      <text x="50" y="330" class="math-lg">(</text>
+      <text x="70" y="305" class="math">3</text>
+      <text x="70" y="350" class="math">2</text>
+      <text x="95" y="330" class="math-lg">)</text>
+      <text x="130" y="330" class="math hl-x">x<tspan class="sup">1</tspan><tspan class="hl-a"> a<tspan class="sup">2</tspan></tspan></text>
+    </g>
+    <g class="sc-4-2">
+      <text x="480" y="200" class="math">Choosing 2 'a's means 1 'x':</text>
+      <text x="520" y="270" class="math">(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-a">a</tspan>+x)(<tspan class="hl-a">a</tspan>+x) ➔ <tspan class="hl-x">x</tspan>·<tspan class="hl-a">a</tspan>·<tspan class="hl-a">a</tspan></text>
+    </g>
+    <g class="sc-4-3">
+      <text x="520" y="330" class="math">(<tspan class="hl-a">a</tspan>+x)(<tspan class="hl-x">x</tspan>+a)(<tspan class="hl-a">a</tspan>+x) ➔ <tspan class="hl-a">a</tspan>·<tspan class="hl-x">x</tspan>·<tspan class="hl-a">a</tspan></text>
+      <text x="520" y="390" class="math">(<tspan class="hl-a">a</tspan>+x)(<tspan class="hl-a">a</tspan>+x)(<tspan class="hl-x">x</tspan>+a) ➔ <tspan class="hl-a">a</tspan>·<tspan class="hl-a">a</tspan>·<tspan class="hl-x">x</tspan></text>
+      <text x="820" y="330" class="math hl-c">} 3 ways</text>
+    </g>
+    <g class="sc-4-4">
+      <text x="50" y="430" class="math">(</text>
+      <text x="65" y="410" class="math-sm">3</text>
+      <text x="65" y="445" class="math-sm">2</text>
+      <text x="85" y="430" class="math">) = </text>
+      <text x="145" y="405" class="math">3!</text>
+      <line x1="130" y1="415" x2="195" y2="415" stroke="#0d47a1" stroke-width="2"/>
+      <text x="135" y="445" class="math-sm">2!1!</text>
+      <text x="210" y="430" class="math"> = 3</text>
+    </g>
+  </g>
+
+  <!-- SCENE 5 (k=3) -->
+  <g class="sc-5">
+    <g class="sc-5-1">
+      <text x="50" y="250" class="math-lg">Term: k = 3</text>
+      <text x="50" y="330" class="math-lg">(</text>
+      <text x="70" y="305" class="math">3</text>
+      <text x="70" y="350" class="math">3</text>
+      <text x="95" y="330" class="math-lg">)</text>
+      <text x="130" y="330" class="math hl-x">x<tspan class="sup">0</tspan><tspan class="hl-a"> a<tspan class="sup">3</tspan></tspan></text>
+    </g>
+    <g class="sc-5-2">
+      <text x="480" y="200" class="math">Choosing 3 'a's means 0 'x's:</text>
+      <text x="550" y="280" class="math">(x+<tspan class="hl-a">a</tspan>)(x+<tspan class="hl-a">a</tspan>)(x+<tspan class="hl-a">a</tspan>)</text>
+    </g>
+    <g class="sc-5-3">
+      <text x="550" y="370" class="math hl-a">a · a · a = a<tspan class="sup">3</tspan></text>
+      <text x="550" y="430" class="math-sm">(Only 1 variation)</text>
+    </g>
+    <g class="sc-5-4">
+      <text x="50" y="430" class="math">(</text>
+      <text x="65" y="410" class="math-sm">3</text>
+      <text x="65" y="445" class="math-sm">3</text>
+      <text x="85" y="430" class="math">) = </text>
+      <text x="145" y="405" class="math">3!</text>
+      <line x1="130" y1="415" x2="195" y2="415" stroke="#0d47a1" stroke-width="2"/>
+      <text x="135" y="445" class="math-sm">3!0!</text>
+      <text x="210" y="430" class="math"> = 1</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM STRIP (Collection) -->
+  <text x="50" y="640" class="math-lg bt-eq">(x+a)<tspan class="sup">3</tspan> =</text>
+
+  <!-- k=0 drop -->
+  <text x="270" y="640" class="math-lg" style="opacity: 0; animation: dropIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards 20s;">
+    <tspan class="bt-hl">1 </tspan><tspan class="hl-x">x<tspan class="sup">3</tspan></tspan>
+  </text>
+  <text x="360" y="640" class="math-lg bt-plus">+</text>
+
+  <!-- k=1 drop -->
+  <text x="420" y="640" class="math-lg" style="opacity: 0; animation: dropIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards 29s;">
+    <tspan class="bt-hl">3 </tspan><tspan class="hl-x">x<tspan class="sup">2</tspan></tspan><tspan class="hl-a">a</tspan>
+  </text>
+  <text x="530" y="640" class="math-lg bt-plus">+</text>
+
+  <!-- k=2 drop -->
+  <text x="590" y="640" class="math-lg" style="opacity: 0; animation: dropIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards 38s;">
+    <tspan class="bt-hl">3 </tspan><tspan class="hl-x">x</tspan><tspan class="hl-a">a<tspan class="sup">2</tspan></tspan>
+  </text>
+  <text x="700" y="640" class="math-lg bt-plus">+</text>
+
+  <!-- k=3 drop -->
+  <text x="760" y="640" class="math-lg" style="opacity: 0; animation: dropIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) forwards 47s;">
+    <tspan class="bt-hl">1 </tspan><tspan class="hl-a">a<tspan class="sup">3</tspan></tspan>
+  </text>
+
+  <!-- SCENE 7 (Generalization) -->
+  <g class="sc-7">
+    <g class="sc-7-1">
+      <text x="50" y="160" class="math-lg">Pattern:</text>
+      <text x="50" y="240" class="math">Choosing <tspan class="hl-c">k</tspan> brackets to contribute <tspan class="hl-a">'a'</tspan> gives </text>
+      <text x="50" y="320" class="math hl-c">(</text>
+      <text x="65" y="300" class="math-sm hl-c">n</text>
+      <text x="65" y="335" class="math-sm hl-c">k</text>
+      <text x="85" y="320" class="math hl-c">)</text>
+      <text x="110" y="320" class="math">ways. So the term is</text>
+      <text x="430" y="320" class="math hl-c">(</text>
+      <text x="445" y="300" class="math-sm hl-c">n</text>
+      <text x="445" y="335" class="math-sm hl-c">k</text>
+      <text x="465" y="320" class="math hl-c">)</text>
+      <text x="480" y="320" class="math hl-x">x<tspan class="sup">n-k</tspan><tspan class="hl-a"> a<tspan class="sup">k</tspan></tspan></text>
+    </g>
+    <g class="sc-7-2">
+       <text x="50" y="420" class="math-lg hl-c">Final Binomial Theorem:</text>
+       
+       <text x="50" y="500" class="math-lg">(x+a)<tspan class="sup">n</tspan> = Σ</text>
+       <text x="245" y="460" class="math">n</text>
+       <text x="230" y="545" class="math">k=0</text>
+       
+       <text x="290" y="500" class="math-lg">(</text>
+       <text x="310" y="470" class="math">n</text>
+       <text x="310" y="520" class="math">k</text>
+       <text x="340" y="500" class="math-lg">)</text>
+       
+       <text x="370" y="500" class="math-lg hl-x">x<tspan class="sup">n-k</tspan><tspan class="hl-a"> a<tspan class="sup">k</tspan></tspan></text>
+    </g>
+  </g>
+
+</svg>

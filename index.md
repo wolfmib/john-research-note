@@ -89,6 +89,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [Random Forest, Part 4 — Missing Data in a New Sample](topics/animations/random-forest-part4-missing-data-in-a-new-sample/content.md) | How does a trained random forest classify a new sample that has a missing value and no label yet? | Concept note |
 | [Dürr–Høyer Runtime Accounting Formula](topics/animations/durr-hoyer-runtime-three-terms/content.md) | Why is the running time of Dürr–Høyer minimum finding a sum of three count-times-cost terms, and what does each count? | Concept note |
 | [Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget](topics/animations/durr-hoyer-stop-part1-ladder-clock-one-climb-budget/content.md) | Once the threshold has silently become the minimum every round fails and looks like bad luck, so when does a global clock cut the run, and why is one full climb of the BBHT ladder worth ½ · λ/(λ−1) · √N iterations? | Concept note |
+| [Binomial Theorem](topics/animations/binomial-theorem/content.md) | How does choosing k factors to contribute a produce the binomial coefficient in (x+a)^n? | Concept note |
 
 ## Field Notes
 
