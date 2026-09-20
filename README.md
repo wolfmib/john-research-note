@@ -36,6 +36,7 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
 - [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md)
 - Animations:
+  - [Malta Lotto Quaterno — What a €3 Ticket Is Worth](topics/animations/malta-lotto-quaterno-expected-value/content.md)
   - [Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget](topics/animations/durr-hoyer-stop-part1-ladder-clock-one-climb-budget/content.md)
   - [Dürr–Høyer Runtime Accounting Formula](topics/animations/durr-hoyer-runtime-three-terms/content.md)
   - [Random Forest, Part 4 — Missing Data in a New Sample](topics/animations/random-forest-part4-missing-data-in-a-new-sample/content.md)

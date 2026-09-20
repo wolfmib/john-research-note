@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" style="background-color:#0b0c10;font-family:'Latin Modern Roman','CMU Serif','Times New Roman',Times,serif">
+  <title>Malta Lotto Quaterno: what a 3-euro ticket is worth</title>
+  <style>
+.c0_00_4_20{animation:a_0_00_4_20 97s linear forwards;opacity:0}
+@keyframes a_0_00_4_20{0%,0.000%{opacity:0}0.825%,4.330%{opacity:1}5.155%,100%{opacity:0}}
+.c5_00_7_20{animation:a_5_00_7_20 97s linear forwards;opacity:0}
+@keyframes a_5_00_7_20{0%,5.155%{opacity:0}5.979%,7.423%{opacity:1}8.247%,100%{opacity:0}}
+.c8_00_10_70{animation:a_8_00_10_70 97s linear forwards;opacity:0}
+@keyframes a_8_00_10_70{0%,8.247%{opacity:0}9.072%,11.031%{opacity:1}11.856%,100%{opacity:0}}
+.c11_50_15_70{animation:a_11_50_15_70 97s linear forwards;opacity:0}
+@keyframes a_11_50_15_70{0%,11.856%{opacity:0}12.680%,16.186%{opacity:1}17.010%,100%{opacity:0}}
+.c16_50_19_70{animation:a_16_50_19_70 97s linear forwards;opacity:0}
+@keyframes a_16_50_19_70{0%,17.010%{opacity:0}17.835%,20.309%{opacity:1}21.134%,100%{opacity:0}}
+.c20_50_26_70{animation:a_20_50_26_70 97s linear forwards;opacity:0}
+@keyframes a_20_50_26_70{0%,21.134%{opacity:0}21.959%,27.526%{opacity:1}28.351%,100%{opacity:0}}
+.c27_50_32_70{animation:a_27_50_32_70 97s linear forwards;opacity:0}
+@keyframes a_27_50_32_70{0%,28.351%{opacity:0}29.175%,33.711%{opacity:1}34.536%,100%{opacity:0}}
+.c33_50_36_20{animation:a_33_50_36_20 97s linear forwards;opacity:0}
+@keyframes a_33_50_36_20{0%,34.536%{opacity:0}35.361%,37.320%{opacity:1}38.144%,100%{opacity:0}}
+.c37_00_42_20{animation:a_37_00_42_20 97s linear forwards;opacity:0}
+@keyframes a_37_00_42_20{0%,38.144%{opacity:0}38.969%,43.505%{opacity:1}44.330%,100%{opacity:0}}
+.c43_00_45_70{animation:a_43_00_45_70 97s linear forwards;opacity:0}
+@keyframes a_43_00_45_70{0%,44.330%{opacity:0}45.155%,47.113%{opacity:1}47.938%,100%{opacity:0}}
+.c46_50_52_70{animation:a_46_50_52_70 97s linear forwards;opacity:0}
+@keyframes a_46_50_52_70{0%,47.938%{opacity:0}48.763%,54.330%{opacity:1}55.155%,100%{opacity:0}}
+.c53_50_59_70{animation:a_53_50_59_70 97s linear forwards;opacity:0}
+@keyframes a_53_50_59_70{0%,55.155%{opacity:0}55.979%,61.546%{opacity:1}62.371%,100%{opacity:0}}
+.c60_50_63_20{animation:a_60_50_63_20 97s linear forwards;opacity:0}
+@keyframes a_60_50_63_20{0%,62.371%{opacity:0}63.196%,65.155%{opacity:1}65.979%,100%{opacity:0}}
+.c64_00_68_70{animation:a_64_00_68_70 97s linear forwards;opacity:0}
+@keyframes a_64_00_68_70{0%,65.979%{opacity:0}66.804%,70.825%{opacity:1}71.649%,100%{opacity:0}}
+.c69_50_71_70{animation:a_69_50_71_70 97s linear forwards;opacity:0}
+@keyframes a_69_50_71_70{0%,71.649%{opacity:0}72.474%,73.918%{opacity:1}74.742%,100%{opacity:0}}
+.c72_50_74_20{animation:a_72_50_74_20 97s linear forwards;opacity:0}
+@keyframes a_72_50_74_20{0%,74.742%{opacity:0}75.567%,76.495%{opacity:1}77.320%,100%{opacity:0}}
+.c75_00_80_20{animation:a_75_00_80_20 97s linear forwards;opacity:0}
+@keyframes a_75_00_80_20{0%,77.320%{opacity:0}78.144%,82.680%{opacity:1}83.505%,100%{opacity:0}}
+.c81_00_84_20{animation:a_81_00_84_20 97s linear forwards;opacity:0}
+@keyframes a_81_00_84_20{0%,83.505%{opacity:0}84.330%,86.804%{opacity:1}87.629%,100%{opacity:0}}
+.c85_00_89_20{animation:a_85_00_89_20 97s linear forwards;opacity:0}
+@keyframes a_85_00_89_20{0%,87.629%{opacity:0}88.454%,91.959%{opacity:1}92.784%,100%{opacity:0}}
+.c0_00_15_20{animation:a_0_00_15_20 97s linear forwards;opacity:0}
+@keyframes a_0_00_15_20{0%,0.000%{opacity:0}0.825%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c2_50_15_20{animation:a_2_50_15_20 97s linear forwards;opacity:0}
+@keyframes a_2_50_15_20{0%,2.577%{opacity:0}3.402%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c3_00_15_20{animation:a_3_00_15_20 97s linear forwards;opacity:0}
+@keyframes a_3_00_15_20{0%,3.093%{opacity:0}3.918%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c3_30_15_20{animation:a_3_30_15_20 97s linear forwards;opacity:0}
+@keyframes a_3_30_15_20{0%,3.402%{opacity:0}4.227%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c3_60_15_20{animation:a_3_60_15_20 97s linear forwards;opacity:0}
+@keyframes a_3_60_15_20{0%,3.711%{opacity:0}4.536%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c3_90_15_20{animation:a_3_90_15_20 97s linear forwards;opacity:0}
+@keyframes a_3_90_15_20{0%,4.021%{opacity:0}4.845%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c5_00_15_20{animation:a_5_00_15_20 97s linear forwards;opacity:0}
+@keyframes a_5_00_15_20{0%,5.155%{opacity:0}5.979%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c8_00_15_20{animation:a_8_00_15_20 97s linear forwards;opacity:0}
+@keyframes a_8_00_15_20{0%,8.247%{opacity:0}9.072%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c8_40_15_20{animation:a_8_40_15_20 97s linear forwards;opacity:0}
+@keyframes a_8_40_15_20{0%,8.660%{opacity:0}9.485%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c8_80_15_20{animation:a_8_80_15_20 97s linear forwards;opacity:0}
+@keyframes a_8_80_15_20{0%,9.072%{opacity:0}9.897%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c9_20_15_20{animation:a_9_20_15_20 97s linear forwards;opacity:0}
+@keyframes a_9_20_15_20{0%,9.485%{opacity:0}10.309%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c9_60_15_20{animation:a_9_60_15_20 97s linear forwards;opacity:0}
+@keyframes a_9_60_15_20{0%,9.897%{opacity:0}10.722%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c11_50_15_20{animation:a_11_50_15_20 97s linear forwards;opacity:0}
+@keyframes a_11_50_15_20{0%,11.856%{opacity:0}12.680%,15.670%{opacity:1}16.495%,100%{opacity:0}}
+.c16_50_26_20{animation:a_16_50_26_20 97s linear forwards;opacity:0}
+@keyframes a_16_50_26_20{0%,17.010%{opacity:0}17.835%,27.010%{opacity:1}27.835%,100%{opacity:0}}
+.c18_00_26_20{animation:a_18_00_26_20 97s linear forwards;opacity:0}
+@keyframes a_18_00_26_20{0%,18.557%{opacity:0}19.381%,27.010%{opacity:1}27.835%,100%{opacity:0}}
+.c20_50_26_20{animation:a_20_50_26_20 97s linear forwards;opacity:0}
+@keyframes a_20_50_26_20{0%,21.134%{opacity:0}21.959%,27.010%{opacity:1}27.835%,100%{opacity:0}}
+.c22_00_26_20{animation:a_22_00_26_20 97s linear forwards;opacity:0}
+@keyframes a_22_00_26_20{0%,22.680%{opacity:0}23.505%,27.010%{opacity:1}27.835%,100%{opacity:0}}
+.c22_00_on{animation:a_22_00_on 97s linear forwards;opacity:0}
+@keyframes a_22_00_on{0%,22.680%{opacity:0}23.505%,100%{opacity:1}}
+.c27_50_41_70{animation:a_27_50_41_70 97s linear forwards;opacity:0}
+@keyframes a_27_50_41_70{0%,28.351%{opacity:0}29.175%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c30_00_41_70{animation:a_30_00_41_70 97s linear forwards;opacity:0}
+@keyframes a_30_00_41_70{0%,30.928%{opacity:0}31.753%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c30_50_41_70{animation:a_30_50_41_70 97s linear forwards;opacity:0}
+@keyframes a_30_50_41_70{0%,31.443%{opacity:0}32.268%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c31_00_41_70{animation:a_31_00_41_70 97s linear forwards;opacity:0}
+@keyframes a_31_00_41_70{0%,31.959%{opacity:0}32.784%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c31_50_41_70{animation:a_31_50_41_70 97s linear forwards;opacity:0}
+@keyframes a_31_50_41_70{0%,32.474%{opacity:0}33.299%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c32_00_41_70{animation:a_32_00_41_70 97s linear forwards;opacity:0}
+@keyframes a_32_00_41_70{0%,32.990%{opacity:0}33.814%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c33_50_41_70{animation:a_33_50_41_70 97s linear forwards;opacity:0}
+@keyframes a_33_50_41_70{0%,34.536%{opacity:0}35.361%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c35_50_41_70{animation:a_35_50_41_70 97s linear forwards;opacity:0}
+@keyframes a_35_50_41_70{0%,36.598%{opacity:0}37.423%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c37_00_41_70{animation:a_37_00_41_70 97s linear forwards;opacity:0}
+@keyframes a_37_00_41_70{0%,38.144%{opacity:0}38.969%,42.990%{opacity:1}43.814%,100%{opacity:0}}
+.c37_00_on{animation:a_37_00_on 97s linear forwards;opacity:0}
+@keyframes a_37_00_on{0%,38.144%{opacity:0}38.969%,100%{opacity:1}}
+.c43_00_59_20{animation:a_43_00_59_20 97s linear forwards;opacity:0}
+@keyframes a_43_00_59_20{0%,44.330%{opacity:0}45.155%,61.031%{opacity:1}61.856%,100%{opacity:0}}
+.c46_50_59_20{animation:a_46_50_59_20 97s linear forwards;opacity:0}
+@keyframes a_46_50_59_20{0%,47.938%{opacity:0}48.763%,61.031%{opacity:1}61.856%,100%{opacity:0}}
+.c47_50_59_20{animation:a_47_50_59_20 97s linear forwards;opacity:0}
+@keyframes a_47_50_59_20{0%,48.969%{opacity:0}49.794%,61.031%{opacity:1}61.856%,100%{opacity:0}}
+.c49_30_59_20{animation:a_49_30_59_20 97s linear forwards;opacity:0}
+@keyframes a_49_30_59_20{0%,50.825%{opacity:0}51.649%,61.031%{opacity:1}61.856%,100%{opacity:0}}
+.c51_10_59_20{animation:a_51_10_59_20 97s linear forwards;opacity:0}
+@keyframes a_51_10_59_20{0%,52.680%{opacity:0}53.505%,61.031%{opacity:1}61.856%,100%{opacity:0}}
+.c53_50_59_20{animation:a_53_50_59_20 97s linear forwards;opacity:0}
+@keyframes a_53_50_59_20{0%,55.155%{opacity:0}55.979%,61.031%{opacity:1}61.856%,100%{opacity:0}}
+.c53_50_on{animation:a_53_50_on 97s linear forwards;opacity:0}
+@keyframes a_53_50_on{0%,55.155%{opacity:0}55.979%,100%{opacity:1}}
+.c60_50_79_70{animation:a_60_50_79_70 97s linear forwards;opacity:0}
+@keyframes a_60_50_79_70{0%,62.371%{opacity:0}63.196%,82.165%{opacity:1}82.990%,100%{opacity:0}}
+.c64_00_79_70{animation:a_64_00_79_70 97s linear forwards;opacity:0}
+@keyframes a_64_00_79_70{0%,65.979%{opacity:0}66.804%,82.165%{opacity:1}82.990%,100%{opacity:0}}
+.c65_50_79_70{animation:a_65_50_79_70 97s linear forwards;opacity:0}
+@keyframes a_65_50_79_70{0%,67.526%{opacity:0}68.351%,82.165%{opacity:1}82.990%,100%{opacity:0}}
+.c67_00_79_70{animation:a_67_00_79_70 97s linear forwards;opacity:0}
+@keyframes a_67_00_79_70{0%,69.072%{opacity:0}69.897%,82.165%{opacity:1}82.990%,100%{opacity:0}}
+.c69_50_79_70{animation:a_69_50_79_70 97s linear forwards;opacity:0}
+@keyframes a_69_50_79_70{0%,71.649%{opacity:0}72.474%,82.165%{opacity:1}82.990%,100%{opacity:0}}
+.c69_50_on{animation:a_69_50_on 97s linear forwards;opacity:0}
+@keyframes a_69_50_on{0%,71.649%{opacity:0}72.474%,100%{opacity:1}}
+.c72_50_79_70{animation:a_72_50_79_70 97s linear forwards;opacity:0}
+@keyframes a_72_50_79_70{0%,74.742%{opacity:0}75.567%,82.165%{opacity:1}82.990%,100%{opacity:0}}
+.c75_00_79_70{animation:a_75_00_79_70 97s linear forwards;opacity:0}
+@keyframes a_75_00_79_70{0%,77.320%{opacity:0}78.144%,82.165%{opacity:1}82.990%,100%{opacity:0}}
+.c75_00_on{animation:a_75_00_on 97s linear forwards;opacity:0}
+@keyframes a_75_00_on{0%,77.320%{opacity:0}78.144%,100%{opacity:1}}
+.c81_00_on{animation:a_81_00_on 97s linear forwards;opacity:0}
+@keyframes a_81_00_on{0%,83.505%{opacity:0}84.330%,100%{opacity:1}}
+.c81_50_on{animation:a_81_50_on 97s linear forwards;opacity:0}
+@keyframes a_81_50_on{0%,84.021%{opacity:0}84.845%,100%{opacity:1}}
+.c82_80_on{animation:a_82_80_on 97s linear forwards;opacity:0}
+@keyframes a_82_80_on{0%,85.361%{opacity:0}86.186%,100%{opacity:1}}
+.c85_40_on{animation:a_85_40_on 97s linear forwards;opacity:0}
+@keyframes a_85_40_on{0%,88.041%{opacity:0}88.866%,100%{opacity:1}}
+.c90_00_on{animation:a_90_00_on 97s linear forwards;opacity:0}
+@keyframes a_90_00_on{0%,92.784%{opacity:0}93.608%,100%{opacity:1}}
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8a99ad"/></marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="640" fill="#0b0c10"/>
+<g class="c0_00_4_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">買了一張 3 歐元的馬耳他 Quaterno 樂透。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">I spent €3 on a Malta Quaterno lottery ticket.</text></g>
+<g class="c5_00_7_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">開獎會從 1 到 90 中抽出 5 個號碼。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">The lottery draws 5 numbers from 1 to 90.</text></g>
+<g class="c8_00_10_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">這是 2026 年 9 月 19 日的實際開獎結果。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">Here is the actual draw from 19 Sept 2026.</text></g>
+<g class="c11_50_15_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">開獎結果全沒中！但數學期望值是多少？</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">None of my numbers matched! But what is the expected value?</text></g>
+<g class="c16_50_19_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">首先，總共有多少種 4 個號碼的組合？</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">First, how many total 4-number tickets are possible?</text></g>
+<g class="c20_50_26_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">超過 250 萬種可能的彩券組合。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">Over 2.5 million possible tickets.</text></g>
+<g class="c27_50_32_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">5 顆開獎球中，能產生幾組頭獎組合？</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">From the 5 drawn numbers, how many jackpot combinations exist?</text></g>
+<g class="c33_50_36_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">答案是只有 5 組！</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">There are exactly 5 jackpot combinations.</text></g>
+<g class="c37_00_42_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">中頭獎的機率是 255 萬分之 5。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">The probability is 5 out of 2.5 million.</text></g>
+<g class="c43_00_45_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">我們可以用超幾何分佈算出所有中獎機率。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">We can use the hypergeometric distribution to find all probabilities.</text></g>
+<g class="c46_50_52_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">以下是所有中獎級距與獎金。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">Here are the possible winning tiers.</text></g>
+<g class="c53_50_59_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">贏得任何獎金的總機率大約只有 1.43%。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">The probability of winning any prize is only about 1.43%.</text></g>
+<g class="c60_50_63_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">數學期望值是將所有機率乘上獎金後加總。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">Expected value is the sum of probability times the prize.</text></g>
+<g class="c64_00_68_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">每個級距都會貢獻一點期望值。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">Each tier contributes to the mathematical value of your ticket.</text></g>
+<g class="c69_50_71_70"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">理論上的平均回報約為 1.49 歐元。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">The theoretical payout is €1.49.</text></g>
+<g class="c72_50_74_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">但我們必須扣除 3 歐元的購票成本。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">But we must subtract the €3 ticket cost.</text></g>
+<g class="c75_00_80_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">淨期望值為負數，回報率大約是 49.6%。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">The net expected return is negative.</text></g>
+<g class="c81_00_84_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">中獎靠運氣，但期望值是數學。</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">Winning is random. Expected value is mathematics.</text></g>
+<g class="c85_00_89_20"><text x="500" y="572" fill="#facc15" font-size="21" font-weight="bold" text-anchor="middle" font-family="'PingFang TC','Noto Sans TC','Microsoft JhengHei',sans-serif">「我花了 3 歐元買樂透，結果數學告訴我，我的期望值是負的。🤣」</text><text x="500" y="604" fill="#f0f4f8" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">I spent €3 on a lotto ticket, and math told me my expected value is negative. 🤣</text></g>
+<g class="c0_00_15_20"><text x="40" y="50" fill="#38bdf8" font-size="26" font-weight="bold">I spent €3 on Malta Lotto. What does mathematics say?</text></g>
+<g class="c2_50_15_20"><text x="500" y="130" fill="#8a99ad" font-size="16" text-anchor="middle" font-family="system-ui,sans-serif">My Quaterno ticket</text></g>
+<g class="c3_00_15_20"><circle cx="404" cy="178" r="24" fill="#0b0c10" stroke="#8a99ad" stroke-width="2"/><text x="404" y="185.0" fill="#8a99ad" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">11</text></g>
+<g class="c3_30_15_20"><circle cx="468" cy="178" r="24" fill="#0b0c10" stroke="#8a99ad" stroke-width="2"/><text x="468" y="185.0" fill="#8a99ad" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">16</text></g>
+<g class="c3_60_15_20"><circle cx="532" cy="178" r="24" fill="#0b0c10" stroke="#8a99ad" stroke-width="2"/><text x="532" y="185.0" fill="#8a99ad" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">24</text></g>
+<g class="c3_90_15_20"><circle cx="596" cy="178" r="24" fill="#0b0c10" stroke="#8a99ad" stroke-width="2"/><text x="596" y="185.0" fill="#8a99ad" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">66</text></g>
+<g class="c5_00_15_20"><text x="500" y="270" fill="#8a99ad" font-size="16" text-anchor="middle" font-family="system-ui,sans-serif">Actual draw, 19 Sept 2026</text></g>
+<g class="c8_00_15_20"><circle cx="372" cy="318" r="24" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="372" y="325.0" fill="#4cf26d" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">17</text></g>
+<g class="c8_40_15_20"><circle cx="436" cy="318" r="24" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="436" y="325.0" fill="#4cf26d" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">73</text></g>
+<g class="c8_80_15_20"><circle cx="500" cy="318" r="24" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="500" y="325.0" fill="#4cf26d" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">40</text></g>
+<g class="c9_20_15_20"><circle cx="564" cy="318" r="24" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="564" y="325.0" fill="#4cf26d" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">80</text></g>
+<g class="c9_60_15_20"><circle cx="628" cy="318" r="24" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="628" y="325.0" fill="#4cf26d" font-size="20" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">9</text></g>
+<g class="c11_50_15_20"><text x="500" y="420" fill="#ff4d4d" font-size="30" text-anchor="middle" font-weight="bold">0 matches</text></g>
+<g class="c16_50_26_20"><text x="40" y="50" fill="#f0f4f8" font-size="22" font-weight="bold">2. The combination space</text></g>
+<g class="c18_00_26_20"><text x="340.84" y="239" fill="#f0f4f8" font-size="26" text-anchor="end"><tspan font-style="italic">C</tspan>(90, 4) =</text><text x="415" y="221" fill="#f0f4f8" font-size="26" text-anchor="middle">90!</text><line x1="352.84" y1="230" x2="477.16" y2="230" stroke="#f0f4f8" stroke-width="1.5"/><text x="415" y="254.7" fill="#f0f4f8" font-size="26" text-anchor="middle">4! × 86!</text></g>
+<g class="c20_50_26_20"><text x="345" y="345" fill="#facc15" font-size="40" text-anchor="middle">= 2,555,190</text></g>
+<g class="c22_00_26_20"><text x="345" y="395" fill="#8a99ad" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif">possible 4-number tickets</text></g>
+<g class="c22_00_on"><rect x="690" y="96" width="270" height="68" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="6"/><text x="706" y="120" fill="#8a99ad" font-size="13" font-family="system-ui,sans-serif">Possible tickets</text><text x="706" y="148" fill="#f0f4f8" font-size="20"><tspan font-style="italic">C</tspan>(90, 4) = 2,555,190</text></g>
+<g class="c27_50_41_70"><text x="40" y="50" fill="#f0f4f8" font-size="22" font-weight="bold">3. The jackpot combinations</text></g>
+<g class="c27_50_41_70"><circle cx="233" cy="120" r="20" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="233" y="125.95" fill="#4cf26d" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">17</text><circle cx="289" cy="120" r="20" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="289" y="125.95" fill="#4cf26d" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">73</text><circle cx="345" cy="120" r="20" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="345" y="125.95" fill="#4cf26d" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">40</text><circle cx="401" cy="120" r="20" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="401" y="125.95" fill="#4cf26d" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">80</text><circle cx="457" cy="120" r="20" fill="#0b0c10" stroke="#4cf26d" stroke-width="2"/><text x="457" y="125.95" fill="#4cf26d" font-size="17" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="bold">9</text></g>
+<g class="c30_00_41_70"><text x="345" y="186" fill="#8a99ad" font-size="19" text-anchor="middle">17,  73,  40,  80</text></g>
+<g class="c30_50_41_70"><text x="345" y="214" fill="#8a99ad" font-size="19" text-anchor="middle">17,  73,  40,  9</text></g>
+<g class="c31_00_41_70"><text x="345" y="242" fill="#8a99ad" font-size="19" text-anchor="middle">17,  73,  80,  9</text></g>
+<g class="c31_50_41_70"><text x="345" y="270" fill="#8a99ad" font-size="19" text-anchor="middle">17,  40,  80,  9</text></g>
+<g class="c32_00_41_70"><text x="345" y="298" fill="#8a99ad" font-size="19" text-anchor="middle">73,  40,  80,  9</text></g>
+<g class="c33_50_41_70"><text x="345" y="348" fill="#f0f4f8" font-size="24" text-anchor="middle"><tspan font-style="italic">C</tspan>(5, 4) = 5</text></g>
+<g class="c35_50_41_70"><text x="313.54" y="422" fill="#4cf26d" font-size="22" text-anchor="end"><tspan font-style="italic">P</tspan>(jackpot) =</text><text x="385" y="406" fill="#4cf26d" font-size="22" text-anchor="middle">5</text><line x1="325.54" y1="415" x2="444.46" y2="415" stroke="#4cf26d" stroke-width="1.5"/><text x="385" y="435.9" fill="#4cf26d" font-size="22" text-anchor="middle">2,555,190</text></g>
+<g class="c37_00_41_70"><text x="456.46" y="422" fill="#facc15" font-size="22">≈</text><text x="529.46" y="406" fill="#facc15" font-size="22" text-anchor="middle">1</text><line x1="481.88000000000005" y1="415" x2="577.0400000000001" y2="415" stroke="#facc15" stroke-width="1.5"/><text x="529.46" y="435.9" fill="#facc15" font-size="22" text-anchor="middle">511,038</text></g>
+<g class="c37_00_on"><rect x="690" y="178" width="270" height="68" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="6"/><text x="706" y="202" fill="#8a99ad" font-size="13" font-family="system-ui,sans-serif">Jackpot chance</text><text x="706" y="230" fill="#f0f4f8" font-size="20">5 / 2,555,190 ≈ 1 / 511,038</text></g>
+<g class="c43_00_59_20"><text x="40" y="50" fill="#f0f4f8" font-size="22" font-weight="bold">4. Hypergeometric probabilities</text></g>
+<g class="c43_00_59_20"><text x="265" y="132" fill="#f0f4f8" font-size="21" text-anchor="end"><tspan font-style="italic">P</tspan>(<tspan font-style="italic">k</tspan>) =</text><text x="395" y="116" fill="#f0f4f8" font-size="21" text-anchor="middle"><tspan font-style="italic">C</tspan>(5, <tspan font-style="italic">k</tspan>) · <tspan font-style="italic">C</tspan>(85, 4 − <tspan font-style="italic">k</tspan>)</text><line x1="277" y1="125" x2="513" y2="125" stroke="#f0f4f8" stroke-width="1.5"/><text x="395" y="146" fill="#f0f4f8" font-size="21" text-anchor="middle"><tspan font-style="italic">C</tspan>(90, 4)</text></g>
+<g class="c46_50_59_20"><text x="50" y="205" fill="#38bdf8" font-size="15" font-family="system-ui,sans-serif">Match</text><text x="150" y="205" fill="#38bdf8" font-size="15" font-family="system-ui,sans-serif">Winning tickets</text><text x="560" y="205" fill="#38bdf8" font-size="15" font-family="system-ui,sans-serif">Prize</text><line x1="40" y1="216" x2="650" y2="216" stroke="#38bdf8" stroke-width="1.5"/></g>
+<g class="c47_50_59_20"><text x="50" y="250" fill="#f0f4f8" font-size="18">2 / 4</text><text x="150" y="250" fill="#f0f4f8" font-size="18"><tspan font-style="italic">C</tspan>(5, 2) · <tspan font-style="italic">C</tspan>(85, 2) = 10 × 3,570 = 35,700</text><text x="560" y="250" fill="#f0f4f8" font-size="18">€25</text><line x1="40" y1="265" x2="650" y2="265" stroke="#475569" stroke-width="1"/></g>
+<g class="c49_30_59_20"><text x="50" y="294" fill="#f0f4f8" font-size="18">3 / 4</text><text x="150" y="294" fill="#f0f4f8" font-size="18"><tspan font-style="italic">C</tspan>(5, 3) · <tspan font-style="italic">C</tspan>(85, 1) = 10 × 85 = 850</text><text x="560" y="294" fill="#f0f4f8" font-size="18">€475</text><line x1="40" y1="309" x2="650" y2="309" stroke="#475569" stroke-width="1"/></g>
+<g class="c51_10_59_20"><text x="50" y="338" fill="#facc15" font-size="18">4 / 4</text><text x="150" y="338" fill="#facc15" font-size="18"><tspan font-style="italic">C</tspan>(5, 4) · <tspan font-style="italic">C</tspan>(85, 0) = 5 × 1 = 5</text><text x="560" y="338" fill="#facc15" font-size="18">€501,750</text><line x1="40" y1="353" x2="650" y2="353" stroke="#475569" stroke-width="1"/></g>
+<g class="c53_50_59_20"><text x="280.6" y="439" fill="#4cf26d" font-size="20" text-anchor="end"><tspan font-style="italic">P</tspan>(any prize) =</text><text x="385" y="423" fill="#4cf26d" font-size="20" text-anchor="middle">35,700 + 850 + 5</text><line x1="292.6" y1="432" x2="477.4" y2="432" stroke="#4cf26d" stroke-width="1.5"/><text x="385" y="451.0" fill="#4cf26d" font-size="20" text-anchor="middle">2,555,190</text><text x="489.4" y="439" fill="#4cf26d" font-size="20">≈ 1.43 %</text></g>
+<g class="c53_50_on"><rect x="690" y="260" width="270" height="68" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="6"/><text x="706" y="284" fill="#8a99ad" font-size="13" font-family="system-ui,sans-serif">Any prize</text><text x="706" y="312" fill="#4cf26d" font-size="20">≈ 1.43 %</text></g>
+<g class="c60_50_79_70"><text x="40" y="50" fill="#f0f4f8" font-size="22" font-weight="bold">5. Expected value</text></g>
+<g class="c60_50_79_70"><text x="366" y="118" fill="#f0f4f8" font-size="23" text-anchor="end"><tspan font-style="italic">E</tspan>[<tspan font-style="italic">X</tspan>] = Σ <tspan fill="#4cf26d"><tspan font-style="italic">P</tspan>(<tspan font-style="italic">k</tspan>)</tspan></text><text x="380" y="118" fill="#f0f4f8" font-size="23" text-anchor="middle">×</text><text x="394" y="118" fill="#38bdf8" font-size="23">Prize(<tspan font-style="italic">k</tspan>)</text></g>
+<g class="c64_00_79_70"><text x="50" y="175" fill="#8a99ad" font-size="18">2 / 4</text><text x="366" y="175" fill="#4cf26d" font-size="18" text-anchor="end">(35,700 / 2,555,190)</text><text x="380" y="175" fill="#f0f4f8" font-size="18" text-anchor="middle">×</text><text x="394" y="175" fill="#38bdf8" font-size="18">€25</text><text x="515" y="175" fill="#f0f4f8" font-size="18">+ €0.3493</text></g>
+<g class="c65_50_79_70"><text x="50" y="213" fill="#8a99ad" font-size="18">3 / 4</text><text x="366" y="213" fill="#4cf26d" font-size="18" text-anchor="end">(850 / 2,555,190)</text><text x="380" y="213" fill="#f0f4f8" font-size="18" text-anchor="middle">×</text><text x="394" y="213" fill="#38bdf8" font-size="18">€475</text><text x="515" y="213" fill="#f0f4f8" font-size="18">+ €0.1580</text></g>
+<g class="c67_00_79_70"><text x="50" y="251" fill="#8a99ad" font-size="18">4 / 4</text><text x="366" y="251" fill="#4cf26d" font-size="18" text-anchor="end">(5 / 2,555,190)</text><text x="380" y="251" fill="#f0f4f8" font-size="18" text-anchor="middle">×</text><text x="394" y="251" fill="#38bdf8" font-size="18">€501,750</text><text x="515" y="251" fill="#f0f4f8" font-size="18">+ €0.9818</text></g>
+<g class="c69_50_79_70"><line x1="40" y1="270" x2="650" y2="270" stroke="#475569" stroke-width="1.5"/><text x="150" y="305" fill="#facc15" font-size="22"><tspan font-style="italic">E</tspan>[<tspan font-style="italic">X</tspan>] ≈</text><text x="515" y="305" fill="#facc15" font-size="22">€1.4891</text></g>
+<g class="c69_50_on"><rect x="690" y="342" width="270" height="68" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="6"/><text x="706" y="366" fill="#8a99ad" font-size="13" font-family="system-ui,sans-serif">Expected payout</text><text x="706" y="394" fill="#facc15" font-size="20"><tspan font-style="italic">E</tspan>[<tspan font-style="italic">X</tspan>] ≈ €1.49</text></g>
+<g class="c72_50_79_70"><text x="150" y="345" fill="#ff4d4d" font-size="20">Ticket cost</text><text x="515" y="345" fill="#ff4d4d" font-size="20">− €3.00</text></g>
+<g class="c75_00_79_70"><line x1="40" y1="365" x2="650" y2="365" stroke="#475569" stroke-width="1.5"/><text x="150" y="408" fill="#ff4d4d" font-size="28" font-weight="bold">Net</text><text x="515" y="408" fill="#ff4d4d" font-size="28" font-weight="bold">− €1.5109</text><text x="150" y="450" fill="#8a99ad" font-size="16" font-family="system-ui,sans-serif">Return rate</text><text x="515" y="450" fill="#8a99ad" font-size="16" font-family="system-ui,sans-serif">49.64 %</text></g>
+<g class="c75_00_on"><rect x="690" y="424" width="270" height="68" fill="#131924" stroke="#facc15" stroke-width="1.5" rx="6"/><text x="706" y="448" fill="#8a99ad" font-size="13" font-family="system-ui,sans-serif">Expected net</text><text x="706" y="476" fill="#ff4d4d" font-size="20">− €1.51 per ticket</text></g>
+<g class="c81_00_on"><text x="40" y="50" fill="#f0f4f8" font-size="22" font-weight="bold">6. The long run</text></g>
+<g class="c81_50_on"><text x="120" y="200" fill="#38bdf8" font-size="38" text-anchor="middle">€3.00</text><text x="120" y="235" fill="#8a99ad" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">ticket</text></g>
+<g class="c82_80_on"><line x1="190" y1="188" x2="267" y2="188" stroke="#8a99ad" stroke-width="2" marker-end="url(#arr)"/><text x="345" y="200" fill="#facc15" font-size="38" text-anchor="middle">€1.49</text><text x="345" y="235" fill="#8a99ad" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">expected payout</text></g>
+<g class="c85_40_on"><line x1="415" y1="188" x2="482" y2="188" stroke="#8a99ad" stroke-width="2" marker-end="url(#arr)"/><text x="570" y="200" fill="#ff4d4d" font-size="38" text-anchor="middle">− €1.51</text><text x="570" y="235" fill="#8a99ad" font-size="15" text-anchor="middle" font-family="system-ui,sans-serif">expected profit</text></g>
+<g class="c90_00_on"><text x="345" y="400" fill="#f0f4f8" font-size="23" text-anchor="middle" font-style="italic">Probability does not predict the next draw.</text><text x="345" y="436" fill="#f0f4f8" font-size="23" text-anchor="middle" font-style="italic">It explains the long run.</text></g>
+</svg>
