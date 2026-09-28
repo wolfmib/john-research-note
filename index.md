@@ -93,6 +93,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [Malta Lotto Quaterno — What a €3 Ticket Is Worth](topics/animations/malta-lotto-quaterno-expected-value/content.md) | What is the expected value of a €3 Quaterno ticket, and how does the hypergeometric distribution give it? | Concept note |
 | [AP Precalculus Roadmap](topics/animations/ap-roadmap-precalculus/content.md) | What are the four units of AP Precalculus and what does each one look like? | Concept note |
 | [AP Calculus AB Roadmap](topics/animations/ap-roadmap-calculus-ab/content.md) | What are the eight units of AP Calculus AB and what does each one look like? | Concept note |
+| [AP Calculus BC Roadmap](topics/animations/ap-roadmap-calculus-bc/content.md) | What are the ten units of AP Calculus BC and how do they extend AB? | Concept note |
 
 ## Field Notes
 
