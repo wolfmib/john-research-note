@@ -94,6 +94,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [AP Precalculus Roadmap](topics/animations/ap-roadmap-precalculus/content.md) | What are the four units of AP Precalculus and what does each one look like? | Concept note |
 | [AP Calculus AB Roadmap](topics/animations/ap-roadmap-calculus-ab/content.md) | What are the eight units of AP Calculus AB and what does each one look like? | Concept note |
 | [AP Calculus BC Roadmap](topics/animations/ap-roadmap-calculus-bc/content.md) | What are the ten units of AP Calculus BC and how do they extend AB? | Concept note |
+| [AP Statistics Roadmap](topics/animations/ap-roadmap-statistics/content.md) | What are the five units of AP Statistics and what does each one look like? | Concept note |
 
 ## Field Notes
 
