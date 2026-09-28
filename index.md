@@ -91,6 +91,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [Dürr–Høyer Runtime Accounting Formula](topics/animations/durr-hoyer-runtime-three-terms/content.md) | Why is the running time of Dürr–Høyer minimum finding a sum of three count-times-cost terms, and what does each count? | Concept note |
 | [Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget](topics/animations/durr-hoyer-stop-part1-ladder-clock-one-climb-budget/content.md) | Once the threshold has silently become the minimum every round fails and looks like bad luck, so when does a global clock cut the run, and why is one full climb of the BBHT ladder worth ½ · λ/(λ−1) · √N iterations? | Concept note |
 | [Malta Lotto Quaterno — What a €3 Ticket Is Worth](topics/animations/malta-lotto-quaterno-expected-value/content.md) | What is the expected value of a €3 Quaterno ticket, and how does the hypergeometric distribution give it? | Concept note |
+| [AP Precalculus Roadmap](topics/animations/ap-roadmap-precalculus/content.md) | What are the four units of AP Precalculus and what does each one look like? | Concept note |
 
 ## Field Notes
 
