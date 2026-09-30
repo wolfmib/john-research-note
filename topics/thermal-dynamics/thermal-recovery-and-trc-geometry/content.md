@@ -13,7 +13,7 @@ author: Wei-Che Hung
 
 This topic brings together the physics of thermal recovery, the structure of a
 thermal recovery curve (TRC), and the geometric comparison framework introduced
-in the previous statistics note, [TRC vector geometry: projection, correlation, and distance](../statistics/trc-vector-geometry/content.md).
+in the previous statistics note, [TRC vector geometry: projection, correlation, and distance](../../statistics/trc-vector-geometry/content.md).
 
 The overall aim is to build a coherent study idea for a paper or technical note
 that links a physically interpretable thermal model to a statistical comparison
@@ -258,7 +258,10 @@ small set of physically motivated scalar parameters, such as
 \theta_n =
 \begin{bmatrix}
 \Delta T_n \\
-\tau_n \\\n\alpha_n \\\n\text{slope}_n \\\n\text{recovery-rate}_n
+\tau_n \\
+\alpha_n \\
+\text{slope}_n \\
+\text{recovery-rate}_n
 \end{bmatrix},
 ```
 
@@ -297,6 +300,9 @@ $$
 
 where the retained low-rank components define 3 dominant thermal modes instead of
 5 raw descriptors.
+
+A worked, animated version of this step, from fitted parameters to three projected
+values, is in [PCA Parameter-Difference Features](../pca-parameter-difference-features/content.md).
 
 This gives a paper-friendly story:
 

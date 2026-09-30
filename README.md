@@ -1,68 +1,32 @@
 # John Research Notes
 
-Short, reproducible research topics collected as they develop.
+Short, reproducible research notes by Wei-Che Hung, collected as they develop.
 
-Each topic has its own folder, with the explanation, source notes, figures, and
-supporting calculations kept together. For a categorized view of every topic,
-start with the [research index](index.md).
+Each note answers one question. It lives in its own folder, with the explanation,
+figures, and supporting calculations kept together, and many notes carry a summary in
+several languages.
 
-Papers collected for future study, but not yet promoted into understood topic
-notes, are tracked in the [ready-to-read paper index](papers/index.md).
+**Every note is registered in the [research index](index.md).** This page only shows
+the areas the notes cover.
 
-## Current Notes
+## Areas
 
-- [Confidence intervals for a process mean](topics/statistics/confidence-interval-for-process-mean/content.md)
-- [Comparing two vectors: projection, correlation, and distance](topics/statistics/comparing-two-vectors/content.md)
-- [Reference-to-group vector features with mean and standard deviation](topics/statistics/comparing-two-groups-of-vectors/content.md)
-- [TRC vector geometry: projection, correlation, and distance](topics/statistics/trc-vector-geometry/content.md)
-- Machine learning for medical classification:
-  - [The ML family — overview, story, and handwritten pages](topics/machine-learning/ml-family-for-medical-classification/content.md)
-  - [PCA — Mr. Variance](topics/machine-learning/pca-mr-variance/content.md)
-  - [ICA — The Source Detective](topics/machine-learning/ica-source-detective/content.md)
-  - [KNN — Ask Your Neighbours](topics/machine-learning/knn-ask-your-neighbours/content.md)
-  - [Decision Tree — The Question Man](topics/machine-learning/decision-tree-question-man/content.md)
-  - [Random Forest — The Tree Army](topics/machine-learning/random-forest-tree-army/content.md)
-  - [LDA — The Class Separator](topics/machine-learning/lda-class-separator/content.md)
-  - [SVM — The Margin Master](topics/machine-learning/svm-margin-master/content.md)
-  - [RBF-SVM — SVM Learns to Curve](topics/machine-learning/rbf-svm-curved-margin/content.md)
-- [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/content.md)
-- Diffuse optical imaging:
-  - [From cross section to interaction coefficient](topics/medical-imaging/cross-section-to-interaction-coefficient/content.md)
-  - [Reduced scattering coefficient in biomedical optics](topics/medical-imaging/reduced-scattering-coefficient/content.md)
-  - [Photon transport in scattering tissue](topics/medical-imaging/photon-transport-in-tissue/content.md)
-  - [Inverse reconstruction in optical tomography](topics/medical-imaging/inverse-reconstruction-in-optical-tomography/content.md)
-  - [Optical imaging of tissue oxygenation](topics/medical-imaging/optical-imaging-of-tissue-oxygenation/content.md)
-- [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
-- [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
-- [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md)
-- [Dürr–Høyer expected query bound](topics/quantum-computing/durr-hoyer-expected-query-bound/content.md)
-- Own paper, handwritten guide: [Hybrid quantum selection of learning rates — HandWriteGuide](papers/hybrid-quantum-lr-selection/HandWriteGuide/main.md)
-- Therma Skin Cancer Analysis Methods Series:
-  - [Therma Skin Cancer Analysis Methods Series: PCA Parameter-Difference Features](topics/therma-skin-cancer-methods/pca-parameter-difference-features/content.md)
-- Animations:
-  - [AP Statistics Roadmap](topics/animations/ap-roadmap-statistics/content.md)
-  - [AP Calculus BC Roadmap](topics/animations/ap-roadmap-calculus-bc/content.md)
-  - [AP Calculus AB Roadmap](topics/animations/ap-roadmap-calculus-ab/content.md)
-  - [AP Precalculus Roadmap](topics/animations/ap-roadmap-precalculus/content.md)
-  - [Malta Lotto Quaterno — What a €3 Ticket Is Worth](topics/animations/malta-lotto-quaterno-expected-value/content.md)
-  - [Dürr–Høyer Minimum Finding, Part 1 — The Ladder, the Clock and the One-Climb Budget](topics/animations/durr-hoyer-stop-part1-ladder-clock-one-climb-budget/content.md)
-  - [Dürr–Høyer Runtime Accounting Formula](topics/animations/durr-hoyer-runtime-three-terms/content.md)
-  - [Random Forest, Part 4 — Missing Data in a New Sample](topics/animations/random-forest-part4-missing-data-in-a-new-sample/content.md)
-  - [Random Forest, Part 3 — Missing Data in the Training Set](topics/animations/random-forest-part3-missing-data-in-the-training-set/content.md)
-  - [Random Forest, Part 2 — Random Feature Subsets and Out-of-Bag Error](topics/animations/random-forest-part2-random-features-and-oob-error/content.md)
-  - [Random Forest, Part 1 — From One Big Tree to a Voting Forest](topics/animations/random-forest-part1-one-big-tree-to-voting-forest/content.md)
-  - [1.1 Change in Tandem](topics/animations/ap-precalc-1-1-change-in-tandem/content.md)
-  - [1.2 Rates of Change](topics/animations/ap-precalc-1-2-rates-of-change/content.md)
-  - [1.11 Binomial Theorem](topics/animations/ap-precalc-1-11-binomial-theorem/content.md)
-  - [Graphing a Rational Function — Zeros, Intercept, Asymptotes](topics/animations/rational-function-graph-zeros-intercept-asymptotes/content.md)
-  - [Design Matrix Rows [x, y, 1] with reshape and hstack](topics/animations/numpy-design-matrix-reshape-hstack/content.md)
-  - [NumPy to Geometry — A (4, 2) Marker Array and Its Centroid](topics/animations/numpy-marker-array-centroid-mean-axis0/content.md)
-  - [Removable Discontinuity — The Hole in a Rational Function](topics/animations/removable-discontinuity-hole-rational-function/content.md)
-  - [Derivation of the Harmonic Sum Identity](topics/animations/harmonic-sum-identity-derivation/content.md)
-  - [Harmonic Growth and the Euler–Mascheroni Constant](topics/animations/harmonic-growth-euler-mascheroni-gamma/content.md)
-  - [Grover's iteration: the 2θ rotation](topics/animations/grover-iteration-2theta-rotation/content.md)
+| Area | What it covers | Notes |
+|---|---|---|
+| [Statistics](index.md#statistics) | Confidence intervals, and comparing vectors by projection, correlation, and distance | 4 |
+| [Machine Learning](index.md#machine-learning) | The classical classification family for medical data, one method per note: PCA, ICA, KNN, decision tree, random forest, LDA, SVM | 9 |
+| [Thermal Dynamics](index.md#thermal-dynamics) | Thermal recovery curves of skin lesions, fitted parameters, and the features built from them | 2 |
+| [Medical Imaging](index.md#medical-imaging) | Diffuse optical imaging, from photon transport in tissue to oxygenation maps | 5 |
+| [Quantum Computing](index.md#quantum-computing) | Grover search, QSVT, and Dürr–Høyer minimum finding with its query bound | 4 |
+| [Animations](index.md#animations) | Animated concept figures for mathematics, machine learning, and quantum search | 21 |
+| [Papers](index.md#papers) | Handwritten guides to the author's own papers, and the reading queue | 3 |
+| [Field Notes](field-notes/index.md) | One idea at a time, worked through in several languages with the vocabulary alongside | 3 |
 
-## Field Notes
+## How the repository is organised
 
-Short notes on one idea at a time, worked through in several languages with the vocabulary
-alongside. See the [field note index](field-notes/index.md).
+```text
+index.md                          every topic and paper, by area
+topics/<area>/<note>/content.md   one note, with its media/ beside it
+papers/                           own-paper guides and the reading queue
+field-notes/                      dated multi-language notes
+```

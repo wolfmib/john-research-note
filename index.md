@@ -1,10 +1,15 @@
 # Research Note Index
 
-## Reading Queue
+## Papers
 
-Suggested papers that have been collected but are not yet understood well
-enough to become topics are tracked in the
-[ready-to-read paper index](papers/index.md).
+Own papers and the reading queue. Status and reading notes are kept in the
+[paper index](papers/index.md).
+
+| Paper | Kind | Status |
+|---|---|---|
+| [Hybrid Quantum Selection of Learning Rates in Language-Model Training — HandWriteGuide](papers/hybrid-quantum-lr-selection/HandWriteGuide/main.md) | Own paper, handwritten guide | Guide in progress |
+| [Bartolucci et al. (2023) — Fusion-based quantum computation](papers/photonic-qec-foundations/Bartolucci_2023_Fusion_Based_Quantum_Computation.pdf) | Reading queue, quantum computing | To read |
+| [Bombin et al. (2024) — Unifying flavors of fault tolerance with the ZX calculus](papers/photonic-qec-foundations/Bombin_2024_Unifying_Fault_Tolerance_ZX_Calculus.pdf) | Reading queue, quantum computing | To read |
 
 ## Statistics
 
@@ -36,7 +41,8 @@ handwritten pages, then one note per method (math + worked example + SVG figure)
 
 | Topic | Question | Status |
 |---|---|---|
-| [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/content.md) | How do lesion recovery, coupled thermal diffusion, and TRC-vector comparison combine into one paper-ready study framework? | Concept note |
+| [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/thermal-recovery-and-trc-geometry/content.md) | How do lesion recovery, coupled thermal diffusion, and TRC-vector comparison combine into one paper-ready study framework? | Concept note |
+| [PCA Parameter-Difference Features](topics/thermal-dynamics/pca-parameter-difference-features/content.md) | How do per-pixel recovery-curve fits become three PCA features per case for an SVM? | Concept note |
 
 ## Medical Imaging
 
@@ -68,12 +74,6 @@ No public topic added yet.
 | [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md) | How does a rectangular least-squares fit become a polynomial applied to singular values, read out by postselection? | Concept note |
 | [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md) | How often does a repeated quantum search return the best set, and how far off are the misses on average? | Concept note |
 | [Dürr–Høyer expected query bound](topics/quantum-computing/durr-hoyer-expected-query-bound/content.md) | Why does minimum finding need at most 45/4 √N Grover iterations on average, and why is every threshold rank r visited with probability 1/r? | Concept note |
-
-## Therma Skin Cancer Analysis Methods Series
-
-| Topic | Question | Status |
-|---|---|---|
-| [Therma Skin Cancer Analysis Methods Series: PCA Parameter-Difference Features](topics/therma-skin-cancer-methods/pca-parameter-difference-features/content.md) | How do per-pixel recovery-curve fits become three PCA features per case for an SVM? | Concept note |
 
 ## Animations
 

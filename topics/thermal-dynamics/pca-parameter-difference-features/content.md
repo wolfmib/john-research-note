@@ -1,6 +1,6 @@
 ---
-title: "Therma Skin Cancer Analysis Methods Series: PCA Parameter-Difference Features"
-topic: therma-skin-cancer-methods
+title: "PCA Parameter-Difference Features"
+topic: thermal-dynamics
 example: pca-parameter-difference-features
 status: concept-note
 languages: [en, zh-TW, fr, de, ru]
@@ -8,13 +8,13 @@ created: 2026-09-30
 author: Wei-Che Hung
 ---
 
-# Therma Skin Cancer Analysis Methods Series: PCA Parameter-Difference Features
+# PCA Parameter-Difference Features
 
-![Therma Skin Cancer Analysis Methods Series: PCA Parameter-Difference Features](media/therma-methods-pca-parameter-difference-features.gif)
+![PCA Parameter-Difference Features](media/therma-methods-pca-parameter-difference-features.gif)
 
 ## What happens
 
-1. Every lesion pixel has its own recovery curve, and each curve is fitted with its own five-parameter double exponential. This differs from how the other features are generated; see the other feature notes.
+1. Every lesion pixel has its own recovery curve, and each curve is fitted with its own five-parameter double exponential.
 2. The fitted parameters are stacked as a matrix, one row per pixel and one column per parameter. Each column is averaged over the pixels, giving the lesion mean vector $\bar{\boldsymbol{\theta}}_L$ . The same two steps on the normal-skin mask give $\bar{\boldsymbol{\theta}}_N$ .
 3. The absolute difference of the two mean vectors gives one five-value vector $\Delta\boldsymbol{\theta}$ per case.
 4. PCA is fitted on the $\Delta\boldsymbol{\theta}$ vectors of all training cases. PC1, PC2 and PC3 are the three leading eigenvectors, three directions in the five-parameter space.
@@ -42,7 +42,7 @@ w_{3,1} & w_{3,2} & w_{3,3} & w_{3,4} & w_{3,5}
 \begin{bmatrix} \Delta\theta_1 \\ \Delta\theta_2 \\ \Delta\theta_3 \\ \Delta\theta_4 \\ \Delta\theta_5 \end{bmatrix}
 ```
 
-The rows $\mathbf{w}_1^{\mathsf T}, \mathbf{w}_2^{\mathsf T}, \mathbf{w}_3^{\mathsf T}$ are the eigenvectors of the covariance of the training $\Delta\boldsymbol{\theta}$ vectors, so each $z_j$ is the length of the data along one eigenvector. PCA also subtracts the training mean before projecting; that only shifts each value by a constant. The method follows SG24 (Soto & Godoy 2024, *An automatic approach to detect skin cancer utilizing active infrared thermography*), where the three values are named $PCA_{\Delta\theta 1}$ , $PCA_{\Delta\theta 2}$ , $PCA_{\Delta\theta 3}$ . PCA itself is covered in [PCA — Mr. Variance](../../machine-learning/pca-mr-variance/content.md).
+The rows $\mathbf{w}_1^{\mathsf T}, \mathbf{w}_2^{\mathsf T}, \mathbf{w}_3^{\mathsf T}$ are the eigenvectors of the covariance of the training $\Delta\boldsymbol{\theta}$ vectors, so each $z_j$ is the length of the data along one eigenvector. PCA also subtracts the training mean before projecting; that only shifts each value by a constant. The method is general: it needs only fitted curves from two regions. It is applied here to active-thermography skin-cancer video, following SG24 (Soto & Godoy 2024, *An automatic approach to detect skin cancer utilizing active infrared thermography*), where the three values are named $PCA_{\Delta\theta 1}$ , $PCA_{\Delta\theta 2}$ , $PCA_{\Delta\theta 3}$ . PCA itself is covered in [PCA — Mr. Variance](../../machine-learning/pca-mr-variance/content.md), and the recovery-curve setting in [Thermal Dynamics of Recovery and TRC Geometry](../thermal-recovery-and-trc-geometry/content.md).
 
 ## Summary
 
