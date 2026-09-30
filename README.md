@@ -35,6 +35,8 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Grover search for a subset-sum problem](topics/quantum-computing/grover-search-for-subset-sum/content.md)
 - [QSVT pseudoinverse for a 2D affine mapping](topics/quantum-computing/qsvt-pseudoinverse-for-affine-mapping/content.md)
 - [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md)
+- [Dürr–Høyer expected query bound](topics/quantum-computing/durr-hoyer-expected-query-bound/content.md)
+- Own paper, handwritten guide: [Hybrid quantum selection of learning rates — HandWriteGuide](papers/hybrid-quantum-lr-selection/HandWriteGuide/main.md)
 - Animations:
   - [AP Statistics Roadmap](topics/animations/ap-roadmap-statistics/content.md)
   - [AP Calculus BC Roadmap](topics/animations/ap-roadmap-calculus-bc/content.md)

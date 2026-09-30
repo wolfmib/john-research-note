@@ -16,6 +16,14 @@ Collecting a paper does not imply endorsement, mastery, or adoption of its
 claims. Before moving a paper into a topic, read it critically and verify the
 concepts against its cited foundations where necessary.
 
+## Own Papers
+
+Papers written by the author. Each keeps a handwritten guide that re-derives the paper page by page.
+
+| Status | Paper | Guide | Pages so far |
+|---|---|---|---|
+| **Guide in progress** | Wei-Che Hung — *Hybrid Quantum Selection of Learning Rates in Language-Model Training: Termination Criteria and the Cost Against Classical Selection* (preprint, 2026; PDF not added yet) | [HandWriteGuide](hybrid-quantum-lr-selection/HandWriteGuide/main.md) | P1 general concept · P2 why E(Q) ≤ 45/4 √N |
+
 ## Quantum Computing
 
 | Status | Paper | Why it is queued | Future topic direction |
