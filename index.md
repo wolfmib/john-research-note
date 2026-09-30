@@ -69,6 +69,12 @@ No public topic added yet.
 | [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md) | How often does a repeated quantum search return the best set, and how far off are the misses on average? | Concept note |
 | [Dürr–Høyer expected query bound](topics/quantum-computing/durr-hoyer-expected-query-bound/content.md) | Why does minimum finding need at most 45/4 √N Grover iterations on average, and why is every threshold rank r visited with probability 1/r? | Concept note |
 
+## Therma Skin Cancer Analysis Methods Series
+
+| Topic | Question | Status |
+|---|---|---|
+| [Therma Skin Cancer Analysis Methods Series: PCA Parameter-Difference Features](topics/therma-skin-cancer-methods/pca-parameter-difference-features/content.md) | How do per-pixel recovery-curve fits become three PCA features per case for an SVM? | Concept note |
+
 ## Animations
 
 Animated SVG concept figures (GitHub plays the SMIL animation inline).

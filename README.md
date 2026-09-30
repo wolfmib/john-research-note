@@ -37,6 +37,8 @@ notes, are tracked in the [ready-to-read paper index](papers/index.md).
 - [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md)
 - [Dürr–Høyer expected query bound](topics/quantum-computing/durr-hoyer-expected-query-bound/content.md)
 - Own paper, handwritten guide: [Hybrid quantum selection of learning rates — HandWriteGuide](papers/hybrid-quantum-lr-selection/HandWriteGuide/main.md)
+- Therma Skin Cancer Analysis Methods Series:
+  - [Therma Skin Cancer Analysis Methods Series: PCA Parameter-Difference Features](topics/therma-skin-cancer-methods/pca-parameter-difference-features/content.md)
 - Animations:
   - [AP Statistics Roadmap](topics/animations/ap-roadmap-statistics/content.md)
   - [AP Calculus BC Roadmap](topics/animations/ap-roadmap-calculus-bc/content.md)
