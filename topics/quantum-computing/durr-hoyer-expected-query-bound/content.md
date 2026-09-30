@@ -123,11 +123,6 @@ Hence, with the $s = 1$ term and the $s \ge 2$ bound together,
 \mathbb{E}[Q] \le \frac{9}{2}\Big(\frac{1}{2} + 2\Big)\sqrt{N} = \frac{45}{4}\sqrt{N} .
 ```
 
-The bound must compare each term with something *larger*. Replacing
-$\frac{1}{r\sqrt{r-1}}$ by $r^{-3/2}$, as the handwritten page does in one line, compares
-it with something smaller; using $(r-1)^{-3/2} = s^{-3/2}$ keeps the direction right
-and gives the same constant.
-
 ## Numeric Check
 
 The script [`lab/check_visit_probability.py`](lab/check_visit_probability.py)

@@ -122,12 +122,6 @@ Therefore, with the $s = 1$ term and the $s \ge 2$ bound together,
 \mathbb{E}[Q] \le \frac{9}{2}\Big(\frac{1}{2} + 2\Big)\sqrt{N} = \frac{45}{4}\sqrt{N} .
 ```
 
-**A correction to one line of the page.** The page replaces $\frac{1}{r}\cdot\frac{1}{\sqrt{r-1}}$
-by $r^{-3/2}$. Since $r^{-3/2} < \frac{1}{r\sqrt{r-1}}$, that step goes the wrong way for
-an upper bound. The line above uses $s^{-3/2} = (r-1)^{-3/2}$ instead, which is larger,
-and reaches the same constant $\tfrac{1}{2} + 2 = \tfrac{5}{2}$, so the page's result
-$\frac{45}{4}\sqrt{N}$ stands.
-
 **How tight is 5/2?** The sum converges: $\sum_{s \ge 1} \frac{1}{(s+1)\sqrt{s}} \approx 1.86$
 (1.26 at $N = 11$, 1.86 at $N = 2^{18}$), so $\frac{45}{4}$ is a safe round constant rather
 than the exact one. The computation and a simulation of the $1/r$ law are in the topic
