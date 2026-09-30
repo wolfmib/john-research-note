@@ -214,7 +214,15 @@ A new case follows the same path with nothing refitted: its pixels are fitted, t
 
 ## Relation to the source
 
-SG24 defines the feature on the representative recovery curve of each region: the lesion curve and the non-lesion curve are each modelled with the double exponential, which gives $\boldsymbol{\theta}_L$ and $\boldsymbol{\theta}_N$ directly. Steps 1 and 2 above reach the regional vector by another route, fitting every pixel and then averaging parameter-wise. The model is nonlinear in its rates, so the two routes do not in general give the same vector. Steps 3 to 6 are as in SG24: the absolute difference, PCA on the covariance of the training differences, and three components.
+SG24 builds its features from three kinds of input, and this feature uses the third.
+
+| Input | Features in SG24 |
+|---|---|
+| The representative recovery curve of each region, taken directly or with its minimum subtracted | Euclidean distance, energy difference, rise-time difference, area difference, temperature difference at 20 s |
+| A set of recovery curves compared with a class model curve | the statistical similitude features: projection, correlation and distance, each with its mean and standard deviation |
+| The parameters of the double-exponential model | the PCA parameter-difference features of this note |
+
+For this feature SG24 gives the steps in one passage: the double-exponential model yields the parameter sets $\boldsymbol{\theta}_L$ and $\boldsymbol{\theta}_N$ of the lesion and non-lesion areas, the absolute difference gives five components, and PCA on the covariance of the training differences reduces the five to three. The passage does not spell out how many curves are fitted per region. Steps 1 and 2 above fit every pixel and average parameter-wise; Steps 3 to 6 follow the passage as written.
 
 ## Related notes
 
