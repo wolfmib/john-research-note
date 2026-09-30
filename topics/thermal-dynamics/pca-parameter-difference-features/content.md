@@ -222,7 +222,7 @@ SG24 builds its features from three kinds of input, and this feature uses the th
 | A set of recovery curves compared with a class model curve | the statistical similitude features: projection, correlation and distance, each with its mean and standard deviation |
 | The parameters of the double-exponential model | the PCA parameter-difference features of this note |
 
-For this feature SG24 gives the steps in one passage: the double-exponential model yields the parameter sets $\boldsymbol{\theta}_L$ and $\boldsymbol{\theta}_N$ of the lesion and non-lesion areas, the absolute difference gives five components, and PCA on the covariance of the training differences reduces the five to three. The passage does not spell out how many curves are fitted per region. Steps 1 and 2 above fit every pixel and average parameter-wise; Steps 3 to 6 follow the passage as written.
+For this feature SG24 starts from its Eq. (1), the double-exponential model of one pixel's recovery curve. Every pixel is fitted on its own (Step 1), and the five fitted values are averaged over the lesion pixels and over the non-lesion pixels, which gives the parameter sets $\boldsymbol{\theta}_L$ and $\boldsymbol{\theta}_N$ (Step 2). The absolute difference gives five components (Step 3), and PCA on the covariance of the training differences reduces the five to three (Steps 4 to 6).
 
 ## Related notes
 
