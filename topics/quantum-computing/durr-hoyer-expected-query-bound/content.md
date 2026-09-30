@@ -102,14 +102,22 @@ stages, close to the minimum, are the expensive ones.
 = \frac{9}{2}\sqrt{N}\sum_{s=1}^{N-1}\frac{1}{(s+1)\sqrt{s}}, \qquad s = r-1 .
 ```
 
-The $s = 1$ term is $\tfrac{1}{2}$. For $s \ge 2$ each term is below $s^{-3/2}$, and a
-decreasing sum stays below its integral:
+Split the sum into the $s = 1$ term and the terms with $s \ge 2$:
+
+```math
+\sum_{s=1}^{N-1}\frac{1}{(s+1)\sqrt{s}}
+= \underbrace{\frac{1}{2}}_{s\,=\,1} + \underbrace{\sum_{s=2}^{N-1}\frac{1}{(s+1)\sqrt{s}}}_{s\,\ge\,2}
+\le \frac{1}{2} + \sum_{s=2}^{N-1} s^{-3/2} ,
+```
+
+because $\frac{1}{(s+1)\sqrt{s}} \le s^{-3/2}$. The $s \ge 2$ part is a decreasing sum, so it stays below its
+integral, and the integral has the upper bound $2$:
 
 ```math
 \sum_{s=2}^{N-1} s^{-3/2} \le \int_{1}^{N-1} x^{-3/2}\,dx = 2\Big(1 - \frac{1}{\sqrt{N-1}}\Big) \le 2 .
 ```
 
-Hence
+Hence, with the $s = 1$ term and the $s \ge 2$ bound together,
 
 ```math
 \mathbb{E}[Q] \le \frac{9}{2}\Big(\frac{1}{2} + 2\Big)\sqrt{N} = \frac{45}{4}\sqrt{N} .
