@@ -11,9 +11,14 @@ author: Wei-Che Hung
 *Hybrid Quantum Selection of Learning Rates in Language-Model Training: Termination
 Criteria and the Cost Against Classical Selection* — Wei-Che Hung, preprint (2026).
 
+This guide re-derives the paper content by hand-writing-style-note.
+
+<!--
+Guide conventions (kept as a reminder, not shown on the page):
 This guide re-derives the paper by hand, one page at a time. Each page is kept as
 the photographed original at the top of its file, followed by a typed version with
 the paper's symbols. The paper PDF itself is not in this folder yet.
+-->
 
 <details open>
 <summary>The pages so far</summary>
