@@ -43,6 +43,7 @@ handwritten pages, then one note per method (math + worked example + SVG figure)
 |---|---|---|
 | [Thermal dynamics of recovery and TRC geometry](topics/thermal-dynamics/thermal-recovery-and-trc-geometry/content.md) | How do lesion recovery, coupled thermal diffusion, and TRC-vector comparison combine into one paper-ready study framework? | Concept note |
 | [PCA Parameter-Difference Features](topics/thermal-dynamics/pca-parameter-difference-features/content.md) | How do per-pixel recovery-curve fits become three PCA features per case for an SVM? | Concept note |
+| [Statistical Similitude Features: Projection, Correlation, Distance](topics/thermal-dynamics/statistical-similitude-features/content.md) | How do projection, correlation and distance compare a set of recovery curves with a model curve, and how do they become 24 features? | Concept note |
 
 ## Medical Imaging
 

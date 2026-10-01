@@ -15,7 +15,7 @@ the areas the notes cover.
 |---|---|---|
 | [Statistics](index.md#statistics) | Confidence intervals, and comparing vectors by projection, correlation, and distance | 4 |
 | [Machine Learning](index.md#machine-learning) | The classical classification family for medical data, one method per note: PCA, ICA, KNN, decision tree, random forest, LDA, SVM | 9 |
-| [Thermal Dynamics](index.md#thermal-dynamics) | Thermal recovery curves of skin lesions, fitted parameters, and the features built from them | 2 |
+| [Thermal Dynamics](index.md#thermal-dynamics) | Thermal recovery curves of skin lesions, fitted parameters, and the features built from them | 3 |
 | [Medical Imaging](index.md#medical-imaging) | Diffuse optical imaging, from photon transport in tissue to oxygenation maps | 5 |
 | [Quantum Computing](index.md#quantum-computing) | Grover search, QSVT, and Dürr–Høyer minimum finding with its query bound | 4 |
 | [Animations](index.md#animations) | Animated concept figures for mathematics, machine learning, and quantum search | 21 |

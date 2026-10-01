@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistical Similitude Features</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<style>
+    :root {
+        --bg: #f8f9fa; --ink: #343a40; --dim: #6c757d; --line: #dee2e6;
+        --model: #c77700; --curve: #0d6efd; --res: #198754; --neg: #dc3545; --hl: #fd7e14;
+    }
+    html, body { margin: 0; padding: 0; background: #e9ecef; overflow: hidden; height: 100%;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    /* Fixed 1280x720 stage, scaled to the window: layout never reflows. */
+    #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; background: var(--bg);
+        transform-origin: 0 0; overflow: hidden; color: var(--ink); }
+    .scene { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; box-sizing: border-box;
+        padding: 40px 48px 24px; display: flex; flex-direction: column; align-items: center; opacity: 0; }
+    h2 { font-size: 30px; margin: 0 0 8px; padding-bottom: 10px; width: 100%; text-align: center;
+        border-bottom: 2px solid var(--line); }
+    .subtitle { font-size: 18px; color: var(--dim); margin-bottom: 16px; text-align: center; }
+    .msg { font-size: 20px; font-weight: bold; color: var(--ink); text-align: center; margin-top: 16px; line-height: 1.45; }
+    .msg small { display: block; font-size: 16px; font-weight: normal; color: var(--dim); margin-top: 4px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,.05); }
+    .arrow { font-size: 34px; color: var(--ink); margin: 0 18px; }
+    .model { color: var(--model); } .curve { color: var(--curve); } .res { color: var(--res); }
+    .katex-display { margin: 0; }
+    [data-t] { opacity: 0; }
+    .zr { zoom: 1.1; margin-top: 22px; }
+
+    .row { display: flex; align-items: center; justify-content: center; width: 100%; gap: 36px; }
+    .pic { position: relative; flex: none; }
+    .pic svg { display: block; }
+    .lab { position: absolute; font-size: 21px; white-space: nowrap; }
+    .col { display: flex; flex-direction: column; gap: 14px; }
+    .f { padding: 14px 22px; font-size: 21px; }
+    .f .cap { font-size: 15px; color: var(--dim); margin-top: 6px; }
+    .legend { display: flex; align-items: center; gap: 14px; font-size: 18px; padding: 12px 20px; }
+    .sw { width: 34px; height: 6px; border-radius: 3px; flex: none; }
+    #c-tag { position: absolute; left: 92px; top: 12px; font-size: 16px; font-weight: bold; padding: 4px 10px;
+        background: #fff; border: 1px solid var(--line); border-radius: 6px; opacity: 0; }
+    .sum { width: 372px; padding: 16px 16px 18px; display: flex; flex-direction: column; align-items: center; box-sizing: border-box; }
+    .sum h3 { margin: 0 0 8px; font-size: 21px; }
+    .sum .mini { height: 200px; display: flex; align-items: center; justify-content: center; }
+    .sum .mini > .pic { zoom: 0.5; }
+    .sum .eq { font-size: 19px; margin-top: 10px; }
+</style>
+</head>
+<body>
+<div id="stage">
+
+    <!-- SCENE 1: a recovery curve as a vector -->
+    <div class="scene" data-start="0" data-end="13">
+        <h2>A Recovery Curve as a Vector</h2>
+        <div class="subtitle">A curve sampled at $K$ time points is one vector of $K$ values.</div>
+        <div class="row" style="margin-top:6px;">
+            <div class="pic card" id="s1-pic" data-t="0.4"></div>
+            <div class="arrow" data-t="4.0">&rarr;</div>
+            <div data-t="4.5" style="font-size:24px;">
+                $$f = \begin{bmatrix} f(t_1) \\ f(t_2) \\ \vdots \\ f(t_K) \end{bmatrix} \in \mathbb{R}^K$$
+            </div>
+        </div>
+        <div class="col" style="margin-top:18px; gap:10px;">
+            <div class="legend card" data-t="6.5"><div class="sw" style="background:var(--model);"></div>
+                <div><span class="model"><b>$f_m$</b></span> &nbsp;model curve: the double exponential with one class's averaged fitted parameters, scaled so that $\|f_m\| = 1$</div></div>
+            <div class="legend card" data-t="8.3"><div class="sw" style="background:var(--curve);"></div>
+                <div><span class="curve"><b>$f_n$</b></span> &nbsp;one modeled curve from the lesion set or the non-lesion set of a case</div></div>
+        </div>
+        <div class="msg" data-t="10">Three measures compare $f_n$ with $f_m$: projection, correlation, distance.</div>
+    </div>
+
+    <!-- SCENE 2: projection -->
+    <div class="scene" data-start="13" data-end="29">
+        <h2>1. Projection</h2>
+        <div class="subtitle">The inner product of the curve $f_n$ with the model curve $f_m$.</div>
+        <div class="row zr">
+            <div class="pic card" id="p-pic" data-t="13.8"></div>
+            <div class="col" style="width:640px;">
+                <div class="f card" data-t="15.2">$$\mathrm{proj}_n = \langle \textcolor{#0d6efd}{f_n},\, \textcolor{#c77700}{f_m} \rangle = \textcolor{#0d6efd}{f_n}^{\mathsf T}\, \textcolor{#c77700}{f_m}$$</div>
+                <div class="f card" data-t="19">$$= \textcolor{#0d6efd}{f_n(t_1)}\,\textcolor{#c77700}{f_m(t_1)} + \textcolor{#0d6efd}{f_n(t_2)}\,\textcolor{#c77700}{f_m(t_2)} + \cdots + \textcolor{#0d6efd}{f_n(t_K)}\,\textcolor{#c77700}{f_m(t_K)}$$
+                    <div class="cap">sample by sample: multiply the two values at the same time point, then add</div></div>
+                <div class="f card" data-t="22">$\|\textcolor{#c77700}{f_m}\| = 1$ &nbsp;&rarr;&nbsp; <span class="res"><b>$\mathrm{proj}_n$</b></span> is the length of $\textcolor{#0d6efd}{f_n}$ along $\textcolor{#c77700}{f_m}$</div>
+            </div>
+        </div>
+        <div class="msg" data-t="24" style="margin-top:30px;">How much of the curve lies along the model curve.</div>
+    </div>
+
+    <!-- SCENE 3: correlation -->
+    <div class="scene" data-start="29" data-end="61">
+        <h2>2. Correlation</h2>
+        <div class="subtitle">Do the two curves move above and below their own means at the same time points?</div>
+        <div class="row" style="gap:24px; align-items:flex-start;">
+            <div class="pic card" id="c-pic" data-t="29.8"></div>
+            <div class="col" style="width:520px; gap:12px;">
+                <div class="f card" data-t="35.5">
+                    $$\textcolor{#c77700}{a_k = f_m(t_k) - \bar{f}_m} \qquad \textcolor{#0d6efd}{b_k = f_n(t_k) - \bar{f}_n}$$
+                    <div class="cap">deviation of each sample from its own curve's mean (the vertical bars)</div>
+                </div>
+                <div class="f card" data-t="38" style="display:flex; align-items:center; gap:10px; flex-wrap:wrap;">
+                    <div>$\rho = \dfrac{\mathrm{cov}(f_m, f_n)}{\sigma_{f_m}\,\sigma_{f_n}}$</div>
+                    <div data-t="40">$= \dfrac{\textcolor{#198754}{\sum_k a_k\, b_k}}{\textcolor{#c77700}{\sqrt{\sum_k a_k^2}}\;\textcolor{#0d6efd}{\sqrt{\sum_k b_k^2}}}$</div>
+                    <div class="cap" data-t="50" style="width:100%;"><span class="res"><b>numerator</b></span>: the sum of the green bars &nbsp;&middot;&nbsp; denominator: the size of each curve's own deviations</div>
+                </div>
+                <div class="f card" data-t="52">These two curves: &nbsp;<span class="res"><b>$\rho$ = <span id="rho-val"></span></b></span></div>
+            </div>
+        </div>
+        <div class="msg" data-t="54" style="margin-top:10px;">Both curves are below their means early and above them late, so every product is positive and $\rho$ is close to 1.
+            <small>A sample where one curve is above its mean and the other is below gives a negative product and lowers $\rho$.</small></div>
+    </div>
+
+    <!-- SCENE 4: distance -->
+    <div class="scene" data-start="61" data-end="75">
+        <h2>3. Distance</h2>
+        <div class="subtitle">The Euclidean norm of the difference between the two curves.</div>
+        <div class="row zr">
+            <div class="pic card" id="d-pic" data-t="61.8"></div>
+            <div class="col" style="width:640px;">
+                <div class="f card" data-t="64">$$d_n = \frac{1}{K-1}\, \textcolor{#198754}{\| f_n - f_m \|}$$</div>
+                <div class="f card" data-t="66.5">$$\textcolor{#198754}{\| f_n - f_m \|} = \sqrt{\sum_{k=1}^{K} \big(\textcolor{#0d6efd}{f_n(t_k)} - \textcolor{#c77700}{f_m(t_k)}\big)^2}$$
+                    <div class="cap">sample by sample: the gap between the two values, squared, then added</div></div>
+            </div>
+        </div>
+        <div class="msg" data-t="69" style="margin-top:30px;">The straight-line gap between the two vectors, divided by $K-1$.</div>
+    </div>
+
+    <!-- SCENE 5: summary -->
+    <div class="scene" data-start="75" data-end="90" data-hold="1">
+        <h2>Three Measures per Curve</h2>
+        <div class="subtitle">Each compares one curve $f_n$ with the model curve $f_m$.</div>
+        <div class="row" style="gap:18px; align-items:stretch; margin-top:26px;">
+            <div class="sum card" data-t="75.8"><h3>1. Projection</h3><div class="mini" id="p-mini"></div>
+                <div class="eq">$\mathrm{proj}_n = \langle f_n, f_m \rangle$</div></div>
+            <div class="sum card" data-t="76.6"><h3>2. Correlation</h3><div class="mini" id="c-mini"></div>
+                <div class="eq">$\rho = \dfrac{\mathrm{cov}(f_m, f_n)}{\sigma_{f_m}\,\sigma_{f_n}}$</div></div>
+            <div class="sum card" data-t="77.4"><h3>3. Distance</h3><div class="mini" id="d-mini"></div>
+                <div class="eq">$d_n = \dfrac{1}{K-1}\,\| f_n - f_m \|$</div></div>
+        </div>
+        <div class="msg" data-t="79.5" style="margin-top:30px;">Each measure is computed for a set of at least 10 curves $f_n$; its mean and standard deviation are the features.
+            <small data-t="81.5">2 model curves (benign, malignant) &times; 2 sets (lesion, non-lesion) &times; 6 values = 24 features.</small></div>
+    </div>
+</div>
+
+<script>
+    // ---- shared example data: two recovery curves sampled at K = 8 time points ---
+    const K = 8, C_M = '#c77700', C_N = '#0d6efd', C_R = '#198754', C_NEG = '#dc3545', C_AX = '#adb5bd';
+    const fm = t => 1 - Math.exp(-t / 5), fn = t => 1 - Math.exp(-t / 2.5);
+    const ks = [...Array(K)].map((_, i) => i + 1), sum = a => a.reduce((s, x) => s + x, 0);
+    const Fm = ks.map(fm), Fn = ks.map(fn), mM = sum(Fm) / K, mN = sum(Fn) / K;
+    const A = Fm.map(v => v - mM), B = Fn.map(v => v - mN), P = A.map((a, i) => a * B[i]);
+    const rho = sum(P) / Math.sqrt(sum(A.map(a => a * a)) * sum(B.map(b => b * b)));
+    const at = (t, anim) => anim ? ` data-t="${t}"` : '';
+    const dr = (t, d, anim) => anim ? ` data-draw="${t},${d}"` : '';
+    const lab = (x, y, tex, color, t, anim) => `<div class="lab" style="left:${x}px; top:${y}px; color:${color};"${at(t, anim)}>$${tex}$</div>`;
+    const curvePath = (f, X, Y, t1) => { let d = ''; for (let t = 0; t <= t1 + 1e-9; t += 0.1) d += `${t ? 'L' : 'M'}${X(t).toFixed(1)},${Y(f(t)).toFixed(1)} `; return d; };
+    const tick = (x, y, sub) => `<text x="${x}" y="${y}" text-anchor="middle" font-size="19" font-style="italic" font-family="KaTeX_Math, Times New Roman, serif" fill="#6c757d">t<tspan dy="5" font-size="14" font-style="${sub === 'K' ? 'italic' : 'normal'}" font-family="KaTeX_Main, Times New Roman, serif">${sub}</tspan></text>`;
+
+    // ---- scene 1: one curve, its K samples ----------------------------------------
+    (() => {
+        const X = t => 50 + t * 42, Y = v => 220 - v * 190;
+        let s = `<svg width="430" height="255" viewBox="0 0 430 255">
+            <line x1="50" y1="220" x2="415" y2="220" stroke="${C_AX}" stroke-width="2"/><line x1="50" y1="220" x2="50" y2="14" stroke="${C_AX}" stroke-width="2"/>
+            <path d="${curvePath(fn, X, Y, 8.4)}" fill="none" stroke="#343a40" stroke-width="3.5" pathLength="1" stroke-dasharray="1 1" data-draw="0.6,1.4"/>`;
+        ks.forEach(k => { s += `<g data-t="${(2.2 + 0.12 * k).toFixed(2)}"><line x1="${X(k)}" y1="${Y(Fn[k - 1])}" x2="${X(k)}" y2="220" stroke="${C_AX}" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <circle cx="${X(k)}" cy="${Y(Fn[k - 1])}" r="5" fill="#343a40"/></g>`; });
+        s += `<g data-t="3.2">${tick(X(1), 240, '1')}${tick(X(2), 240, '2')}<text x="${X(5)}" y="240" text-anchor="middle" font-size="16" fill="#6c757d">&ctdot;</text>${tick(X(8), 240, 'K')}</g></svg>`;
+        document.getElementById('s1-pic').innerHTML = s + lab(96, 26, 'f(t)', '#343a40', 0.6, true);
+    })();
+
+    // ---- scenes 2 / 4: the two curves as two arrows --------------------------------
+    function vecPic(id, mode, T) {
+        const anim = !!T, O = [45, 310], M = [330, 240], N = [140, 60];
+        const um = [M[0] - O[0], M[1] - O[1]], L = Math.hypot(...um), u = [um[0] / L, um[1] / L];
+        const pr = (N[0] - O[0]) * u[0] + (N[1] - O[1]) * u[1], F = [O[0] + pr * u[0], O[1] + pr * u[1]];
+        const vn = [N[0] - F[0], N[1] - F[1]], Lv = Math.hypot(...vn), v = [vn[0] / Lv, vn[1] / Lv], q = 15;
+        const mk = (n, c) => `<marker id="${id}-${n}" markerUnits="userSpaceOnUse" markerWidth="16" markerHeight="16" refX="13" refY="8" orient="auto"><path d="M0,1 L16,8 L0,15 Z" fill="${c}"/></marker>`;
+        let s = `<svg width="380" height="350" viewBox="0 0 380 350"><defs>${mk('m', C_M)}${mk('n', C_N)}</defs>
+            <line x1="45" y1="310" x2="365" y2="310" stroke="${C_AX}" stroke-width="2"/><line x1="45" y1="310" x2="45" y2="20" stroke="${C_AX}" stroke-width="2"/>
+            <line x1="${O[0]}" y1="${O[1]}" x2="${M[0]}" y2="${M[1]}" stroke="${C_M}" stroke-width="4.5" marker-end="url(#${id}-m)"/>
+            <line x1="${O[0]}" y1="${O[1]}" x2="${N[0]}" y2="${N[1]}" stroke="${C_N}" stroke-width="4.5" marker-end="url(#${id}-n)"${at(T && T.n, anim)}/>`;
+        if (mode === 'proj') s += `
+            <line x1="${N[0]}" y1="${N[1]}" x2="${F[0]}" y2="${F[1]}" stroke="${C_R}" stroke-width="2.5" stroke-dasharray="7 5"${at(T && T.drop, anim)}/>
+            <polyline points="${F[0] - q * u[0]},${F[1] - q * u[1]} ${F[0] - q * u[0] + q * v[0]},${F[1] - q * u[1] + q * v[1]} ${F[0] + q * v[0]},${F[1] + q * v[1]}" fill="none" stroke="${C_R}" stroke-width="2"${at(T && T.sq, anim)}/>
+            <path d="M${O[0]},${O[1]} L${F[0]},${F[1]}" stroke="${C_R}" stroke-width="9" stroke-linecap="round" fill="none" pathLength="1" stroke-dasharray="1 1"${dr(T && T.res, 1.0, anim)}/>`;
+        else s += `
+            <path d="M${M[0]},${M[1]} L${N[0]},${N[1]}" stroke="${C_R}" stroke-width="6" stroke-linecap="round" fill="none" pathLength="1" stroke-dasharray="1 1"${dr(T && T.res, 1.0, anim)}/>`;
+        s += '</svg>' + lab(M[0] + 2, M[1] + 6, 'f_m', C_M, 0, false) + lab(N[0] + 14, N[1] - 22, 'f_n', C_N, T && T.n, anim);
+        s += mode === 'proj' ? lab(96, 312, '\\mathrm{proj}_n', C_R, T && T.res + 0.6, anim) : lab(248, 118, 'f_n - f_m', C_R, T && T.res + 0.6, anim);
+        document.getElementById(id).innerHTML = (anim ? '' : '<div class="pic">') + s + (anim ? '' : '</div>');
+    }
+    vecPic('p-pic', 'proj', { n: 15, drop: 17, sq: 18, res: 18.5 });
+    vecPic('d-pic', 'dist', { n: 62.6, res: 63.5 });
+    vecPic('p-mini', 'proj', null);
+    vecPic('d-mini', 'dist', null);
+
+    // ---- scene 3: two curves, their means, deviations and the per-sample products --
+    const SW0 = 40.5, SW_STEP = 1.1;                 // sweep over the K samples
+    function corrPic(id, T) {
+        const anim = !!T, X = t => 70 + t * 62, Y = v => 280 - v * 250, pmax = Math.max(...P.map(Math.abs));
+        let s = `<svg width="640" height="400" viewBox="0 0 640 400">
+            <line x1="70" y1="280" x2="596" y2="280" stroke="${C_AX}" stroke-width="2"/><line x1="70" y1="280" x2="70" y2="12" stroke="${C_AX}" stroke-width="2"/>
+            <line x1="70" y1="392" x2="596" y2="392" stroke="${C_AX}" stroke-width="2"${at(T && T.sweep - 0.5, anim)}/>`;
+        if (anim) ks.forEach(k => { s += `<rect id="c-band-${k}" x="${X(k) - 19}" y="10" width="38" height="386" rx="6" fill="rgba(253,126,20,.16)" opacity="0"/>`; });
+        s += `<g${at(T && T.mean, anim)}><line x1="70" y1="${Y(mM)}" x2="596" y2="${Y(mM)}" stroke="${C_M}" stroke-width="2" stroke-dasharray="8 5"/>
+            <line x1="70" y1="${Y(mN)}" x2="596" y2="${Y(mN)}" stroke="${C_N}" stroke-width="2" stroke-dasharray="8 5"/></g><g${at(T && T.dev, anim)}>`;
+        ks.forEach((k, i) => {
+            s += `<rect x="${X(k) - 9}" y="${Math.min(Y(mM), Y(Fm[i]))}" width="7" height="${Math.abs(Y(Fm[i]) - Y(mM))}" fill="${C_M}" opacity=".55"/>
+                  <rect x="${X(k) + 2}" y="${Math.min(Y(mN), Y(Fn[i]))}" width="7" height="${Math.abs(Y(Fn[i]) - Y(mN))}" fill="${C_N}" opacity=".55"/>`;
+        });
+        s += `</g><path d="${curvePath(fm, X, Y, 8.4)}" fill="none" stroke="${C_M}" stroke-width="3.5" pathLength="1" stroke-dasharray="1 1"${dr(T && T.m, 1.2, anim)}/>
+            <path d="${curvePath(fn, X, Y, 8.4)}" fill="none" stroke="${C_N}" stroke-width="3.5" pathLength="1" stroke-dasharray="1 1"${dr(T && T.n, 1.2, anim)}/>
+            <g${at(T && T.m + 1.2, anim)}>${ks.map((k, i) => `<circle cx="${X(k)}" cy="${Y(Fm[i])}" r="5" fill="${C_M}"/>`).join('')}</g>
+            <g${at(T && T.n + 1.2, anim)}>${ks.map((k, i) => `<circle cx="${X(k)}" cy="${Y(Fn[i])}" r="5" fill="${C_N}"/>`).join('')}</g>
+            <g${at(T && T.m + 1.2, anim)}>${tick(X(1), 300, '1')}${tick(X(2), 300, '2')}<text x="${X(5)}" y="300" text-anchor="middle" font-size="16" fill="#6c757d">&ctdot;</text>${tick(X(8), 300, 'K')}</g>`;
+        ks.forEach((k, i) => {
+            const h = Math.max(2, Math.abs(P[i]) / pmax * 58), up = P[i] >= 0;
+            s += `<rect ${anim ? `id="c-prod-${k}" opacity="0"` : ''} x="${X(k) - 12}" y="${up ? 392 - h : 392}" width="24" height="${h}" rx="2" fill="${up ? C_R : C_NEG}"/>`;
+        });
+        s += '</svg>' + lab(604, Y(fm(8.4)) - 14, 'f_m', C_M, T && T.m + 1.2, anim) + lab(604, Y(fn(8.4)) - 16, 'f_n', C_N, T && T.n + 1.2, anim)
+            + lab(36, Y(mM) - 15, '\\bar{f}_m', C_M, T && T.mean, anim) + lab(36, Y(mN) - 15, '\\bar{f}_n', C_N, T && T.mean, anim)
+            + lab(6, 350, 'a_k b_k', C_R, T && T.sweep - 0.5, anim) + (anim ? '<div id="c-tag"></div>' : '');
+        document.getElementById(id).innerHTML = (anim ? '' : '<div class="pic">') + s + (anim ? '' : '</div>');
+    }
+    corrPic('c-pic', { m: 30.2, n: 31.6, mean: 33.5, dev: 35.5, sweep: SW0 });
+    corrPic('c-mini', null);
+    document.getElementById('rho-val').textContent = rho.toFixed(2);
+    const side = x => (x >= 0 ? 'above' : 'below') + ' mean';
+    const TAGS = ks.map((k, i) => `sample ${k}: &nbsp;<span class="model">${side(A[i])}</span> &times; <span class="curve">${side(B[i])}</span> &rarr; <span style="color:${P[i] >= 0 ? C_R : C_NEG};">${P[i] >= 0 ? 'positive' : 'negative'} product</span>`);
+
+    renderMathInElement(document.body, { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }], throwOnError: false });
+
+    // ---- deterministic timeline: the whole picture is a pure function of t -------
+    const FADE = 0.6, TOTAL = 90;
+    const clamp01 = x => Math.max(0, Math.min(1, x));
+    const ease = p => p * p * (3 - 2 * p);
+    const scenes = [...document.querySelectorAll('.scene')];
+    const timed = [...document.querySelectorAll('[data-t]')];
+    const drawn = [...document.querySelectorAll('[data-draw]')].map(el => [el, ...el.dataset.draw.split(',').map(Number)]);
+    const tag = document.getElementById('c-tag');
+
+    function renderAt(t) {
+        scenes.forEach(s => {
+            const a = +s.dataset.start, b = +s.dataset.end;
+            const fin = clamp01((t - a) / FADE), fout = s.dataset.hold ? 1 : clamp01((b - t) / FADE);
+            s.style.opacity = (t < a || (!s.dataset.hold && t > b)) ? 0 : ease(Math.min(fin, fout));
+        });
+        timed.forEach(el => {
+            const p = ease(clamp01((t - +el.dataset.t) / FADE));
+            el.style.opacity = p;
+            if (!(el instanceof SVGElement)) el.style.transform = `translateY(${16 * (1 - p)}px)`;
+        });
+        // lines that draw themselves from start to end
+        drawn.forEach(([el, t0, d]) => {
+            el.style.strokeDashoffset = 1 - ease(clamp01((t - t0) / d));
+            el.style.opacity = t > t0 ? 1 : 0;
+        });
+        // scene 3 sweep: sample k is highlighted, its sign pair is named, its product bar appears
+        const u = (t - SW0) / SW_STEP, kNow = Math.floor(u) + 1;
+        ks.forEach(k => {
+            const x = u - (k - 1);
+            document.getElementById('c-band-' + k).setAttribute('opacity', x > 0 && x < 1 ? Math.min(1, 4 * x, 4 * (1 - x)) : 0);
+            document.getElementById('c-prod-' + k).setAttribute('opacity', ease(clamp01((x - 0.4) / 0.4)));
+        });
+        const on = kNow >= 1 && kNow <= K;
+        tag.style.opacity = on ? Math.min(1, clamp01((t - SW0) / 0.3), clamp01((SW0 + K * SW_STEP - t) / 0.3)) : 0;
+        if (on && tag.dataset.k !== String(kNow)) { tag.innerHTML = TAGS[kNow - 1]; tag.dataset.k = String(kNow); }
+    }
+    window.renderAt = renderAt; window.TOTAL = TOTAL;
+
+    function fit() {
+        const s = Math.min(innerWidth / 1280, innerHeight / 720);
+        const st = document.getElementById('stage');
+        st.style.transform = `scale(${s})`;
+        st.style.left = (innerWidth - 1280 * s) / 2 + 'px'; st.style.top = (innerHeight - 720 * s) / 2 + 'px';
+    }
+    addEventListener('resize', fit); fit();
+
+    // live playback (plays once, holds on the last scene; click to replay). '#manual' = frame-stepped by a renderer.
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
+        renderAt(0); window.__ready = true;
+        if (location.hash === '#manual') return;
+        let t0 = performance.now();
+        const tick = now => { renderAt(Math.min(TOTAL, (now - t0) / 1000)); requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+        addEventListener('click', () => { t0 = performance.now(); });
+    });
+</script>
+</body>
+</html>
