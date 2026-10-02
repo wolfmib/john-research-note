@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 290" width="360" height="290" role="img" aria-label="Cone with apex at the top, a 30 degree angle between the vertical axis and the sloping side, a horizontal cut at distance h below the apex with radius x, and base radius R">
+  <rect x="1" y="1" width="358" height="288" rx="16" fill="#ffffff" stroke="#dde2ec"/>
+  <ellipse cx="180" cy="238" rx="117.8" ry="20" fill="#eef1f7" stroke="#1b2a4a" stroke-width="2"/>
+  <line x1="180" y1="34" x2="62.2" y2="238" stroke="#1b2a4a" stroke-width="2"/>
+  <line x1="180" y1="34" x2="297.8" y2="238" stroke="#1b2a4a" stroke-width="2"/>
+  <line x1="180" y1="152" x2="180" y2="238" stroke="#8a94a6" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <ellipse cx="180" cy="152" rx="68.1" ry="11.6" fill="#2f5bea" fill-opacity="0.16" stroke="#2f5bea" stroke-width="2"/>
+  <line x1="180" y1="34" x2="180" y2="152" stroke="#d9611e" stroke-width="2.5"/>
+  <line x1="180" y1="152" x2="248.1" y2="152" stroke="#2f5bea" stroke-width="2.5"/>
+  <line x1="180" y1="238" x2="297.8" y2="238" stroke="#1b2a4a" stroke-width="2"/>
+  <path d="M 180 70 A 36 36 0 0 0 198.0 65.2" fill="none" stroke="#1b2a4a" stroke-width="1.5"/>
+  <circle cx="180" cy="34" r="3" fill="#1b2a4a"/>
+  <circle cx="180" cy="152" r="2.5" fill="#2f5bea"/>
+  <circle cx="180" cy="238" r="2.5" fill="#1b2a4a"/>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#1b2a4a">
+    <text x="211" y="74">30°</text>
+  </g>
+  <g font-family="'Times New Roman', Times, serif" font-style="italic" font-size="20">
+    <text x="162" y="99.0" fill="#d9611e">h</text>
+    <text x="209.1" y="136.4" fill="#2f5bea">x</text>
+    <text x="232.9" y="253" font-size="18" fill="#1b2a4a">R</text>
+  </g>
+</svg>
