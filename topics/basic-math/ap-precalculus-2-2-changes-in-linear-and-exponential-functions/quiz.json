@@ -1,0 +1,39 @@
+{
+  "slug": "ap-precalculus-2-2-changes-in-linear-and-exponential-functions",
+  "title": "AP Precalculus 2.2 — Changes in Linear and Exponential Functions",
+  "course": "AP Precalculus",
+  "unit": "2.2",
+  "question": "How do equal steps in x show up as a constant difference for a linear function and a constant ratio for an exponential function, and what does that give at a midpoint input?",
+  "questions": [
+    {
+      "title": "Identify the type of change",
+      "type": "mcq",
+      "prompt": "The table shows two functions:\n\n| \\(x\\) | \\(f(x)\\) | \\(g(x)\\) |\n|---|---:|---:|\n| 0 | 3 | 3 |\n| 1 | 6 | 6 |\n| 2 | 9 | 12 |\n| 3 | 12 | 24 |\n\nWhich statement correctly describes their changes?",
+      "choices": [
+        "Both functions have a constant difference.",
+        "\\(f\\) has a constant difference of \\(3\\); \\(g\\) has a constant ratio of \\(2\\).",
+        "\\(f\\) has a constant ratio of \\(3\\); \\(g\\) has a constant difference of \\(2\\).",
+        "Both functions have a constant ratio."
+      ],
+      "answer": "B",
+      "solution": "Equal increases in \\(x\\) give a constant **difference** for a linear function and a constant **ratio** for an exponential function:\n\n\\[\n6-3=9-6=12-9=3\n\\]\n\n\\[\n\\frac63=\\frac{12}{6}=\\frac{24}{12}=2\n\\]"
+    },
+    {
+      "title": "Linear change over an interval",
+      "type": "mcq",
+      "prompt": "A linear function satisfies \\(f(2)=7\\) and \\(f(5)=19\\). What is \\(f(3.5)\\)?",
+      "choices": ["\\(9\\)", "\\(11\\)", "\\(13\\)", "\\(15\\)"],
+      "answer": "C",
+      "solution": "First find the change per unit of \\(x\\):\n\n\\[\nm=\\frac{19-7}{5-2}=4\n\\]\n\nThen:\n\n\\[\nf(3.5)=7+4(3.5-2)=\\boxed{13}\n\\]"
+    },
+    {
+      "title": "Exponential change over an interval",
+      "type": "mcq",
+      "prompt": "An exponential function satisfies \\(g(1)=6\\) and \\(g(3)=24\\). Its base is positive. What is \\(g(2)\\)?",
+      "choices": ["\\(12\\)", "\\(15\\)", "\\(18\\)", "\\(48\\)"],
+      "answer": "A",
+      "solution": "Across two units of \\(x\\), the output multiplies by \\(24/6=4\\). Therefore, the factor per unit is:\n\n\\[\nb^2=4\\quad\\Rightarrow\\quad b=2\n\\]\n\n\\[\ng(2)=6(2)=\\boxed{12}\n\\]"
+    }
+  ],
+  "takeaway": "The midpoint input gives the **arithmetic mean** of the outputs for a linear function, but the **geometric mean** for a positive exponential function."
+}

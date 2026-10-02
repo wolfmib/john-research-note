@@ -76,6 +76,14 @@ No public topic added yet.
 | [Quantum search and regret](topics/quantum-computing/quantum-search-and-regret/content.md) | How often does a repeated quantum search return the best set, and how far off are the misses on average? | Concept note |
 | [Dürr–Høyer expected query bound](topics/quantum-computing/durr-hoyer-expected-query-bound/content.md) | Why does minimum finding need at most 45/4 √N Grover iterations on average, and why is every threshold rank r visited with probability 1/r? | Concept note |
 
+## Basic Math
+
+Practice quizzes by course and topic. Each note holds the questions with a collapsed answer key, and runs as a phone quiz — all quizzes: [quiz hub](https://wolfmib.github.io/john-research-note/topics/basic-math/).
+
+| Topic | Question | Quiz |
+|---|---|---|
+| [AP Precalculus 2.2 — Changes in Linear and Exponential Functions](topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/content.md) | How do equal steps in x show up as a constant difference for a linear function and a constant ratio for an exponential function, and what does that give at a midpoint input? | [📱 Take the quiz](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html) |
+
 ## Animations
 
 Animated SVG concept figures (GitHub plays the SMIL animation inline).
