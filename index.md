@@ -78,11 +78,11 @@ No public topic added yet.
 
 ## Basic Math
 
-Practice quizzes by course and topic. Each note holds the questions with a collapsed answer key, and runs as a phone quiz — all quizzes: [quiz hub](https://wolfmib.github.io/john-research-note/topics/basic-math/).
+Practice quizzes by course and topic.
 
 | Topic | Question | Quiz |
 |---|---|---|
-| [AP Precalculus 2.2 — Changes in Linear and Exponential Functions](topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/content.md) | How do equal steps in x show up as a constant difference for a linear function and a constant ratio for an exponential function, and what does that give at a midpoint input? | [📱 Take the quiz](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html) |
+| [AP Precalculus 2.2 — Changes in Linear and Exponential Functions](topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/content.md) | How do equal steps in x show up as a constant difference for a linear function and a constant ratio for an exponential function, and what does that give at a midpoint input? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html) |
 
 ## Animations
 

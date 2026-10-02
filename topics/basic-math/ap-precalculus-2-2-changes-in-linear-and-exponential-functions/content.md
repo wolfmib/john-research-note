@@ -11,8 +11,6 @@ author: Wei-Che Hung
 
 # AP Precalculus 2.2 — Changes in Linear and Exponential Functions
 
-**📱 [Take this quiz on your phone](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html)** — 3 questions, Practice or Test mode.
-
 ## 1. Identify the type of change
 
 The table shows two functions:
