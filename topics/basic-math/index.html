@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Math Quiz">
-<meta name="description" content="Practice quizzes by course and topic.">
-<title>Basic Math Quizzes</title>
+<meta name="apple-mobile-web-app-title" content="Basic Math">
+<meta name="description" content="Practice quizzes and worked math material by course and topic.">
+<title>Basic Math</title>
 <style>
 :root {
   --bg: #f4f6fb;
@@ -303,6 +303,29 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .toast.show { opacity: 1; }
 
 
+.material .topbar .row { justify-content: space-between; }
+.back { font-size: 16px; font-weight: 650; text-decoration: none; }
+.btn.showall { min-height: 40px; padding: 0 12px; font-size: 15px; }
+.figure { margin: 16px 0 0; text-align: center; }
+.figure img { max-width: 100%; height: auto; border-radius: 12px; }
+.steps { margin-top: 4px; }
+.step { margin-top: 14px; padding: 2px 0 2px 14px; border-left: 3px solid var(--accent); }
+.btn.reveal { width: 100%; margin-top: 16px; }
+.mq h2.qtitle { margin-bottom: 12px; }
+
+
+.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 16px; padding: 4px; border-radius: 13px; background: var(--soft); }
+.tab {
+  min-height: 44px;
+  border: 0; border-radius: 10px;
+  background: transparent; color: var(--muted);
+  font-size: 16px; font-weight: 650;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.tab[aria-selected="true"] { background: var(--card); color: var(--ink); box-shadow: 0 1px 3px rgba(20, 28, 45, .12); }
+.tab:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.quizlist.first { margin-top: 14px; }
 .course { margin: 26px 0 0; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .quizlist { display: grid; gap: 10px; margin-top: 10px; }
 a.quiz {
@@ -326,8 +349,13 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 <main class="wrap">
 <section class="card">
 <p class="eyebrow">Basic Math</p>
-<h1>Practice quizzes</h1>
+<h1>Practice</h1>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" id="tab-quizzes" aria-controls="panel-quizzes" data-tab="quizzes">Quizzes</button>
+<button class="tab" role="tab" id="tab-material" aria-controls="panel-material" data-tab="material">Material</button>
+</div>
 </section>
+<div id="panel-quizzes" role="tabpanel" aria-labelledby="tab-quizzes">
 <h2 class="course">AP Precalculus</h2>
 <div class="quizlist">
 <a class="quiz" href="ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html" data-slug="ap-precalculus-2-2-changes-in-linear-and-exponential-functions">
@@ -343,15 +371,35 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         <span class="t">Exponential Function Manipulation</span>
         <span class="m">5 questions<span class="lastscore"></span></span></a>
 </div>
+</div>
+<div id="panel-material" role="tabpanel" aria-labelledby="tab-material" hidden>
+<div class="quizlist first">
+
+</div>
+</div>
 <p class="foot">Wei-Che Hung</p>
 </main>
 <script>
-document.querySelectorAll('a.quiz').forEach(a => {
-  try {
-    const last = JSON.parse(localStorage.getItem('bmquiz:' + a.dataset.slug + ':last') || 'null');
-    if (last) a.querySelector('.lastscore').textContent = ' · last ' + last.score + '/' + last.total;
-  } catch (e) { /* storage blocked */ }
-});
+(() => {
+  const show = name => {
+    if (name !== 'material') name = 'quizzes';
+    document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', String(t.dataset.tab === name)));
+    document.getElementById('panel-quizzes').hidden = name !== 'quizzes';
+    document.getElementById('panel-material').hidden = name !== 'material';
+  };
+  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
+    show(t.dataset.tab);
+    try { history.replaceState(null, '', t.dataset.tab === 'material' ? '#material' : location.pathname); } catch (e) { /* file:// */ }
+  }));
+  window.addEventListener('hashchange', () => show(location.hash.slice(1)));
+  show(location.hash.slice(1));
+  document.querySelectorAll('#panel-quizzes a.quiz').forEach(a => {
+    try {
+      const last = JSON.parse(localStorage.getItem('bmquiz:' + a.dataset.slug + ':last') || 'null');
+      if (last) a.querySelector('.lastscore').textContent = ' · last ' + last.score + '/' + last.total;
+    } catch (e) { /* storage blocked */ }
+  });
+})();
 </script>
 </body>
 </html>

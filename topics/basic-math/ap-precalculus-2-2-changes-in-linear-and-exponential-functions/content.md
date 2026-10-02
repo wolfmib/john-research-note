@@ -50,7 +50,7 @@ An exponential function satisfies $g(1)=6$ and $g(3)=24$. Its base is positive. 
 ---
 
 <details>
-<summary><b>Answers / Teacher Reference</b></summary>
+<summary><b>Answers</b></summary>
 
 **1. B** — Equal increases in $x$ give a constant **difference** for a linear function and a constant **ratio** for an exponential function:
 

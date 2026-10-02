@@ -78,9 +78,9 @@ No public topic added yet.
 
 ## Basic Math
 
-Practice quizzes by course and topic.
+Practice quizzes and worked math material by course and topic.
 
-| Topic | Question | Quiz |
+| Topic | Question | Page |
 |---|---|---|
 | [AP Precalculus 2.2 — Changes in Linear and Exponential Functions](topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/content.md) | How do equal steps in x show up as a constant difference for a linear function and a constant ratio for an exponential function, and what does that give at a midpoint input? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html) |
 | [AP Precalculus 2.3 — Exponential Functions](topics/basic-math/ap-precalculus-2-3-exponential-functions/content.md) | How do the sign of the coefficient and the base decide whether an exponential function increases or decreases, where it heads at each end, and its intercept, range and asymptote? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-3-exponential-functions/quiz.html) |
