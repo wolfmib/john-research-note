@@ -61,7 +61,7 @@ Which option correctly identifies its **$y$-intercept, range, and horizontal asy
 ---
 
 <details>
-<summary><b>Answers / Teacher Reference</b></summary>
+<summary><b>Answers</b></summary>
 
 **1. D** — Check successive values:
 
