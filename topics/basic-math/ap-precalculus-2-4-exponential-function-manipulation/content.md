@@ -95,7 +95,7 @@ Here, $t$ is measured in days. Rewrite the model using $t/2$ in the exponent and
 ---
 
 <details>
-<summary><b>Answers / Teacher Reference</b></summary>
+<summary><b>Answers</b></summary>
 
 **1. B — Separate the subtraction in the exponent**
 
