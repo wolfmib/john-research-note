@@ -1,0 +1,69 @@
+{
+  "slug": "ap-precalculus-2-3-exponential-functions",
+  "title": "AP Precalculus 2.3 — Exponential Functions",
+  "course": "AP Precalculus",
+  "unit": "2.3",
+  "question": "How do the sign of the coefficient and the base decide whether an exponential function increases or decreases, where it heads at each end, and its intercept, range and asymptote?",
+  "questions": [
+    {
+      "title": "Increasing or decreasing?",
+      "type": "mcq",
+      "prompt": "Consider:\n\n\\[\nf(x)=-4\\cdot3^x\n\\]\n\nWhich statement is correct?",
+      "choices": [
+        "The function increases and stays positive.",
+        "The function decreases and stays positive.",
+        "The function increases and stays negative.",
+        "The function decreases and stays negative."
+      ],
+      "answer": "D",
+      "solution": "Check successive values:\n\n\\[\nf(0)=-4,\\qquad f(1)=-12,\\qquad f(2)=-36\n\\]\n\nThe values become more negative, so the function **decreases**. Because \\(3^x>0\\), its output is always negative."
+    },
+    {
+      "title": "End behavior",
+      "type": "mcq",
+      "prompt": "Consider:\n\n\\[\ng(x)=5\\left(\\frac12\\right)^x\n\\]\n\nWhat happens to \\(g(x)\\) at each end of the graph?",
+      "choices": [
+        "As \\(x\\to-\\infty\\), \\(g(x)\\to0\\); as \\(x\\to+\\infty\\), \\(g(x)\\to+\\infty\\).",
+        "As \\(x\\to-\\infty\\), \\(g(x)\\to+\\infty\\); as \\(x\\to+\\infty\\), \\(g(x)\\to0\\).",
+        "As \\(x\\to-\\infty\\), \\(g(x)\\to-\\infty\\); as \\(x\\to+\\infty\\), \\(g(x)\\to0\\).",
+        "As \\(x\\to-\\infty\\), \\(g(x)\\to0\\); as \\(x\\to+\\infty\\), \\(g(x)\\to-\\infty\\)."
+      ],
+      "answer": "B",
+      "solution": "A base between \\(0\\) and \\(1\\) produces decay when the coefficient is positive:\n\n\\[\ng(-3)=40,\\qquad g(0)=5,\\qquad g(3)=\\frac58\n\\]\n\nMoving right, the curve approaches \\(0\\) **from above**. Moving left, it grows without bound."
+    },
+    {
+      "title": "Graph features",
+      "type": "mcq",
+      "prompt": "Consider:\n\n\\[\nh(x)=-2\\left(\\frac13\\right)^x\n\\]\n\nWhich option correctly identifies its **\\(y\\)-intercept, range, and horizontal asymptote**?",
+      "choice_header": [
+        "\\(y\\)-intercept",
+        "Range",
+        "Horizontal asymptote"
+      ],
+      "choices": [
+        [
+          "\\((0,-2)\\)",
+          "\\((-\\infty,0)\\)",
+          "\\(y=0\\)"
+        ],
+        [
+          "\\((0,-2)\\)",
+          "\\((-\\infty,-2)\\)",
+          "\\(y=-2\\)"
+        ],
+        [
+          "\\((0,2)\\)",
+          "\\((0,\\infty)\\)",
+          "\\(y=0\\)"
+        ],
+        [
+          "\\((0,-2)\\)",
+          "\\((-\\infty,0]\\)",
+          "\\(y=0\\)"
+        ]
+      ],
+      "answer": "A",
+      "solution": "At \\(x=0\\):\n\n\\[\nh(0)=-2\\left(\\frac13\\right)^0=-2\n\\]\n\nThe outputs are always negative and approach—but never reach—\\(0\\). Therefore:\n\n\\[\n\\boxed{\\text{Range: }(-\\infty,0),\\qquad \\text{horizontal asymptote: }y=0}\n\\]"
+    }
+  ]
+}

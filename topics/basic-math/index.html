@@ -7,7 +7,7 @@
 <meta name="apple-mobile-web-app-title" content="Math Quiz">
 <meta name="description" content="Practice quizzes by course and topic.">
 <title>Basic Math Quizzes</title>
-<style>/* quiz.css — inlined by build_quiz.js into every quiz.html and the hub index.html. Mobile-first (iPhone Safari). */
+<style>
 :root {
   --bg: #f4f6fb;
   --card: #ffffff;
@@ -67,7 +67,7 @@ button { font: inherit; }
            calc(112px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left));
 }
 
-/* ---------- cards & type ---------- */
+
 .card {
   background: var(--card);
   border: 1px solid var(--line);
@@ -89,7 +89,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .meta { color: var(--muted); margin: 0 0 18px; }
 .foot { text-align: center; margin: 22px 0 0; font-size: 15px; color: var(--muted); }
 
-/* ---------- start screen ---------- */
+
 .field label { display: block; font-size: 14px; font-weight: 650; color: var(--muted); margin-bottom: 6px; }
 .field input, .numeric input {
   width: 100%;
@@ -110,7 +110,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .btn.mode span { display: block; font-size: 14px; font-weight: 500; opacity: .85; margin-top: 2px; }
 .last { margin: 16px 0 0; font-size: 15px; color: var(--muted); }
 
-/* ---------- top bar ---------- */
+
 .topbar {
   position: sticky;
   top: 0;
@@ -155,7 +155,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .dot.answered { background: var(--accent-soft); border-color: transparent; color: var(--accent); }
 .dot.current { outline: 2px solid var(--accent); outline-offset: 1px; }
 
-/* ---------- question ---------- */
+
 .qtitle { display: flex; align-items: flex-start; gap: 10px; margin: 0 0 14px; font-size: 19px; line-height: 1.3; }
 .qnum {
   flex: none;
@@ -175,6 +175,12 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .katex { font-size: 1.08em; }
 .katex-display, .katex-block { margin: 10px 0; padding: 2px 0; overflow-x: auto; overflow-y: hidden; }
 .katex-block .katex-display { margin: 0; }
+
+.choices > *, .review > li, .modes > *, .quizlist > *, .stack > * { min-width: 0; }
+.prose { min-width: 0; }
+.m-stack { display: none; }
+.mw.stacked .m-wide { display: none; }
+.mw.stacked .m-stack { display: block; }
 
 .choices { display: grid; gap: 10px; margin-top: 18px; }
 .choice {
@@ -207,6 +213,11 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .choice.correct .letter { background: var(--ok); color: var(--card); }
 .choice.wrong { border-color: var(--bad); background: var(--bad-soft); }
 .choice.wrong .letter { background: var(--bad); color: var(--card); }
+.crow { display: block; }
+.crow + .crow { margin-top: 2px; }
+.ck { color: var(--muted); font-size: 14px; font-weight: 600; margin-right: 4px; }
+.intro { margin: 0 0 18px; padding: 14px; border-radius: 14px; background: var(--soft); font-size: 16px; }
+.stitle { font-weight: 700; }
 .numeric { margin-top: 18px; }
 .numeric.correct input { border-color: var(--ok); background: var(--ok-soft); }
 .numeric.wrong input { border-color: var(--bad); background: var(--bad-soft); }
@@ -222,7 +233,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .solution { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
 .notice { margin-top: 16px; padding: 12px 14px; border-radius: 12px; background: var(--bad-soft); font-size: 15px; }
 
-/* ---------- bottom action bar ---------- */
+
 .actions {
   position: fixed;
   left: 0; right: 0; bottom: 0;
@@ -247,7 +258,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .btn.narrow { flex: 0 0 auto; }
 .btn:disabled { opacity: .4; cursor: default; }
 
-/* ---------- result ---------- */
+
 .score { margin: 8px 0 2px; font-size: 64px; font-weight: 800; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
 .score small { font-size: 28px; font-weight: 700; color: var(--muted); }
 .review { display: grid; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
@@ -291,7 +302,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 }
 .toast.show { opacity: 1; }
 
-/* ---------- hub ---------- */
+
 .course { margin: 26px 0 0; font-size: 14px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .quizlist { display: grid; gap: 10px; margin-top: 10px; }
 a.quiz {
@@ -322,6 +333,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 <a class="quiz" href="ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html" data-slug="ap-precalculus-2-2-changes-in-linear-and-exponential-functions">
         <span class="u">2.2</span>
         <span class="t">Changes in Linear and Exponential Functions</span>
+        <span class="m">3 questions<span class="lastscore"></span></span></a>
+<a class="quiz" href="ap-precalculus-2-3-exponential-functions/quiz.html" data-slug="ap-precalculus-2-3-exponential-functions">
+        <span class="u">2.3</span>
+        <span class="t">Exponential Functions</span>
         <span class="m">3 questions<span class="lastscore"></span></span></a>
 </div>
 <p class="foot">Wei-Che Hung</p>

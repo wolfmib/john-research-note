@@ -18,7 +18,7 @@ the areas the notes cover.
 | [Thermal Dynamics](index.md#thermal-dynamics) | Thermal recovery curves of skin lesions, fitted parameters, and the features built from them | 3 |
 | [Medical Imaging](index.md#medical-imaging) | Diffuse optical imaging, from photon transport in tissue to oxygenation maps | 5 |
 | [Quantum Computing](index.md#quantum-computing) | Grover search, QSVT, and Dürr–Høyer minimum finding with its query bound | 4 |
-| [Basic Math](index.md#basic-math) | Practice quizzes by course and topic | 1 |
+| [Basic Math](index.md#basic-math) | Practice quizzes by course and topic | 2 |
 | [Animations](index.md#animations) | Animated concept figures for mathematics, machine learning, and quantum search | 21 |
 | [Papers](index.md#papers) | Handwritten guides to the author's own papers, and the reading queue | 3 |
 | [Field Notes](field-notes/index.md) | One idea at a time, worked through in several languages with the vocabulary alongside | 3 |
