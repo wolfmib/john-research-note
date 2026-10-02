@@ -56,7 +56,7 @@ Which option correctly identifies its **$y$-intercept, range, and horizontal asy
 | A | $(0,-2)$ | $(-\infty,0)$ | $y=0$ |
 | B | $(0,-2)$ | $(-\infty,-2)$ | $y=-2$ |
 | C | $(0,2)$ | $(0,\infty)$ | $y=0$ |
-| D | $(0,-2)$ | $(-\infty,0]$ | $y=0$ |
+| D | $\left(0,-\frac23\right)$ | $(-\infty,0)$ | $y=0$ |
 
 ---
 
