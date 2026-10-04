@@ -5,7 +5,7 @@
  "unit": "Chapter 2",
  "root": "chapters",
  "question": "Can you round, follow BIDMAS, find primes, the HCF and the LCM, and work out squares, cubes and roots?",
- "intro": "**Quick recap:** round by the next digit; BIDMAS — brackets, powers, \\(\\times\\div\\), then \\(+-\\); a prime has exactly two factors; HCF is the biggest shared factor, LCM the smallest shared multiple.",
+ "intro": "**Quick recap:**\n\n- round by the next digit\n- BIDMAS: brackets, powers, then \\(\\times\\) and \\(\\div\\), then \\(+\\) and \\(-\\)\n- a prime has exactly two factors\n- HCF: the biggest shared factor\n- LCM: the smallest shared multiple",
  "questions": [
   {
    "title": "2.1 · Nearest 100",
@@ -41,21 +41,21 @@
    "type": "numeric",
    "prompt": "Work out \\(8 + 4\\times3\\).",
    "answer": 20,
-   "solution": "\\[8 + 4\\times3 = 8 + 12 = \\boxed{20}\\]\n\n\\(36\\) adds first, as if it were \\((8 + 4)\\times3\\)."
+   "solution": "\\[\\begin{aligned} 8 + 4\\times3 &= 8 + 12 \\\\ &= \\boxed{20} \\end{aligned}\\]\n\n\\(36\\) adds first, as if it were \\((8 + 4)\\times3\\)."
   },
   {
    "title": "2.2 · Brackets first",
    "type": "numeric",
    "prompt": "Work out \\((8 + 4)\\times3\\).",
    "answer": 36,
-   "solution": "\\[(8 + 4)\\times3 = 12\\times3 = \\boxed{36}\\]\n\n\\(20\\) ignores the bracket."
+   "solution": "\\[\\begin{aligned} (8 + 4)\\times3 &= 12\\times3 \\\\ &= \\boxed{36} \\end{aligned}\\]\n\n\\(20\\) ignores the bracket."
   },
   {
    "title": "2.2 · Powers first",
    "type": "numeric",
    "prompt": "Work out \\(50 - 3^2\\times4\\).",
    "answer": 14,
-   "solution": "Power, then multiply, then subtract:\n\n\\[50 - 9\\times4 = 50 - 36 = \\boxed{14}\\]\n\n\\(26\\) uses \\(3\\times2 = 6\\) instead of \\(3^2 = 9\\)."
+   "solution": "Power, then multiply, then subtract:\n\n\\[\\begin{aligned} 50 - 9\\times4 &= 50 - 36 \\\\ &= \\boxed{14} \\end{aligned}\\]\n\n\\(26\\) uses \\(3\\times2 = 6\\) instead of \\(3^2 = 9\\)."
   },
   {
    "title": "2.3 · Prime number",
@@ -83,45 +83,45 @@
    ],
    "answer": "B",
    "solution_title": "Every factor prime",
-   "solution": "\\[60 = 2\\times30 = 2\\times2\\times15 = \\boxed{2^2\\times3\\times5}\\]\n\nThe others also make 60, but 30, 10, 4 and 15 are not prime."
+   "solution": "\\[\\begin{aligned} 60 &= 2\\times30 \\\\ &= 2\\times2\\times15 \\\\ &= \\boxed{2^2\\times3\\times5} \\end{aligned}\\]\n\nThe others also make 60, but 30, 10, 4 and 15 are not prime."
   },
   {
    "title": "2.4 · HCF",
    "type": "numeric",
    "prompt": "Find the HCF of \\(16\\) and \\(24\\).",
    "answer": 8,
-   "solution": "Factors of 16: 1, 2, 4, **8**, 16. Factors of 24: 1, 2, 3, 4, 6, **8**, 12, 24.\n\n\\[\\text{HCF} = \\boxed{8}\\]\n\n\\(4\\) is a common factor, but not the highest one."
+   "solution": "- Factors of 16: 1, 2, 4, **8**, 16.\n- Factors of 24: 1, 2, 3, 4, 6, **8**, 12, 24.\n\n\\[\\text{HCF} = \\boxed{8}\\]\n\n\\(4\\) is a common factor, but not the highest one."
   },
   {
    "title": "2.4 · LCM",
    "type": "numeric",
    "prompt": "Find the LCM of \\(6\\) and \\(9\\).",
    "answer": 18,
-   "solution": "Multiples of 6: 6, 12, **18**. Multiples of 9: 9, **18**.\n\n\\[\\text{LCM} = \\boxed{18}\\]\n\n\\(54 = 6\\times9\\) is a common multiple, but not the lowest."
+   "solution": "- Multiples of 6: 6, 12, **18**.\n- Multiples of 9: 9, **18**.\n\n\\[\\text{LCM} = \\boxed{18}\\]\n\n\\(54 = 6\\times9\\) is a common multiple, but not the lowest."
   },
   {
    "title": "2.5 · Square",
    "type": "numeric",
    "prompt": "Work out \\(13^2\\).",
    "answer": 169,
-   "solution": "\\[13^2 = 13\\times13 = \\boxed{169}\\]\n\n\\(26\\) is \\(13\\times2\\), not \\(13\\times13\\)."
+   "solution": "\\[\\begin{aligned} 13^2 &= 13\\times13 \\\\ &= \\boxed{169} \\end{aligned}\\]\n\n\\(26\\) is \\(13\\times2\\), not \\(13\\times13\\)."
   },
   {
    "title": "2.5 · Square root",
    "type": "numeric",
    "prompt": "Work out \\(\\sqrt{81}\\).",
    "answer": 9,
-   "solution": "\\(9\\times9 = 81\\):\n\n\\[\\sqrt{81} = \\boxed{9}\\]\n\n\\(40.5\\) halves 81 — a square root is not a half."
+   "solution": "\\[\\begin{aligned} 9\\times9 &= 81 \\\\ \\sqrt{81} &= \\boxed{9} \\end{aligned}\\]\n\n\\(40.5\\) halves 81 — a square root is not a half."
   },
   {
    "title": "2.5 · Cube root",
    "type": "numeric",
    "prompt": "Work out \\(\\sqrt[3]{64}\\).",
    "answer": 4,
-   "solution": "\\(4\\times4\\times4 = 64\\):\n\n\\[\\sqrt[3]{64} = \\boxed{4}\\]\n\n\\(8\\) is the square root of 64, not the cube root."
+   "solution": "\\[\\begin{aligned} 4\\times4\\times4 &= 64 \\\\ \\sqrt[3]{64} &= \\boxed{4} \\end{aligned}\\]\n\n\\(8\\) is the square root of 64, not the cube root."
   }
  ],
- "takeaway": "Round by the next digit, follow BIDMAS, build every number from primes, use the HCF for the biggest equal share and the LCM for the next time things meet, and undo a power with its root.",
+ "takeaway": "- Round by the next digit.\n- Follow BIDMAS.\n- Build every number from primes.\n- The HCF gives the biggest equal share.\n- The LCM gives the next time things meet.\n- A root undoes a power.",
  "link": [
   "Concepts ›",
   "../malta-year-8-math-chapter-2-number-work/material.html"

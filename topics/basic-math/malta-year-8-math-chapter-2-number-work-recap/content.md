@@ -11,7 +11,13 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math Chapter 2 — Number Work Recap
 
-**Quick recap:** round by the next digit; BIDMAS — brackets, powers, $\times\div$, then $+-$; a prime has exactly two factors; HCF is the biggest shared factor, LCM the smallest shared multiple.
+**Quick recap:**
+
+- round by the next digit
+- BIDMAS: brackets, powers, then $\times$ and $\div$, then $+$ and $-$
+- a prime has exactly two factors
+- HCF: the biggest shared factor
+- LCM: the smallest shared multiple
 
 ---
 
@@ -134,7 +140,7 @@ $60\,000$ uses the ten-thousands place, where the 3 sits.
 **4. $20$**
 
 $$
-8 + 4\times3 = 8 + 12 = \boxed{20}
+\begin{aligned} 8 + 4\times3 &= 8 + 12 \\ &= \boxed{20} \end{aligned}
 $$
 
 $36$ adds first, as if it were $(8 + 4)\times3$.
@@ -142,7 +148,7 @@ $36$ adds first, as if it were $(8 + 4)\times3$.
 **5. $36$**
 
 $$
-(8 + 4)\times3 = 12\times3 = \boxed{36}
+\begin{aligned} (8 + 4)\times3 &= 12\times3 \\ &= \boxed{36} \end{aligned}
 $$
 
 $20$ ignores the bracket.
@@ -150,7 +156,7 @@ $20$ ignores the bracket.
 **6. $14$** — Power, then multiply, then subtract:
 
 $$
-50 - 9\times4 = 50 - 36 = \boxed{14}
+\begin{aligned} 50 - 9\times4 &= 50 - 36 \\ &= \boxed{14} \end{aligned}
 $$
 
 $26$ uses $3\times2 = 6$ instead of $3^2 = 9$.
@@ -166,12 +172,13 @@ $21 = 3\times7$, $27 = 3\times9$ and $33 = 3\times11$: odd numbers are not alway
 **8. B — Every factor prime**
 
 $$
-60 = 2\times30 = 2\times2\times15 = \boxed{2^2\times3\times5}
+\begin{aligned} 60 &= 2\times30 \\ &= 2\times2\times15 \\ &= \boxed{2^2\times3\times5} \end{aligned}
 $$
 
 The others also make 60, but 30, 10, 4 and 15 are not prime.
 
-**9. $8$** — Factors of 16: 1, 2, 4, **8**, 16. Factors of 24: 1, 2, 3, 4, 6, **8**, 12, 24.
+**9. $8$** — - Factors of 16: 1, 2, 4, **8**, 16.
+- Factors of 24: 1, 2, 3, 4, 6, **8**, 12, 24.
 
 $$
 \text{HCF} = \boxed{8}
@@ -179,7 +186,8 @@ $$
 
 $4$ is a common factor, but not the highest one.
 
-**10. $18$** — Multiples of 6: 6, 12, **18**. Multiples of 9: 9, **18**.
+**10. $18$** — - Multiples of 6: 6, 12, **18**.
+- Multiples of 9: 9, **18**.
 
 $$
 \text{LCM} = \boxed{18}
@@ -190,27 +198,32 @@ $54 = 6\times9$ is a common multiple, but not the lowest.
 **11. $169$**
 
 $$
-13^2 = 13\times13 = \boxed{169}
+\begin{aligned} 13^2 &= 13\times13 \\ &= \boxed{169} \end{aligned}
 $$
 
 $26$ is $13\times2$, not $13\times13$.
 
-**12. $9$** — $9\times9 = 81$:
+**12. $9$**
 
 $$
-\sqrt{81} = \boxed{9}
+\begin{aligned} 9\times9 &= 81 \\ \sqrt{81} &= \boxed{9} \end{aligned}
 $$
 
 $40.5$ halves 81 — a square root is not a half.
 
-**13. $4$** — $4\times4\times4 = 64$:
+**13. $4$**
 
 $$
-\sqrt[3]{64} = \boxed{4}
+\begin{aligned} 4\times4\times4 &= 64 \\ \sqrt[3]{64} &= \boxed{4} \end{aligned}
 $$
 
 $8$ is the square root of 64, not the cube root.
 
-Round by the next digit, follow BIDMAS, build every number from primes, use the HCF for the biggest equal share and the LCM for the next time things meet, and undo a power with its root.
+- Round by the next digit.
+- Follow BIDMAS.
+- Build every number from primes.
+- The HCF gives the biggest equal share.
+- The LCM gives the next time things meet.
+- A root undoes a power.
 
 </details>
