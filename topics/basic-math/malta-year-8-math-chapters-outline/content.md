@@ -10,7 +10,7 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math — Chapters Outline
 
-**Section 1 — The nineteen chapters**, in the order they are covered. Chapters 1 to 3 have their own pages, each with many worked examples and a recap quiz.
+**Section 1 — The nineteen chapters**, in the order they are covered:
 
 - Chapter 1: Directed Numbers
 - Chapter 2: Number Work
@@ -32,17 +32,26 @@ author: Wei-Che Hung
 - Chapter 18: Real-life Problems
 - Chapter 19: Logo
 
-**Section 2 — Key equations:** one card per chapter. Each card lists the equations and facts the chapter uses, with one quick example under **Show working**.
+Chapters 1 to 3 each have their own page of worked examples and a recap quiz.
+
+**Section 2 — Key equations:** one card per chapter, with the equations it uses and one quick example.
 
 ## Section 2 — Key Equations
 
 ### 1. Chapter 1: Directed Numbers
 
 - Number line: $-5 < -2 < 0 < 3$
-- Adding: $-7 + 2 = -5$ and $-3 + 8 = 5$
+- Adding:
+  - $-7 + 2 = -5$
+  - $-3 + 8 = 5$
 - Subtracting past zero: $4 - 9 = -5$
-- Subtracting a negative: $6 - (-2) = 6 + 2 = 8$
-- Signs: $(-3)\times(-4) = 12$, $(-3)\times4 = -12$, $-20\div5 = -4$
+- Subtracting a negative:
+  - $6 - (-2) = 6 + 2$
+  - $6 + 2 = 8$
+- Signs:
+  - $(-3)\times(-4) = 12$
+  - $(-3)\times4 = -12$
+  - $-20\div5 = -4$
 
 **Try:** $-6 + 10 - 9$
 
@@ -50,18 +59,26 @@ author: Wei-Che Hung
 <summary><b>Working</b></summary>
 
 $$
--6 + 10 - 9 = 4 - 9 = \boxed{-5}
+\begin{aligned} -6 + 10 - 9 &= 4 - 9 \\ &= \boxed{-5} \end{aligned}
 $$
 
 </details>
 
 ### 2. Chapter 2: Number Work
 
-- BIDMAS: $3 + 4\times2 = 3 + 8 = 11$
-- Powers: $2^3 = 2\times2\times2 = 8$
-- Roots: $\sqrt{49} = 7$ and $\sqrt[3]{27} = 3$
+- BIDMAS, multiply first:
+  - $3 + 4\times2 = 3 + 8$
+  - $3 + 8 = 11$
+- Powers:
+  - $2^3 = 2\times2\times2$
+  - $2\times2\times2 = 8$
+- Roots:
+  - $\sqrt{49} = 7$
+  - $\sqrt[3]{27} = 3$
 - Prime factors: $24 = 2^3\times3$
-- $\text{HCF}(12, 18) = 6$ and $\text{LCM}(4, 6) = 12$
+- HCF and LCM:
+  - $\text{HCF}(12, 18) = 6$
+  - $\text{LCM}(4, 6) = 12$
 - Rounding: $3.47 \approx 3.5$ (1 decimal place)
 
 **Try:** $20 - 3\times4$
@@ -72,7 +89,7 @@ $$
 Multiply first:
 
 $$
-20 - 3\times4 = 20 - 12 = \boxed{8}
+\begin{aligned} 20 - 3\times4 &= 20 - 12 \\ &= \boxed{8} \end{aligned}
 $$
 
 </details>
@@ -84,9 +101,13 @@ $$
 - Vertically opposite angles are equal
 - Triangle: $a + b + c = 180^\circ$
 - Exterior angle = sum of the two opposite inside angles
-- Parallel lines: corresponding and alternate angles are equal; co-interior angles add to $180^\circ$
+- Parallel lines:
+  - corresponding angles (F) are equal
+  - alternate angles (Z) are equal
+  - co-interior angles (C) add up to $180^\circ$
 
-**Try:** two angles on a straight line; one is $115^\circ$. Find the other.
+- **Try:** two angles on a straight line; one is $115^\circ$.
+- Find the other.
 
 <details>
 <summary><b>Working</b></summary>
@@ -100,9 +121,15 @@ $$
 ### 4. Chapter 4: Fractions
 
 - Same denominator: $\frac{2}{7} + \frac{3}{7} = \frac{5}{7}$
-- Common denominator: $\frac{2}{3} + \frac{1}{4} = \frac{8}{12} + \frac{3}{12} = \frac{11}{12}$
-- Multiply: $\frac{2}{3}\times\frac{3}{5} = \frac{6}{15} = \frac{2}{5}$
-- Divide: $\frac{3}{4}\div\frac{1}{2} = \frac{3}{4}\times\frac{2}{1} = \frac{3}{2}$
+- Common denominator:
+  - $\frac{2}{3} + \frac{1}{4} = \frac{8}{12} + \frac{3}{12}$
+  - $\frac{8}{12} + \frac{3}{12} = \frac{11}{12}$
+- Multiply:
+  - $\frac{2}{3}\times\frac{3}{5} = \frac{6}{15}$
+  - $\frac{6}{15} = \frac{2}{5}$
+- Divide — multiply by the flipped fraction:
+  - $\frac{3}{4}\div\frac{1}{2} = \frac{3}{4}\times\frac{2}{1}$
+  - $\frac{3}{4}\times\frac{2}{1} = \frac{3}{2}$
 - Mixed number: $2\tfrac{1}{3} = \frac{7}{3}$
 - Fraction of an amount: $\frac{3}{4}$ of $20 = 15$
 
@@ -112,7 +139,7 @@ $$
 <summary><b>Working</b></summary>
 
 $$
-30\div5 = 6, \qquad 6\times2 = \boxed{12}
+\begin{aligned} 30\div5 &= 6 \\ 6\times2 &= \boxed{12} \end{aligned}
 $$\n\nSo $\frac{2}{5}$ of €30 is €12.
 
 </details>
@@ -122,7 +149,9 @@ $$\n\nSo $\frac{2}{5}$ of €30 is €12.
 - Line up the decimal points: $4.5 + 0.38 = 4.88$
 - $\times10$ moves every digit one place left: $0.36\times10 = 3.6$
 - Multiply: $0.2\times0.3 = 0.06$
-- Fractions as decimals: $\frac{1}{4} = 0.25$ and $\frac{1}{3} = 0.333\ldots$
+- Fractions as decimals:
+  - $\frac{1}{4} = 0.25$
+  - $\frac{1}{3} = 0.333\ldots$
 - Rounding: $2.68 \approx 2.7$ (1 decimal place)
 
 **Try:** €3.75 + €1.40
@@ -139,8 +168,12 @@ $$\n\nThe total is €5.15.
 ### 6. Chapter 6: Percentages
 
 - $x\%$ of $A = \frac{x}{100}\times A$
-- $10\%$: divide by 10; $50\%$: halve
-- $25\% = \frac{1}{4} = 0.25$
+- Quick percentages:
+  - $10\%$: divide by 10
+  - $50\%$: halve
+- One value, three ways:
+  - $25\% = \frac{1}{4}$
+  - $\frac{1}{4} = 0.25$
 - Increase by $p\%$: new amount $= A\times\left(1 + \frac{p}{100}\right)$
 - Percentage change $= \frac{\text{change}}{\text{original}}\times100\%$
 
@@ -150,7 +183,7 @@ $$\n\nThe total is €5.15.
 <summary><b>Working</b></summary>
 
 $$
-10\% = 4, \quad 5\% = 2, \quad 15\% = \boxed{6}
+\begin{aligned} 10\% &= 4 \\ 5\% &= 2 \\ 15\% &= \boxed{6} \end{aligned}
 $$\n\nSo $15\%$ of €40 is €6.
 
 </details>
@@ -167,11 +200,11 @@ $$\n\nSo $15\%$ of €40 is €6.
 <details>
 <summary><b>Working</b></summary>
 
-$2 + 3 = 5$ parts, one part $= 30\div5 = 6$:
-
 $$
-2\times6 = \boxed{12}, \qquad 3\times6 = \boxed{18}
-$$\n\nThe shares are €12 and €18.
+\begin{aligned} 2 + 3 &= 5 \text{ parts} \\ 30\div5 &= 6 \text{ per part} \\ 2\times6 &= \boxed{12} \\ 3\times6 &= \boxed{18} \end{aligned}
+$$
+
+The shares are €12 and €18.
 
 </details>
 
@@ -179,9 +212,17 @@ $$\n\nThe shares are €12 and €18.
 
 - Like terms: $3x + 2x = 5x$
 - Expand: $3(x + 4) = 3x + 12$
-- Substitute: if $x = 5$, then $2x + 1 = 11$
-- Solve: $2x + 5 = 17 \Rightarrow x = 6$
-- Unknowns on both sides: $5x - 3 = 2x + 9 \Rightarrow x = 4$
+- Substitute $x = 5$:
+  - $2x + 1 = 2\times5 + 1$
+  - $2\times5 + 1 = 11$
+- Solve:
+  - $2x + 5 = 17$
+  - $2x = 12$
+  - $x = 6$
+- Unknowns on both sides:
+  - $5x - 3 = 2x + 9$
+  - $3x = 12$
+  - $x = 4$
 
 **Try:** solve $3x - 4 = 11$
 
@@ -189,7 +230,7 @@ $$\n\nThe shares are €12 and €18.
 <summary><b>Working</b></summary>
 
 $$
-3x = 15 \;\Rightarrow\; x = \boxed{5}
+\begin{aligned} 3x &= 15 \\ x &= \boxed{5} \end{aligned}
 $$
 
 </details>
@@ -214,7 +255,9 @@ $$
 ### 10. Chapter 10: Circles
 
 - Diameter $d = 2r$
-- Circumference $C = \pi d = 2\pi r$
+- Circumference:
+  - $C = \pi d$
+  - $C = 2\pi r$
 - Area $A = \pi r^2$
 - $\pi \approx 3.14$
 
@@ -224,7 +267,7 @@ $$
 <summary><b>Working</b></summary>
 
 $$
-C = 2\times\pi\times5 = 10\pi \approx \boxed{31.4 \text{ cm}}
+\begin{aligned} C &= 2\times\pi\times5 \\ &= 10\pi \\ &\approx \boxed{31.4 \text{ cm}} \end{aligned}
 $$
 
 </details>
@@ -243,7 +286,7 @@ $$
 <summary><b>Working</b></summary>
 
 $$
-A = \tfrac{1}{2}\times8\times5 = \boxed{20 \text{ cm}^2}
+\begin{aligned} A &= \tfrac{1}{2}\times8\times5 \\ &= \boxed{20 \text{ cm}^2} \end{aligned}
 $$
 
 </details>
@@ -261,7 +304,7 @@ $$
 <summary><b>Working</b></summary>
 
 $$
-6\times3^2 = 6\times9 = \boxed{54 \text{ cm}^2}
+\begin{aligned} 6\times3^2 &= 6\times9 \\ &= \boxed{54 \text{ cm}^2} \end{aligned}
 $$
 
 </details>
@@ -270,7 +313,9 @@ $$
 
 - A point $(x, y)$: across first, then up
 - Straight line: $y = mx + c$
-- Gradient $m = \frac{\text{rise}}{\text{run}} = \frac{y_2 - y_1}{x_2 - x_1}$
+- Gradient:
+  - $m = \frac{\text{rise}}{\text{run}}$
+  - $m = \frac{y_2 - y_1}{x_2 - x_1}$
 - $c$ is where the line crosses the $y$-axis
 
 **Try:** $y = 2x + 1$ when $x = 3$
@@ -279,7 +324,7 @@ $$
 <summary><b>Working</b></summary>
 
 $$
-y = 2\times3 + 1 = \boxed{7}
+\begin{aligned} y &= 2\times3 + 1 \\ &= \boxed{7} \end{aligned}
 $$
 
 </details>
@@ -298,7 +343,7 @@ $$
 <summary><b>Working</b></summary>
 
 $$
-\frac{4 + 7 + 7 + 10}{4} = \frac{28}{4} = \boxed{7}
+\begin{aligned} \frac{4 + 7 + 7 + 10}{4} &= \frac{28}{4} \\ &= \boxed{7} \end{aligned}
 $$
 
 </details>
@@ -318,7 +363,7 @@ $$
 Even numbers 2, 4, 6:
 
 $$
-P = \frac{3}{6} = \boxed{\frac{1}{2}}
+\begin{aligned} P &= \frac{3}{6} \\ &= \boxed{\frac{1}{2}} \end{aligned}
 $$
 
 </details>
@@ -336,7 +381,7 @@ $$
 <summary><b>Working</b></summary>
 
 $$
-3 + 4 = 7 < 8 \;\Rightarrow\; \boxed{\text{No}}
+\begin{aligned} 3 + 4 &= 7 < 8 \\ & \boxed{\text{No}} \end{aligned}
 $$
 
 </details>
@@ -367,7 +412,8 @@ $$
 - Currency: euros $\times$ exchange rate
 - Time: 09:45 to 11:20 is 1 h 35 min
 
-**Try:** two pastizzi and a drink cost €4.65; you pay with a €10 note. Find the change.
+- **Try:** two pastizzi and a drink cost €4.65; you pay with a €10 note.
+- Find the change.
 
 <details>
 <summary><b>Working</b></summary>
@@ -380,7 +426,8 @@ $$\n\nThe change is €5.35.
 
 ### 19. Chapter 19: Logo
 
-- `FD 100` moves forward 100 steps; `BK 50` moves back
+- `FD 100` moves forward 100 steps
+- `BK 50` moves back 50 steps
 - `RT 90` and `LT 90` turn right or left by $90^\circ$
 - Square: `REPEAT 4 [FD 50 RT 90]`
 - Regular polygon with $n$ sides: turn $\frac{360^\circ}{n}$ at each corner
