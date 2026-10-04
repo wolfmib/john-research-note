@@ -96,6 +96,7 @@ Malta Year 7 and Year 8 math by unit: concepts, worked examples and recap quizze
 |---|---|---|
 | [Guide — Malta Year 7 and Year 8 Math](topics/malta-year-7-year-8-math/malta-year-7-year-8-math-guide/content.md) | What do the eight units of Malta Track 3 math cover in Year 7 and Year 8, and what does one worked example from each unit look like? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-7-year-8-math-guide/material.html) |
 | [Malta Year 7 Math — Year 7 (Short) Unit 1 to Unit 3](topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3/content.md) | What are the key ideas of Year 7 Units 1 to 3 (number system, numerical calculations, algebra), with one worked example for each subtopic? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3/material.html) |
+| [Malta Year 7 Math — Year 7 (Short) Unit 1 to Unit 3 Recap](topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3-recap/content.md) | Can place value, LCM, powers, BIDMAS, fractions, proportion, sequences, brackets and equations from Year 7 Units 1 to 3 be applied in nine short questions? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3-recap/quiz.html) |
 
 ## Animations
 
