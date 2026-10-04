@@ -98,6 +98,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 2 — Number Work](topics/basic-math/malta-year-8-math-chapter-2-number-work/content.md) | How do you round, use BIDMAS, find factors, multiples, primes, the HCF and the LCM, and work with squares, cubes and roots? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-2-number-work/material.html) |
 | [Malta Year 8 Math Chapter 2 — Number Work Recap](topics/basic-math/malta-year-8-math-chapter-2-number-work-recap/content.md) | Can you round, follow BIDMAS, find primes, the HCF and the LCM, and work out squares, cubes and roots? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-2-number-work-recap/quiz.html) |
 | [Malta Year 8 Math Chapter 3 — Angles](topics/basic-math/malta-year-8-math-chapter-3-angles/content.md) | How do you name angles and find missing angles on a line, around a point, in a triangle and on parallel lines? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-3-angles/material.html) |
+| [Malta Year 8 Math Chapter 3 — Angles Recap](topics/basic-math/malta-year-8-math-chapter-3-angles-recap/content.md) | Can you name angles and find missing angles on a line, around a point, in a triangle and on parallel lines? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-3-angles-recap/quiz.html) |
 
 ## Animations
 
