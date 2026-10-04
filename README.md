@@ -19,7 +19,6 @@ the areas the notes cover.
 | [Medical Imaging](index.md#medical-imaging) | Diffuse optical imaging, from photon transport in tissue to oxygenation maps | 5 |
 | [Quantum Computing](index.md#quantum-computing) | Grover search, QSVT, and Dürr–Høyer minimum finding with its query bound | 4 |
 | [Basic Math](index.md#basic-math) | Practice quizzes and worked math material by course and topic | 5 |
-| [Malta Year 7, Year 8 Math](index.md#malta-year-7-year-8-math) | Malta Year 7 and Year 8 math by unit: concepts, worked examples and recap quizzes | 5 |
 | [Animations](index.md#animations) | Animated concept figures for mathematics, machine learning, and quantum search | 21 |
 | [Papers](index.md#papers) | Handwritten guides to the author's own papers, and the reading queue | 3 |
 | [Field Notes](field-notes/index.md) | One idea at a time, worked through in several languages with the vocabulary alongside | 3 |
@@ -27,10 +26,9 @@ the areas the notes cover.
 ## How the repository is organised
 
 ```text
-index.md                                       every topic and paper, by area
-topics/<area>/<note>/content.md                one note, with its media/ beside it
-topics/basic-math/<note>/*.html                the note as a quiz or step-by-step page
-topics/malta-year-7-year-8-math/<note>/*.html  the unit as concepts or a recap quiz
-papers/                                        own-paper guides and the reading queue
-field-notes/                                   dated multi-language notes
+index.md                         every topic and paper, by area
+topics/<area>/<note>/content.md  one note, with its media/ beside it
+topics/basic-math/<note>/*.html  the note as a quiz or step-by-step page
+papers/                          own-paper guides and the reading queue
+field-notes/                     dated multi-language notes
 ```

@@ -88,18 +88,6 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — Cone Cross-Section: Radius and Area](topics/basic-math/math-material-cone-cross-section-radius-and-area/content.md) | How do the radius and area of a horizontal cut through a 30° cone depend on the distance from the apex, and for which distances is the area defined? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-cone-cross-section-radius-and-area/material.html) |
 | [Math Material — Malta Lotto Quaterno: Combinations and Expected Value](topics/basic-math/math-material-malta-lotto-quaterno-combinations-and-expected-value/content.md) | How many Quaterno tickets are there, how many win in each prize tier for a given draw, and what is one ticket worth on average? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-malta-lotto-quaterno-combinations-and-expected-value/material.html) |
 
-## Malta Year 7, Year 8 Math
-
-Malta Year 7 and Year 8 math by unit: concepts, worked examples and recap quizzes.
-
-| Topic | Question | Page |
-|---|---|---|
-| [Guide — Malta Year 7 and Year 8 Math](topics/malta-year-7-year-8-math/malta-year-7-year-8-math-guide/content.md) | What do the eight units of Malta Track 3 math cover in Year 7 and Year 8, and what does one worked example from each unit look like? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-7-year-8-math-guide/material.html) |
-| [Malta Year 7 Math — Year 7 (Short) Unit 1 to Unit 3](topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3/content.md) | What are the key ideas of Year 7 Units 1 to 3 (number system, numerical calculations, algebra), with one worked example for each subtopic? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3/material.html) |
-| [Malta Year 7 Math — Year 7 (Short) Unit 1 to Unit 3 Recap](topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3-recap/content.md) | Can place value, LCM, powers, BIDMAS, fractions, proportion, sequences, brackets and equations from Year 7 Units 1 to 3 be applied in nine short questions? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-7-math-short-unit-1-to-unit-3-recap/quiz.html) |
-| [Malta Year 8 Math Unit 1 — Number System](topics/malta-year-7-year-8-math/malta-year-8-math-unit-1-number-system/content.md) | How do powers, the LCM of three numbers, square and cube roots, and recurring decimals work, with worked examples for each? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-8-math-unit-1-number-system/material.html) |
-| [Malta Year 8 Math Unit 1 — Number System Recap](topics/malta-year-7-year-8-math/malta-year-8-math-unit-1-number-system-recap/content.md) | Can powers, the LCM of three numbers, square and cube roots, and recurring decimals be applied in eight recap questions, two for each subtopic? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-8-math-unit-1-number-system-recap/quiz.html) |
-
 ## Animations
 
 Animated SVG concept figures (GitHub plays the SMIL animation inline).
