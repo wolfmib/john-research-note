@@ -5,12 +5,12 @@
  "unit": "Chapter 3",
  "root": "chapters",
  "question": "Can you name angles and find missing angles on a line, around a point, in a triangle and on parallel lines?",
- "intro": "**Quick recap:** straight line \\(180^\\circ\\); around a point \\(360^\\circ\\); triangle \\(180^\\circ\\); opposite, corresponding (F) and alternate (Z) angles are equal; co-interior (C) angles add up to \\(180^\\circ\\).",
+ "intro": "**Quick recap:**\n\n- straight line: \\(180^\\circ\\)\n- around a point: \\(360^\\circ\\)\n- triangle: \\(180^\\circ\\)\n- opposite, corresponding (F) and alternate (Z) angles are equal\n- co-interior (C) angles add up to \\(180^\\circ\\)",
  "questions": [
   {
    "title": "3.1 · Name the angle",
    "type": "mcq",
-   "prompt": "An angle measures \\(135^\\circ\\). What type of angle is it?",
+   "prompt": "An angle measures \\(135^\\circ\\).\n\nWhat type of angle is it?",
    "choices": [
     "acute",
     "right angle",
@@ -38,31 +38,31 @@
   {
    "title": "3.2 · Straight line",
    "type": "numeric",
-   "prompt": "Two angles on a straight line are \\(118^\\circ\\) and \\(x\\). Find \\(x\\). Give the answer in degrees.",
+   "prompt": "Two angles on a straight line are \\(118^\\circ\\) and \\(x\\).\n\nFind \\(x\\).\n\nGive the answer in degrees.",
    "answer": 62,
    "answer_display": "$62^\\circ$",
-   "solution": "\\[x = 180^\\circ - 118^\\circ = \\boxed{62^\\circ}\\]\n\n\\(242\\) uses \\(360^\\circ\\), which is for angles around a point."
+   "solution": "\\[\\begin{aligned} x &= 180^\\circ - 118^\\circ \\\\ &= \\boxed{62^\\circ} \\end{aligned}\\]\n\n\\(242\\) uses \\(360^\\circ\\), which is for angles around a point."
   },
   {
    "title": "3.2 · Three angles on a line",
    "type": "numeric",
-   "prompt": "Three angles on a straight line are \\(45^\\circ\\), \\(70^\\circ\\) and \\(x\\). Find \\(x\\). Give the answer in degrees.",
+   "prompt": "Three angles on a straight line are \\(45^\\circ\\), \\(70^\\circ\\) and \\(x\\).\n\nFind \\(x\\).\n\nGive the answer in degrees.",
    "answer": 65,
    "answer_display": "$65^\\circ$",
-   "solution": "\\(45^\\circ + 70^\\circ = 115^\\circ\\):\n\n\\[x = 180^\\circ - 115^\\circ = \\boxed{65^\\circ}\\]\n\n\\(245\\) uses \\(360^\\circ\\) instead of \\(180^\\circ\\)."
+   "solution": "\\[\\begin{aligned} 45^\\circ + 70^\\circ &= 115^\\circ \\\\ x &= 180^\\circ - 115^\\circ \\\\ &= \\boxed{65^\\circ} \\end{aligned}\\]\n\n\\(245\\) uses \\(360^\\circ\\) instead of \\(180^\\circ\\)."
   },
   {
    "title": "3.3 · Around a point",
    "type": "numeric",
-   "prompt": "Angles around a point are \\(140^\\circ\\), \\(95^\\circ\\) and \\(x\\). Find \\(x\\). Give the answer in degrees.",
+   "prompt": "Angles around a point are \\(140^\\circ\\), \\(95^\\circ\\) and \\(x\\).\n\nFind \\(x\\).\n\nGive the answer in degrees.",
    "answer": 125,
    "answer_display": "$125^\\circ$",
-   "solution": "\\(140^\\circ + 95^\\circ = 235^\\circ\\):\n\n\\[x = 360^\\circ - 235^\\circ = \\boxed{125^\\circ}\\]\n\nUsing \\(180^\\circ\\) gives a negative angle — a sign the wrong total was used."
+   "solution": "\\[\\begin{aligned} 140^\\circ + 95^\\circ &= 235^\\circ \\\\ x &= 360^\\circ - 235^\\circ \\\\ &= \\boxed{125^\\circ} \\end{aligned}\\]\n\nUsing \\(180^\\circ\\) gives a negative angle — a sign the wrong total was used."
   },
   {
    "title": "3.3 · Crossing lines",
    "type": "numeric",
-   "prompt": "Two straight lines cross. One angle is \\(58^\\circ\\). Find the angle **next to** it. Give the answer in degrees.",
+   "prompt": "Two straight lines cross.\n\nOne angle is \\(58^\\circ\\).\n\nFind the angle **next to** it.\n\nGive the answer in degrees.",
    "answer": 122,
    "answer_display": "$122^\\circ$",
    "solution": "Neighbouring angles sit on a straight line:\n\n\\[180^\\circ - 58^\\circ = \\boxed{122^\\circ}\\]\n\n\\(58^\\circ\\) is the **opposite** angle, not the neighbour."
@@ -70,31 +70,31 @@
   {
    "title": "3.3 · Four angles around a point",
    "type": "numeric",
-   "prompt": "Angles around a point are \\(75^\\circ\\), \\(105^\\circ\\), \\(90^\\circ\\) and \\(x\\). Find \\(x\\). Give the answer in degrees.",
+   "prompt": "Angles around a point are \\(75^\\circ\\), \\(105^\\circ\\), \\(90^\\circ\\) and \\(x\\).\n\nFind \\(x\\).\n\nGive the answer in degrees.",
    "answer": 90,
    "answer_display": "$90^\\circ$",
-   "solution": "\\(75^\\circ + 105^\\circ + 90^\\circ = 270^\\circ\\):\n\n\\[x = 360^\\circ - 270^\\circ = \\boxed{90^\\circ}\\]"
+   "solution": "\\[\\begin{aligned} 75^\\circ + 105^\\circ + 90^\\circ &= 270^\\circ \\\\ x &= 360^\\circ - 270^\\circ \\\\ &= \\boxed{90^\\circ} \\end{aligned}\\]"
   },
   {
    "title": "3.4 · Triangle",
    "type": "numeric",
-   "prompt": "A triangle has angles of \\(48^\\circ\\) and \\(67^\\circ\\). Find the third angle. Give the answer in degrees.",
+   "prompt": "A triangle has angles of \\(48^\\circ\\) and \\(67^\\circ\\).\n\nFind the third angle.\n\nGive the answer in degrees.",
    "answer": 65,
    "answer_display": "$65^\\circ$",
-   "solution": "\\(48^\\circ + 67^\\circ = 115^\\circ\\):\n\n\\[180^\\circ - 115^\\circ = \\boxed{65^\\circ}\\]\n\n\\(245\\) uses \\(360^\\circ\\) — a triangle's angles add up to \\(180^\\circ\\)."
+   "solution": "\\[\\begin{aligned} 48^\\circ + 67^\\circ &= 115^\\circ \\\\ 180^\\circ - 115^\\circ &= \\boxed{65^\\circ} \\end{aligned}\\]\n\n\\(245\\) uses \\(360^\\circ\\) — a triangle's angles add up to \\(180^\\circ\\)."
   },
   {
    "title": "3.4 · Isosceles triangle",
    "type": "numeric",
-   "prompt": "An isosceles triangle has a top angle of \\(30^\\circ\\). Find **one** of its two equal base angles. Give the answer in degrees.",
+   "prompt": "An isosceles triangle has a top angle of \\(30^\\circ\\).\n\nFind **one** of its two equal base angles.\n\nGive the answer in degrees.",
    "answer": 75,
    "answer_display": "$75^\\circ$",
-   "solution": "\\[(180^\\circ - 30^\\circ)\\div2 = 150^\\circ\\div2 = \\boxed{75^\\circ}\\]\n\n\\(150\\) forgets to share between the two base angles."
+   "solution": "\\[\\begin{aligned} (180^\\circ - 30^\\circ)\\div2 &= 150^\\circ\\div2 \\\\ &= \\boxed{75^\\circ} \\end{aligned}\\]\n\n\\(150\\) forgets to share between the two base angles."
   },
   {
    "title": "3.4 · Exterior angle",
    "type": "numeric",
-   "prompt": "The two inside angles opposite an exterior angle are \\(55^\\circ\\) and \\(62^\\circ\\). Find the exterior angle. Give the answer in degrees.",
+   "prompt": "The two inside angles opposite an exterior angle are \\(55^\\circ\\) and \\(62^\\circ\\).\n\nFind the exterior angle.\n\nGive the answer in degrees.",
    "answer": 117,
    "answer_display": "$117^\\circ$",
    "solution": "\\[55^\\circ + 62^\\circ = \\boxed{117^\\circ}\\]\n\n\\(63\\) is the third **inside** angle (\\(180^\\circ - 117^\\circ\\)), next to the exterior angle on the straight line."
@@ -102,7 +102,7 @@
   {
    "title": "3.5 · Co-interior angles",
    "type": "numeric",
-   "prompt": "Two co-interior angles lie between parallel lines. One is \\(108^\\circ\\). Find the other. Give the answer in degrees.",
+   "prompt": "Two co-interior angles lie between parallel lines.\n\nOne is \\(108^\\circ\\).\n\nFind the other.\n\nGive the answer in degrees.",
    "answer": 72,
    "answer_display": "$72^\\circ$",
    "solution": "\\[180^\\circ - 108^\\circ = \\boxed{72^\\circ}\\]\n\n\\(108\\) would be right for corresponding or alternate angles, which are equal."
@@ -122,7 +122,7 @@
    "solution": "\\[\\boxed{\\text{equal}}\\]\n\nAdding up to \\(180^\\circ\\) is the rule for co-interior angles (a **C** shape)."
   }
  ],
- "takeaway": "Line 180°, point 360°, triangle 180°; opposite, corresponding and alternate angles are equal; co-interior angles add up to 180°; an exterior angle equals the two opposite inside angles.",
+ "takeaway": "- Angles on a straight line add up to 180°.\n- Angles around a point add up to 360°.\n- The angles of a triangle add up to 180°.\n- Opposite, corresponding and alternate angles are equal.\n- Co-interior angles add up to 180°.\n- An exterior angle equals the two opposite inside angles.",
  "link": [
   "Concepts ›",
   "../malta-year-8-math-chapter-3-angles/material.html"
