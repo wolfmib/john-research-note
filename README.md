@@ -19,7 +19,7 @@ the areas the notes cover.
 | [Medical Imaging](index.md#medical-imaging) | Diffuse optical imaging, from photon transport in tissue to oxygenation maps | 5 |
 | [Quantum Computing](index.md#quantum-computing) | Grover search, QSVT, and Dürr–Høyer minimum finding with its query bound | 4 |
 | [Basic Math](index.md#basic-math) | Practice quizzes and worked math material by course and topic | 5 |
-| [Malta Year 7, Year 8 Math](index.md#malta-year-7-year-8-math) | Malta Year 7 and Year 8 math by unit: concepts, worked examples and recap quizzes | 1 |
+| [Malta Year 7, Year 8 Math](index.md#malta-year-7-year-8-math) | Malta Year 7 and Year 8 math by unit: concepts, worked examples and recap quizzes | 2 |
 | [Animations](index.md#animations) | Animated concept figures for mathematics, machine learning, and quantum search | 21 |
 | [Papers](index.md#papers) | Handwritten guides to the author's own papers, and the reading queue | 3 |
 | [Field Notes](field-notes/index.md) | One idea at a time, worked through in several languages with the vocabulary alongside | 3 |
