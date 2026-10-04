@@ -11,7 +11,12 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math Chapter 1 — Directed Numbers Recap
 
-**Quick recap:** right on the number line is bigger; $-(-a) = +a$; in $\times$ and $\div$, same signs give $+$ and different signs give $-$.
+**Quick recap:**
+
+- right on the number line is bigger
+- $-(-a) = +a$
+- in $\times$ and $\div$, same signs give $+$
+- different signs give $-$
 
 ---
 
@@ -56,7 +61,9 @@ Answer: ______
 
 ## 6. 1.2 · Spending more than you have
 
-You have €9 and spend €15. Work out $9 - 15$.
+You have €9 and spend €15.
+
+Work out $9 - 15$.
 
 Answer: ______
 
@@ -101,13 +108,19 @@ Which calculation gives a **negative** answer?
 
 ## 13. 1.4 · Freezer temperature
 
-A freezer is at $-15\,^\circ\text{C}$. It warms up by $9\,^\circ\text{C}$. What is the new temperature, in °C?
+A freezer is at $-15\,^\circ\text{C}$.
+
+It warms up by $9\,^\circ\text{C}$.
+
+What is the new temperature, in °C?
 
 Answer: ______
 
 ## 14. 1.4 · Lift floors
 
-A lift goes from level $-2$ (a basement) up to level $5$. How many floors does it go up?
+A lift goes from level $-2$ (a basement) up to level $5$.
+
+How many floors does it go up?
 
 Answer: ______
 
@@ -122,7 +135,8 @@ $$
 -20 < -12 < -8 < \boxed{-2}
 $$
 
-All four are negative, so the one nearest zero wins. $-20$ looks big because 20 is big, but it is furthest to the left.
+- All four are negative, so the one nearest zero wins.
+- $-20$ looks big because 20 is big, but it is furthest to the left.
 
 **2. B — −4 is nearer zero**
 
@@ -143,7 +157,7 @@ B puts $-6$ before $-10$ by looking at the sizes only; D is the descending order
 **4. $-5$**
 
 $$
--8 + 3 = -(8 - 3) = \boxed{-5}
+\begin{aligned} -8 + 3 &= -(8 - 3) \\ &= \boxed{-5} \end{aligned}
 $$
 
 Answering $5$ forgets the minus sign — moving 3 right from $-8$ does not reach zero.
@@ -151,23 +165,25 @@ Answering $5$ forgets the minus sign — moving 3 right from $-8$ does not reach
 **5. $7$**
 
 $$
--4 + 11 = 11 - 4 = \boxed{7}
+\begin{aligned} -4 + 11 &= 11 - 4 \\ &= \boxed{7} \end{aligned}
 $$
 
-$-7$ has the wrong sign: the positive part is bigger, so the answer is positive. $-15$ adds the sizes.
+- $-7$ has the wrong sign: the positive part is bigger, so the answer is positive.
+- $-15$ adds the sizes.
 
 **6. $-6$**
 
 $$
-9 - 15 = -(15 - 9) = \boxed{-6}
+\begin{aligned} 9 - 15 &= -(15 - 9) \\ &= \boxed{-6} \end{aligned}
 $$
 
-You are €6 short. Writing $6$ loses the sign.
+- You are €6 short.
+- Writing $6$ loses the sign.
 
 **7. $-9$**
 
 $$
--7 - 6 + 4 = -13 + 4 = \boxed{-9}
+\begin{aligned} -7 - 6 + 4 &= -13 + 4 \\ &= \boxed{-9} \end{aligned}
 $$
 
 $-17$ treats $+4$ as $-4$.
@@ -183,7 +199,7 @@ $7$ goes the wrong way: $-6 + 7 = 1$.
 **9. $9$**
 
 $$
-5 - (-4) = 5 + 4 = \boxed{9}
+\begin{aligned} 5 - (-4) &= 5 + 4 \\ &= \boxed{9} \end{aligned}
 $$
 
 $1$ ignores the second minus sign: two minus signs side by side make a plus.
@@ -223,11 +239,16 @@ $-24$ makes it colder; warming up moves right on the number line.
 **14. $7$**
 
 $$
-5 - (-2) = 5 + 2 = \boxed{7}
+\begin{aligned} 5 - (-2) &= 5 + 2 \\ &= \boxed{7} \end{aligned}
 $$
 
-Count them: $-2, -1, 0, 1, 2, 3, 4, 5$ — 7 moves. $3$ forgets the floors below ground.
+- Count them: $-2, -1, 0, 1, 2, 3, 4, 5$ — 7 moves.
+- $3$ forgets the floors below ground.
 
-Right on the number line is bigger; adding a positive moves right and taking away moves left; two minus signs side by side make a plus; and in × and ÷, same signs give + while different signs give −.
+- Right on the number line is bigger.
+- Adding a positive moves right; taking away moves left.
+- Two minus signs side by side make a plus.
+- In × and ÷, same signs give +.
+- Different signs give −.
 
 </details>

@@ -5,7 +5,7 @@
  "unit": "Chapter 1",
  "root": "chapters",
  "question": "Can you order, add, subtract, multiply and divide directed numbers and use them in word problems?",
- "intro": "**Quick recap:** right on the number line is bigger; \\(-(-a) = +a\\); in \\(\\times\\) and \\(\\div\\), same signs give \\(+\\) and different signs give \\(-\\).",
+ "intro": "**Quick recap:**\n\n- right on the number line is bigger\n- \\(-(-a) = +a\\)\n- in \\(\\times\\) and \\(\\div\\), same signs give \\(+\\)\n- different signs give \\(-\\)",
  "questions": [
   {
    "title": "1.1 · Biggest number",
@@ -19,7 +19,7 @@
    ],
    "answer": "A",
    "solution_title": "Nearest zero is biggest",
-   "solution": "\\[-20 < -12 < -8 < \\boxed{-2}\\]\n\nAll four are negative, so the one nearest zero wins. \\(-20\\) looks big because 20 is big, but it is furthest to the left."
+   "solution": "\\[-20 < -12 < -8 < \\boxed{-2}\\]\n\n- All four are negative, so the one nearest zero wins.\n- \\(-20\\) looks big because 20 is big, but it is furthest to the left."
   },
   {
    "title": "1.1 · Greater or smaller",
@@ -54,28 +54,28 @@
    "type": "numeric",
    "prompt": "Work out \\(-8 + 3\\).",
    "answer": -5,
-   "solution": "\\[-8 + 3 = -(8 - 3) = \\boxed{-5}\\]\n\nAnswering \\(5\\) forgets the minus sign — moving 3 right from \\(-8\\) does not reach zero."
+   "solution": "\\[\\begin{aligned} -8 + 3 &= -(8 - 3) \\\\ &= \\boxed{-5} \\end{aligned}\\]\n\nAnswering \\(5\\) forgets the minus sign — moving 3 right from \\(-8\\) does not reach zero."
   },
   {
    "title": "1.2 · Negative + bigger positive",
    "type": "numeric",
    "prompt": "Work out \\(-4 + 11\\).",
    "answer": 7,
-   "solution": "\\[-4 + 11 = 11 - 4 = \\boxed{7}\\]\n\n\\(-7\\) has the wrong sign: the positive part is bigger, so the answer is positive. \\(-15\\) adds the sizes."
+   "solution": "\\[\\begin{aligned} -4 + 11 &= 11 - 4 \\\\ &= \\boxed{7} \\end{aligned}\\]\n\n- \\(-7\\) has the wrong sign: the positive part is bigger, so the answer is positive.\n- \\(-15\\) adds the sizes."
   },
   {
    "title": "1.2 · Spending more than you have",
    "type": "numeric",
-   "prompt": "You have €9 and spend €15. Work out \\(9 - 15\\).",
+   "prompt": "You have €9 and spend €15.\n\nWork out \\(9 - 15\\).",
    "answer": -6,
-   "solution": "\\[9 - 15 = -(15 - 9) = \\boxed{-6}\\]\n\nYou are €6 short. Writing \\(6\\) loses the sign."
+   "solution": "\\[\\begin{aligned} 9 - 15 &= -(15 - 9) \\\\ &= \\boxed{-6} \\end{aligned}\\]\n\n- You are €6 short.\n- Writing \\(6\\) loses the sign."
   },
   {
    "title": "1.2 · A chain of three",
    "type": "numeric",
    "prompt": "Work out \\(-7 - 6 + 4\\).",
    "answer": -9,
-   "solution": "\\[-7 - 6 + 4 = -13 + 4 = \\boxed{-9}\\]\n\n\\(-17\\) treats \\(+4\\) as \\(-4\\)."
+   "solution": "\\[\\begin{aligned} -7 - 6 + 4 &= -13 + 4 \\\\ &= \\boxed{-9} \\end{aligned}\\]\n\n\\(-17\\) treats \\(+4\\) as \\(-4\\)."
   },
   {
    "title": "1.2 · Missing number",
@@ -89,7 +89,7 @@
    "type": "numeric",
    "prompt": "Work out \\(5 - (-4)\\).",
    "answer": 9,
-   "solution": "\\[5 - (-4) = 5 + 4 = \\boxed{9}\\]\n\n\\(1\\) ignores the second minus sign: two minus signs side by side make a plus."
+   "solution": "\\[\\begin{aligned} 5 - (-4) &= 5 + 4 \\\\ &= \\boxed{9} \\end{aligned}\\]\n\n\\(1\\) ignores the second minus sign: two minus signs side by side make a plus."
   },
   {
    "title": "1.3 · Two negatives multiplied",
@@ -122,7 +122,7 @@
   {
    "title": "1.4 · Freezer temperature",
    "type": "numeric",
-   "prompt": "A freezer is at \\(-15\\,^\\circ\\text{C}\\). It warms up by \\(9\\,^\\circ\\text{C}\\). What is the new temperature, in °C?",
+   "prompt": "A freezer is at \\(-15\\,^\\circ\\text{C}\\).\n\nIt warms up by \\(9\\,^\\circ\\text{C}\\).\n\nWhat is the new temperature, in °C?",
    "answer": -6,
    "solution": "\\[-15 + 9 = \\boxed{-6\\,^\\circ\\text{C}}\\]\n\n\\(-24\\) makes it colder; warming up moves right on the number line.",
    "answer_display": "$-6\\,^\\circ\\text{C}$"
@@ -130,12 +130,12 @@
   {
    "title": "1.4 · Lift floors",
    "type": "numeric",
-   "prompt": "A lift goes from level \\(-2\\) (a basement) up to level \\(5\\). How many floors does it go up?",
+   "prompt": "A lift goes from level \\(-2\\) (a basement) up to level \\(5\\).\n\nHow many floors does it go up?",
    "answer": 7,
-   "solution": "\\[5 - (-2) = 5 + 2 = \\boxed{7}\\]\n\nCount them: \\(-2, -1, 0, 1, 2, 3, 4, 5\\) — 7 moves. \\(3\\) forgets the floors below ground."
+   "solution": "\\[\\begin{aligned} 5 - (-2) &= 5 + 2 \\\\ &= \\boxed{7} \\end{aligned}\\]\n\n- Count them: \\(-2, -1, 0, 1, 2, 3, 4, 5\\) — 7 moves.\n- \\(3\\) forgets the floors below ground."
   }
  ],
- "takeaway": "Right on the number line is bigger; adding a positive moves right and taking away moves left; two minus signs side by side make a plus; and in × and ÷, same signs give + while different signs give −.",
+ "takeaway": "- Right on the number line is bigger.\n- Adding a positive moves right; taking away moves left.\n- Two minus signs side by side make a plus.\n- In × and ÷, same signs give +.\n- Different signs give −.",
  "link": [
   "Concepts ›",
   "../malta-year-8-math-chapter-1-directed-numbers/material.html"
