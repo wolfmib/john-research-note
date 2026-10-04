@@ -88,6 +88,14 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — Cone Cross-Section: Radius and Area](topics/basic-math/math-material-cone-cross-section-radius-and-area/content.md) | How do the radius and area of a horizontal cut through a 30° cone depend on the distance from the apex, and for which distances is the area defined? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-cone-cross-section-radius-and-area/material.html) |
 | [Math Material — Malta Lotto Quaterno: Combinations and Expected Value](topics/basic-math/math-material-malta-lotto-quaterno-combinations-and-expected-value/content.md) | How many Quaterno tickets are there, how many win in each prize tier for a given draw, and what is one ticket worth on average? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-malta-lotto-quaterno-combinations-and-expected-value/material.html) |
 
+## Malta Year 7, Year 8 Math
+
+Malta Year 7 and Year 8 math by unit: concepts, worked examples and recap quizzes.
+
+| Topic | Question | Page |
+|---|---|---|
+| [Guide — Malta Year 7 and Year 8 Math](topics/malta-year-7-year-8-math/malta-year-7-year-8-math-guide/content.md) | What do the eight units of Malta Track 3 math cover in Year 7 and Year 8, and what does one worked example from each unit look like? | [Open](https://wolfmib.github.io/john-research-note/topics/malta-year-7-year-8-math/malta-year-7-year-8-math-guide/material.html) |
+
 ## Animations
 
 Animated SVG concept figures (GitHub plays the SMIL animation inline).
