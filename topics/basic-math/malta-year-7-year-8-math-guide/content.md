@@ -14,25 +14,89 @@ Year 7 and Year 8 follow the same eight units, from number to probability; Year 
 
 **Year 7 — foundations**
 
-- **Unit 1 Number System:** 1-1 place value and ordering · 1-2 factors, multiples, primes, LCM · 1-3 squares and cubes · 1-4 decimals, percentages, negative numbers
-- **Unit 2 Numerical Calculations:** 2-1 BIDMAS · 2-2 rounding · 2-3 fractions · 2-4 percentages of amounts · 2-5 money and direct proportion
-- **Unit 3 Algebra:** 3-1 sequences · 3-2 expressions and brackets · 3-3 substitution · 3-4 simple equations · 3-5 coordinates, straight-line graphs, function machines
-- **Unit 4 Measurement:** 4-1 angles · 4-2 metric units · 4-3 areas of rectangles, triangles and compound shapes · 4-4 volume of cubes and cuboids · 4-5 time
-- **Unit 5 Euclidean Geometry:** 5-1 angles on parallel lines · 5-2 triangles and quadrilaterals · 5-3 nets · 5-4 constructing triangles · 5-5 shapes on coordinates
-- **Unit 6 Transformation Geometry:** 6-1 lines of symmetry · 6-2 quadrilaterals by reflection symmetry
-- **Unit 7 Statistics:** 7-1 frequency tables · 7-2 bar charts and Carroll diagrams · 7-3 mean, median, mode, range
-- **Unit 8 Probability:** 8-1 the language of chance · 8-2 listing outcomes · 8-3 simple probability · 8-4 experimental and theoretical probability
+- **Unit 1 Number System**
+  - 1-1 Place value and ordering
+  - 1-2 Factors, multiples, primes, LCM
+  - 1-3 Squares and cubes
+  - 1-4 Decimals, percentages, negative numbers
+- **Unit 2 Numerical Calculations**
+  - 2-1 BIDMAS
+  - 2-2 Rounding
+  - 2-3 Fractions
+  - 2-4 Percentages of amounts
+  - 2-5 Money and direct proportion
+- **Unit 3 Algebra**
+  - 3-1 Sequences
+  - 3-2 Expressions and brackets
+  - 3-3 Substitution
+  - 3-4 Simple equations
+  - 3-5 Coordinates, straight-line graphs, function machines
+- **Unit 4 Measurement**
+  - 4-1 Angles
+  - 4-2 Metric units
+  - 4-3 Areas of rectangles, triangles and compound shapes
+  - 4-4 Volume of cubes and cuboids
+  - 4-5 Time
+- **Unit 5 Euclidean Geometry**
+  - 5-1 Angles on parallel lines
+  - 5-2 Triangles and quadrilaterals
+  - 5-3 Nets
+  - 5-4 Constructing triangles
+  - 5-5 Shapes on coordinates
+- **Unit 6 Transformation Geometry**
+  - 6-1 Lines of symmetry
+  - 6-2 Quadrilaterals by reflection symmetry
+- **Unit 7 Statistics**
+  - 7-1 Frequency tables
+  - 7-2 Bar charts and Carroll diagrams
+  - 7-3 Mean, median, mode, range
+- **Unit 8 Probability**
+  - 8-1 The language of chance
+  - 8-2 Listing outcomes
+  - 8-3 Simple probability
+  - 8-4 Experimental and theoretical probability
 
 **Year 8 — building on Year 7**
 
-- **Unit 1 Number System:** 1-1 powers · 1-2 LCM of three numbers · 1-3 square and cube roots · 1-4 recurring decimals and fractions
-- **Unit 2 Numerical Calculations:** 2-1 prime factorisation · 2-2 negative numbers · 2-3 mixed numbers · 2-4 percentage change · 2-5 currency, ratio, proportion, map scales
-- **Unit 3 Algebra:** 3-1 signed terms and brackets · 3-2 substitution and changing the subject · 3-3 unknowns on both sides · 3-4 straight lines $y = mx + c$
-- **Unit 4 Measurement:** 4-1 parallelograms and trapezia · 4-2 circumference and area of a circle · 4-3 compound areas · 4-4 surface area of cubes and cuboids
-- **Unit 5 Euclidean Geometry:** 5-1 exterior angles · 5-2 quadrilateral problems · 5-3 nets of prisms and pyramids · 5-4 parts of a circle · 5-5 compass constructions
-- **Unit 6 Transformation Geometry:** 6-1 reflections · 6-2 rotational symmetry · 6-3 rotations · 6-4 translations by vectors
-- **Unit 7 Statistics:** 7-1 pie charts · 7-2 choosing an average · 7-3 outliers and range
-- **Unit 8 Probability:** 8-1 probabilities that add up to 1 · 8-2 sample spaces for two events
+- **Unit 1 Number System**
+  - 1-1 Powers
+  - 1-2 LCM of three numbers
+  - 1-3 Square and cube roots
+  - 1-4 Recurring decimals and fractions
+- **Unit 2 Numerical Calculations**
+  - 2-1 Prime factorisation
+  - 2-2 Negative numbers
+  - 2-3 Mixed numbers
+  - 2-4 Percentage change
+  - 2-5 Currency, ratio, proportion, map scales
+- **Unit 3 Algebra**
+  - 3-1 Signed terms and brackets
+  - 3-2 Substitution and changing the subject
+  - 3-3 Unknowns on both sides
+  - 3-4 Straight lines $y = mx + c$
+- **Unit 4 Measurement**
+  - 4-1 Parallelograms and trapezia
+  - 4-2 Circumference and area of a circle
+  - 4-3 Compound areas
+  - 4-4 Surface area of cubes and cuboids
+- **Unit 5 Euclidean Geometry**
+  - 5-1 Exterior angles
+  - 5-2 Quadrilateral problems
+  - 5-3 Nets of prisms and pyramids
+  - 5-4 Parts of a circle
+  - 5-5 Compass constructions
+- **Unit 6 Transformation Geometry**
+  - 6-1 Reflections
+  - 6-2 Rotational symmetry
+  - 6-3 Rotations
+  - 6-4 Translations by vectors
+- **Unit 7 Statistics**
+  - 7-1 Pie charts
+  - 7-2 Choosing an average
+  - 7-3 Outliers and range
+- **Unit 8 Probability**
+  - 8-1 Probabilities that add up to 1
+  - 8-2 Sample spaces for two events
 
 **Where to start:** Year 7 Units 1–3 (number, calculations, algebra) — every Year 8 unit builds on them.
 
