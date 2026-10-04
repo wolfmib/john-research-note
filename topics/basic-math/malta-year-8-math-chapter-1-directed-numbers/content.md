@@ -10,9 +10,25 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math Chapter 1 — Directed Numbers
 
-**Directed numbers** have a direction: positive numbers (+) are above zero, negative numbers (−) are below zero, and **0** is neutral. Chapter 1 has four parts: understanding and ordering (1.1), adding and subtracting (1.2), multiplying and dividing (1.3) and word problems (1.4). Every card has several examples of the same kind — try each one, then tap **Show working**.
+**Directed numbers** have a direction:
 
-**By the end of the chapter:** put directed numbers in order, add and subtract them on the number line, multiply and divide with the sign rules, and solve problems about temperature, lifts, money and depth.
+- positive numbers (+) are above zero
+- negative numbers (−) are below zero
+- **0** is neutral: neither positive nor negative
+
+**Chapter 1 has four parts:**
+
+- 1.1 Understanding and ordering
+- 1.2 Adding and subtracting
+- 1.3 Multiplying and dividing
+- 1.4 Word problems
+
+**By the end of the chapter:**
+
+- put directed numbers in order
+- add and subtract them on the number line
+- multiply and divide with the sign rules
+- solve problems about temperature, lifts, money and depth
 
 ![A number line from −8 to 8: negative numbers to the left of zero get smaller, positive numbers to the right get bigger.](media/number-line.svg)
 
@@ -20,7 +36,8 @@ author: Wei-Che Hung
 
 ### 1. Bigger or smaller?
 
-On a number line, numbers get **bigger to the right** and **smaller to the left**. Every positive number is bigger than every negative number, and **0** sits between them — it is **neutral**, neither positive nor negative.
+- On a number line, numbers get **bigger to the right** and **smaller to the left**.
+- Every positive number is bigger than every negative number, and **0** sits between them — it is **neutral**, neither positive nor negative.
 
 **Examples:**
 
@@ -60,7 +77,8 @@ $$
 
 ### 2. < and > with one negative
 
-The **open side** of the symbol faces the **bigger** number: $>$ means *greater than*, $<$ means *smaller than*. Write $<$ or $>$ in the box.
+- The **open side** of the symbol faces the **bigger** number: $>$ means *greater than*, $<$ means *smaller than*.
+- Write $<$ or $>$ in the box.
 
 **Examples:**
 
@@ -100,7 +118,9 @@ $$
 
 ### 3. < and > with two negatives
 
-With two negative numbers, the one **nearer zero is bigger**. Think of temperatures: $-2\,^\circ\text{C}$ is warmer than $-8\,^\circ\text{C}$. Write $<$ or $>$ in the box.
+- With two negative numbers, the one **nearer zero is bigger**.
+- Think of temperatures: $-2\,^\circ\text{C}$ is warmer than $-8\,^\circ\text{C}$.
+- Write $<$ or $>$ in the box.
 
 **Examples:**
 
@@ -140,7 +160,8 @@ $$
 
 ### 4. Ascending order
 
-**Ascending** means smallest to biggest — left to right on the number line. Start with the negative that is **furthest from zero** and finish with the biggest positive.
+- **Ascending** means smallest to biggest — left to right on the number line.
+- Start with the negative that is **furthest from zero** and finish with the biggest positive.
 
 **Examples:**
 
@@ -173,7 +194,8 @@ $$
 
 ### 5. Descending order
 
-**Descending** means biggest to smallest — right to left on the number line. Biggest positive first, the negative furthest from zero last.
+- **Descending** means biggest to smallest — right to left on the number line.
+- Biggest positive first, the negative furthest from zero last.
 
 **Examples:**
 
@@ -208,7 +230,8 @@ $$
 
 ### 6. Negative + a bigger positive
 
-Start at the negative number and **move right**. When the positive part is bigger, you pass zero and the answer is **positive**: take the smaller size from the bigger one.
+- Start at the negative number and **move right**.
+- When the positive part is bigger, you pass zero and the answer is **positive**: take the smaller size from the bigger one.
 
 **Examples:**
 
@@ -223,32 +246,33 @@ Start at the negative number and **move right**. When the positive part is bigge
 **a)**
 
 $$
--3+8 = 8 - 3 = \boxed{5}
+\begin{aligned} -3+8 &= 8 - 3 \\ &= \boxed{5} \end{aligned}
 $$
 
 **b)**
 
 $$
--5+6 = 6 - 5 = \boxed{1}
+\begin{aligned} -5+6 &= 6 - 5 \\ &= \boxed{1} \end{aligned}
 $$
 
 **c)**
 
 $$
--9+15 = 15 - 9 = \boxed{6}
+\begin{aligned} -9+15 &= 15 - 9 \\ &= \boxed{6} \end{aligned}
 $$
 
 **d)**
 
 $$
--12+20 = 20 - 12 = \boxed{8}
+\begin{aligned} -12+20 &= 20 - 12 \\ &= \boxed{8} \end{aligned}
 $$
 
 </details>
 
 ### 7. Negative + a smaller positive
 
-Move right, but not far enough to reach zero — the answer stays **negative**. Take the smaller size from the bigger one and keep the minus sign.
+- Move right, but not far enough to reach zero — the answer stays **negative**.
+- Take the smaller size from the bigger one and keep the minus sign.
 
 **Examples:**
 
@@ -263,32 +287,33 @@ Move right, but not far enough to reach zero — the answer stays **negative**. 
 **a)**
 
 $$
--9+4 = -(9 - 4) = \boxed{-5}
+\begin{aligned} -9+4 &= -(9 - 4) \\ &= \boxed{-5} \end{aligned}
 $$
 
 **b)**
 
 $$
--6+2 = -(6 - 2) = \boxed{-4}
+\begin{aligned} -6+2 &= -(6 - 2) \\ &= \boxed{-4} \end{aligned}
 $$
 
 **c)**
 
 $$
--14+5 = -(14 - 5) = \boxed{-9}
+\begin{aligned} -14+5 &= -(14 - 5) \\ &= \boxed{-9} \end{aligned}
 $$
 
 **d)**
 
 $$
--20+13 = -(20 - 13) = \boxed{-7}
+\begin{aligned} -20+13 &= -(20 - 13) \\ &= \boxed{-7} \end{aligned}
 $$
 
 </details>
 
 ### 8. Equal sizes cancel
 
-A negative and a positive of the **same size** add to **0**: $-6 + 6 = 0$. Cancel them first, then finish.
+- A negative and a positive of the **same size** add to **0**: $-6 + 6 = 0$.
+- Cancel them first, then finish.
 
 **Examples:**
 
@@ -309,26 +334,27 @@ $$
 **b)**
 
 $$
--4+4+3 = 0 + 3 = \boxed{3}
+\begin{aligned} -4+4+3 &= 0 + 3 \\ &= \boxed{3} \end{aligned}
 $$
 
 **c)**
 
 $$
--10+10-2 = 0 - 2 = \boxed{-2}
+\begin{aligned} -10+10-2 &= 0 - 2 \\ &= \boxed{-2} \end{aligned}
 $$
 
 **d)**
 
 $$
-7-7-5 = 0 - 5 = \boxed{-5}
+\begin{aligned} 7-7-5 &= 0 - 5 \\ &= \boxed{-5} \end{aligned}
 $$
 
 </details>
 
 ### 9. Taking away more than you have
 
-With €5, spending €9 leaves you €4 short: $5 - 9 = -4$. Taking away **more than you have** gives a **negative** answer: take the smaller size from the bigger one and write a minus.
+- With €5, spending €9 leaves you €4 short: $5 - 9 = -4$.
+- Taking away **more than you have** gives a **negative** answer: take the smaller size from the bigger one and write a minus.
 
 **Examples:**
 
@@ -343,32 +369,33 @@ With €5, spending €9 leaves you €4 short: $5 - 9 = -4$. Taking away **more
 **a)**
 
 $$
-6-10 = -(10 - 6) = \boxed{-4}
+\begin{aligned} 6-10 &= -(10 - 6) \\ &= \boxed{-4} \end{aligned}
 $$
 
 **b)**
 
 $$
-15-18 = -(18 - 15) = \boxed{-3}
+\begin{aligned} 15-18 &= -(18 - 15) \\ &= \boxed{-3} \end{aligned}
 $$
 
 **c)**
 
 $$
-30-45 = -(45 - 30) = \boxed{-15}
+\begin{aligned} 30-45 &= -(45 - 30) \\ &= \boxed{-15} \end{aligned}
 $$
 
 **d)**
 
 $$
-24-50 = -(50 - 24) = \boxed{-26}
+\begin{aligned} 24-50 &= -(50 - 24) \\ &= \boxed{-26} \end{aligned}
 $$
 
 </details>
 
 ### 10. Negative − positive: further left
 
-Starting below zero and taking away moves you **further left**. Add the two sizes and keep the minus: $-3 - 4 = -7$.
+- Starting below zero and taking away moves you **further left**.
+- Add the two sizes and keep the minus: $-3 - 4 = -7$.
 
 **Examples:**
 
@@ -383,32 +410,33 @@ Starting below zero and taking away moves you **further left**. Add the two size
 **a)**
 
 $$
--2-5 = -(2 + 5) = \boxed{-7}
+\begin{aligned} -2-5 &= -(2 + 5) \\ &= \boxed{-7} \end{aligned}
 $$
 
 **b)**
 
 $$
--8-7 = -(8 + 7) = \boxed{-15}
+\begin{aligned} -8-7 &= -(8 + 7) \\ &= \boxed{-15} \end{aligned}
 $$
 
 **c)**
 
 $$
--12-9 = -(12 + 9) = \boxed{-21}
+\begin{aligned} -12-9 &= -(12 + 9) \\ &= \boxed{-21} \end{aligned}
 $$
 
 **d)**
 
 $$
--25-25 = -(25 + 25) = \boxed{-50}
+\begin{aligned} -25-25 &= -(25 + 25) \\ &= \boxed{-50} \end{aligned}
 $$
 
 </details>
 
 ### 11. Chains of numbers
 
-Work **left to right**, one step at a time. Or group them: add all the minus parts, add all the plus parts, then combine the two.
+- Work **left to right**, one step at a time.
+- Or group them: add all the minus parts, add all the plus parts, then combine the two.
 
 **Examples:**
 
@@ -423,32 +451,37 @@ Work **left to right**, one step at a time. Or group them: add all the minus par
 **a)**
 
 $$
--6-2+5 = -8 + 5 = \boxed{-3}
+\begin{aligned} -6-2+5 &= -8 + 5 \\ &= \boxed{-3} \end{aligned}
 $$
 
 **b)**
 
 $$
-12-20+3 = -8 + 3 = \boxed{-5}
+\begin{aligned} 12-20+3 &= -8 + 3 \\ &= \boxed{-5} \end{aligned}
 $$
 
 **c)**
 
 $$
--40-5+2 = -45 + 2 = \boxed{-43}
+\begin{aligned} -40-5+2 &= -45 + 2 \\ &= \boxed{-43} \end{aligned}
 $$
 
-**d)** Minus parts $-9 - 8 - 1 = -18$, plus part $14$:
+**d)**
+
+- Minus parts: $-9 - 8 - 1 = -18$.
+- Plus part: $14$.
+- Combine them:
 
 $$
--9+14-8-1 = -18 + 14 = \boxed{-4}
+\begin{aligned} -9+14-8-1 &= -18 + 14 \\ &= \boxed{-4} \end{aligned}
 $$
 
 </details>
 
 ### 12. Find the missing number
 
-Count how far, and which way, you move from the first number to the answer. Moving **left** means the missing number is **negative**; moving **right** means it is positive.
+- Count how far, and which way, you move from the first number to the answer.
+- Moving **left** means the missing number is **negative**; moving **right** means it is positive.
 
 **Examples:**
 
@@ -488,7 +521,8 @@ $$
 
 ### 13. Missing number, sums on both sides
 
-Work out **each side** first. Then it is an ordinary missing-number question.
+- Work out **each side** first.
+- Then it is an ordinary missing-number question.
 
 **Examples:**
 
@@ -500,25 +534,40 @@ Work out **each side** first. Then it is an ordinary missing-number question.
 <details>
 <summary><b>Working</b></summary>
 
-**a)** Left $-5 - 2 = -7$, right $-3 - 6 = -9$. From $-7$ to $-9$ is 2 left:
+**a)**
+
+- Left side: $-5 - 2 = -7$.
+- Right side: $-3 - 6 = -9$.
+- From $-7$ to $-9$ is 2 steps left:
 
 $$
 -7 + (\boxed{-2}) = -9
 $$
 
-**b)** Left $-1 - 4 = -5$, right $-8 + 10 = 2$. From $-5$ to $2$ is 7 right:
+**b)**
+
+- Left side: $-1 - 4 = -5$.
+- Right side: $-8 + 10 = 2$.
+- From $-5$ to $2$ is 7 steps right:
 
 $$
 -5 + \boxed{7} = 2
 $$
 
-**c)** Right $-20 + 15 = -5$. From $-9$ to $-5$ is 4 right:
+**c)**
+
+- Right side: $-20 + 15 = -5$.
+- From $-9$ to $-5$ is 4 steps right:
 
 $$
 -9 + \boxed{4} = -5
 $$
 
-**d)** Left $3 - 8 = -5$, right $-1 - 1 = -2$. From $-5$ to $-2$ is 3 right:
+**d)**
+
+- Left side: $3 - 8 = -5$.
+- Right side: $-1 - 1 = -2$.
+- From $-5$ to $-2$ is 3 steps right:
 
 $$
 -5 + \boxed{3} = -2
@@ -543,32 +592,33 @@ Adding a negative is the same as **taking away**: $+(-4)$ becomes $-4$.
 **a)**
 
 $$
-9+(-5) = 9 - 5 = \boxed{4}
+\begin{aligned} 9+(-5) &= 9 - 5 \\ &= \boxed{4} \end{aligned}
 $$
 
 **b)**
 
 $$
--2+(-6) = -2 - 6 = \boxed{-8}
+\begin{aligned} -2+(-6) &= -2 - 6 \\ &= \boxed{-8} \end{aligned}
 $$
 
 **c)**
 
 $$
-3+(-11) = 3 - 11 = \boxed{-8}
+\begin{aligned} 3+(-11) &= 3 - 11 \\ &= \boxed{-8} \end{aligned}
 $$
 
 **d)**
 
 $$
--7+(-7) = -7 - 7 = \boxed{-14}
+\begin{aligned} -7+(-7) &= -7 - 7 \\ &= \boxed{-14} \end{aligned}
 $$
 
 </details>
 
 ### 15. Subtracting a negative
 
-Two minus signs side by side make a **plus**: $-(-3)$ becomes $+3$. Taking away a debt of €3 leaves you €3 better off.
+- Two minus signs side by side make a **plus**: $-(-3)$ becomes $+3$.
+- Taking away a debt of €3 leaves you €3 better off.
 
 **Examples:**
 
@@ -583,25 +633,25 @@ Two minus signs side by side make a **plus**: $-(-3)$ becomes $+3$. Taking away 
 **a)**
 
 $$
-4-(-2) = 4 + 2 = \boxed{6}
+\begin{aligned} 4-(-2) &= 4 + 2 \\ &= \boxed{6} \end{aligned}
 $$
 
 **b)**
 
 $$
--7-(-3) = -7 + 3 = \boxed{-4}
+\begin{aligned} -7-(-3) &= -7 + 3 \\ &= \boxed{-4} \end{aligned}
 $$
 
 **c)**
 
 $$
--1-(-9) = -1 + 9 = \boxed{8}
+\begin{aligned} -1-(-9) &= -1 + 9 \\ &= \boxed{8} \end{aligned}
 $$
 
 **d)**
 
 $$
-10-(-10) = 10 + 10 = \boxed{20}
+\begin{aligned} 10-(-10) &= 10 + 10 \\ &= \boxed{20} \end{aligned}
 $$
 
 </details>
@@ -809,7 +859,8 @@ $$
 
 ### 21. Temperature
 
-A **rise** in temperature is **+**, a **fall** is **−**. The **difference** between two temperatures is the higher one minus the lower one.
+- A **rise** in temperature is **+**, a **fall** is **−**.
+- The **difference** between two temperatures is the higher one minus the lower one.
 
 **Examples:**
 
@@ -836,20 +887,25 @@ $$
 **c)**
 
 $$
-15-(-5) = 15 + 5 = \boxed{20\,^\circ\text{C}}
+\begin{aligned} 15-(-5) &= 15 + 5 \\ &= \boxed{20\,^\circ\text{C}} \end{aligned}
 $$
 
 **d)**
 
 $$
-21-(-3) = 21 + 3 = \boxed{24\,^\circ\text{C}}
+\begin{aligned} 21-(-3) &= 21 + 3 \\ &= \boxed{24\,^\circ\text{C}} \end{aligned}
 $$
 
 </details>
 
 ### 22. Lift levels
 
-In a car park the ground floor is level $0$, the basements are levels $-1, -2, -3$, and the floors above are levels $1, 2, 3, \ldots$ Going **up** is **+**, going **down** is **−**.
+In a car park:
+
+- the ground floor is level $0$
+- the basements are levels $-1, -2, -3$
+- the floors above are levels $1, 2, 3, \ldots$
+- going **up** is **+**, going **down** is **−**
 
 **Examples:**
 
@@ -880,20 +936,21 @@ The lift stops at level $-2$.
 **c)**
 
 $$
-7-(-2) = 7 + 2 = \boxed{9\text{ floors}}
+\begin{aligned} 7-(-2) &= 7 + 2 \\ &= \boxed{9\text{ floors}} \end{aligned}
 $$
 
 **d)**
 
 $$
-3-(-1) = 3 + 1 = \boxed{4\text{ floors}}
+\begin{aligned} 3-(-1) &= 3 + 1 \\ &= \boxed{4\text{ floors}} \end{aligned}
 $$
 
 </details>
 
 ### 23. Money and bank balance
 
-Money **in** is **+**, money **out** is **−**. A negative balance means the account is **overdrawn**: it owes money.
+- Money **in** is **+**, money **out** is **−**.
+- A negative balance means the account is **overdrawn**: it owes money.
 
 **Examples:**
 
@@ -941,7 +998,8 @@ Together they owe €18: −€18.
 
 ### 24. Sea level and diving
 
-Sea level is $0$ m. Heights above the sea are **+**, depths below it are **−**.
+- Sea level is $0$ m.
+- Heights above the sea are **+**, depths below it are **−**.
 
 **Examples:**
 
@@ -968,7 +1026,7 @@ $$
 **c)**
 
 $$
-250-(-20) = 250 + 20 = \boxed{270\text{ m}}
+\begin{aligned} 250-(-20) &= 250 + 20 \\ &= \boxed{270\text{ m}} \end{aligned}
 $$
 
 **d)**
