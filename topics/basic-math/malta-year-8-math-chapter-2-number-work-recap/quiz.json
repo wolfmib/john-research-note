@@ -1,0 +1,130 @@
+{
+ "slug": "malta-year-8-math-chapter-2-number-work-recap",
+ "title": "Malta Year 8 Math Chapter 2 — Number Work Recap",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 2",
+ "root": "chapters",
+ "question": "Can you round, follow BIDMAS, find primes, the HCF and the LCM, and work out squares, cubes and roots?",
+ "intro": "**Quick recap:** round by the next digit; BIDMAS — brackets, powers, \\(\\times\\div\\), then \\(+-\\); a prime has exactly two factors; HCF is the biggest shared factor, LCM the smallest shared multiple.",
+ "questions": [
+  {
+   "title": "2.1 · Nearest 100",
+   "type": "numeric",
+   "prompt": "Round \\(4\\,386\\) to the nearest 100.",
+   "answer": 4400,
+   "solution": "The digit after the hundreds is 8, so round up:\n\n\\[4\\,386 \\approx \\boxed{4\\,400}\\]\n\n\\(4\\,300\\) rounds down, but 8 is 5 or more.",
+   "answer_display": "$4\\,400$"
+  },
+  {
+   "title": "2.1 · One decimal place",
+   "type": "numeric",
+   "prompt": "Round \\(7.462\\) to 1 decimal place.",
+   "answer": 7.5,
+   "solution": "The digit after the tenths is 6, so round up:\n\n\\[7.462 \\approx \\boxed{7.5}\\]\n\n\\(7.4\\) does not check the next digit."
+  },
+  {
+   "title": "2.1 · Value of a digit",
+   "type": "mcq",
+   "prompt": "What is the value of the 6 in \\(36\\,405\\)?",
+   "choices": [
+    "\\(6\\)",
+    "\\(600\\)",
+    "\\(6\\,000\\)",
+    "\\(60\\,000\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Thousands place",
+   "solution": "\\[36\\,405 = 30\\,000 + \\boxed{6\\,000} + 400 + 5\\]\n\n\\(60\\,000\\) uses the ten-thousands place, where the 3 sits."
+  },
+  {
+   "title": "2.2 · Multiply before adding",
+   "type": "numeric",
+   "prompt": "Work out \\(8 + 4\\times3\\).",
+   "answer": 20,
+   "solution": "\\[8 + 4\\times3 = 8 + 12 = \\boxed{20}\\]\n\n\\(36\\) adds first, as if it were \\((8 + 4)\\times3\\)."
+  },
+  {
+   "title": "2.2 · Brackets first",
+   "type": "numeric",
+   "prompt": "Work out \\((8 + 4)\\times3\\).",
+   "answer": 36,
+   "solution": "\\[(8 + 4)\\times3 = 12\\times3 = \\boxed{36}\\]\n\n\\(20\\) ignores the bracket."
+  },
+  {
+   "title": "2.2 · Powers first",
+   "type": "numeric",
+   "prompt": "Work out \\(50 - 3^2\\times4\\).",
+   "answer": 14,
+   "solution": "Power, then multiply, then subtract:\n\n\\[50 - 9\\times4 = 50 - 36 = \\boxed{14}\\]\n\n\\(26\\) uses \\(3\\times2 = 6\\) instead of \\(3^2 = 9\\)."
+  },
+  {
+   "title": "2.3 · Prime number",
+   "type": "mcq",
+   "prompt": "Which number is **prime**?",
+   "choices": [
+    "\\(21\\)",
+    "\\(27\\)",
+    "\\(31\\)",
+    "\\(33\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Only 1 and itself",
+   "solution": "\\[\\boxed{31} = 1\\times31 \\text{ only}\\]\n\n\\(21 = 3\\times7\\), \\(27 = 3\\times9\\) and \\(33 = 3\\times11\\): odd numbers are not always prime."
+  },
+  {
+   "title": "2.3 · Prime factors",
+   "type": "mcq",
+   "prompt": "Which shows \\(60\\) as a product of **prime** factors?",
+   "choices": [
+    "\\(2\\times30\\)",
+    "\\(2^2\\times3\\times5\\)",
+    "\\(2\\times3\\times10\\)",
+    "\\(4\\times15\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Every factor prime",
+   "solution": "\\[60 = 2\\times30 = 2\\times2\\times15 = \\boxed{2^2\\times3\\times5}\\]\n\nThe others also make 60, but 30, 10, 4 and 15 are not prime."
+  },
+  {
+   "title": "2.4 · HCF",
+   "type": "numeric",
+   "prompt": "Find the HCF of \\(16\\) and \\(24\\).",
+   "answer": 8,
+   "solution": "Factors of 16: 1, 2, 4, **8**, 16. Factors of 24: 1, 2, 3, 4, 6, **8**, 12, 24.\n\n\\[\\text{HCF} = \\boxed{8}\\]\n\n\\(4\\) is a common factor, but not the highest one."
+  },
+  {
+   "title": "2.4 · LCM",
+   "type": "numeric",
+   "prompt": "Find the LCM of \\(6\\) and \\(9\\).",
+   "answer": 18,
+   "solution": "Multiples of 6: 6, 12, **18**. Multiples of 9: 9, **18**.\n\n\\[\\text{LCM} = \\boxed{18}\\]\n\n\\(54 = 6\\times9\\) is a common multiple, but not the lowest."
+  },
+  {
+   "title": "2.5 · Square",
+   "type": "numeric",
+   "prompt": "Work out \\(13^2\\).",
+   "answer": 169,
+   "solution": "\\[13^2 = 13\\times13 = \\boxed{169}\\]\n\n\\(26\\) is \\(13\\times2\\), not \\(13\\times13\\)."
+  },
+  {
+   "title": "2.5 · Square root",
+   "type": "numeric",
+   "prompt": "Work out \\(\\sqrt{81}\\).",
+   "answer": 9,
+   "solution": "\\(9\\times9 = 81\\):\n\n\\[\\sqrt{81} = \\boxed{9}\\]\n\n\\(40.5\\) halves 81 — a square root is not a half."
+  },
+  {
+   "title": "2.5 · Cube root",
+   "type": "numeric",
+   "prompt": "Work out \\(\\sqrt[3]{64}\\).",
+   "answer": 4,
+   "solution": "\\(4\\times4\\times4 = 64\\):\n\n\\[\\sqrt[3]{64} = \\boxed{4}\\]\n\n\\(8\\) is the square root of 64, not the cube root."
+  }
+ ],
+ "takeaway": "Round by the next digit, follow BIDMAS, build every number from primes, use the HCF for the biggest equal share and the LCM for the next time things meet, and undo a power with its root.",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-chapter-2-number-work/material.html"
+ ],
+ "send_to": "John"
+}
