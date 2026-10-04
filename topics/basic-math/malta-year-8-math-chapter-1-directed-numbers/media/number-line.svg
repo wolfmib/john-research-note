@@ -1,0 +1,45 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 200' width='640' height='200' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='198' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='ah' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='7' markerHeight='7' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='an' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='ap' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker></defs>
+<line x1='18' y1='112' x2='622' y2='112' stroke='#1f2328' stroke-width='2.5' marker-start='url(#ah)' marker-end='url(#ah)'/>
+<line x1='40.0' y1='103' x2='40.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='40.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−8</text>
+<line x1='75.0' y1='103' x2='75.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='75.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−7</text>
+<line x1='110.0' y1='103' x2='110.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='110.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−6</text>
+<line x1='145.0' y1='103' x2='145.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='145.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−5</text>
+<line x1='180.0' y1='103' x2='180.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='180.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−4</text>
+<line x1='215.0' y1='103' x2='215.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='215.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−3</text>
+<line x1='250.0' y1='103' x2='250.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='250.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−2</text>
+<line x1='285.0' y1='103' x2='285.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='285.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#cf222e'>−1</text>
+<line x1='320.0' y1='103' x2='320.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='320.0' y='148' font-size='20' font-weight='700' text-anchor='middle' fill='#1f2328'>0</text>
+<line x1='355.0' y1='103' x2='355.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='355.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>1</text>
+<line x1='390.0' y1='103' x2='390.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='390.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>2</text>
+<line x1='425.0' y1='103' x2='425.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='425.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>3</text>
+<line x1='460.0' y1='103' x2='460.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='460.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>4</text>
+<line x1='495.0' y1='103' x2='495.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='495.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>5</text>
+<line x1='530.0' y1='103' x2='530.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='530.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>6</text>
+<line x1='565.0' y1='103' x2='565.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='565.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>7</text>
+<line x1='600.0' y1='103' x2='600.0' y2='121' stroke='#1f2328' stroke-width='2'/>
+<text x='600.0' y='148' font-size='20' font-weight='500' text-anchor='middle' fill='#1a7f37'>8</text>
+<circle cx='320.0' cy='112' r='7' fill='#1f2328'/>
+<line x1='296.0' y1='58' x2='50' y2='58' stroke='#cf222e' stroke-width='2.5' marker-end='url(#an)'/>
+<line x1='344.0' y1='58' x2='590' y2='58' stroke='#1a7f37' stroke-width='2.5' marker-end='url(#ap)'/>
+<text x='180.0' y='44' font-size='20' font-weight='700' text-anchor='middle' fill='#cf222e'>negative · smaller</text>
+<text x='460.0' y='44' font-size='20' font-weight='700' text-anchor='middle' fill='#1a7f37'>positive · bigger</text>
+<text x='320.0' y='178' font-size='18' text-anchor='middle' fill='#57606a'>0 is neutral: neither positive nor negative</text>
+</svg>
