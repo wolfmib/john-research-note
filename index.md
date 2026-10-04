@@ -95,6 +95,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math — Chapters Outline](topics/basic-math/malta-year-8-math-chapters-outline/content.md) | What are the nineteen chapters of Malta Year 8 Math, and which key equations does each chapter use? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapters-outline/material.html) |
 | [Malta Year 8 Math Chapter 1 — Directed Numbers](topics/basic-math/malta-year-8-math-chapter-1-directed-numbers/content.md) | How do you order, add, subtract, multiply and divide directed numbers, and use them in word problems? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-1-directed-numbers/material.html) |
 | [Malta Year 8 Math Chapter 1 — Directed Numbers Recap](topics/basic-math/malta-year-8-math-chapter-1-directed-numbers-recap/content.md) | Can you order, add, subtract, multiply and divide directed numbers and use them in word problems? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-1-directed-numbers-recap/quiz.html) |
+| [Malta Year 8 Math Chapter 2 — Number Work](topics/basic-math/malta-year-8-math-chapter-2-number-work/content.md) | How do you round, use BIDMAS, find factors, multiples, primes, the HCF and the LCM, and work with squares, cubes and roots? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-2-number-work/material.html) |
 
 ## Animations
 
