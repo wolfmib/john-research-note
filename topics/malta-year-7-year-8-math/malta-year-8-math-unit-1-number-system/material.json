@@ -1,0 +1,141 @@
+{
+  "slug": "malta-year-8-math-unit-1-number-system",
+  "title": "Malta Year 8 Math Unit 1 — Number System",
+  "course": "Malta Year 8 Math",
+  "unit": "Unit 1",
+  "area": "malta-year-7-year-8-math",
+  "question": "How do powers, the LCM of three numbers, square and cube roots, and recurring decimals work, with worked examples for each?",
+  "intro": "Unit 1 extends Year 7 number work in four steps: powers (1-1), the LCM of three numbers (1-2), square and cube roots (1-3) and recurring decimals (1-4). Each card gives the idea, then a worked example.\n\n**By the end of the unit:** read and work out powers, find the LCM of three numbers, undo squares and cubes, and tell a terminating decimal from a recurring one.",
+  "link": [
+    "Recap quiz ›",
+    "../malta-year-8-math-unit-1-number-system-recap/quiz.html"
+  ],
+  "questions": [
+    {
+      "group": "1-1 Powers",
+      "title": "Base and exponent",
+      "prompt": "A **power** is repeated multiplication. In \\(5^3\\) the **base** 5 is the number multiplied and the **exponent** 3 says how many fives: \\(5^3 = 5\\times5\\times5\\).\n\n**Example:** Write \\(2\\times2\\times2\\times2\\times2\\) as a power and work it out.",
+      "steps": [
+        "Five 2s are multiplied, so the base is 2 and the exponent is 5:\n\n\\[2\\times2\\times2\\times2\\times2 = 2^5\\]",
+        "Double step by step:\n\n\\[2 \\to 4 \\to 8 \\to 16 \\to 32, \\qquad 2^5 = \\boxed{32}\\]\n\nNot \\(2\\times5 = 10\\)."
+      ]
+    },
+    {
+      "group": "1-1 Powers",
+      "title": "Powers of 10",
+      "prompt": "Each power of 10 is a 1 followed by that many zeros: \\(10^2 = 100\\), \\(10^3 = 1000\\). Powers of 10 match the place-value columns.\n\n**Example:** Write 4,000,000 as a digit times a power of 10, and work out \\(3\\times10^4\\).",
+      "steps": [
+        "4,000,000 is 4 followed by six zeros:\n\n\\[4{,}000{,}000 = \\boxed{4\\times10^6}\\]",
+        "\\(10^4\\) is 1 followed by four zeros:\n\n\\[3\\times10^4 = 3\\times10{,}000 = \\boxed{30{,}000}\\]"
+      ]
+    },
+    {
+      "group": "1-1 Powers",
+      "title": "Powers inside a calculation",
+      "prompt": "In BIDMAS the **I** (indices) comes before × and ÷, so a power is worked out before multiplying — unless a bracket says otherwise.\n\n**Example:** Calculate \\(2\\times3^2\\) and \\((2\\times3)^2\\).",
+      "steps": [
+        "Power first, then multiply:\n\n\\[2\\times3^2 = 2\\times9 = \\boxed{18}\\]",
+        "Bracket first, then the power — a different answer:\n\n\\[(2\\times3)^2 = 6^2 = \\boxed{36}\\]"
+      ]
+    },
+    {
+      "group": "1-2 LCM of Three Numbers",
+      "title": "Listing multiples",
+      "prompt": "The **lowest common multiple (LCM)** of several numbers is the smallest positive number that each of them divides exactly.\n\n**Example:** Find the LCM of 4, 6 and 9.",
+      "steps": [
+        "List multiples until one number is in all three lists:\n\n\\[\\begin{aligned} 4&:\\ 4,\\ 8,\\ 12,\\ \\dots,\\ 32,\\ 36 \\\\ 6&:\\ 6,\\ 12,\\ 18,\\ 24,\\ 30,\\ 36 \\\\ 9&:\\ 9,\\ 18,\\ 27,\\ 36 \\end{aligned}\\]",
+        "36 is the first number in every list:\n\n\\[\\text{LCM}(4, 6, 9) = \\boxed{36}\\]"
+      ]
+    },
+    {
+      "group": "1-2 LCM of Three Numbers",
+      "title": "Using prime factors",
+      "prompt": "Write each number as a product of primes. The LCM uses **every prime that appears, at its highest power**.\n\n**Example:** Find the LCM of 12, 15 and 20.",
+      "steps": [
+        "Prime factors:\n\n\\[\\begin{aligned} 12 &= 2^2\\times3 \\\\ 15 &= 3\\times5 \\\\ 20 &= 2^2\\times5 \\end{aligned}\\]",
+        "Take \\(2^2\\), 3 and 5, each at its highest power:\n\n\\[\\text{LCM} = 2^2\\times3\\times5 = \\boxed{60}\\]"
+      ]
+    },
+    {
+      "group": "1-2 LCM of Three Numbers",
+      "title": "When repeating events line up",
+      "prompt": "Events that repeat every \\(a\\), \\(b\\) and \\(c\\) minutes happen together again after \\(\\text{LCM}(a, b, c)\\) minutes.\n\n**Example:** Three bus routes leave Valletta together at 8:00. They run every 10, 12 and 15 minutes. When do all three next leave together?",
+      "steps": [
+        "Prime factors:\n\n\\[10 = 2\\times5, \\qquad 12 = 2^2\\times3, \\qquad 15 = 3\\times5\\]",
+        "Highest powers \\(2^2\\), 3, 5:\n\n\\[\\text{LCM} = 2^2\\times3\\times5 = 60 \\text{ minutes}\\]",
+        "60 minutes after 8:00:\n\n\\[\\boxed{9{:}00}\\]"
+      ]
+    },
+    {
+      "group": "1-3 Square and Cube Roots",
+      "title": "Undoing a square or a cube",
+      "prompt": "A **square root** undoes squaring: \\(\\sqrt{49} = 7\\) because \\(7^2 = 49\\). A **cube root** undoes cubing: \\(\\sqrt[3]{27} = 3\\) because \\(3^3 = 27\\). The sign \\(\\sqrt{\\ }\\) means the positive root.\n\n**Example:** Find \\(\\sqrt{196}\\) and \\(\\sqrt[3]{216}\\).",
+      "steps": [
+        "Which number squared is 196? \\(14\\times14 = 196\\):\n\n\\[\\sqrt{196} = \\boxed{14}\\]",
+        "Which number cubed is 216? \\(6\\times6\\times6 = 216\\):\n\n\\[\\sqrt[3]{216} = \\boxed{6}\\]"
+      ]
+    },
+    {
+      "group": "1-3 Square and Cube Roots",
+      "title": "Squares and cubes to know",
+      "prompt": "Knowing the first square and cube numbers makes roots quick:\n\n\\[\\begin{aligned} &\\text{squares: } 1,\\ 4,\\ 9,\\ 16,\\ 25,\\ 36, \\\\ &\\qquad 49,\\ 64,\\ 81,\\ 100,\\ 121,\\ 144 \\\\ &\\text{cubes: } 1,\\ 8,\\ 27,\\ 64,\\ 125 \\end{aligned}\\]\n\n**Example:** Apart from 1, which number up to 100 is both a square and a cube?",
+      "steps": [
+        "Look for a number in both lists: 64, because \\(8^2 = 64\\) and \\(4^3 = 64\\).\n\n\\[\\boxed{64}\\]"
+      ]
+    },
+    {
+      "group": "1-3 Square and Cube Roots",
+      "title": "Estimating a root",
+      "prompt": "When a number is not a perfect square, its square root lies between the roots of the perfect squares on either side.\n\n**Example:** Between which two whole numbers is \\(\\sqrt{50}\\)? Which one is it closer to?",
+      "steps": [
+        "The squares on either side are 49 and 64:\n\n\\[49 < 50 < 64 \\quad\\Rightarrow\\quad 7 < \\sqrt{50} < 8\\]",
+        "50 is just 1 above 49 but 14 below 64, so the root is just above 7:\n\n\\[\\sqrt{50} \\approx \\boxed{7.1}\\]"
+      ]
+    },
+    {
+      "group": "1-3 Square and Cube Roots",
+      "title": "Roots in area and volume",
+      "prompt": "The side of a square is the square root of its area. The edge of a cube is the cube root of its volume.\n\n**Example:** A square courtyard has an area of \\(144\\ \\text{m}^2\\), and a cube-shaped box has a volume of \\(125\\ \\text{cm}^3\\). Find the side of the courtyard and the edge of the box.",
+      "steps": [
+        "\\[\\sqrt{144} = \\boxed{12\\ \\text{m}}\\]",
+        "\\[\\sqrt[3]{125} = \\boxed{5\\ \\text{cm}}\\]"
+      ]
+    },
+    {
+      "group": "1-4 Recurring Decimals and Fractions",
+      "title": "Fraction to decimal",
+      "prompt": "A fraction is a division: \\(\\frac38\\) means \\(3\\div8\\). Some decimals stop (**terminating**); others repeat a digit or a block of digits forever (**recurring**).\n\n**Example:** Write \\(\\frac38\\) and \\(\\frac56\\) as decimals.",
+      "steps": [
+        "\\(3\\div8\\) stops after three decimal places:\n\n\\[\\frac38 = \\boxed{0.375}\\]",
+        "\\(5\\div6\\) leaves remainder 2 again and again, so the 3 repeats forever:\n\n\\[\\frac56 = \\boxed{0.8333\\ldots}\\]"
+      ]
+    },
+    {
+      "group": "1-4 Recurring Decimals and Fractions",
+      "title": "Dot notation",
+      "prompt": "A dot over a digit means it repeats. Dots over the first and last digits of a block mean the whole block repeats: \\(0.\\dot{4} = 0.444\\ldots\\) and \\(0.\\dot{1}\\dot{8} = 0.181818\\ldots\\)\n\n**Example:** Write \\(\\frac23\\) and \\(\\frac{7}{11}\\) in dot notation.",
+      "steps": [
+        "\\(2\\div3 = 0.666\\ldots\\):\n\n\\[\\frac23 = \\boxed{0.\\dot{6}}\\]",
+        "\\(7\\div11 = 0.636363\\ldots\\) — the block 63 repeats:\n\n\\[\\frac{7}{11} = \\boxed{0.\\dot{6}\\dot{3}}\\]"
+      ]
+    },
+    {
+      "group": "1-4 Recurring Decimals and Fractions",
+      "title": "Will the decimal terminate?",
+      "prompt": "Write the fraction in its simplest form. If the denominator has no prime factors other than 2 and 5, the decimal **terminates**; any other prime factor makes it **recur**. (\\(\\frac{3}{12} = \\frac14\\) terminates, even though 12 has a factor 3.)\n\n**Example:** Which of \\(\\frac{7}{20}\\) and \\(\\frac{4}{15}\\) terminates?",
+      "steps": [
+        "\\(20 = 2^2\\times5\\) — only 2s and 5s, so it terminates:\n\n\\[\\frac{7}{20} = \\boxed{0.35}\\]",
+        "\\(15 = 3\\times5\\) — the 3 makes it recur:\n\n\\[\\frac{4}{15} = \\boxed{0.2\\dot{6}}\\]"
+      ]
+    },
+    {
+      "group": "1-4 Recurring Decimals and Fractions",
+      "title": "The ninths pattern",
+      "prompt": "Ninths give one repeating digit: \\(\\frac19 = 0.\\dot{1}\\), \\(\\frac29 = 0.\\dot{2}\\), and so on. So a single repeating digit \\(d\\) after the point is \\(\\frac{d}{9}\\).\n\n**Example:** Write \\(0.\\dot{7}\\) as a fraction, and show that \\(0.\\dot{6} = \\frac23\\).",
+      "steps": [
+        "One repeating digit 7:\n\n\\[0.\\dot{7} = \\boxed{\\frac79}\\]",
+        "\\(0.\\dot{6} = \\frac69\\); divide top and bottom by 3:\n\n\\[\\frac69 = \\boxed{\\frac23}\\]"
+      ]
+    }
+  ]
+}
