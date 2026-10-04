@@ -1,0 +1,144 @@
+{
+ "slug": "malta-year-8-math-chapter-1-directed-numbers-recap",
+ "title": "Malta Year 8 Math Chapter 1 — Directed Numbers Recap",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 1",
+ "root": "chapters",
+ "question": "Can you order, add, subtract, multiply and divide directed numbers and use them in word problems?",
+ "intro": "**Quick recap:** right on the number line is bigger; \\(-(-a) = +a\\); in \\(\\times\\) and \\(\\div\\), same signs give \\(+\\) and different signs give \\(-\\).",
+ "questions": [
+  {
+   "title": "1.1 · Biggest number",
+   "type": "mcq",
+   "prompt": "Which number is the **biggest**?",
+   "choices": [
+    "\\(-2\\)",
+    "\\(-20\\)",
+    "\\(-12\\)",
+    "\\(-8\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Nearest zero is biggest",
+   "solution": "\\[-20 < -12 < -8 < \\boxed{-2}\\]\n\nAll four are negative, so the one nearest zero wins. \\(-20\\) looks big because 20 is big, but it is furthest to the left."
+  },
+  {
+   "title": "1.1 · Greater or smaller",
+   "type": "mcq",
+   "prompt": "Which statement is **true**?",
+   "choices": [
+    "\\(-9 > -4\\)",
+    "\\(-9 < -4\\)",
+    "\\(-9 = -4\\)",
+    "\\(9 < -4\\)"
+   ],
+   "answer": "B",
+   "solution_title": "−4 is nearer zero",
+   "solution": "\\[\\boxed{-9 < -4}\\]\n\n\\(-9 > -4\\) compares 9 and 4 and forgets the signs; \\(9 < -4\\) puts a positive below a negative."
+  },
+  {
+   "title": "1.1 · Ascending order",
+   "type": "mcq",
+   "prompt": "Put \\(-6,\\ 3,\\ -10,\\ 0,\\ 1\\) in **ascending** order.",
+   "choices": [
+    "\\(-10,\\ -6,\\ 0,\\ 1,\\ 3\\)",
+    "\\(-6,\\ -10,\\ 0,\\ 1,\\ 3\\)",
+    "\\(0,\\ 1,\\ 3,\\ -6,\\ -10\\)",
+    "\\(3,\\ 1,\\ 0,\\ -6,\\ -10\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Smallest first",
+   "solution": "\\[\\boxed{-10,\\ -6,\\ 0,\\ 1,\\ 3}\\]\n\nB puts \\(-6\\) before \\(-10\\) by looking at the sizes only; D is the descending order."
+  },
+  {
+   "title": "1.2 · Negative + smaller positive",
+   "type": "numeric",
+   "prompt": "Work out \\(-8 + 3\\).",
+   "answer": -5,
+   "solution": "\\[-8 + 3 = -(8 - 3) = \\boxed{-5}\\]\n\nAnswering \\(5\\) forgets the minus sign — moving 3 right from \\(-8\\) does not reach zero."
+  },
+  {
+   "title": "1.2 · Negative + bigger positive",
+   "type": "numeric",
+   "prompt": "Work out \\(-4 + 11\\).",
+   "answer": 7,
+   "solution": "\\[-4 + 11 = 11 - 4 = \\boxed{7}\\]\n\n\\(-7\\) has the wrong sign: the positive part is bigger, so the answer is positive. \\(-15\\) adds the sizes."
+  },
+  {
+   "title": "1.2 · Spending more than you have",
+   "type": "numeric",
+   "prompt": "You have €9 and spend €15. Work out \\(9 - 15\\).",
+   "answer": -6,
+   "solution": "\\[9 - 15 = -(15 - 9) = \\boxed{-6}\\]\n\nYou are €6 short. Writing \\(6\\) loses the sign."
+  },
+  {
+   "title": "1.2 · A chain of three",
+   "type": "numeric",
+   "prompt": "Work out \\(-7 - 6 + 4\\).",
+   "answer": -9,
+   "solution": "\\[-7 - 6 + 4 = -13 + 4 = \\boxed{-9}\\]\n\n\\(-17\\) treats \\(+4\\) as \\(-4\\)."
+  },
+  {
+   "title": "1.2 · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(-6 + \\square = -13\\).",
+   "answer": -7,
+   "solution": "From \\(-6\\) to \\(-13\\) is 7 steps left:\n\n\\[-6 + (\\boxed{-7}) = -13\\]\n\n\\(7\\) goes the wrong way: \\(-6 + 7 = 1\\)."
+  },
+  {
+   "title": "1.2 · Subtracting a negative",
+   "type": "numeric",
+   "prompt": "Work out \\(5 - (-4)\\).",
+   "answer": 9,
+   "solution": "\\[5 - (-4) = 5 + 4 = \\boxed{9}\\]\n\n\\(1\\) ignores the second minus sign: two minus signs side by side make a plus."
+  },
+  {
+   "title": "1.3 · Two negatives multiplied",
+   "type": "numeric",
+   "prompt": "Work out \\((-6)\\times(-7)\\).",
+   "answer": 42,
+   "solution": "Same signs give a positive:\n\n\\[(-6)\\times(-7) = \\boxed{42}\\]\n\n\\(-42\\) is the answer for different signs."
+  },
+  {
+   "title": "1.3 · Negative divided by positive",
+   "type": "numeric",
+   "prompt": "Work out \\((-36)\\div4\\).",
+   "answer": -9,
+   "solution": "Different signs give a negative:\n\n\\[(-36)\\div4 = \\boxed{-9}\\]\n\n\\(9\\) drops the sign."
+  },
+  {
+   "title": "1.3 · Which answer is negative?",
+   "type": "mcq",
+   "prompt": "Which calculation gives a **negative** answer?",
+   "choices": [
+    "\\((-3)\\times(-5)\\)",
+    "\\((-20)\\div(-4)\\)",
+    "\\((-2)\\times6\\)",
+    "\\(8\\times3\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Different signs",
+   "solution": "\\[(-2)\\times6 = \\boxed{-12}\\]\n\nA and B have two minus signs, so they are positive (\\(15\\) and \\(5\\))."
+  },
+  {
+   "title": "1.4 · Freezer temperature",
+   "type": "numeric",
+   "prompt": "A freezer is at \\(-15\\,^\\circ\\text{C}\\). It warms up by \\(9\\,^\\circ\\text{C}\\). What is the new temperature, in °C?",
+   "answer": -6,
+   "solution": "\\[-15 + 9 = \\boxed{-6\\,^\\circ\\text{C}}\\]\n\n\\(-24\\) makes it colder; warming up moves right on the number line.",
+   "answer_display": "$-6\\,^\\circ\\text{C}$"
+  },
+  {
+   "title": "1.4 · Lift floors",
+   "type": "numeric",
+   "prompt": "A lift goes from level \\(-2\\) (a basement) up to level \\(5\\). How many floors does it go up?",
+   "answer": 7,
+   "solution": "\\[5 - (-2) = 5 + 2 = \\boxed{7}\\]\n\nCount them: \\(-2, -1, 0, 1, 2, 3, 4, 5\\) — 7 moves. \\(3\\) forgets the floors below ground."
+  }
+ ],
+ "takeaway": "Right on the number line is bigger; adding a positive moves right and taking away moves left; two minus signs side by side make a plus; and in × and ÷, same signs give + while different signs give −.",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-chapter-1-directed-numbers/material.html"
+ ],
+ "send_to": "John"
+}

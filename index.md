@@ -94,6 +94,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Unit 1 — Number System Recap](topics/basic-math/malta-year-8-math-unit-1-number-system-recap/content.md) | Can powers, the LCM of three numbers, square and cube roots, and recurring decimals be applied in eight recap questions, two for each subtopic? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-unit-1-number-system-recap/quiz.html) |
 | [Malta Year 8 Math — Chapters Outline](topics/basic-math/malta-year-8-math-chapters-outline/content.md) | What are the nineteen chapters of Malta Year 8 Math, and which key equations does each chapter use? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapters-outline/material.html) |
 | [Malta Year 8 Math Chapter 1 — Directed Numbers](topics/basic-math/malta-year-8-math-chapter-1-directed-numbers/content.md) | How do you order, add, subtract, multiply and divide directed numbers, and use them in word problems? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-1-directed-numbers/material.html) |
+| [Malta Year 8 Math Chapter 1 — Directed Numbers Recap](topics/basic-math/malta-year-8-math-chapter-1-directed-numbers-recap/content.md) | Can you order, add, subtract, multiply and divide directed numbers and use them in word problems? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-1-directed-numbers-recap/quiz.html) |
 
 ## Animations
 
