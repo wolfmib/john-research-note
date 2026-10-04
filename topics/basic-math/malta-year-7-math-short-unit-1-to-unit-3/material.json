@@ -1,0 +1,141 @@
+{
+  "slug": "malta-year-7-math-short-unit-1-to-unit-3",
+  "title": "Malta Year 7 Math — Year 7 (Short) Unit 1 to Unit 3",
+  "course": "Malta Year 7 Math",
+  "unit": "Units 1–3",
+  "root": "malta",
+  "question": "What are the key ideas of Year 7 Units 1 to 3 (number system, numerical calculations, algebra), with one worked example for each subtopic?",
+  "intro": "A short pass through the first three Year 7 units — number system, numerical calculations and algebra — with one idea and one worked example per subtopic.",
+  "link": [
+    "Recap quiz ›",
+    "../malta-year-7-math-short-unit-1-to-unit-3-recap/quiz.html"
+  ],
+  "questions": [
+    {
+      "group": "Unit 1 — Number System",
+      "title": "Place value and ordering",
+      "prompt": "A digit's value depends on its column. To order numbers, compare the biggest place value first; the first column that differs decides.\n\n**Example:** Order 40,312, 40,231 and 43,012 from smallest to largest.",
+      "steps": [
+        "All three have 4 ten-thousands. In the thousands column, 43,012 has 3 and the others have 0, so it is the largest.",
+        "Compare the hundreds of the other two: 2 < 3.\n\n\\[\\boxed{40{,}231 < 40{,}312 < 43{,}012}\\]"
+      ]
+    },
+    {
+      "group": "Unit 1 — Number System",
+      "title": "Factors, multiples, primes and LCM",
+      "prompt": "A **factor** divides a number exactly. A **multiple** is the number times 1, 2, 3, … A **prime** has exactly two factors, 1 and itself. The **LCM** is the smallest multiple two numbers share.\n\n**Example:** List the factors of 18, say which are prime, and find the LCM of 4 and 10.",
+      "steps": [
+        "Pair the factors so none are missed:\n\n\\[18 = 1\\times18 = 2\\times9 = 3\\times6\\]\n\nFactors: 1, 2, 3, 6, 9, 18. The primes among them are 2 and 3.",
+        "Multiples of 10 are 10, 20, … and 20 is the first one that 4 divides:\n\n\\[\\text{LCM}(4, 10) = \\boxed{20}\\]"
+      ]
+    },
+    {
+      "group": "Unit 1 — Number System",
+      "title": "Squares and cubes",
+      "prompt": "A **square** multiplies a number by itself, \\(n^2 = n\\times n\\). A **cube** multiplies three copies, \\(n^3 = n\\times n\\times n\\).\n\n**Example:** Find \\(7^2\\) and \\(4^3\\). Which is bigger?",
+      "steps": [
+        "\\[7^2 = 7\\times7 = 49\\]",
+        "\\[4^3 = 4\\times4\\times4 = 64\\]\n\nSo \\(\\boxed{4^3 = 64}\\) is bigger, even though 4 is smaller than 7."
+      ]
+    },
+    {
+      "group": "Unit 1 — Number System",
+      "title": "Decimals, percentages and negative numbers",
+      "prompt": "Percent means out of 100, so \\(0.35 = \\frac{35}{100} = 35\\%\\). On a number line, numbers further right are bigger, so \\(-2 > -6\\).\n\n**Example:** Write 0.6 as a percentage, then order \\(-4\\), 0.6, \\(-1.5\\) and 0 from smallest to largest.",
+      "steps": [
+        "Tenths become hundredths:\n\n\\[0.6 = \\frac{60}{100} = 60\\%\\]\n\nNot 6% — that would be 0.06.",
+        "The negative number furthest from 0 is the smallest:\n\n\\[\\boxed{-4 < -1.5 < 0 < 0.6}\\]"
+      ]
+    },
+    {
+      "group": "Unit 2 — Numerical Calculations",
+      "title": "Arithmetic and BIDMAS",
+      "prompt": "Work in this order: **B**rackets, **I**ndices, **D**ivision and **M**ultiplication (left to right), **A**ddition and **S**ubtraction (left to right).\n\n**Example:** Calculate \\(20 - 3\\times(2 + 4)\\div9\\).",
+      "steps": [
+        "Brackets first:\n\n\\[20 - 3\\times6\\div9\\]",
+        "× and ÷ from left to right, then the subtraction:\n\n\\[20 - 18\\div9 = 20 - 2 = \\boxed{18}\\]"
+      ]
+    },
+    {
+      "group": "Unit 2 — Numerical Calculations",
+      "title": "Rounding",
+      "prompt": "Find the digit in the place you round to and look at the next digit: 5 or more rounds up, 4 or less leaves it.\n\n**Example:** Round 7.2851 to 1 decimal place and to 2 decimal places.",
+      "steps": [
+        "1 decimal place: the next digit after 7.2 is 8, so round up:\n\n\\[7.2851 \\approx \\boxed{7.3}\\]",
+        "2 decimal places: the next digit after 7.28 is 5, so round up:\n\n\\[7.2851 \\approx \\boxed{7.29}\\]"
+      ]
+    },
+    {
+      "group": "Unit 2 — Numerical Calculations",
+      "title": "Fraction arithmetic",
+      "prompt": "Add or subtract with a common denominator. Multiply tops and bottoms. To divide, multiply by the reciprocal.\n\n**Example:** Calculate \\(\\frac56 - \\frac38\\) and \\(\\frac25 \\div \\frac{4}{15}\\).",
+      "steps": [
+        "The common denominator of 6 and 8 is 24:\n\n\\[\\frac56 - \\frac38 = \\frac{20}{24} - \\frac{9}{24} = \\boxed{\\frac{11}{24}}\\]",
+        "Flip the second fraction and multiply:\n\n\\[\\frac25\\times\\frac{15}{4} = \\frac{30}{20} = \\boxed{\\frac32}\\]"
+      ]
+    },
+    {
+      "group": "Unit 2 — Numerical Calculations",
+      "title": "Percentages of quantities",
+      "prompt": "\\(p\\%\\) of an amount is \\(\\frac{p}{100}\\) of it. 10% is a tenth, so other percentages can be built from 10%, 5% and 1%.\n\n**Example:** Find 45% of 240.",
+      "steps": [
+        "10% of 240 is 24, so\n\n\\[40\\% = 96, \\qquad 5\\% = 12\\]",
+        "Add, and check with the decimal:\n\n\\[45\\% = 96 + 12 = 0.45\\times240 = \\boxed{108}\\]"
+      ]
+    },
+    {
+      "group": "Unit 2 — Numerical Calculations",
+      "title": "Money and direct proportion",
+      "prompt": "When every item costs the same, find the cost of one item first, then scale up. Keep money to two decimal places.\n\n**Example:** 6 ice creams cost €9.00. How much do 10 cost?",
+      "steps": [
+        "One ice cream:\n\n\\[9.00\\div6 = 1.50\\]",
+        "Ten ice creams:\n\n\\[10\\times1.50 = \\boxed{15.00}\\]\n\nTen cost €15.00."
+      ]
+    },
+    {
+      "group": "Unit 3 — Algebra",
+      "title": "Sequences",
+      "prompt": "In a linear sequence the terms change by the same step. A step of \\(d\\) gives \\(dn\\) in the rule for the nth term; then add or subtract to match the first term.\n\n**Example:** Find the next term and the nth term of 7, 11, 15, 19, …",
+      "steps": [
+        "The step is 4, so the next term is \\(19 + 4 = 23\\).",
+        "The rule starts with \\(4n\\). When \\(n = 1\\), \\(4n = 4\\), but the first term is 7, so add 3:\n\n\\[\\boxed{4n + 3}\\]"
+      ]
+    },
+    {
+      "group": "Unit 3 — Algebra",
+      "title": "Expressions and brackets",
+      "prompt": "**Like terms** have the same letter part and can be collected. To expand a bracket, multiply every term inside by the term outside.\n\n**Example:** Simplify \\(4(2a - 3) + 5a + 2\\).",
+      "steps": [
+        "Expand:\n\n\\[8a - 12 + 5a + 2\\]",
+        "Collect the \\(a\\) terms and the numbers:\n\n\\[\\boxed{13a - 10}\\]"
+      ]
+    },
+    {
+      "group": "Unit 3 — Algebra",
+      "title": "Substitution",
+      "prompt": "Replace each letter with its value in brackets, then follow BIDMAS.\n\n**Example:** Find \\(2a^2 - 3b\\) when \\(a = 3\\) and \\(b = -4\\).",
+      "steps": [
+        "Substitute, with brackets:\n\n\\[2(3)^2 - 3(-4)\\]",
+        "Square first, then multiply; subtracting \\(-12\\) adds 12:\n\n\\[2\\times9 + 12 = \\boxed{30}\\]"
+      ]
+    },
+    {
+      "group": "Unit 3 — Algebra",
+      "title": "Simple equations",
+      "prompt": "Do the same to both sides, undoing the operations in reverse order.\n\n**Example:** Solve \\(5x - 7 = 18\\).",
+      "steps": [
+        "Add 7 to both sides:\n\n\\[5x = 25\\]",
+        "Divide both sides by 5:\n\n\\[\\boxed{x = 5}\\]\n\nCheck: \\(5\\times5 - 7 = 18\\)."
+      ]
+    },
+    {
+      "group": "Unit 3 — Algebra",
+      "title": "Coordinates, linear graphs and function machines",
+      "prompt": "A point \\((x, y)\\) is across first, then up. A function machine turns each input \\(x\\) into an output \\(y\\); plotting the pairs of a rule such as \\(y = 3x - 1\\) gives a straight line.\n\n**Example:** A machine multiplies by 3, then subtracts 1. Find the outputs for inputs 0, 1 and 2, and the rule.",
+      "steps": [
+        "Run each input through the machine:\n\n\\[\\begin{aligned} 0&\\to 3(0) - 1 = -1 \\\\ 1&\\to 3(1) - 1 = 2 \\\\ 2&\\to 3(2) - 1 = 5 \\end{aligned}\\]",
+        "The points \\((0, -1)\\), \\((1, 2)\\) and \\((2, 5)\\) lie on one straight line:\n\n\\[\\boxed{y = 3x - 1}\\]"
+      ]
+    }
+  ]
+}
