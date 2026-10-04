@@ -10,9 +10,29 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math Chapter 3 — Angles
 
-Chapter 3 is about naming and finding angles. A few facts do most of the work, drawn in the figure: angles on a straight line add up to $180^\circ$, angles around a point add up to $360^\circ$, vertically opposite angles are equal, the angles of a triangle add up to $180^\circ$, and parallel lines make pairs of angles that are equal or add up to $180^\circ$. Labels 3.1 to 3.5 name the parts of this page. Every card has several examples of the same kind — try each one, then tap **Show working**.
+Chapter 3 is about naming and finding angles.
 
-**By the end of the chapter:** name an angle by its size, and find a missing angle on a straight line, around a point, in a triangle and on parallel lines.
+**The angle facts** (drawn in the figure):
+
+- angles on a straight line add up to $180^\circ$
+- angles around a point add up to $360^\circ$
+- vertically opposite angles are equal
+- the angles of a triangle add up to $180^\circ$
+- an exterior angle equals the two opposite inside angles
+- on parallel lines, F and Z angles are equal, and C angles add up to $180^\circ$
+
+**Chapter 3 has five parts** (the labels name the parts of this page):
+
+- 3.1 Types of angles
+- 3.2 Angles on a straight line
+- 3.3 Angles at a point and vertically opposite angles
+- 3.4 Angles in a triangle
+- 3.5 Angles on parallel lines
+
+**By the end of the chapter:**
+
+- name an angle by its size
+- find a missing angle on a straight line, around a point, in a triangle and on parallel lines
 
 ![Six angle facts: angles on a straight line add to 180°, around a point to 360°, vertically opposite angles are equal, a triangle's angles add to 180°, an exterior angle equals the two opposite inside angles, and parallel lines give equal F and Z angles and C angles that add to 180°.](media/angle-facts.svg)
 
@@ -106,7 +126,8 @@ $$
 
 ### 3. Two angles on a straight line
 
-Angles on a straight line **add up to $180^\circ$**. The missing angle is $180^\circ$ minus the angle you know.
+- Angles on a straight line **add up to $180^\circ$**.
+- The missing angle is $180^\circ$ minus the angle you know.
 
 **Examples:**
 
@@ -121,25 +142,25 @@ Angles on a straight line **add up to $180^\circ$**. The missing angle is $180^\
 **a)**
 
 $$
-x = 180^\circ - 130^\circ = \boxed{50^\circ}
+\begin{aligned} x &= 180^\circ - 130^\circ \\ &= \boxed{50^\circ} \end{aligned}
 $$
 
 **b)**
 
 $$
-x = 180^\circ - 72^\circ = \boxed{108^\circ}
+\begin{aligned} x &= 180^\circ - 72^\circ \\ &= \boxed{108^\circ} \end{aligned}
 $$
 
 **c)**
 
 $$
-x = 180^\circ - 90^\circ = \boxed{90^\circ}
+\begin{aligned} x &= 180^\circ - 90^\circ \\ &= \boxed{90^\circ} \end{aligned}
 $$
 
 **d)**
 
 $$
-x = 180^\circ - 155^\circ = \boxed{25^\circ}
+\begin{aligned} x &= 180^\circ - 155^\circ \\ &= \boxed{25^\circ} \end{aligned}
 $$
 
 </details>
@@ -158,28 +179,28 @@ Add the angles you know, then take the total from $180^\circ$.
 <details>
 <summary><b>Working</b></summary>
 
-**a)** $40^\circ + 65^\circ = 105^\circ$:
+**a)**
 
 $$
-x = 180^\circ - 105^\circ = \boxed{75^\circ}
+\begin{aligned} 40^\circ + 65^\circ &= 105^\circ \\ x &= 180^\circ - 105^\circ \\ &= \boxed{75^\circ} \end{aligned}
 $$
 
-**b)** $90^\circ + 35^\circ = 125^\circ$:
+**b)**
 
 $$
-x = 180^\circ - 125^\circ = \boxed{55^\circ}
+\begin{aligned} 90^\circ + 35^\circ &= 125^\circ \\ x &= 180^\circ - 125^\circ \\ &= \boxed{55^\circ} \end{aligned}
 $$
 
-**c)** $25^\circ + 25^\circ = 50^\circ$:
+**c)**
 
 $$
-x = 180^\circ - 50^\circ = \boxed{130^\circ}
+\begin{aligned} 25^\circ + 25^\circ &= 50^\circ \\ x &= 180^\circ - 50^\circ \\ &= \boxed{130^\circ} \end{aligned}
 $$
 
 **d)** The two $x$ angles share $180^\circ - 100^\circ = 80^\circ$:
 
 $$
-x = 80^\circ\div2 = \boxed{40^\circ}
+\begin{aligned} x &= 80^\circ\div2 \\ &= \boxed{40^\circ} \end{aligned}
 $$
 
 </details>
@@ -200,35 +221,36 @@ Angles all the way **around a point add up to $360^\circ$** — one full turn.
 <details>
 <summary><b>Working</b></summary>
 
-**a)** $150^\circ + 120^\circ = 270^\circ$:
+**a)**
 
 $$
-x = 360^\circ - 270^\circ = \boxed{90^\circ}
+\begin{aligned} 150^\circ + 120^\circ &= 270^\circ \\ x &= 360^\circ - 270^\circ \\ &= \boxed{90^\circ} \end{aligned}
 $$
 
 **b)**
 
 $$
-x = 360^\circ - 200^\circ = \boxed{160^\circ}
+\begin{aligned} x &= 360^\circ - 200^\circ \\ &= \boxed{160^\circ} \end{aligned}
 $$
 
-**c)** $90^\circ + 90^\circ + 110^\circ = 290^\circ$:
+**c)**
 
 $$
-x = 360^\circ - 290^\circ = \boxed{70^\circ}
+\begin{aligned} 90^\circ + 90^\circ + 110^\circ &= 290^\circ \\ x &= 360^\circ - 290^\circ \\ &= \boxed{70^\circ} \end{aligned}
 $$
 
-**d)** $100^\circ + 85^\circ + 95^\circ = 280^\circ$:
+**d)**
 
 $$
-x = 360^\circ - 280^\circ = \boxed{80^\circ}
+\begin{aligned} 100^\circ + 85^\circ + 95^\circ &= 280^\circ \\ x &= 360^\circ - 280^\circ \\ &= \boxed{80^\circ} \end{aligned}
 $$
 
 </details>
 
 ### 6. Vertically opposite angles
 
-When two straight lines cross they make four angles. **Opposite angles are equal**, and **neighbouring angles add up to $180^\circ$** because they sit on a straight line.
+- When two straight lines cross they make four angles.
+- **Opposite angles are equal**, and **neighbouring angles add up to $180^\circ$** because they sit on a straight line.
 
 **Examples:**
 
@@ -240,25 +262,37 @@ When two straight lines cross they make four angles. **Opposite angles are equal
 <details>
 <summary><b>Working</b></summary>
 
-**a)** Opposite: $40^\circ$. Neighbours: $180^\circ - 40^\circ = 140^\circ$.
+**a)**
+
+- Opposite: $40^\circ$.
+- Neighbours: $180^\circ - 40^\circ = 140^\circ$.
 
 $$
 \boxed{40^\circ,\ 140^\circ,\ 140^\circ}
 $$
 
-**b)** Opposite: $115^\circ$. Neighbours: $180^\circ - 115^\circ = 65^\circ$.
+**b)**
+
+- Opposite: $115^\circ$.
+- Neighbours: $180^\circ - 115^\circ = 65^\circ$.
 
 $$
 \boxed{115^\circ,\ 65^\circ,\ 65^\circ}
 $$
 
-**c)** Opposite: $90^\circ$. Neighbours: $180^\circ - 90^\circ = 90^\circ$ — all four are right angles.
+**c)**
+
+- Opposite: $90^\circ$.
+- Neighbours: $180^\circ - 90^\circ = 90^\circ$ — all four are right angles.
 
 $$
 \boxed{90^\circ,\ 90^\circ,\ 90^\circ}
 $$
 
-**d)** Opposite: $72^\circ$. Neighbours: $180^\circ - 72^\circ = 108^\circ$.
+**d)**
+
+- Opposite: $72^\circ$.
+- Neighbours: $180^\circ - 72^\circ = 108^\circ$.
 
 $$
 \boxed{72^\circ,\ 108^\circ,\ 108^\circ}
@@ -270,7 +304,8 @@ $$
 
 ### 7. Angles in a triangle
 
-The three angles of any triangle **add up to $180^\circ$**. Two angles are given; find the third.
+- The three angles of any triangle **add up to $180^\circ$**.
+- Two angles are given; find the third.
 
 **Examples:**
 
@@ -282,28 +317,28 @@ The three angles of any triangle **add up to $180^\circ$**. Two angles are given
 <details>
 <summary><b>Working</b></summary>
 
-**a)** $50^\circ + 60^\circ = 110^\circ$:
+**a)**
 
 $$
-180^\circ - 110^\circ = \boxed{70^\circ}
+\begin{aligned} 50^\circ + 60^\circ &= 110^\circ \\ 180^\circ - 110^\circ &= \boxed{70^\circ} \end{aligned}
 $$
 
-**b)** $90^\circ + 35^\circ = 125^\circ$:
+**b)**
 
 $$
-180^\circ - 125^\circ = \boxed{55^\circ}
+\begin{aligned} 90^\circ + 35^\circ &= 125^\circ \\ 180^\circ - 125^\circ &= \boxed{55^\circ} \end{aligned}
 $$
 
-**c)** $110^\circ + 25^\circ = 135^\circ$:
+**c)**
 
 $$
-180^\circ - 135^\circ = \boxed{45^\circ}
+\begin{aligned} 110^\circ + 25^\circ &= 135^\circ \\ 180^\circ - 135^\circ &= \boxed{45^\circ} \end{aligned}
 $$
 
-**d)** $60^\circ + 60^\circ = 120^\circ$:
+**d)**
 
 $$
-180^\circ - 120^\circ = \boxed{60^\circ}
+\begin{aligned} 60^\circ + 60^\circ &= 120^\circ \\ 180^\circ - 120^\circ &= \boxed{60^\circ} \end{aligned}
 $$
 
 All three angles are $60^\circ$: an equilateral triangle.
@@ -324,22 +359,22 @@ An **isosceles** triangle has two equal sides, and the two **base angles** next 
 <details>
 <summary><b>Working</b></summary>
 
-**a)** The base angles share $180^\circ - 40^\circ = 140^\circ$:
+**a)** The base angles share:
 
 $$
-140^\circ\div2 = \boxed{70^\circ}
+\begin{aligned} 180^\circ - 40^\circ &= 140^\circ \\ 140^\circ\div2 &= \boxed{70^\circ} \end{aligned}
 $$
 
-**b)** The two base angles make $2\times65^\circ = 130^\circ$:
+**b)** The two base angles make:
 
 $$
-180^\circ - 130^\circ = \boxed{50^\circ}
+\begin{aligned} 2\times65^\circ &= 130^\circ \\ 180^\circ - 130^\circ &= \boxed{50^\circ} \end{aligned}
 $$
 
-**c)** The base angles share $180^\circ - 100^\circ = 80^\circ$:
+**c)** The base angles share:
 
 $$
-80^\circ\div2 = \boxed{40^\circ}
+\begin{aligned} 180^\circ - 100^\circ &= 80^\circ \\ 80^\circ\div2 &= \boxed{40^\circ} \end{aligned}
 $$
 
 **d)** The two base angles make $90^\circ$:
@@ -354,7 +389,9 @@ A right angle at the top: a right-angled isosceles triangle.
 
 ### 9. Exterior angle
 
-Extend one side of a triangle. The **exterior angle** outside the triangle equals the **sum of the two opposite inside angles**. The two opposite inside angles are given; find the exterior angle.
+- Extend one side of a triangle.
+- The **exterior angle** outside the triangle equals the **sum of the two opposite inside angles**.
+- The two opposite inside angles are given; find the exterior angle.
 
 **Examples:**
 
@@ -398,7 +435,9 @@ $$
 
 ### 10. Corresponding and alternate angles
 
-A line crossing two **parallel** lines makes matching angles (see the figure). **Corresponding** angles, in an **F** shape, are **equal**. **Alternate** angles, in a **Z** shape, are **equal**.
+- A line crossing two **parallel** lines makes matching angles (see the figure).
+- **Corresponding** angles, in an **F** shape, are **equal**.
+- **Alternate** angles, in a **Z** shape, are **equal**.
 
 **Examples:**
 
@@ -440,7 +479,8 @@ The crossing line is at right angles to both lines.
 
 ### 11. Co-interior angles
 
-**Co-interior** angles, in a **C** shape, sit between the parallel lines on the same side. They **add up to $180^\circ$**.
+- **Co-interior** angles, in a **C** shape, sit between the parallel lines on the same side.
+- They **add up to $180^\circ$**.
 
 **Examples:**
 
