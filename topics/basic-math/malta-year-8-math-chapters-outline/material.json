@@ -1,0 +1,163 @@
+{
+ "slug": "malta-year-8-math-chapters-outline",
+ "title": "Malta Year 8 Math — Chapters Outline",
+ "course": "Malta Year 8 Math",
+ "unit": "Outline",
+ "root": "chapters",
+ "question": "What are the nineteen chapters of Malta Year 8 Math, and which key equations does each chapter use?",
+ "intro": "**Section 1 — The nineteen chapters**, in the order they are covered. Chapters 1 to 3 have their own pages, each with many worked examples and a recap quiz.\n\n- Chapter 1: Directed Numbers\n- Chapter 2: Number Work\n- Chapter 3: Angles\n- Chapter 4: Fractions\n- Chapter 5: Decimals\n- Chapter 6: Percentages\n- Chapter 7: Ratio\n- Chapter 8: Algebra\n- Chapter 9: Sequences\n- Chapter 10: Circles\n- Chapter 11: Perimeter & Area\n- Chapter 12: Surface Area & Nets\n- Chapter 13: Graphs\n- Chapter 14: Statistics\n- Chapter 15: Probability\n- Chapter 16: Constructions\n- Chapter 17: Transformations\n- Chapter 18: Real-life Problems\n- Chapter 19: Logo\n\n**Section 2 — Key equations:** one card per chapter. Each card lists the equations and facts the chapter uses, with one quick example under **Show working**.",
+ "questions": [
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 1: Directed Numbers",
+   "prompt": "- Number line: \\(-5 < -2 < 0 < 3\\)\n- Adding: \\(-7 + 2 = -5\\) and \\(-3 + 8 = 5\\)\n- Subtracting past zero: \\(4 - 9 = -5\\)\n- Subtracting a negative: \\(6 - (-2) = 6 + 2 = 8\\)\n- Signs: \\((-3)\\times(-4) = 12\\), \\((-3)\\times4 = -12\\), \\(-20\\div5 = -4\\)\n\n**Try:** \\(-6 + 10 - 9\\)",
+   "steps": [
+    "\\[-6 + 10 - 9 = 4 - 9 = \\boxed{-5}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 2: Number Work",
+   "prompt": "- BIDMAS: \\(3 + 4\\times2 = 3 + 8 = 11\\)\n- Powers: \\(2^3 = 2\\times2\\times2 = 8\\)\n- Roots: \\(\\sqrt{49} = 7\\) and \\(\\sqrt[3]{27} = 3\\)\n- Prime factors: \\(24 = 2^3\\times3\\)\n- \\(\\text{HCF}(12, 18) = 6\\) and \\(\\text{LCM}(4, 6) = 12\\)\n- Rounding: \\(3.47 \\approx 3.5\\) (1 decimal place)\n\n**Try:** \\(20 - 3\\times4\\)",
+   "steps": [
+    "Multiply first:\n\n\\[20 - 3\\times4 = 20 - 12 = \\boxed{8}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 3: Angles",
+   "prompt": "- Straight line: \\(a + b = 180^\\circ\\)\n- Around a point: \\(a + b + c = 360^\\circ\\)\n- Vertically opposite angles are equal\n- Triangle: \\(a + b + c = 180^\\circ\\)\n- Exterior angle = sum of the two opposite inside angles\n- Parallel lines: corresponding and alternate angles are equal; co-interior angles add to \\(180^\\circ\\)\n\n**Try:** two angles on a straight line; one is \\(115^\\circ\\). Find the other.",
+   "steps": [
+    "\\[180^\\circ - 115^\\circ = \\boxed{65^\\circ}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 4: Fractions",
+   "prompt": "- Same denominator: \\(\\frac{2}{7} + \\frac{3}{7} = \\frac{5}{7}\\)\n- Common denominator: \\(\\frac{2}{3} + \\frac{1}{4} = \\frac{8}{12} + \\frac{3}{12} = \\frac{11}{12}\\)\n- Multiply: \\(\\frac{2}{3}\\times\\frac{3}{5} = \\frac{6}{15} = \\frac{2}{5}\\)\n- Divide: \\(\\frac{3}{4}\\div\\frac{1}{2} = \\frac{3}{4}\\times\\frac{2}{1} = \\frac{3}{2}\\)\n- Mixed number: \\(2\\tfrac{1}{3} = \\frac{7}{3}\\)\n- Fraction of an amount: \\(\\frac{3}{4}\\) of \\(20 = 15\\)\n\n**Try:** \\(\\frac{2}{5}\\) of €30",
+   "steps": [
+    "\\[30\\div5 = 6, \\qquad 6\\times2 = \\boxed{12}\\]\\n\\nSo \\(\\frac{2}{5}\\) of €30 is €12."
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 5: Decimals",
+   "prompt": "- Line up the decimal points: \\(4.5 + 0.38 = 4.88\\)\n- \\(\\times10\\) moves every digit one place left: \\(0.36\\times10 = 3.6\\)\n- Multiply: \\(0.2\\times0.3 = 0.06\\)\n- Fractions as decimals: \\(\\frac{1}{4} = 0.25\\) and \\(\\frac{1}{3} = 0.333\\ldots\\)\n- Rounding: \\(2.68 \\approx 2.7\\) (1 decimal place)\n\n**Try:** €3.75 + €1.40",
+   "steps": [
+    "\\[3.75 + 1.40 = \\boxed{5.15}\\]\\n\\nThe total is €5.15."
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 6: Percentages",
+   "prompt": "- \\(x\\%\\) of \\(A = \\frac{x}{100}\\times A\\)\n- \\(10\\%\\): divide by 10; \\(50\\%\\): halve\n- \\(25\\% = \\frac{1}{4} = 0.25\\)\n- Increase by \\(p\\%\\): new amount \\(= A\\times\\left(1 + \\frac{p}{100}\\right)\\)\n- Percentage change \\(= \\frac{\\text{change}}{\\text{original}}\\times100\\%\\)\n\n**Try:** \\(15\\%\\) of €40",
+   "steps": [
+    "\\[10\\% = 4, \\quad 5\\% = 2, \\quad 15\\% = \\boxed{6}\\]\\n\\nSo \\(15\\%\\) of €40 is €6."
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 7: Ratio",
+   "prompt": "- Simplify: \\(12 : 8 = 3 : 2\\)\n- Share \\(T\\) in the ratio \\(a : b\\): one part \\(= \\frac{T}{a + b}\\)\n- Unitary method: 3 for €6, so 1 for €2\n- Map scale \\(1 : 50\\,000\\): 1 cm on the map is 500 m\n\n**Try:** share €30 in the ratio \\(2 : 3\\)",
+   "steps": [
+    "\\(2 + 3 = 5\\) parts, one part \\(= 30\\div5 = 6\\):\n\n\\[2\\times6 = \\boxed{12}, \\qquad 3\\times6 = \\boxed{18}\\]\\n\\nThe shares are €12 and €18."
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 8: Algebra",
+   "prompt": "- Like terms: \\(3x + 2x = 5x\\)\n- Expand: \\(3(x + 4) = 3x + 12\\)\n- Substitute: if \\(x = 5\\), then \\(2x + 1 = 11\\)\n- Solve: \\(2x + 5 = 17 \\Rightarrow x = 6\\)\n- Unknowns on both sides: \\(5x - 3 = 2x + 9 \\Rightarrow x = 4\\)\n\n**Try:** solve \\(3x - 4 = 11\\)",
+   "steps": [
+    "\\[3x = 15 \\;\\Rightarrow\\; x = \\boxed{5}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 9: Sequences",
+   "prompt": "- Term-to-term rule: \\(5, 8, 11, 14, \\ldots\\) (add 3)\n- \\(n\\text{th}\\) term of that sequence: \\(3n + 2\\)\n- \\(n\\text{th}\\) term \\(= d\\,n + (\\text{first term} - d)\\), where \\(d\\) is the difference\n\n**Try:** the 10th term of \\(3n + 2\\)",
+   "steps": [
+    "\\[3\\times10 + 2 = \\boxed{32}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 10: Circles",
+   "prompt": "- Diameter \\(d = 2r\\)\n- Circumference \\(C = \\pi d = 2\\pi r\\)\n- Area \\(A = \\pi r^2\\)\n- \\(\\pi \\approx 3.14\\)\n\n**Try:** the circumference of a circle with radius 5 cm",
+   "steps": [
+    "\\[C = 2\\times\\pi\\times5 = 10\\pi \\approx \\boxed{31.4 \\text{ cm}}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 11: Perimeter & Area",
+   "prompt": "- Perimeter = all the sides added\n- Rectangle: \\(A = l\\times w\\)\n- Triangle: \\(A = \\frac{1}{2}bh\\)\n- Parallelogram: \\(A = bh\\)\n- Trapezium: \\(A = \\frac{1}{2}(a + b)h\\)\n\n**Try:** the area of a triangle with base 8 cm and height 5 cm",
+   "steps": [
+    "\\[A = \\tfrac{1}{2}\\times8\\times5 = \\boxed{20 \\text{ cm}^2}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 12: Surface Area & Nets",
+   "prompt": "- Cube with edge \\(a\\): \\(SA = 6a^2\\)\n- Cuboid: \\(SA = 2(lw + lh + wh)\\)\n- Cuboid volume: \\(V = lwh\\)\n- The net of a cuboid has 6 rectangles\n\n**Try:** the surface area of a cube with edges of 3 cm",
+   "steps": [
+    "\\[6\\times3^2 = 6\\times9 = \\boxed{54 \\text{ cm}^2}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 13: Graphs",
+   "prompt": "- A point \\((x, y)\\): across first, then up\n- Straight line: \\(y = mx + c\\)\n- Gradient \\(m = \\frac{\\text{rise}}{\\text{run}} = \\frac{y_2 - y_1}{x_2 - x_1}\\)\n- \\(c\\) is where the line crosses the \\(y\\)-axis\n\n**Try:** \\(y = 2x + 1\\) when \\(x = 3\\)",
+   "steps": [
+    "\\[y = 2\\times3 + 1 = \\boxed{7}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 14: Statistics",
+   "prompt": "- Mean \\(= \\frac{\\text{sum of the values}}{\\text{number of values}}\\)\n- Median: the middle value, once in order\n- Mode: the most common value\n- Range = largest − smallest\n- Pie chart angle \\(= \\frac{\\text{frequency}}{\\text{total}}\\times360^\\circ\\)\n\n**Try:** the mean of \\(4, 7, 7, 10\\)",
+   "steps": [
+    "\\[\\frac{4 + 7 + 7 + 10}{4} = \\frac{28}{4} = \\boxed{7}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 15: Probability",
+   "prompt": "- \\(P(\\text{event}) = \\frac{\\text{favourable outcomes}}{\\text{all outcomes}}\\)\n- \\(0 \\le P \\le 1\\)\n- \\(P(\\text{not } A) = 1 - P(A)\\)\n- The probabilities of all the outcomes add up to 1\n\n**Try:** the probability of an even number on a fair dice",
+   "steps": [
+    "Even numbers 2, 4, 6:\n\n\\[P = \\frac{3}{6} = \\boxed{\\frac{1}{2}}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 16: Constructions",
+   "prompt": "- Tools: ruler, compasses, protractor\n- A triangle from three sides: the two shorter sides together must be longer than the third (\\(a + b > c\\))\n- An angle bisector splits \\(\\theta\\) into two angles of \\(\\frac{\\theta}{2}\\)\n- A perpendicular bisector crosses a line at \\(90^\\circ\\) through its midpoint\n\n**Try:** can sides of 3 cm, 4 cm and 8 cm make a triangle?",
+   "steps": [
+    "\\[3 + 4 = 7 < 8 \\;\\Rightarrow\\; \\boxed{\\text{No}}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 17: Transformations",
+   "prompt": "- Reflect in the \\(y\\)-axis: \\((x, y) \\to (-x, y)\\)\n- Reflect in the \\(x\\)-axis: \\((x, y) \\to (x, -y)\\)\n- Rotate \\(180^\\circ\\) about the origin: \\((x, y) \\to (-x, -y)\\)\n- Translate by \\(\\binom{a}{b}\\): \\((x, y) \\to (x + a, y + b)\\)\n\n**Try:** translate \\((2, 5)\\) by \\(\\binom{3}{-4}\\)",
+   "steps": [
+    "\\[(2 + 3,\\ 5 - 4) = \\boxed{(5, 1)}\\]"
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 18: Real-life Problems",
+   "prompt": "- Change = money paid − cost\n- Unit price = cost ÷ quantity (the best buy has the lower unit price)\n- Speed \\(= \\frac{\\text{distance}}{\\text{time}}\\)\n- Currency: euros \\(\\times\\) exchange rate\n- Time: 09:45 to 11:20 is 1 h 35 min\n\n**Try:** two pastizzi and a drink cost €4.65; you pay with a €10 note. Find the change.",
+   "steps": [
+    "\\[10 - 4.65 = \\boxed{5.35}\\]\\n\\nThe change is €5.35."
+   ]
+  },
+  {
+   "group": "Section 2 — Key Equations",
+   "title": "Chapter 19: Logo",
+   "prompt": "- `FD 100` moves forward 100 steps; `BK 50` moves back\n- `RT 90` and `LT 90` turn right or left by \\(90^\\circ\\)\n- Square: `REPEAT 4 [FD 50 RT 90]`\n- Regular polygon with \\(n\\) sides: turn \\(\\frac{360^\\circ}{n}\\) at each corner\n- The turns of a closed shape add up to \\(360^\\circ\\)\n\n**Try:** write the commands for a regular hexagon with sides of 50",
+   "steps": [
+    "Turn \\(360^\\circ\\div6 = 60^\\circ\\) at each corner:\n\n\\[\\boxed{\\texttt{REPEAT 6 [FD 50 RT 60]}}\\]"
+   ]
+  }
+ ]
+}

@@ -222,6 +222,10 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .numeric.correct input { border-color: var(--ok); background: var(--ok-soft); }
 .numeric.wrong input { border-color: var(--bad); background: var(--bad-soft); }
 .numeric input:disabled { opacity: 1; color: var(--ink); -webkit-text-fill-color: var(--ink); }
+.numrow { display: flex; gap: 8px; }
+.numrow input { flex: 1; min-width: 0; }
+.sign { flex: none; width: 56px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--soft); color: var(--ink); font: 650 24px/1 inherit; }
+.sign:disabled { opacity: .5; }
 
 #fb { scroll-margin-top: 110px; scroll-margin-bottom: 110px; }
 .feedback { margin-top: 18px; padding: 14px; border-radius: 14px; }
@@ -361,6 +365,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         <span class="u">Track 3 · Year 7 and Year 8</span>
         <span class="t">Malta Year 7, Year 8</span>
         <span class="m">2 quizzes · 3 material pages</span></a>
+<a class="quiz" href="#chapters" data-root="chapters">
+        <span class="u">Track 3 · Chapter 1 to Chapter 19</span>
+        <span class="t">Malta Year 8 Chapters</span>
+        <span class="m">0 quizzes · 1 material page</span></a>
 </div>
 </div>
 <div id="view-ap" data-root="ap" hidden>
@@ -453,12 +461,34 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 </div>
 </div>
 </div>
+<div id="view-chapters" data-root="chapters" hidden>
+<div class="topbar"><div class="row"><a class="back" href="#">‹ Basic Math</a></div></div>
+<section class="card">
+<p class="eyebrow">Basic Math</p>
+<h1>Malta Year 8 Chapters</h1>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" id="tab-chapters-quizzes" aria-controls="panel-chapters-quizzes" data-root="chapters" data-tab="quizzes">Quizzes</button>
+<button class="tab" role="tab" id="tab-chapters-material" aria-controls="panel-chapters-material" data-root="chapters" data-tab="material">Material</button>
+</div>
+</section>
+<div id="panel-chapters-quizzes" role="tabpanel" aria-labelledby="tab-chapters-quizzes">
+
+</div>
+<div id="panel-chapters-material" role="tabpanel" aria-labelledby="tab-chapters-material" hidden>
+<div class="quizlist first">
+<a class="quiz" href="malta-year-8-math-chapters-outline/material.html" data-slug="malta-year-8-math-chapters-outline">
+        <span class="u">Outline</span>
+        <span class="t">Chapters Outline</span>
+        <span class="m">19 questions<span class="lastscore"></span></span></a>
+</div>
+</div>
+</div>
 <p class="foot">Wei-Che Hung</p>
 </main>
 <script>
 (() => {
   // #ap, #malta → that root's Quizzes; #ap/material, #malta/material → its Material; old #material → AP Material.
-  const ROOTS = ["ap","malta"];
+  const ROOTS = ["ap","malta","chapters"];
   const route = () => {
     const h = location.hash.slice(1);
     let [root, tab] = h === 'material' ? ['ap', 'material'] : h.split('/');
