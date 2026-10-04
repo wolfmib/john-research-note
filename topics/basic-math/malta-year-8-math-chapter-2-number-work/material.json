@@ -5,7 +5,7 @@
  "unit": "Chapter 2",
  "root": "chapters",
  "question": "How do you round, use BIDMAS, find factors, multiples, primes, the HCF and the LCM, and work with squares, cubes and roots?",
- "intro": "Chapter 2 builds the number skills that every later chapter uses: place value and rounding (2.1), the order of operations, BIDMAS (2.2), factors, multiples and primes (2.3), the HCF and the LCM (2.4), and squares, cubes and roots (2.5). Labels 2.1 to 2.5 name the parts of this page. Every card has several examples of the same kind — try each one, then tap **Show working**.\n\n**By the end of the chapter:** round numbers, work out calculations in the right order, find factors, primes, the HCF and the LCM, and use squares, cubes and their roots.",
+ "intro": "Chapter 2 builds the number skills that every later chapter uses.\n\n**Chapter 2 has five parts** (the labels name the parts of this page):\n\n- 2.1 Place value and rounding\n- 2.2 BIDMAS: the order of operations\n- 2.3 Factors, multiples and primes\n- 2.4 HCF and LCM\n- 2.5 Squares, cubes and roots\n\n**By the end of the chapter:**\n\n- round numbers\n- work out calculations in the right order\n- find factors, primes, the HCF and the LCM\n- use squares, cubes and their roots",
  "link": [
   "Recap quiz ›",
   "../malta-year-8-math-chapter-2-number-work-recap/quiz.html"
@@ -14,7 +14,7 @@
   {
    "group": "2.1 Place Value and Rounding",
    "title": "Value of a digit",
-   "prompt": "Each place is worth **10 times** the place on its right: … thousands, hundreds, tens, units **.** tenths, hundredths. The value of a digit depends on its place.\n\n**Examples:**\n\n- **a)** the 7 in \\(4\\,725\\)\n- **b)** the 7 in \\(73\\,018\\)\n- **c)** the 7 in \\(12.7\\)\n- **d)** the 7 in \\(3.07\\)",
+   "prompt": "- Each place is worth **10 times** the place on its right: … thousands, hundreds, tens, units **.** tenths, hundredths.\n- The value of a digit depends on its place.\n\n**Examples:**\n\n- **a)** the 7 in \\(4\\,725\\)\n- **b)** the 7 in \\(73\\,018\\)\n- **c)** the 7 in \\(12.7\\)\n- **d)** the 7 in \\(3.07\\)",
    "steps": [
     "**a)** The 7 is in the hundreds place:\n\n\\[\\boxed{700}\\]",
     "**b)** The 7 is in the ten-thousands place:\n\n\\[\\boxed{70\\,000}\\]",
@@ -47,12 +47,12 @@
   {
    "group": "2.2 BIDMAS",
    "title": "× and ÷ before + and −",
-   "prompt": "**BIDMAS** gives the order: **B**rackets, **I**ndices (powers), **D**ivision and **M**ultiplication, then **A**ddition and **S**ubtraction. So multiply or divide **before** you add or subtract.\n\n**Examples:**\n\n- **a)** \\(5 + 3\\times4\\)\n- **b)** \\(20 - 12\\div4\\)\n- **c)** \\(6\\times2 + 8\\div2\\)\n- **d)** \\(30 - 4\\times5 + 1\\)",
+   "prompt": "- **BIDMAS** gives the order: **B**rackets, **I**ndices (powers), **D**ivision and **M**ultiplication, then **A**ddition and **S**ubtraction.\n- So multiply or divide **before** you add or subtract.\n\n**Examples:**\n\n- **a)** \\(5 + 3\\times4\\)\n- **b)** \\(20 - 12\\div4\\)\n- **c)** \\(6\\times2 + 8\\div2\\)\n- **d)** \\(30 - 4\\times5 + 1\\)",
    "steps": [
-    "**a)**\n\n\\[5 + 3\\times4 = 5 + 12 = \\boxed{17}\\]",
-    "**b)**\n\n\\[20 - 12\\div4 = 20 - 3 = \\boxed{17}\\]",
-    "**c)**\n\n\\[6\\times2 + 8\\div2 = 12 + 4 = \\boxed{16}\\]",
-    "**d)**\n\n\\[30 - 4\\times5 + 1 = 30 - 20 + 1 = \\boxed{11}\\]"
+    "**a)**\n\n\\[\\begin{aligned} 5 + 3\\times4 &= 5 + 12 \\\\ &= \\boxed{17} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 20 - 12\\div4 &= 20 - 3 \\\\ &= \\boxed{17} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 6\\times2 + 8\\div2 &= 12 + 4 \\\\ &= \\boxed{16} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 30 - 4\\times5 + 1 &= 30 - 20 + 1 \\\\ &= \\boxed{11} \\end{aligned}\\]"
    ]
   },
   {
@@ -60,10 +60,10 @@
    "title": "Brackets first",
    "prompt": "Work out the **brackets first** — they change the order.\n\n**Examples:**\n\n- **a)** \\((5 + 3)\\times4\\)\n- **b)** \\(20\\div(2 + 3)\\)\n- **c)** \\(3\\times(10 - 4)\\)\n- **d)** \\((8 - 2)\\times(1 + 4)\\)",
    "steps": [
-    "**a)**\n\n\\[(5 + 3)\\times4 = 8\\times4 = \\boxed{32}\\]",
-    "**b)**\n\n\\[20\\div(2 + 3) = 20\\div5 = \\boxed{4}\\]",
-    "**c)**\n\n\\[3\\times(10 - 4) = 3\\times6 = \\boxed{18}\\]",
-    "**d)**\n\n\\[(8 - 2)\\times(1 + 4) = 6\\times5 = \\boxed{30}\\]"
+    "**a)**\n\n\\[\\begin{aligned} (5 + 3)\\times4 &= 8\\times4 \\\\ &= \\boxed{32} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 20\\div(2 + 3) &= 20\\div5 \\\\ &= \\boxed{4} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 3\\times(10 - 4) &= 3\\times6 \\\\ &= \\boxed{18} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} (8 - 2)\\times(1 + 4) &= 6\\times5 \\\\ &= \\boxed{30} \\end{aligned}\\]"
    ]
   },
   {
@@ -71,16 +71,16 @@
    "title": "Powers before × and ÷",
    "prompt": "**Indices** (powers such as \\(3^2\\)) come straight after brackets.\n\n**Examples:**\n\n- **a)** \\(2\\times3^2\\)\n- **b)** \\(4^2 - 6\\)\n- **c)** \\((1 + 2)^2\\)\n- **d)** \\(10 + 2^3\\div4\\)",
    "steps": [
-    "**a)**\n\n\\[2\\times3^2 = 2\\times9 = \\boxed{18}\\]",
-    "**b)**\n\n\\[4^2 - 6 = 16 - 6 = \\boxed{10}\\]",
-    "**c)** Bracket first, then the power:\n\n\\[(1 + 2)^2 = 3^2 = \\boxed{9}\\]",
-    "**d)**\n\n\\[10 + 2^3\\div4 = 10 + 8\\div4 = 10 + 2 = \\boxed{12}\\]"
+    "**a)**\n\n\\[\\begin{aligned} 2\\times3^2 &= 2\\times9 \\\\ &= \\boxed{18} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 4^2 - 6 &= 16 - 6 \\\\ &= \\boxed{10} \\end{aligned}\\]",
+    "**c)** Bracket first, then the power:\n\n\\[\\begin{aligned} (1 + 2)^2 &= 3^2 \\\\ &= \\boxed{9} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 10 + 2^3\\div4 &= 10 + 8\\div4 \\\\ &= 10 + 2 \\\\ &= \\boxed{12} \\end{aligned}\\]"
    ]
   },
   {
    "group": "2.3 Factors, Multiples and Primes",
    "title": "Factors",
-   "prompt": "A **factor** divides a number exactly, with no remainder. Find factors in **pairs** that multiply to the number, and stop when the pairs meet.\n\n**Examples:**\n\n- **a)** the factors of 18\n- **b)** the factors of 20\n- **c)** the factors of 36\n- **d)** the factors of 13",
+   "prompt": "- A **factor** divides a number exactly, with no remainder.\n- Find factors in **pairs** that multiply to the number, and stop when the pairs meet.\n\n**Examples:**\n\n- **a)** the factors of 18\n- **b)** the factors of 20\n- **c)** the factors of 36\n- **d)** the factors of 13",
    "steps": [
     "**a)** Pairs \\(1\\times18,\\ 2\\times9,\\ 3\\times6\\):\n\n\\[\\boxed{1,\\ 2,\\ 3,\\ 6,\\ 9,\\ 18}\\]",
     "**b)** Pairs \\(1\\times20,\\ 2\\times10,\\ 4\\times5\\):\n\n\\[\\boxed{1,\\ 2,\\ 4,\\ 5,\\ 10,\\ 20}\\]",
@@ -91,7 +91,7 @@
   {
    "group": "2.3 Factors, Multiples and Primes",
    "title": "Multiples",
-   "prompt": "The **multiples** of a number are its times table: the multiples of 4 are 4, 8, 12, 16, … A number is a multiple of 7 when 7 divides it exactly.\n\n**Examples:**\n\n- **a)** the first five multiples of 6\n- **b)** the first five multiples of 9\n- **c)** Is 84 a multiple of 7?\n- **d)** Is 50 a multiple of 4?",
+   "prompt": "- The **multiples** of a number are its times table: the multiples of 4 are 4, 8, 12, 16 and so on.\n- A number is a multiple of 7 when 7 divides it exactly.\n\n**Examples:**\n\n- **a)** the first five multiples of 6\n- **b)** the first five multiples of 9\n- **c)** Is 84 a multiple of 7?\n- **d)** Is 50 a multiple of 4?",
    "steps": [
     "**a)**\n\n\\[\\boxed{6,\\ 12,\\ 18,\\ 24,\\ 30}\\]",
     "**b)**\n\n\\[\\boxed{9,\\ 18,\\ 27,\\ 36,\\ 45}\\]",
@@ -102,7 +102,7 @@
   {
    "group": "2.3 Factors, Multiples and Primes",
    "title": "Prime numbers",
-   "prompt": "A **prime number** has **exactly two factors**: 1 and itself. The primes below 20 are \\(2, 3, 5, 7, 11, 13, 17, 19\\). The number **1 is not prime** — it has only one factor.\n\n**Examples:**\n\n- **a)** Is 17 prime?\n- **b)** Is 21 prime?\n- **c)** Is 29 prime?\n- **d)** Is 1 prime?",
+   "prompt": "- A **prime number** has **exactly two factors**: 1 and itself.\n- The primes below 20 are \\(2, 3, 5, 7, 11, 13, 17, 19\\).\n- The number **1 is not prime** — it has only one factor.\n\n**Examples:**\n\n- **a)** Is 17 prime?\n- **b)** Is 21 prime?\n- **c)** Is 29 prime?\n- **d)** Is 1 prime?",
    "steps": [
     "**a)** Only \\(1\\times17\\):\n\n\\[\\boxed{17 \\text{ is prime}}\\]",
     "**b)** \\(21 = 3\\times7\\), so it has more than two factors:\n\n\\[\\boxed{21 \\text{ is not prime}}\\]",
@@ -113,34 +113,34 @@
   {
    "group": "2.3 Factors, Multiples and Primes",
    "title": "Prime factor trees",
-   "prompt": "Split the number into two factors, and keep splitting until every branch ends in a **prime**. Then write the number as a product of primes, using powers for repeats: \\(2\\times2\\times2 = 2^3\\).\n\n**Examples:**\n\n- **a)** \\(12\\)\n- **b)** \\(30\\)\n- **c)** \\(40\\)\n- **d)** \\(45\\)",
+   "prompt": "- Split the number into two factors, and keep splitting until every branch ends in a **prime**.\n- Then write the number as a product of primes, using powers for repeats: \\(2\\times2\\times2 = 2^3\\).\n\n**Examples:**\n\n- **a)** \\(12\\)\n- **b)** \\(30\\)\n- **c)** \\(40\\)\n- **d)** \\(45\\)",
    "steps": [
-    "**a)**\n\n\\[12 = 2\\times6 = 2\\times2\\times3 = \\boxed{2^2\\times3}\\]",
-    "**b)**\n\n\\[30 = 2\\times15 = \\boxed{2\\times3\\times5}\\]",
-    "**c)**\n\n\\[40 = 2\\times20 = 2\\times2\\times10 = \\boxed{2^3\\times5}\\]",
-    "**d)**\n\n\\[45 = 5\\times9 = \\boxed{3^2\\times5}\\]"
+    "**a)**\n\n\\[\\begin{aligned} 12 &= 2\\times6 \\\\ &= 2\\times2\\times3 \\\\ &= \\boxed{2^2\\times3} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 30 &= 2\\times15 \\\\ &= \\boxed{2\\times3\\times5} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 40 &= 2\\times20 \\\\ &= 2\\times2\\times10 \\\\ &= \\boxed{2^3\\times5} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 45 &= 5\\times9 \\\\ &= \\boxed{3^2\\times5} \\end{aligned}\\]"
    ]
   },
   {
    "group": "2.4 HCF and LCM",
    "title": "Highest common factor (HCF)",
-   "prompt": "The **HCF** is the **biggest** number that divides **both** numbers exactly. List the factors of each, then pick the biggest one that is in both lists.\n\n**Examples:**\n\n- **a)** HCF of 12 and 18\n- **b)** HCF of 8 and 20\n- **c)** HCF of 15 and 25\n- **d)** HCF of 14 and 21",
+   "prompt": "- The **HCF** is the **biggest** number that divides **both** numbers exactly.\n- List the factors of each, then pick the biggest one that is in both lists.\n\n**Examples:**\n\n- **a)** HCF of 12 and 18\n- **b)** HCF of 8 and 20\n- **c)** HCF of 15 and 25\n- **d)** HCF of 14 and 21",
    "steps": [
-    "**a)** Factors of 12: 1, 2, 3, 4, **6**, 12. Factors of 18: 1, 2, 3, **6**, 9, 18.\n\n\\[\\text{HCF} = \\boxed{6}\\]",
-    "**b)** Factors of 8: 1, 2, **4**, 8. Factors of 20: 1, 2, **4**, 5, 10, 20.\n\n\\[\\text{HCF} = \\boxed{4}\\]",
-    "**c)** Factors of 15: 1, 3, **5**, 15. Factors of 25: 1, **5**, 25.\n\n\\[\\text{HCF} = \\boxed{5}\\]",
-    "**d)** Factors of 14: 1, 2, **7**, 14. Factors of 21: 1, 3, **7**, 21.\n\n\\[\\text{HCF} = \\boxed{7}\\]"
+    "**a)**\n\n- Factors of 12: 1, 2, 3, 4, **6**, 12.\n- Factors of 18: 1, 2, 3, **6**, 9, 18.\n\n\\[\\text{HCF} = \\boxed{6}\\]",
+    "**b)**\n\n- Factors of 8: 1, 2, **4**, 8.\n- Factors of 20: 1, 2, **4**, 5, 10, 20.\n\n\\[\\text{HCF} = \\boxed{4}\\]",
+    "**c)**\n\n- Factors of 15: 1, 3, **5**, 15.\n- Factors of 25: 1, **5**, 25.\n\n\\[\\text{HCF} = \\boxed{5}\\]",
+    "**d)**\n\n- Factors of 14: 1, 2, **7**, 14.\n- Factors of 21: 1, 3, **7**, 21.\n\n\\[\\text{HCF} = \\boxed{7}\\]"
    ]
   },
   {
    "group": "2.4 HCF and LCM",
    "title": "Lowest common multiple (LCM)",
-   "prompt": "The **LCM** is the **smallest** number that is in **both** times tables. List the multiples of each number until one appears in both lists.\n\n**Examples:**\n\n- **a)** LCM of 4 and 6\n- **b)** LCM of 3 and 5\n- **c)** LCM of 6 and 8\n- **d)** LCM of 10 and 15",
+   "prompt": "- The **LCM** is the **smallest** number that is in **both** times tables.\n- List the multiples of each number until one appears in both lists.\n\n**Examples:**\n\n- **a)** LCM of 4 and 6\n- **b)** LCM of 3 and 5\n- **c)** LCM of 6 and 8\n- **d)** LCM of 10 and 15",
    "steps": [
-    "**a)** Multiples of 4: 4, 8, **12**. Multiples of 6: 6, **12**.\n\n\\[\\text{LCM} = \\boxed{12}\\]",
-    "**b)** Multiples of 3: 3, 6, 9, 12, **15**. Multiples of 5: 5, 10, **15**.\n\n\\[\\text{LCM} = \\boxed{15}\\]",
-    "**c)** Multiples of 6: 6, 12, 18, **24**. Multiples of 8: 8, 16, **24**.\n\n\\[\\text{LCM} = \\boxed{24}\\]",
-    "**d)** Multiples of 10: 10, 20, **30**. Multiples of 15: 15, **30**.\n\n\\[\\text{LCM} = \\boxed{30}\\]"
+    "**a)**\n\n- Multiples of 4: 4, 8, **12**.\n- Multiples of 6: 6, **12**.\n\n\\[\\text{LCM} = \\boxed{12}\\]",
+    "**b)**\n\n- Multiples of 3: 3, 6, 9, 12, **15**.\n- Multiples of 5: 5, 10, **15**.\n\n\\[\\text{LCM} = \\boxed{15}\\]",
+    "**c)**\n\n- Multiples of 6: 6, 12, 18, **24**.\n- Multiples of 8: 8, 16, **24**.\n\n\\[\\text{LCM} = \\boxed{24}\\]",
+    "**d)**\n\n- Multiples of 10: 10, 20, **30**.\n- Multiples of 15: 15, **30**.\n\n\\[\\text{LCM} = \\boxed{30}\\]"
    ]
   },
   {
@@ -157,34 +157,34 @@
   {
    "group": "2.5 Squares, Cubes and Roots",
    "title": "Square numbers",
-   "prompt": "A **square number** is a number times itself: \\(n^2 = n\\times n\\). The first ten are 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.\n\n**Examples:**\n\n- **a)** \\(6^2\\)\n- **b)** \\(9^2\\)\n- **c)** \\(11^2\\)\n- **d)** \\(15^2\\)",
+   "prompt": "- A **square number** is a number times itself: \\(n^2 = n\\times n\\).\n- The first ten are 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.\n\n**Examples:**\n\n- **a)** \\(6^2\\)\n- **b)** \\(9^2\\)\n- **c)** \\(11^2\\)\n- **d)** \\(15^2\\)",
    "steps": [
-    "**a)**\n\n\\[6^2 = 6\\times6 = \\boxed{36}\\]\n\nNot \\(6\\times2 = 12\\).",
-    "**b)**\n\n\\[9^2 = 9\\times9 = \\boxed{81}\\]",
-    "**c)**\n\n\\[11^2 = 11\\times11 = \\boxed{121}\\]",
-    "**d)**\n\n\\[15^2 = 15\\times15 = \\boxed{225}\\]"
+    "**a)**\n\n\\[\\begin{aligned} 6^2 &= 6\\times6 \\\\ &= \\boxed{36} \\end{aligned}\\]\n\nNot \\(6\\times2 = 12\\).",
+    "**b)**\n\n\\[\\begin{aligned} 9^2 &= 9\\times9 \\\\ &= \\boxed{81} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 11^2 &= 11\\times11 \\\\ &= \\boxed{121} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 15^2 &= 15\\times15 \\\\ &= \\boxed{225} \\end{aligned}\\]"
    ]
   },
   {
    "group": "2.5 Squares, Cubes and Roots",
    "title": "Square roots",
-   "prompt": "The **square root** \\(\\sqrt{\\ }\\) undoes squaring: \\(\\sqrt{25} = 5\\) because \\(5^2 = 25\\). Ask: *which number times itself makes this?*\n\n**Examples:**\n\n- **a)** \\(\\sqrt{64}\\)\n- **b)** \\(\\sqrt{100}\\)\n- **c)** \\(\\sqrt{144}\\)\n- **d)** \\(\\sqrt{49}\\)",
+   "prompt": "- The **square root** \\(\\sqrt{\\ }\\) undoes squaring: \\(\\sqrt{25} = 5\\) because \\(5^2 = 25\\).\n- Ask: *which number times itself makes this?*\n\n**Examples:**\n\n- **a)** \\(\\sqrt{64}\\)\n- **b)** \\(\\sqrt{100}\\)\n- **c)** \\(\\sqrt{144}\\)\n- **d)** \\(\\sqrt{49}\\)",
    "steps": [
-    "**a)** \\(8\\times8 = 64\\):\n\n\\[\\sqrt{64} = \\boxed{8}\\]",
-    "**b)** \\(10\\times10 = 100\\):\n\n\\[\\sqrt{100} = \\boxed{10}\\]",
-    "**c)** \\(12\\times12 = 144\\):\n\n\\[\\sqrt{144} = \\boxed{12}\\]",
-    "**d)** \\(7\\times7 = 49\\):\n\n\\[\\sqrt{49} = \\boxed{7}\\]"
+    "**a)**\n\n\\[\\begin{aligned} 8\\times8 &= 64 \\\\ \\sqrt{64} &= \\boxed{8} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 10\\times10 &= 100 \\\\ \\sqrt{100} &= \\boxed{10} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 12\\times12 &= 144 \\\\ \\sqrt{144} &= \\boxed{12} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 7\\times7 &= 49 \\\\ \\sqrt{49} &= \\boxed{7} \\end{aligned}\\]"
    ]
   },
   {
    "group": "2.5 Squares, Cubes and Roots",
    "title": "Cubes and cube roots",
-   "prompt": "A **cube** uses a number three times: \\(n^3 = n\\times n\\times n\\). The **cube root** \\(\\sqrt[3]{\\ }\\) undoes it: \\(\\sqrt[3]{8} = 2\\).\n\n**Examples:**\n\n- **a)** \\(2^3\\)\n- **b)** \\(4^3\\)\n- **c)** \\(\\sqrt[3]{27}\\)\n- **d)** \\(\\sqrt[3]{125}\\)",
+   "prompt": "- A **cube** uses a number three times: \\(n^3 = n\\times n\\times n\\).\n- The **cube root** \\(\\sqrt[3]{\\ }\\) undoes it: \\(\\sqrt[3]{8} = 2\\).\n\n**Examples:**\n\n- **a)** \\(2^3\\)\n- **b)** \\(4^3\\)\n- **c)** \\(\\sqrt[3]{27}\\)\n- **d)** \\(\\sqrt[3]{125}\\)",
    "steps": [
-    "**a)**\n\n\\[2^3 = 2\\times2\\times2 = \\boxed{8}\\]",
-    "**b)**\n\n\\[4^3 = 4\\times4\\times4 = \\boxed{64}\\]",
-    "**c)** \\(3\\times3\\times3 = 27\\):\n\n\\[\\sqrt[3]{27} = \\boxed{3}\\]",
-    "**d)** \\(5\\times5\\times5 = 125\\):\n\n\\[\\sqrt[3]{125} = \\boxed{5}\\]"
+    "**a)**\n\n\\[\\begin{aligned} 2^3 &= 2\\times2\\times2 \\\\ &= \\boxed{8} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 4^3 &= 4\\times4\\times4 \\\\ &= \\boxed{64} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 3\\times3\\times3 &= 27 \\\\ \\sqrt[3]{27} &= \\boxed{3} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 5\\times5\\times5 &= 125 \\\\ \\sqrt[3]{125} &= \\boxed{5} \\end{aligned}\\]"
    ]
   },
   {
@@ -192,10 +192,10 @@
    "title": "Powers",
    "prompt": "In \\(3^4\\) the **base** 3 is multiplied by itself, and the **power** 4 says how many threes: \\(3^4 = 3\\times3\\times3\\times3\\).\n\n**Examples:**\n\n- **a)** \\(3^4\\)\n- **b)** \\(10^3\\)\n- **c)** \\(2^5\\)\n- **d)** \\(5^2\\times2\\)",
    "steps": [
-    "**a)**\n\n\\[3^4 = 3\\times3\\times3\\times3 = \\boxed{81}\\]",
-    "**b)**\n\n\\[10^3 = 10\\times10\\times10 = \\boxed{1000}\\]",
-    "**c)**\n\n\\[2^5 = 2\\times2\\times2\\times2\\times2 = \\boxed{32}\\]",
-    "**d)** Power first:\n\n\\[5^2\\times2 = 25\\times2 = \\boxed{50}\\]"
+    "**a)**\n\n\\[\\begin{aligned} 3^4 &= 3\\times3\\times3\\times3 \\\\ &= \\boxed{81} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 10^3 &= 10\\times10\\times10 \\\\ &= \\boxed{1000} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 2^5 &= 2\\times2\\times2\\times2\\times2 \\\\ &= \\boxed{32} \\end{aligned}\\]",
+    "**d)** Power first:\n\n\\[\\begin{aligned} 5^2\\times2 &= 25\\times2 \\\\ &= \\boxed{50} \\end{aligned}\\]"
    ]
   }
  ]

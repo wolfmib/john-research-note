@@ -10,15 +10,29 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math Chapter 2 — Number Work
 
-Chapter 2 builds the number skills that every later chapter uses: place value and rounding (2.1), the order of operations, BIDMAS (2.2), factors, multiples and primes (2.3), the HCF and the LCM (2.4), and squares, cubes and roots (2.5). Labels 2.1 to 2.5 name the parts of this page. Every card has several examples of the same kind — try each one, then tap **Show working**.
+Chapter 2 builds the number skills that every later chapter uses.
 
-**By the end of the chapter:** round numbers, work out calculations in the right order, find factors, primes, the HCF and the LCM, and use squares, cubes and their roots.
+**Chapter 2 has five parts** (the labels name the parts of this page):
+
+- 2.1 Place value and rounding
+- 2.2 BIDMAS: the order of operations
+- 2.3 Factors, multiples and primes
+- 2.4 HCF and LCM
+- 2.5 Squares, cubes and roots
+
+**By the end of the chapter:**
+
+- round numbers
+- work out calculations in the right order
+- find factors, primes, the HCF and the LCM
+- use squares, cubes and their roots
 
 ## 2.1 Place Value and Rounding
 
 ### 1. Value of a digit
 
-Each place is worth **10 times** the place on its right: … thousands, hundreds, tens, units **.** tenths, hundredths. The value of a digit depends on its place.
+- Each place is worth **10 times** the place on its right: … thousands, hundreds, tens, units **.** tenths, hundredths.
+- The value of a digit depends on its place.
 
 **Examples:**
 
@@ -140,7 +154,8 @@ $$
 
 ### 4. × and ÷ before + and −
 
-**BIDMAS** gives the order: **B**rackets, **I**ndices (powers), **D**ivision and **M**ultiplication, then **A**ddition and **S**ubtraction. So multiply or divide **before** you add or subtract.
+- **BIDMAS** gives the order: **B**rackets, **I**ndices (powers), **D**ivision and **M**ultiplication, then **A**ddition and **S**ubtraction.
+- So multiply or divide **before** you add or subtract.
 
 **Examples:**
 
@@ -155,25 +170,25 @@ $$
 **a)**
 
 $$
-5 + 3\times4 = 5 + 12 = \boxed{17}
+\begin{aligned} 5 + 3\times4 &= 5 + 12 \\ &= \boxed{17} \end{aligned}
 $$
 
 **b)**
 
 $$
-20 - 12\div4 = 20 - 3 = \boxed{17}
+\begin{aligned} 20 - 12\div4 &= 20 - 3 \\ &= \boxed{17} \end{aligned}
 $$
 
 **c)**
 
 $$
-6\times2 + 8\div2 = 12 + 4 = \boxed{16}
+\begin{aligned} 6\times2 + 8\div2 &= 12 + 4 \\ &= \boxed{16} \end{aligned}
 $$
 
 **d)**
 
 $$
-30 - 4\times5 + 1 = 30 - 20 + 1 = \boxed{11}
+\begin{aligned} 30 - 4\times5 + 1 &= 30 - 20 + 1 \\ &= \boxed{11} \end{aligned}
 $$
 
 </details>
@@ -195,25 +210,25 @@ Work out the **brackets first** — they change the order.
 **a)**
 
 $$
-(5 + 3)\times4 = 8\times4 = \boxed{32}
+\begin{aligned} (5 + 3)\times4 &= 8\times4 \\ &= \boxed{32} \end{aligned}
 $$
 
 **b)**
 
 $$
-20\div(2 + 3) = 20\div5 = \boxed{4}
+\begin{aligned} 20\div(2 + 3) &= 20\div5 \\ &= \boxed{4} \end{aligned}
 $$
 
 **c)**
 
 $$
-3\times(10 - 4) = 3\times6 = \boxed{18}
+\begin{aligned} 3\times(10 - 4) &= 3\times6 \\ &= \boxed{18} \end{aligned}
 $$
 
 **d)**
 
 $$
-(8 - 2)\times(1 + 4) = 6\times5 = \boxed{30}
+\begin{aligned} (8 - 2)\times(1 + 4) &= 6\times5 \\ &= \boxed{30} \end{aligned}
 $$
 
 </details>
@@ -235,25 +250,25 @@ $$
 **a)**
 
 $$
-2\times3^2 = 2\times9 = \boxed{18}
+\begin{aligned} 2\times3^2 &= 2\times9 \\ &= \boxed{18} \end{aligned}
 $$
 
 **b)**
 
 $$
-4^2 - 6 = 16 - 6 = \boxed{10}
+\begin{aligned} 4^2 - 6 &= 16 - 6 \\ &= \boxed{10} \end{aligned}
 $$
 
 **c)** Bracket first, then the power:
 
 $$
-(1 + 2)^2 = 3^2 = \boxed{9}
+\begin{aligned} (1 + 2)^2 &= 3^2 \\ &= \boxed{9} \end{aligned}
 $$
 
 **d)**
 
 $$
-10 + 2^3\div4 = 10 + 8\div4 = 10 + 2 = \boxed{12}
+\begin{aligned} 10 + 2^3\div4 &= 10 + 8\div4 \\ &= 10 + 2 \\ &= \boxed{12} \end{aligned}
 $$
 
 </details>
@@ -262,7 +277,8 @@ $$
 
 ### 7. Factors
 
-A **factor** divides a number exactly, with no remainder. Find factors in **pairs** that multiply to the number, and stop when the pairs meet.
+- A **factor** divides a number exactly, with no remainder.
+- Find factors in **pairs** that multiply to the number, and stop when the pairs meet.
 
 **Examples:**
 
@@ -304,7 +320,8 @@ $$
 
 ### 8. Multiples
 
-The **multiples** of a number are its times table: the multiples of 4 are 4, 8, 12, 16, … A number is a multiple of 7 when 7 divides it exactly.
+- The **multiples** of a number are its times table: the multiples of 4 are 4, 8, 12, 16 and so on.
+- A number is a multiple of 7 when 7 divides it exactly.
 
 **Examples:**
 
@@ -344,7 +361,9 @@ $$
 
 ### 9. Prime numbers
 
-A **prime number** has **exactly two factors**: 1 and itself. The primes below 20 are $2, 3, 5, 7, 11, 13, 17, 19$. The number **1 is not prime** — it has only one factor.
+- A **prime number** has **exactly two factors**: 1 and itself.
+- The primes below 20 are $2, 3, 5, 7, 11, 13, 17, 19$.
+- The number **1 is not prime** — it has only one factor.
 
 **Examples:**
 
@@ -384,7 +403,8 @@ $$
 
 ### 10. Prime factor trees
 
-Split the number into two factors, and keep splitting until every branch ends in a **prime**. Then write the number as a product of primes, using powers for repeats: $2\times2\times2 = 2^3$.
+- Split the number into two factors, and keep splitting until every branch ends in a **prime**.
+- Then write the number as a product of primes, using powers for repeats: $2\times2\times2 = 2^3$.
 
 **Examples:**
 
@@ -399,25 +419,25 @@ Split the number into two factors, and keep splitting until every branch ends in
 **a)**
 
 $$
-12 = 2\times6 = 2\times2\times3 = \boxed{2^2\times3}
+\begin{aligned} 12 &= 2\times6 \\ &= 2\times2\times3 \\ &= \boxed{2^2\times3} \end{aligned}
 $$
 
 **b)**
 
 $$
-30 = 2\times15 = \boxed{2\times3\times5}
+\begin{aligned} 30 &= 2\times15 \\ &= \boxed{2\times3\times5} \end{aligned}
 $$
 
 **c)**
 
 $$
-40 = 2\times20 = 2\times2\times10 = \boxed{2^3\times5}
+\begin{aligned} 40 &= 2\times20 \\ &= 2\times2\times10 \\ &= \boxed{2^3\times5} \end{aligned}
 $$
 
 **d)**
 
 $$
-45 = 5\times9 = \boxed{3^2\times5}
+\begin{aligned} 45 &= 5\times9 \\ &= \boxed{3^2\times5} \end{aligned}
 $$
 
 </details>
@@ -426,7 +446,8 @@ $$
 
 ### 11. Highest common factor (HCF)
 
-The **HCF** is the **biggest** number that divides **both** numbers exactly. List the factors of each, then pick the biggest one that is in both lists.
+- The **HCF** is the **biggest** number that divides **both** numbers exactly.
+- List the factors of each, then pick the biggest one that is in both lists.
 
 **Examples:**
 
@@ -438,25 +459,37 @@ The **HCF** is the **biggest** number that divides **both** numbers exactly. Lis
 <details>
 <summary><b>Working</b></summary>
 
-**a)** Factors of 12: 1, 2, 3, 4, **6**, 12. Factors of 18: 1, 2, 3, **6**, 9, 18.
+**a)**
+
+- Factors of 12: 1, 2, 3, 4, **6**, 12.
+- Factors of 18: 1, 2, 3, **6**, 9, 18.
 
 $$
 \text{HCF} = \boxed{6}
 $$
 
-**b)** Factors of 8: 1, 2, **4**, 8. Factors of 20: 1, 2, **4**, 5, 10, 20.
+**b)**
+
+- Factors of 8: 1, 2, **4**, 8.
+- Factors of 20: 1, 2, **4**, 5, 10, 20.
 
 $$
 \text{HCF} = \boxed{4}
 $$
 
-**c)** Factors of 15: 1, 3, **5**, 15. Factors of 25: 1, **5**, 25.
+**c)**
+
+- Factors of 15: 1, 3, **5**, 15.
+- Factors of 25: 1, **5**, 25.
 
 $$
 \text{HCF} = \boxed{5}
 $$
 
-**d)** Factors of 14: 1, 2, **7**, 14. Factors of 21: 1, 3, **7**, 21.
+**d)**
+
+- Factors of 14: 1, 2, **7**, 14.
+- Factors of 21: 1, 3, **7**, 21.
 
 $$
 \text{HCF} = \boxed{7}
@@ -466,7 +499,8 @@ $$
 
 ### 12. Lowest common multiple (LCM)
 
-The **LCM** is the **smallest** number that is in **both** times tables. List the multiples of each number until one appears in both lists.
+- The **LCM** is the **smallest** number that is in **both** times tables.
+- List the multiples of each number until one appears in both lists.
 
 **Examples:**
 
@@ -478,25 +512,37 @@ The **LCM** is the **smallest** number that is in **both** times tables. List th
 <details>
 <summary><b>Working</b></summary>
 
-**a)** Multiples of 4: 4, 8, **12**. Multiples of 6: 6, **12**.
+**a)**
+
+- Multiples of 4: 4, 8, **12**.
+- Multiples of 6: 6, **12**.
 
 $$
 \text{LCM} = \boxed{12}
 $$
 
-**b)** Multiples of 3: 3, 6, 9, 12, **15**. Multiples of 5: 5, 10, **15**.
+**b)**
+
+- Multiples of 3: 3, 6, 9, 12, **15**.
+- Multiples of 5: 5, 10, **15**.
 
 $$
 \text{LCM} = \boxed{15}
 $$
 
-**c)** Multiples of 6: 6, 12, 18, **24**. Multiples of 8: 8, 16, **24**.
+**c)**
+
+- Multiples of 6: 6, 12, 18, **24**.
+- Multiples of 8: 8, 16, **24**.
 
 $$
 \text{LCM} = \boxed{24}
 $$
 
-**d)** Multiples of 10: 10, 20, **30**. Multiples of 15: 15, **30**.
+**d)**
+
+- Multiples of 10: 10, 20, **30**.
+- Multiples of 15: 15, **30**.
 
 $$
 \text{LCM} = \boxed{30}
@@ -550,7 +596,8 @@ $$
 
 ### 14. Square numbers
 
-A **square number** is a number times itself: $n^2 = n\times n$. The first ten are 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
+- A **square number** is a number times itself: $n^2 = n\times n$.
+- The first ten are 1, 4, 9, 16, 25, 36, 49, 64, 81, 100.
 
 **Examples:**
 
@@ -565,7 +612,7 @@ A **square number** is a number times itself: $n^2 = n\times n$. The first ten a
 **a)**
 
 $$
-6^2 = 6\times6 = \boxed{36}
+\begin{aligned} 6^2 &= 6\times6 \\ &= \boxed{36} \end{aligned}
 $$
 
 Not $6\times2 = 12$.
@@ -573,26 +620,27 @@ Not $6\times2 = 12$.
 **b)**
 
 $$
-9^2 = 9\times9 = \boxed{81}
+\begin{aligned} 9^2 &= 9\times9 \\ &= \boxed{81} \end{aligned}
 $$
 
 **c)**
 
 $$
-11^2 = 11\times11 = \boxed{121}
+\begin{aligned} 11^2 &= 11\times11 \\ &= \boxed{121} \end{aligned}
 $$
 
 **d)**
 
 $$
-15^2 = 15\times15 = \boxed{225}
+\begin{aligned} 15^2 &= 15\times15 \\ &= \boxed{225} \end{aligned}
 $$
 
 </details>
 
 ### 15. Square roots
 
-The **square root** $\sqrt{\ }$ undoes squaring: $\sqrt{25} = 5$ because $5^2 = 25$. Ask: *which number times itself makes this?*
+- The **square root** $\sqrt{\ }$ undoes squaring: $\sqrt{25} = 5$ because $5^2 = 25$.
+- Ask: *which number times itself makes this?*
 
 **Examples:**
 
@@ -604,35 +652,36 @@ The **square root** $\sqrt{\ }$ undoes squaring: $\sqrt{25} = 5$ because $5^2 = 
 <details>
 <summary><b>Working</b></summary>
 
-**a)** $8\times8 = 64$:
+**a)**
 
 $$
-\sqrt{64} = \boxed{8}
+\begin{aligned} 8\times8 &= 64 \\ \sqrt{64} &= \boxed{8} \end{aligned}
 $$
 
-**b)** $10\times10 = 100$:
+**b)**
 
 $$
-\sqrt{100} = \boxed{10}
+\begin{aligned} 10\times10 &= 100 \\ \sqrt{100} &= \boxed{10} \end{aligned}
 $$
 
-**c)** $12\times12 = 144$:
+**c)**
 
 $$
-\sqrt{144} = \boxed{12}
+\begin{aligned} 12\times12 &= 144 \\ \sqrt{144} &= \boxed{12} \end{aligned}
 $$
 
-**d)** $7\times7 = 49$:
+**d)**
 
 $$
-\sqrt{49} = \boxed{7}
+\begin{aligned} 7\times7 &= 49 \\ \sqrt{49} &= \boxed{7} \end{aligned}
 $$
 
 </details>
 
 ### 16. Cubes and cube roots
 
-A **cube** uses a number three times: $n^3 = n\times n\times n$. The **cube root** $\sqrt[3]{\ }$ undoes it: $\sqrt[3]{8} = 2$.
+- A **cube** uses a number three times: $n^3 = n\times n\times n$.
+- The **cube root** $\sqrt[3]{\ }$ undoes it: $\sqrt[3]{8} = 2$.
 
 **Examples:**
 
@@ -647,25 +696,25 @@ A **cube** uses a number three times: $n^3 = n\times n\times n$. The **cube root
 **a)**
 
 $$
-2^3 = 2\times2\times2 = \boxed{8}
+\begin{aligned} 2^3 &= 2\times2\times2 \\ &= \boxed{8} \end{aligned}
 $$
 
 **b)**
 
 $$
-4^3 = 4\times4\times4 = \boxed{64}
+\begin{aligned} 4^3 &= 4\times4\times4 \\ &= \boxed{64} \end{aligned}
 $$
 
-**c)** $3\times3\times3 = 27$:
+**c)**
 
 $$
-\sqrt[3]{27} = \boxed{3}
+\begin{aligned} 3\times3\times3 &= 27 \\ \sqrt[3]{27} &= \boxed{3} \end{aligned}
 $$
 
-**d)** $5\times5\times5 = 125$:
+**d)**
 
 $$
-\sqrt[3]{125} = \boxed{5}
+\begin{aligned} 5\times5\times5 &= 125 \\ \sqrt[3]{125} &= \boxed{5} \end{aligned}
 $$
 
 </details>
@@ -687,25 +736,25 @@ In $3^4$ the **base** 3 is multiplied by itself, and the **power** 4 says how ma
 **a)**
 
 $$
-3^4 = 3\times3\times3\times3 = \boxed{81}
+\begin{aligned} 3^4 &= 3\times3\times3\times3 \\ &= \boxed{81} \end{aligned}
 $$
 
 **b)**
 
 $$
-10^3 = 10\times10\times10 = \boxed{1000}
+\begin{aligned} 10^3 &= 10\times10\times10 \\ &= \boxed{1000} \end{aligned}
 $$
 
 **c)**
 
 $$
-2^5 = 2\times2\times2\times2\times2 = \boxed{32}
+\begin{aligned} 2^5 &= 2\times2\times2\times2\times2 \\ &= \boxed{32} \end{aligned}
 $$
 
 **d)** Power first:
 
 $$
-5^2\times2 = 25\times2 = \boxed{50}
+\begin{aligned} 5^2\times2 &= 25\times2 \\ &= \boxed{50} \end{aligned}
 $$
 
 </details>
