@@ -99,6 +99,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 2 — Number Work Recap](topics/basic-math/malta-year-8-math-chapter-2-number-work-recap/content.md) | Can you round, follow BIDMAS, find primes, the HCF and the LCM, and work out squares, cubes and roots? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-2-number-work-recap/quiz.html) |
 | [Malta Year 8 Math Chapter 3 — Angles](topics/basic-math/malta-year-8-math-chapter-3-angles/content.md) | How do you name angles and find missing angles on a line, around a point, in a triangle and on parallel lines? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-3-angles/material.html) |
 | [Malta Year 8 Math Chapter 3 — Angles Recap](topics/basic-math/malta-year-8-math-chapter-3-angles-recap/content.md) | Can you name angles and find missing angles on a line, around a point, in a triangle and on parallel lines? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-3-angles-recap/quiz.html) |
+| [AP Precalculus 2.4 — Exponential Function Manipulation Practice](topics/basic-math/ap-precalculus-2-4-exponential-function-manipulation-practice/content.md) | Ten practice rewrites: turn a shift into a factor, change the base, and handle negative and fractional exponents. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-4-exponential-function-manipulation-practice/quiz.html) |
 
 ## Animations
 
