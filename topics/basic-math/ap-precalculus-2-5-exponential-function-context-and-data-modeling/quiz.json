@@ -9,16 +9,16 @@
   {
    "title": "Finance · Interest per month",
    "type": "mcq",
-   "prompt": "A savings account grows by \\(8\\%\\) each year:\n\n\\[\nB(t)=1500(1.08)^t\n\\]\n\nHere, \\(t\\) is in years.\n\nWhich equivalent form shows the growth factor **per month**?",
+   "prompt": "A savings account grows by \\(8\\%\\) each year:\n\n\\[\nB(t)=1500(1.08)^t\n\\]\n\nHere, \\(t\\) is in years.\n\nLet \\(m\\) be the number of **months**:\n\n\\[\nt=\\frac{m}{12}\n\\]\n\nWhich model gives the balance after \\(m\\) months, with the growth factor **per month**?",
    "choices": [
-    "\\(B(t)=1500(1.08)^{12t}\\)",
-    "\\(B(t)=1500(1.0067)^{12t}\\)",
-    "\\(B(t)=1500(1.00643)^{12t}\\)",
-    "\\(B(t)=1500(1.08)^{t/12}\\)"
+    "\\(B=1500(1.08)^{12m}\\)",
+    "\\(B=1500(1.0067)^{m}\\)",
+    "\\(B=1500(1.00643)^{m}\\)",
+    "\\(B=1500(1.08)^{m}\\)"
    ],
    "answer": "C",
-   "solution_title": "Take the 12th root of the yearly factor",
-   "solution": "\\[\n\\begin{aligned}\n(1.08)^t &= \\left(1.08^{1/12}\\right)^{12t} \\\\\n1.08^{1/12} &\\approx 1.00643\n\\end{aligned}\n\\]\n\nSo\n\n\\[\nB(t)\\approx\\boxed{1500(1.00643)^{12t}}\n\\]\n\n- The account grows about \\(0.643\\%\\) per month, and \\(12t\\) counts the months.\n- Not \\(1.0067\\): that is \\(8\\%\\div12\\). Monthly growth compounds, so it gives \\(1.0067^{12}\\approx1.083\\), more than \\(8\\%\\) a year."
+   "solution_title": "Put t = m/12, then take the 12th root",
+   "solution": "\\[\n\\begin{aligned}\nB &= 1500(1.08)^{m/12} \\\\\n&= 1500\\left(1.08^{1/12}\\right)^{m} \\\\\n&\\approx \\boxed{1500(1.00643)^{m}}\n\\end{aligned}\n\\]\n\n- The account grows about \\(0.643\\%\\) per month.\n- Not \\(1.0067\\): that is \\(8\\%\\div12\\). Monthly growth compounds, so it gives \\(1.0067^{12}\\approx1.083\\), more than \\(8\\%\\) a year.\n- Not \\((1.08)^{m}\\): that grows \\(8\\%\\) every month, not every year."
   },
   {
    "title": "Finance · Find the interest rate",

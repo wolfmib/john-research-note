@@ -51,12 +51,18 @@ $$
 
 Here, $t$ is in years.
 
-Which equivalent form shows the growth factor **per month**?
+Let $m$ be the number of **months**:
 
-- **A.** $B(t)=1500(1.08)^{12t}$
-- **B.** $B(t)=1500(1.0067)^{12t}$
-- **C.** $B(t)=1500(1.00643)^{12t}$
-- **D.** $B(t)=1500(1.08)^{t/12}$
+$$
+t=\frac{m}{12}
+$$
+
+Which model gives the balance after $m$ months, with the growth factor **per month**?
+
+- **A.** $B=1500(1.08)^{12m}$
+- **B.** $B=1500(1.0067)^{m}$
+- **C.** $B=1500(1.00643)^{m}$
+- **D.** $B=1500(1.08)^{m}$
 
 ## 2. Finance · Find the interest rate
 
@@ -126,23 +132,19 @@ What is its temperature at $t=20$?
 <details>
 <summary><b>Answers</b></summary>
 
-**1. C — Take the 12th root of the yearly factor**
+**1. C — Put t = m/12, then take the 12th root**
 
 $$
 \begin{aligned}
-(1.08)^t &= \left(1.08^{1/12}\right)^{12t} \\
-1.08^{1/12} &\approx 1.00643
+B &= 1500(1.08)^{m/12} \\
+&= 1500\left(1.08^{1/12}\right)^{m} \\
+&\approx \boxed{1500(1.00643)^{m}}
 \end{aligned}
 $$
 
-So
-
-$$
-B(t)\approx\boxed{1500(1.00643)^{12t}}
-$$
-
-- The account grows about $0.643\%$ per month, and $12t$ counts the months.
+- The account grows about $0.643\%$ per month.
 - Not $1.0067$: that is $8\%\div12$. Monthly growth compounds, so it gives $1.0067^{12}\approx1.083$, more than $8\%$ a year.
+- Not $(1.08)^{m}$: that grows $8\%$ every month, not every year.
 
 **2. A — Two points give the growth factor**
 
