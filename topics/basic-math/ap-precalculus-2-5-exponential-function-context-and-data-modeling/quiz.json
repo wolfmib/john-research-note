@@ -1,0 +1,82 @@
+{
+ "slug": "ap-precalculus-2-5-exponential-function-context-and-data-modeling",
+ "title": "AP Precalculus 2.5 — Exponential Function Context and Data Modeling",
+ "course": "AP Precalculus",
+ "unit": "2.5",
+ "question": "Interest rates, medicine in the body and a cooling cup of coffee: build and read exponential models.",
+ "intro": "**Quick recap:**\n\n- Increase of \\(r\\%\\) per unit:\n\n\\[\nb=1+\\frac{r}{100}\n\\]\n\n- Decrease of \\(r\\%\\) per unit:\n\n\\[\nb=1-\\frac{r}{100}\n\\]\n\n- Two points:\n\n\\[\nb^{x_2-x_1}=\\frac{y_2}{y_1}\n\\]\n\n- Change the time unit:\n\n\\[\nb^t=\\left(b^{1/n}\\right)^{nt}\n\\]\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Finance · Interest per month",
+   "type": "mcq",
+   "prompt": "A savings account grows by \\(8\\%\\) each year:\n\n\\[\nB(t)=1500(1.08)^t\n\\]\n\nHere, \\(t\\) is in years.\n\nWhich equivalent form shows the growth factor **per month**?",
+   "choices": [
+    "\\(B(t)=1500(1.08)^{12t}\\)",
+    "\\(B(t)=1500(1.0067)^{12t}\\)",
+    "\\(B(t)=1500(1.00643)^{12t}\\)",
+    "\\(B(t)=1500(1.08)^{t/12}\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Take the 12th root of the yearly factor",
+   "solution": "\\[\n\\begin{aligned}\n(1.08)^t &= \\left(1.08^{1/12}\\right)^{12t} \\\\\n1.08^{1/12} &\\approx 1.00643\n\\end{aligned}\n\\]\n\nSo\n\n\\[\nB(t)\\approx\\boxed{1500(1.00643)^{12t}}\n\\]\n\n- The account grows about \\(0.643\\%\\) per month, and \\(12t\\) counts the months.\n- Not \\(1.0067\\): that is \\(8\\%\\div12\\). Monthly growth compounds, so it gives \\(1.0067^{12}\\approx1.083\\), more than \\(8\\%\\) a year."
+  },
+  {
+   "title": "Finance · Find the interest rate",
+   "type": "mcq",
+   "prompt": "An investment of €5000 grows to €5832 in \\(2\\) years.\n\nIt grows by the same percent each year.\n\nWhat is the annual interest rate?",
+   "choices": [
+    "\\(8\\%\\)",
+    "\\(8.32\\%\\)",
+    "\\(16.64\\%\\)",
+    "\\(1.08\\%\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Two points give the growth factor",
+   "solution": "\\[\n\\begin{aligned}\n5000\\,b^2 &= 5832 \\\\\nb^2 &= \\frac{5832}{5000} \\\\\nb^2 &= 1.1664 \\\\\nb &= 1.08\n\\end{aligned}\n\\]\n\nSo the rate is\n\n\\[\n\\boxed{8\\%}\n\\]\n\n- Not \\(8.32\\%\\): that splits the \\(16.64\\%\\) total gain evenly over the 2 years. The second year earns interest on the first year's interest too.\n- Not \\(1.08\\%\\): \\(1.08\\) is the growth factor; the rate is \\(1.08-1=0.08\\)."
+  },
+  {
+   "title": "Medicine · Drug left in the body",
+   "type": "mcq",
+   "prompt": "A patient takes \\(400\\) mg of a medicine.\n\nEach hour, the body removes \\(20\\%\\) of the medicine still in the blood.\n\nHow much medicine is left after \\(3\\) hours?",
+   "choices": [
+    "\\(160\\) mg",
+    "\\(204.8\\) mg",
+    "\\(3.2\\) mg",
+    "\\(691.2\\) mg"
+   ],
+   "answer": "B",
+   "solution_title": "Decrease of 20% means factor 0.8",
+   "solution": "\\[\n\\begin{aligned}\nb &= 1-0.20 \\\\\nb &= 0.8 \\\\\nA(t) &= 400(0.8)^t \\\\\nA(3) &= 400(0.8)^3 \\\\\n&= \\boxed{204.8\\text{ mg}}\n\\end{aligned}\n\\]\n\n- Not \\(160\\) mg: that removes \\(80\\) mg every hour (linear). The body removes \\(20\\%\\) of what is **left**, so it removes less each hour.\n- Not \\(3.2\\) mg: \\(400(0.2)^3\\) keeps \\(20\\%\\) instead of removing it."
+  },
+  {
+   "title": "Medicine · Half-life per hour",
+   "type": "mcq",
+   "prompt": "A medicine has a half-life of \\(6\\) hours:\n\n\\[\nA(t)=100\\left(\\frac12\\right)^{t/6}\n\\]\n\nHere, \\(A\\) is in mg and \\(t\\) is in hours.\n\nBy about what percent does the amount decrease **each hour**?",
+   "choices": [
+    "\\(8.3\\%\\)",
+    "\\(89.1\\%\\)",
+    "\\(50\\%\\)",
+    "\\(10.9\\%\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Rewrite with exponent t",
+   "solution": "\\[\n\\begin{aligned}\n\\left(\\frac12\\right)^{t/6} &= \\left(\\left(\\frac12\\right)^{1/6}\\right)^t \\\\\n\\left(\\frac12\\right)^{1/6} &\\approx 0.891 \\\\\n1-0.891 &= 0.109\n\\end{aligned}\n\\]\n\nSo the amount decreases by about\n\n\\[\n\\boxed{10.9\\%}\n\\]\n\neach hour.\n\n- Not \\(8.3\\%\\): that is \\(50\\%\\div6\\). Halving is repeated multiplication, not a fixed loss.\n- Not \\(89.1\\%\\): \\(0.891\\) is the part that **stays** each hour."
+  },
+  {
+   "title": "Cooling · Coffee in a 20 °C room",
+   "type": "mcq",
+   "prompt": "A cup of coffee cools in a room at \\(20^\\circ\\text{C}\\):\n\n\\[\nT(t)=20+a\\,b^t\n\\]\n\nHere, \\(t\\) is in minutes.\n\n- At \\(t=0\\), the coffee is \\(90^\\circ\\text{C}\\).\n- At \\(t=10\\), the coffee is \\(55^\\circ\\text{C}\\).\n\nWhat is its temperature at \\(t=20\\)?",
+   "choices": [
+    "\\(20^\\circ\\text{C}\\)",
+    "\\(33.6^\\circ\\text{C}\\)",
+    "\\(37.5^\\circ\\text{C}\\)",
+    "\\(27.5^\\circ\\text{C}\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Subtract the room temperature first",
+   "solution": "\\[\n\\begin{aligned}\nT(0)-20 &= 70 \\\\\nT(10)-20 &= 35 \\\\\nb^{10} &= \\frac{35}{70} \\\\\nb^{10} &= \\frac12\n\\end{aligned}\n\\]\n\nThe gap above room temperature halves every 10 minutes:\n\n\\[\n\\begin{aligned}\nT(20) &= 20+70\\left(\\frac12\\right)^2 \\\\\n&= 20+17.5 \\\\\n&= \\boxed{37.5^\\circ\\text{C}}\n\\end{aligned}\n\\]\n\n- Not \\(20^\\circ\\text{C}\\): that keeps losing \\(35^\\circ\\) every 10 minutes (linear).\n- Not \\(33.6^\\circ\\text{C}\\): that uses the ratio \\(\\frac{55}{90}\\) of the whole temperature. Only the gap above \\(20^\\circ\\text{C}\\) shrinks by a constant factor."
+  }
+ ],
+ "takeaway": "The base of an exponential model is the factor per unit of time: one plus the rate for growth, one minus the rate for decay.",
+ "send_to": "John"
+}
