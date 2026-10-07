@@ -1,0 +1,149 @@
+{
+ "slug": "malta-year-8-math-chapter-1-directed-numbers-practice-2-two-signs-together",
+ "title": "Malta Year 8 Math Chapter 1 — Directed Numbers Practice 2: Two Signs Together",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 1",
+ "root": "chapters",
+ "question": "Can you change two signs into one and work out the answer, from easy to hard?",
+ "intro": "**Quick recap:**\n\n- Two signs next to each other become one sign.\n- \\(+(+)\\) becomes \\(+\\)\n- \\(-(-)\\) becomes \\(+\\)\n- \\(+(-)\\) becomes \\(-\\)\n- \\(-(+)\\) becomes \\(-\\)\n\n**Levels:**\n\n- Questions 1 to 6: Easy\n- Questions 7 to 12: Medium\n- Questions 13 to 18: Hard",
+ "questions": [
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(5 + (-2)\\).",
+   "answer": 3,
+   "solution": "\\[\\begin{aligned} 5 + (-2) &= 5 - 2 \\\\ &= \\boxed{3} \\end{aligned}\\]\n\n\\(7\\) keeps the plus: \\(+(-)\\) becomes \\(-\\)."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(4 - (-3)\\).",
+   "answer": 7,
+   "solution": "\\[\\begin{aligned} 4 - (-3) &= 4 + 3 \\\\ &= \\boxed{7} \\end{aligned}\\]\n\n\\(1\\) ignores the second minus: \\(-(-)\\) becomes \\(+\\)."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(7 - (+2)\\).",
+   "answer": 5,
+   "solution": "\\[\\begin{aligned} 7 - (+2) &= 7 - 2 \\\\ &= \\boxed{5} \\end{aligned}\\]\n\n\\(9\\) turns \\(-(+)\\) into \\(+\\), but it stays \\(-\\)."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-1 + (-3)\\).",
+   "answer": -4,
+   "solution": "\\[\\begin{aligned} -1 + (-3) &= -1 - 3 \\\\ &= \\boxed{-4} \\end{aligned}\\]\n\n- \\(2\\) turns \\(+(-)\\) into \\(+\\).\n- Adding a negative moves left."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(2 - (-6)\\).",
+   "answer": 8,
+   "solution": "\\[\\begin{aligned} 2 - (-6) &= 2 + 6 \\\\ &= \\boxed{8} \\end{aligned}\\]\n\n\\(-4\\) ignores the second minus."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-4 + (+9)\\).",
+   "answer": 5,
+   "solution": "\\[\\begin{aligned} -4 + (+9) &= -4 + 9 \\\\ &= \\boxed{5} \\end{aligned}\\]\n\n\\(-13\\) turns \\(+(+)\\) into \\(-\\)."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-6 - (-9)\\).",
+   "answer": 3,
+   "solution": "\\[\\begin{aligned} -6 - (-9) &= -6 + 9 \\\\ &= \\boxed{3} \\end{aligned}\\]\n\n\\(-15\\) ignores the second minus: \\(-(-9)\\) is \\(+9\\)."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-3 + (-8)\\).",
+   "answer": -11,
+   "solution": "\\[\\begin{aligned} -3 + (-8) &= -3 - 8 \\\\ &= \\boxed{-11} \\end{aligned}\\]\n\n\\(5\\) turns \\(+(-)\\) into \\(+\\)."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-10 - (+5)\\).",
+   "answer": -15,
+   "solution": "\\[\\begin{aligned} -10 - (+5) &= -10 - 5 \\\\ &= \\boxed{-15} \\end{aligned}\\]\n\n\\(-5\\) turns \\(-(+)\\) into \\(+\\)."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(8 + (-12)\\).",
+   "answer": -4,
+   "solution": "\\[\\begin{aligned} 8 + (-12) &= 8 - 12 \\\\ &= \\boxed{-4} \\end{aligned}\\]\n\n\\(4\\) loses the sign: \\(8 - 12\\) goes below zero."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-7 - (-7)\\).",
+   "answer": 0,
+   "solution": "\\[\\begin{aligned} -7 - (-7) &= -7 + 7 \\\\ &= \\boxed{0} \\end{aligned}\\]\n\n\\(-14\\) ignores the second minus."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(0 - (-11)\\).",
+   "answer": 11,
+   "solution": "\\[\\begin{aligned} 0 - (-11) &= 0 + 11 \\\\ &= \\boxed{11} \\end{aligned}\\]\n\n\\(-11\\) ignores the second minus."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-4 - (-7) + (-10) - (+2)\\).",
+   "answer": -9,
+   "solution": "\\[\\begin{aligned} -4 - (-7) + (-10) - (+2) &= -4 + 7 - 10 - 2 \\\\ &= 3 - 10 - 2 \\\\ &= -7 - 2 \\\\ &= \\boxed{-9} \\end{aligned}\\]\n\n- \\(-23\\) reads \\(-(-7)\\) as \\(-7\\).\n- Change every double sign first, then go left to right."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(9 + (-15) - (-4)\\).",
+   "answer": -2,
+   "solution": "\\[\\begin{aligned} 9 + (-15) - (-4) &= 9 - 15 + 4 \\\\ &= -6 + 4 \\\\ &= \\boxed{-2} \\end{aligned}\\]\n\n\\(-10\\) reads \\(-(-4)\\) as \\(-4\\)."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-20 - (-8) - (+3) + (-1)\\).",
+   "answer": -16,
+   "solution": "\\[\\begin{aligned} -20 - (-8) - (+3) + (-1) &= -20 + 8 - 3 - 1 \\\\ &= -12 - 3 - 1 \\\\ &= -15 - 1 \\\\ &= \\boxed{-16} \\end{aligned}\\]\n\n\\(-32\\) reads \\(-(-8)\\) as \\(-8\\)."
+  },
+  {
+   "title": "Hard · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(-5 - \\square = 3\\).",
+   "answer": -8,
+   "solution": "Taking away the box gives a bigger number, so the box is negative.\n\n\\[\\begin{aligned} \\square &= -5 - 3 \\\\ &= \\boxed{-8} \\end{aligned}\\]\n\n- Check: \\(-5 - (-8) = -5 + 8 = 3\\).\n- \\(8\\) gives \\(-5 - 8 = -13\\)."
+  },
+  {
+   "title": "Hard · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(\\square + (-6) = -2\\).",
+   "answer": 4,
+   "solution": "\\(+(-6)\\) is \\(-6\\), so \\(\\square - 6 = -2\\).\n\n\\[\\begin{aligned} \\square &= -2 + 6 \\\\ &= \\boxed{4} \\end{aligned}\\]\n\n- Check: \\(4 + (-6) = -2\\).\n- \\(-8\\) takes the 6 away instead of adding it back."
+  },
+  {
+   "title": "Hard · Compare",
+   "type": "mcq",
+   "prompt": "Which statement is **true**?",
+   "choices": [
+    "\\(3 - (-4) < -3 + (-4)\\)",
+    "\\(3 - (-4) > -3 + (-4)\\)",
+    "\\(3 - (-4) = -3 + (-4)\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Work out each side",
+   "solution": "\\[3 - (-4) = 7\\]\n\n\\[-3 + (-4) = -7\\]\n\nAny positive number is bigger than any negative number.\n\n\\[\\boxed{3 - (-4) > -3 + (-4)}\\]\n\nC: the digits match, but the signs are opposite."
+  }
+ ],
+ "takeaway": "- Two minus signs side by side make a plus.\n- A plus and a minus side by side make a minus.",
+ "link": [
+  "Next practice ›",
+  "../malta-year-8-math-chapter-1-directed-numbers-practice-3-multiplying-and-dividing/quiz.html"
+ ],
+ "send_to": "John"
+}
