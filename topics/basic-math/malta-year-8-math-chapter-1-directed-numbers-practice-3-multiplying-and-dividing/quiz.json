@@ -1,0 +1,149 @@
+{
+ "slug": "malta-year-8-math-chapter-1-directed-numbers-practice-3-multiplying-and-dividing",
+ "title": "Malta Year 8 Math Chapter 1 — Directed Numbers Practice 3: Multiplying and Dividing",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 1",
+ "root": "chapters",
+ "question": "Can you multiply and divide directed numbers, from easy to hard?",
+ "intro": "**Quick recap:**\n\n- Multiply or divide the numbers, then work out the sign.\n- **Same** signs give \\(+\\).\n- **Different** signs give \\(-\\).\n- Work from left to right.\n\n**Levels:**\n\n- Questions 1 to 6: Easy\n- Questions 7 to 12: Medium\n- Questions 13 to 18: Hard",
+ "questions": [
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-3  \\times  4\\).",
+   "answer": -12,
+   "solution": "\\[-3  \\times  4 = \\boxed{-12}\\]\n\n\\(12\\) drops the sign: different signs give \\(-\\)."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(5  \\times  (-2)\\).",
+   "answer": -10,
+   "solution": "\\[5  \\times  (-2) = \\boxed{-10}\\]\n\n\\(10\\) drops the sign."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-6  \\times  (-3)\\).",
+   "answer": 18,
+   "solution": "\\[-6  \\times  (-3) = \\boxed{18}\\]\n\n\\(-18\\): same signs give \\(+\\)."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-12  \\div  3\\).",
+   "answer": -4,
+   "solution": "\\[-12  \\div  3 = \\boxed{-4}\\]\n\n\\(4\\) drops the sign."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(20  \\div  (-4)\\).",
+   "answer": -5,
+   "solution": "\\[20  \\div  (-4) = \\boxed{-5}\\]\n\n\\(5\\) drops the sign."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-18  \\div  (-6)\\).",
+   "answer": 3,
+   "solution": "\\[-18  \\div  (-6) = \\boxed{3}\\]\n\n\\(-3\\): same signs give \\(+\\)."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-5  \\times  (-2)  \\times  3\\).",
+   "answer": 30,
+   "solution": "\\[\\begin{aligned} -5  \\times  (-2)  \\times  3 &= 10 \\times 3 \\\\ &= \\boxed{30} \\end{aligned}\\]\n\n\\(-30\\) forgets that \\(-5 \\times (-2)\\) is already positive."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-4  \\times  2  \\times  (-5)\\).",
+   "answer": 40,
+   "solution": "\\[\\begin{aligned} -4  \\times  2  \\times  (-5) &= -8 \\times (-5) \\\\ &= \\boxed{40} \\end{aligned}\\]\n\n\\(-40\\): the two minus signs make a plus."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-56  \\div  8\\).",
+   "answer": -7,
+   "solution": "\\[-56  \\div  8 = \\boxed{-7}\\]\n\n\\(7\\) drops the sign."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-42  \\div  (-7)\\).",
+   "answer": 6,
+   "solution": "\\[-42  \\div  (-7) = \\boxed{6}\\]\n\n\\(-6\\): same signs give \\(+\\)."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\((-3)^{2}\\).",
+   "answer": 9,
+   "solution": "\\[\\begin{aligned} (-3)^{2} &= (-3) \\times (-3) \\\\ &= \\boxed{9} \\end{aligned}\\]\n\n- \\(-9\\) squares only the 3 — the bracket means \\((-3) \\times (-3)\\).\n- \\(-6\\) does \\(-3 \\times 2\\)."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\((-2)^{3}\\).",
+   "answer": -8,
+   "solution": "\\[\\begin{aligned} (-2)^{3} &= (-2) \\times (-2) \\times (-2) \\\\ &= 4 \\times (-2) \\\\ &= \\boxed{-8} \\end{aligned}\\]\n\n- \\(8\\): three minus signs multiply to a minus.\n- \\(-6\\) does \\(-2 \\times 3\\)."
+  },
+  {
+   "title": "Hard · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(-48  \\div  \\square = 6\\).",
+   "answer": -8,
+   "solution": "The answer 6 is positive, so the box has the same sign as \\(-48\\): negative.\n\n\\[\\begin{aligned} \\square &= -48 \\div 6 \\\\ &= \\boxed{-8} \\end{aligned}\\]\n\n- Check: \\(-48 \\div (-8) = 6\\).\n- \\(8\\) gives \\(-6\\)."
+  },
+  {
+   "title": "Hard · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(\\square  \\times  (-7) = 63\\).",
+   "answer": -9,
+   "solution": "\\[\\begin{aligned} \\square &= 63 \\div (-7) \\\\ &= \\boxed{-9} \\end{aligned}\\]\n\n- Check: \\((-9) \\times (-7) = 63\\).\n- \\(9\\) gives \\(-63\\)."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\((-2)  \\times  (-3)  \\times  (-5)\\).",
+   "answer": -30,
+   "solution": "\\[\\begin{aligned} (-2)  \\times  (-3)  \\times  (-5) &= 6 \\times (-5) \\\\ &= \\boxed{-30} \\end{aligned}\\]\n\n\\(30\\) forgets the third minus sign."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-60  \\div  (-5)  \\div  (-3)\\).",
+   "answer": -4,
+   "solution": "\\[\\begin{aligned} -60  \\div  (-5)  \\div  (-3) &= 12 \\div (-3) \\\\ &= \\boxed{-4} \\end{aligned}\\]\n\n\\(4\\) forgets the last sign: \\(12 \\div (-3)\\) is negative."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-3  \\times  (-4)  \\div  (-6)\\).",
+   "answer": -2,
+   "solution": "\\[\\begin{aligned} -3  \\times  (-4)  \\div  (-6) &= 12 \\div (-6) \\\\ &= \\boxed{-2} \\end{aligned}\\]\n\n\\(2\\) forgets the last division by a negative."
+  },
+  {
+   "title": "Hard · Compare",
+   "type": "mcq",
+   "prompt": "Which statement is **true**?",
+   "choices": [
+    "\\(-6  \\times  3 < -30  \\div  (-2)\\)",
+    "\\(-6  \\times  3 > -30  \\div  (-2)\\)",
+    "\\(-6  \\times  3 = -30  \\div  (-2)\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Work out each side",
+   "solution": "\\[-6  \\times  3 = -18\\]\n\n\\[-30  \\div  (-2) = 15\\]\n\nA negative number is smaller than a positive number.\n\n\\[\\boxed{-6  \\times  3 < -30  \\div  (-2)}\\]\n\nB compares 18 and 15 and forgets the signs."
+  }
+ ],
+ "takeaway": "- In \\(\\times\\) and \\(\\div\\), same signs give \\(+\\).\n- Different signs give \\(-\\).",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-chapter-1-directed-numbers/material.html"
+ ],
+ "send_to": "John"
+}
