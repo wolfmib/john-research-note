@@ -1,0 +1,149 @@
+{
+ "slug": "malta-year-8-math-chapter-1-directed-numbers-practice-1-adding-and-subtracting",
+ "title": "Malta Year 8 Math Chapter 1 — Directed Numbers Practice 1: Adding and Subtracting",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 1",
+ "root": "chapters",
+ "question": "Can you add and subtract directed numbers, from easy to hard?",
+ "intro": "**Quick recap:**\n\n- Start at the first number on the number line.\n- \\(+\\) means move **right**.\n- \\(-\\) means move **left**.\n- Work from left to right.\n\n**Levels:**\n\n- Questions 1 to 6: Easy\n- Questions 7 to 12: Medium\n- Questions 13 to 18: Hard",
+ "questions": [
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-2 + 4\\).",
+   "answer": 2,
+   "solution": "\\[-2 + 4 = \\boxed{2}\\]\n\n- \\(-6\\) adds the sizes and keeps the minus.\n- Four steps right from \\(-2\\) passes zero and lands on 2."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(3 - 7\\).",
+   "answer": -4,
+   "solution": "\\[3 - 7 = \\boxed{-4}\\]\n\n\\(4\\) forgets the sign: 7 steps left from 3 goes past zero."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-5 + 8\\).",
+   "answer": 3,
+   "solution": "\\[-5 + 8 = \\boxed{3}\\]\n\n\\(-3\\) has the wrong sign: the positive part (8) is bigger, so the answer is positive."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(6 - 9\\).",
+   "answer": -3,
+   "solution": "\\[6 - 9 = \\boxed{-3}\\]\n\n\\(3\\) forgets the sign: you take away more than you have."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-1 - 4\\).",
+   "answer": -5,
+   "solution": "\\[-1 - 4 = \\boxed{-5}\\]\n\n- \\(3\\) treats it as \\(-1 + 4\\).\n- Moving left from \\(-1\\) goes further below zero."
+  },
+  {
+   "title": "Easy · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-7 + 7\\).",
+   "answer": 0,
+   "solution": "\\[-7 + 7 = \\boxed{0}\\]\n\n- \\(-14\\) adds the sizes.\n- A number plus its opposite is always 0."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-8 + 3 - 5\\).",
+   "answer": -10,
+   "solution": "\\[\\begin{aligned} -8 + 3 - 5 &= -5 - 5 \\\\ &= \\boxed{-10} \\end{aligned}\\]\n\n- \\(0\\) does \\(3 - 5\\) first.\n- Work left to right."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(4 - 10 + 3\\).",
+   "answer": -3,
+   "solution": "\\[\\begin{aligned} 4 - 10 + 3 &= -6 + 3 \\\\ &= \\boxed{-3} \\end{aligned}\\]\n\n- \\(-9\\) does \\(10 + 3\\) first.\n- Work left to right."
+  },
+  {
+   "title": "Medium · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-6 - 2 + 11\\).",
+   "answer": 3,
+   "solution": "\\[\\begin{aligned} -6 - 2 + 11 &= -8 + 11 \\\\ &= \\boxed{3} \\end{aligned}\\]\n\n\\(-3\\) has the wrong sign: \\(-8 + 11\\) is positive."
+  },
+  {
+   "title": "Medium · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(-4 + \\square = 2\\).",
+   "answer": 6,
+   "solution": "From \\(-4\\) to \\(2\\) is 6 steps right.\n\n\\[\\begin{aligned} \\square &= 2 - (-4) \\\\ &= 2 + 4 \\\\ &= \\boxed{6} \\end{aligned}\\]\n\n- Check: \\(-4 + 6 = 2\\).\n- \\(-2\\) drops the sign of \\(-4\\): \\(-4 + (-2) = -6\\)."
+  },
+  {
+   "title": "Medium · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(\\square - 6 = -1\\).",
+   "answer": 5,
+   "solution": "Add the 6 back:\n\n\\[\\begin{aligned} \\square &= -1 + 6 \\\\ &= \\boxed{5} \\end{aligned}\\]\n\n- Check: \\(5 - 6 = -1\\).\n- \\(-7\\) takes the 6 away instead of adding it back."
+  },
+  {
+   "title": "Medium · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(3 - \\square = -5\\).",
+   "answer": 8,
+   "solution": "From 3 down to \\(-5\\) is 8 steps left.\n\n\\[\\begin{aligned} \\square &= 3 - (-5) \\\\ &= 3 + 5 \\\\ &= \\boxed{8} \\end{aligned}\\]\n\n- Check: \\(3 - 8 = -5\\).\n- \\(2\\) gives \\(3 - 2 = 1\\)."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-12 + 7 - 9 + 15\\).",
+   "answer": 1,
+   "solution": "\\[\\begin{aligned} -12 + 7 - 9 + 15 &= -5 - 9 + 15 \\\\ &= -14 + 15 \\\\ &= \\boxed{1} \\end{aligned}\\]\n\nMost slips happen in one step — check each line of the working."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(20 - 35 + 8 - 4\\).",
+   "answer": -11,
+   "solution": "\\[\\begin{aligned} 20 - 35 + 8 - 4 &= -15 + 8 - 4 \\\\ &= -7 - 4 \\\\ &= \\boxed{-11} \\end{aligned}\\]\n\n\\(11\\) loses the sign at the first step: \\(20 - 35\\) is negative."
+  },
+  {
+   "title": "Hard · Work it out",
+   "type": "numeric",
+   "prompt": "Work out \\(-25 + 40 - 18 - 6\\).",
+   "answer": -9,
+   "solution": "\\[\\begin{aligned} -25 + 40 - 18 - 6 &= 15 - 18 - 6 \\\\ &= -3 - 6 \\\\ &= \\boxed{-9} \\end{aligned}\\]\n\n\\(9\\) loses the sign: \\(15 - 18\\) is already negative."
+  },
+  {
+   "title": "Hard · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(-15 + \\square - 4 = -10\\).",
+   "answer": 9,
+   "solution": "Join the numbers first: \\(-15 - 4 = -19\\), so \\(-19 + \\square = -10\\).\n\n\\[\\begin{aligned} \\square &= -10 - (-19) \\\\ &= -10 + 19 \\\\ &= \\boxed{9} \\end{aligned}\\]\n\n- Check: \\(-15 + 9 - 4 = -10\\).\n- \\(5\\) forgets the \\(-4\\)."
+  },
+  {
+   "title": "Hard · Missing number",
+   "type": "numeric",
+   "prompt": "Find the missing number: \\(\\square - 9 + 3 = -14\\).",
+   "answer": -8,
+   "solution": "Join the numbers first: \\(-9 + 3 = -6\\), so \\(\\square - 6 = -14\\).\n\n\\[\\begin{aligned} \\square &= -14 + 6 \\\\ &= \\boxed{-8} \\end{aligned}\\]\n\n- Check: \\(-8 - 9 + 3 = -14\\).\n- \\(-20\\) takes the 6 away instead of adding it back."
+  },
+  {
+   "title": "Hard · Compare",
+   "type": "mcq",
+   "prompt": "Which statement is **true**?",
+   "choices": [
+    "\\(-8 + 5 < -2 - 4\\)",
+    "\\(-8 + 5 > -2 - 4\\)",
+    "\\(-8 + 5 = -2 - 4\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Work out each side",
+   "solution": "\\[-8 + 5 = -3\\]\n\n\\[-2 - 4 = -6\\]\n\n\\(-3\\) is to the right of \\(-6\\) on the number line.\n\n\\[\\boxed{-8 + 5 > -2 - 4}\\]\n\nA compares 3 and 6 and forgets that both are negative."
+  }
+ ],
+ "takeaway": "- Adding a positive moves right; taking away moves left.\n- A number plus its opposite is 0.",
+ "link": [
+  "Next practice ›",
+  "../malta-year-8-math-chapter-1-directed-numbers-practice-2-two-signs-together/quiz.html"
+ ],
+ "send_to": "John"
+}
