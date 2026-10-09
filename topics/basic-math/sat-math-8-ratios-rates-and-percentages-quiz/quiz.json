@@ -1,0 +1,77 @@
+{
+ "slug": "sat-math-8-ratios-rates-and-percentages-quiz",
+ "title": "SAT Math 8 — Ratios, Rates and Percentages Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 8",
+ "root": "sat",
+ "question": "Five SAT-style questions on ratios, rates and percentages, with full working.",
+ "intro": "Five questions on ratios, rates and percentages. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-8-ratios-rates-and-percentages/material.html"
+ ],
+ "questions": [
+  {
+   "title": "A ratio changes",
+   "type": "mcq",
+   "prompt": "In a class of 36 students, the ratio of boys to girls is 4 : 5.\n\nFour more boys join the class. What is the new ratio of boys to girls?",
+   "choices": [
+    "4 : 5",
+    "5 : 4",
+    "1 : 1",
+    "8 : 9"
+   ],
+   "answer": "C",
+   "solution_title": "Find the counts first",
+   "solution": "\\[\\begin{aligned} \\text{boys} &= 36 \\cdot \\tfrac{4}{9} \\\\ &= 16 \\\\ \\text{girls} &= 36 \\cdot \\tfrac{5}{9} \\\\ &= 20 \\end{aligned}\\]\n\nAfter 4 boys join: 20 boys and 20 girls, so \\(\\boxed{1 : 1}\\). Adding 4 to the ratio parts gives 8 : 9, which is wrong."
+  },
+  {
+   "title": "Square units",
+   "type": "numeric",
+   "prompt": "A rectangular floor is 4.5 m long and 3.2 m wide.\n\nWhat is its area in square centimetres?",
+   "answer": 144000,
+   "solution_title": "Square metres, then × 10,000",
+   "solution": "\\[\\begin{aligned} 4.5 \\times 3.2 &= 14.4\\ \\text{m}^2 \\\\ 14.4 \\times 10{,}000 &= 144{,}000\\ \\text{cm}^2 \\end{aligned}\\]\n\n\\(\\times 100\\) gives 1,440: one metre is 100 cm, but one square metre is \\(100^2\\) square centimetres."
+  },
+  {
+   "title": "Up then down",
+   "type": "mcq",
+   "prompt": "A price rises by 25%, then the new price falls by 20%.\n\nWhat is the overall change?",
+   "choices": [
+    "A 5% increase",
+    "No change",
+    "A 5% decrease",
+    "A 45% increase"
+   ],
+   "answer": "B",
+   "solution_title": "Multiply the factors",
+   "solution": "\\[\\begin{aligned} 1.25 \\times 0.80 &= 1.00 \\end{aligned}\\]\n\nThe final price equals the original: **no change**. \\(25 - 20 = 5\\) adds percentages of different amounts."
+  },
+  {
+   "title": "Pages per minute",
+   "type": "numeric",
+   "prompt": "A printer prints 18 pages in 45 seconds.\n\nAt this rate, how many minutes does it take to print 300 pages?",
+   "answer": 12.5,
+   "tolerance": 0.01,
+   "answer_display": "\\(12.5\\)",
+   "solution_title": "Time per page, then convert",
+   "solution": "\\[\\begin{aligned} 300 \\times \\frac{45\\ \\text{s}}{18} &= 750\\ \\text{s} \\\\ 750 \\div 60 &= 12.5\\ \\text{min} \\end{aligned}\\]\n\n\\[\\boxed{12.5}\\]"
+  },
+  {
+   "title": "A percent of a percent",
+   "type": "mcq",
+   "prompt": "In a survey of 400 people, 35% own a dog.\n\nOf the dog owners, 40% also own a cat. How many people own both a dog and a cat?",
+   "choices": [
+    "\\(140\\)",
+    "\\(160\\)",
+    "\\(300\\)",
+    "\\(56\\)"
+   ],
+   "answer": "D",
+   "solution_title": "40% of the dog owners, not of everyone",
+   "solution": "\\[\\begin{aligned} 0.35 \\times 400 &= 140 \\\\ 0.40 \\times 140 &= \\boxed{56} \\end{aligned}\\]\n\n160 is 40% of all 400 people."
+  }
+ ],
+ "takeaway": "Write every percent as a multiplier, multiply successive changes, divide to undo one, and square the factor for square units.",
+ "send_to": "John"
+}

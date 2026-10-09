@@ -119,6 +119,7 @@ Practice quizzes and worked math material by course and topic.
 | [SAT Math 6 — Quadratic and Nonlinear Equations](topics/basic-math/sat-math-6-quadratic-and-nonlinear-equations/content.md) | How do you solve quadratic, radical and rational equations, use the discriminant, and solve a line–parabola system? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-6-quadratic-and-nonlinear-equations/material.html) |
 | [SAT Math 7 — Nonlinear Functions Quiz](topics/basic-math/sat-math-7-nonlinear-functions-quiz/content.md) | Five SAT-style questions on nonlinear functions, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-7-nonlinear-functions-quiz/quiz.html) |
 | [SAT Math 7 — Nonlinear Functions](topics/basic-math/sat-math-7-nonlinear-functions/content.md) | How do you read exponential growth and decay models, quadratic vertex and factored forms, and graph shifts in function notation? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-7-nonlinear-functions/material.html) |
+| [SAT Math 8 — Ratios, Rates and Percentages Quiz](topics/basic-math/sat-math-8-ratios-rates-and-percentages-quiz/content.md) | Five SAT-style questions on ratios, rates and percentages, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-8-ratios-rates-and-percentages-quiz/quiz.html) |
 
 ## Animations
 
