@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-6-quadratic-and-nonlinear-equations",
+ "title": "SAT Math 6 — Quadratic and Nonlinear Equations",
+ "course": "SAT Math",
+ "unit": "Concept 6",
+ "root": "sat",
+ "question": "How do you solve quadratic, radical and rational equations, use the discriminant, and solve a line–parabola system?",
+ "intro": "**SAT domain:** Advanced Math (13–15 of the 44 math questions).\n\n**Key ideas**\n- Solve \\(ax^2 + bx + c = 0\\) by factoring, the quadratic formula, or a graph:\n  - \\(x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}\\)\n- The discriminant \\(D = b^2 - 4ac\\) counts the real solutions:\n  - \\(D > 0\\): two\n  - \\(D = 0\\): one\n  - \\(D < 0\\): none\n- Sum and product of the solutions:\n  - sum \\(= -\\dfrac{b}{a}\\)\n  - product \\(= \\dfrac{c}{a}\\)\n- A line and a parabola: set them equal, get a quadratic. The discriminant says 0, 1 or 2 intersection points.\n- Radical and rational equations can produce **extraneous** solutions: check every answer in the original equation.\n\n**Watch out**\n- Move everything to one side (\\(= 0\\)) before factoring.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-6-quadratic-and-nonlinear-equations-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Exactly one solution",
+   "prompt": "In the equation below, \\(c\\) is a constant. The equation has exactly one real solution.\n\n\\[x^2 - 6x + c = 0\\]\n\nWhat is the value of \\(c\\)?\n\n**A.** \\(9\\)\n\n**B.** \\(36\\)\n\n**C.** \\(3\\)\n\n**D.** \\(-9\\)",
+   "steps": [
+    "Exactly one solution means the discriminant is 0:\n\n\\[b^2 - 4ac = 0\\]",
+    "\\[\\begin{aligned} (-6)^2 - 4(1)(c) &= 0 \\\\ 36 - 4c &= 0 \\\\ c &= 9 \\end{aligned}\\]",
+    "Check: \\(x^2 - 6x + 9 = (x - 3)^2\\), one solution \\(x = 3\\).\n\n\\[\\boxed{c = 9}\\]\n\n**Answer: A**"
+   ]
+  },
+  {
+   "title": "Exam 2 — Radical equation",
+   "prompt": "What is the solution of the equation?\n\n\\[\\sqrt{x + 7} = x - 5\\]\n\n(Type the answer.)",
+   "steps": [
+    "Square both sides:\n\n\\[\\begin{aligned} x + 7 &= (x - 5)^2 \\\\ x + 7 &= x^2 - 10x + 25 \\\\ 0 &= x^2 - 11x + 18 \\\\ 0 &= (x - 2)(x - 9) \\end{aligned}\\]",
+    "Check \\(x = 2\\) in the original: \\(\\sqrt{9} = 3\\), but \\(2 - 5 = -3\\). Extraneous.\n\nCheck \\(x = 9\\): \\(\\sqrt{16} = 4\\), and \\(9 - 5 = 4\\). ✓",
+    "\\[\\boxed{x = 9}\\]"
+   ]
+  }
+ ]
+}
