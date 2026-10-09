@@ -1,0 +1,75 @@
+{
+ "slug": "sat-math-4-linear-inequalities-quiz",
+ "title": "SAT Math 4 — Linear Inequalities Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 4",
+ "root": "sat",
+ "question": "Five SAT-style questions on linear inequalities, with full working.",
+ "intro": "Five questions on linear inequalities. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-4-linear-inequalities/material.html"
+ ],
+ "questions": [
+  {
+   "title": "Flip the sign",
+   "type": "mcq",
+   "prompt": "\\[-3(x - 4) \\ge 2x + 2\\]\n\nWhich describes all solutions?",
+   "choices": [
+    "\\(x \\ge 2\\)",
+    "\\(x \\le 2\\)",
+    "\\(x \\le -2\\)",
+    "\\(x \\ge -2\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Collect x on the side where it stays positive",
+   "solution": "\\[\\begin{aligned} -3x + 12 &\\ge 2x + 2 \\\\ 10 &\\ge 5x \\\\ 2 &\\ge x \\end{aligned}\\]\n\n\\[\\boxed{x \\le 2}\\]\n\nIf you divide by \\(-5\\) instead, remember to flip: \\(x \\le 2\\) again, not \\(x \\ge 2\\)."
+  },
+  {
+   "title": "Least score needed",
+   "type": "numeric",
+   "prompt": "A student scored 78, 85 and 90 on three tests.\n\nWhat is the least score on the fourth test that makes the mean of the four tests at least 85?",
+   "answer": 87,
+   "solution_title": "Mean at least 85 means total at least 340",
+   "solution": "\\[\\begin{aligned} \\frac{78 + 85 + 90 + s}{4} &\\ge 85 \\\\ 253 + s &\\ge 340 \\\\ s &\\ge 87 \\end{aligned}\\]\n\n\\[\\boxed{87}\\]"
+  },
+  {
+   "title": "Write the inequality",
+   "type": "mcq",
+   "prompt": "A bakery sells pastizzi for €0.60 each and qassatat for €0.90 each.\n\nIt must earn at least €270 in a day. It sells \\(p\\) pastizzi and \\(q\\) qassatat.\n\nWhich inequality models this?",
+   "choices": [
+    "\\(0.6p + 0.9q \\le 270\\)",
+    "\\(0.9p + 0.6q \\ge 270\\)",
+    "\\(p + q \\ge 270\\)",
+    "\\(0.6p + 0.9q \\ge 270\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Price times number, then 'at least'",
+   "solution": "Money from pastizzi: \\(0.6p\\). Money from qassatat: \\(0.9q\\).\n\n“At least €270” is \\(\\ge\\):\n\n\\[\\boxed{0.6p + 0.9q \\ge 270}\\]"
+  },
+  {
+   "title": "Fractions in an inequality",
+   "type": "mcq",
+   "prompt": "\\[\\frac{x}{3} - \\frac{1}{2} < \\frac{x}{4}\\]\n\nWhich describes all solutions?",
+   "choices": [
+    "\\(x < 6\\)",
+    "\\(x > 6\\)",
+    "\\(x < \\tfrac{1}{2}\\)",
+    "\\(x < 18\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Multiply by 12 (positive, so no flip)",
+   "solution": "\\[\\begin{aligned} 4x - 6 &< 3x \\\\ x &< 6 \\end{aligned}\\]\n\n\\[\\boxed{x < 6}\\]"
+  },
+  {
+   "title": "Count the integers",
+   "type": "numeric",
+   "prompt": "\\[-7 < 2x + 3 \\le 11\\]\n\nHow many integers \\(x\\) satisfy the inequality?",
+   "answer": 9,
+   "solution_title": "Do the same to all three parts",
+   "solution": "\\[\\begin{aligned} -10 &< 2x \\le 8 \\\\ -5 &< x \\le 4 \\end{aligned}\\]\n\nThe integers are \\(-4, -3, \\ldots, 4\\): \\(\\boxed{9}\\) of them. \\(-5\\) is not included (strict \\(<\\)); 4 is."
+  }
+ ],
+ "takeaway": "Solve like an equation, flip the sign for a negative multiplier, and round whole-number answers in the direction the limit allows.",
+ "send_to": "John"
+}
