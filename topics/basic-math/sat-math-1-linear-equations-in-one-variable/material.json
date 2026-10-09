@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-1-linear-equations-in-one-variable",
+ "title": "SAT Math 1 — Linear Equations in One Variable",
+ "course": "SAT Math",
+ "unit": "Concept 1",
+ "root": "sat",
+ "question": "How do you solve linear equations in one variable with fractions and decimals, and tell one, none or infinitely many solutions?",
+ "intro": "**SAT domain:** Algebra (13–15 of the 44 math questions).\n\n**Key ideas**\n- Do the same thing to both sides until \\(x\\) is alone.\n- Clear fractions first: multiply every term by the lowest common denominator (LCD).\n- Clear decimals the same way: multiply by 10 or 100.\n- After simplifying to \\(ax + b = cx + d\\):\n  - \\(a \\ne c\\): exactly one solution.\n  - \\(a = c\\) and \\(b \\ne d\\): no solution.\n  - \\(a = c\\) and \\(b = d\\): infinitely many solutions.\n- The SAT often asks for an expression such as \\(3x - 1\\), not \\(x\\). Look for a shortcut that gets it straight from the equation.\n\n**Watch out**\n- Distribute a minus sign to every term in the bracket: \\(-(x - 4) = -x + 4\\).\n- Multiply **every** term by the LCD, including whole numbers.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-1-linear-equations-in-one-variable-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Fractions on both sides",
+   "prompt": "What value of \\(x\\) satisfies the equation?\n\n\\[\\frac{2}{3}(x - 6) + 5 = \\frac{x}{2}\\]\n\n**A.** \\(-6\\)\n\n**B.** \\(6\\)\n\n**C.** \\(-18\\)\n\n**D.** \\(18\\)",
+   "steps": [
+    "Multiply every term by the LCD, 6:\n\n\\[4(x - 6) + 30 = 3x\\]",
+    "\\[\\begin{aligned} 4x - 24 + 30 &= 3x \\\\ 4x + 6 &= 3x \\\\ x &= -6 \\end{aligned}\\]",
+    "Check both sides at \\(x = -6\\):\n\n\\[\\begin{aligned} \\tfrac{2}{3}(-12) + 5 &= -3 \\\\ \\tfrac{-6}{2} &= -3 \\end{aligned}\\]\n\n\\[\\boxed{x = -6}\\]\n\n**Answer: A**"
+   ]
+  },
+  {
+   "title": "Exam 2 — Infinitely many solutions",
+   "prompt": "In the equation below, \\(k\\) is a constant. The equation has infinitely many solutions.\n\n\\[5(2x - k) + 3 = 10x - 12\\]\n\nWhat is the value of \\(k\\)? (Type the answer.)",
+   "steps": [
+    "Expand the left side:\n\n\\[10x - 5k + 3 = 10x - 12\\]",
+    "The \\(x\\)-terms already match. Infinitely many solutions needs the constants to match too:\n\n\\[\\begin{aligned} -5k + 3 &= -12 \\\\ -5k &= -15 \\\\ k &= 3 \\end{aligned}\\]",
+    "Any other \\(k\\) leaves \\(10x + \\text{(one number)} = 10x + \\text{(another number)}\\): no solution.\n\n\\[\\boxed{k = 3}\\]"
+   ]
+  }
+ ]
+}
