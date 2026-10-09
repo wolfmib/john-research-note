@@ -1,0 +1,32 @@
+{
+ "slug": "sat-math-2-linear-functions-and-graphs",
+ "title": "SAT Math 2 — Linear Functions and Graphs",
+ "course": "SAT Math",
+ "unit": "Concept 2",
+ "root": "sat",
+ "question": "What do slope and intercept mean in a linear model, and how do parallel and perpendicular lines and standard form work?",
+ "intro": "**SAT domain:** Algebra (13–15 of the 44 math questions).\n\n**Key ideas**\n- Slope-intercept form:\n  - \\(y = mx + b\\)\n- Slope from two points:\n  - \\(m = \\dfrac{y_2 - y_1}{x_2 - x_1}\\)\n- In a context, the slope is the change per unit, and \\(b\\) is the starting value (when \\(x = 0\\)).\n- Standard form \\(Ax + By = C\\):\n  - slope \\(= -\\dfrac{A}{B}\\)\n  - \\(x\\)-intercept \\(= \\dfrac{C}{A}\\)\n  - \\(y\\)-intercept \\(= \\dfrac{C}{B}\\)\n- Parallel lines have equal slopes.\n- Perpendicular slopes multiply to \\(-1\\): the new slope is the negative reciprocal.\n\n**Watch out**\n- Keep the order the same on top and bottom of the slope formula.\n- A decreasing quantity has a negative slope.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-2-linear-functions-and-graphs-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Build the model",
+   "prompt": "A water tank holds 840 litres. It drains at a constant rate, and after 15 minutes it holds 630 litres.\n\nWhich function gives the volume \\(V\\), in litres, after \\(t\\) minutes?\n\n**A.** \\(V(t) = 840 - 14t\\)\n\n**B.** \\(V(t) = 630 - 14t\\)\n\n**C.** \\(V(t) = 840 - 15t\\)\n\n**D.** \\(V(t) = 840 + 14t\\)",
+   "steps": [
+    "Slope from the two points \\((0, 840)\\) and \\((15, 630)\\):\n\n\\[\\begin{aligned} m &= \\frac{630 - 840}{15 - 0} \\\\ &= -14 \\end{aligned}\\]",
+    "The starting volume is the intercept, 840:\n\n\\[\\boxed{V(t) = 840 - 14t}\\]\n\n**Answer: A** — 630 is the volume after 15 minutes, not at the start."
+   ]
+  },
+  {
+   "title": "Exam 2 — Perpendicular line",
+   "prompt": "Line \\(\\ell\\) passes through \\((2, -1)\\) and is perpendicular to the line\n\n\\[3x - 4y = 8\\]\n\nWhat is the \\(y\\)-intercept of line \\(\\ell\\)? (Type the answer.)",
+   "steps": [
+    "Slope of \\(3x - 4y = 8\\):\n\n\\[\\begin{aligned} m &= -\\frac{3}{-4} \\\\ &= \\frac{3}{4} \\end{aligned}\\]",
+    "Perpendicular slope, the negative reciprocal:\n\n\\[m_\\ell = -\\frac{4}{3}\\]",
+    "Use the point \\((2, -1)\\) in \\(y = m_\\ell x + b\\):\n\n\\[\\begin{aligned} -1 &= -\\tfrac{4}{3}(2) + b \\\\ -1 &= -\\tfrac{8}{3} + b \\\\ b &= \\tfrac{5}{3} \\end{aligned}\\]\n\n\\[\\boxed{b = \\tfrac{5}{3}}\\]"
+   ]
+  }
+ ]
+}

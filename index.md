@@ -108,6 +108,7 @@ Practice quizzes and worked math material by course and topic.
 | [SAT Math 1 — Linear Equations in One Variable Quiz](topics/basic-math/sat-math-1-linear-equations-in-one-variable-quiz/content.md) | Five SAT-style questions on linear equations in one variable, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-1-linear-equations-in-one-variable-quiz/quiz.html) |
 | [SAT Math 1 — Linear Equations in One Variable](topics/basic-math/sat-math-1-linear-equations-in-one-variable/content.md) | How do you solve linear equations in one variable with fractions and decimals, and tell one, none or infinitely many solutions? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-1-linear-equations-in-one-variable/material.html) |
 | [SAT Math 2 — Linear Functions and Graphs Quiz](topics/basic-math/sat-math-2-linear-functions-and-graphs-quiz/content.md) | Five SAT-style questions on linear functions and graphs, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-2-linear-functions-and-graphs-quiz/quiz.html) |
+| [SAT Math 2 — Linear Functions and Graphs](topics/basic-math/sat-math-2-linear-functions-and-graphs/content.md) | What do slope and intercept mean in a linear model, and how do parallel and perpendicular lines and standard form work? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-2-linear-functions-and-graphs/material.html) |
 
 ## Animations
 
