@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-5-equivalent-expressions",
+ "title": "SAT Math 5 — Equivalent Expressions",
+ "course": "SAT Math",
+ "unit": "Concept 5",
+ "root": "sat",
+ "question": "How do you rewrite polynomial, exponent and rational expressions into equivalent forms and match coefficients?",
+ "intro": "**SAT domain:** Advanced Math (13–15 of the 44 math questions).\n\n**Key ideas**\n- Expand brackets and combine like terms.\n- Special products:\n  - \\((a + b)^2 = a^2 + 2ab + b^2\\)\n  - \\((a - b)^2 = a^2 - 2ab + b^2\\)\n  - \\(a^2 - b^2 = (a - b)(a + b)\\)\n- Exponent rules:\n  - \\(x^m \\cdot x^n = x^{m + n}\\)\n  - \\((x^m)^n = x^{mn}\\)\n  - \\(x^{-n} = \\dfrac{1}{x^n}\\)\n  - \\(x^{m/n} = \\sqrt[n]{x^m}\\)\n- Rational expressions: factor first, then cancel; add fractions over a common denominator.\n- If two polynomials are equal for **all** \\(x\\), their matching coefficients are equal.\n- Completing the square: \\(x^2 + bx + c = \\left(x + \\tfrac{b}{2}\\right)^2 + c - \\tfrac{b^2}{4}\\).\n\n**Watch out**\n- A minus sign in front of a bracket changes the sign of **every** term inside.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-5-equivalent-expressions-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Expand and subtract",
+   "prompt": "Which expression is equivalent to\n\n\\[(2x - 3)(x + 5) - (x^2 - 4)\\]\n\n**A.** \\(x^2 + 7x - 11\\)\n\n**B.** \\(x^2 + 7x - 19\\)\n\n**C.** \\(x^2 + 13x - 11\\)\n\n**D.** \\(3x^2 + 7x - 19\\)",
+   "steps": [
+    "Expand the product:\n\n\\[\\begin{aligned} (2x - 3)(x + 5) &= 2x^2 + 10x - 3x - 15 \\\\ &= 2x^2 + 7x - 15 \\end{aligned}\\]",
+    "Subtract **every** term of \\(x^2 - 4\\):\n\n\\[\\begin{aligned} 2x^2 + 7x - 15 - x^2 + 4 &= x^2 + 7x - 11 \\end{aligned}\\]",
+    "\\[\\boxed{x^2 + 7x - 11}\\]\n\n**Answer: A** — \\(-19\\) comes from \\(-15 - 4\\): the minus was not passed to the \\(-4\\)."
+   ]
+  },
+  {
+   "title": "Exam 2 — Match the coefficients",
+   "prompt": "For all values of \\(x\\),\n\n\\[(ax + 4)(2x - b) = 6x^2 - x - 12,\\]\n\nwhere \\(a\\) and \\(b\\) are constants. What is \\(a + b\\)? (Type the answer.)",
+   "steps": [
+    "Expand the left side:\n\n\\[2ax^2 + (8 - ab)x - 4b\\]",
+    "Match the \\(x^2\\) terms and the constants:\n\n\\[\\begin{aligned} 2a &= 6 \\\\ a &= 3 \\end{aligned}\\]\n\n\\[\\begin{aligned} -4b &= -12 \\\\ b &= 3 \\end{aligned}\\]",
+    "Check the middle term: \\(8 - ab = 8 - 9\\), which is \\(-1\\). ✓\n\n\\[\\boxed{a + b = 6}\\]"
+   ]
+  }
+ ]
+}
