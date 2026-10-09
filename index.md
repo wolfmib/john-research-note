@@ -113,6 +113,7 @@ Practice quizzes and worked math material by course and topic.
 | [SAT Math 3 — Systems of Linear Equations](topics/basic-math/sat-math-3-systems-of-linear-equations/content.md) | How do you solve a system of two linear equations by substitution or elimination, and when does it have no or infinitely many solutions? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-3-systems-of-linear-equations/material.html) |
 | [SAT Math 4 — Linear Inequalities Quiz](topics/basic-math/sat-math-4-linear-inequalities-quiz/content.md) | Five SAT-style questions on linear inequalities, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-4-linear-inequalities-quiz/quiz.html) |
 | [SAT Math 4 — Linear Inequalities](topics/basic-math/sat-math-4-linear-inequalities/content.md) | How do you solve and model linear inequalities, including word clues, sign flips, systems and whole-number answers? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-4-linear-inequalities/material.html) |
+| [SAT Math 5 — Equivalent Expressions Quiz](topics/basic-math/sat-math-5-equivalent-expressions-quiz/content.md) | Five SAT-style questions on equivalent expressions, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-5-equivalent-expressions-quiz/quiz.html) |
 
 ## Animations
 
