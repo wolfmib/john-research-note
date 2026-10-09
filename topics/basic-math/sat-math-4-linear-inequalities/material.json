@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-4-linear-inequalities",
+ "title": "SAT Math 4 — Linear Inequalities",
+ "course": "SAT Math",
+ "unit": "Concept 4",
+ "root": "sat",
+ "question": "How do you solve and model linear inequalities, including word clues, sign flips, systems and whole-number answers?",
+ "intro": "**SAT domain:** Algebra (13–15 of the 44 math questions).\n\n**Key ideas**\n- Solve an inequality like an equation.\n- Multiplying or dividing by a **negative** number flips the sign:\n  - \\(-2x > 6\\) becomes \\(x < -3\\)\n- Word clues:\n  - \"at least\", \"no less than\": \\(\\ge\\)\n  - \"at most\", \"no more than\": \\(\\le\\)\n  - \"more than\": \\(>\\), \"fewer than\": \\(<\\)\n- A point solves a system of inequalities only if it makes **every** inequality true.\n- Whole-number answers: the greatest number allowed rounds **down**; the least number needed rounds **up**.\n\n**Watch out**\n- Include every fixed amount (fees, the weight of the driver) before dividing.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-4-linear-inequalities-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Delivery van",
+   "prompt": "A delivery van can carry at most 1,250 kg. The driver weighs 80 kg, and each box weighs 35 kg.\n\nWhat is the greatest number of boxes the van can carry with the driver?\n\n**A.** \\(33\\)\n\n**B.** \\(34\\)\n\n**C.** \\(35\\)\n\n**D.** \\(37\\)",
+   "steps": [
+    "Total weight at most 1,250 kg:\n\n\\[80 + 35b \\le 1250\\]",
+    "\\[\\begin{aligned} 35b &\\le 1170 \\\\ b &\\le 33.4\\ldots \\end{aligned}\\]",
+    "The number of boxes is a whole number, so round **down**:\n\n\\[\\boxed{b = 33}\\]\n\n**Answer: A** — 35 forgets the driver (\\(1250 \\div 35 \\approx 35.7\\))."
+   ]
+  },
+  {
+   "title": "Exam 2 — A point in a system",
+   "prompt": "Which point \\((x, y)\\) is a solution of the system?\n\n\\[\\begin{aligned} y &> 2x - 3 \\\\ x + y &\\le 4 \\end{aligned}\\]\n\n**A.** \\((3, 2)\\)\n\n**B.** \\((0, 5)\\)\n\n**C.** \\((1, 2)\\)\n\n**D.** \\((4, 4)\\)",
+   "steps": [
+    "Test each point in **both** inequalities.\n\n\\((3, 2)\\): \\(2 > 3\\) is false.",
+    "\\((0, 5)\\): \\(5 > -3\\) is true, but \\(5 \\le 4\\) is false.\n\n\\((4, 4)\\): \\(4 > 5\\) is false.",
+    "\\((1, 2)\\): \\(2 > -1\\) is true, and \\(3 \\le 4\\) is true.\n\n\\[\\boxed{(1, 2)}\\]\n\n**Answer: C**"
+   ]
+  }
+ ]
+}
