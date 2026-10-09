@@ -1,0 +1,81 @@
+{
+ "slug": "sat-math-3-systems-of-linear-equations-quiz",
+ "title": "SAT Math 3 — Systems of Linear Equations Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 3",
+ "root": "sat",
+ "question": "Five SAT-style questions on systems of linear equations, with full working.",
+ "intro": "Five questions on systems of linear equations. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-3-systems-of-linear-equations/material.html"
+ ],
+ "questions": [
+  {
+   "title": "Ask for x + y",
+   "type": "mcq",
+   "prompt": "\\[\\begin{aligned} 3x + 2y &= 17 \\\\ x + 2y &= 7 \\end{aligned}\\]\n\nWhat is the value of \\(x + y\\)?",
+   "choices": [
+    "\\(5\\)",
+    "\\(6\\)",
+    "\\(24\\)",
+    "\\(7\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Subtract, then substitute",
+   "solution": "Subtract the second equation from the first:\n\n\\[\\begin{aligned} 2x &= 10 \\\\ x &= 5 \\end{aligned}\\]\n\n\\[\\begin{aligned} 5 + 2y &= 7 \\\\ y &= 1 \\end{aligned}\\]\n\n\\[x + y = \\boxed{6}\\]\n\n5 is \\(x\\) alone. Adding the equations gives \\(4x + 4y = 24\\), so 24 is \\(4(x + y)\\)."
+  },
+  {
+   "title": "Substitute into fractions",
+   "type": "numeric",
+   "prompt": "\\[\\begin{aligned} y &= 2x - 3 \\\\ \\tfrac{1}{2}x + \\tfrac{1}{3}y &= 6 \\end{aligned}\\]\n\nThe solution is \\((x, y)\\). What is the value of \\(y\\)?",
+   "answer": 9,
+   "solution_title": "Substitute, then multiply by 6",
+   "solution": "\\[\\begin{aligned} \\tfrac{1}{2}x + \\tfrac{1}{3}(2x - 3) &= 6 \\\\ 3x + 2(2x - 3) &= 36 \\\\ 7x - 6 &= 36 \\\\ x &= 6 \\end{aligned}\\]\n\n\\[\\begin{aligned} y &= 2(6) - 3 \\\\ &= \\boxed{9} \\end{aligned}\\]"
+  },
+  {
+   "title": "Count the solutions",
+   "type": "mcq",
+   "prompt": "\\[\\begin{aligned} 6x - 4y &= 10 \\\\ 9x - 6y &= 15 \\end{aligned}\\]\n\nHow many solutions does the system have?",
+   "choices": [
+    "Zero",
+    "Exactly one",
+    "Exactly two",
+    "Infinitely many"
+   ],
+   "answer": "D",
+   "solution_title": "One equation is a multiple of the other",
+   "solution": "Multiply the first equation by \\(\\tfrac{3}{2}\\):\n\n\\[9x - 6y = 15\\]\n\nThat is the second equation: the same line, so **infinitely many** solutions. Two lines can never meet in exactly two points."
+  },
+  {
+   "title": "Coffee blend",
+   "type": "mcq",
+   "prompt": "A café mixes beans that cost €12 per kg with beans that cost €20 per kg.\n\nIt makes 40 kg of a blend that costs €15 per kg.\n\nHow many kilograms of the €12 beans are used?",
+   "choices": [
+    "\\(15\\)",
+    "\\(20\\)",
+    "\\(25\\)",
+    "\\(30\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Mass and cost equations",
+   "solution": "\\[\\begin{aligned} a + b &= 40 \\\\ 12a + 20b &= 15 \\cdot 40 \\end{aligned}\\]\n\n\\[\\begin{aligned} 12a + 20(40 - a) &= 600 \\\\ -8a + 800 &= 600 \\\\ a &= \\boxed{25} \\end{aligned}\\]\n\n15 kg is the €20 beans. Sense check: €15 is nearer €12 than €20, so more of the cheap beans."
+  },
+  {
+   "title": "Where two lines meet",
+   "type": "mcq",
+   "prompt": "\\[\\begin{aligned} y &= -x + 7 \\\\ y &= \\tfrac{2}{3}x + 2 \\end{aligned}\\]\n\nThe solution is \\((a, b)\\). What is the value of \\(ab\\)?",
+   "choices": [
+    "\\(12\\)",
+    "\\(7\\)",
+    "\\(3\\)",
+    "\\(4\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Set the two right sides equal",
+   "solution": "\\[\\begin{aligned} -x + 7 &= \\tfrac{2}{3}x + 2 \\\\ 5 &= \\tfrac{5}{3}x \\\\ x &= 3 \\end{aligned}\\]\n\n\\[\\begin{aligned} y &= -3 + 7 \\\\ &= 4 \\end{aligned}\\]\n\n\\[\\begin{aligned} ab &= 3 \\cdot 4 \\\\ &= \\boxed{12} \\end{aligned}\\]"
+  }
+ ],
+ "takeaway": "Substitute or eliminate; compare the coefficient ratios to spot no solution or infinitely many before you solve.",
+ "send_to": "John"
+}
