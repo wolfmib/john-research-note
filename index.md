@@ -115,6 +115,7 @@ Practice quizzes and worked math material by course and topic.
 | [SAT Math 4 — Linear Inequalities](topics/basic-math/sat-math-4-linear-inequalities/content.md) | How do you solve and model linear inequalities, including word clues, sign flips, systems and whole-number answers? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-4-linear-inequalities/material.html) |
 | [SAT Math 5 — Equivalent Expressions Quiz](topics/basic-math/sat-math-5-equivalent-expressions-quiz/content.md) | Five SAT-style questions on equivalent expressions, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-5-equivalent-expressions-quiz/quiz.html) |
 | [SAT Math 5 — Equivalent Expressions](topics/basic-math/sat-math-5-equivalent-expressions/content.md) | How do you rewrite polynomial, exponent and rational expressions into equivalent forms and match coefficients? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-5-equivalent-expressions/material.html) |
+| [SAT Math 6 — Quadratic and Nonlinear Equations Quiz](topics/basic-math/sat-math-6-quadratic-and-nonlinear-equations-quiz/content.md) | Five SAT-style questions on quadratic and nonlinear equations, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-6-quadratic-and-nonlinear-equations-quiz/quiz.html) |
 
 ## Animations
 

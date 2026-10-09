@@ -1,0 +1,75 @@
+{
+ "slug": "sat-math-6-quadratic-and-nonlinear-equations-quiz",
+ "title": "SAT Math 6 — Quadratic and Nonlinear Equations Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 6",
+ "root": "sat",
+ "question": "Five SAT-style questions on quadratic and nonlinear equations, with full working.",
+ "intro": "Five questions on quadratic and nonlinear equations. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-6-quadratic-and-nonlinear-equations/material.html"
+ ],
+ "questions": [
+  {
+   "title": "Sum of the solutions",
+   "type": "mcq",
+   "prompt": "\\[2x^2 - 7x - 15 = 0\\]\n\nWhat is the sum of the solutions?",
+   "choices": [
+    "\\(-\\tfrac{7}{2}\\)",
+    "\\(\\tfrac{7}{2}\\)",
+    "\\(7\\)",
+    "\\(-\\tfrac{15}{2}\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Sum = −b/a, or factor",
+   "solution": "\\[\\begin{aligned} -\\frac{b}{a} &= -\\frac{-7}{2} \\\\ &= \\frac{7}{2} \\end{aligned}\\]\n\nFactor check: \\((2x + 3)(x - 5) = 0\\) gives \\(x = -\\tfrac{3}{2}\\) and \\(x = 5\\); their sum is \\(\\tfrac{7}{2}\\)."
+  },
+  {
+   "title": "Parabola meets a line",
+   "type": "numeric",
+   "prompt": "\\[\\begin{aligned} y &= -x^2 + 8x - 12 \\\\ y &= 3 \\end{aligned}\\]\n\nThe graphs meet at two points. What is the positive difference between their \\(x\\)-coordinates?",
+   "answer": 2,
+   "solution_title": "Set equal and factor",
+   "solution": "\\[\\begin{aligned} -x^2 + 8x - 12 &= 3 \\\\ x^2 - 8x + 15 &= 0 \\\\ (x - 3)(x - 5) &= 0 \\end{aligned}\\]\n\n\\(x = 3\\) and \\(x = 5\\): the difference is \\(\\boxed{2}\\)."
+  },
+  {
+   "title": "No real solutions",
+   "type": "mcq",
+   "prompt": "\\[3x^2 + kx + 12 = 0\\]\n\nFor which value of \\(k\\) does the equation have **no** real solutions?",
+   "choices": [
+    "\\(-12\\)",
+    "\\(13\\)",
+    "\\(11\\)",
+    "\\(24\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Need D < 0",
+   "solution": "\\[\\begin{aligned} D &= k^2 - 4(3)(12) \\\\ &= k^2 - 144 \\end{aligned}\\]\n\n\\(D < 0\\) needs \\(-12 < k < 12\\). Only 11 works. \\(k = -12\\) gives \\(D = 0\\): exactly one solution."
+  },
+  {
+   "title": "Rational equation",
+   "type": "mcq",
+   "prompt": "\\[\\frac{x}{x - 2} = \\frac{8}{x^2 - 4}\\]\n\nWhat are all the solutions?",
+   "choices": [
+    "\\(-4\\) only",
+    "\\(2\\) only",
+    "\\(-4\\) and \\(2\\)",
+    "No solution"
+   ],
+   "answer": "A",
+   "solution_title": "Multiply by (x − 2)(x + 2), then check",
+   "solution": "\\[\\begin{aligned} x(x + 2) &= 8 \\\\ x^2 + 2x - 8 &= 0 \\\\ (x + 4)(x - 2) &= 0 \\end{aligned}\\]\n\n\\(x = 2\\) makes the denominators 0, so it is extraneous. Only \\(\\boxed{x = -4}\\)."
+  },
+  {
+   "title": "When does the ball land?",
+   "type": "numeric",
+   "prompt": "A ball is thrown from a cliff. Its height, in metres, after \\(t\\) seconds is\n\n\\[h(t) = -5t^2 + 20t + 25\\]\n\nAfter how many seconds does the ball hit the ground?",
+   "answer": 5,
+   "solution_title": "Ground means h = 0",
+   "solution": "\\[\\begin{aligned} -5t^2 + 20t + 25 &= 0 \\\\ t^2 - 4t - 5 &= 0 \\\\ (t - 5)(t + 1) &= 0 \\end{aligned}\\]\n\nTime cannot be negative, so \\(\\boxed{t = 5}\\)."
+  }
+ ],
+ "takeaway": "Set the equation to zero, factor or use the formula, read the discriminant for the number of solutions, and check radical and rational answers.",
+ "send_to": "John"
+}
