@@ -1,0 +1,75 @@
+{
+ "slug": "sat-math-9-statistics-and-probability-quiz",
+ "title": "SAT Math 9 — Statistics and Probability Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 9",
+ "root": "sat",
+ "question": "Five SAT-style questions on statistics and probability, with full working.",
+ "intro": "Five questions on statistics and probability. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-9-statistics-and-probability/material.html"
+ ],
+ "questions": [
+  {
+   "title": "A sixth number",
+   "type": "numeric",
+   "prompt": "The mean of five numbers is 14.\n\nA sixth number is added, and the mean of the six numbers is 15. What is the sixth number?",
+   "answer": 20,
+   "solution_title": "Compare the sums",
+   "solution": "\\[\\begin{aligned} 5 \\times 14 &= 70 \\\\ 6 \\times 15 &= 90 \\\\ 90 - 70 &= \\boxed{20} \\end{aligned}\\]"
+  },
+  {
+   "title": "Compare the spread",
+   "type": "mcq",
+   "prompt": "Set A: 40, 45, 50, 55, 60\n\nSet B: 48, 49, 50, 51, 52\n\nWhich statement is true?",
+   "choices": [
+    "The means are equal, and set B has the larger standard deviation.",
+    "Set A has the larger mean and the larger standard deviation.",
+    "The means are equal, and set A has the larger standard deviation.",
+    "The means and the standard deviations are equal."
+   ],
+   "answer": "C",
+   "solution_title": "Same centre, different spread",
+   "solution": "Both sets are symmetric about 50, so both means are 50. Set A's values lie 5 to 10 from 50; set B's lie 1 to 2 from 50. Set A is more spread out: **larger standard deviation**."
+  },
+  {
+   "title": "Margin of error",
+   "type": "mcq",
+   "prompt": "A random sample of 500 voters in one city found that 46% support a new park. The margin of error is 3%.\n\nWhich conclusion is best supported?",
+   "choices": [
+    "Exactly 46% of the city's voters support the park.",
+    "It is plausible that between 43% and 49% of the city's voters support the park.",
+    "Between 43% and 49% of all voters in the country support the park.",
+    "A larger sample would make the margin of error larger."
+   ],
+   "answer": "B",
+   "solution_title": "Estimate ± margin, same population",
+   "solution": "\\(46\\% \\pm 3\\%\\) gives 43% to 49%, and it describes the **city** (where the sample came from), not the country. A larger sample makes the margin smaller."
+  },
+  {
+   "title": "Given the sum",
+   "type": "mcq",
+   "prompt": "Two fair six-sided dice are rolled.\n\nGiven that the sum is 8, what is the probability that at least one die shows a 3?",
+   "choices": [
+    "\\(\\tfrac{2}{5}\\)",
+    "\\(\\tfrac{1}{18}\\)",
+    "\\(\\tfrac{1}{6}\\)",
+    "\\(\\tfrac{5}{36}\\)"
+   ],
+   "answer": "A",
+   "solution_title": "List only the outcomes with sum 8",
+   "solution": "Sum 8: (2,6), (3,5), (4,4), (5,3), (6,2). That is 5 outcomes.\n\nWith a 3: (3,5) and (5,3). That is 2 outcomes.\n\n\\[P = \\boxed{\\tfrac{2}{5}}\\]\n\n\\(\\tfrac{1}{18}\\) divides by all 36 outcomes, ignoring “given that”."
+  },
+  {
+   "title": "Residual from a line of fit",
+   "type": "numeric",
+   "prompt": "A line of best fit for a scatterplot is\n\n\\[y = 1.8x + 32\\]\n\nOne data point is \\((25, 74)\\). What is the residual for this point?",
+   "answer": -3,
+   "solution_title": "Actual minus predicted",
+   "solution": "\\[\\begin{aligned} \\hat{y} &= 1.8(25) + 32 \\\\ &= 77 \\end{aligned}\\]\n\n\\[\\begin{aligned} \\text{residual} &= 74 - 77 \\\\ &= \\boxed{-3} \\end{aligned}\\]\n\nNegative: the line overestimates this point."
+  }
+ ],
+ "takeaway": "Turn means into sums, condition by shrinking the denominator, generalise only to the sampled population, and residual = actual − predicted.",
+ "send_to": "John"
+}
