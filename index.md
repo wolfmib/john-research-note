@@ -110,6 +110,7 @@ Practice quizzes and worked math material by course and topic.
 | [SAT Math 2 — Linear Functions and Graphs Quiz](topics/basic-math/sat-math-2-linear-functions-and-graphs-quiz/content.md) | Five SAT-style questions on linear functions and graphs, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-2-linear-functions-and-graphs-quiz/quiz.html) |
 | [SAT Math 2 — Linear Functions and Graphs](topics/basic-math/sat-math-2-linear-functions-and-graphs/content.md) | What do slope and intercept mean in a linear model, and how do parallel and perpendicular lines and standard form work? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-2-linear-functions-and-graphs/material.html) |
 | [SAT Math 3 — Systems of Linear Equations Quiz](topics/basic-math/sat-math-3-systems-of-linear-equations-quiz/content.md) | Five SAT-style questions on systems of linear equations, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-3-systems-of-linear-equations-quiz/quiz.html) |
+| [SAT Math 3 — Systems of Linear Equations](topics/basic-math/sat-math-3-systems-of-linear-equations/content.md) | How do you solve a system of two linear equations by substitution or elimination, and when does it have no or infinitely many solutions? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-3-systems-of-linear-equations/material.html) |
 
 ## Animations
 

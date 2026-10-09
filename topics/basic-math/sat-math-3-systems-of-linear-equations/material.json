@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-3-systems-of-linear-equations",
+ "title": "SAT Math 3 — Systems of Linear Equations",
+ "course": "SAT Math",
+ "unit": "Concept 3",
+ "root": "sat",
+ "question": "How do you solve a system of two linear equations by substitution or elimination, and when does it have no or infinitely many solutions?",
+ "intro": "**SAT domain:** Algebra (13–15 of the 44 math questions).\n\n**Key ideas**\n- **Substitution:** solve one equation for a variable and put it into the other.\n- **Elimination:** add or subtract the equations (after scaling) so one variable cancels.\n- **Graph:** the solution is the intersection point. Desmos finds it in seconds.\n- Number of solutions for \\(ax + by = c\\) and \\(dx + ey = f\\):\n  - one solution: different slopes, \\(\\dfrac{a}{d} \\ne \\dfrac{b}{e}\\)\n  - no solution: parallel lines, \\(\\dfrac{a}{d} = \\dfrac{b}{e} \\ne \\dfrac{c}{f}\\)\n  - infinitely many: the same line, \\(\\dfrac{a}{d} = \\dfrac{b}{e} = \\dfrac{c}{f}\\)\n- When the question asks for \\(x + y\\) or \\(x - y\\), try adding or subtracting the two equations first.\n\n**Watch out**\n- Answer the question asked: the value of \\(x\\), \\(y\\), or an expression in both.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-3-systems-of-linear-equations-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Ticket sales",
+   "prompt": "A school play sold 230 tickets. Adult tickets cost €8 and student tickets cost €5. The total was €1,450.\n\nHow many adult tickets were sold?\n\n**A.** \\(100\\)\n\n**B.** \\(130\\)\n\n**C.** \\(150\\)\n\n**D.** \\(80\\)",
+   "steps": [
+    "Let \\(a\\) be adult tickets and \\(s\\) student tickets:\n\n\\[\\begin{aligned} a + s &= 230 \\\\ 8a + 5s &= 1450 \\end{aligned}\\]",
+    "Substitute \\(s = 230 - a\\):\n\n\\[\\begin{aligned} 8a + 5(230 - a) &= 1450 \\\\ 3a + 1150 &= 1450 \\\\ a &= 100 \\end{aligned}\\]",
+    "\\[\\boxed{a = 100}\\]\n\n**Answer: A** — 130 is the number of student tickets."
+   ]
+  },
+  {
+   "title": "Exam 2 — No solution",
+   "prompt": "In the system below, \\(k\\) is a constant. The system has no solution.\n\n\\[\\begin{aligned} kx + 6y &= 9 \\\\ 2x + 3y &= 5 \\end{aligned}\\]\n\nWhat is the value of \\(k\\)? (Type the answer.)",
+   "steps": [
+    "No solution means parallel lines: the \\(x\\) and \\(y\\) coefficients are in the same ratio.\n\n\\[\\frac{k}{2} = \\frac{6}{3}\\]",
+    "\\[\\begin{aligned} \\frac{k}{2} &= 2 \\\\ k &= 4 \\end{aligned}\\]",
+    "Check the constants are **not** in that ratio: \\(\\tfrac{9}{5} \\ne 2\\), so the lines are parallel, not the same line.\n\n\\[\\boxed{k = 4}\\]"
+   ]
+  }
+ ]
+}
