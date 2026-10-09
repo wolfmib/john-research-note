@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-9-statistics-and-probability",
+ "title": "SAT Math 9 — Statistics and Probability",
+ "course": "SAT Math",
+ "unit": "Concept 9",
+ "root": "sat",
+ "question": "How do mean, median and spread react to data changes, and how do you read two-way tables, conditional probability, margins of error and residuals?",
+ "intro": "**SAT domain:** Problem-Solving and Data Analysis (5–7 of the 44 math questions).\n\n**Key ideas**\n- Mean and sum:\n  - mean \\(= \\dfrac{\\text{sum}}{\\text{count}}\\)\n  - sum \\(= \\text{mean} \\times \\text{count}\\)\n- Median: the middle value of the sorted data (the mean of the two middle values when the count is even).\n- An outlier pulls the mean towards it; the median hardly moves.\n- Standard deviation measures spread: data packed close to the mean has a smaller one. No calculation is needed on the SAT, only a comparison.\n- Two-way table, conditional probability:\n  - \\(P(A \\mid B) = \\dfrac{\\text{number in } A \\text{ and } B}{\\text{number in } B}\\)\n- A random sample lets you generalise only to the population it was drawn from.\n  - estimate \\(\\pm\\) margin of error gives the plausible range\n  - a larger sample gives a smaller margin of error\n- Line of best fit: residual \\(=\\) actual \\(-\\) predicted.\n\n**Watch out**\n- \"Given that …\" shrinks the denominator to that row or column only.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-9-statistics-and-probability-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Two-way table",
+   "prompt": "Students were asked how they travel to school.\n\n\\[\\begin{array}{l|ccc|c} & \\text{Bus} & \\text{Walk} & \\text{Car} & \\text{Total} \\\\ \\hline \\text{Year 10} & 30 & 25 & 15 & 70 \\\\ \\text{Year 11} & 20 & 35 & 25 & 80 \\\\ \\hline \\text{Total} & 50 & 60 & 40 & 150 \\end{array}\\]\n\nA student who walks is chosen at random. What is the probability the student is in Year 11?\n\n**A.** \\(\\tfrac{7}{12}\\)\n\n**B.** \\(\\tfrac{7}{30}\\)\n\n**C.** \\(\\tfrac{7}{16}\\)\n\n**D.** \\(\\tfrac{1}{2}\\)",
+   "steps": [
+    "“A student who walks” limits the choice to the Walk column: 60 students.",
+    "Of those, 35 are in Year 11:\n\n\\[\\begin{aligned} P &= \\frac{35}{60} \\\\ &= \\frac{7}{12} \\end{aligned}\\]",
+    "\\[\\boxed{\\tfrac{7}{12}}\\]\n\n**Answer: A** — \\(\\tfrac{7}{30}\\) divides by all 150 students; \\(\\tfrac{7}{16}\\) divides by the Year 11 total."
+   ]
+  },
+  {
+   "title": "Exam 2 — Remove an outlier",
+   "prompt": "\\[10,\\ 12,\\ 15,\\ 15,\\ 18,\\ 20,\\ 50\\]\n\nThe value 50 is removed from the data. How do the mean and the median change?\n\n**A.** The mean decreases by 5; the median does not change.\n\n**B.** Both decrease by 5.\n\n**C.** The mean does not change; the median decreases.\n\n**D.** The mean decreases by 5; the median decreases by 1.5.",
+   "steps": [
+    "Mean before and after:\n\n\\[\\begin{aligned} \\frac{140}{7} &= 20 \\\\ \\frac{90}{6} &= 15 \\end{aligned}\\]",
+    "Median before: the 4th value, 15.\n\nMedian after (6 values): the mean of the 3rd and 4th values, \\(\\tfrac{15 + 15}{2}\\), which is 15.",
+    "The mean falls by 5; the median stays 15.\n\n**Answer: A**"
+   ]
+  }
+ ]
+}
