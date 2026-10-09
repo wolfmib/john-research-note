@@ -1,0 +1,81 @@
+{
+ "slug": "sat-math-7-nonlinear-functions-quiz",
+ "title": "SAT Math 7 — Nonlinear Functions Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 7",
+ "root": "sat",
+ "question": "Five SAT-style questions on nonlinear functions, with full working.",
+ "intro": "Five questions on nonlinear functions. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-7-nonlinear-functions/material.html"
+ ],
+ "questions": [
+  {
+   "title": "Tripling every 4 hours",
+   "type": "mcq",
+   "prompt": "A bacteria culture starts with 500 cells and triples every 4 hours.\n\nHow many cells are there after 12 hours?",
+   "choices": [
+    "\\(4{,}500\\)",
+    "\\(6{,}000\\)",
+    "\\(13{,}500\\)",
+    "\\(18{,}000\\)"
+   ],
+   "answer": "C",
+   "solution_title": "12 hours is 3 tripling periods",
+   "solution": "\\[\\begin{aligned} N(12) &= 500 \\cdot 3^{12/4} \\\\ &= 500 \\cdot 3^3 \\\\ &= \\boxed{13{,}500} \\end{aligned}\\]\n\n4,500 uses \\(3^2\\); 18,000 multiplies by \\(3 \\times 12\\)."
+  },
+  {
+   "title": "Vertex and direction",
+   "type": "mcq",
+   "prompt": "Which function has its vertex at \\((-2, 7)\\) and opens downward?",
+   "choices": [
+    "\\(f(x) = -(x + 2)^2 + 7\\)",
+    "\\(f(x) = -(x - 2)^2 + 7\\)",
+    "\\(f(x) = (x + 2)^2 + 7\\)",
+    "\\(f(x) = -(x + 7)^2 - 2\\)"
+   ],
+   "answer": "A",
+   "solution_title": "a(x − h)² + k with h = −2",
+   "solution": "\\(x - h = x - (-2)\\), which is \\(x + 2\\); \\(k = 7\\); \\(a < 0\\) opens down.\n\n\\[\\boxed{f(x) = -(x + 2)^2 + 7}\\]"
+  },
+  {
+   "title": "Find the constant first",
+   "type": "numeric",
+   "prompt": "\\[g(x) = 3^x + k\\]\n\n\\(k\\) is a constant and \\(g(2) = 5\\). What is \\(g(4)\\)?",
+   "answer": 77,
+   "solution_title": "Use g(2) to find k",
+   "solution": "\\[\\begin{aligned} 3^2 + k &= 5 \\\\ k &= -4 \\end{aligned}\\]\n\n\\[\\begin{aligned} g(4) &= 3^4 - 4 \\\\ &= \\boxed{77} \\end{aligned}\\]"
+  },
+  {
+   "title": "Read the growth factor",
+   "type": "mcq",
+   "prompt": "The population of a town \\(t\\) years after 2020 is modelled by\n\n\\[P(t) = 1200(1.04)^t\\]\n\nWhich statement is true?",
+   "choices": [
+    "The population increases by 4 people each year.",
+    "The population was 1,248 in 2020.",
+    "The population increases by 104% each year.",
+    "The population increases by 4% each year."
+   ],
+   "answer": "D",
+   "solution_title": "b = 1.04 means 4% growth",
+   "solution": "\\(1.04 = 1 + 0.04\\): each year is 104% of the year before, an increase of **4%**. In 2020, \\(t = 0\\) and \\(P = 1200\\)."
+  },
+  {
+   "title": "Shift the zeros",
+   "type": "mcq",
+   "prompt": "The graph of \\(y = f(x)\\) crosses the \\(x\\)-axis at \\(x = -1\\) and \\(x = 5\\).\n\nWhere does the graph of \\(y = f(x - 3)\\) cross the \\(x\\)-axis?",
+   "choices": [
+    "\\(x = -4\\) and \\(x = 2\\)",
+    "\\(x = 2\\) and \\(x = 8\\)",
+    "\\(x = -3\\) and \\(x = 15\\)",
+    "\\(x = -1\\) and \\(x = 5\\)"
+   ],
+   "answer": "B",
+   "solution_title": "f(x − 3) moves the graph right 3",
+   "solution": "\\(f(x - 3) = 0\\) when \\(x - 3 = -1\\) or \\(x - 3 = 5\\):\n\n\\[\\boxed{x = 2 \\text{ and } x = 8}\\]\n\n\\(-4\\) and 2 shift left instead of right."
+  }
+ ],
+ "takeaway": "In a·bᵗ the base is the growth factor (1 ± r); a quadratic's vertex form shows its turning point and f(x − h) moves the graph right h.",
+ "send_to": "John"
+}
