@@ -1,0 +1,75 @@
+{
+ "slug": "sat-math-10-geometry-and-trigonometry-quiz",
+ "title": "SAT Math 10 — Geometry and Trigonometry Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 10",
+ "root": "sat",
+ "question": "Five SAT-style questions on geometry and trigonometry, with full working.",
+ "intro": "Five questions on geometry and trigonometry. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-10-geometry-and-trigonometry/material.html"
+ ],
+ "questions": [
+  {
+   "title": "Complementary angles",
+   "type": "mcq",
+   "prompt": "\\[\\cos(x^\\circ) = \\sin(52^\\circ)\\]\n\n\\(0 < x < 90\\). What is the value of \\(x\\)?",
+   "choices": [
+    "\\(52\\)",
+    "\\(128\\)",
+    "\\(142\\)",
+    "\\(38\\)"
+   ],
+   "answer": "D",
+   "solution_title": "sin x° = cos(90° − x°)",
+   "solution": "\\[\\begin{aligned} \\sin 52^\\circ &= \\cos(90^\\circ - 52^\\circ) \\\\ &= \\cos 38^\\circ \\end{aligned}\\]\n\n\\[\\boxed{x = 38}\\]"
+  },
+  {
+   "title": "Arc length in radians",
+   "type": "numeric",
+   "prompt": "A circle has radius 9. A central angle of \\(\\tfrac{2\\pi}{3}\\) radians cuts off an arc of length \\(k\\pi\\).\n\nWhat is the value of \\(k\\)?",
+   "answer": 6,
+   "solution_title": "Arc length = rθ",
+   "solution": "\\[\\begin{aligned} s &= 9 \\cdot \\tfrac{2\\pi}{3} \\\\ &= 6\\pi \\end{aligned}\\]\n\n\\[\\boxed{k = 6}\\]"
+  },
+  {
+   "title": "Similar cones",
+   "type": "mcq",
+   "prompt": "Two cones are similar. Their heights are 4 cm and 10 cm.\n\nThe smaller cone has a volume of \\(24\\ \\text{cm}^3\\). What is the volume of the larger cone?",
+   "choices": [
+    "\\(60\\ \\text{cm}^3\\)",
+    "\\(150\\ \\text{cm}^3\\)",
+    "\\(375\\ \\text{cm}^3\\)",
+    "\\(240\\ \\text{cm}^3\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Volume scales by k³",
+   "solution": "\\[\\begin{aligned} k &= \\tfrac{10}{4} \\\\ &= 2.5 \\\\ k^3 &= 15.625 \\\\ 24 \\times 15.625 &= \\boxed{375} \\end{aligned}\\]\n\n60 scales by \\(k\\) and 150 by \\(k^2\\): those are the rules for length and area."
+  },
+  {
+   "title": "Equilateral triangle area",
+   "type": "mcq",
+   "prompt": "An equilateral triangle has sides of length 10.\n\nWhat is its area?",
+   "choices": [
+    "\\(50\\)",
+    "\\(25\\sqrt{3}\\)",
+    "\\(50\\sqrt{3}\\)",
+    "\\(100\\)"
+   ],
+   "answer": "B",
+   "solution_title": "The height splits it into two 30°–60°–90° triangles",
+   "solution": "Half the base is 5, so the height is \\(5\\sqrt{3}\\).\n\n\\[\\begin{aligned} \\text{Area} &= \\tfrac{1}{2} \\cdot 10 \\cdot 5\\sqrt{3} \\\\ &= \\boxed{25\\sqrt{3}} \\end{aligned}\\]\n\n\\(50\\sqrt{3}\\) forgets the \\(\\tfrac{1}{2}\\)."
+  },
+  {
+   "title": "Parallel lines",
+   "type": "numeric",
+   "prompt": "Lines \\(\\ell\\) and \\(m\\) are parallel. A transversal crosses them.\n\nTwo co-interior (same-side interior) angles measure \\((3x + 10)^\\circ\\) and \\((2x - 5)^\\circ\\).\n\nWhat is the value of \\(x\\)?",
+   "answer": 35,
+   "solution_title": "Co-interior angles add to 180°",
+   "solution": "\\[\\begin{aligned} (3x + 10) + (2x - 5) &= 180 \\\\ 5x + 5 &= 180 \\\\ x &= \\boxed{35} \\end{aligned}\\]\n\nSetting the two angles equal (\\(x = -15\\)) is the rule for alternate angles, and gives a negative angle."
+  }
+ ],
+ "takeaway": "Use angle facts and similarity ratios (k, k², k³), SOH CAH TOA with the special triangles, and complete the square to read a circle.",
+ "send_to": "John"
+}
