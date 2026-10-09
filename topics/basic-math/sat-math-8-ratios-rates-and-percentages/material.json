@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-8-ratios-rates-and-percentages",
+ "title": "SAT Math 8 — Ratios, Rates and Percentages",
+ "course": "SAT Math",
+ "unit": "Concept 8",
+ "root": "sat",
+ "question": "How do you work with ratios, unit rates, unit conversions and percent change, including reverse and successive percentages?",
+ "intro": "**SAT domain:** Problem-Solving and Data Analysis (5–7 of the 44 math questions).\n\n**Key ideas**\n- A proportion \\(\\dfrac{a}{b} = \\dfrac{c}{d}\\) is solved by cross-multiplying.\n- Convert units by multiplying by fractions equal to 1:\n  - \\(\\dfrac{1\\ \\text{km}}{1000\\ \\text{m}}\\), \\(\\dfrac{60\\ \\text{s}}{1\\ \\text{min}}\\)\n- Squared units square the factor:\n  - \\(1\\ \\text{m}^2 = 100^2\\ \\text{cm}^2 = 10{,}000\\ \\text{cm}^2\\)\n- Percent change:\n  - \\(\\dfrac{\\text{new} - \\text{old}}{\\text{old}} \\times 100\\%\\)\n- Successive changes **multiply**: \\(+20\\%\\) then \\(-20\\%\\) is a 4% decrease.\n  - \\(1.2 \\times 0.8 = 0.96\\)\n- Reverse percent: after a change by factor \\(m\\), the original is \\(\\dfrac{\\text{new}}{m}\\).\n\n**Watch out**\n- A discount of 15% is not undone by adding 15% back.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-8-ratios-rates-and-percentages-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Price before the discount",
+   "prompt": "A jacket costs €68 after a 15% discount.\n\nWhat was the price before the discount?\n\n**A.** €80\n\n**B.** €78.20\n\n**C.** €57.80\n\n**D.** €83",
+   "steps": [
+    "After a 15% discount the price is 85% of the original:\n\n\\[0.85p = 68\\]",
+    "\\[\\begin{aligned} p &= \\frac{68}{0.85} \\\\ &= 80 \\end{aligned}\\]",
+    "\\[\\boxed{€80}\\]\n\n**Answer: A** — €78.20 adds 15% of €68: the 15% belongs to the original price, not the new one."
+   ]
+  },
+  {
+   "title": "Exam 2 — Fuel cost",
+   "prompt": "A car uses 6.5 litres of fuel per 100 km. Fuel costs €1.60 per litre.\n\nHow many euros does the fuel cost for a 340 km trip? (Type the answer.)",
+   "steps": [
+    "Fuel used:\n\n\\[\\begin{aligned} 340\\ \\text{km} \\times \\frac{6.5\\ \\text{L}}{100\\ \\text{km}} &= 22.1\\ \\text{L} \\end{aligned}\\]",
+    "Cost:\n\n\\[\\begin{aligned} 22.1\\ \\text{L} \\times \\frac{€1.60}{1\\ \\text{L}} &= €35.36 \\end{aligned}\\]",
+    "\\[\\boxed{35.36}\\]"
+   ]
+  }
+ ]
+}
