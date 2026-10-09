@@ -1,0 +1,33 @@
+{
+ "slug": "sat-math-10-geometry-and-trigonometry",
+ "title": "SAT Math 10 — Geometry and Trigonometry",
+ "course": "SAT Math",
+ "unit": "Concept 10",
+ "root": "sat",
+ "question": "How do you use angle facts, similar figures, right-triangle trigonometry, special triangles and circle equations, arcs and sectors?",
+ "intro": "**SAT domain:** Geometry and Trigonometry (5–7 of the 44 math questions). The reference sheet gives the area and volume formulas.\n\n**Key ideas**\n- Angles:\n  - a triangle's angles add to \\(180^\\circ\\)\n  - parallel lines: corresponding and alternate angles are equal; co-interior angles add to \\(180^\\circ\\)\n- Similar figures with scale factor \\(k\\): lengths \\(\\times k\\), areas \\(\\times k^2\\), volumes \\(\\times k^3\\).\n- Right triangles:\n  - \\(a^2 + b^2 = c^2\\)\n  - \\(\\sin = \\dfrac{\\text{opp}}{\\text{hyp}}\\), \\(\\cos = \\dfrac{\\text{adj}}{\\text{hyp}}\\), \\(\\tan = \\dfrac{\\text{opp}}{\\text{adj}}\\)\n  - \\(\\sin x^\\circ = \\cos(90^\\circ - x^\\circ)\\)\n- Special right triangles:\n  - \\(45^\\circ\\)–\\(45^\\circ\\)–\\(90^\\circ\\): sides \\(1 : 1 : \\sqrt{2}\\)\n  - \\(30^\\circ\\)–\\(60^\\circ\\)–\\(90^\\circ\\): sides \\(1 : \\sqrt{3} : 2\\)\n- Circles:\n  - equation \\((x - h)^2 + (y - k)^2 = r^2\\), centre \\((h, k)\\)\n  - arc length \\(= r\\theta\\), with \\(\\theta\\) in radians\n  - \\(\\pi\\) radians \\(= 180^\\circ\\)\n  - sector area \\(= \\dfrac{\\theta}{2\\pi} \\cdot \\pi r^2\\)\n\n**Watch out**\n- Complete the square in **both** \\(x\\) and \\(y\\) to read a circle's radius.",
+ "link": [
+  "Quiz ›",
+  "../sat-math-10-geometry-and-trigonometry-quiz/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Exam 1 — Radius from a circle equation",
+   "prompt": "A circle in the \\(xy\\)-plane has the equation\n\n\\[x^2 + y^2 - 6x + 8y = 11\\]\n\nWhat is the radius of the circle?\n\n**A.** \\(6\\)\n\n**B.** \\(\\sqrt{11}\\)\n\n**C.** \\(36\\)\n\n**D.** \\(5\\)",
+   "steps": [
+    "Complete the square in \\(x\\) and in \\(y\\):\n\n\\[(x^2 - 6x + 9) + (y^2 + 8y + 16) = 11 + 9 + 16\\]",
+    "\\[(x - 3)^2 + (y + 4)^2 = 36\\]",
+    "\\(r^2 = 36\\):\n\n\\[\\boxed{r = 6}\\]\n\n**Answer: A** — 36 is \\(r^2\\); \\(\\sqrt{11}\\) forgets the added 9 and 16."
+   ]
+  },
+  {
+   "title": "Exam 2 — Trig ratios in a right triangle",
+   "prompt": "In right triangle \\(ABC\\), angle \\(C\\) is \\(90^\\circ\\), \\(AB = 26\\) and\n\n\\[\\sin A = \\frac{12}{13}\\]\n\nWhat is \\(\\tan B\\)? (Type the answer.)",
+   "steps": [
+    "\\(\\sin A = \\dfrac{BC}{AB}\\), the side opposite \\(A\\) over the hypotenuse:\n\n\\[\\begin{aligned} BC &= \\tfrac{12}{13} \\cdot 26 \\\\ &= 24 \\end{aligned}\\]",
+    "Pythagoras for the third side:\n\n\\[\\begin{aligned} AC^2 &= 26^2 - 24^2 \\\\ &= 100 \\\\ AC &= 10 \\end{aligned}\\]",
+    "For angle \\(B\\), the opposite side is \\(AC\\) and the adjacent side is \\(BC\\):\n\n\\[\\begin{aligned} \\tan B &= \\frac{10}{24} \\\\ &= \\frac{5}{12} \\end{aligned}\\]\n\n\\[\\boxed{\\tfrac{5}{12}}\\]"
+   ]
+  }
+ ]
+}
