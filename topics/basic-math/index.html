@@ -369,6 +369,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         <span class="u">Track 3 · Chapter 1 to Chapter 19</span>
         <span class="t">Malta Year 8 Chapters</span>
         <span class="m">6 quizzes · 4 material pages</span></a>
+<a class="quiz" href="#sat" data-root="sat">
+        <span class="u">SAT Math · 10 concepts</span>
+        <span class="t">SAT</span>
+        <span class="m">1 quiz · 0 material pages</span></a>
 </div>
 </div>
 <div id="view-ap" data-root="ap" hidden>
@@ -529,12 +533,37 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 </div>
 </div>
 </div>
+<div id="view-sat" data-root="sat" hidden>
+<div class="topbar"><div class="row"><a class="back" href="#">‹ Basic Math</a></div></div>
+<section class="card">
+<p class="eyebrow">Basic Math</p>
+<h1>SAT</h1>
+<div class="tabs" role="tablist">
+<button class="tab" role="tab" id="tab-sat-quizzes" aria-controls="panel-sat-quizzes" data-root="sat" data-tab="quizzes">Quizzes</button>
+<button class="tab" role="tab" id="tab-sat-material" aria-controls="panel-sat-material" data-root="sat" data-tab="material">Material</button>
+</div>
+</section>
+<div id="panel-sat-quizzes" role="tabpanel" aria-labelledby="tab-sat-quizzes">
+<h2 class="course">SAT Math</h2>
+<div class="quizlist">
+<a class="quiz" href="sat-math-1-linear-equations-in-one-variable-quiz/quiz.html" data-slug="sat-math-1-linear-equations-in-one-variable-quiz">
+        <span class="u">Concept 1</span>
+        <span class="t">Linear Equations in One Variable Quiz</span>
+        <span class="m">5 questions<span class="lastscore"></span></span></a>
+</div>
+</div>
+<div id="panel-sat-material" role="tabpanel" aria-labelledby="tab-sat-material" hidden>
+<div class="quizlist first">
+
+</div>
+</div>
+</div>
 <p class="foot">Wei-Che Hung</p>
 </main>
 <script>
 (() => {
   // #ap, #malta → that root's Quizzes; #ap/material, #malta/material → its Material; old #material → AP Material.
-  const ROOTS = ["ap","malta","chapters"];
+  const ROOTS = ["ap","malta","chapters","sat"];
   const route = () => {
     const h = location.hash.slice(1);
     let [root, tab] = h === 'material' ? ['ap', 'material'] : h.split('/');

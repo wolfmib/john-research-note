@@ -1,0 +1,75 @@
+{
+ "slug": "sat-math-1-linear-equations-in-one-variable-quiz",
+ "title": "SAT Math 1 — Linear Equations in One Variable Quiz",
+ "course": "SAT Math",
+ "unit": "Concept 1",
+ "root": "sat",
+ "question": "Five SAT-style questions on linear equations in one variable, with full working.",
+ "intro": "Five questions on linear equations in one variable. **Show your working before you choose or type an answer.**",
+ "link": [
+  "Concept ›",
+  "../sat-math-1-linear-equations-in-one-variable/material.html"
+ ],
+ "questions": [
+  {
+   "title": "Find the expression, not x",
+   "type": "mcq",
+   "prompt": "\\[4x - 9 = 11\\]\n\nWhat is the value of \\(12x - 27\\)?",
+   "choices": [
+    "\\(5\\)",
+    "\\(33\\)",
+    "\\(60\\)",
+    "\\(15\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Multiply the whole equation by 3",
+   "solution": "\\(12x - 27\\) is exactly 3 times \\(4x - 9\\):\n\n\\[\\begin{aligned} 12x - 27 &= 3(4x - 9) \\\\ &= 3 \\cdot 11 \\\\ &= \\boxed{33} \\end{aligned}\\]\n\n5 is the value of \\(x\\), not of the expression."
+  },
+  {
+   "title": "Two fractions",
+   "type": "numeric",
+   "prompt": "\\[\\frac{x + 4}{3} - \\frac{x - 2}{5} = 2\\]\n\nWhat is the value of \\(x\\)?",
+   "answer": 2,
+   "solution_title": "Multiply by 15",
+   "solution": "\\[\\begin{aligned} 5(x + 4) - 3(x - 2) &= 30 \\\\ 5x + 20 - 3x + 6 &= 30 \\\\ 2x + 26 &= 30 \\\\ x &= \\boxed{2} \\end{aligned}\\]\n\nThe trap: \\(-3(x - 2) = -3x + 6\\), not \\(-3x - 6\\)."
+  },
+  {
+   "title": "Decimals",
+   "type": "mcq",
+   "prompt": "\\[0.35(x + 20) = 0.15x + 13\\]\n\nWhat is the value of \\(x\\)?",
+   "choices": [
+    "\\(100\\)",
+    "\\(6\\)",
+    "\\(40\\)",
+    "\\(30\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Multiply by 100 to clear the decimals",
+   "solution": "\\[\\begin{aligned} 35(x + 20) &= 15x + 1300 \\\\ 35x + 700 &= 15x + 1300 \\\\ 20x &= 600 \\\\ x &= \\boxed{30} \\end{aligned}\\]\n\n6 comes from stopping at \\(0.2x = 6\\)."
+  },
+  {
+   "title": "How many solutions?",
+   "type": "mcq",
+   "prompt": "\\[3(2x - 4) - x = 5x - 12\\]\n\nHow many solutions does the equation have?",
+   "choices": [
+    "Exactly one",
+    "Exactly two",
+    "Infinitely many",
+    "No solution"
+   ],
+   "answer": "C",
+   "solution_title": "Simplify the left side",
+   "solution": "\\[\\begin{aligned} 3(2x - 4) - x &= 6x - 12 - x \\\\ &= 5x - 12 \\end{aligned}\\]\n\nBoth sides are \\(5x - 12\\), so every \\(x\\) works: **infinitely many** solutions."
+  },
+  {
+   "title": "Two phone plans",
+   "type": "numeric",
+   "prompt": "Plan A costs €18 a month plus €0.05 per text message.\n\nPlan B costs €12 a month plus €0.08 per text message.\n\nFor how many text messages in a month do the two plans cost the same?",
+   "answer": 200,
+   "solution_title": "Set the two costs equal",
+   "solution": "\\[\\begin{aligned} 18 + 0.05t &= 12 + 0.08t \\\\ 6 &= 0.03t \\\\ t &= \\boxed{200} \\end{aligned}\\]\n\nCheck: both plans cost €28 for 200 texts."
+  }
+ ],
+ "takeaway": "Clear fractions and decimals first, then compare the x-terms and the constants to see one, none or infinitely many solutions.",
+ "send_to": "John"
+}
