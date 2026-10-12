@@ -1,0 +1,73 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 300' width='640' height='300' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='298' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='102.0' y='110.0' width='76.0' height='106.0' rx='10' fill='#fff8c5' stroke='#bc4c00' stroke-width='2.5'/>
+<path d='M111.7,133.0 Q125.0,119.7 138.3,133.0 Q125.0,144.4 111.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M116.5,131.1 Q125.0,124.5 133.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M141.7,133.0 Q155.0,119.7 168.3,133.0 Q155.0,144.4 141.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M146.4,131.1 Q155.0,124.5 163.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M111.7,163.0 Q125.0,149.7 138.3,163.0 Q125.0,174.4 111.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M116.5,161.1 Q125.0,154.4 133.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M141.7,163.0 Q155.0,149.7 168.3,163.0 Q155.0,174.4 141.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M146.4,161.1 Q155.0,154.4 163.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M111.7,193.0 Q125.0,179.7 138.3,193.0 Q125.0,204.4 111.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M116.5,191.1 Q125.0,184.4 133.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M141.7,193.0 Q155.0,179.7 168.3,193.0 Q155.0,204.4 141.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M146.4,191.1 Q155.0,184.4 163.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<rect x='192.0' y='110.0' width='76.0' height='106.0' rx='10' fill='#fff8c5' stroke='#bc4c00' stroke-width='2.5'/>
+<path d='M201.7,133.0 Q215.0,119.7 228.3,133.0 Q215.0,144.4 201.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M206.4,131.1 Q215.0,124.5 223.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M231.7,133.0 Q245.0,119.7 258.3,133.0 Q245.0,144.4 231.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M236.4,131.1 Q245.0,124.5 253.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M201.7,163.0 Q215.0,149.7 228.3,163.0 Q215.0,174.4 201.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M206.4,161.1 Q215.0,154.4 223.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M231.7,163.0 Q245.0,149.7 258.3,163.0 Q245.0,174.4 231.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M236.4,161.1 Q245.0,154.4 253.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M201.7,193.0 Q215.0,179.7 228.3,193.0 Q215.0,204.4 201.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M206.4,191.1 Q215.0,184.4 223.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M231.7,193.0 Q245.0,179.7 258.3,193.0 Q245.0,204.4 231.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M236.4,191.1 Q245.0,184.4 253.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<rect x='282.0' y='110.0' width='76.0' height='106.0' rx='10' fill='#ffffff' stroke='#d0d7de' stroke-width='2.5'/>
+<path d='M291.7,133.0 Q305.0,119.7 318.3,133.0 Q305.0,144.4 291.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M296.4,131.1 Q305.0,124.5 313.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M321.7,133.0 Q335.0,119.7 348.3,133.0 Q335.0,144.4 321.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M326.4,131.1 Q335.0,124.5 343.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M291.7,163.0 Q305.0,149.7 318.3,163.0 Q305.0,174.4 291.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M296.4,161.1 Q305.0,154.4 313.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M321.7,163.0 Q335.0,149.7 348.3,163.0 Q335.0,174.4 321.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M326.4,161.1 Q335.0,154.4 343.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M291.7,193.0 Q305.0,179.7 318.3,193.0 Q305.0,204.4 291.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M296.4,191.1 Q305.0,184.4 313.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M321.7,193.0 Q335.0,179.7 348.3,193.0 Q335.0,204.4 321.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M326.4,191.1 Q335.0,184.4 343.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<rect x='372.0' y='110.0' width='76.0' height='106.0' rx='10' fill='#ffffff' stroke='#d0d7de' stroke-width='2.5'/>
+<path d='M381.7,133.0 Q395.0,119.7 408.3,133.0 Q395.0,144.4 381.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M386.4,131.1 Q395.0,124.5 403.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M411.7,133.0 Q425.0,119.7 438.3,133.0 Q425.0,144.4 411.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M416.4,131.1 Q425.0,124.5 433.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M381.7,163.0 Q395.0,149.7 408.3,163.0 Q395.0,174.4 381.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M386.4,161.1 Q395.0,154.4 403.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M411.7,163.0 Q425.0,149.7 438.3,163.0 Q425.0,174.4 411.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M416.4,161.1 Q425.0,154.4 433.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M381.7,193.0 Q395.0,179.7 408.3,193.0 Q395.0,204.4 381.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M386.4,191.1 Q395.0,184.4 403.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M411.7,193.0 Q425.0,179.7 438.3,193.0 Q425.0,204.4 411.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M416.4,191.1 Q425.0,184.4 433.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<rect x='462.0' y='110.0' width='76.0' height='106.0' rx='10' fill='#ffffff' stroke='#d0d7de' stroke-width='2.5'/>
+<path d='M471.7,133.0 Q485.0,119.7 498.3,133.0 Q485.0,144.4 471.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M476.4,131.1 Q485.0,124.5 493.6,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M501.7,133.0 Q515.0,119.7 528.3,133.0 Q515.0,144.4 501.7,133.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M506.4,131.1 Q515.0,124.5 523.5,131.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M471.7,163.0 Q485.0,149.7 498.3,163.0 Q485.0,174.4 471.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M476.4,161.1 Q485.0,154.4 493.6,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M501.7,163.0 Q515.0,149.7 528.3,163.0 Q515.0,174.4 501.7,163.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M506.4,161.1 Q515.0,154.4 523.5,161.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M471.7,193.0 Q485.0,179.7 498.3,193.0 Q485.0,204.4 471.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M476.4,191.1 Q485.0,184.4 493.6,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M501.7,193.0 Q515.0,179.7 528.3,193.0 Q515.0,204.4 501.7,193.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M506.4,191.1 Q515.0,184.4 523.5,191.1' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M102.0,98.0 q0,-14 12,-14 L173.0,84.0 q12,0 12,-14 q0,14 12,14 L256.0,84.0 q12,0 12,14' stroke='#0969da' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='167.0' y='66.0' font-size='21' font-weight='700' text-anchor='middle' fill='#0969da'>2 of the 5 boxes:</text>
+<text x='277.0' y='68.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='320.0' y='264.0' font-size='21' font-weight='500' text-anchor='middle' fill='#57606a'>30 pastizzi in 5 equal boxes</text>
+</svg>

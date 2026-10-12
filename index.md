@@ -128,6 +128,7 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — UK Thunderball: Two Drums, Combinations and Expected Value](topics/basic-math/math-material-uk-thunderball-two-drums-combinations-and-expected-value/content.md) | How many Thunderball lines are there, how many win in each prize tier, and what is one £1 line worth on average? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-uk-thunderball-two-drums-combinations-and-expected-value/material.html) |
 | [Malta Year 8 Math — All 19 Chapters: Basic](topics/basic-math/malta-year-8-math-all-chapters-basic/content.md) | Can you do one quick step from each of the nineteen chapters? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic/quiz.html) |
 | [Malta Year 8 Math — All 19 Chapters: Basic Extended](topics/basic-math/malta-year-8-math-all-chapters-basic-extended/content.md) | Five more versions of every Basic question: can you do the same step again with new numbers? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-extended/quiz.html) |
+| [Malta Year 8 Math — All 19 Chapters: Basic Set A](topics/basic-math/malta-year-8-math-all-chapters-basic-set-a/content.md) | Set A: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-a/quiz.html) |
 
 ## Animations
 

@@ -1,0 +1,38 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360' width='640' height='360' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='358' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='60.0' y1='300.0' x2='500.0' y2='300.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='306.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<line x1='60.0' y1='271.2' x2='500.0' y2='271.2' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='277.2' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>2</text>
+<line x1='60.0' y1='242.5' x2='500.0' y2='242.5' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='248.5' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>4</text>
+<line x1='60.0' y1='213.8' x2='500.0' y2='213.8' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='219.8' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>6</text>
+<line x1='60.0' y1='185.0' x2='500.0' y2='185.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='191.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>8</text>
+<line x1='60.0' y1='156.2' x2='500.0' y2='156.2' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='162.2' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>10</text>
+<line x1='60.0' y1='127.5' x2='500.0' y2='127.5' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='133.5' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>12</text>
+<line x1='60.0' y1='98.8' x2='500.0' y2='98.8' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='104.8' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>14</text>
+<line x1='60.0' y1='70.0' x2='500.0' y2='70.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='76.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>16</text>
+<rect x='88.0' y='127.5' width='75.0' height='172.5' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<text x='125.5' y='117.5' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>12</text>
+<text x='125.5' y='326.0' font-size='17' font-weight='700' text-anchor='middle' fill='#57606a'>Mon</text>
+<rect x='191.0' y='185.0' width='75.0' height='115.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<text x='228.5' y='175.0' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>8</text>
+<text x='228.5' y='326.0' font-size='17' font-weight='700' text-anchor='middle' fill='#57606a'>Tue</text>
+<rect x='294.0' y='156.2' width='75.0' height='143.8' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<text x='331.5' y='146.2' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>10</text>
+<text x='331.5' y='326.0' font-size='17' font-weight='700' text-anchor='middle' fill='#57606a'>Wed</text>
+<rect x='397.0' y='98.8' width='75.0' height='201.2' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<text x='434.5' y='88.8' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>14</text>
+<text x='434.5' y='326.0' font-size='17' font-weight='700' text-anchor='middle' fill='#57606a'>Thu</text>
+<line x1='60.0' y1='300.0' x2='500.0' y2='300.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round'/>
+<text x='280.0' y='34.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>pages read: level the bars</text>
+<text x='570.0' y='150.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>mean =</text>
+<text x='570.0' y='200.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>

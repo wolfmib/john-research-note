@@ -1,0 +1,36 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 620 320' width='620' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='618' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='50.0' y='80.0' width='56.0' height='56.0' rx='10' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<circle cx='78.0' cy='108.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<rect x='130.0' y='80.0' width='56.0' height='56.0' rx='10' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<circle cx='144.0' cy='94.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='172.0' cy='122.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<rect x='210.0' y='80.0' width='56.0' height='56.0' rx='10' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<circle cx='224.0' cy='94.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='238.0' cy='108.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='252.0' cy='122.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<rect x='50.0' y='170.0' width='56.0' height='56.0' rx='10' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<circle cx='64.0' cy='184.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='92.0' cy='184.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='64.0' cy='212.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='92.0' cy='212.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<rect x='130.0' y='170.0' width='56.0' height='56.0' rx='10' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<circle cx='144.0' cy='184.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='172.0' cy='184.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='158.0' cy='198.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='144.0' cy='212.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='172.0' cy='212.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<rect x='210.0' y='170.0' width='56.0' height='56.0' rx='10' fill='#ffffff' stroke='#cf222e' stroke-width='3.5'/>
+<circle cx='224.0' cy='184.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='252.0' cy='184.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='224.0' cy='198.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='252.0' cy='198.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='224.0' cy='212.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='252.0' cy='212.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<text x='150.0' y='290.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>one fair dice</text>
+<text x='330.0' y='120.0' font-size='22' font-weight='700' text-anchor='start' fill='#1f2328'>6 faces</text>
+<text x='330.0' y='155.0' font-size='20' font-weight='700' text-anchor='start' fill='#cf222e'>one face shows 6</text>
+<text x='330.0' y='230.0' font-size='23' font-weight='700' text-anchor='start' fill='#0969da'>P(not 6) =</text>
+<text x='480.0' y='233.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>

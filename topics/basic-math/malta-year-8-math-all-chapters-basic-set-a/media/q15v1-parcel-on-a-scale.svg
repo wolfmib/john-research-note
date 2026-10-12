@@ -1,0 +1,37 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 360' width='600' height='360' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='358' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<polygon points='300.0,120.0 280.0,300.0 320.0,300.0' fill='#d0d7de' stroke='#1f2328' stroke-width='2' stroke-linejoin='round'/>
+<line x1='90.0' y1='120.0' x2='510.0' y2='120.0' stroke='#1f2328' stroke-width='5' stroke-linecap='round'/>
+<line x1='100.0' y1='120.0' x2='100.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<line x1='240.0' y1='120.0' x2='240.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<path d='M85,200 L255,200 L240,220 L100,220 Z' stroke='#57606a' stroke-width='2' fill='#eaeef2' stroke-linejoin='round'/>
+<line x1='360.0' y1='120.0' x2='360.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<line x1='500.0' y1='120.0' x2='500.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<path d='M345,200 L515,200 L500,220 L360,220 Z' stroke='#57606a' stroke-width='2' fill='#eaeef2' stroke-linejoin='round'/>
+<rect x='104.0' y='150.0' width='54.0' height='46.0' rx='3' fill='#c8945a' stroke='#1f2328' stroke-width='2'/>
+<line x1='104.0' y1='160.0' x2='158.0' y2='160.0' stroke='#8a5a2b' stroke-width='2' stroke-linecap='round'/>
+<text x='131.0' y='189.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328' font-style='italic'>x</text>
+<rect x='170.0' y='176.0' width='20.0' height='20.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='192.0' y='176.0' width='20.0' height='20.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='170.0' y='154.0' width='20.0' height='20.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='192.0' y='154.0' width='20.0' height='20.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='370.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='390.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='410.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='430.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='450.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='470.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='370.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='390.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='410.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='430.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='450.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='470.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<rect x='370.0' y='138.0' width='18.0' height='18.0' rx='0' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/>
+<text x='170.0' y='262.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328'>x + 4</text>
+<text x='430.0' y='262.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328'>13</text>
+<text x='300.0' y='336.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>each yellow block is 1 kg; the scale is balanced</text>
+<text x='150.0' y='60.0' font-size='22' font-weight='800' text-anchor='middle' fill='#0969da'>parcel x =</text>
+<text x='225.0' y='62.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>
