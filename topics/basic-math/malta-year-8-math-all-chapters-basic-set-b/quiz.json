@@ -1,0 +1,443 @@
+{
+ "course": "Malta Year 8 Math",
+ "root": "chapters",
+ "send_to": "John",
+ "slug": "malta-year-8-math-all-chapters-basic-set-b",
+ "title": "Malta Year 8 Math — All 19 Chapters: Basic Set B",
+ "unit": "All Chapters · Set B",
+ "question": "Set B: one quick step from each of the nineteen chapters, with new numbers.",
+ "intro": "**Set B:** the same 38 steps as Basic, new questions, two per chapter.",
+ "questions": [
+  {
+   "title": "Ch 1 Directed Numbers · Kinnie on the table",
+   "type": "numeric",
+   "prompt": "A bottle of Kinnie comes out of the freezer at \\(-5\\,^\\circ\\text{C}\\) (5 degrees below zero).\n\nOn the table it gets 7 degrees warmer.\n\nWhat is its temperature now?",
+   "figure": "q01v2-kinnie-on-the-table.svg",
+   "figure_alt": "A thermometer from −6 to 6 °C next to a Kinnie bottle. The start −5 is marked; an arrow goes 7 degrees up to a question mark.",
+   "answer": 2,
+   "solution": "Warmer means move **up** the thermometer:\n\n\\[-5 + 7 = \\boxed{2}\\]\n\n\\(-12\\) moves 7 degrees colder instead of warmer; \\(12\\) forgets the minus sign on \\(-5\\).",
+   "answer_display": "2 °C"
+  },
+  {
+   "title": "Ch 1 Directed Numbers · Hotel lift down",
+   "type": "numeric",
+   "prompt": "In a hotel in St Julian's, floor 0 is the street and floor \\(-1\\) is 1 floor below it.\n\nA lift starts on floor \\(-1\\) and goes down 3 floors.\n\nWhich floor does it stop at?",
+   "figure": "q02v2-hotel-lift-down.svg",
+   "figure_alt": "A building with floors −5 to 3 and street level at floor 0. A lift car is on floor −1 and an arrow goes down 3 floors to a floor marked with a question mark.",
+   "answer": -4,
+   "solution": "Down means subtract:\n\n\\[-1 - 3 = \\boxed{-4}\\]\n\n\\(2\\) moves 3 floors up instead of down.",
+   "answer_display": "floor −4"
+  },
+  {
+   "title": "Ch 2 Number Work · Kinnie crates",
+   "type": "numeric",
+   "prompt": "You have 4 bottles of Kinnie and 2 crates with 6 bottles in each crate.\n\nThe total is \\(4 + 2\\times6\\).\n\nHow many bottles are there?",
+   "figure": "q03v2-kinnie-crates.svg",
+   "figure_alt": "Four loose bottles plus two crates with six bottles each, then equals a question mark.",
+   "answer": 16,
+   "solution": "BIDMAS: multiply first (the crates), then add.\n\n\\[2\\times6 = 12\\]\n\n\\[4 + 12 = \\boxed{16}\\]\n\n\\(36\\) adds first, as if it were \\((4 + 2)\\times6\\)."
+  },
+  {
+   "title": "Ch 2 Number Work · Square cake",
+   "type": "numeric",
+   "prompt": "A square birthday cake is cut into 5 rows with 5 pieces in each row.\n\nThe number of pieces is \\(5^2\\) (the small 2 means 5 times itself).\n\nHow many pieces are there?",
+   "figure": "q04v2-square-cake.svg",
+   "figure_alt": "A 5 by 5 square of pieces; how many pieces in all is the question.",
+   "answer": 25,
+   "solution": "A square number is rows times columns:\n\n\\[5^2 = 5\\times5\\]\n\n\\[5\\times5 = \\boxed{25}\\]\n\n\\(10\\) is \\(5\\times2\\), not \\(5\\times5\\)."
+  },
+  {
+   "title": "Ch 3 Angles · Ladder on a wall",
+   "type": "numeric",
+   "prompt": "A ladder leans on a wall and stands on flat ground.\n\nOn the wall side, the ladder makes \\(65^\\circ\\) with the ground.\n\nFind the angle between the ladder and the ground on the other side.",
+   "figure": "q05v2-ladder-on-a-wall.svg",
+   "figure_alt": "A ladder leaning on a wall. Between the ladder and the ground on the wall side is 65°; on the other side the angle is a question mark.",
+   "answer": 115,
+   "solution": "The ground is a straight line, so the two angles add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 65^\\circ = \\boxed{115^\\circ}\\]\n\n\\(25^\\circ\\) uses \\(90^\\circ\\), which is for a right angle, not a straight line.",
+   "answer_display": "115°"
+  },
+  {
+   "title": "Ch 3 Angles · House roof",
+   "type": "numeric",
+   "prompt": "The roof of a house is a triangle.\n\nThe two bottom angles are \\(35^\\circ\\) each.\n\nFind the top angle.",
+   "figure": "q06v2-house-roof.svg",
+   "figure_alt": "A house with a triangular roof. Both bottom corners of the roof are 35°; the top angle is a question mark.",
+   "answer": 110,
+   "solution": "The angles in a triangle add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 35^\\circ - 35^\\circ = \\boxed{110^\\circ}\\]\n\n\\(145^\\circ\\) takes away only one of the two \\(35^\\circ\\) angles.",
+   "answer_display": "110°"
+  },
+  {
+   "title": "Ch 4 Fractions · Chocolate bar",
+   "type": "mcq",
+   "prompt": "A chocolate bar has 12 equal pieces.\n\nA fraction like \\(\\frac{1}{12}\\) means 1 piece out of the 12.\n\nYou eat 4 pieces and a friend eats 3 pieces.\n\nWhat fraction of the bar is eaten?",
+   "figure": "q07v2-chocolate-bar.svg",
+   "figure_alt": "A chocolate bar of 12 pieces: 4 orange pieces (you), 3 green pieces (a friend); the eaten fraction is a question mark.",
+   "choices": [
+    "\\(\\frac{7}{24}\\)",
+    "\\(\\frac{4}{12}\\)",
+    "\\(\\frac{7}{12}\\)",
+    "\\(\\frac{5}{12}\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Count the pieces",
+   "solution": "Same size pieces, so add the tops:\n\n\\[\\frac{4}{12} + \\frac{3}{12} = \\boxed{\\frac{7}{12}}\\]\n\n\\(\\frac{7}{24}\\) adds the bottoms too, but there are still 12 pieces, not 24."
+  },
+  {
+   "title": "Ch 4 Fractions · Bus seats",
+   "type": "numeric",
+   "prompt": "A Valletta bus has 24 seats.\n\n\\(\\frac{3}{4}\\) of the seats are taken (\\(\\frac{3}{4}\\) means 3 out of every 4 equal parts).\n\nHow many seats are taken?",
+   "figure": "q08v2-bus-seats.svg",
+   "figure_alt": "24 seats in 4 equal boxes of 6; 3 boxes are shaded and labelled with a question mark.",
+   "answer": 18,
+   "solution": "Split 24 into 4 equal boxes, then take 3 of them:\n\n\\[24\\div4 = 6\\]\n\n\\[6\\times3 = \\boxed{18}\\]\n\n\\(6\\) is only one box; you need 3 of the 4 boxes."
+  },
+  {
+   "title": "Ch 5 Decimals · Ice cream and water",
+   "type": "numeric",
+   "prompt": "An ice cream costs €2.20 and a bottle of water costs €1.75.\n\nHow much do they cost together?",
+   "figure": "q09v2-ice-cream-and-water.svg",
+   "figure_alt": "A ice cream with a price tag of €2.20 and a water with a price tag of €1.75; beside them the column sum 2.20 + 1.75 with a question mark for the total.",
+   "answer": 3.95,
+   "solution": "Line up the decimal points:\n\n\\[2.20 + 1.75 = \\boxed{3.95}\\]\n\n- The answer is €3.95.\n- \\(1.97\\) writes 2.20 as 0.22 (\\(0.22 + 1.75\\)) instead of lining up the decimal points.",
+   "answer_display": "€3.95"
+  },
+  {
+   "title": "Ch 5 Decimals · Cans of drink",
+   "type": "numeric",
+   "prompt": "One can holds 0.33 litres of drink.\n\nA pack has 10 cans, so it holds \\(0.33\\times10\\) litres.\n\nHow many litres are in the pack?",
+   "figure": "q10v2-cans-of-drink.svg",
+   "figure_alt": "Ten items of 0.33 litres each in a row; below, a place-value table with 0.33 in the top row and arrows moving each digit one place left into a row of question marks.",
+   "answer": 3.3,
+   "solution": "Every digit moves one place to the left:\n\n\\[0.33\\times10 = \\boxed{3.3}\\]\n\n\\(0.033\\) moves the digits to the right, which is dividing by 10.",
+   "answer_display": "3.3 litres"
+  },
+  {
+   "title": "Ch 6 Percentages · Walk to school",
+   "type": "numeric",
+   "prompt": "A class has 30 students.\n\n\\(10\\%\\) of them walk to school (\\(10\\%\\) means 10 out of every 100, the same as one tenth).\n\nHow many students walk to school?",
+   "figure": "q11v2-walk-to-school.svg",
+   "figure_alt": "A bar for 30 students cut into 10 equal blocks; the first block (10%) is a question mark.",
+   "answer": 3,
+   "solution": "\\(10\\%\\) is one block out of 10:\n\n\\[30\\div10 = \\boxed{3}\\]\n\n- So \\(10\\%\\) of 30 students is 3 students.\n- \\(20\\) takes 10 away; a percentage is a part, not a subtraction.",
+   "answer_display": "3 students"
+  },
+  {
+   "title": "Ch 6 Percentages · Blue floor tiles",
+   "type": "numeric",
+   "prompt": "A floor has 100 equal tiles in a 10 by 10 square.\n\nSome tiles are blue.\n\nPer cent means out of 100.\n\nWhat percentage of the floor is blue?",
+   "figure": "q12v2-blue-floor-tiles.svg",
+   "figure_alt": "A 10 by 10 grid of 100 tiles: 2 full columns and 3 more are coloured.",
+   "answer": 23,
+   "solution": "- Per cent means out of 100.\n- Count: 2 full columns and 3 more.\n\n\\[20 + 3 = 23\\]\n\n\\[\\frac{23}{100} = \\boxed{23\\%}\\]\n\n\\(77\\%\\) counts the white tiles.",
+   "answer_display": "23%"
+  },
+  {
+   "title": "Ch 7 Ratio · Pocket money",
+   "type": "numeric",
+   "prompt": "You and your brother share €30 in the ratio \\(2 : 3\\).\n\nYour brother gets the bigger share.\n\nHow many euros does he get?",
+   "figure": "q13v2-pocket-money.svg",
+   "figure_alt": "A bar model: two green boxes for you, three yellow boxes for your brother, €30 in all; the brother's share is a question mark.",
+   "answer": 18,
+   "solution": "There are \\(2 + 3 = 5\\) equal parts:\n\n\\[30\\div5 = 6\\]\n\n\\[6\\times3 = \\boxed{18}\\]\n\nSo the bigger share is €18.\n\n€12 is the smaller share; €15 splits €30 into 2 halves, but the ratio has 5 parts, not 2.",
+   "answer_display": "€18"
+  },
+  {
+   "title": "Ch 7 Ratio · Ferry cars and vans",
+   "type": "mcq",
+   "prompt": "On the Gozo ferry there are 30 cars and 12 vans.\n\nWrite the ratio cars : vans, \\(30 : 12\\), in its simplest form.",
+   "figure": "q14v2-ferry-cars-and-vans.svg",
+   "figure_alt": "Thirty blue counters (cars) in 5 groups of 6 and twelve green counters (vans) in 2 groups of 6.",
+   "choices": [
+    "\\(15 : 6\\)",
+    "\\(2 : 5\\)",
+    "\\(5 : 2\\)",
+    "\\(10 : 4\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Divide both by 6",
+   "solution": "The HCF of 30 and 12 is 6:\n\n\\[30\\div6 = 5\\]\n\n\\[12\\div6 = 2\\]\n\n\\[\\boxed{5 : 2}\\]\n\n- \\(15 : 6\\) and \\(10 : 4\\) are the same ratio, but they can still be divided by 3 or by 2.\n- \\(2 : 5\\) swaps the order: cars come first."
+  },
+  {
+   "title": "Ch 8 Algebra · Bus stop",
+   "type": "numeric",
+   "prompt": "There are \\(x\\) passengers on a bus.\n\nAt the next stop 6 more get on, and now there are 17 passengers, so \\(x + 6 = 17\\).\n\nSolve to find \\(x\\).",
+   "figure": "q15v2-bus-stop.svg",
+   "figure_alt": "A bus with x passengers; six people get on, and then there are 17 passengers; x is a question mark.",
+   "answer": 11,
+   "solution": "Take 6 from both sides:\n\n\\[x + 6 = 17\\]\n\n\\[x = 17 - 6\\]\n\n\\[x = \\boxed{11}\\]\n\n23 adds 6 instead of taking it away."
+  },
+  {
+   "title": "Ch 8 Algebra · Chairs at tables",
+   "type": "numeric",
+   "prompt": "Long tables are pushed together in a row for a festa dinner, with 2 chairs on each long side of a table and 1 chair at each end of the row.\n\nFor \\(t\\) tables you need \\(4t + 2\\) chairs, where \\(4t + 2\\) means \\(4\\times t + 2\\).\n\nHow many chairs do 5 tables need?",
+   "figure": "q16v2-chairs-at-tables.svg",
+   "figure_alt": "A function machine: 5 tables go in, times 4, plus 2, and the number of chairs is a question mark.",
+   "answer": 22,
+   "solution": "Put 5 in place of \\(t\\), multiply first, then add:\n\n\\[4\\times5 = 20\\]\n\n\\[20 + 2 = \\boxed{22}\\]\n\n47 reads \\(4t\\) as 45, but \\(4t\\) means \\(4\\times t\\)."
+  },
+  {
+   "title": "Ch 9 Sequences · Tables and chairs",
+   "type": "numeric",
+   "prompt": "Square tables are pushed together in a row, with chairs all round.\n\n1 table has 4 chairs, 2 tables have 6 chairs and 3 tables have 8 chairs.\n\nHow many chairs fit round 4 tables?",
+   "figure": "q17v2-tables-and-chairs.svg",
+   "figure_alt": "Square tables in a row with chairs round them: 1, 2 and 3 tables with 4, 6 and 8 chairs; pattern 4 is a question mark.",
+   "answer": 10,
+   "solution": "Each new pattern adds 2 chairs:\n\n\\[8 + 2 = \\boxed{10}\\]\n\n12 adds 4 chairs for the new table, but the chair at the join moves to the end, so only 2 are new."
+  },
+  {
+   "title": "Ch 9 Sequences · Festa arches",
+   "type": "numeric",
+   "prompt": "Each festa arch has light bulbs.\n\nArch number \\(n\\) has \\(4n + 1\\) bulbs, where \\(4n + 1\\) means \\(4\\times n + 1\\).\n\nHow many bulbs are on arch 5?",
+   "figure": "q18v2-festa-arches.svg",
+   "figure_alt": "A table: arches 1, 2, 3 have 5, 9, 13 bulbs (each +4); arch 5 is a question mark. The rule is 4n + 1.",
+   "answer": 21,
+   "solution": "Put \\(n = 5\\) into the rule, multiply first, then add:\n\n\\[4\\times5 = 20\\]\n\n\\[20 + 1 = \\boxed{21}\\]\n\n10 reads \\(4n\\) as 4 + 5, but \\(4n\\) means \\(4\\times n\\)."
+  },
+  {
+   "title": "Ch 10 Circles · Dinner plate",
+   "type": "numeric",
+   "prompt": "A round dinner plate has radius 13 cm.\n\nFind its diameter.",
+   "figure": "q19v2-dinner-plate.svg",
+   "figure_alt": "A round plate with a 13 cm radius from the centre and a dashed diameter across it.",
+   "answer": 26,
+   "solution": "The diameter goes right across, so it is two radii:\n\n\\[d = 2r\\]\n\n\\[d = 2\\times13\\]\n\n\\[d = \\boxed{26 \\text{ cm}}\\]\n\n6.5 cm halves the radius; the diameter is double, not half.",
+   "answer_display": "26 cm"
+  },
+  {
+   "title": "Ch 10 Circles · Cake tin",
+   "type": "numeric",
+   "prompt": "A round cake tin has diameter 20 cm.\n\nYou tie a ribbon once round it.\n\nUse \\(\\pi \\approx 3.14\\) to find the length of ribbon (the circumference).",
+   "figure": "q20v2-cake-tin.svg",
+   "figure_alt": "A round cake of diameter 20 cm rolled out into a straight line a little more than 3 diameters long.",
+   "answer": 62.8,
+   "solution": "The circumference is about 3.14 diameters:\n\n\\[C = \\pi d\\]\n\n\\[C \\approx 3.14\\times20\\]\n\n\\[C \\approx \\boxed{62.8 \\text{ cm}}\\]\n\n31.4 cm uses the radius (10 cm) instead of the diameter, so it is only half way round.",
+   "answer_display": "62.8 cm"
+  },
+  {
+   "title": "Ch 11 Perimeter & Area · Classroom floor",
+   "type": "numeric",
+   "prompt": "A classroom floor is 7 m long and 6 m wide.\n\nFind its area.",
+   "figure": "q21v2-classroom-floor.svg",
+   "figure_alt": "A 7 m by 6 m floor split into 1 m squares.",
+   "answer": 42,
+   "solution": "Rows of squares:\n\n\\[A = l\\times w\\]\n\n\\[A = 7\\times6\\]\n\n\\[A = \\boxed{42 \\text{ m}^2}\\]\n\n26 m is the perimeter (the distance round), not the area.",
+   "answer_display": "42 m²"
+  },
+  {
+   "title": "Ch 11 Perimeter & Area · Boat sail",
+   "type": "numeric",
+   "prompt": "A boat sail is a right-angled triangle.\n\nIts base is 6 m and its height up the mast is 9 m.\n\nFind its area.",
+   "figure": "q22v2-boat-sail.svg",
+   "figure_alt": "A right-angled triangle with base 6 m and height 9 m up the left side, inside a dashed 6 by 9 rectangle on a grid.",
+   "answer": 27,
+   "solution": "A triangle is half of its rectangle:\n\n\\[A = \\tfrac{1}{2}bh\\]\n\n\\[A = \\tfrac{1}{2}\\times6\\times9\\]\n\n\\[A = \\boxed{27 \\text{ m}^2}\\]\n\n54 m² forgets the half.",
+   "answer_display": "27 m²"
+  },
+  {
+   "title": "Ch 12 Surface Area & Nets · Ice cube",
+   "type": "numeric",
+   "prompt": "A large ice cube has edges of 4 cm.\n\nFind its surface area.",
+   "figure": "q23v2-ice-cube.svg",
+   "figure_alt": "A cube with 4 cm edges and a net of six squares in a staircase shape.",
+   "answer": 96,
+   "solution": "6 square faces, each:\n\n\\[\\begin{aligned} 4\\times4 &= 16 \\text{ cm}^2 \\\\ SA &= 6a^2 \\end{aligned}\\]\n\n\\[SA = 6\\times16\\]\n\n\\[SA = \\boxed{96 \\text{ cm}^2}\\]\n\n64 cm³ is the volume 4 × 4 × 4; surface area covers the outside.",
+   "answer_display": "96 cm²"
+  },
+  {
+   "title": "Ch 12 Surface Area & Nets · Water tank",
+   "type": "numeric",
+   "prompt": "A water tank on a roof is 3 m long, 2 m wide and 2 m high.\n\nFind its volume.",
+   "figure": "q24v2-water-tank.svg",
+   "figure_alt": "A cuboid 3 by 2 by 2 built from 1 m cubes.",
+   "answer": 12,
+   "solution": "Count the cubes, layer by layer:\n\n\\[V = lwh\\]\n\n\\[V = 3\\times2\\times2\\]\n\n\\[V = \\boxed{12 \\text{ m}^3}\\]\n\n7 m³ adds the three lengths; volume multiplies them.",
+   "answer_display": "12 m³"
+  },
+  {
+   "title": "Ch 13 Graphs · Cinema seat",
+   "type": "mcq",
+   "prompt": "A cinema seating plan is drawn on a grid.\n\nYour seat is at point S.\n\nWhat are the coordinates of S?",
+   "figure": "q25v2-cinema-seat.svg",
+   "figure_alt": "A coordinate grid from 0 to 6 across and 0 to 5 up with point S plotted next to a small picture.",
+   "choices": [
+    "\\((4, 2)\\)",
+    "\\((3, 5)\\)",
+    "\\((-2, 4)\\)",
+    "\\((2, 4)\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Across first, then up",
+   "solution": "From 0 go 2 across, then 4 up:\n\n\\[\\boxed{(2, 4)}\\]\n\n\\((4, 2)\\) reads up before across."
+  },
+  {
+   "title": "Ch 13 Graphs · Taxi fare",
+   "type": "numeric",
+   "prompt": "A taxi costs €2 to start plus €3 for each kilometre.\n\nThe cost is \\(y = 3x + 2\\) euros for \\(x\\) km.\n\nFind \\(y\\) when \\(x = 2\\).",
+   "figure": "q26v2-taxi-fare.svg",
+   "figure_alt": "The line y = 3x + 2 on a grid; a dashed line from x = 2 goes up to the line at a question mark.",
+   "answer": 8,
+   "solution": "Put \\(x = 2\\) into the rule:\n\n\\[y = 3\\times2 + 2\\]\n\n\\[y = 6 + 2\\]\n\n\\[y = \\boxed{8}\\]\n\n- The answer is €8.\n- \\(10\\) adds \\(3 + 2\\) first and then multiplies by 2: multiply first.",
+   "answer_display": "€8"
+  },
+  {
+   "title": "Ch 14 Statistics · Shoe sizes",
+   "type": "numeric",
+   "prompt": "A group of friends wear these shoe sizes: \\(37, 38, 38, 36, 38, 39, 37\\).\n\nFind the mode.",
+   "figure": "q27v2-shoe-sizes.svg",
+   "figure_alt": "A dot plot of 37, 38, 38, 36, 38, 39, 37: the column above 38 is the tallest.",
+   "answer": 38,
+   "solution": "The mode is the value that appears most often: 38 appears 3 times.\n\n\\[\\text{mode} = \\boxed{38}\\]\n\n\\(3\\) is how many times 38 appears, not the value itself."
+  },
+  {
+   "title": "Ch 14 Statistics · Cycling",
+   "type": "numeric",
+   "prompt": "You cycle 5 km, 9 km and 7 km on three days.\n\nFind the mean distance per day.",
+   "figure": "q28v2-cycling.svg",
+   "figure_alt": "A bar chart of 5, 9, 7; the mean, the level height, is a question mark.",
+   "answer": 7,
+   "solution": "Add them, then share equally between the 3 values:\n\n\\[5 + 9 + 7 = 21\\]\n\n\\[21\\div3 = \\boxed{7}\\]\n\n\\(21\\) is the total; the mean shares it out.",
+   "answer_display": "7 km"
+  },
+  {
+   "title": "Ch 15 Probability · Jar of marbles",
+   "type": "mcq",
+   "prompt": "A jar holds 5 green and 4 yellow marbles.\n\nOne marble is taken without looking.\n\nWhat is the probability that it is green?",
+   "figure": "q29v2-jar-of-marbles.svg",
+   "figure_alt": "Jar of marbles: 5 green and 4 yellow; the probability is a question mark.",
+   "choices": [
+    "\\(\\frac{5}{4}\\)",
+    "\\(\\frac{4}{9}\\)",
+    "\\(\\frac{5}{9}\\)",
+    "\\(\\frac{1}{5}\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Green out of all",
+   "solution": "5 green out of:\n\n\\[\\begin{aligned} 5 + 4 &= 9 \\\\ P(\\text{green}) &= \\boxed{\\frac{5}{9}} \\end{aligned}\\]\n\n\\(\\frac{5}{4}\\) compares green with yellow; a probability compares with **all** 9 marbles."
+  },
+  {
+   "title": "Ch 15 Probability · Coloured cards",
+   "type": "mcq",
+   "prompt": "Ten cards are shuffled face down: 3 are green and 7 are red.\n\nYou turn over one card.\n\nWhat is the probability that it is **not** green?",
+   "figure": "q30v2-coloured-cards.svg",
+   "figure_alt": "Ten cards: 3 green and 7 red.",
+   "choices": [
+    "\\(\\frac{3}{10}\\)",
+    "\\(\\frac{7}{10}\\)",
+    "\\(\\frac{10}{7}\\)",
+    "\\(\\frac{1}{10}\\)"
+   ],
+   "answer": "B",
+   "solution_title": "1 minus P(green)",
+   "solution": "\\[P(\\text{not green}) = 1 - \\frac{3}{10}\\]\n\n\\[P(\\text{not green}) = \\boxed{\\frac{7}{10}}\\]\n\n- \\(\\frac{3}{10}\\) is P(green) itself.\n- \\(\\frac{10}{7}\\) is more than 1, and no probability is more than 1."
+  },
+  {
+   "title": "Ch 16 Constructions · Wooden sticks",
+   "type": "mcq",
+   "prompt": "You glue three wooden sticks into a triangle.\n\nWhich three lengths can make a triangle?",
+   "figure": "q31v2-wooden-sticks.svg",
+   "figure_alt": "A base of 5 cm with compass arcs of 2 cm and 2 cm from its ends; the arcs leave a gap and never meet.",
+   "choices": [
+    "2 cm, 2 cm, 5 cm",
+    "3 cm, 5 cm, 9 cm",
+    "1 cm, 6 cm, 8 cm",
+    "5 cm, 6 cm, 9 cm"
+   ],
+   "answer": "D",
+   "solution_title": "The two short sides must reach",
+   "solution": "The two shorter sides together must be longer than the longest:\n\n\\[5 + 6 = 11\\]\n\n\\[11 > 9\\]\n\n- So \\(\\boxed{5 \\text{ cm}, 6 \\text{ cm}, 9 \\text{ cm}}\\) works.\n- In the others the short sides are too short: \\(2 + 2 = 4\\), \\(3 + 5 = 8\\) and \\(1 + 6 = 7\\), each less than the longest side."
+  },
+  {
+   "title": "Ch 16 Constructions · Folded page",
+   "type": "numeric",
+   "prompt": "The corner of a page is a right angle, \\(90^\\circ\\).\n\nYou fold the corner so the fold line bisects the angle.\n\nWhat is each smaller angle?",
+   "figure": "q32v2-folded-page.svg",
+   "figure_alt": "An angle of 90° with a dashed bisector splitting it into two equal angles marked with question marks.",
+   "answer": 45,
+   "solution": "Bisect means cut into two equal halves:\n\n\\[90^\\circ\\div2 = \\boxed{45^\\circ}\\]\n\n\\(180^\\circ\\) doubles instead of halving.",
+   "answer_display": "45°"
+  },
+  {
+   "title": "Ch 17 Transformations · Lake reflection",
+   "type": "mcq",
+   "prompt": "The calm surface of a lake is the \\(x\\)-axis.\n\nThe top of a tree is at \\((4, 3)\\).\n\nWhere is the top of its reflection in the water?",
+   "figure": "q33v2-lake-reflection.svg",
+   "figure_alt": "A grid with the x-axis as a mirror; the point (4, 3) and a dashed arrow to a question mark on the other side.",
+   "choices": [
+    "\\((4, -3)\\)",
+    "\\((-4, 3)\\)",
+    "\\((-4, -3)\\)",
+    "\\((3, 4)\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Same distance, other side",
+   "solution": "The \\(x\\)-axis is the mirror: \\(y\\) changes sign, \\(x\\) stays.\n\n\\[(4, 3) \\to \\boxed{(4, -3)}\\]\n\n\\((-4, 3)\\) reflects in the \\(y\\)-axis instead."
+  },
+  {
+   "title": "Ch 17 Transformations · Warehouse robot",
+   "type": "mcq",
+   "prompt": "A robot in a warehouse is at \\((5, 3)\\).\n\nIt moves by \\(\\binom{-2}{1}\\): 2 left and 1 up.\n\nWhere does it stop?",
+   "figure": "q34v2-warehouse-robot.svg",
+   "figure_alt": "A grid with the point (5, 3), a move of 2 left and 1 up ending at a question mark.",
+   "choices": [
+    "\\((7, 4)\\)",
+    "\\((-2, 1)\\)",
+    "\\((3, 4)\\)",
+    "\\((3, 2)\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Add the moves",
+   "solution": "Add the moves to the coordinates:\n\n\\[(5 - 2,\\ 3 + 1) = \\boxed{(3, 4)}\\]\n\n\\((-2, 1)\\) is the move itself, not where the point lands."
+  },
+  {
+   "title": "Ch 18 Real-life Problems · Beach kiosk",
+   "type": "numeric",
+   "prompt": "At a beach kiosk the bill is €4.55.\n\nYou pay with a €10 note.\n\nHow much change do you get?",
+   "figure": "q35v2-beach-kiosk.svg",
+   "figure_alt": "A receipt with a total of €4.55 next to a €10 note; the change is a question mark.",
+   "answer": 5.45,
+   "solution": "Change = money paid − cost:\n\n\\[10.00 - 4.55 = \\boxed{5.45}\\]\n\n- The change is €5.45.\n- \\(6.55\\) takes away only the 4 euros and copies the cents instead of taking them away too.",
+   "answer_display": "€5.45"
+  },
+  {
+   "title": "Ch 18 Real-life Problems · Lunch break",
+   "type": "numeric",
+   "prompt": "The school lunch break starts at 12:50 and lessons start again at 13:20.\n\nHow many minutes is the break?",
+   "figure": "q36v2-lunch-break.svg",
+   "figure_alt": "Two clocks: 12:50 and 13:20, with an arrow between them marked question mark minutes.",
+   "answer": 30,
+   "solution": "Count up to the hour, then on:\n\n\\[12{:}50 \\to 13{:}00 = 10 \\text{ min}\\]\n\n\\[13{:}00 \\to 13{:}20 = 20 \\text{ min}\\]\n\n\\[10 + 20 = \\boxed{30 \\text{ min}}\\]\n\n\\(70\\) subtracts 1320 − 1250 as ordinary numbers, but an hour has 60 minutes, not 100.",
+   "answer_display": "30 minutes"
+  },
+  {
+   "title": "Ch 19 Logo · Triangle track",
+   "type": "numeric",
+   "prompt": "A toy car drives around a track shaped like an equilateral triangle.\n\nEvery inside angle is 60°.\n\nThe toy car moves forward 25 steps and turns right, 3 times.\n\nIn Logo this is `REPEAT 3 [FD 25 RT ?]`.\n\n- `FD 25` means move forward 25 steps (a length).\n- `RT ?` means turn right by ? degrees (an angle).\n\nHow many degrees is each turn?",
+   "figure": "q37v2-triangle-track.svg",
+   "figure_alt": "A equilateral triangle walked by a toy car that starts facing right: arrows 1 to 3 are forward 25 steps each; one inside angle of 60° is marked; at each corner a dashed straight-on line and a right turn marked with a question mark.",
+   "answer": 120,
+   "solution": "The toy car turns by how much its direction changes:\n\n- Straight on is a turn of \\(0^\\circ\\).\n- Turning round to go back is \\(180^\\circ\\).\n- The equilateral triangle's inside angle is \\(60^\\circ\\), so the turn is\n\n\\[180^\\circ - 60^\\circ = \\boxed{120^\\circ}\\]\n\nCheck: 3 turns make one full spin, \\(3\\times120^\\circ = 360^\\circ\\), so the toy car ends facing right again.\n\n\\(60^\\circ\\) is the inside angle, not the turn: the turn is measured from the dashed straight-on line.",
+   "answer_display": "120°"
+  },
+  {
+   "title": "Ch 19 Logo · Pentagon room",
+   "type": "mcq",
+   "prompt": "A robot vacuum cleans around a room shaped like a regular pentagon (every inside angle is 108°).\n\nThe robot vacuum moves forward 15 steps and turns right at each corner, all the way round.\n\n- `FD 15` means move forward 15 steps (a length).\n- `RT` means turn right by that many degrees (an angle).\n\nWhich commands draw it?",
+   "figure": "q38v2-pentagon-room.svg",
+   "figure_alt": "A regular pentagon walked by a robot vacuum that starts facing down to the right: arrows 1 to 5 are forward 15 steps each; one inside angle of 108° is marked; at each corner a dashed straight-on line and a right turn marked with a question mark.",
+   "choices": [
+    "`REPEAT 5 [FD 15 RT 72]`",
+    "`REPEAT 5 [FD 15 RT 108]`",
+    "`REPEAT 4 [FD 15 RT 72]`",
+    "`REPEAT 5 [FD 15 RT 90]`"
+   ],
+   "answer": "A",
+   "solution_title": "Turn = 180° − inside angle",
+   "solution": "Count the sides and look at one corner:\n\n- The shape has 5 sides, so the commands repeat \\(5\\) times.\n- Straight on (the dashed line) is a turn of \\(0^\\circ\\).\n- Turning round to go back is \\(180^\\circ\\).\n- The inside angle is \\(108^\\circ\\), so the turn is\n\n\\[180^\\circ - 108^\\circ = 72^\\circ\\]\n\nCheck: \\(5\\times72^\\circ = 360^\\circ\\), one full spin, so the robot vacuum is back at the start, facing down to the right.\n\n\\[\\boxed{\\texttt{REPEAT 5 [FD 15 RT 72]}}\\]\n\n`REPEAT 5 [FD 15 RT 108]` uses the inside angle: the robot vacuum turns the wrong amount, \\(5\\times108^\\circ = 540^\\circ\\), so it does not draw a regular pentagon. `REPEAT 4 [FD 15 RT 72]` repeats only 4 times: \\(4\\times72^\\circ = 288^\\circ\\), less than a full spin, so the shape does not close. `REPEAT 5 [FD 15 RT 90]` uses the turn for a square: \\(5\\times90^\\circ = 450^\\circ\\), not one full spin of \\(360^\\circ\\)."
+  }
+ ],
+ "takeaway": "- Draw it first: a picture shows which rule to use.\n- Check that the answer makes sense in the picture.",
+ "link": [
+  "Set C ›",
+  "../malta-year-8-math-all-chapters-basic-set-c/quiz.html"
+ ]
+}

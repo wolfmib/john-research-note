@@ -1,0 +1,35 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 320' width='640' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='30.0' y='80.0' width='300.0' height='120.0' rx='16' fill='#e6f6f3' stroke='#0f766e' stroke-width='3'/>
+<rect x='30.0' y='172.0' width='300.0' height='14.0' rx='0' fill='#0f766e' stroke='#0f766e' stroke-width='1'/>
+<rect x='45.0' y='95.0' width='44.0' height='36.0' rx='6' fill='#ffffff' stroke='#0f766e' stroke-width='2'/>
+<rect x='100.0' y='95.0' width='44.0' height='36.0' rx='6' fill='#ffffff' stroke='#0f766e' stroke-width='2'/>
+<rect x='155.0' y='95.0' width='44.0' height='36.0' rx='6' fill='#ffffff' stroke='#0f766e' stroke-width='2'/>
+<rect x='210.0' y='95.0' width='44.0' height='36.0' rx='6' fill='#ffffff' stroke='#0f766e' stroke-width='2'/>
+<rect x='265.0' y='95.0' width='44.0' height='36.0' rx='6' fill='#ffffff' stroke='#0f766e' stroke-width='2'/>
+<rect x='282.0' y='140.0' width='34.0' height='46.0' rx='4' fill='#ffffff' stroke='#0f766e' stroke-width='2'/>
+<circle cx='85.0' cy='202.0' r='18.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='85.0' cy='202.0' r='7.0' fill='#d9d9d9' stroke='#1f2328' stroke-width='1'/>
+<circle cx='265.0' cy='202.0' r='18.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='265.0' cy='202.0' r='7.0' fill='#d9d9d9' stroke='#1f2328' stroke-width='1'/>
+<text x='150.0' y='162.0' font-size='22' font-weight='800' text-anchor='middle' fill='#1f2328'>x passengers</text>
+<text x='180.0' y='50.0' font-size='22' font-weight='800' text-anchor='middle' fill='#0969da'>on the bus: x =</text>
+<text x='285.0' y='52.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<line x1='400.0' y1='170.0' x2='345.0' y2='170.0' stroke='#1a7f37' stroke-width='3' stroke-linecap='round' marker-end='url(#m3)'/>
+<circle cx='385.0' cy='116.0' r='7.0' fill='#9be9a8' stroke='#1f2328' stroke-width='1.5'/>
+<path d='M376,150 L376,134 Q376,125 385,125 Q394,125 394,134 L394,150 Z' stroke='#1f2328' stroke-width='1.5' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='425.0' cy='116.0' r='7.0' fill='#9be9a8' stroke='#1f2328' stroke-width='1.5'/>
+<path d='M416,150 L416,134 Q416,125 425,125 Q434,125 434,134 L434,150 Z' stroke='#1f2328' stroke-width='1.5' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='465.0' cy='116.0' r='7.0' fill='#9be9a8' stroke='#1f2328' stroke-width='1.5'/>
+<path d='M456,150 L456,134 Q456,125 465,125 Q474,125 474,134 L474,150 Z' stroke='#1f2328' stroke-width='1.5' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='505.0' cy='116.0' r='7.0' fill='#9be9a8' stroke='#1f2328' stroke-width='1.5'/>
+<path d='M496,150 L496,134 Q496,125 505,125 Q514,125 514,134 L514,150 Z' stroke='#1f2328' stroke-width='1.5' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='545.0' cy='116.0' r='7.0' fill='#9be9a8' stroke='#1f2328' stroke-width='1.5'/>
+<path d='M536,150 L536,134 Q536,125 545,125 Q554,125 554,134 L554,150 Z' stroke='#1f2328' stroke-width='1.5' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='585.0' cy='116.0' r='7.0' fill='#9be9a8' stroke='#1f2328' stroke-width='1.5'/>
+<path d='M576,150 L576,134 Q576,125 585,125 Q594,125 594,134 L594,150 Z' stroke='#1f2328' stroke-width='1.5' fill='#9be9a8' stroke-linejoin='round'/>
+<text x='485.0' y='205.0' font-size='22' font-weight='800' text-anchor='middle' fill='#1a7f37'>6 get on</text>
+<text x='320.0' y='260.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328'>x + 6 = 17</text>
+<text x='320.0' y='295.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>now there are 17 passengers on the bus</text>
+</svg>

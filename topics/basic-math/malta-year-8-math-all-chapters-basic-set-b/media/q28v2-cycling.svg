@@ -1,0 +1,29 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360' width='640' height='360' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='358' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='60.0' y1='300.0' x2='500.0' y2='300.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='306.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<line x1='60.0' y1='254.0' x2='500.0' y2='254.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='260.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>2</text>
+<line x1='60.0' y1='208.0' x2='500.0' y2='208.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='214.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>4</text>
+<line x1='60.0' y1='162.0' x2='500.0' y2='162.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='168.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>6</text>
+<line x1='60.0' y1='116.0' x2='500.0' y2='116.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='122.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>8</text>
+<line x1='60.0' y1='70.0' x2='500.0' y2='70.0' stroke='#d0d7de' stroke-width='1' stroke-linecap='round'/>
+<text x='50.0' y='76.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>10</text>
+<rect x='95.0' y='185.0' width='100.0' height='115.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<text x='145.0' y='175.0' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>5</text>
+<text x='145.0' y='326.0' font-size='17' font-weight='700' text-anchor='middle' fill='#57606a'>Fri</text>
+<rect x='230.0' y='93.0' width='100.0' height='207.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<text x='280.0' y='83.0' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>9</text>
+<text x='280.0' y='326.0' font-size='17' font-weight='700' text-anchor='middle' fill='#57606a'>Sat</text>
+<rect x='365.0' y='139.0' width='100.0' height='161.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<text x='415.0' y='129.0' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>7</text>
+<text x='415.0' y='326.0' font-size='17' font-weight='700' text-anchor='middle' fill='#57606a'>Sun</text>
+<line x1='60.0' y1='300.0' x2='500.0' y2='300.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round'/>
+<text x='280.0' y='34.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>cycling: level the bars</text>
+<text x='570.0' y='150.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>mean =</text>
+<text x='570.0' y='200.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>

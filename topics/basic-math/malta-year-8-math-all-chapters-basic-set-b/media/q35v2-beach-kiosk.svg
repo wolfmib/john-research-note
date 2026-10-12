@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 330' width='600' height='330' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='328' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<path d='M60,30 L290,30 L290,290 L275,305 L260,290 L245,305 L230,290 L215,305 L200,290 L185,305 L170,290 L155,305 L140,290 L125,305 L110,290 L95,305 L80,290 L60,300 Z' stroke='#1f2328' stroke-width='2' fill='#ffffff' stroke-linejoin='round'/>
+<text x='175.0' y='65.0' font-size='21' font-weight='800' text-anchor='middle' fill='#1f2328'>Beach kiosk</text>
+<text x='78.0' y='110.0' font-size='18' font-weight='500' text-anchor='start' fill='#1f2328'>ice cream</text>
+<text x='272.0' y='110.0' font-size='18' font-weight='500' text-anchor='end' fill='#1f2328'>€2.40</text>
+<text x='78.0' y='146.0' font-size='18' font-weight='500' text-anchor='start' fill='#1f2328'>water</text>
+<text x='272.0' y='146.0' font-size='18' font-weight='500' text-anchor='end' fill='#1f2328'>€0.85</text>
+<text x='78.0' y='182.0' font-size='18' font-weight='500' text-anchor='start' fill='#1f2328'>crisps</text>
+<text x='272.0' y='182.0' font-size='18' font-weight='500' text-anchor='end' fill='#1f2328'>€1.30</text>
+<line x1='78.0' y1='225.0' x2='272.0' y2='225.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='4 4'/>
+<text x='78.0' y='258.0' font-size='20' font-weight='800' text-anchor='start' fill='#1f2328'>Total</text>
+<text x='272.0' y='258.0' font-size='20' font-weight='800' text-anchor='end' fill='#1f2328'>€4.55</text>
+<rect x='330.0' y='70.0' width='230.0' height='115.0' rx='10' fill='#ffd7d5' stroke='#cf222e' stroke-width='2.5'/>
+<text x='445.0' y='140.0' font-size='40' font-weight='800' text-anchor='middle' fill='#cf222e'>€10</text>
+<text x='445.0' y='235.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>change =</text>
+<text x='445.0' y='280.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>

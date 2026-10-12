@@ -1,0 +1,39 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 680 260' width='680' height='260' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='678' height='258' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<text x='340.0' y='30.0' font-size='19' font-weight='700' text-anchor='middle' fill='#57606a'>square tables in a row, chairs all round</text>
+<rect x='83.0' y='88.0' width='34.0' height='34.0' rx='0' fill='#c8945a' stroke='#1f2328' stroke-width='2'/>
+<rect x='89.0' y='69.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='89.0' y='127.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='63.0' y='94.0' width='14.0' height='22.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='123.0' y='94.0' width='14.0' height='22.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='100.0' y='200.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 1</text>
+<text x='100.0' y='228.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>4 chairs</text>
+<rect x='216.0' y='88.0' width='34.0' height='34.0' rx='0' fill='#c8945a' stroke='#1f2328' stroke-width='2'/>
+<rect x='250.0' y='88.0' width='34.0' height='34.0' rx='0' fill='#c8945a' stroke='#1f2328' stroke-width='2'/>
+<rect x='222.0' y='69.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='222.0' y='127.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='256.0' y='69.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='256.0' y='127.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='196.0' y='94.0' width='14.0' height='22.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='290.0' y='94.0' width='14.0' height='22.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='250.0' y='200.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 2</text>
+<text x='250.0' y='228.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>6 chairs</text>
+<rect x='349.0' y='88.0' width='34.0' height='34.0' rx='0' fill='#c8945a' stroke='#1f2328' stroke-width='2'/>
+<rect x='383.0' y='88.0' width='34.0' height='34.0' rx='0' fill='#c8945a' stroke='#1f2328' stroke-width='2'/>
+<rect x='417.0' y='88.0' width='34.0' height='34.0' rx='0' fill='#c8945a' stroke='#1f2328' stroke-width='2'/>
+<rect x='355.0' y='69.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='355.0' y='127.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='389.0' y='69.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='389.0' y='127.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='423.0' y='69.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='423.0' y='127.0' width='22.0' height='14.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='329.0' y='94.0' width='14.0' height='22.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='457.0' y='94.0' width='14.0' height='22.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='400.0' y='200.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 3</text>
+<text x='400.0' y='228.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>8 chairs</text>
+<rect x='495.0' y='60.0' width='160.0' height='150.0' rx='12' fill='#ffffff' stroke='#0969da' stroke-width='2' stroke-dasharray='6 5'/>
+<text x='575.0' y='100.0' font-size='18' font-weight='700' text-anchor='middle' fill='#0969da'>Pattern 4</text>
+<text x='575.0' y='150.0' font-size='40' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='575.0' y='188.0' font-size='18' font-weight='700' text-anchor='middle' fill='#0969da'>chairs</text>
+</svg>
