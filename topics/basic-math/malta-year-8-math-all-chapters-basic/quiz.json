@@ -400,19 +400,19 @@
   {
    "title": "Ch 19 Logo · Square turn",
    "type": "numeric",
-   "prompt": "Fill the gap: `REPEAT 4 [FD 50 RT ?]` draws a square.\n\nWhat is the turn?",
+   "prompt": "The turtle draws a square.\n\nIt walks forward 50 steps and turns right, 4 times.\n\nIn Logo this is `REPEAT 4 [FD 50 RT ?]`.\n\n- `FD 50` means move forward 50 steps (a length).\n- `RT ?` means turn right by ? degrees (an angle).\n\nHow many degrees is each turn?",
    "figure": "q37-square-turn.svg",
-   "figure_alt": "A square path with the turtle at the bottom-left; at a corner the turn from straight-on to the new side is a question mark.",
+   "figure_alt": "A square walked clockwise from the start: arrows 1 to 4 are forward 50 steps; at each corner a dashed straight-on line and a right turn marked with a question mark.",
    "answer": 90,
-   "solution": "The 4 turns go all the way round once:\n\n\\[360^\\circ\\div4 = \\boxed{90^\\circ}\\]\n\n\\(4\\) is the number of sides, not the angle; \\(180^\\circ\\) would turn back on itself.",
+   "solution": "The turtle turns by how much its direction changes:\n\n- Straight on is a turn of \\(0^\\circ\\).\n- Turning round to walk back is \\(180^\\circ\\).\n- A square's corner is \\(90^\\circ\\), so the turn is\n\n\\[180^\\circ - 90^\\circ = \\boxed{90^\\circ}\\]\n\nCheck: 4 turns make one full spin, \\(4\\times90^\\circ = 360^\\circ\\), so the turtle ends facing the way it started.\n\n\\(4\\) is the number of sides, not the angle.",
    "answer_display": "90°"
   },
   {
    "title": "Ch 19 Logo · Triangle commands",
    "type": "mcq",
-   "prompt": "Which commands draw an equilateral triangle with sides of 60?",
+   "prompt": "The turtle draws an equilateral triangle (every inside angle is 60°).\n\nIt walks forward 60 steps and turns right, 3 times.\n\n- `FD 60` means move forward 60 steps (a length).\n- `RT` means turn right by that many degrees (an angle).\n\nWhich commands draw it?",
    "figure": "q38-triangle-commands.svg",
-   "figure_alt": "An equilateral triangle path; at a corner the outside turn is a question mark and the inside angle is 60°.",
+   "figure_alt": "A triangle hanging below the start line, walked with right turns: arrows 1 to 3 are forward 60 steps; at corner B the dashed straight-on line, the inside angle 60° and the right turn marked with a question mark.",
    "choices": [
     "`REPEAT 3 [FD 60 RT 60]`",
     "`REPEAT 6 [FD 60 RT 60]`",
@@ -420,8 +420,8 @@
     "`REPEAT 3 [FD 60 RT 120]`"
    ],
    "answer": "D",
-   "solution_title": "Turn 360° in 3 turns",
-   "solution": "The turtle turns all the way round once in 3 turns:\n\n\\[360^\\circ\\div3 = \\boxed{120^\\circ}\\]\n\n`RT 60` uses the inside angle; the turtle turns by the **outside** angle. `REPEAT 6` would draw a hexagon."
+   "solution_title": "Turn = 180° − inside angle",
+   "solution": "Look at corner B in the picture (the turtle walks A → B → C → A):\n\n- Straight on (the dashed line) is a turn of \\(0^\\circ\\).\n- Turning round to walk back to the start is \\(180^\\circ\\).\n- The new side is \\(60^\\circ\\) away from walking back, so the turn is\n\n\\[180^\\circ - 60^\\circ = 120^\\circ\\]\n\nCheck: \\(3\\times120^\\circ = 360^\\circ\\), one full spin, so the path closes.\n\n\\[\\boxed{\\texttt{REPEAT 3 [FD 60 RT 120]}}\\]\n\n`RT 60` uses the inside angle: the turtle turns too little and needs 6 sides to close (a hexagon). `FD 120` makes sides of 120 steps, not 60."
   }
  ],
  "takeaway": "- Draw it first: a picture shows which rule to use.\n- Check that the answer makes sense in the picture.",

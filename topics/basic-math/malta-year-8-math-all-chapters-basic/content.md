@@ -405,19 +405,33 @@ Answer: ______
 
 ## 37. Ch 19 Logo · Square turn
 
-Fill the gap: `REPEAT 4 [FD 50 RT ?]` draws a square.
+The turtle draws a square.
 
-What is the turn?
+It walks forward 50 steps and turns right, 4 times.
 
-![A square path with the turtle at the bottom-left; at a corner the turn from straight-on to the new side is a question mark.](media/q37-square-turn.svg)
+In Logo this is `REPEAT 4 [FD 50 RT ?]`.
+
+- `FD 50` means move forward 50 steps (a length).
+- `RT ?` means turn right by ? degrees (an angle).
+
+How many degrees is each turn?
+
+![A square walked clockwise from the start: arrows 1 to 4 are forward 50 steps; at each corner a dashed straight-on line and a right turn marked with a question mark.](media/q37-square-turn.svg)
 
 Answer: ______
 
 ## 38. Ch 19 Logo · Triangle commands
 
-Which commands draw an equilateral triangle with sides of 60?
+The turtle draws an equilateral triangle (every inside angle is 60°).
 
-![An equilateral triangle path; at a corner the outside turn is a question mark and the inside angle is 60°.](media/q38-triangle-commands.svg)
+It walks forward 60 steps and turns right, 3 times.
+
+- `FD 60` means move forward 60 steps (a length).
+- `RT` means turn right by that many degrees (an angle).
+
+Which commands draw it?
+
+![A triangle hanging below the start line, walked with right turns: arrows 1 to 3 are forward 60 steps; at corner B the dashed straight-on line, the inside angle 60° and the right turn marked with a question mark.](media/q38-triangle-commands.svg)
 
 - **A.** `REPEAT 3 [FD 60 RT 60]`
 - **B.** `REPEAT 6 [FD 60 RT 60]`
@@ -782,23 +796,39 @@ $$
 
 $75$ subtracts 1015 − 940 as ordinary numbers, but an hour has 60 minutes, not 100.
 
-**37. 90°** — The 4 turns go all the way round once:
+**37. 90°** — The turtle turns by how much its direction changes:
+
+- Straight on is a turn of $0^\circ$.
+- Turning round to walk back is $180^\circ$.
+- A square's corner is $90^\circ$, so the turn is
 
 $$
-360^\circ\div4 = \boxed{90^\circ}
+180^\circ - 90^\circ = \boxed{90^\circ}
 $$
 
-$4$ is the number of sides, not the angle; $180^\circ$ would turn back on itself.
+Check: 4 turns make one full spin, $4\times90^\circ = 360^\circ$, so the turtle ends facing the way it started.
 
-**38. D — Turn 360° in 3 turns**
+$4$ is the number of sides, not the angle.
 
-The turtle turns all the way round once in 3 turns:
+**38. D — Turn = 180° − inside angle**
+
+Look at corner B in the picture (the turtle walks A → B → C → A):
+
+- Straight on (the dashed line) is a turn of $0^\circ$.
+- Turning round to walk back to the start is $180^\circ$.
+- The new side is $60^\circ$ away from walking back, so the turn is
 
 $$
-360^\circ\div3 = \boxed{120^\circ}
+180^\circ - 60^\circ = 120^\circ
 $$
 
-`RT 60` uses the inside angle; the turtle turns by the **outside** angle. `REPEAT 6` would draw a hexagon.
+Check: $3\times120^\circ = 360^\circ$, one full spin, so the path closes.
+
+$$
+\boxed{\texttt{REPEAT 3 [FD 60 RT 120]}}
+$$
+
+`RT 60` uses the inside angle: the turtle turns too little and needs 6 sides to close (a hexagon). `FD 120` makes sides of 120 steps, not 60.
 
 - Draw it first: a picture shows which rule to use.
 - Check that the answer makes sense in the picture.
