@@ -475,7 +475,7 @@ $$
 
 $12$ is $6\times2$, not $6\times6$.
 
-**5. $50$** — Angles on a straight line add up to $180^\circ$:
+**5. 50°** — Angles on a straight line add up to $180^\circ$:
 
 $$
 180^\circ - 130^\circ = \boxed{50^\circ}
@@ -483,7 +483,7 @@ $$
 
 $230^\circ$ uses $360^\circ$, which is for angles around a point.
 
-**6. $45$** — The angles in a triangle add up to $180^\circ$:
+**6. 45°** — The angles in a triangle add up to $180^\circ$:
 
 $$
 180^\circ - 60^\circ - 75^\circ = \boxed{45^\circ}
@@ -539,7 +539,7 @@ $$
 - So $10\%$ of €70 is €7.
 - $60$ takes 10 away; a percentage is a part, not a subtraction.
 
-**12. $37$** — - Per cent means out of 100.
+**12. 37%** — - Per cent means out of 100.
 - Count: 3 full columns and 7 more.
 
 $$
@@ -743,7 +743,7 @@ $$
 - So $\boxed{4 \text{ cm}, 5 \text{ cm}, 7 \text{ cm}}$ works.
 - In the others the short sides are too short: $3 + 4 = 7$, $2 + 3 = 5$ and $1 + 2 = 3$, each less than the longest side.
 
-**32. $35$** — Bisect means cut into two equal halves:
+**32. 35°** — Bisect means cut into two equal halves:
 
 $$
 70^\circ\div2 = \boxed{35^\circ}

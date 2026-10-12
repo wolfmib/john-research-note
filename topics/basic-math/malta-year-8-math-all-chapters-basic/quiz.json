@@ -14,7 +14,11 @@
    "figure": "q01-warmer-by-8.svg",
    "figure_alt": "A thermometer from −5 to 10 °C. The night temperature −3 is marked; an arrow goes 8 degrees up to a question mark.",
    "answer": 5,
-   "solution": "Warmer means move **up** the thermometer:\n\n\\[-3 + 8 = \\boxed{5}\\]\n\n\\(-11\\) moves 8 the wrong way: warmer is up, not down."
+   "solution": "Warmer means move **up** the thermometer:\n\n\\[-3 + 8 = \\boxed{5}\\]\n\n\\(-11\\) moves 8 the wrong way: warmer is up, not down.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g1"
+   ]
   },
   {
    "title": "Ch 1 Directed Numbers · Below zero",
@@ -23,7 +27,11 @@
    "figure": "q02-below-zero.svg",
    "figure_alt": "Number line from −10 to 2. Start at −4, five hops to the left, ending at a question mark.",
    "answer": -9,
-   "solution": "Start at \\(-4\\) and move 5 to the **left**:\n\n\\[-4 - 5 = \\boxed{-9}\\]\n\n\\(1\\) adds the 5 instead of taking it away; \\(-1\\) takes 4 from 5 and forgets the start is below zero."
+   "solution": "Start at \\(-4\\) and move 5 to the **left**:\n\n\\[-4 - 5 = \\boxed{-9}\\]\n\n\\(1\\) adds the 5 instead of taking it away; \\(-1\\) takes 4 from 5 and forgets the start is below zero.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g2"
+   ]
   },
   {
    "title": "Ch 2 Number Work · Multiply before adding",
@@ -32,7 +40,11 @@
    "figure": "q03-multiply-before-adding.svg",
    "figure_alt": "Three orange dots plus four boxes with two blue dots each, then equals a question mark.",
    "answer": 11,
-   "solution": "BIDMAS: multiply first.\n\n\\[\\begin{aligned} 3 + 4\\times2 &= 3 + 8 \\\\ &= \\boxed{11} \\end{aligned}\\]\n\n\\(14\\) adds first, as if it were \\((3 + 4)\\times2\\)."
+   "solution": "BIDMAS: multiply first.\n\n\\[\\begin{aligned} 3 + 4\\times2 &= 3 + 8 \\\\ &= \\boxed{11} \\end{aligned}\\]\n\n\\(14\\) adds first, as if it were \\((3 + 4)\\times2\\).",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g3"
+   ]
   },
   {
    "title": "Ch 2 Number Work · Square number",
@@ -41,7 +53,11 @@
    "figure": "q04-square-number.svg",
    "figure_alt": "A 6 by 6 grid of small squares; how many small squares is the question.",
    "answer": 36,
-   "solution": "A square number is a square of dots:\n\n\\[\\begin{aligned} 6^2 &= 6\\times6 \\\\ &= \\boxed{36} \\end{aligned}\\]\n\n\\(12\\) is \\(6\\times2\\), not \\(6\\times6\\)."
+   "solution": "A square number is a square of dots:\n\n\\[\\begin{aligned} 6^2 &= 6\\times6 \\\\ &= \\boxed{36} \\end{aligned}\\]\n\n\\(12\\) is \\(6\\times2\\), not \\(6\\times6\\).",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g4"
+   ]
   },
   {
    "title": "Ch 3 Angles · Straight line",
@@ -50,7 +66,12 @@
    "figure": "q05-straight-line.svg",
    "figure_alt": "A straight line with a ray from a point on it. The left angle is 130°; the right angle is a question mark.",
    "answer": 50,
-   "solution": "Angles on a straight line add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 130^\\circ = \\boxed{50^\\circ}\\]\n\n\\(230^\\circ\\) uses \\(360^\\circ\\), which is for angles around a point."
+   "solution": "Angles on a straight line add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 130^\\circ = \\boxed{50^\\circ}\\]\n\n\\(230^\\circ\\) uses \\(360^\\circ\\), which is for angles around a point.",
+   "answer_display": "50°",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g5"
+   ]
   },
   {
    "title": "Ch 3 Angles · Triangle",
@@ -59,7 +80,12 @@
    "figure": "q06-triangle.svg",
    "figure_alt": "A triangle with angles 60° and 75° marked; the top angle is a question mark.",
    "answer": 45,
-   "solution": "The angles in a triangle add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 60^\\circ - 75^\\circ = \\boxed{45^\\circ}\\]\n\n\\(225^\\circ\\) takes them from \\(360^\\circ\\); a triangle uses \\(180^\\circ\\)."
+   "solution": "The angles in a triangle add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 60^\\circ - 75^\\circ = \\boxed{45^\\circ}\\]\n\n\\(225^\\circ\\) takes them from \\(360^\\circ\\); a triangle uses \\(180^\\circ\\).",
+   "answer_display": "45°",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g6"
+   ]
   },
   {
    "title": "Ch 4 Fractions · Slices of pizza",
@@ -75,7 +101,11 @@
    ],
    "answer": "A",
    "solution_title": "Count the slices",
-   "solution": "Same size slices, so add the tops:\n\n\\[\\frac{3}{8} + \\frac{2}{8} = \\boxed{\\frac{5}{8}}\\]\n\n\\(\\frac{5}{16}\\) adds the bottoms too, but the pizza still has 8 slices, not 16."
+   "solution": "Same size slices, so add the tops:\n\n\\[\\frac{3}{8} + \\frac{2}{8} = \\boxed{\\frac{5}{8}}\\]\n\n\\(\\frac{5}{16}\\) adds the bottoms too, but the pizza still has 8 slices, not 16.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g7"
+   ]
   },
   {
    "title": "Ch 4 Fractions · Fraction of an amount",
@@ -84,7 +114,11 @@
    "figure": "q08-fraction-of-an-amount.svg",
    "figure_alt": "Twenty dots in four equal boxes of five; three boxes are shaded and labelled with a question mark.",
    "answer": 15,
-   "solution": "Split 20 into 4 equal groups, then take 3 of them:\n\n\\[20\\div4 = 5\\]\n\n\\[5\\times3 = \\boxed{15}\\]\n\n\\(5\\) is only one quarter; you need three quarters."
+   "solution": "Split 20 into 4 equal groups, then take 3 of them:\n\n\\[20\\div4 = 5\\]\n\n\\[5\\times3 = \\boxed{15}\\]\n\n\\(5\\) is only one quarter; you need three quarters.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g8"
+   ]
   },
   {
    "title": "Ch 5 Decimals · Adding money",
@@ -94,7 +128,11 @@
    "figure_alt": "A 2 euro and a 50 cent coin, plus a 1 euro, 20 cent and 10 cent coin, equals a question mark.",
    "answer": 3.8,
    "solution": "Line up the decimal points:\n\n\\[2.50 + 1.30 = \\boxed{3.80}\\]\n\n- The answer is €3.80.\n- \\(3.53\\) or \\(2.80\\) come from adding digits that are not in the same place.",
-   "answer_display": "€3.80"
+   "answer_display": "€3.80",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g9"
+   ]
   },
   {
    "title": "Ch 5 Decimals · Times 10",
@@ -103,7 +141,11 @@
    "figure": "q10-times-10.svg",
    "figure_alt": "A place-value table: 0.36 in the top row; arrows move each digit one place left into a row of question marks.",
    "answer": 3.6,
-   "solution": "Every digit moves one place to the left:\n\n\\[0.36\\times10 = \\boxed{3.6}\\]\n\n\\(0.360\\) only adds a zero; the value does not change, so it cannot be ten times bigger."
+   "solution": "Every digit moves one place to the left:\n\n\\[0.36\\times10 = \\boxed{3.6}\\]\n\n\\(0.360\\) only adds a zero; the value does not change, so it cannot be ten times bigger.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g10"
+   ]
   },
   {
    "title": "Ch 6 Percentages · Ten percent",
@@ -113,7 +155,11 @@
    "figure_alt": "A bar for €70 cut into 10 equal blocks; the first block (10%) is a question mark.",
    "answer": 7,
    "solution": "\\(10\\%\\) is one block out of 10:\n\n\\[70\\div10 = \\boxed{7}\\]\n\n- So \\(10\\%\\) of €70 is €7.\n- \\(60\\) takes 10 away; a percentage is a part, not a subtraction.",
-   "answer_display": "€7"
+   "answer_display": "€7",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g11"
+   ]
   },
   {
    "title": "Ch 6 Percentages · Percent of a grid",
@@ -122,7 +168,12 @@
    "figure": "q12-percent-of-a-grid.svg",
    "figure_alt": "A 10 by 10 grid with 3 full columns and 7 more squares shaded blue.",
    "answer": 37,
-   "solution": "- Per cent means out of 100.\n- Count: 3 full columns and 7 more.\n\n\\[30 + 7 = 37\\]\n\n\\[\\frac{37}{100} = \\boxed{37\\%}\\]\n\n\\(63\\%\\) counts the white squares."
+   "solution": "- Per cent means out of 100.\n- Count: 3 full columns and 7 more.\n\n\\[30 + 7 = 37\\]\n\n\\[\\frac{37}{100} = \\boxed{37\\%}\\]\n\n\\(63\\%\\) counts the white squares.",
+   "answer_display": "37%",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g12"
+   ]
   },
   {
    "title": "Ch 7 Ratio · Sharing",
@@ -131,7 +182,11 @@
    "figure": "q13-sharing.svg",
    "figure_alt": "A bar model: one orange box for the smaller share, three blue boxes for the bigger share, 20 sweets in all.",
    "answer": 15,
-   "solution": "There are \\(1 + 3 = 4\\) equal parts:\n\n\\[20\\div4 = 5\\]\n\n\\[5\\times3 = \\boxed{15}\\]\n\n\\(5\\) is the smaller share; \\(6.67\\) splits 20 into 3 parts, but the ratio has 4 parts."
+   "solution": "There are \\(1 + 3 = 4\\) equal parts:\n\n\\[20\\div4 = 5\\]\n\n\\[5\\times3 = \\boxed{15}\\]\n\n\\(5\\) is the smaller share; \\(6.67\\) splits 20 into 3 parts, but the ratio has 4 parts.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g13"
+   ]
   },
   {
    "title": "Ch 7 Ratio · Simplest form",
@@ -147,7 +202,11 @@
    ],
    "answer": "B",
    "solution_title": "Divide both by 4",
-   "solution": "The HCF of 12 and 8 is 4:\n\n\\[12\\div4 = 3\\]\n\n\\[8\\div4 = 2\\]\n\n\\[\\boxed{3 : 2}\\]\n\n- \\(6 : 4\\) is the same ratio, but both can still be halved.\n- \\(2 : 3\\) swaps the order."
+   "solution": "The HCF of 12 and 8 is 4:\n\n\\[12\\div4 = 3\\]\n\n\\[8\\div4 = 2\\]\n\n\\[\\boxed{3 : 2}\\]\n\n- \\(6 : 4\\) is the same ratio, but both can still be halved.\n- \\(2 : 3\\) swaps the order.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g14"
+   ]
   },
   {
    "title": "Ch 8 Algebra · Solve",
@@ -156,7 +215,11 @@
    "figure": "q15-solve.svg",
    "figure_alt": "A balance: a bag x and 7 cubes on the left, 12 cubes on the right.",
    "answer": 5,
-   "solution": "Take 7 from both sides, so the scale stays balanced:\n\n\\[x + 7 = 12\\]\n\n\\[x = 12 - 7\\]\n\n\\[x = \\boxed{5}\\]\n\n\\(19\\) adds 7 instead of taking it away."
+   "solution": "Take 7 from both sides, so the scale stays balanced:\n\n\\[x + 7 = 12\\]\n\n\\[x = 12 - 7\\]\n\n\\[x = \\boxed{5}\\]\n\n\\(19\\) adds 7 instead of taking it away.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g15"
+   ]
   },
   {
    "title": "Ch 8 Algebra · Substitute",
@@ -165,7 +228,11 @@
    "figure": "q16-substitute.svg",
    "figure_alt": "A function machine: 4 goes in, times 3, plus 2, and a question mark comes out.",
    "answer": 14,
-   "solution": "Put 4 in place of \\(x\\):\n\n\\[\\begin{aligned} 3\\times4 + 2 &= 12 + 2 \\\\ &= \\boxed{14} \\end{aligned}\\]\n\n\\(36\\) reads \\(3x\\) as 34 — but \\(3x\\) means \\(3\\times x\\)."
+   "solution": "Put 4 in place of \\(x\\):\n\n\\[\\begin{aligned} 3\\times4 + 2 &= 12 + 2 \\\\ &= \\boxed{14} \\end{aligned}\\]\n\n\\(36\\) reads \\(3x\\) as 34 — but \\(3x\\) means \\(3\\times x\\).",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g16"
+   ]
   },
   {
    "title": "Ch 9 Sequences · Matchstick pattern",
@@ -174,7 +241,11 @@
    "figure": "q17-matchstick-pattern.svg",
    "figure_alt": "Matchstick squares in a row: 1, 2 and 3 squares using 4, 7 and 10 sticks; pattern 4 is a question mark.",
    "answer": 13,
-   "solution": "Each new square adds 3 sticks:\n\n\\[10 + 3 = \\boxed{13}\\]\n\n\\(16\\) counts 4 sticks for the new square, but it shares one side with the square before."
+   "solution": "Each new square adds 3 sticks:\n\n\\[10 + 3 = \\boxed{13}\\]\n\n\\(16\\) counts 4 sticks for the new square, but it shares one side with the square before.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g17"
+   ]
   },
   {
    "title": "Ch 9 Sequences · Term rule",
@@ -183,7 +254,11 @@
    "figure": "q18-term-rule.svg",
    "figure_alt": "A table: n = 1, 2, 3 gives terms 3, 5, 7 (each +2); n = 10 gives a question mark. The rule is 2n + 1.",
    "answer": 21,
-   "solution": "Put \\(n = 10\\) into the rule:\n\n\\[\\begin{aligned} 2\\times10 + 1 &= 20 + 1 \\\\ &= \\boxed{21} \\end{aligned}\\]\n\n\\(12\\) reads \\(2n\\) as 2 + n; \\(2n\\) means \\(2\\times n\\)."
+   "solution": "Put \\(n = 10\\) into the rule:\n\n\\[\\begin{aligned} 2\\times10 + 1 &= 20 + 1 \\\\ &= \\boxed{21} \\end{aligned}\\]\n\n\\(12\\) reads \\(2n\\) as 2 + n; \\(2n\\) means \\(2\\times n\\).",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g18"
+   ]
   },
   {
    "title": "Ch 10 Circles · Diameter",
@@ -193,7 +268,11 @@
    "figure_alt": "A circle with a radius of 7 cm drawn from the centre and a dashed diameter across it.",
    "answer": 14,
    "solution": "The diameter goes right across, so it is two radii:\n\n\\[\\begin{aligned} d &= 2r \\\\ &= 2\\times7 \\\\ &= \\boxed{14 \\text{ cm}} \\end{aligned}\\]\n\n\\(3.5\\) halves the radius; the diameter is double, not half.",
-   "answer_display": "14 cm"
+   "answer_display": "14 cm",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g19"
+   ]
   },
   {
    "title": "Ch 10 Circles · Circumference",
@@ -203,7 +282,11 @@
    "figure_alt": "A circle of diameter 10 cm rolled out into a straight line a little more than 3 diameters long.",
    "answer": 31.4,
    "solution": "The circumference is about 3.14 diameters:\n\n\\[\\begin{aligned} C &= \\pi d \\\\ &\\approx 3.14\\times10 \\\\ &= \\boxed{31.4 \\text{ cm}} \\end{aligned}\\]\n\n\\(314\\) multiplies by 100; \\(78.5\\) is the area \\(\\pi r^2\\), not the distance round.",
-   "answer_display": "31.4 cm"
+   "answer_display": "31.4 cm",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g20"
+   ]
   },
   {
    "title": "Ch 11 Perimeter & Area · Rectangle area",
@@ -213,7 +296,11 @@
    "figure_alt": "A 6 cm by 4 cm rectangle split into 1 cm squares.",
    "answer": 24,
    "solution": "Rows of squares:\n\n\\[\\begin{aligned} A &= l\\times w \\\\ &= 6\\times4 \\\\ &= \\boxed{24 \\text{ cm}^2} \\end{aligned}\\]\n\n\\(20\\) is the perimeter (the distance round), not the area.",
-   "answer_display": "24 cm²"
+   "answer_display": "24 cm²",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g21"
+   ]
   },
   {
    "title": "Ch 11 Perimeter & Area · Triangle area",
@@ -223,7 +310,11 @@
    "figure_alt": "A triangle with base 6 cm and height 4 cm drawn inside a dashed 6 by 4 rectangle on a grid.",
    "answer": 12,
    "solution": "A triangle is half of its rectangle:\n\n\\[\\begin{aligned} A &= \\tfrac{1}{2}bh \\\\ &= \\tfrac{1}{2}\\times6\\times4 \\\\ &= \\boxed{12 \\text{ cm}^2} \\end{aligned}\\]\n\n\\(24\\) forgets the half.",
-   "answer_display": "12 cm²"
+   "answer_display": "12 cm²",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g22"
+   ]
   },
   {
    "title": "Ch 12 Surface Area & Nets · Cube surface area",
@@ -233,7 +324,11 @@
    "figure_alt": "A cube with 2 cm edges and its net of six squares, each 2 by 2.",
    "answer": 24,
    "solution": "6 square faces, each:\n\n\\[\\begin{aligned} 2\\times2 &= 4 \\text{ cm}^2 \\\\ SA &= 6a^2 \\\\ &= 6\\times4 \\\\ &= \\boxed{24 \\text{ cm}^2} \\end{aligned}\\]\n\n\\(8\\) is the volume \\(2\\times2\\times2\\); surface area covers the outside.",
-   "answer_display": "24 cm²"
+   "answer_display": "24 cm²",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g23"
+   ]
   },
   {
    "title": "Ch 12 Surface Area & Nets · Cuboid volume",
@@ -243,7 +338,11 @@
    "figure_alt": "A cuboid 5 by 3 by 2 built from 1 cm cubes.",
    "answer": 30,
    "solution": "Count the cubes, layer by layer:\n\n\\[\\begin{aligned} V &= lwh \\\\ &= 5\\times3\\times2 \\\\ &= \\boxed{30 \\text{ cm}^3} \\end{aligned}\\]\n\n\\(10\\) adds the edges; volume multiplies them.",
-   "answer_display": "30 cm³"
+   "answer_display": "30 cm³",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g24"
+   ]
   },
   {
    "title": "Ch 13 Graphs · Coordinates",
@@ -259,7 +358,11 @@
    ],
    "answer": "C",
    "solution_title": "Across first, then up",
-   "solution": "From 0 go 3 across, then 2 up:\n\n\\[\\boxed{(3, 2)}\\]\n\n\\((2, 3)\\) reads up before across."
+   "solution": "From 0 go 3 across, then 2 up:\n\n\\[\\boxed{(3, 2)}\\]\n\n\\((2, 3)\\) reads up before across.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g25"
+   ]
   },
   {
    "title": "Ch 13 Graphs · Line value",
@@ -268,7 +371,11 @@
    "figure": "q26-line-value.svg",
    "figure_alt": "The line y = 2x + 1 on a grid; a dashed line from x = 3 goes up to the line at a question mark.",
    "answer": 7,
-   "solution": "Put \\(x = 3\\) into the rule:\n\n\\[\\begin{aligned} y &= 2\\times3 + 1 \\\\ &= 6 + 1 \\\\ &= \\boxed{7} \\end{aligned}\\]\n\n\\(9\\) adds before multiplying: multiply first."
+   "solution": "Put \\(x = 3\\) into the rule:\n\n\\[\\begin{aligned} y &= 2\\times3 + 1 \\\\ &= 6 + 1 \\\\ &= \\boxed{7} \\end{aligned}\\]\n\n\\(9\\) adds before multiplying: multiply first.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g26"
+   ]
   },
   {
    "title": "Ch 14 Statistics · Mode",
@@ -277,7 +384,11 @@
    "figure": "q27-mode.svg",
    "figure_alt": "A dot plot of 3, 5, 5, 6, 5, 8: the column above 5 is the tallest.",
    "answer": 5,
-   "solution": "The mode is the value that appears most often: 5 appears 3 times.\n\n\\[\\text{mode} = \\boxed{5}\\]\n\n\\(3\\) is how many times 5 appears, not the value itself."
+   "solution": "The mode is the value that appears most often: 5 appears 3 times.\n\n\\[\\text{mode} = \\boxed{5}\\]\n\n\\(3\\) is how many times 5 appears, not the value itself.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g27"
+   ]
   },
   {
    "title": "Ch 14 Statistics · Mean",
@@ -286,7 +397,11 @@
    "figure": "q28-mean.svg",
    "figure_alt": "A bar chart of 3, 7, 8 and 6; the mean, the level height, is a question mark.",
    "answer": 6,
-   "solution": "Add them, then share equally between the 4 values:\n\n\\[3 + 7 + 8 + 6 = 24\\]\n\n\\[24\\div4 = \\boxed{6}\\]\n\n\\(24\\) is the total; the mean shares it out."
+   "solution": "Add them, then share equally between the 4 values:\n\n\\[3 + 7 + 8 + 6 = 24\\]\n\n\\[24\\div4 = \\boxed{6}\\]\n\n\\(24\\) is the total; the mean shares it out.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g28"
+   ]
   },
   {
    "title": "Ch 15 Probability · Bag of counters",
@@ -302,7 +417,11 @@
    ],
    "answer": "A",
    "solution_title": "Red out of all",
-   "solution": "3 red out of \\(3 + 5 = 8\\) counters:\n\n\\[P(\\text{red}) = \\boxed{\\frac{3}{8}}\\]\n\n\\(\\frac{3}{5}\\) compares red with blue; a probability compares with **all** the counters."
+   "solution": "3 red out of \\(3 + 5 = 8\\) counters:\n\n\\[P(\\text{red}) = \\boxed{\\frac{3}{8}}\\]\n\n\\(\\frac{3}{5}\\) compares red with blue; a probability compares with **all** the counters.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g29"
+   ]
   },
   {
    "title": "Ch 15 Probability · Not blue",
@@ -318,7 +437,11 @@
    ],
    "answer": "C",
    "solution_title": "1 minus P(blue)",
-   "solution": "\\[\\begin{aligned} P(\\text{not blue}) &= 1 - \\frac{3}{8} \\\\ &= \\boxed{\\frac{5}{8}} \\end{aligned}\\]\n\n- \\(\\frac{3}{8}\\) is P(blue) itself.\n- \\(\\frac{5}{3}\\) is more than 1, and no probability is more than 1."
+   "solution": "\\[\\begin{aligned} P(\\text{not blue}) &= 1 - \\frac{3}{8} \\\\ &= \\boxed{\\frac{5}{8}} \\end{aligned}\\]\n\n- \\(\\frac{3}{8}\\) is P(blue) itself.\n- \\(\\frac{5}{3}\\) is more than 1, and no probability is more than 1.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g30"
+   ]
   },
   {
    "title": "Ch 16 Constructions · Can it be a triangle?",
@@ -334,7 +457,11 @@
    ],
    "answer": "C",
    "solution_title": "The two short sides must reach",
-   "solution": "The two shorter sides together must be longer than the longest:\n\n\\[4 + 5 = 9\\]\n\n\\[9 > 7\\]\n\n- So \\(\\boxed{4 \\text{ cm}, 5 \\text{ cm}, 7 \\text{ cm}}\\) works.\n- In the others the short sides are too short: \\(3 + 4 = 7\\), \\(2 + 3 = 5\\) and \\(1 + 2 = 3\\), each less than the longest side."
+   "solution": "The two shorter sides together must be longer than the longest:\n\n\\[4 + 5 = 9\\]\n\n\\[9 > 7\\]\n\n- So \\(\\boxed{4 \\text{ cm}, 5 \\text{ cm}, 7 \\text{ cm}}\\) works.\n- In the others the short sides are too short: \\(3 + 4 = 7\\), \\(2 + 3 = 5\\) and \\(1 + 2 = 3\\), each less than the longest side.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g31"
+   ]
   },
   {
    "title": "Ch 16 Constructions · Angle bisector",
@@ -343,7 +470,12 @@
    "figure": "q32-angle-bisector.svg",
    "figure_alt": "An angle of 70° with a dashed bisector splitting it into two equal angles marked with question marks.",
    "answer": 35,
-   "solution": "Bisect means cut into two equal halves:\n\n\\[70^\\circ\\div2 = \\boxed{35^\\circ}\\]\n\n\\(140^\\circ\\) doubles instead of halving."
+   "solution": "Bisect means cut into two equal halves:\n\n\\[70^\\circ\\div2 = \\boxed{35^\\circ}\\]\n\n\\(140^\\circ\\) doubles instead of halving.",
+   "answer_display": "35°",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g32"
+   ]
   },
   {
    "title": "Ch 17 Transformations · Reflection",
@@ -359,7 +491,11 @@
    ],
    "answer": "B",
    "solution_title": "Same distance, other side",
-   "solution": "The \\(y\\)-axis is the mirror: \\(x\\) changes sign, \\(y\\) stays.\n\n\\[(3, 2) \\to \\boxed{(-3, 2)}\\]\n\n\\((3, -2)\\) reflects in the \\(x\\)-axis instead."
+   "solution": "The \\(y\\)-axis is the mirror: \\(x\\) changes sign, \\(y\\) stays.\n\n\\[(3, 2) \\to \\boxed{(-3, 2)}\\]\n\n\\((3, -2)\\) reflects in the \\(x\\)-axis instead.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g33"
+   ]
   },
   {
    "title": "Ch 17 Transformations · Translation",
@@ -375,7 +511,11 @@
    ],
    "answer": "A",
    "solution_title": "Add the moves",
-   "solution": "Add 4 to \\(x\\) and 1 to \\(y\\):\n\n\\[(1 + 4,\\ 2 + 1) = \\boxed{(5, 3)}\\]\n\n\\((4, 1)\\) is the move itself, not where the point lands."
+   "solution": "Add 4 to \\(x\\) and 1 to \\(y\\):\n\n\\[(1 + 4,\\ 2 + 1) = \\boxed{(5, 3)}\\]\n\n\\((4, 1)\\) is the move itself, not where the point lands.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g34"
+   ]
   },
   {
    "title": "Ch 18 Real-life Problems · Change",
@@ -385,7 +525,11 @@
    "figure_alt": "A receipt with a total of €6.35 next to a €10 note; the change is a question mark.",
    "answer": 3.65,
    "solution": "Change = money paid − cost:\n\n\\[10.00 - 6.35 = \\boxed{3.65}\\]\n\n- The change is €3.65.\n- \\(4.75\\) subtracts each digit the wrong way round.",
-   "answer_display": "€3.65"
+   "answer_display": "€3.65",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g35"
+   ]
   },
   {
    "title": "Ch 18 Real-life Problems · Journey time",
@@ -395,7 +539,11 @@
    "figure_alt": "Two clocks: 9:40 and 10:15, with an arrow between them marked question mark minutes.",
    "answer": 35,
    "solution": "Count up to the hour, then on:\n\n\\[09{:}40 \\to 10{:}00 = 20 \\text{ min}\\]\n\n\\[10{:}00 \\to 10{:}15 = 15 \\text{ min}\\]\n\n\\[20 + 15 = \\boxed{35 \\text{ min}}\\]\n\n\\(75\\) subtracts 1015 − 940 as ordinary numbers, but an hour has 60 minutes, not 100.",
-   "answer_display": "35 minutes"
+   "answer_display": "35 minutes",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g36"
+   ]
   },
   {
    "title": "Ch 19 Logo · Square turn",
@@ -405,7 +553,11 @@
    "figure_alt": "A square walked from the bottom-left corner: a turtle facing up, arrows 1 to 4 are forward 10 steps each; at each corner a dashed straight-on line and a right turn marked with a question mark.",
    "answer": 90,
    "solution": "The turtle turns by how much its direction changes:\n\n- Straight on is a turn of \\(0^\\circ\\).\n- Turning round to walk back is \\(180^\\circ\\).\n- A square's corner is \\(90^\\circ\\), so the turn is\n\n\\[180^\\circ - 90^\\circ = \\boxed{90^\\circ}\\]\n\nCheck: 4 turns make one full spin, \\(4\\times90^\\circ = 360^\\circ\\), so the turtle ends facing up again.\n\n\\(4\\) is the number of sides and \\(10\\) is the number of steps; neither is the angle.",
-   "answer_display": "90°"
+   "answer_display": "90°",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g37"
+   ]
   },
   {
    "title": "Ch 19 Logo · Triangle commands",
@@ -421,13 +573,17 @@
    ],
    "answer": "D",
    "solution_title": "Turn = 180° − inside angle",
-   "solution": "Look at corner B, the top of the triangle:\n\n- Straight on (the dashed line) is a turn of \\(0^\\circ\\).\n- Turning round to walk back to A is \\(180^\\circ\\).\n- The road to C is \\(60^\\circ\\) away from walking back, so the turn is\n\n\\[180^\\circ - 60^\\circ = 120^\\circ\\]\n\nCheck: \\(3\\times120^\\circ = 360^\\circ\\), one full spin, so the turtle is back at A facing B.\n\n\\[\\boxed{\\texttt{REPEAT 3 [FD 10 RT 120]}}\\]\n\n`RT 60` uses the inside angle: the turtle turns too little and needs 6 sides to close (a hexagon). `RT 90` is the turn for a square: \\(3\\times90^\\circ = 270^\\circ\\), less than a full spin, so the triangle does not close."
+   "solution": "Look at corner B, the top of the triangle:\n\n- Straight on (the dashed line) is a turn of \\(0^\\circ\\).\n- Turning round to walk back to A is \\(180^\\circ\\).\n- The road to C is \\(60^\\circ\\) away from walking back, so the turn is\n\n\\[180^\\circ - 60^\\circ = 120^\\circ\\]\n\nCheck: \\(3\\times120^\\circ = 360^\\circ\\), one full spin, so the turtle is back at A facing B.\n\n\\[\\boxed{\\texttt{REPEAT 3 [FD 10 RT 120]}}\\]\n\n`RT 60` uses the inside angle: the turtle turns too little and needs 6 sides to close (a hexagon). `RT 90` is the turn for a square: \\(3\\times90^\\circ = 270^\\circ\\), less than a full spin, so the triangle does not close.",
+   "more": [
+    "5 more like this ›",
+    "../malta-year-8-math-all-chapters-basic-extended/quiz.html#g38"
+   ]
   }
  ],
  "takeaway": "- Draw it first: a picture shows which rule to use.\n- Check that the answer makes sense in the picture.",
  "link": [
-  "Chapters Outline ›",
-  "../malta-year-8-math-chapters-outline/material.html"
+  "Basic Extended ›",
+  "../malta-year-8-math-all-chapters-basic-extended/quiz.html"
  ],
  "send_to": "John"
 }
