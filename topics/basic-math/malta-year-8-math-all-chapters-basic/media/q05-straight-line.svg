@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 320' width='600' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='60.0' y1='250.0' x2='540.0' y2='250.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='300.0' y1='250.0' x2='435.0' y2='89.1' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<path d='M300.0,250.0 L335.4,207.9 A55,55 0 0 0 245.0,250.0 Z' fill='#fff8c5' stroke='none'/>
+<path d='M335.4,207.9 A55,55 0 0 0 245.0,250.0' stroke='#bc4c00' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<path d='M300.0,250.0 L375.0,250.0 A75,75 0 0 0 348.2,192.5 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M375.0,250.0 A75,75 0 0 0 348.2,192.5' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='257.7' y='167.4' font-size='24' font-weight='800' text-anchor='middle' fill='#bc4c00'>130°</text>
+<text x='400.5' y='217.3' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<circle cx='300.0' cy='250.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<text x='300.0' y='300.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>straight line: 180°</text>
+</svg>

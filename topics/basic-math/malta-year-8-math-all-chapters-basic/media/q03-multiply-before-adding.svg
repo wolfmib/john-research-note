@@ -1,0 +1,26 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 240' width='640' height='240' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='238' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<circle cx='60.0' cy='110.0' r='13.0' fill='#ffb77a' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='96.0' cy='110.0' r='13.0' fill='#ffb77a' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='132.0' cy='110.0' r='13.0' fill='#ffb77a' stroke='#1f2328' stroke-width='1.5'/>
+<text x='96.0' y='175.0' font-size='24' font-weight='800' text-anchor='middle' fill='#bc4c00'>3</text>
+<text x='185.0' y='120.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>+</text>
+<rect x='220.0' y='82.0' width='70.0' height='56.0' rx='10' fill='#ddf4ff' stroke='#0969da' stroke-width='2'/>
+<circle cx='240.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='270.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='302.0' y='82.0' width='70.0' height='56.0' rx='10' fill='#ddf4ff' stroke='#0969da' stroke-width='2'/>
+<circle cx='322.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='352.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='384.0' y='82.0' width='70.0' height='56.0' rx='10' fill='#ddf4ff' stroke='#0969da' stroke-width='2'/>
+<circle cx='404.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='434.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='466.0' y='82.0' width='70.0' height='56.0' rx='10' fill='#ddf4ff' stroke='#0969da' stroke-width='2'/>
+<circle cx='486.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='516.0' cy='110.0' r='11.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='378.0' y='175.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>4 groups of 2</text>
+<path d='M220.0,190.0 q0,14 12,14 L366.0,204.0 q12,0 12,14 q0,-14 12,-14 L524.0,204.0 q12,0 12,-14' stroke='#0969da' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='590.0' y='120.0' font-size='30' font-weight='700' text-anchor='middle' fill='#1f2328'>= </text>
+<text x='612.0' y='122.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='320.0' y='40.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>Multiply first: the groups are made before you add.</text>
+</svg>

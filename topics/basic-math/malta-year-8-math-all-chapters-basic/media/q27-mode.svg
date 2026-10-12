@@ -1,0 +1,30 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300' width='600' height='300' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='298' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='42.0' y1='240.0' x2='558.0' y2='240.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m0)' marker-start='url(#m0)'/>
+<line x1='60.0' y1='232.0' x2='60.0' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='60.0' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>2</text>
+<line x1='128.6' y1='232.0' x2='128.6' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='128.6' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>3</text>
+<line x1='197.1' y1='232.0' x2='197.1' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='197.1' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>4</text>
+<line x1='265.7' y1='232.0' x2='265.7' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='265.7' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>5</text>
+<line x1='334.3' y1='232.0' x2='334.3' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='334.3' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>6</text>
+<line x1='402.9' y1='232.0' x2='402.9' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='402.9' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>7</text>
+<line x1='471.4' y1='232.0' x2='471.4' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='471.4' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>8</text>
+<line x1='540.0' y1='232.0' x2='540.0' y2='248.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='540.0' y='274.0' font-size='19' font-weight='500' text-anchor='middle' fill='#1a7f37'>9</text>
+<circle cx='471.4' cy='210.0' r='14.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='128.6' cy='210.0' r='14.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='265.7' cy='210.0' r='14.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='265.7' cy='176.0' r='14.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='265.7' cy='142.0' r='14.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='334.3' cy='210.0' r='14.0' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='300.0' y='50.0' font-size='22' font-weight='700' text-anchor='middle' fill='#1f2328'>values: 3, 5, 5, 6, 5, 8</text>
+<text x='470.0' y='120.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>mode =</text>
+<text x='540.0' y='122.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>

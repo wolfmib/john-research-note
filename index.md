@@ -126,6 +126,7 @@ Practice quizzes and worked math material by course and topic.
 | [SAT Math 10 — Geometry and Trigonometry Quiz](topics/basic-math/sat-math-10-geometry-and-trigonometry-quiz/content.md) | Five SAT-style questions on geometry and trigonometry, with full working. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-10-geometry-and-trigonometry-quiz/quiz.html) |
 | [SAT Math 10 — Geometry and Trigonometry](topics/basic-math/sat-math-10-geometry-and-trigonometry/content.md) | How do you use angle facts, similar figures, right-triangle trigonometry, special triangles and circle equations, arcs and sectors? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/sat-math-10-geometry-and-trigonometry/material.html) |
 | [Math Material — UK Thunderball: Two Drums, Combinations and Expected Value](topics/basic-math/math-material-uk-thunderball-two-drums-combinations-and-expected-value/content.md) | How many Thunderball lines are there, how many win in each prize tier, and what is one £1 line worth on average? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-uk-thunderball-two-drums-combinations-and-expected-value/material.html) |
+| [Malta Year 8 Math — All 19 Chapters: Basic](topics/basic-math/malta-year-8-math-all-chapters-basic/content.md) | Can you do one quick step from each of the nineteen chapters? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic/quiz.html) |
 
 ## Animations
 

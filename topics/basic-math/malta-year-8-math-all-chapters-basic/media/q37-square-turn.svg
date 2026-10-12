@@ -1,0 +1,20 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 520 320' width='520' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='518' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='120.0' y1='270.0' x2='120.0' y2='110.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round'/>
+<line x1='120.0' y1='110.0' x2='280.0' y2='110.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round'/>
+<line x1='280.0' y1='110.0' x2='280.0' y2='270.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round'/>
+<line x1='280.0' y1='270.0' x2='120.0' y2='270.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round'/>
+<line x1='120.0' y1='206.0' x2='120.0' y2='182.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<line x1='184.0' y1='110.0' x2='208.0' y2='110.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<line x1='280.0' y1='174.0' x2='280.0' y2='198.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<polygon points='120.0,255.0 110.0,280.0 130.0,280.0' fill='#1a7f37' stroke='#1f2328' stroke-width='1.5' stroke-linejoin='round'/>
+<line x1='120.0' y1='110.0' x2='120.0' y2='45.0' stroke='#57606a' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 5'/>
+<path d='M120.0,110.0 L160.0,110.0 A40,40 0 0 0 120.0,70.0 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M160.0,110.0 A40,40 0 0 0 120.0,70.0' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='160.0' y='82.0' font-size='28' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='100.0' y='195.0' font-size='18' font-weight='800' text-anchor='end' fill='#1f2328'>FD 50</text>
+<text x='240.0' y='96.0' font-size='18' font-weight='800' text-anchor='middle' fill='#1f2328'>FD 50</text>
+<text x='400.0' y='160.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>REPEAT 4</text>
+<text x='400.0' y='190.0' font-size='20' font-weight='800' text-anchor='middle' fill='#0969da'>[FD 50 RT ?]</text>
+</svg>

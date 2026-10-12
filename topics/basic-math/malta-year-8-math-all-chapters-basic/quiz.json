@@ -1,0 +1,433 @@
+{
+ "slug": "malta-year-8-math-all-chapters-basic",
+ "title": "Malta Year 8 Math — All 19 Chapters: Basic",
+ "course": "Malta Year 8 Math",
+ "unit": "All Chapters · Basic",
+ "root": "chapters",
+ "question": "Can you do one quick step from each of the nineteen chapters?",
+ "intro": "**Basic:** one step from each chapter, two questions per chapter.\n\n**Chapters:**\n\n- Q1–2: Chapter 1 Directed Numbers\n- Q3–4: Chapter 2 Number Work\n- Q5–6: Chapter 3 Angles\n- Q7–8: Chapter 4 Fractions\n- Q9–10: Chapter 5 Decimals\n- Q11–12: Chapter 6 Percentages\n- Q13–14: Chapter 7 Ratio\n- Q15–16: Chapter 8 Algebra\n- Q17–18: Chapter 9 Sequences\n- Q19–20: Chapter 10 Circles\n- Q21–22: Chapter 11 Perimeter & Area\n- Q23–24: Chapter 12 Surface Area & Nets\n- Q25–26: Chapter 13 Graphs\n- Q27–28: Chapter 14 Statistics\n- Q29–30: Chapter 15 Probability\n- Q31–32: Chapter 16 Constructions\n- Q33–34: Chapter 17 Transformations\n- Q35–36: Chapter 18 Real-life Problems\n- Q37–38: Chapter 19 Logo",
+ "questions": [
+  {
+   "title": "Ch 1 Directed Numbers · Warmer by 8",
+   "type": "numeric",
+   "prompt": "At night the temperature is \\(-3\\,^\\circ\\text{C}\\).\n\nBy noon it is 8 degrees warmer.\n\nWhat is the temperature at noon?",
+   "figure": "q01-warmer-by-8.svg",
+   "figure_alt": "A thermometer from −5 to 10 °C. The night temperature −3 is marked; an arrow goes 8 degrees up to a question mark.",
+   "answer": 5,
+   "solution": "Warmer means move **up** the thermometer:\n\n\\[-3 + 8 = \\boxed{5}\\]\n\n\\(-11\\) moves 8 the wrong way: warmer is up, not down."
+  },
+  {
+   "title": "Ch 1 Directed Numbers · Below zero",
+   "type": "numeric",
+   "prompt": "Work out \\(-4 - 5\\).",
+   "figure": "q02-below-zero.svg",
+   "figure_alt": "Number line from −10 to 2. Start at −4, five hops to the left, ending at a question mark.",
+   "answer": -9,
+   "solution": "Start at \\(-4\\) and move 5 to the **left**:\n\n\\[-4 - 5 = \\boxed{-9}\\]\n\n\\(1\\) adds the 5 instead of taking it away; \\(-1\\) takes 4 from 5 and forgets the start is below zero."
+  },
+  {
+   "title": "Ch 2 Number Work · Multiply before adding",
+   "type": "numeric",
+   "prompt": "Work out \\(3 + 4\\times2\\).",
+   "figure": "q03-multiply-before-adding.svg",
+   "figure_alt": "Three orange dots plus four boxes with two blue dots each, then equals a question mark.",
+   "answer": 11,
+   "solution": "BIDMAS: multiply first.\n\n\\[\\begin{aligned} 3 + 4\\times2 &= 3 + 8 \\\\ &= \\boxed{11} \\end{aligned}\\]\n\n\\(14\\) adds first, as if it were \\((3 + 4)\\times2\\)."
+  },
+  {
+   "title": "Ch 2 Number Work · Square number",
+   "type": "numeric",
+   "prompt": "Work out \\(6^2\\).",
+   "figure": "q04-square-number.svg",
+   "figure_alt": "A 6 by 6 grid of small squares; how many small squares is the question.",
+   "answer": 36,
+   "solution": "A square number is a square of dots:\n\n\\[\\begin{aligned} 6^2 &= 6\\times6 \\\\ &= \\boxed{36} \\end{aligned}\\]\n\n\\(12\\) is \\(6\\times2\\), not \\(6\\times6\\)."
+  },
+  {
+   "title": "Ch 3 Angles · Straight line",
+   "type": "numeric",
+   "prompt": "Two angles sit on a straight line.\n\nOne is \\(130^\\circ\\).\n\nFind the other angle.",
+   "figure": "q05-straight-line.svg",
+   "figure_alt": "A straight line with a ray from a point on it. The left angle is 130°; the right angle is a question mark.",
+   "answer": 50,
+   "solution": "Angles on a straight line add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 130^\\circ = \\boxed{50^\\circ}\\]\n\n\\(230^\\circ\\) uses \\(360^\\circ\\), which is for angles around a point."
+  },
+  {
+   "title": "Ch 3 Angles · Triangle",
+   "type": "numeric",
+   "prompt": "A triangle has angles \\(60^\\circ\\) and \\(75^\\circ\\).\n\nFind the third angle.",
+   "figure": "q06-triangle.svg",
+   "figure_alt": "A triangle with angles 60° and 75° marked; the top angle is a question mark.",
+   "answer": 45,
+   "solution": "The angles in a triangle add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 60^\\circ - 75^\\circ = \\boxed{45^\\circ}\\]\n\n\\(225^\\circ\\) takes them from \\(360^\\circ\\); a triangle uses \\(180^\\circ\\)."
+  },
+  {
+   "title": "Ch 4 Fractions · Slices of pizza",
+   "type": "mcq",
+   "prompt": "A pizza is cut into 8 equal slices.\n\nYou eat 3 slices and a friend eats 2 slices.\n\nWhat fraction of the pizza is eaten?",
+   "figure": "q07-slices-of-pizza.svg",
+   "figure_alt": "A pizza in 8 slices: 3 orange slices (you), 2 green slices (a friend); the eaten fraction is a question mark.",
+   "choices": [
+    "\\(\\frac{5}{8}\\)",
+    "\\(\\frac{5}{16}\\)",
+    "\\(\\frac{3}{8}\\)",
+    "\\(\\frac{6}{8}\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Count the slices",
+   "solution": "Same size slices, so add the tops:\n\n\\[\\frac{3}{8} + \\frac{2}{8} = \\boxed{\\frac{5}{8}}\\]\n\n\\(\\frac{5}{16}\\) adds the bottoms too, but the pizza still has 8 slices, not 16."
+  },
+  {
+   "title": "Ch 4 Fractions · Fraction of an amount",
+   "type": "numeric",
+   "prompt": "Find \\(\\frac{3}{4}\\) of \\(20\\).",
+   "figure": "q08-fraction-of-an-amount.svg",
+   "figure_alt": "Twenty dots in four equal boxes of five; three boxes are shaded and labelled with a question mark.",
+   "answer": 15,
+   "solution": "Split 20 into 4 equal groups, then take 3 of them:\n\n\\[20\\div4 = 5\\]\n\n\\[5\\times3 = \\boxed{15}\\]\n\n\\(5\\) is only one quarter; you need three quarters."
+  },
+  {
+   "title": "Ch 5 Decimals · Adding money",
+   "type": "numeric",
+   "prompt": "Work out €2.50 + €1.30.",
+   "figure": "q09-adding-money.svg",
+   "figure_alt": "A 2 euro and a 50 cent coin, plus a 1 euro, 20 cent and 10 cent coin, equals a question mark.",
+   "answer": 3.8,
+   "solution": "Line up the decimal points:\n\n\\[2.50 + 1.30 = \\boxed{3.80}\\]\n\n- The answer is €3.80.\n- \\(3.53\\) or \\(2.80\\) come from adding digits that are not in the same place.",
+   "answer_display": "€3.80"
+  },
+  {
+   "title": "Ch 5 Decimals · Times 10",
+   "type": "numeric",
+   "prompt": "Work out \\(0.36\\times10\\).",
+   "figure": "q10-times-10.svg",
+   "figure_alt": "A place-value table: 0.36 in the top row; arrows move each digit one place left into a row of question marks.",
+   "answer": 3.6,
+   "solution": "Every digit moves one place to the left:\n\n\\[0.36\\times10 = \\boxed{3.6}\\]\n\n\\(0.360\\) only adds a zero; the value does not change, so it cannot be ten times bigger."
+  },
+  {
+   "title": "Ch 6 Percentages · Ten percent",
+   "type": "numeric",
+   "prompt": "Find \\(10\\%\\) of €70.",
+   "figure": "q11-ten-percent.svg",
+   "figure_alt": "A bar for €70 cut into 10 equal blocks; the first block (10%) is a question mark.",
+   "answer": 7,
+   "solution": "\\(10\\%\\) is one block out of 10:\n\n\\[70\\div10 = \\boxed{7}\\]\n\n- So \\(10\\%\\) of €70 is €7.\n- \\(60\\) takes 10 away; a percentage is a part, not a subtraction.",
+   "answer_display": "€7"
+  },
+  {
+   "title": "Ch 6 Percentages · Percent of a grid",
+   "type": "numeric",
+   "prompt": "The grid has 100 equal squares.\n\nWhat percentage of the grid is shaded?",
+   "figure": "q12-percent-of-a-grid.svg",
+   "figure_alt": "A 10 by 10 grid with 3 full columns and 7 more squares shaded blue.",
+   "answer": 37,
+   "solution": "- Per cent means out of 100.\n- Count: 3 full columns and 7 more.\n\n\\[30 + 7 = 37\\]\n\n\\[\\frac{37}{100} = \\boxed{37\\%}\\]\n\n\\(63\\%\\) counts the white squares."
+  },
+  {
+   "title": "Ch 7 Ratio · Sharing",
+   "type": "numeric",
+   "prompt": "Share 20 sweets in the ratio \\(1 : 3\\).\n\nHow many sweets are in the bigger share?",
+   "figure": "q13-sharing.svg",
+   "figure_alt": "A bar model: one orange box for the smaller share, three blue boxes for the bigger share, 20 sweets in all.",
+   "answer": 15,
+   "solution": "There are \\(1 + 3 = 4\\) equal parts:\n\n\\[20\\div4 = 5\\]\n\n\\[5\\times3 = \\boxed{15}\\]\n\n\\(5\\) is the smaller share; \\(6.67\\) splits 20 into 3 parts, but the ratio has 4 parts."
+  },
+  {
+   "title": "Ch 7 Ratio · Simplest form",
+   "type": "mcq",
+   "prompt": "Write the ratio \\(12 : 8\\) in its simplest form.",
+   "figure": "q14-simplest-form.svg",
+   "figure_alt": "Twelve red counters in 3 groups of 4 and eight blue counters in 2 groups of 4.",
+   "choices": [
+    "\\(6 : 4\\)",
+    "\\(3 : 2\\)",
+    "\\(2 : 3\\)",
+    "\\(4 : 3\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Divide both by 4",
+   "solution": "The HCF of 12 and 8 is 4:\n\n\\[12\\div4 = 3\\]\n\n\\[8\\div4 = 2\\]\n\n\\[\\boxed{3 : 2}\\]\n\n- \\(6 : 4\\) is the same ratio, but both can still be halved.\n- \\(2 : 3\\) swaps the order."
+  },
+  {
+   "title": "Ch 8 Algebra · Solve",
+   "type": "numeric",
+   "prompt": "Solve \\(x + 7 = 12\\).",
+   "figure": "q15-solve.svg",
+   "figure_alt": "A balance: a bag x and 7 cubes on the left, 12 cubes on the right.",
+   "answer": 5,
+   "solution": "Take 7 from both sides, so the scale stays balanced:\n\n\\[x + 7 = 12\\]\n\n\\[x = 12 - 7\\]\n\n\\[x = \\boxed{5}\\]\n\n\\(19\\) adds 7 instead of taking it away."
+  },
+  {
+   "title": "Ch 8 Algebra · Substitute",
+   "type": "numeric",
+   "prompt": "Work out \\(3x + 2\\) when \\(x = 4\\).",
+   "figure": "q16-substitute.svg",
+   "figure_alt": "A function machine: 4 goes in, times 3, plus 2, and a question mark comes out.",
+   "answer": 14,
+   "solution": "Put 4 in place of \\(x\\):\n\n\\[\\begin{aligned} 3\\times4 + 2 &= 12 + 2 \\\\ &= \\boxed{14} \\end{aligned}\\]\n\n\\(36\\) reads \\(3x\\) as 34 — but \\(3x\\) means \\(3\\times x\\)."
+  },
+  {
+   "title": "Ch 9 Sequences · Matchstick pattern",
+   "type": "numeric",
+   "prompt": "Pattern 1 uses 4 matchsticks, pattern 2 uses 7 and pattern 3 uses 10.\n\nHow many matchsticks does pattern 4 use?",
+   "figure": "q17-matchstick-pattern.svg",
+   "figure_alt": "Matchstick squares in a row: 1, 2 and 3 squares using 4, 7 and 10 sticks; pattern 4 is a question mark.",
+   "answer": 13,
+   "solution": "Each new square adds 3 sticks:\n\n\\[10 + 3 = \\boxed{13}\\]\n\n\\(16\\) counts 4 sticks for the new square, but it shares one side with the square before."
+  },
+  {
+   "title": "Ch 9 Sequences · Term rule",
+   "type": "numeric",
+   "prompt": "The rule for term number \\(n\\) is \\(2n + 1\\).\n\nFind the 10th term.",
+   "figure": "q18-term-rule.svg",
+   "figure_alt": "A table: n = 1, 2, 3 gives terms 3, 5, 7 (each +2); n = 10 gives a question mark. The rule is 2n + 1.",
+   "answer": 21,
+   "solution": "Put \\(n = 10\\) into the rule:\n\n\\[\\begin{aligned} 2\\times10 + 1 &= 20 + 1 \\\\ &= \\boxed{21} \\end{aligned}\\]\n\n\\(12\\) reads \\(2n\\) as 2 + n; \\(2n\\) means \\(2\\times n\\)."
+  },
+  {
+   "title": "Ch 10 Circles · Diameter",
+   "type": "numeric",
+   "prompt": "A circle has radius 7 cm.\n\nFind its diameter.",
+   "figure": "q19-diameter.svg",
+   "figure_alt": "A circle with a radius of 7 cm drawn from the centre and a dashed diameter across it.",
+   "answer": 14,
+   "solution": "The diameter goes right across, so it is two radii:\n\n\\[\\begin{aligned} d &= 2r \\\\ &= 2\\times7 \\\\ &= \\boxed{14 \\text{ cm}} \\end{aligned}\\]\n\n\\(3.5\\) halves the radius; the diameter is double, not half.",
+   "answer_display": "14 cm"
+  },
+  {
+   "title": "Ch 10 Circles · Circumference",
+   "type": "numeric",
+   "prompt": "A circle has diameter 10 cm.\n\nUse \\(\\pi \\approx 3.14\\) to find its circumference.",
+   "figure": "q20-circumference.svg",
+   "figure_alt": "A circle of diameter 10 cm rolled out into a straight line a little more than 3 diameters long.",
+   "answer": 31.4,
+   "solution": "The circumference is about 3.14 diameters:\n\n\\[\\begin{aligned} C &= \\pi d \\\\ &\\approx 3.14\\times10 \\\\ &= \\boxed{31.4 \\text{ cm}} \\end{aligned}\\]\n\n\\(314\\) multiplies by 100; \\(78.5\\) is the area \\(\\pi r^2\\), not the distance round.",
+   "answer_display": "31.4 cm"
+  },
+  {
+   "title": "Ch 11 Perimeter & Area · Rectangle area",
+   "type": "numeric",
+   "prompt": "A rectangle is 6 cm long and 4 cm wide.\n\nFind its area.",
+   "figure": "q21-rectangle-area.svg",
+   "figure_alt": "A 6 cm by 4 cm rectangle split into 1 cm squares.",
+   "answer": 24,
+   "solution": "Rows of squares:\n\n\\[\\begin{aligned} A &= l\\times w \\\\ &= 6\\times4 \\\\ &= \\boxed{24 \\text{ cm}^2} \\end{aligned}\\]\n\n\\(20\\) is the perimeter (the distance round), not the area.",
+   "answer_display": "24 cm²"
+  },
+  {
+   "title": "Ch 11 Perimeter & Area · Triangle area",
+   "type": "numeric",
+   "prompt": "A triangle has base 6 cm and height 4 cm.\n\nFind its area.",
+   "figure": "q22-triangle-area.svg",
+   "figure_alt": "A triangle with base 6 cm and height 4 cm drawn inside a dashed 6 by 4 rectangle on a grid.",
+   "answer": 12,
+   "solution": "A triangle is half of its rectangle:\n\n\\[\\begin{aligned} A &= \\tfrac{1}{2}bh \\\\ &= \\tfrac{1}{2}\\times6\\times4 \\\\ &= \\boxed{12 \\text{ cm}^2} \\end{aligned}\\]\n\n\\(24\\) forgets the half.",
+   "answer_display": "12 cm²"
+  },
+  {
+   "title": "Ch 12 Surface Area & Nets · Cube surface area",
+   "type": "numeric",
+   "prompt": "A cube has edges of 2 cm.\n\nFind its surface area.",
+   "figure": "q23-cube-surface-area.svg",
+   "figure_alt": "A cube with 2 cm edges and its net of six squares, each 2 by 2.",
+   "answer": 24,
+   "solution": "6 square faces, each:\n\n\\[\\begin{aligned} 2\\times2 &= 4 \\text{ cm}^2 \\\\ SA &= 6a^2 \\\\ &= 6\\times4 \\\\ &= \\boxed{24 \\text{ cm}^2} \\end{aligned}\\]\n\n\\(8\\) is the volume \\(2\\times2\\times2\\); surface area covers the outside.",
+   "answer_display": "24 cm²"
+  },
+  {
+   "title": "Ch 12 Surface Area & Nets · Cuboid volume",
+   "type": "numeric",
+   "prompt": "A cuboid is 5 cm long, 3 cm wide and 2 cm high.\n\nFind its volume.",
+   "figure": "q24-cuboid-volume.svg",
+   "figure_alt": "A cuboid 5 by 3 by 2 built from 1 cm cubes.",
+   "answer": 30,
+   "solution": "Count the cubes, layer by layer:\n\n\\[\\begin{aligned} V &= lwh \\\\ &= 5\\times3\\times2 \\\\ &= \\boxed{30 \\text{ cm}^3} \\end{aligned}\\]\n\n\\(10\\) adds the edges; volume multiplies them.",
+   "answer_display": "30 cm³"
+  },
+  {
+   "title": "Ch 13 Graphs · Coordinates",
+   "type": "mcq",
+   "prompt": "What are the coordinates of point A?",
+   "figure": "q25-coordinates.svg",
+   "figure_alt": "A coordinate grid with point A plotted.",
+   "choices": [
+    "\\((2, 3)\\)",
+    "\\((3, 3)\\)",
+    "\\((3, 2)\\)",
+    "\\((-3, 2)\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Across first, then up",
+   "solution": "From 0 go 3 across, then 2 up:\n\n\\[\\boxed{(3, 2)}\\]\n\n\\((2, 3)\\) reads up before across."
+  },
+  {
+   "title": "Ch 13 Graphs · Line value",
+   "type": "numeric",
+   "prompt": "The line is \\(y = 2x + 1\\).\n\nFind \\(y\\) when \\(x = 3\\).",
+   "figure": "q26-line-value.svg",
+   "figure_alt": "The line y = 2x + 1 on a grid; a dashed line from x = 3 goes up to the line at a question mark.",
+   "answer": 7,
+   "solution": "Put \\(x = 3\\) into the rule:\n\n\\[\\begin{aligned} y &= 2\\times3 + 1 \\\\ &= 6 + 1 \\\\ &= \\boxed{7} \\end{aligned}\\]\n\n\\(9\\) adds before multiplying: multiply first."
+  },
+  {
+   "title": "Ch 14 Statistics · Mode",
+   "type": "numeric",
+   "prompt": "Find the mode of \\(3, 5, 5, 6, 5, 8\\).",
+   "figure": "q27-mode.svg",
+   "figure_alt": "A dot plot of 3, 5, 5, 6, 5, 8: the column above 5 is the tallest.",
+   "answer": 5,
+   "solution": "The mode is the value that appears most often: 5 appears 3 times.\n\n\\[\\text{mode} = \\boxed{5}\\]\n\n\\(3\\) is how many times 5 appears, not the value itself."
+  },
+  {
+   "title": "Ch 14 Statistics · Mean",
+   "type": "numeric",
+   "prompt": "Find the mean of \\(3, 7, 8, 6\\).",
+   "figure": "q28-mean.svg",
+   "figure_alt": "A bar chart of 3, 7, 8 and 6; the mean, the level height, is a question mark.",
+   "answer": 6,
+   "solution": "Add them, then share equally between the 4 values:\n\n\\[3 + 7 + 8 + 6 = 24\\]\n\n\\[24\\div4 = \\boxed{6}\\]\n\n\\(24\\) is the total; the mean shares it out."
+  },
+  {
+   "title": "Ch 15 Probability · Bag of counters",
+   "type": "mcq",
+   "prompt": "A bag has 3 red and 5 blue counters.\n\nOne counter is taken without looking.\n\nWhat is the probability that it is red?",
+   "figure": "q29-bag-of-counters.svg",
+   "figure_alt": "A bag with 3 red and 5 blue counters inside.",
+   "choices": [
+    "\\(\\frac{3}{8}\\)",
+    "\\(\\frac{3}{5}\\)",
+    "\\(\\frac{5}{8}\\)",
+    "\\(\\frac{1}{3}\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Red out of all",
+   "solution": "3 red out of \\(3 + 5 = 8\\) counters:\n\n\\[P(\\text{red}) = \\boxed{\\frac{3}{8}}\\]\n\n\\(\\frac{3}{5}\\) compares red with blue; a probability compares with **all** the counters."
+  },
+  {
+   "title": "Ch 15 Probability · Not blue",
+   "type": "mcq",
+   "prompt": "A spinner has 8 equal parts: 3 blue and 5 yellow.\n\nWhat is the probability that it does **not** land on blue?",
+   "figure": "q30-not-blue.svg",
+   "figure_alt": "A spinner with 8 equal parts, 3 blue and 5 yellow, and an arrow pointer.",
+   "choices": [
+    "\\(\\frac{3}{8}\\)",
+    "\\(\\frac{5}{3}\\)",
+    "\\(\\frac{5}{8}\\)",
+    "\\(\\frac{1}{8}\\)"
+   ],
+   "answer": "C",
+   "solution_title": "1 minus P(blue)",
+   "solution": "\\[\\begin{aligned} P(\\text{not blue}) &= 1 - \\frac{3}{8} \\\\ &= \\boxed{\\frac{5}{8}} \\end{aligned}\\]\n\n- \\(\\frac{3}{8}\\) is P(blue) itself.\n- \\(\\frac{5}{3}\\) is more than 1, and no probability is more than 1."
+  },
+  {
+   "title": "Ch 16 Constructions · Can it be a triangle?",
+   "type": "mcq",
+   "prompt": "Which three lengths can make a triangle?",
+   "figure": "q31-can-it-be-a-triangle.svg",
+   "figure_alt": "A base of 8 cm with compass arcs of 3 cm and 4 cm from its ends; the arcs leave a gap and never meet.",
+   "choices": [
+    "3 cm, 4 cm, 8 cm",
+    "2 cm, 3 cm, 6 cm",
+    "4 cm, 5 cm, 7 cm",
+    "1 cm, 2 cm, 5 cm"
+   ],
+   "answer": "C",
+   "solution_title": "The two short sides must reach",
+   "solution": "The two shorter sides together must be longer than the longest:\n\n\\[4 + 5 = 9\\]\n\n\\[9 > 7\\]\n\n- So \\(\\boxed{4 \\text{ cm}, 5 \\text{ cm}, 7 \\text{ cm}}\\) works.\n- In the others the short sides are too short: \\(3 + 4 = 7\\), \\(2 + 3 = 5\\) and \\(1 + 2 = 3\\), each less than the longest side."
+  },
+  {
+   "title": "Ch 16 Constructions · Angle bisector",
+   "type": "numeric",
+   "prompt": "An angle of \\(70^\\circ\\) is bisected.\n\nWhat is each smaller angle?",
+   "figure": "q32-angle-bisector.svg",
+   "figure_alt": "An angle of 70° with a dashed bisector splitting it into two equal angles marked with question marks.",
+   "answer": 35,
+   "solution": "Bisect means cut into two equal halves:\n\n\\[70^\\circ\\div2 = \\boxed{35^\\circ}\\]\n\n\\(140^\\circ\\) doubles instead of halving."
+  },
+  {
+   "title": "Ch 17 Transformations · Reflection",
+   "type": "mcq",
+   "prompt": "Reflect the point \\(P(3, 2)\\) in the \\(y\\)-axis.\n\nWhere is its image?",
+   "figure": "q33-reflection.svg",
+   "figure_alt": "A grid with the y-axis as a mirror; point P(3, 2) on the right and a dashed arrow to a question mark on the left.",
+   "choices": [
+    "\\((3, -2)\\)",
+    "\\((-3, 2)\\)",
+    "\\((-3, -2)\\)",
+    "\\((2, 3)\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Same distance, other side",
+   "solution": "The \\(y\\)-axis is the mirror: \\(x\\) changes sign, \\(y\\) stays.\n\n\\[(3, 2) \\to \\boxed{(-3, 2)}\\]\n\n\\((3, -2)\\) reflects in the \\(x\\)-axis instead."
+  },
+  {
+   "title": "Ch 17 Transformations · Translation",
+   "type": "mcq",
+   "prompt": "Translate the point \\((1, 2)\\) by \\(\\binom{4}{1}\\): 4 right and 1 up.\n\nWhere does it go?",
+   "figure": "q34-translation.svg",
+   "figure_alt": "A grid with point (1, 2), an arrow 4 to the right and an arrow 1 up ending at a question mark.",
+   "choices": [
+    "\\((5, 3)\\)",
+    "\\((4, 1)\\)",
+    "\\((5, 1)\\)",
+    "\\((-3, 1)\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Add the moves",
+   "solution": "Add 4 to \\(x\\) and 1 to \\(y\\):\n\n\\[(1 + 4,\\ 2 + 1) = \\boxed{(5, 3)}\\]\n\n\\((4, 1)\\) is the move itself, not where the point lands."
+  },
+  {
+   "title": "Ch 18 Real-life Problems · Change",
+   "type": "numeric",
+   "prompt": "The bill is €6.35.\n\nYou pay with a €10 note.\n\nHow much change do you get?",
+   "figure": "q35-change.svg",
+   "figure_alt": "A receipt with a total of €6.35 next to a €10 note; the change is a question mark.",
+   "answer": 3.65,
+   "solution": "Change = money paid − cost:\n\n\\[10.00 - 6.35 = \\boxed{3.65}\\]\n\n- The change is €3.65.\n- \\(4.75\\) subtracts each digit the wrong way round.",
+   "answer_display": "€3.65"
+  },
+  {
+   "title": "Ch 18 Real-life Problems · Journey time",
+   "type": "numeric",
+   "prompt": "A bus leaves at 09:40 and arrives at 10:15.\n\nHow many minutes is the journey?",
+   "figure": "q36-journey-time.svg",
+   "figure_alt": "Two clocks: 9:40 and 10:15, with an arrow between them marked question mark minutes.",
+   "answer": 35,
+   "solution": "Count up to the hour, then on:\n\n\\[09{:}40 \\to 10{:}00 = 20 \\text{ min}\\]\n\n\\[10{:}00 \\to 10{:}15 = 15 \\text{ min}\\]\n\n\\[20 + 15 = \\boxed{35 \\text{ min}}\\]\n\n\\(75\\) subtracts 1015 − 940 as ordinary numbers, but an hour has 60 minutes, not 100.",
+   "answer_display": "35 minutes"
+  },
+  {
+   "title": "Ch 19 Logo · Square turn",
+   "type": "numeric",
+   "prompt": "Fill the gap: `REPEAT 4 [FD 50 RT ?]` draws a square.\n\nWhat is the turn?",
+   "figure": "q37-square-turn.svg",
+   "figure_alt": "A square path with the turtle at the bottom-left; at a corner the turn from straight-on to the new side is a question mark.",
+   "answer": 90,
+   "solution": "The 4 turns go all the way round once:\n\n\\[360^\\circ\\div4 = \\boxed{90^\\circ}\\]\n\n\\(4\\) is the number of sides, not the angle; \\(180^\\circ\\) would turn back on itself.",
+   "answer_display": "90°"
+  },
+  {
+   "title": "Ch 19 Logo · Triangle commands",
+   "type": "mcq",
+   "prompt": "Which commands draw an equilateral triangle with sides of 60?",
+   "figure": "q38-triangle-commands.svg",
+   "figure_alt": "An equilateral triangle path; at a corner the outside turn is a question mark and the inside angle is 60°.",
+   "choices": [
+    "`REPEAT 3 [FD 60 RT 60]`",
+    "`REPEAT 6 [FD 60 RT 60]`",
+    "`REPEAT 3 [FD 120 RT 60]`",
+    "`REPEAT 3 [FD 60 RT 120]`"
+   ],
+   "answer": "D",
+   "solution_title": "Turn 360° in 3 turns",
+   "solution": "The turtle turns all the way round once in 3 turns:\n\n\\[360^\\circ\\div3 = \\boxed{120^\\circ}\\]\n\n`RT 60` uses the inside angle; the turtle turns by the **outside** angle. `REPEAT 6` would draw a hexagon."
+  }
+ ],
+ "takeaway": "- Draw it first: a picture shows which rule to use.\n- Check that the answer makes sense in the picture.",
+ "link": [
+  "Chapters Outline ›",
+  "../malta-year-8-math-chapters-outline/material.html"
+ ],
+ "send_to": "John"
+}

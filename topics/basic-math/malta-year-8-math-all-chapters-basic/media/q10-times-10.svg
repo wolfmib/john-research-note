@@ -1,0 +1,32 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 620 300' width='620' height='300' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='618' height='298' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='107.0' y='50.0' width='116.0' height='40.0' rx='0' fill='#fff8c5' stroke='#1f2328' stroke-width='1.5'/>
+<text x='165.0' y='77.0' font-size='18' font-weight='700' text-anchor='middle' fill='#1f2328'>Tens</text>
+<rect x='107.0' y='90.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='107.0' y='170.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='227.0' y='50.0' width='116.0' height='40.0' rx='0' fill='#fff8c5' stroke='#1f2328' stroke-width='1.5'/>
+<text x='285.0' y='77.0' font-size='18' font-weight='700' text-anchor='middle' fill='#1f2328'>Ones</text>
+<rect x='227.0' y='90.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='227.0' y='170.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='367.0' y='50.0' width='116.0' height='40.0' rx='0' fill='#ddf4ff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='425.0' y='77.0' font-size='18' font-weight='700' text-anchor='middle' fill='#1f2328'>Tenths</text>
+<rect x='367.0' y='90.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='367.0' y='170.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='487.0' y='50.0' width='116.0' height='40.0' rx='0' fill='#ddf4ff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='545.0' y='77.0' font-size='18' font-weight='700' text-anchor='middle' fill='#1f2328'>Hundredths</text>
+<rect x='487.0' y='90.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='487.0' y='170.0' width='116.0' height='80.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='355.0' cy='152.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='355.0' cy='232.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<text x='285.0' y='145.0' font-size='34' font-weight='800' text-anchor='middle' fill='#1f2328'>0</text>
+<text x='425.0' y='145.0' font-size='34' font-weight='800' text-anchor='middle' fill='#1f2328'>3</text>
+<text x='545.0' y='145.0' font-size='34' font-weight='800' text-anchor='middle' fill='#1f2328'>6</text>
+<text x='285.0' y='226.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='425.0' y='226.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<line x1='410.0' y1='155.0' x2='300.0' y2='190.0' stroke='#bc4c00' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m4)'/>
+<line x1='530.0' y1='155.0' x2='440.0' y2='190.0' stroke='#bc4c00' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m4)'/>
+<text x='20.0' y='145.0' font-size='22' font-weight='500' text-anchor='start' fill='#57606a'>0.36</text>
+<text x='20.0' y='225.0' font-size='22' font-weight='800' text-anchor='start' fill='#bc4c00'>× 10</text>
+<text x='355.0' y='285.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>× 10: every digit moves one place to the left</text>
+</svg>

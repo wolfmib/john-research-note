@@ -1,0 +1,56 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 240' width='640' height='240' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='238' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='30.0' y1='63.0' x2='30.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='30.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='80.0' y1='63.0' x2='80.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='80.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='33.0' y1='60.0' x2='77.0' y2='60.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='77.0' cy='60.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='33.0' y1='110.0' x2='77.0' y2='110.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='77.0' cy='110.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<text x='55.0' y='150.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 1</text>
+<text x='55.0' y='180.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>4 sticks</text>
+<line x1='130.0' y1='63.0' x2='130.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='130.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='180.0' y1='63.0' x2='180.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='180.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='230.0' y1='63.0' x2='230.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='230.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='133.0' y1='60.0' x2='177.0' y2='60.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='177.0' cy='60.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='133.0' y1='110.0' x2='177.0' y2='110.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='177.0' cy='110.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='183.0' y1='60.0' x2='227.0' y2='60.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='227.0' cy='60.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='183.0' y1='110.0' x2='227.0' y2='110.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='227.0' cy='110.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<text x='180.0' y='150.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 2</text>
+<text x='180.0' y='180.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>7 sticks</text>
+<line x1='285.0' y1='63.0' x2='285.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='285.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='335.0' y1='63.0' x2='335.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='335.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='385.0' y1='63.0' x2='385.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='385.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='435.0' y1='63.0' x2='435.0' y2='107.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='435.0' cy='107.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='288.0' y1='60.0' x2='332.0' y2='60.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='332.0' cy='60.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='288.0' y1='110.0' x2='332.0' y2='110.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='332.0' cy='110.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='338.0' y1='60.0' x2='382.0' y2='60.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='382.0' cy='60.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='338.0' y1='110.0' x2='382.0' y2='110.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='382.0' cy='110.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='388.0' y1='60.0' x2='432.0' y2='60.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='432.0' cy='60.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<line x1='388.0' y1='110.0' x2='432.0' y2='110.0' stroke='#bc8a3c' stroke-width='6' stroke-linecap='round'/>
+<circle cx='432.0' cy='110.0' r='4.0' fill='#cf222e' stroke='#cf222e' stroke-width='1'/>
+<text x='360.0' y='150.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 3</text>
+<text x='360.0' y='180.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>10 sticks</text>
+<rect x='475.0' y='50.0' width='140.0' height='140.0' rx='12' fill='#ffffff' stroke='#0969da' stroke-width='2' stroke-dasharray='6 5'/>
+<text x='545.0' y='95.0' font-size='18' font-weight='700' text-anchor='middle' fill='#0969da'>Pattern 4</text>
+<text x='545.0' y='140.0' font-size='40' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='545.0' y='175.0' font-size='18' font-weight='700' text-anchor='middle' fill='#0969da'>sticks</text>
+</svg>

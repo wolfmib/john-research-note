@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 340' width='560' height='340' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='558' height='338' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='110.0' y1='300.0' x2='520.0' y2='300.0' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round'/>
+<line x1='110.0' y1='300.0' x2='207.5' y2='32.2' stroke='#1f2328' stroke-width='3.5' stroke-linecap='round'/>
+<line x1='110.0' y1='300.0' x2='380.3' y2='110.7' stroke='#0969da' stroke-width='3' stroke-linecap='round' stroke-dasharray='10 7'/>
+<path d='M280.0,300.0 A170,170 0 0 0 168.1,140.3' stroke='#57606a' stroke-width='2' fill='none' stroke-linejoin='round'/>
+<text x='211.5' y='131.1' font-size='22' font-weight='800' text-anchor='start' fill='#57606a'>70°</text>
+<path d='M110.0,300.0 L195.0,300.0 A85,85 0 0 0 179.6,251.2 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M195.0,300.0 A85,85 0 0 0 179.6,251.2' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<path d='M110.0,300.0 L167.3,259.8 A70,70 0 0 0 133.9,234.2 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M167.3,259.8 A70,70 0 0 0 133.9,234.2' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='220.5' y='280.3' font-size='28' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='168.8' y='231.1' font-size='28' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='430.0' y='210.0' font-size='20' font-weight='800' text-anchor='middle' fill='#0969da'>bisector</text>
+<text x='430.0' y='235.0' font-size='18' font-weight='500' text-anchor='middle' fill='#57606a'>cuts it in half</text>
+</svg>
