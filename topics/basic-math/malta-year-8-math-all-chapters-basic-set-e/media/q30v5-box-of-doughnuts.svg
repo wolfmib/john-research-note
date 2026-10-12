@@ -1,0 +1,36 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 620 320' width='620' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='618' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='40.0' y='95.0' width='330.0' height='150.0' rx='12' fill='#ffe9cc' stroke='#1f2328' stroke-width='3'/>
+<circle cx='70.0' cy='135.0' r='23.0' fill='#7a4a24' stroke='#1f2328' stroke-width='2'/>
+<circle cx='70.0' cy='135.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='124.0' cy='135.0' r='23.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='2'/>
+<circle cx='124.0' cy='135.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='178.0' cy='135.0' r='23.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='2'/>
+<circle cx='178.0' cy='135.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='232.0' cy='135.0' r='23.0' fill='#7a4a24' stroke='#1f2328' stroke-width='2'/>
+<circle cx='232.0' cy='135.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='286.0' cy='135.0' r='23.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='2'/>
+<circle cx='286.0' cy='135.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='340.0' cy='135.0' r='23.0' fill='#7a4a24' stroke='#1f2328' stroke-width='2'/>
+<circle cx='340.0' cy='135.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='70.0' cy='205.0' r='23.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='2'/>
+<circle cx='70.0' cy='205.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='124.0' cy='205.0' r='23.0' fill='#7a4a24' stroke='#1f2328' stroke-width='2'/>
+<circle cx='124.0' cy='205.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='178.0' cy='205.0' r='23.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='2'/>
+<circle cx='178.0' cy='205.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='232.0' cy='205.0' r='23.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='2'/>
+<circle cx='232.0' cy='205.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='286.0' cy='205.0' r='23.0' fill='#7a4a24' stroke='#1f2328' stroke-width='2'/>
+<circle cx='286.0' cy='205.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='340.0' cy='205.0' r='23.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='2'/>
+<circle cx='340.0' cy='205.0' r='7.0' fill='#ffe9cc' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='410.0' cy='110.0' r='15.0' fill='#7a4a24' stroke='#1f2328' stroke-width='1.5'/>
+<text x='435.0' y='117.0' font-size='21' font-weight='700' text-anchor='start' fill='#1f2328'>5 chocolate</text>
+<circle cx='410.0' cy='160.0' r='15.0' fill='#ffd7e6' stroke='#1f2328' stroke-width='1.5'/>
+<text x='435.0' y='167.0' font-size='21' font-weight='700' text-anchor='start' fill='#1f2328'>7 strawberry</text>
+<text x='395.0' y='240.0' font-size='21' font-weight='700' text-anchor='start' fill='#0969da'>P(not chocolate)</text>
+<text x='395.0' y='278.0' font-size='23' font-weight='700' text-anchor='start' fill='#0969da'>=</text>
+<text x='440.0' y='281.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>

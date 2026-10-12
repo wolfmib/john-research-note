@@ -1,0 +1,444 @@
+{
+ "course": "Malta Year 8 Math",
+ "root": "chapters",
+ "send_to": "John",
+ "slug": "malta-year-8-math-all-chapters-basic-set-e",
+ "title": "Malta Year 8 Math — All 19 Chapters: Basic Set E",
+ "unit": "All Chapters · Set E",
+ "question": "Set E: one quick step from each of the nineteen chapters, with new numbers.",
+ "intro": "**Set E:** the same 38 steps as Basic, new questions, two per chapter.",
+ "questions": [
+  {
+   "title": "Ch 1 Directed Numbers · Rocket countdown",
+   "type": "numeric",
+   "prompt": "A rocket clock counts seconds.\n\nIt shows \\(-8\\), which means 8 seconds before lift-off (lift-off is 0).\n\nThen 11 seconds pass.\n\nWhat does the clock show now?",
+   "figure": "q01v5-rocket-countdown.svg",
+   "figure_alt": "A number line from −10 to 5. Start at −8; eleven hops of 1 to the right end at a question mark.",
+   "answer": 3,
+   "solution": "Time passing moves **right** on the number line:\n\n\\[-8 + 11 = \\boxed{3}\\]\n\n\\(19\\) adds 8 and 11 and forgets that \\(-8\\) is before lift-off.",
+   "answer_display": "3 seconds"
+  },
+  {
+   "title": "Ch 1 Directed Numbers · Quiz points",
+   "type": "numeric",
+   "prompt": "In a quiz game your score is \\(-3\\) points (3 points below zero).\n\nA wrong answer loses 6 points.\n\nWhat is your score now?",
+   "figure": "q02v5-quiz-points.svg",
+   "figure_alt": "A number line from −10 to 2. Start at −3; six hops of 1 to the left end at a question mark.",
+   "answer": -9,
+   "solution": "Losing points moves **left** on the number line:\n\n\\[-3 - 6 = \\boxed{-9}\\]\n\n\\(3\\) adds 6 to \\(-3\\) instead of taking it away.",
+   "answer_display": "−9 points"
+  },
+  {
+   "title": "Ch 2 Number Work · Gozo ferry deck",
+   "type": "numeric",
+   "prompt": "The Gozo ferry carries 2 vans and 4 rows of cars, with 5 cars in each row.\n\nThe total is \\(2 + 4\\times5\\).\n\nHow many vehicles are there?",
+   "figure": "q03v5-gozo-ferry-deck.svg",
+   "figure_alt": "A ferry deck from above: two vans and four rows of five cars, then equals a question mark.",
+   "answer": 22,
+   "solution": "BIDMAS: multiply first (the rows), then add.\n\n\\[4\\times5 = 20\\]\n\n\\[2 + 20 = \\boxed{22}\\]\n\n\\(30\\) adds first, as if it were \\((2 + 4)\\times5\\)."
+  },
+  {
+   "title": "Ch 2 Number Work · Sticker sheet",
+   "type": "numeric",
+   "prompt": "A square sheet of star stickers has 9 rows with 9 stickers in each row.\n\nThe number of stickers is \\(9^2\\) (the small 2 means 9 times itself).\n\nHow many stickers are there?",
+   "figure": "q04v5-sticker-sheet.svg",
+   "figure_alt": "A 9 by 9 square of stickers; how many stickers in all is the question.",
+   "answer": 81,
+   "solution": "A square number is rows times columns:\n\n\\[9^2 = 9\\times9\\]\n\n\\[9\\times9 = \\boxed{81}\\]\n\n\\(18\\) is \\(9\\times2\\), not \\(9\\times9\\)."
+  },
+  {
+   "title": "Ch 3 Angles · Car park barrier",
+   "type": "numeric",
+   "prompt": "A car park barrier arm lifts up from a straight road.\n\nOn one side, the arm makes \\(55^\\circ\\) with the road.\n\nFind the angle between the arm and the road on the other side.",
+   "figure": "q05v5-car-park-barrier.svg",
+   "figure_alt": "A red and white barrier arm raised from a post on a straight road. On the left the angle with the road is 55°; on the right the angle is a question mark.",
+   "answer": 125,
+   "solution": "The road is a straight line, so the two angles add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 55^\\circ = \\boxed{125^\\circ}\\]\n\n\\(305^\\circ\\) uses \\(360^\\circ\\), which is for angles around a point.",
+   "answer_display": "125°"
+  },
+  {
+   "title": "Ch 3 Angles · Buoy triangle",
+   "type": "numeric",
+   "prompt": "At the Blue Lagoon, a swim route goes round 3 buoys and makes a triangle.\n\nTwo of its angles are \\(45^\\circ\\) and \\(100^\\circ\\).\n\nFind the third angle.",
+   "figure": "q06v5-buoy-triangle.svg",
+   "figure_alt": "A triangle of three buoys in the sea. One angle is 45°, one is 100° and the top angle is a question mark.",
+   "answer": 35,
+   "solution": "The angles in a triangle add up to \\(180^\\circ\\):\n\n\\[180^\\circ - 45^\\circ - 100^\\circ = \\boxed{35^\\circ}\\]\n\n\\(215^\\circ\\) takes the angles from \\(360^\\circ\\); a triangle uses \\(180^\\circ\\).",
+   "answer_display": "35°"
+  },
+  {
+   "title": "Ch 4 Fractions · Festa nougat",
+   "type": "mcq",
+   "prompt": "A bar of qubbajt (festa nougat) is cut into 7 equal pieces.\n\nA fraction like \\(\\frac{1}{7}\\) means 1 piece out of the 7.\n\nYou eat 2 pieces and a friend eats 4 pieces.\n\nWhat fraction of the bar is eaten?",
+   "figure": "q07v5-festa-nougat.svg",
+   "figure_alt": "A nougat bar in 7 pieces: 2 orange pieces (you), 4 green pieces (a friend); the eaten fraction is a question mark.",
+   "choices": [
+    "\\(\\frac{2}{7}\\)",
+    "\\(\\frac{6}{14}\\)",
+    "\\(\\frac{6}{7}\\)",
+    "\\(\\frac{1}{7}\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Count the pieces",
+   "solution": "Same size pieces, so add the tops:\n\n\\[\\frac{2}{7} + \\frac{4}{7} = \\boxed{\\frac{6}{7}}\\]\n\n\\(\\frac{6}{14}\\) adds the bottoms too, but there are still 7 pieces, not 14."
+  },
+  {
+   "title": "Ch 4 Fractions · Beach trip",
+   "type": "numeric",
+   "prompt": "A class has 25 students.\n\n\\(\\frac{4}{5}\\) of them go on the beach trip (\\(\\frac{4}{5}\\) means 4 out of every 5 equal parts).\n\nHow many students go?",
+   "figure": "q08v5-beach-trip.svg",
+   "figure_alt": "25 students in 5 equal boxes of 5; 4 boxes are shaded and labelled with a question mark.",
+   "answer": 20,
+   "solution": "Split 25 into 5 equal boxes, then take 4 of them:\n\n\\[25\\div5 = 5\\]\n\n\\[5\\times4 = \\boxed{20}\\]\n\n\\(5\\) is only one box; you need 4 of the 5 boxes."
+  },
+  {
+   "title": "Ch 5 Decimals · Beach umbrella and sunbed",
+   "type": "numeric",
+   "prompt": "At Golden Bay an umbrella costs €6.50 to hire and a sunbed costs €4.20.\n\nHow much do they cost together?",
+   "figure": "q09v5-beach-umbrella-and-sunbed.svg",
+   "figure_alt": "A umbrella with a price tag of €6.50 and a sunbed with a price tag of €4.20; beside them the column sum 6.50 + 4.20 with a question mark for the total.",
+   "answer": 10.7,
+   "solution": "Line up the decimal points:\n\n\\[6.50 + 4.20 = \\boxed{10.70}\\]\n\n- The answer is €10.70.\n- \\(0.70\\) forgets to carry the 1 ten when \\(6 + 4 = 10\\) euros.",
+   "answer_display": "€10.70"
+  },
+  {
+   "title": "Ch 5 Decimals · Ten steps",
+   "type": "numeric",
+   "prompt": "Each of your steps is 0.75 m long.\n\nYou walk 10 steps, which is \\(0.75\\times10\\) metres.\n\nHow far do you walk?",
+   "figure": "q10v5-ten-steps.svg",
+   "figure_alt": "Ten items of 0.75 m per step in a row; below, a place-value table with 0.75 in the top row and arrows moving each digit one place left into a row of question marks.",
+   "answer": 7.5,
+   "solution": "Every digit moves one place to the left:\n\n\\[0.75\\times10 = \\boxed{7.5}\\]\n\n\\(75\\) moves the digits two places, which is multiplying by 100, not 10.",
+   "answer_display": "7.5 m"
+  },
+  {
+   "title": "Ch 6 Percentages · Film adverts",
+   "type": "numeric",
+   "prompt": "A film on TV lasts 80 minutes.\n\n\\(10\\%\\) of that time is adverts (\\(10\\%\\) means 10 out of every 100, the same as one tenth).\n\nHow many minutes of adverts are there?",
+   "figure": "q11v5-film-adverts.svg",
+   "figure_alt": "A bar for 80 minutes cut into 10 equal blocks; the first block (10%) is a question mark.",
+   "answer": 8,
+   "solution": "\\(10\\%\\) is one block out of 10:\n\n\\[80\\div10 = \\boxed{8}\\]\n\n- So \\(10\\%\\) of 80 minutes is 8 minutes.\n- \\(70\\) takes 10 away; a percentage is a part, not a subtraction.",
+   "answer_display": "8 minutes"
+  },
+  {
+   "title": "Ch 6 Percentages · Beach umbrellas",
+   "type": "numeric",
+   "prompt": "At Golden Bay there are 100 beach umbrellas in 10 rows of 10.\n\nSome umbrellas are open.\n\nPer cent means out of 100.\n\nWhat percentage of the umbrellas is open?",
+   "figure": "q12v5-beach-umbrellas.svg",
+   "figure_alt": "A 10 by 10 grid of 100 umbrellas: 7 full rows and 2 more are coloured.",
+   "answer": 72,
+   "solution": "- Per cent means out of 100.\n- Count: 7 full rows and 2 more.\n\n\\[70 + 2 = 72\\]\n\n\\[\\frac{72}{100} = \\boxed{72\\%}\\]\n\n\\(28\\%\\) counts the closed umbrellas.",
+   "answer_display": "72%"
+  },
+  {
+   "title": "Ch 7 Ratio · Beach shells",
+   "type": "numeric",
+   "prompt": "You collect 27 shells at Golden Bay.\n\nWhite shells and pink shells are in the ratio \\(4 : 5\\).\n\nHow many pink shells are there?",
+   "figure": "q13v5-beach-shells.svg",
+   "figure_alt": "A bar model: four white boxes for white shells, five pink boxes for pink shells, 27 shells in all; the pink share is a question mark.",
+   "answer": 15,
+   "solution": "There are \\(4 + 5 = 9\\) equal parts:\n\n\\[27\\div9 = 3\\]\n\n\\[3\\times5 = \\boxed{15}\\]\n\n12 is the smaller share; 13.5 splits 27 into 2 halves, but the ratio has 9 parts, not 2."
+  },
+  {
+   "title": "Ch 7 Ratio · Coins in a jar",
+   "type": "mcq",
+   "prompt": "A money jar holds 8 one-euro coins and 32 ten-cent coins.\n\nWrite the ratio one-euro : ten-cent, \\(8 : 32\\), in its simplest form.",
+   "figure": "q14v5-coins-in-a-jar.svg",
+   "figure_alt": "Eight silver counters (one-euro coins) in 1 group of 8 and thirty-two gold counters (ten-cent coins) in 4 groups of 8.",
+   "choices": [
+    "\\(2 : 8\\)",
+    "\\(4 : 1\\)",
+    "\\(1 : 4\\)",
+    "\\(4 : 16\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Divide both by 8",
+   "solution": "The HCF of 8 and 32 is 8:\n\n\\[8\\div8 = 1\\]\n\n\\[32\\div8 = 4\\]\n\n\\[\\boxed{1 : 4}\\]\n\n- \\(2 : 8\\) and \\(4 : 16\\) are the same ratio, but both numbers can still be divided again.\n- \\(4 : 1\\) swaps the order: the one-euro coins come first."
+  },
+  {
+   "title": "Ch 8 Algebra · Bag of marbles",
+   "type": "numeric",
+   "prompt": "A bag holds \\(x\\) marbles.\n\nYou tip the bag and 9 more marbles into a jar, and the jar has 25 marbles, so \\(x + 9 = 25\\).\n\nSolve to find \\(x\\).",
+   "figure": "q15v5-bag-of-marbles.svg",
+   "figure_alt": "A bag of x marbles plus nine marbles equals a jar of 25 marbles; x is a question mark.",
+   "answer": 16,
+   "solution": "Take 9 from both sides:\n\n\\[x + 9 = 25\\]\n\n\\[x = 25 - 9\\]\n\n\\[x = \\boxed{16}\\]\n\n34 adds 9 instead of taking it away."
+  },
+  {
+   "title": "Ch 8 Algebra · Stack of cups",
+   "type": "numeric",
+   "prompt": "A stack of \\(c\\) paper cups is \\(2c + 9\\) cm tall, where \\(2c + 9\\) means \\(2\\times c + 9\\).\n\nHow tall is a stack of 7 cups?",
+   "figure": "q16v5-stack-of-cups.svg",
+   "figure_alt": "A function machine: 7 cups go in, times 2, plus 9, and the height in centimetres is a question mark.",
+   "answer": 23,
+   "solution": "Put 7 in place of \\(c\\), multiply first, then add:\n\n\\[2\\times7 = 14\\]\n\n\\[14 + 9 = \\boxed{23}\\]\n\n36 cm reads \\(2c\\) as 27, but \\(2c\\) means \\(2\\times c\\).",
+   "answer_display": "23 cm"
+  },
+  {
+   "title": "Ch 9 Sequences · Plus-sign tiles",
+   "type": "numeric",
+   "prompt": "Square tiles make a plus sign that grows.\n\nPattern 1 uses 1 tile, pattern 2 uses 5 and pattern 3 uses 9.\n\nHow many tiles does pattern 4 use?",
+   "figure": "q17v5-plus-sign-tiles.svg",
+   "figure_alt": "Plus signs of square tiles: 1, 5 and 9 tiles; pattern 4 is a question mark.",
+   "answer": 13,
+   "solution": "Each new pattern adds 4 tiles:\n\n\\[9 + 4 = \\boxed{13}\\]\n\n10 adds 1 tile, but each pattern adds one tile on each of the 4 arms, so 4 tiles."
+  },
+  {
+   "title": "Ch 9 Sequences · Savings",
+   "type": "numeric",
+   "prompt": "You save money each week.\n\nAfter week number \\(n\\) your money box holds \\(10n + 4\\) euros, where \\(10n + 4\\) means \\(10\\times n + 4\\).\n\nHow many euros are in it after week 7?",
+   "figure": "q18v5-savings.svg",
+   "figure_alt": "A table: weeks 1, 2, 3 give 14, 24, 34 euros (each +10); week 7 is a question mark. The rule is 10n + 4.",
+   "answer": 74,
+   "solution": "Put \\(n = 7\\) into the rule, multiply first, then add:\n\n\\[10\\times7 = 70\\]\n\n\\[70 + 4 = \\boxed{74}\\]\n\n€21 reads \\(10n\\) as 10 + 7, but \\(10n\\) means \\(10\\times n\\).",
+   "answer_display": "€74"
+  },
+  {
+   "title": "Ch 10 Circles · Round table",
+   "type": "numeric",
+   "prompt": "A round dining table has radius 60 cm.\n\nFind its diameter.",
+   "figure": "q19v5-round-table.svg",
+   "figure_alt": "A round wooden table with a 60 cm radius from the centre and a dashed diameter across it.",
+   "answer": 120,
+   "solution": "The diameter goes right across, so it is two radii:\n\n\\[d = 2r\\]\n\n\\[d = 2\\times60\\]\n\n\\[d = \\boxed{120 \\text{ cm}}\\]\n\n30 cm halves the radius; the diameter is double, not half.",
+   "answer_display": "120 cm"
+  },
+  {
+   "title": "Ch 10 Circles · Roundabout",
+   "type": "numeric",
+   "prompt": "A roundabout has diameter 40 m.\n\nUse \\(\\pi \\approx 3.14\\) to find the distance once round it (the circumference).",
+   "figure": "q20v5-roundabout.svg",
+   "figure_alt": "A roundabout of diameter 40 m rolled out into a straight line a little more than 3 diameters long.",
+   "answer": 125.6,
+   "solution": "The circumference is about 3.14 diameters:\n\n\\[C = \\pi d\\]\n\n\\[C \\approx 3.14\\times40\\]\n\n\\[C \\approx \\boxed{125.6 \\text{ m}}\\]\n\n62.8 m uses the radius (20 m) instead of the diameter, so it is only half way round.",
+   "answer_display": "125.6 m"
+  },
+  {
+   "title": "Ch 11 Perimeter & Area · Pool floor",
+   "type": "numeric",
+   "prompt": "The floor of a small swimming pool is 10 m long and 4 m wide.\n\nFind its area.",
+   "figure": "q21v5-pool-floor.svg",
+   "figure_alt": "A 10 m by 4 m pool floor split into 1 m squares.",
+   "answer": 40,
+   "solution": "Rows of squares:\n\n\\[A = l\\times w\\]\n\n\\[A = 10\\times4\\]\n\n\\[A = \\boxed{40 \\text{ m}^2}\\]\n\n28 m is the perimeter (the distance round), not the area.",
+   "answer_display": "40 m²"
+  },
+  {
+   "title": "Ch 11 Perimeter & Area · House gable",
+   "type": "numeric",
+   "prompt": "The end wall of a house roof (the gable) is a triangle with base 8 m and height 7 m.\n\nFind its area.",
+   "figure": "q22v5-house-gable.svg",
+   "figure_alt": "A triangle with base 8 m and height 7 m inside a dashed 8 by 7 rectangle on a grid.",
+   "answer": 28,
+   "solution": "A triangle is half of its rectangle:\n\n\\[A = \\tfrac{1}{2}bh\\]\n\n\\[A = \\tfrac{1}{2}\\times8\\times7\\]\n\n\\[A = \\boxed{28 \\text{ m}^2}\\]\n\n56 m² forgets the half.",
+   "answer_display": "28 m²"
+  },
+  {
+   "title": "Ch 12 Surface Area & Nets · Storage cube",
+   "type": "numeric",
+   "prompt": "A cube-shaped storage box has edges of 10 cm.\n\nFind its surface area.",
+   "figure": "q23v5-storage-cube.svg",
+   "figure_alt": "A cube with 10 cm edges and a net of six squares in a 1–4–1 shape.",
+   "answer": 600,
+   "solution": "6 square faces, each:\n\n\\[\\begin{aligned} 10\\times10 &= 100 \\text{ cm}^2 \\\\ SA &= 6a^2 \\end{aligned}\\]\n\n\\[SA = 6\\times100\\]\n\n\\[SA = \\boxed{600 \\text{ cm}^2}\\]\n\n1000 cm³ is the volume 10 × 10 × 10; surface area covers the outside.",
+   "answer_display": "600 cm²"
+  },
+  {
+   "title": "Ch 12 Surface Area & Nets · Ferry container",
+   "type": "numeric",
+   "prompt": "A container on the Gozo ferry is 6 m long, 2 m wide and 3 m high.\n\nFind its volume.",
+   "figure": "q24v5-ferry-container.svg",
+   "figure_alt": "A cuboid 6 by 2 by 3 built from 1 m cubes.",
+   "answer": 36,
+   "solution": "Count the cubes, layer by layer:\n\n\\[V = lwh\\]\n\n\\[V = 6\\times2\\times3\\]\n\n\\[V = \\boxed{36 \\text{ m}^3}\\]\n\n11 m³ adds the three lengths; volume multiplies them.",
+   "answer_display": "36 m³"
+  },
+  {
+   "title": "Ch 13 Graphs · Bus stop",
+   "type": "mcq",
+   "prompt": "A street map of a town is drawn on a grid.\n\nThe bus stop is at point B.\n\nWhat are the coordinates of B?",
+   "figure": "q25v5-bus-stop.svg",
+   "figure_alt": "A coordinate grid from 0 to 6 across and 0 to 5 up with point B plotted next to a small picture.",
+   "choices": [
+    "\\((7, 5)\\)",
+    "\\((6, 4)\\)",
+    "\\((4, 6)\\)",
+    "\\((6, -4)\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Across first, then up",
+   "solution": "From 0 go 6 across, then 4 up:\n\n\\[\\boxed{(6, 4)}\\]\n\n\\((4, 6)\\) reads up before across."
+  },
+  {
+   "title": "Ch 13 Graphs · Bowling",
+   "type": "numeric",
+   "prompt": "At a bowling alley, shoe hire is €4 and each game is €2.\n\nThe cost is \\(y = 2x + 4\\) euros for \\(x\\) games.\n\nFind \\(y\\) when \\(x = 3\\).",
+   "figure": "q26v5-bowling.svg",
+   "figure_alt": "The line y = 2x + 4 on a grid; a dashed line from x = 3 goes up to the line at a question mark.",
+   "answer": 10,
+   "solution": "Put \\(x = 3\\) into the rule:\n\n\\[y = 2\\times3 + 4\\]\n\n\\[y = 6 + 4\\]\n\n\\[y = \\boxed{10}\\]\n\n- The answer is €10.\n- \\(18\\) adds \\(2 + 4\\) first and then multiplies by 3: multiply first.",
+   "answer_display": "€10"
+  },
+  {
+   "title": "Ch 14 Statistics · Pets at home",
+   "type": "numeric",
+   "prompt": "Eight classmates say how many pets they have at home: \\(0, 1, 1, 2, 1, 0, 3, 1\\).\n\nFind the mode.",
+   "figure": "q27v5-pets-at-home.svg",
+   "figure_alt": "A dot plot of 0, 1, 1, 2, 1, 0, 3, 1: the column above 1 is the tallest.",
+   "answer": 1,
+   "solution": "The mode is the value that appears most often: 1 appears 4 times.\n\n\\[\\text{mode} = \\boxed{1}\\]\n\n\\(4\\) is how many times 1 appears, not the value itself."
+  },
+  {
+   "title": "Ch 14 Statistics · Seedlings",
+   "type": "numeric",
+   "prompt": "Four seedlings are 5 cm, 9 cm, 8 cm and 10 cm tall.\n\nFind their mean height.",
+   "figure": "q28v5-seedlings.svg",
+   "figure_alt": "A bar chart of 5, 9, 8, 10; the mean, the level height, is a question mark.",
+   "answer": 8,
+   "solution": "Add them, then share equally between the 4 values:\n\n\\[5 + 9 + 8 + 10 = 32\\]\n\n\\[32\\div4 = \\boxed{8}\\]\n\n\\(32\\) is the total; the mean shares it out.",
+   "answer_display": "8 cm"
+  },
+  {
+   "title": "Ch 15 Probability · Pencil case",
+   "type": "mcq",
+   "prompt": "A pencil case holds 5 black and 6 blue pens.\n\nYou take one pen without looking.\n\nWhat is the probability that it is black?",
+   "figure": "q29v5-pencil-case.svg",
+   "figure_alt": "Pencil case: 5 black and 6 blue; the probability is a question mark.",
+   "choices": [
+    "\\(\\frac{5}{6}\\)",
+    "\\(\\frac{5}{11}\\)",
+    "\\(\\frac{6}{11}\\)",
+    "\\(\\frac{1}{5}\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Black out of all",
+   "solution": "5 black out of:\n\n\\[\\begin{aligned} 5 + 6 &= 11 \\\\ P(\\text{black}) &= \\boxed{\\frac{5}{11}} \\end{aligned}\\]\n\n\\(\\frac{5}{6}\\) compares black with blue; a probability compares with **all** 11 pens."
+  },
+  {
+   "title": "Ch 15 Probability · Box of doughnuts",
+   "type": "mcq",
+   "prompt": "A box has 12 doughnuts: 5 are chocolate and the rest are strawberry.\n\nYou take one without looking.\n\nWhat is the probability that it is **not** chocolate?",
+   "figure": "q30v5-box-of-doughnuts.svg",
+   "figure_alt": "A box of 12 doughnuts, 5 chocolate and 7 strawberry.",
+   "choices": [
+    "\\(\\frac{5}{12}\\)",
+    "\\(\\frac{12}{7}\\)",
+    "\\(\\frac{1}{12}\\)",
+    "\\(\\frac{7}{12}\\)"
+   ],
+   "answer": "D",
+   "solution_title": "1 minus P(chocolate)",
+   "solution": "\\[P(\\text{not chocolate}) = 1 - \\frac{5}{12}\\]\n\n\\[P(\\text{not chocolate}) = \\boxed{\\frac{7}{12}}\\]\n\n- \\(\\frac{5}{12}\\) is P(chocolate) itself.\n- \\(\\frac{12}{7}\\) is more than 1, and no probability is more than 1."
+  },
+  {
+   "title": "Ch 16 Constructions · Climbing frame",
+   "type": "mcq",
+   "prompt": "A playground climbing frame has a triangle made of three metal bars.\n\nWhich three lengths can make a triangle?",
+   "figure": "q31v5-climbing-frame.svg",
+   "figure_alt": "A base of 7 m with compass arcs of 2 m and 4 m from its ends; the arcs leave a gap and never meet.",
+   "choices": [
+    "2 m, 4 m, 7 m",
+    "5 m, 5 m, 8 m",
+    "3 m, 6 m, 10 m",
+    "1 m, 7 m, 9 m"
+   ],
+   "answer": "B",
+   "solution_title": "The two short sides must reach",
+   "solution": "The two shorter sides together must be longer than the longest:\n\n\\[5 + 5 = 10\\]\n\n\\[10 > 8\\]\n\n- So \\(\\boxed{5 \\text{ m}, 5 \\text{ m}, 8 \\text{ m}}\\) works.\n- In the others the short sides are too short: \\(2 + 4 = 6\\), \\(3 + 6 = 9\\) and \\(1 + 7 = 8\\), each less than the longest side."
+  },
+  {
+   "title": "Ch 16 Constructions · Two roads",
+   "type": "numeric",
+   "prompt": "Two roads meet at an angle of \\(100^\\circ\\).\n\nA new footpath bisects the angle between them.\n\nWhat angle does the footpath make with each road?",
+   "figure": "q32v5-two-roads.svg",
+   "figure_alt": "An angle of 100° with a dashed bisector splitting it into two equal angles marked with question marks.",
+   "answer": 50,
+   "solution": "Bisect means cut into two equal halves:\n\n\\[100^\\circ\\div2 = \\boxed{50^\\circ}\\]\n\n\\(200^\\circ\\) doubles instead of halving.",
+   "answer_display": "50°"
+  },
+  {
+   "title": "Ch 17 Transformations · Window pattern",
+   "type": "mcq",
+   "prompt": "A window pattern is symmetric about the \\(x\\)-axis.\n\nA star is at \\((-2, 3)\\).\n\nWhere is the matching star?",
+   "figure": "q33v5-window-pattern.svg",
+   "figure_alt": "A grid with the x-axis as a mirror; the point (-2, 3) and a dashed arrow to a question mark on the other side.",
+   "choices": [
+    "\\((2, 3)\\)",
+    "\\((2, -3)\\)",
+    "\\((-2, -3)\\)",
+    "\\((3, -2)\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Same distance, other side",
+   "solution": "The \\(x\\)-axis is the mirror: \\(y\\) changes sign, \\(x\\) stays.\n\n\\[(-2, 3) \\to \\boxed{(-2, -3)}\\]\n\n\\((2, 3)\\) reflects in the \\(y\\)-axis instead."
+  },
+  {
+   "title": "Ch 17 Transformations · Town bus",
+   "type": "mcq",
+   "prompt": "On a town map a bus is at \\((4, 3)\\).\n\nIt drives by \\(\\binom{-3}{-2}\\): 3 left and 2 down.\n\nWhere does it arrive?",
+   "figure": "q34v5-town-bus.svg",
+   "figure_alt": "A grid with the point (4, 3), a move of 3 left and 2 down ending at a question mark.",
+   "choices": [
+    "\\((7, 5)\\)",
+    "\\((1, 1)\\)",
+    "\\((-3, -2)\\)",
+    "\\((1, 5)\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Add the moves",
+   "solution": "Add the moves to the coordinates:\n\n\\[(4 - 3,\\ 3 - 2) = \\boxed{(1, 1)}\\]\n\n\\((-3, -2)\\) is the move itself, not where the point lands."
+  },
+  {
+   "title": "Ch 18 Real-life Problems · Bakery",
+   "type": "numeric",
+   "prompt": "At a bakery the bill is €7.85.\n\nYou pay with a €20 note.\n\nHow much change do you get?",
+   "figure": "q35v5-bakery.svg",
+   "figure_alt": "A receipt with a total of €7.85 next to a €20 note; the change is a question mark.",
+   "answer": 12.15,
+   "solution": "Change = money paid − cost:\n\n\\[20.00 - 7.85 = \\boxed{12.15}\\]\n\n- The change is €12.15.\n- \\(13.85\\) takes away only the 7 euros and copies the cents instead of taking them away too.",
+   "answer_display": "€12.15"
+  },
+  {
+   "title": "Ch 18 Real-life Problems · Swimming lesson",
+   "type": "numeric",
+   "prompt": "A swimming lesson starts at 15:25 and ends at 16:05.\n\nHow many minutes is the lesson?",
+   "figure": "q36v5-swimming-lesson.svg",
+   "figure_alt": "Two clocks: 15:25 and 16:05, with an arrow between them marked question mark minutes.",
+   "answer": 40,
+   "solution": "Count up to the hour, then on:\n\n\\[15{:}25 \\to 16{:}00 = 35 \\text{ min}\\]\n\n\\[16{:}00 \\to 16{:}05 = 5 \\text{ min}\\]\n\n\\[35 + 5 = \\boxed{40 \\text{ min}}\\]\n\n\\(80\\) subtracts 1605 − 1525 as ordinary numbers, but an hour has 60 minutes, not 100.",
+   "answer_display": "40 minutes"
+  },
+  {
+   "title": "Ch 19 Logo · Square lawn",
+   "type": "numeric",
+   "prompt": "A robot mower cuts the edge of a square lawn.\n\nEvery inside angle is 90°.\n\nThe robot mower moves forward 20 steps and turns right, 4 times.\n\nIn Logo this is `REPEAT 4 [FD 20 RT ?]`.\n\n- `FD 20` means move forward 20 steps (a length).\n- `RT ?` means turn right by ? degrees (an angle).\n\nHow many degrees is each turn?",
+   "figure": "q37v5-square-lawn.svg",
+   "figure_alt": "A square walked by a robot mower that starts facing right: arrows 1 to 4 are forward 20 steps each; one inside angle of 90° is marked; at each corner a dashed straight-on line and a right turn marked with a question mark.",
+   "answer": 90,
+   "solution": "The robot mower turns by how much its direction changes:\n\n- Straight on is a turn of \\(0^\\circ\\).\n- Turning round to go back is \\(180^\\circ\\).\n- The square's inside angle is \\(90^\\circ\\), so the turn is\n\n\\[180^\\circ - 90^\\circ = \\boxed{90^\\circ}\\]\n\nCheck: 4 turns make one full spin, \\(4\\times90^\\circ = 360^\\circ\\), so the robot mower ends facing right again.\n\n\\(4\\) is the number of sides and \\(20\\) is the number of steps; neither is the angle.",
+   "answer_display": "90°"
+  },
+  {
+   "title": "Ch 19 Logo · Square tile",
+   "type": "mcq",
+   "prompt": "A turtle walks around the edge of a square tile (every inside angle is 90°).\n\nThe turtle moves forward 15 steps and turns right at each corner, all the way round.\n\n- `FD 15` means move forward 15 steps (a length).\n- `RT` means turn right by that many degrees (an angle).\n\nWhich commands draw it?",
+   "figure": "q38v5-square-tile.svg",
+   "figure_alt": "A square walked by a turtle that starts facing left: arrows 1 to 4 are forward 15 steps each; one inside angle of 90° is marked; at each corner a dashed straight-on line and a right turn marked with a question mark.",
+   "choices": [
+    "`REPEAT 4 [FD 15 RT 360]`",
+    "`REPEAT 4 [FD 15 RT 90]`",
+    "`REPEAT 3 [FD 15 RT 90]`",
+    "`REPEAT 4 [FD 15 RT 120]`"
+   ],
+   "answer": "B",
+   "solution_title": "Turn = 180° − inside angle",
+   "solution": "Count the sides and look at one corner:\n\n- The shape has 4 sides, so the commands repeat \\(4\\) times.\n- Straight on (the dashed line) is a turn of \\(0^\\circ\\).\n- Turning round to go back is \\(180^\\circ\\).\n- The inside angle is \\(90^\\circ\\), so the turn is\n\n\\[180^\\circ - 90^\\circ = 90^\\circ\\]\n\nCheck: \\(4\\times90^\\circ = 360^\\circ\\), one full spin, so the turtle is back at the start, facing left.\n\n\\[\\boxed{\\texttt{REPEAT 4 [FD 15 RT 90]}}\\]\n\n`REPEAT 4 [FD 15 RT 360]` uses the full spin for every corner, so the turtle never changes direction and walks in a straight line. `REPEAT 3 [FD 15 RT 90]` repeats only 3 times: \\(3\\times90^\\circ = 270^\\circ\\), less than a full spin, so the shape does not close. `REPEAT 4 [FD 15 RT 120]` uses the turn for a triangle: \\(4\\times120^\\circ = 480^\\circ\\), not one full spin of \\(360^\\circ\\)."
+  }
+ ],
+ "takeaway": "- Draw it first: a picture shows which rule to use.\n- Check that the answer makes sense in the picture.",
+ "link": [
+  "All 19 Chapters: Basic ›",
+  "../malta-year-8-math-all-chapters-basic/quiz.html"
+ ]
+}

@@ -1,0 +1,15 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 330' width='560' height='330' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='558' height='328' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='80.0' y1='270.0' x2='480.0' y2='270.0' stroke='#1f2328' stroke-width='5' stroke-linecap='round'/>
+<text x='280.0' y='308.0' font-size='22' font-weight='800' text-anchor='middle' fill='#1f2328'>7 m</text>
+<path d='M194.3,270.0 A114.28571428571429,114.28571428571429 0 0 0 80.0,155.7' stroke='#bc4c00' stroke-width='2' fill='none' stroke-linejoin='round'/>
+<path d='M480.0,41.4 A228.57142857142858,228.57142857142858 0 0 0 251.4,270.0' stroke='#0969da' stroke-width='2' fill='none' stroke-linejoin='round'/>
+<line x1='80.0' y1='270.0' x2='153.5' y2='182.5' stroke='#bc4c00' stroke-width='6' stroke-linecap='round'/>
+<line x1='480.0' y1='270.0' x2='333.1' y2='94.9' stroke='#0969da' stroke-width='6' stroke-linecap='round'/>
+<text x='108.4' y='217.8' font-size='20' font-weight='800' text-anchor='end' fill='#bc4c00'>2 m</text>
+<text x='411.2' y='169.7' font-size='20' font-weight='800' text-anchor='start' fill='#0969da'>4 m</text>
+<line x1='194.3' y1='256.0' x2='251.4' y2='256.0' stroke='#cf222e' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m2)' marker-start='url(#m2)'/>
+<text x='222.9' y='244.0' font-size='18' font-weight='800' text-anchor='middle' fill='#cf222e'>gap</text>
+<text x='280.0' y='34.0' font-size='18' font-weight='500' text-anchor='middle' fill='#57606a'>bars: 2 + 4 is less than 7, the ends never meet</text>
+</svg>
