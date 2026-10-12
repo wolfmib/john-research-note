@@ -1,0 +1,37 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 660 280' width='660' height='280' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='658' height='278' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<ellipse cx='57.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='85.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='113.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='57.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='85.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<text x='85.0' y='226.0' font-size='20' font-weight='800' text-anchor='middle' fill='#bc4c00'>5 eggs</text>
+<text x='157.0' y='137.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>+</text>
+<rect x='187.0' y='88.0' width='102.0' height='74.0' rx='10' fill='#fff8c5' stroke='#8c6d46' stroke-width='2'/>
+<ellipse cx='210.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='238.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='266.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='210.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='238.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='266.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<rect x='301.0' y='88.0' width='102.0' height='74.0' rx='10' fill='#fff8c5' stroke='#8c6d46' stroke-width='2'/>
+<ellipse cx='324.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='352.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='380.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='324.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='352.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='380.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<rect x='415.0' y='88.0' width='102.0' height='74.0' rx='10' fill='#fff8c5' stroke='#8c6d46' stroke-width='2'/>
+<ellipse cx='438.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='466.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='494.0' cy='111.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='438.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='466.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<ellipse cx='494.0' cy='139.0' rx='9' ry='12' fill='#fbf3e4' stroke='#8c6d46' stroke-width='1.5'/>
+<path d='M187.0,172.0 q0,14 12,14 L340.0,186.0 q12,0 12,14 q0,-14 12,-14 L505.0,186.0 q12,0 12,-14' stroke='#0969da' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='352.0' y='226.0' font-size='20' font-weight='800' text-anchor='middle' fill='#0969da'>3 boxes of 6</text>
+<text x='547.0' y='137.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>=</text>
+<text x='591.0' y='138.0' font-size='38' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='330.0' y='38.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>Multiply first: count the boxes, then add.</text>
+</svg>

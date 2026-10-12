@@ -1,0 +1,20 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 340' width='600' height='340' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='338' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='10.0' y='280.0' width='580.0' height='52.0' rx='0' fill='#f6e7c1' stroke='none' stroke-width='0'/>
+<line x1='30.0' y1='280.0' x2='570.0' y2='280.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='380.0' y1='280.0' x2='150.2' y2='87.2' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<path d='M380.0,280.0 L326.4,235.0 A70,70 0 0 0 310.0,280.0 Z' fill='#fff8c5' stroke='none'/>
+<path d='M326.4,235.0 A70,70 0 0 0 310.0,280.0' stroke='#bc4c00' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='274.8' y='249.7' font-size='22' font-weight='800' text-anchor='middle' fill='#bc4c00'>40°</text>
+<path d='M380.0,280.0 L428.0,280.0 A48,48 0 0 0 343.2,249.1 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M428.0,280.0 A48,48 0 0 0 343.2,249.1' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='410.1' y='209.3' font-size='32' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<circle cx='380.0' cy='280.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<polygon points='150.2,57.2 172.2,87.2 150.2,121.2 128.2,87.2' fill='#ff8182' stroke='#1f2328' stroke-width='2' stroke-linejoin='round'/>
+<line x1='150.2' y1='57.2' x2='150.2' y2='121.2' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='128.2' y1='87.2' x2='172.2' y2='87.2' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M150.18666706430662,121.16371709403816 q-10,16 4,26 q14,10 0,24' stroke='#57606a' stroke-width='1.5' fill='none' stroke-linejoin='round'/>
+<rect x='376.0' y='274.0' width='8.0' height='18.0' rx='0' fill='#8c6d46' stroke='none' stroke-width='0'/>
+<text x='470.0' y='318.0' font-size='18' font-weight='700' text-anchor='middle' fill='#8c6d46'>flat sand</text>
+</svg>

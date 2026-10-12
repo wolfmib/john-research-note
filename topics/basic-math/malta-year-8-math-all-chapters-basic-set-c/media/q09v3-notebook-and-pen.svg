@@ -1,0 +1,27 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 620 310' width='620' height='310' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='618' height='308' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='44.0' y='61.0' width='52.0' height='66.0' rx='4' fill='#80ccff' stroke='#1f2328' stroke-width='2'/>
+<line x1='56.0' y1='77.0' x2='88.0' y2='77.0' stroke='#ffffff' stroke-width='2' stroke-linecap='round'/>
+<line x1='56.0' y1='89.0' x2='88.0' y2='89.0' stroke='#ffffff' stroke-width='2' stroke-linecap='round'/>
+<line x1='56.0' y1='101.0' x2='88.0' y2='101.0' stroke='#ffffff' stroke-width='2' stroke-linecap='round'/>
+<line x1='56.0' y1='113.0' x2='88.0' y2='113.0' stroke='#ffffff' stroke-width='2' stroke-linecap='round'/>
+<path d='M34,229 L96,199 L102,209 L40,239 Z' stroke='#1f2328' stroke-width='1.8' fill='#ff8182' stroke-linejoin='round'/>
+<polygon points='34.0,229.0 40.0,239.0 26.0,241.0' fill='#fbf3e4' stroke='#1f2328' stroke-width='1.5' stroke-linejoin='round'/>
+<rect x='130.0' y='69.0' width='110.0' height='46.0' rx='8' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<circle cx='142.0' cy='92.0' r='4.0' fill='none' stroke='#1f2328' stroke-width='1.5'/>
+<text x='192.0' y='101.0' font-size='22' font-weight='800' text-anchor='middle' fill='#1f2328'>€3.25</text>
+<text x='130.0' y='139.0' font-size='18' font-weight='500' text-anchor='start' fill='#57606a'>notebook</text>
+<rect x='130.0' y='189.0' width='110.0' height='46.0' rx='8' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<circle cx='142.0' cy='212.0' r='4.0' fill='none' stroke='#1f2328' stroke-width='1.5'/>
+<text x='192.0' y='221.0' font-size='22' font-weight='800' text-anchor='middle' fill='#1f2328'>€0.60</text>
+<text x='130.0' y='259.0' font-size='18' font-weight='500' text-anchor='start' fill='#57606a'>pen</text>
+<line x1='290.0' y1='40.0' x2='290.0' y2='280.0' stroke='#d0d7de' stroke-width='2' stroke-linecap='round'/>
+<text x='510.0' y='105.0' font-size='30' font-weight='700' text-anchor='end' fill='#1f2328'>€ 3.25</text>
+<text x='510.0' y='155.0' font-size='30' font-weight='700' text-anchor='end' fill='#1f2328'>€ 0.60</text>
+<text x='350.0' y='155.0' font-size='30' font-weight='700' text-anchor='middle' fill='#1f2328'>+</text>
+<line x1='340.0' y1='172.0' x2='525.0' y2='172.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round'/>
+<text x='390.0' y='220.0' font-size='30' font-weight='700' text-anchor='middle' fill='#1f2328'>€</text>
+<text x='470.0' y='222.0' font-size='38' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='450.0' y='285.0' font-size='18' font-weight='500' text-anchor='middle' fill='#57606a'>line up the decimal points</text>
+</svg>

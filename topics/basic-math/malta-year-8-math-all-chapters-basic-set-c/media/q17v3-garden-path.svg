@@ -1,0 +1,51 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 680 260' width='680' height='260' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='678' height='258' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<text x='340.0' y='30.0' font-size='19' font-weight='700' text-anchor='middle' fill='#57606a'>a path of green tiles with a white border</text>
+<rect x='61.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='61.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='61.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='87.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='87.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#7fd18b' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='87.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='113.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='113.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='113.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<text x='100.0' y='200.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 1</text>
+<text x='100.0' y='228.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>8 white tiles</text>
+<rect x='198.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='198.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='198.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='224.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='224.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#7fd18b' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='224.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='250.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='250.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#7fd18b' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='250.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='276.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='276.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='276.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<text x='250.0' y='200.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 2</text>
+<text x='250.0' y='228.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>10 white tiles</text>
+<rect x='335.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='335.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='335.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='361.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='361.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#7fd18b' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='361.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='387.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='387.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#7fd18b' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='387.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='413.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='413.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#7fd18b' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='413.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='439.0' y='66.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='439.0' y='92.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='439.0' y='118.0' width='26.0' height='26.0' rx='0' fill='#f6f8fa' stroke='#1f2328' stroke-width='1.5'/>
+<text x='400.0' y='200.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>Pattern 3</text>
+<text x='400.0' y='228.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>12 white tiles</text>
+<rect x='495.0' y='60.0' width='160.0' height='150.0' rx='12' fill='#ffffff' stroke='#0969da' stroke-width='2' stroke-dasharray='6 5'/>
+<text x='575.0' y='100.0' font-size='18' font-weight='700' text-anchor='middle' fill='#0969da'>Pattern 4</text>
+<text x='575.0' y='150.0' font-size='40' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='575.0' y='188.0' font-size='18' font-weight='700' text-anchor='middle' fill='#0969da'>white tiles</text>
+</svg>
