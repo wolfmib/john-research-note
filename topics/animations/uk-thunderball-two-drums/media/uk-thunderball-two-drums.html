@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Thunderball: Two Drums</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<style>
+    :root {
+        --bg: #0b1220; --panel: #111a2e; --ink: #e5e7eb; --dim: #9ca3af; --line: #1f2a44;
+        --main: #2196F3; --main-l: #64B5F6; --tb: #A97142; --tb-l: #D2B48C; --win: #4ADE80; --off: #374151;
+    }
+    html, body { margin: 0; padding: 0; background: #000; overflow: hidden; height: 100%;
+        font-family: 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; background: var(--bg);
+        transform-origin: 0 0; overflow: hidden; color: var(--ink); }
+    #series { position: absolute; left: 40px; top: 14px; font-size: 14px; color: var(--dim); letter-spacing: .3px; }
+    .scene { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; box-sizing: border-box;
+        padding: 44px 48px 28px; display: flex; flex-direction: column; align-items: center; opacity: 0; }
+    h2 { font-size: 34px; margin: 0 0 6px; padding-bottom: 10px; width: 100%; text-align: center;
+        border-bottom: 2px solid var(--line); letter-spacing: .5px; }
+    .subtitle { font-size: 20px; color: var(--dim); margin-bottom: 14px; text-align: center; }
+    .msg { font-size: 24px; font-weight: 600; text-align: center; margin-top: 18px; line-height: 1.45; }
+    .msg small { display: block; font-size: 18px; font-weight: normal; color: var(--dim); margin-top: 4px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; }
+    .katex-display { margin: 0; }
+    [data-t] { opacity: 0; }
+    /* sparse scenes: enlarge content to fill the 720p frame */
+    .scene.z > *:not(h2):not(.subtitle) { zoom: 1.3; }
+    .scene.z2 > *:not(h2) { zoom: 1.22; }
+    .main { color: var(--main-l); } .tb { color: var(--tb-l); } .win { color: var(--win); }
+
+    /* balls as HTML (ticket, checking rows) */
+    .row { display: flex; align-items: center; gap: 14px; }
+    .ball { width: 56px; height: 56px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+        font-weight: bold; font-size: 22px; color: #fff; box-sizing: border-box; position: relative; }
+    .ball.m { background: var(--main); border: 2px solid var(--main-l); }
+    .ball.t { background: var(--tb); border: 2px solid var(--tb-l); margin-left: 26px; }
+    .ball.o { background: transparent; }
+    .ball.x { background: var(--off); border: 2px solid #4b5563; }
+    .tick { position: absolute; bottom: -30px; left: 0; right: 0; text-align: center; color: var(--win); font-size: 22px; }
+    .rowlabel { width: 210px; font-size: 20px; color: var(--dim); font-weight: 600; text-align: right; margin-right: 18px; }
+    .prize { font-size: 38px; font-weight: bold; color: var(--win); margin-top: 40px; }
+
+    /* equation rows: one "=" per line, left column aligned */
+    .eq { display: grid; grid-template-columns: auto auto; column-gap: 14px; row-gap: 16px; align-items: center; font-size: 30px; }
+    .eq .l { text-align: right; }
+
+    /* scene 7 */
+    .box { padding: 22px 30px; text-align: center; font-size: 22px; white-space: nowrap; }
+    .box b { display: block; font-size: 40px; margin-top: 6px; }
+    .op { font-size: 52px; margin: 0 24px; color: var(--dim); }
+
+    /* scene 8 table */
+    table { border-collapse: collapse; font-size: 21px; }
+    th, td { padding: 6px 26px; }
+    th { color: var(--dim); font-weight: 600; border-bottom: 2px solid var(--line); }
+    td { border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; }
+    td:first-child { text-align: left; }
+</style>
+</head>
+<body>
+<div id="stage">
+    <div id="series">Math Material &middot; UK Thunderball</div>
+
+    <!-- SCENE 1: two drums -->
+    <div class="scene" data-start="0" data-end="6">
+        <h2>UK Thunderball: Two Drums</h2>
+        <div class="subtitle">A main drum with 39 balls and a Thunderball drum with 14 balls.</div>
+        <svg width="1180" height="560" viewBox="0 0 1280 608" id="drums1"></svg>
+    </div>
+
+    <!-- SCENE 2: the ticket -->
+    <div class="scene z" data-start="6" data-end="11">
+        <h2>Buying a Line</h2>
+        <div class="subtitle">One line costs £1: pick 5 main numbers and 1 Thunderball.</div>
+        <div class="card" data-t="6.5" style="margin-top:40px; padding:36px 54px;">
+            <div style="text-align:center; font-size:30px; font-weight:bold; margin-bottom:28px;">£1 a line</div>
+            <div class="row" style="margin-bottom:26px;"><div class="rowlabel">Main numbers</div>
+                <div class="ball m" data-t="7.2">2</div><div class="ball m" data-t="7.5">4</div><div class="ball m" data-t="7.8">6</div>
+                <div class="ball m" data-t="8.1">8</div><div class="ball m" data-t="8.4">17</div></div>
+            <div class="row"><div class="rowlabel">Thunderball</div><div class="ball t" data-t="9" style="margin-left:0;">11</div></div>
+        </div>
+    </div>
+
+    <!-- SCENE 3: the draw -->
+    <div class="scene" data-start="11" data-end="22">
+        <h2>The Draw</h2>
+        <div class="subtitle">5 numbers come out of the main drum, then 1 out of the Thunderball drum.</div>
+        <svg width="1180" height="560" viewBox="0 0 1280 608" id="drums3"></svg>
+    </div>
+
+    <!-- SCENE 4: checking, jackpot -->
+    <div class="scene z" data-start="22" data-end="29">
+        <h2>Checking the Line</h2>
+        <div class="subtitle">Draw: 2, 4, 6, 8, 17 and Thunderball 11.</div>
+        <div style="margin-top:34px; display:flex; flex-direction:column; gap:44px;">
+            <div class="row" data-t="22.4"><div class="rowlabel">Line</div>
+                <div class="ball m o">2</div><div class="ball m o">4</div><div class="ball m o">6</div><div class="ball m o">8</div><div class="ball m o">17</div><div class="ball t o">11</div></div>
+            <div class="row" data-t="23"><div class="rowlabel">Draw</div>
+                <div class="ball m">2<span class="tick" data-t="23.8">✓</span></div><div class="ball m">4<span class="tick" data-t="24.1">✓</span></div>
+                <div class="ball m">6<span class="tick" data-t="24.4">✓</span></div><div class="ball m">8<span class="tick" data-t="24.7">✓</span></div>
+                <div class="ball m">17<span class="tick" data-t="25">✓</span></div><div class="ball t">11<span class="tick" data-t="25.4">✓</span></div></div>
+        </div>
+        <div class="prize" data-t="26">5 + Thunderball: £500,000</div>
+    </div>
+
+    <!-- SCENE 5: a partial match -->
+    <div class="scene z" data-start="29" data-end="36">
+        <h2>A Smaller Prize</h2>
+        <div class="subtitle">Another draw: 2, 4, 12, 20, 30 and Thunderball 11.</div>
+        <div style="margin-top:34px; display:flex; flex-direction:column; gap:44px;">
+            <div class="row" data-t="29.4"><div class="rowlabel">Line</div>
+                <div class="ball m o">2</div><div class="ball m o">4</div><div class="ball m o">6</div><div class="ball m o">8</div><div class="ball m o">17</div><div class="ball t o">11</div></div>
+            <div class="row" data-t="30"><div class="rowlabel">Draw</div>
+                <div class="ball m">2<span class="tick" data-t="30.8">✓</span></div><div class="ball m">4<span class="tick" data-t="31.1">✓</span></div>
+                <div class="ball x">12</div><div class="ball x">20</div><div class="ball x">30</div>
+                <div class="ball t">11<span class="tick" data-t="31.6">✓</span></div></div>
+        </div>
+        <div class="prize" data-t="32.3">2 + Thunderball: £10</div>
+    </div>
+
+    <!-- SCENE 6: count the main drum -->
+    <div class="scene z" data-start="36" data-end="45">
+        <h2>Counting the Main Drum</h2>
+        <div class="subtitle">The order of the 5 numbers does not matter, so count combinations.</div>
+        <div class="eq" style="margin-top:30px;">
+            <div class="l" data-t="36.6">$\dbinom{39}{5}$</div><div data-t="36.6">$=\dfrac{39\cdot38\cdot37\cdot36\cdot35}{5\cdot4\cdot3\cdot2\cdot1}$</div>
+            <div></div><div data-t="38.6">$=\dfrac{69{,}090{,}840}{120}$</div>
+            <div></div><div data-t="40.4" class="main">$=575{,}757$</div>
+        </div>
+        <div class="msg" data-t="41.6">575,757 ways to pick the 5 main numbers.</div>
+    </div>
+
+    <!-- SCENE 7: two drums multiply -->
+    <div class="scene z" data-start="45" data-end="53">
+        <h2>Two Drums Multiply</h2>
+        <div class="subtitle">Any 5 main numbers can go with any of the 14 Thunderballs.</div>
+        <div class="row" style="margin-top:50px;">
+            <div class="box card" data-t="45.6">Main drum<b class="main">575,757</b></div>
+            <div class="op" data-t="46.6">&times;</div>
+            <div class="box card" data-t="46.6">Thunderball drum<b class="tb">14</b></div>
+            <div class="op" data-t="47.8">=</div>
+            <div class="box card" data-t="47.8" style="border-color:var(--win);">Different lines<b class="win">8,060,598</b></div>
+        </div>
+        <div class="msg" data-t="49.2">So one line wins the £500,000 jackpot with a chance of 1 in 8,060,598.</div>
+    </div>
+
+    <!-- SCENE 8: lines in each prize tier -->
+    <div class="scene z2" data-start="53" data-end="64">
+        <h2>Lines in Each Prize Tier</h2>
+        <div class="subtitle" data-t="53.3" style="font-size:22px; color:var(--ink);">
+            $k$ main matches: $\dbinom{5}{k}\dbinom{34}{5-k}$, then $\times 1$ (right Thunderball) or $\times 13$ (wrong Thunderball)</div>
+        <table data-t="54.2" style="margin-top:6px;">
+            <thead><tr><th>Match</th><th>Lines</th><th>Prize</th></tr></thead>
+            <tbody id="tiers"></tbody>
+        </table>
+    </div>
+
+    <!-- SCENE 9: expected value -->
+    <div class="scene z" data-start="64" data-end="76" data-hold="1">
+        <h2>What Is One £1 Line Worth?</h2>
+        <div class="subtitle">Add every prize over all 8,060,598 lines, then share it out per line.</div>
+        <div class="eq" style="margin-top:20px;">
+            <div class="l" data-t="64.6">total prizes</div><div data-t="64.6">$=£4{,}262{,}568$</div>
+            <div class="l" data-t="66.2">$E$</div><div data-t="66.2">$=\dfrac{4{,}262{,}568}{8{,}060{,}598}$</div>
+            <div></div><div data-t="67.8" class="win">$\approx £0.5288$</div>
+        </div>
+        <div class="msg" data-t="69.4">650,910 lines win something: about 1 in 12.4.</div>
+        <div class="msg" data-t="71" style="margin-top:8px;">On average, about 53p of each £1 comes back.</div>
+    </div>
+</div>
+
+<script>
+    // ---- data (checked in gen_uk_thunderball.py) ---------------------------------
+    const TIERS = [['5 + Thunderball', '1', '£500,000'], ['5 only', '13', '£5,000'], ['4 + Thunderball', '170', '£250'],
+        ['4 only', '2,210', '£100'], ['3 + Thunderball', '5,610', '£20'], ['3 only', '72,930', '£10'],
+        ['2 + Thunderball', '59,840', '£10'], ['1 + Thunderball', '231,880', '£5'], ['0 + Thunderball', '278,256', '£3']];
+    const tb = document.getElementById('tiers');
+    TIERS.forEach((r, i) => tb.insertAdjacentHTML('beforeend',
+        `<tr data-t="${(54.8 + i * 0.6).toFixed(1)}"><td>${r[0]}</td><td>${r[1]}</td><td>${r[2]}</td></tr>`));
+
+    // ---- drums (SVG, deterministic layout: rings of 1+6+12+20 and 5+9 balls) -----
+    const NS = 'http://www.w3.org/2000/svg', BR = 22;
+    const MAIN_C = [400, 262], TB_C = [910, 262];
+    const ring = (n, r, off) => Array.from({ length: n }, (_, k) => [r * Math.cos(off + 2 * Math.PI * k / n), r * Math.sin(off + 2 * Math.PI * k / n)]);
+    const MAIN_POS = [[0, 0], ...ring(6, 52, 0.3), ...ring(12, 102, 0.1), ...ring(20, 152, 0.05)];
+    const TB_POS = [...ring(5, 52, 0.5), ...ring(9, 106, 0.2)];
+    const MAIN_NUM = MAIN_POS.map((_, i) => (i * 17) % 39 + 1);        // a fixed shuffle of 1..39
+    const TB_NUM = TB_POS.map((_, i) => (i * 5) % 14 + 1);             // a fixed shuffle of 1..14
+    const DRAW = [2, 4, 6, 8, 17], DRAW_TB = 11;
+    const DRAW_T = [12.4, 13.9, 15.4, 16.9, 18.4], DRAW_TB_T = 19.9, FLY = 1.0;
+    const SLOT_Y = 560, slotX = k => MAIN_C[0] + (k - 2) * 66;
+
+    function el(tag, attrs, parent, text) {
+        const e = document.createElementNS(NS, tag);
+        for (const k in attrs) e.setAttribute(k, attrs[k]);
+        if (text !== undefined) e.textContent = text;
+        parent.appendChild(e); return e;
+    }
+    function buildDrums(svg) {
+        el('text', { x: MAIN_C[0], y: 28, 'text-anchor': 'middle', 'font-size': 24, 'font-weight': 700, fill: '#64B5F6' }, svg, 'Main drum · 1 to 39');
+        el('text', { x: TB_C[0], y: 28, 'text-anchor': 'middle', 'font-size': 24, 'font-weight': 700, fill: '#D2B48C' }, svg, 'Thunderball drum · 1 to 14');
+        el('circle', { cx: MAIN_C[0], cy: MAIN_C[1], r: 205, fill: 'none', stroke: '#2196F3', 'stroke-width': 5 }, svg);
+        el('circle', { cx: TB_C[0], cy: TB_C[1], r: 158, fill: 'none', stroke: '#A97142', 'stroke-width': 5 }, svg);
+        for (let k = 0; k < 5; k++) el('circle', { cx: slotX(k), cy: SLOT_Y, r: BR + 4, fill: '#111827', stroke: '#2196F3', 'stroke-width': 2 }, svg);
+        el('circle', { cx: TB_C[0], cy: SLOT_Y, r: BR + 4, fill: '#111827', stroke: '#A97142', 'stroke-width': 2 }, svg);
+        const balls = [];
+        const add = (num, home, cls) => {
+            const g = el('g', {}, svg);
+            el('circle', { r: BR, fill: cls ? '#A97142' : '#2196F3', stroke: cls ? '#D2B48C' : '#64B5F6', 'stroke-width': 2 }, g);
+            el('text', { y: 1, 'text-anchor': 'middle', 'dominant-baseline': 'central', 'font-size': 19, 'font-weight': 700, fill: '#fff' }, g, num);
+            balls.push({ g, num, home, tb: !!cls });
+        };
+        MAIN_POS.forEach((p, i) => add(MAIN_NUM[i], [MAIN_C[0] + p[0], MAIN_C[1] + p[1]], 0));
+        TB_POS.forEach((p, i) => add(TB_NUM[i], [TB_C[0] + p[0], TB_C[1] + p[1]], 1));
+        return balls;
+    }
+    const drums1 = buildDrums(document.getElementById('drums1'));
+    const drums3 = buildDrums(document.getElementById('drums3'));
+
+    renderMathInElement(document.body, { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }], throwOnError: false });
+
+    // ---- deterministic timeline ---------------------------------------------------
+    const FADE = 0.6, TOTAL = 76;
+    const clamp01 = x => Math.max(0, Math.min(1, x));
+    const ease = p => p * p * (3 - 2 * p);
+    const scenes = [...document.querySelectorAll('.scene')];
+    const timed = [...document.querySelectorAll('[data-t]')];
+
+    function placeBalls(balls, t, drawing) {
+        balls.forEach((b, i) => {
+            // gentle tumble while in the drum
+            let x = b.home[0] + 3 * Math.sin(1.7 * t + i * 1.3), y = b.home[1] + 3 * Math.cos(1.3 * t + i * 0.7), s = 1;
+            if (drawing) {
+                let t0 = null, tx = 0;
+                if (!b.tb && DRAW.includes(b.num)) { const k = DRAW.indexOf(b.num); t0 = DRAW_T[k]; tx = slotX(k); }
+                if (b.tb && b.num === DRAW_TB) { t0 = DRAW_TB_T; tx = TB_C[0]; }
+                if (t0 !== null) {
+                    const p = ease(clamp01((t - t0) / FLY));
+                    x = x + (tx - x) * p; y = y + (SLOT_Y - y) * p - 60 * Math.sin(Math.PI * p);
+                    s = 1 + 0.25 * Math.sin(Math.PI * p) + 0.1 * p;
+                }
+            }
+            b.g.setAttribute('transform', `translate(${x.toFixed(1)},${y.toFixed(1)}) scale(${s.toFixed(3)})`);
+        });
+    }
+
+    function renderAt(t) {
+        scenes.forEach(s => {
+            const a = +s.dataset.start, b = +s.dataset.end;
+            const fin = clamp01((t - a) / FADE), fout = s.dataset.hold ? 1 : clamp01((b - t) / FADE);
+            s.style.opacity = (t < a || (!s.dataset.hold && t > b)) ? 0 : ease(Math.min(fin, fout));
+        });
+        timed.forEach(e => {
+            const p = ease(clamp01((t - +e.dataset.t) / FADE));
+            e.style.opacity = p;
+            if (!e.classList.contains('tick')) e.style.transform = `translateY(${14 * (1 - p)}px)`;
+        });
+        placeBalls(drums1, t, false);
+        placeBalls(drums3, t, true);
+    }
+    window.renderAt = renderAt; window.TOTAL = TOTAL;
+
+    function fit() {
+        const s = Math.min(innerWidth / 1280, innerHeight / 720);
+        const st = document.getElementById('stage');
+        st.style.transform = `scale(${s})`;
+        st.style.left = (innerWidth - 1280 * s) / 2 + 'px'; st.style.top = (innerHeight - 720 * s) / 2 + 'px';
+    }
+    addEventListener('resize', fit); fit();
+
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
+        renderAt(0); window.__ready = true;
+        if (location.hash === '#manual') return;
+        let t0 = performance.now();
+        const tick = now => { renderAt(Math.min(TOTAL, (now - t0) / 1000)); requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+        addEventListener('click', () => { t0 = performance.now(); });
+    });
+</script>
+</body>
+</html>
