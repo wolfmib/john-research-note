@@ -407,16 +407,16 @@ Answer: ______
 
 The turtle draws a square.
 
-It walks forward 50 steps and turns right, 4 times.
+It walks forward 10 steps and turns right, 4 times.
 
-In Logo this is `REPEAT 4 [FD 50 RT ?]`.
+In Logo this is `REPEAT 4 [FD 10 RT ?]`.
 
-- `FD 50` means move forward 50 steps (a length).
+- `FD 10` means move forward 10 steps (a length).
 - `RT ?` means turn right by ? degrees (an angle).
 
 How many degrees is each turn?
 
-![A square walked clockwise from the start: arrows 1 to 4 are forward 50 steps; at each corner a dashed straight-on line and a right turn marked with a question mark.](media/q37-square-turn.svg)
+![A square walked from the bottom-left corner: a turtle facing up, arrows 1 to 4 are forward 10 steps each; at each corner a dashed straight-on line and a right turn marked with a question mark.](media/q37-square-turn.svg)
 
 Answer: ______
 
@@ -424,19 +424,19 @@ Answer: ______
 
 The turtle draws an equilateral triangle (every inside angle is 60°).
 
-It walks forward 60 steps and turns right, 3 times.
+It walks forward 10 steps and turns right, 3 times: A to B, B to C, C back to A.
 
-- `FD 60` means move forward 60 steps (a length).
+- `FD 10` means move forward 10 steps (a length).
 - `RT` means turn right by that many degrees (an angle).
 
 Which commands draw it?
 
-![A triangle hanging below the start line, walked with right turns: arrows 1 to 3 are forward 60 steps; at corner B the dashed straight-on line, the inside angle 60° and the right turn marked with a question mark.](media/q38-triangle-commands.svg)
+![A triangle pointing up, walked from the bottom-left corner A with right turns: a turtle at A facing B, arrows 1 to 3 are forward 10 steps each; at the top corner B a dashed straight-on line, the inside angle 60° and the right turn marked with a question mark.](media/q38-triangle-commands.svg)
 
-- **A.** `REPEAT 3 [FD 60 RT 60]`
-- **B.** `REPEAT 6 [FD 60 RT 60]`
-- **C.** `REPEAT 3 [FD 120 RT 60]`
-- **D.** `REPEAT 3 [FD 60 RT 120]`
+- **A.** `REPEAT 3 [FD 10 RT 60]`
+- **B.** `REPEAT 6 [FD 10 RT 60]`
+- **C.** `REPEAT 3 [FD 10 RT 90]`
+- **D.** `REPEAT 3 [FD 10 RT 120]`
 
 ---
 
@@ -806,29 +806,29 @@ $$
 180^\circ - 90^\circ = \boxed{90^\circ}
 $$
 
-Check: 4 turns make one full spin, $4\times90^\circ = 360^\circ$, so the turtle ends facing the way it started.
+Check: 4 turns make one full spin, $4\times90^\circ = 360^\circ$, so the turtle ends facing up again.
 
-$4$ is the number of sides, not the angle.
+$4$ is the number of sides and $10$ is the number of steps; neither is the angle.
 
 **38. D — Turn = 180° − inside angle**
 
-Look at corner B in the picture (the turtle walks A → B → C → A):
+Look at corner B, the top of the triangle:
 
 - Straight on (the dashed line) is a turn of $0^\circ$.
-- Turning round to walk back to the start is $180^\circ$.
-- The new side is $60^\circ$ away from walking back, so the turn is
+- Turning round to walk back to A is $180^\circ$.
+- The road to C is $60^\circ$ away from walking back, so the turn is
 
 $$
 180^\circ - 60^\circ = 120^\circ
 $$
 
-Check: $3\times120^\circ = 360^\circ$, one full spin, so the path closes.
+Check: $3\times120^\circ = 360^\circ$, one full spin, so the turtle is back at A facing B.
 
 $$
-\boxed{\texttt{REPEAT 3 [FD 60 RT 120]}}
+\boxed{\texttt{REPEAT 3 [FD 10 RT 120]}}
 $$
 
-`RT 60` uses the inside angle: the turtle turns too little and needs 6 sides to close (a hexagon). `FD 120` makes sides of 120 steps, not 60.
+`RT 60` uses the inside angle: the turtle turns too little and needs 6 sides to close (a hexagon). `RT 90` is the turn for a square: $3\times90^\circ = 270^\circ$, less than a full spin, so the triangle does not close.
 
 - Draw it first: a picture shows which rule to use.
 - Check that the answer makes sense in the picture.
