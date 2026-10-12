@@ -289,6 +289,23 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .mark.ok { background: var(--ok); }
 .mark.bad { background: var(--bad); }
 .mark.skip { background: var(--muted); }
+
+.picklist { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 8px; }
+.picklist > li { min-width: 0; }
+.pickq {
+  display: flex; align-items: center; gap: 12px;
+  width: 100%; min-height: 52px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--line); border-radius: 14px;
+  background: var(--card); color: var(--ink);
+  font: inherit; font-size: 15px; line-height: 1.35; text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.pickq .ptitle { flex: 1; min-width: 0; }
+.pickq.ok { border-color: var(--ok); background: var(--ok-soft); }
+.pickq.bad { border-color: var(--bad); background: var(--bad-soft); }
+.pickq:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .takeaway { margin-top: 16px; padding: 14px; border-radius: 14px; background: var(--accent-soft); }
 .takeaway h3 { margin: 0 0 6px; font-size: 13px; letter-spacing: .05em; text-transform: uppercase; color: var(--accent); }
 .stack { display: grid; gap: 10px; margin-top: 16px; }
@@ -382,7 +399,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
   // Back to this note's root on the hub; optional "link" [label, href] adds a sibling page (e.g. the unit's concepts).
   const FOOT = `<p class="foot"><a href="${esc(D.hubHref || '../index.html')}">All quizzes</a>${D.link ? ` · <a href="${esc(D.link[1])}">${esc(D.link[0])}</a>` : ''}</p>`;
   const fmtTime = s => Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0');
-  const modeName = m => (m === 'test' ? 'Test' : 'Practice');
+  const modeName = m => (m === 'test' ? 'Test' : m === 'pick' ? 'Choose' : 'Practice');
   const blank = a => a === undefined || a === null || String(a).trim() === '';
   const getName = () => store.get(NAME_KEY, '');
 
@@ -399,7 +416,8 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
   }
   const score = () => D.questions.reduce((c, q, i) => c + (isCorrect(q, S.answers[i]) ? 1 : 0), 0);
   const answeredCount = () => D.questions.filter((_, i) => !blank(S.answers[i])).length;
-  const save = () => { if (S) store.set(KEY, S); };
+  // "Choose a question" keeps its own marks, so it never replaces a Practice/Test attempt you can resume.
+  const save = () => { if (S) store.set(S.mode === 'pick' ? KEY + ':pick' : KEY, S); };
 
   function startTimer() {
     stopTimer();
@@ -463,6 +481,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
           ${resumable ? `<button class="btn primary mode" data-act="resume"><strong>Resume</strong><span>${modeName(saved.mode)} · question ${saved.idx + 1} of ${N} · ${fmtTime(saved.elapsed)}</span></button>` : ''}
           <button class="btn ${resumable ? 'secondary' : 'primary'} mode" data-act="practice"><strong>Practice</strong><span>Check each answer and see the solution</span></button>
           <button class="btn secondary mode" data-act="test"><strong>Test</strong><span>Answer everything, then see your score</span></button>
+          <button class="btn secondary mode" data-act="choose"><strong>Choose a question</strong><span>Open any question, check it and see the solution</span></button>
         </div>
         ${last ? `<p class="last">Last result: <b>${last.score}/${last.total}</b> · ${modeName(last.mode)} · ${esc(last.date)}${reviewable ? ` · <a href="#" data-act="review">review</a>` : ''}</p>` : ''}
       </section>
@@ -478,15 +497,44 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     renderQuestion(); window.scrollTo(0, 0); startTimer();
   }
 
+  // ---------- choose a question ----------
+  const freshPick = () => ({ n: N, mode: 'pick', idx: 0, answers: {}, checked: {}, elapsed: 0, done: false });
+  function renderChooseList() {
+    stopTimer();
+    if (!S || S.mode !== 'pick') S = store.get(KEY + ':pick', null);
+    if (!S || S.n !== N) S = freshPick();
+    const done = Object.keys(S.checked).length;
+    const right = D.questions.filter((q, i) => S.checked[i] && isCorrect(q, S.answers[i])).length;
+    const items = D.questions.map((q, i) => {
+      const c = !!S.checked[i], ok = c && isCorrect(q, S.answers[i]);
+      return `<li><button class="pickq${c ? (ok ? ' ok' : ' bad') : ''}" data-act="open" data-i="${i}" aria-label="Question ${i + 1}: ${esc(q.title)}${c ? (ok ? ', correct' : ', wrong') : ''}">
+        <span class="qnum" aria-hidden="true">${i + 1}</span><span class="ptitle">${esc(q.title)}</span>${c ? `<span class="mark ${ok ? 'ok' : 'bad'}" aria-hidden="true">${ok ? '✓' : '✗'}</span>` : ''}</button></li>`;
+    }).join('');
+    app.innerHTML = `
+      <section class="card">
+        <p class="eyebrow">${esc(D.course)} · ${esc(D.unit)}</p>
+        <h1>${esc(D.heading)}</h1>
+        <p class="meta">Choose a question · ${done} of ${N} checked${done ? ` · ${right} correct` : ''}</p>
+        <ol class="picklist">${items}</ol>
+      </section>
+      ${FOOT}`;
+    actions.innerHTML = `<div class="inner"><button class="btn secondary narrow" data-act="home">‹ Start</button>${done
+      ? '<button class="btn ghost" data-act="choose-reset">Clear marks</button>' : ''}</div>`;
+    actions.hidden = false;
+    fitAll();
+    const cur = app.querySelector(`.pickq[data-i="${S.idx}"]`);
+    if (cur && done) cur.scrollIntoView({ block: 'center' }); else window.scrollTo(0, 0);
+  }
+
   // ---------- question ----------
   function progress() {
-    const done = S.mode === 'practice' ? Object.keys(S.checked).length : answeredCount();
+    const done = S.mode !== 'test' ? Object.keys(S.checked).length : answeredCount();
     return Math.round(100 * done / N);
   }
 
   function renderQuestion() {
     const i = S.idx, q = D.questions[i], a = S.answers[i];
-    const locked = S.mode === 'practice' && !!S.checked[i];
+    const locked = S.mode !== 'test' && !!S.checked[i];
     const dots = S.mode === 'test'
       ? `<div class="dots">${D.questions.map((_, j) =>
           `<button class="dot${blank(S.answers[j]) ? '' : ' answered'}${j === i ? ' current' : ''}" data-act="goto" data-i="${j}" aria-label="Question ${j + 1}${blank(S.answers[j]) ? '' : ', answered'}">${j + 1}</button>`).join('')}</div>`
@@ -508,10 +556,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     app.innerHTML = `
       <div class="topbar">
         <div class="row">
-          <button class="quit" data-act="home" aria-label="Leave quiz (progress is kept)">✕</button>
+          <button class="quit" data-act="${S.mode === 'pick' ? 'choose' : 'home'}" aria-label="${S.mode === 'pick' ? 'Back to the question list' : 'Leave quiz (progress is kept)'}">✕</button>
           <span class="count">Question ${i + 1} of ${N}</span>
           <span class="pill">${modeName(S.mode)}</span>
-          <span class="timer" id="timer" aria-label="Time">${fmtTime(S.elapsed)}</span>
+          ${S.mode === 'pick' ? '' : `<span class="timer" id="timer" aria-label="Time">${fmtTime(S.elapsed)}</span>`}
         </div>
         <div class="bar" aria-hidden="true"><i style="width:${progress()}%"></i></div>
         ${dots}
@@ -538,7 +586,11 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
   function renderActions() {
     const i = S.idx, last = i === N - 1, has = !blank(S.answers[i]);
     let h;
-    if (S.mode === 'practice') {
+    if (S.mode === 'pick') {
+      h = !S.checked[i]
+        ? `<button class="btn secondary narrow" data-act="choose">‹ List</button><button class="btn primary" data-act="check"${has ? '' : ' disabled'}>Check</button>`
+        : `<button class="btn secondary narrow" data-act="retry">Try again</button><button class="btn primary" data-act="${last ? 'choose' : 'next'}">${last ? '‹ List' : 'Next ›'}</button>`;
+    } else if (S.mode === 'practice') {
       h = !S.checked[i]
         ? `<button class="btn primary" data-act="check"${has ? '' : ' disabled'}>Check</button>`
         : `<button class="btn primary" data-act="${last ? 'finish' : 'next'}">${last ? 'See result' : 'Next question'}</button>`;
@@ -680,6 +732,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         break;
       }
       case 'finish': finish(); break;
+      case 'choose': renderChooseList(); break;
+      case 'open': S.idx = +b.dataset.i; save(); renderQuestion(); window.scrollTo(0, 0); break;
+      case 'retry': delete S.checked[S.idx]; delete S.answers[S.idx]; save(); renderQuestion(); break;
+      case 'choose-reset': S = freshPick(); save(); renderChooseList(); break;
       case 'home': renderStart(); break;
       case 'again': store.del(KEY); S = null; renderStart(); break;
       case 'share': shareResult(); break;
