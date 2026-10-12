@@ -131,6 +131,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math — All 19 Chapters: Basic Set A](topics/basic-math/malta-year-8-math-all-chapters-basic-set-a/content.md) | Set A: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-a/quiz.html) |
 | [Malta Year 8 Math — All 19 Chapters: Basic Set B](topics/basic-math/malta-year-8-math-all-chapters-basic-set-b/content.md) | Set B: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-b/quiz.html) |
 | [Malta Year 8 Math — All 19 Chapters: Basic Set C](topics/basic-math/malta-year-8-math-all-chapters-basic-set-c/content.md) | Set C: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-c/quiz.html) |
+| [Malta Year 8 Math — All 19 Chapters: Basic Set D](topics/basic-math/malta-year-8-math-all-chapters-basic-set-d/content.md) | Set D: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-d/quiz.html) |
 
 ## Animations
 

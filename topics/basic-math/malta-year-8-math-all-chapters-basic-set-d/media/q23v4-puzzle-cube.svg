@@ -1,0 +1,54 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360' width='640' height='360' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='358' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<polygon points='90.0,280.0 240.0,280.0 240.0,130.0 90.0,130.0' fill='#ffc9dc' stroke='#1f2328' stroke-width='2.5' stroke-linejoin='round'/>
+<polygon points='90.0,130.0 240.0,130.0 315.0,70.0 165.0,70.0' fill='#ffe3ec' stroke='#1f2328' stroke-width='2.5' stroke-linejoin='round'/>
+<polygon points='240.0,280.0 315.0,220.0 315.0,70.0 240.0,130.0' fill='#ffadc9' stroke='#1f2328' stroke-width='2.5' stroke-linejoin='round'/>
+<line x1='111.4' y1='280.0' x2='111.4' y2='130.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='111.4' y1='130.0' x2='186.4' y2='70.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='132.9' y1='280.0' x2='132.9' y2='130.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='132.9' y1='130.0' x2='207.9' y2='70.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='154.3' y1='280.0' x2='154.3' y2='130.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='154.3' y1='130.0' x2='229.3' y2='70.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='175.7' y1='280.0' x2='175.7' y2='130.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='175.7' y1='130.0' x2='250.7' y2='70.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='197.1' y1='280.0' x2='197.1' y2='130.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='197.1' y1='130.0' x2='272.1' y2='70.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='218.6' y1='280.0' x2='218.6' y2='130.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='218.6' y1='130.0' x2='293.6' y2='70.0' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='90.0' y1='258.6' x2='240.0' y2='258.6' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='240.0' y1='258.6' x2='315.0' y2='198.6' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='90.0' y1='237.1' x2='240.0' y2='237.1' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='240.0' y1='237.1' x2='315.0' y2='177.1' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='90.0' y1='215.7' x2='240.0' y2='215.7' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='240.0' y1='215.7' x2='315.0' y2='155.7' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='90.0' y1='194.3' x2='240.0' y2='194.3' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='240.0' y1='194.3' x2='315.0' y2='134.3' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='90.0' y1='172.9' x2='240.0' y2='172.9' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='240.0' y1='172.9' x2='315.0' y2='112.9' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='90.0' y1='151.4' x2='240.0' y2='151.4' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='240.0' y1='151.4' x2='315.0' y2='91.4' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='100.7' y1='121.4' x2='250.7' y2='121.4' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='250.7' y1='271.4' x2='250.7' y2='121.4' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='111.4' y1='112.9' x2='261.4' y2='112.9' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='261.4' y1='262.9' x2='261.4' y2='112.9' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='122.1' y1='104.3' x2='272.1' y2='104.3' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='272.1' y1='254.3' x2='272.1' y2='104.3' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='132.9' y1='95.7' x2='282.9' y2='95.7' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='282.9' y1='245.7' x2='282.9' y2='95.7' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='143.6' y1='87.1' x2='293.6' y2='87.1' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='293.6' y1='237.1' x2='293.6' y2='87.1' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='154.3' y1='78.6' x2='304.3' y2='78.6' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<line x1='304.3' y1='228.6' x2='304.3' y2='78.6' stroke='#1f2328' stroke-width='1' stroke-linecap='round'/>
+<text x='165.0' y='312.0' font-size='20' font-weight='800' text-anchor='middle' fill='#1f2328'>7 cm</text>
+<text x='80.0' y='212.0' font-size='20' font-weight='800' text-anchor='end' fill='#1f2328'>7 cm</text>
+<rect x='350.0' y='50.0' width='50.0' height='50.0' rx='0' fill='#ffc9dc' stroke='#1f2328' stroke-width='2'/>
+<rect x='350.0' y='100.0' width='50.0' height='50.0' rx='0' fill='#ffc9dc' stroke='#1f2328' stroke-width='2'/>
+<rect x='400.0' y='100.0' width='50.0' height='50.0' rx='0' fill='#ffc9dc' stroke='#1f2328' stroke-width='2'/>
+<rect x='450.0' y='100.0' width='50.0' height='50.0' rx='0' fill='#ffc9dc' stroke='#1f2328' stroke-width='2'/>
+<rect x='500.0' y='100.0' width='50.0' height='50.0' rx='0' fill='#ffc9dc' stroke='#1f2328' stroke-width='2'/>
+<rect x='400.0' y='150.0' width='50.0' height='50.0' rx='0' fill='#ffc9dc' stroke='#1f2328' stroke-width='2'/>
+<text x='350.0' y='32.0' font-size='19' font-weight='700' text-anchor='start' fill='#57606a'>net: 6 square faces</text>
+<text x='470.0' y='260.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>surface area =</text>
+<text x='470.0' y='305.0' font-size='28' font-weight='800' text-anchor='middle' fill='#0969da'>? cm²</text>
+</svg>

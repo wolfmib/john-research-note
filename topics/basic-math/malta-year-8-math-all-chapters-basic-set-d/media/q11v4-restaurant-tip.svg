@@ -1,0 +1,21 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 250' width='600' height='250' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='248' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='50.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#fff8c5' stroke='#bc4c00' stroke-width='2'/>
+<rect x='100.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='150.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='200.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='250.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='300.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='350.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='400.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='450.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<rect x='500.0' y='130.0' width='50.0' height='60.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<text x='75.0' y='172.0' font-size='30' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<path d='M50.0,118.0 q0,-14 12,-14 L288.0,104.0 q12,0 12,-14 q0,14 12,14 L538.0,104.0 q12,0 12,14' stroke='#1f2328' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='300.0' y='86.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328'>100% = €45</text>
+<text x='75.0' y='222.0' font-size='20' font-weight='800' text-anchor='middle' fill='#bc4c00'>10%</text>
+<text x='330.0' y='222.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>10 equal blocks</text>
+<ellipse cx='515' cy='58' rx='44' ry='16' fill='#ffffff' stroke='#1f2328' stroke-width='2'/>
+<ellipse cx='515' cy='54' rx='22' ry='8' fill='#ffb77a' stroke='#1f2328' stroke-width='1.2'/>
+</svg>
