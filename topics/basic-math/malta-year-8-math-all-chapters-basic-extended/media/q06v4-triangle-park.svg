@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 440' width='600' height='440' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='438' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<polygon points='110.0,380.0 470.0,380.0 238.6,104.2' fill='#c7efcf' stroke='#1f2328' stroke-width='3' stroke-linejoin='round'/>
+<circle cx='250.0' cy='300.0' r='14.0' fill='#5aa469' stroke='#24603a' stroke-width='1.5'/>
+<circle cx='330.0' cy='330.0' r='14.0' fill='#5aa469' stroke='#24603a' stroke-width='1.5'/>
+<circle cx='300.0' cy='250.0' r='14.0' fill='#5aa469' stroke='#24603a' stroke-width='1.5'/>
+<path d='M110.0,380.0 L160.0,380.0 A50,50 0 0 0 131.1,334.7 Z' fill='#fff8c5' stroke='none'/>
+<path d='M160.0,380.0 A50,50 0 0 0 131.1,334.7' stroke='#bc4c00' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='184.2' y='340.7' font-size='22' font-weight='800' text-anchor='middle' fill='#bc4c00'>65°</text>
+<path d='M470.0,380.0 L437.9,341.7 A50,50 0 0 0 420.0,380.0 Z' fill='#efe2ff' stroke='none'/>
+<path d='M437.9,341.7 A50,50 0 0 0 420.0,380.0' stroke='#8250df' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='383.0' y='347.4' font-size='22' font-weight='800' text-anchor='middle' fill='#8250df'>50°</text>
+<path d='M238.6,104.2 L219.6,145.0 A45,45 0 0 0 267.5,138.7 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M219.6,145.0 A45,45 0 0 0 267.5,138.7' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='249.6' y='199.5' font-size='32' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='470.0' y='150.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>angles in a</text>
+<text x='470.0' y='176.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>triangle: 180°</text>
+</svg>

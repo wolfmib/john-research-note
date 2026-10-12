@@ -1,0 +1,57 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 320' width='640' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<path d='M40,60 L470,60 Q530,60 545,165 Q530,270 470,270 L40,270 Z' stroke='#1f2328' stroke-width='2.5' fill='#f6f8fa' stroke-linejoin='round'/>
+<rect x='70.0' y='92.0' width='92.0' height='52.0' rx='8' fill='#ffd8b5' stroke='#1f2328' stroke-width='2'/>
+<rect x='140.0' y='100.0' width='16.0' height='36.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='70.0' y='174.0' width='92.0' height='52.0' rx='8' fill='#ffd8b5' stroke='#1f2328' stroke-width='2'/>
+<rect x='140.0' y='182.0' width='16.0' height='36.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<line x1='195.0' y1='107.0' x2='470.0' y2='107.0' stroke='#d0d7de' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='6 5'/>
+<rect x='205.0' y='74.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='213.0' y='78.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='259.0' y='74.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='267.0' y='78.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='313.0' y='74.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='321.0' y='78.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='367.0' y='74.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='375.0' y='78.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='421.0' y='74.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='429.0' y='78.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<line x1='195.0' y1='157.0' x2='470.0' y2='157.0' stroke='#d0d7de' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='6 5'/>
+<rect x='205.0' y='124.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='213.0' y='128.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='259.0' y='124.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='267.0' y='128.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='313.0' y='124.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='321.0' y='128.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='367.0' y='124.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='375.0' y='128.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='421.0' y='124.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='429.0' y='128.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<line x1='195.0' y1='207.0' x2='470.0' y2='207.0' stroke='#d0d7de' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='6 5'/>
+<rect x='205.0' y='174.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='213.0' y='178.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='259.0' y='174.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='267.0' y='178.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='313.0' y='174.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='321.0' y='178.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='367.0' y='174.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='375.0' y='178.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='421.0' y='174.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='429.0' y='178.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='205.0' y='224.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='213.0' y='228.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='259.0' y='224.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='267.0' y='228.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='313.0' y='224.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='321.0' y='228.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='367.0' y='224.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='375.0' y='228.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<rect x='421.0' y='224.0' width='40.0' height='22.0' rx='6' fill='#80ccff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='429.0' y='228.0' width='14.0' height='14.0' rx='2' fill='#ffffff' stroke='none' stroke-width='0'/>
+<text x='116.0' y='302.0' font-size='20' font-weight='800' text-anchor='middle' fill='#bc4c00'>2 vans</text>
+<text x='332.0' y='302.0' font-size='20' font-weight='800' text-anchor='middle' fill='#0969da'>4 rows of 5 cars</text>
+<text x='570.0' y='178.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>=</text>
+<text x='608.0' y='180.0' font-size='38' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='300.0' y='38.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>Multiply first: count the rows of cars, then add the vans.</text>
+</svg>

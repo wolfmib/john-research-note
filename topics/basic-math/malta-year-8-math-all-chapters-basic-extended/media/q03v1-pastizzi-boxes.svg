@@ -1,0 +1,48 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 660 280' width='660' height='280' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='658' height='278' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<path d='M61.0,108.0 Q75.0,94.0 89.0,108.0 Q75.0,120.0 61.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M66.0,106.0 Q75.0,99.0 84.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M95.0,108.0 Q109.0,94.0 123.0,108.0 Q109.0,120.0 95.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M100.0,106.0 Q109.0,99.0 118.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M129.0,108.0 Q143.0,94.0 157.0,108.0 Q143.0,120.0 129.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M134.0,106.0 Q143.0,99.0 152.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M61.0,142.0 Q75.0,128.0 89.0,142.0 Q75.0,154.0 61.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M66.0,140.0 Q75.0,133.0 84.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M95.0,142.0 Q109.0,128.0 123.0,142.0 Q109.0,154.0 95.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M100.0,140.0 Q109.0,133.0 118.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<text x='109.0' y='232.0' font-size='20' font-weight='800' text-anchor='middle' fill='#bc4c00'>5 loose</text>
+<text x='190.0' y='137.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>+</text>
+<rect x='220.0' y='82.0' width='86.0' height='86.0' rx='10' fill='#fff8c5' stroke='#bc4c00' stroke-width='2'/>
+<path d='M232.0,108.0 Q246.0,94.0 260.0,108.0 Q246.0,120.0 232.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M237.0,106.0 Q246.0,99.0 255.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M266.0,108.0 Q280.0,94.0 294.0,108.0 Q280.0,120.0 266.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M271.0,106.0 Q280.0,99.0 289.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M232.0,142.0 Q246.0,128.0 260.0,142.0 Q246.0,154.0 232.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M237.0,140.0 Q246.0,133.0 255.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M266.0,142.0 Q280.0,128.0 294.0,142.0 Q280.0,154.0 266.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M271.0,140.0 Q280.0,133.0 289.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<rect x='318.0' y='82.0' width='86.0' height='86.0' rx='10' fill='#fff8c5' stroke='#bc4c00' stroke-width='2'/>
+<path d='M330.0,108.0 Q344.0,94.0 358.0,108.0 Q344.0,120.0 330.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M335.0,106.0 Q344.0,99.0 353.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M364.0,108.0 Q378.0,94.0 392.0,108.0 Q378.0,120.0 364.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M369.0,106.0 Q378.0,99.0 387.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M330.0,142.0 Q344.0,128.0 358.0,142.0 Q344.0,154.0 330.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M335.0,140.0 Q344.0,133.0 353.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M364.0,142.0 Q378.0,128.0 392.0,142.0 Q378.0,154.0 364.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M369.0,140.0 Q378.0,133.0 387.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<rect x='416.0' y='82.0' width='86.0' height='86.0' rx='10' fill='#fff8c5' stroke='#bc4c00' stroke-width='2'/>
+<path d='M428.0,108.0 Q442.0,94.0 456.0,108.0 Q442.0,120.0 428.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M433.0,106.0 Q442.0,99.0 451.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M462.0,108.0 Q476.0,94.0 490.0,108.0 Q476.0,120.0 462.0,108.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M467.0,106.0 Q476.0,99.0 485.0,106.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M428.0,142.0 Q442.0,128.0 456.0,142.0 Q442.0,154.0 428.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M433.0,140.0 Q442.0,133.0 451.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M462.0,142.0 Q476.0,128.0 490.0,142.0 Q476.0,154.0 462.0,142.0 Z' stroke='#bc4c00' stroke-width='1.6' fill='#f5c26b' stroke-linejoin='round'/>
+<path d='M467.0,140.0 Q476.0,133.0 485.0,140.0' stroke='#bc4c00' stroke-width='1.2' fill='none' stroke-linejoin='round'/>
+<path d='M220.0,178.0 q0,14 12,14 L349.0,192.0 q12,0 12,14 q0,-14 12,-14 L490.0,192.0 q12,0 12,-14' stroke='#0969da' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='361.0' y='232.0' font-size='20' font-weight='800' text-anchor='middle' fill='#0969da'>3 boxes of 4</text>
+<text x='532.0' y='137.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>=</text>
+<text x='576.0' y='138.0' font-size='38' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='330.0' y='38.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>Multiply first: count the boxes, then add.</text>
+</svg>

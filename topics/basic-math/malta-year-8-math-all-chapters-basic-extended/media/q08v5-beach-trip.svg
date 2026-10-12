@@ -1,0 +1,63 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 300' width='640' height='300' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='298' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='42.0' y='110.0' width='100.0' height='72.0' rx='10' fill='#dafbe1' stroke='#1a7f37' stroke-width='2.5'/>
+<circle cx='64.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M57.0,141.0 Q57.0,130.0 64.0,130.0 Q71.0,130.0 71.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='92.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M85.0,141.0 Q85.0,130.0 92.0,130.0 Q99.0,130.0 99.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='120.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M113.0,141.0 Q113.0,130.0 120.0,130.0 Q127.0,130.0 127.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='64.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M57.0,169.0 Q57.0,158.0 64.0,158.0 Q71.0,158.0 71.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='92.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M85.0,169.0 Q85.0,158.0 92.0,158.0 Q99.0,158.0 99.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<rect x='156.0' y='110.0' width='100.0' height='72.0' rx='10' fill='#dafbe1' stroke='#1a7f37' stroke-width='2.5'/>
+<circle cx='178.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M171.0,141.0 Q171.0,130.0 178.0,130.0 Q185.0,130.0 185.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='206.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M199.0,141.0 Q199.0,130.0 206.0,130.0 Q213.0,130.0 213.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='234.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M227.0,141.0 Q227.0,130.0 234.0,130.0 Q241.0,130.0 241.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='178.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M171.0,169.0 Q171.0,158.0 178.0,158.0 Q185.0,158.0 185.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='206.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M199.0,169.0 Q199.0,158.0 206.0,158.0 Q213.0,158.0 213.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<rect x='270.0' y='110.0' width='100.0' height='72.0' rx='10' fill='#dafbe1' stroke='#1a7f37' stroke-width='2.5'/>
+<circle cx='292.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M285.0,141.0 Q285.0,130.0 292.0,130.0 Q299.0,130.0 299.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='320.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M313.0,141.0 Q313.0,130.0 320.0,130.0 Q327.0,130.0 327.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='348.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M341.0,141.0 Q341.0,130.0 348.0,130.0 Q355.0,130.0 355.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='292.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M285.0,169.0 Q285.0,158.0 292.0,158.0 Q299.0,158.0 299.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='320.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M313.0,169.0 Q313.0,158.0 320.0,158.0 Q327.0,158.0 327.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<rect x='384.0' y='110.0' width='100.0' height='72.0' rx='10' fill='#dafbe1' stroke='#1a7f37' stroke-width='2.5'/>
+<circle cx='406.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M399.0,141.0 Q399.0,130.0 406.0,130.0 Q413.0,130.0 413.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='434.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M427.0,141.0 Q427.0,130.0 434.0,130.0 Q441.0,130.0 441.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='462.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M455.0,141.0 Q455.0,130.0 462.0,130.0 Q469.0,130.0 469.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='406.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M399.0,169.0 Q399.0,158.0 406.0,158.0 Q413.0,158.0 413.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<circle cx='434.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M427.0,169.0 Q427.0,158.0 434.0,158.0 Q441.0,158.0 441.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#9be9a8' stroke-linejoin='round'/>
+<rect x='498.0' y='110.0' width='100.0' height='72.0' rx='10' fill='#ffffff' stroke='#d0d7de' stroke-width='2.5'/>
+<circle cx='520.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M513.0,141.0 Q513.0,130.0 520.0,130.0 Q527.0,130.0 527.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#d0d7de' stroke-linejoin='round'/>
+<circle cx='548.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M541.0,141.0 Q541.0,130.0 548.0,130.0 Q555.0,130.0 555.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#d0d7de' stroke-linejoin='round'/>
+<circle cx='576.0' cy='124.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M569.0,141.0 Q569.0,130.0 576.0,130.0 Q583.0,130.0 583.0,141.0 Z' stroke='#1f2328' stroke-width='1' fill='#d0d7de' stroke-linejoin='round'/>
+<circle cx='520.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M513.0,169.0 Q513.0,158.0 520.0,158.0 Q527.0,158.0 527.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#d0d7de' stroke-linejoin='round'/>
+<circle cx='548.0' cy='152.0' r='5.5' fill='#f2c79b' stroke='#1f2328' stroke-width='1'/>
+<path d='M541.0,169.0 Q541.0,158.0 548.0,158.0 Q555.0,158.0 555.0,169.0 Z' stroke='#1f2328' stroke-width='1' fill='#d0d7de' stroke-linejoin='round'/>
+<path d='M42.0,98.0 q0,-14 12,-14 L251.0,84.0 q12,0 12,-14 q0,14 12,14 L472.0,84.0 q12,0 12,14' stroke='#0969da' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='245.0' y='66.0' font-size='21' font-weight='700' text-anchor='middle' fill='#0969da'>4 of the 5 boxes:</text>
+<text x='355.0' y='68.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='320.0' y='230.0' font-size='21' font-weight='500' text-anchor='middle' fill='#57606a'>25 students in 5 equal boxes</text>
+</svg>

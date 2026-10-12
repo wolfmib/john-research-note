@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 620 320' width='620' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='618' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<path d='M170,160 L170.0,35.0 A125,125 0 0 1 288.9,121.4 Z' fill='#ffb77a' stroke='#1f2328' stroke-width='2'/>
+<path d='M170,160 L288.9,121.4 A125,125 0 0 1 243.5,261.1 Z' fill='#9be9a8' stroke='#1f2328' stroke-width='2'/>
+<path d='M170,160 L243.5,261.1 A125,125 0 0 1 96.5,261.1 Z' fill='#ffb77a' stroke='#1f2328' stroke-width='2'/>
+<path d='M170,160 L96.5,261.1 A125,125 0 0 1 51.1,121.4 Z' fill='#9be9a8' stroke='#1f2328' stroke-width='2'/>
+<path d='M170,160 L51.1,121.4 A125,125 0 0 1 170.0,35.0 Z' fill='#9be9a8' stroke='#1f2328' stroke-width='2'/>
+<line x1='170.0' y1='160.0' x2='80.7' y2='192.5' stroke='#1f2328' stroke-width='5' stroke-linecap='round' marker-end='url(#m0)'/>
+<circle cx='170.0' cy='160.0' r='9.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<rect x='346.0' y='96.0' width='28.0' height='28.0' rx='5' fill='#ffb77a' stroke='#1f2328' stroke-width='1.5'/>
+<text x='385.0' y='117.0' font-size='21' font-weight='700' text-anchor='start' fill='#1f2328'>2 orange</text>
+<rect x='346.0' y='146.0' width='28.0' height='28.0' rx='5' fill='#9be9a8' stroke='#1f2328' stroke-width='1.5'/>
+<text x='385.0' y='167.0' font-size='21' font-weight='700' text-anchor='start' fill='#1f2328'>3 green</text>
+<text x='345.0' y='240.0' font-size='23' font-weight='700' text-anchor='start' fill='#0969da'>P(not orange) =</text>
+<text x='560.0' y='243.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+</svg>

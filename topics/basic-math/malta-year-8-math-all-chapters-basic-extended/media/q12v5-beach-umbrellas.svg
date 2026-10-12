@@ -1,0 +1,179 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 300' width='600' height='300' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='298' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<path d='M53,43 A9,9 0 0 1 71,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='43.0' x2='62.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M53,67 A9,9 0 0 1 71,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='67.0' x2='62.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M53,91 A9,9 0 0 1 71,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='91.0' x2='62.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M53,115 A9,9 0 0 1 71,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='115.0' x2='62.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M53,139 A9,9 0 0 1 71,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='139.0' x2='62.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M53,163 A9,9 0 0 1 71,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='163.0' x2='62.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M53,187 A9,9 0 0 1 71,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='187.0' x2='62.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M53,211 A9,9 0 0 1 71,211 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='62.0' y1='211.0' x2='62.0' y2='219.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='62.0' y1='226.0' x2='62.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='62.0' y1='250.0' x2='62.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M77,43 A9,9 0 0 1 95,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='43.0' x2='86.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M77,67 A9,9 0 0 1 95,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='67.0' x2='86.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M77,91 A9,9 0 0 1 95,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='91.0' x2='86.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M77,115 A9,9 0 0 1 95,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='115.0' x2='86.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M77,139 A9,9 0 0 1 95,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='139.0' x2='86.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M77,163 A9,9 0 0 1 95,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='163.0' x2='86.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M77,187 A9,9 0 0 1 95,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='187.0' x2='86.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M77,211 A9,9 0 0 1 95,211 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='86.0' y1='211.0' x2='86.0' y2='219.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='86.0' y1='226.0' x2='86.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='86.0' y1='250.0' x2='86.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M101,43 A9,9 0 0 1 119,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='110.0' y1='43.0' x2='110.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M101,67 A9,9 0 0 1 119,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='110.0' y1='67.0' x2='110.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M101,91 A9,9 0 0 1 119,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='110.0' y1='91.0' x2='110.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M101,115 A9,9 0 0 1 119,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='110.0' y1='115.0' x2='110.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M101,139 A9,9 0 0 1 119,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='110.0' y1='139.0' x2='110.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M101,163 A9,9 0 0 1 119,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='110.0' y1='163.0' x2='110.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M101,187 A9,9 0 0 1 119,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='110.0' y1='187.0' x2='110.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='110.0' y1='202.0' x2='110.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='110.0' y1='226.0' x2='110.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='110.0' y1='250.0' x2='110.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M125,43 A9,9 0 0 1 143,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='134.0' y1='43.0' x2='134.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M125,67 A9,9 0 0 1 143,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='134.0' y1='67.0' x2='134.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M125,91 A9,9 0 0 1 143,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='134.0' y1='91.0' x2='134.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M125,115 A9,9 0 0 1 143,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='134.0' y1='115.0' x2='134.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M125,139 A9,9 0 0 1 143,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='134.0' y1='139.0' x2='134.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M125,163 A9,9 0 0 1 143,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='134.0' y1='163.0' x2='134.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M125,187 A9,9 0 0 1 143,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='134.0' y1='187.0' x2='134.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='134.0' y1='202.0' x2='134.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='134.0' y1='226.0' x2='134.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='134.0' y1='250.0' x2='134.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M149,43 A9,9 0 0 1 167,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='158.0' y1='43.0' x2='158.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M149,67 A9,9 0 0 1 167,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='158.0' y1='67.0' x2='158.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M149,91 A9,9 0 0 1 167,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='158.0' y1='91.0' x2='158.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M149,115 A9,9 0 0 1 167,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='158.0' y1='115.0' x2='158.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M149,139 A9,9 0 0 1 167,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='158.0' y1='139.0' x2='158.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M149,163 A9,9 0 0 1 167,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='158.0' y1='163.0' x2='158.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M149,187 A9,9 0 0 1 167,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='158.0' y1='187.0' x2='158.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='158.0' y1='202.0' x2='158.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='158.0' y1='226.0' x2='158.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='158.0' y1='250.0' x2='158.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M173,43 A9,9 0 0 1 191,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='182.0' y1='43.0' x2='182.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M173,67 A9,9 0 0 1 191,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='182.0' y1='67.0' x2='182.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M173,91 A9,9 0 0 1 191,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='182.0' y1='91.0' x2='182.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M173,115 A9,9 0 0 1 191,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='182.0' y1='115.0' x2='182.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M173,139 A9,9 0 0 1 191,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='182.0' y1='139.0' x2='182.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M173,163 A9,9 0 0 1 191,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='182.0' y1='163.0' x2='182.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M173,187 A9,9 0 0 1 191,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='182.0' y1='187.0' x2='182.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='182.0' y1='202.0' x2='182.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='182.0' y1='226.0' x2='182.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='182.0' y1='250.0' x2='182.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M197,43 A9,9 0 0 1 215,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='206.0' y1='43.0' x2='206.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M197,67 A9,9 0 0 1 215,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='206.0' y1='67.0' x2='206.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M197,91 A9,9 0 0 1 215,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='206.0' y1='91.0' x2='206.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M197,115 A9,9 0 0 1 215,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='206.0' y1='115.0' x2='206.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M197,139 A9,9 0 0 1 215,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='206.0' y1='139.0' x2='206.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M197,163 A9,9 0 0 1 215,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='206.0' y1='163.0' x2='206.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M197,187 A9,9 0 0 1 215,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='206.0' y1='187.0' x2='206.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='206.0' y1='202.0' x2='206.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='206.0' y1='226.0' x2='206.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='206.0' y1='250.0' x2='206.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M221,43 A9,9 0 0 1 239,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='230.0' y1='43.0' x2='230.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M221,67 A9,9 0 0 1 239,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='230.0' y1='67.0' x2='230.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M221,91 A9,9 0 0 1 239,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='230.0' y1='91.0' x2='230.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M221,115 A9,9 0 0 1 239,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='230.0' y1='115.0' x2='230.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M221,139 A9,9 0 0 1 239,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='230.0' y1='139.0' x2='230.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M221,163 A9,9 0 0 1 239,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='230.0' y1='163.0' x2='230.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M221,187 A9,9 0 0 1 239,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='230.0' y1='187.0' x2='230.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='230.0' y1='202.0' x2='230.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='230.0' y1='226.0' x2='230.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='230.0' y1='250.0' x2='230.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M245,43 A9,9 0 0 1 263,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='254.0' y1='43.0' x2='254.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M245,67 A9,9 0 0 1 263,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='254.0' y1='67.0' x2='254.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M245,91 A9,9 0 0 1 263,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='254.0' y1='91.0' x2='254.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M245,115 A9,9 0 0 1 263,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='254.0' y1='115.0' x2='254.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M245,139 A9,9 0 0 1 263,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='254.0' y1='139.0' x2='254.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M245,163 A9,9 0 0 1 263,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='254.0' y1='163.0' x2='254.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M245,187 A9,9 0 0 1 263,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='254.0' y1='187.0' x2='254.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='254.0' y1='202.0' x2='254.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='254.0' y1='226.0' x2='254.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='254.0' y1='250.0' x2='254.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<path d='M269,43 A9,9 0 0 1 287,43 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='278.0' y1='43.0' x2='278.0' y2='51.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M269,67 A9,9 0 0 1 287,67 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='278.0' y1='67.0' x2='278.0' y2='75.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M269,91 A9,9 0 0 1 287,91 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='278.0' y1='91.0' x2='278.0' y2='99.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M269,115 A9,9 0 0 1 287,115 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='278.0' y1='115.0' x2='278.0' y2='123.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M269,139 A9,9 0 0 1 287,139 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='278.0' y1='139.0' x2='278.0' y2='147.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M269,163 A9,9 0 0 1 287,163 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='278.0' y1='163.0' x2='278.0' y2='171.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<path d='M269,187 A9,9 0 0 1 287,187 Z' stroke='#1f2328' stroke-width='1' fill='#ffb77a' stroke-linejoin='round'/>
+<line x1='278.0' y1='187.0' x2='278.0' y2='195.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='278.0' y1='202.0' x2='278.0' y2='219.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='278.0' y1='226.0' x2='278.0' y2='243.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<line x1='278.0' y1='250.0' x2='278.0' y2='267.0' stroke='#57606a' stroke-width='2' stroke-linecap='round'/>
+<text x='450.0' y='120.0' font-size='21' font-weight='500' text-anchor='middle' fill='#57606a'>100 in all</text>
+<text x='450.0' y='170.0' font-size='23' font-weight='700' text-anchor='middle' fill='#0969da'>open:</text>
+<text x='450.0' y='225.0' font-size='32' font-weight='800' text-anchor='middle' fill='#0969da'>?  %</text>
+</svg>

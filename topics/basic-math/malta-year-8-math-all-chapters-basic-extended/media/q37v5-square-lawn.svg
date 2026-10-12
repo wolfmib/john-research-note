@@ -1,0 +1,44 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 660 450' width='660' height='450' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='658' height='448' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='115.0' y1='135.0' x2='345.0' y2='135.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='193.2' y1='135.0' x2='276.0' y2='135.0' stroke='#0969da' stroke-width='6' stroke-linecap='round' marker-end='url(#m1)'/>
+<circle cx='230.0' cy='103.0' r='17.0' fill='#0969da' stroke='#0969da' stroke-width='2'/>
+<text x='230.0' y='111.0' font-size='21' font-weight='800' text-anchor='middle' fill='#ffffff'>1</text>
+<line x1='345.0' y1='135.0' x2='345.0' y2='365.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='345.0' y1='213.2' x2='345.0' y2='296.0' stroke='#0969da' stroke-width='6' stroke-linecap='round' marker-end='url(#m1)'/>
+<circle cx='377.0' cy='250.0' r='17.0' fill='#0969da' stroke='#0969da' stroke-width='2'/>
+<text x='377.0' y='258.0' font-size='21' font-weight='800' text-anchor='middle' fill='#ffffff'>2</text>
+<line x1='345.0' y1='365.0' x2='115.0' y2='365.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='266.8' y1='365.0' x2='184.0' y2='365.0' stroke='#0969da' stroke-width='6' stroke-linecap='round' marker-end='url(#m1)'/>
+<circle cx='230.0' cy='397.0' r='17.0' fill='#0969da' stroke='#0969da' stroke-width='2'/>
+<text x='230.0' y='405.0' font-size='21' font-weight='800' text-anchor='middle' fill='#ffffff'>3</text>
+<line x1='115.0' y1='365.0' x2='115.0' y2='135.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='115.0' y1='286.8' x2='115.0' y2='204.0' stroke='#0969da' stroke-width='6' stroke-linecap='round' marker-end='url(#m1)'/>
+<circle cx='83.0' cy='250.0' r='17.0' fill='#0969da' stroke='#0969da' stroke-width='2'/>
+<text x='83.0' y='258.0' font-size='21' font-weight='800' text-anchor='middle' fill='#ffffff'>4</text>
+<line x1='345.0' y1='135.0' x2='407.0' y2='135.0' stroke='#57606a' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 5'/>
+<path d='M345.0,135.0 L345.0,169.0 A34,34 0 0 0 379.0,135.0 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M345.0,169.0 A34,34 0 0 0 379.0,135.0' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='384.6' y='183.6' font-size='25' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<line x1='345.0' y1='365.0' x2='345.0' y2='427.0' stroke='#57606a' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 5'/>
+<path d='M345.0,365.0 L311.0,365.0 A34,34 0 0 0 345.0,399.0 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M311.0,365.0 A34,34 0 0 0 345.0,399.0' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='305.4' y='413.6' font-size='25' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<line x1='115.0' y1='365.0' x2='53.0' y2='365.0' stroke='#57606a' stroke-width='2' stroke-linecap='round' stroke-dasharray='6 5'/>
+<path d='M115.0,365.0 L115.0,331.0 A34,34 0 0 0 81.0,365.0 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M115.0,331.0 A34,34 0 0 0 81.0,365.0' stroke='#0969da' stroke-width='3' fill='none' stroke-linejoin='round'/>
+<text x='75.4' y='334.4' font-size='25' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<path d='M345.0,365.0 L345.0,343.0 L323.0,343.0 L323.0,365.0 Z' stroke='#bc4c00' stroke-width='2.5' fill='#fff8c5' stroke-linejoin='round'/>
+<text x='294.1' y='322.1' font-size='20' font-weight='800' text-anchor='middle' fill='#bc4c00'>90°</text>
+<g transform='translate(115.0,135.0) rotate(90.0) scale(1.5)'><rect x='-17' y='-12' width='6' height='10' rx='2' fill='#1f2328'/><rect x='11' y='-12' width='6' height='10' rx='2' fill='#1f2328'/><rect x='-17' y='6' width='6' height='10' rx='2' fill='#1f2328'/><rect x='11' y='6' width='6' height='10' rx='2' fill='#1f2328'/><rect x='-13' y='-17' width='26' height='36' rx='6' fill='#2da44e' stroke='#116329' stroke-width='1.6'/><rect x='-10' y='-22' width='20' height='6' rx='2' fill='#ffd33d' stroke='#1f2328' stroke-width='1'/><circle cx='0' cy='3' r='7' fill='#116329'/></g>
+<text x='115.0' y='81.0' font-size='17' font-weight='800' text-anchor='middle' fill='#1a7f37'>starts here,</text>
+<text x='115.0' y='102.0' font-size='17' font-weight='800' text-anchor='middle' fill='#1a7f37'>facing right</text>
+<text x='470.0' y='60.0' font-size='18' font-weight='800' text-anchor='start' fill='#1f2328'>arrows 1 to 4:</text>
+<text x='470.0' y='85.0' font-size='18' font-weight='500' text-anchor='start' fill='#1f2328'>forward 20 steps</text>
+<text x='470.0' y='124.0' font-size='18' font-weight='800' text-anchor='start' fill='#0969da'>at each corner:</text>
+<text x='470.0' y='149.0' font-size='18' font-weight='500' text-anchor='start' fill='#0969da'>turn right ? degrees</text>
+<text x='470.0' y='188.0' font-size='18' font-weight='800' text-anchor='start' fill='#bc4c00'>orange: inside angle</text>
+<text x='470.0' y='227.0' font-size='18' font-weight='500' text-anchor='start' fill='#57606a'>dashed line =</text>
+<text x='470.0' y='252.0' font-size='18' font-weight='500' text-anchor='start' fill='#57606a'>straight on (no turn)</text>
+</svg>

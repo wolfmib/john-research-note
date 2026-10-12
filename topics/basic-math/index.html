@@ -160,7 +160,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .qnum {
   flex: none;
   display: inline-grid; place-items: center;
-  width: 28px; height: 28px;
+  min-width: 28px; height: 28px; padding: 0 5px; box-sizing: border-box;
   border-radius: 8px;
   background: var(--accent); color: var(--accent-ink);
   font-size: 15px;
@@ -302,6 +302,13 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
   -webkit-tap-highlight-color: transparent;
 }
 .pickq .ptitle { flex: 1; min-width: 0; }
+.pickq .pmeta { display: block; margin-top: 2px; font-size: 13px; color: var(--muted); }
+.more { margin: 14px 0 0; }
+.morelink {
+  display: inline-block; padding: 10px 14px;
+  border: 1.5px solid var(--accent); border-radius: 12px;
+  color: var(--accent); font-weight: 700; text-decoration: none;
+}
 .pickq.ok { border-color: var(--ok); background: var(--ok-soft); }
 .pickq.bad { border-color: var(--bad); background: var(--bad-soft); }
 .pickq:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
@@ -385,7 +392,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 <a class="quiz" href="#chapters" data-root="chapters">
         <span class="u">Track 3 · Chapter 1 to Chapter 19</span>
         <span class="t">Malta Year 8 Chapters</span>
-        <span class="m">7 quizzes · 4 material pages</span></a>
+        <span class="m">8 quizzes · 4 material pages</span></a>
 <a class="quiz" href="#sat" data-root="sat">
         <span class="u">SAT Math · 10 concepts</span>
         <span class="t">SAT</span>
@@ -511,6 +518,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         <span class="u">All Chapters · Basic</span>
         <span class="t">All 19 Chapters: Basic</span>
         <span class="m">38 questions<span class="lastscore"></span></span></a>
+<a class="quiz" href="malta-year-8-math-all-chapters-basic-extended/quiz.html" data-slug="malta-year-8-math-all-chapters-basic-extended">
+        <span class="u">All Chapters · Basic Extended</span>
+        <span class="t">All 19 Chapters: Basic Extended</span>
+        <span class="m">190 questions<span class="lastscore"></span></span></a>
 <a class="quiz" href="malta-year-8-math-chapter-1-directed-numbers-practice-1-adding-and-subtracting/quiz.html" data-slug="malta-year-8-math-chapter-1-directed-numbers-practice-1-adding-and-subtracting">
         <span class="u">Chapter 1</span>
         <span class="t">Directed Numbers Practice 1: Adding and Subtracting</span>

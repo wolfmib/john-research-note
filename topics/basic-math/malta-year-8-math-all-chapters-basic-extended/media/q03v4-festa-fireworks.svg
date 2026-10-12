@@ -1,0 +1,69 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 660 280' width='660' height='280' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='658' height='278' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='37.0' y='93.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='36.0,93.0 48.0,93.0 42.0,81.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='42.0' y1='115.0' x2='42.0' y2='123.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='59.0' y='93.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='58.0,93.0 70.0,93.0 64.0,81.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='64.0' y1='115.0' x2='64.0' y2='123.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='81.0' y='93.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='80.0,93.0 92.0,93.0 86.0,81.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='86.0' y1='115.0' x2='86.0' y2='123.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='37.0' y='141.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='36.0,141.0 48.0,141.0 42.0,129.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='42.0' y1='163.0' x2='42.0' y2='171.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='59.0' y='141.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='58.0,141.0 70.0,141.0 64.0,129.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='64.0' y1='163.0' x2='64.0' y2='171.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='81.0' y='141.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='80.0,141.0 92.0,141.0 86.0,129.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='86.0' y1='163.0' x2='86.0' y2='171.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<text x='64.0' y='237.0' font-size='20' font-weight='800' text-anchor='middle' fill='#bc4c00'>6 single</text>
+<text x='127.0' y='137.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>+</text>
+<rect x='157.0' y='105.0' width='84.0' height='40.0' rx='10' fill='#ffebe9' stroke='#cf222e' stroke-width='2'/>
+<rect x='172.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='171.0,117.0 183.0,117.0 177.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='177.0' y1='139.0' x2='177.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='194.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='193.0,117.0 205.0,117.0 199.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='199.0' y1='139.0' x2='199.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='216.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='215.0,117.0 227.0,117.0 221.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='221.0' y1='139.0' x2='221.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='253.0' y='105.0' width='84.0' height='40.0' rx='10' fill='#ffebe9' stroke='#cf222e' stroke-width='2'/>
+<rect x='268.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='267.0,117.0 279.0,117.0 273.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='273.0' y1='139.0' x2='273.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='290.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='289.0,117.0 301.0,117.0 295.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='295.0' y1='139.0' x2='295.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='312.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='311.0,117.0 323.0,117.0 317.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='317.0' y1='139.0' x2='317.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='349.0' y='105.0' width='84.0' height='40.0' rx='10' fill='#ffebe9' stroke='#cf222e' stroke-width='2'/>
+<rect x='364.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='363.0,117.0 375.0,117.0 369.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='369.0' y1='139.0' x2='369.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='386.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='385.0,117.0 397.0,117.0 391.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='391.0' y1='139.0' x2='391.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='408.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='407.0,117.0 419.0,117.0 413.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='413.0' y1='139.0' x2='413.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='445.0' y='105.0' width='84.0' height='40.0' rx='10' fill='#ffebe9' stroke='#cf222e' stroke-width='2'/>
+<rect x='460.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='459.0,117.0 471.0,117.0 465.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='465.0' y1='139.0' x2='465.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='482.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='481.0,117.0 493.0,117.0 487.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='487.0' y1='139.0' x2='487.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<rect x='504.0' y='117.0' width='10.0' height='22.0' rx='0' fill='#ff8182' stroke='#1f2328' stroke-width='1.2'/>
+<polygon points='503.0,117.0 515.0,117.0 509.0,105.0' fill='#ffd33d' stroke='#1f2328' stroke-width='1.2' stroke-linejoin='round'/>
+<line x1='509.0' y1='139.0' x2='509.0' y2='147.0' stroke='#8c6d46' stroke-width='1.5' stroke-linecap='round'/>
+<path d='M157.0,155.0 q0,14 12,14 L331.0,169.0 q12,0 12,14 q0,-14 12,-14 L517.0,169.0 q12,0 12,-14' stroke='#0969da' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='343.0' y='237.0' font-size='20' font-weight='800' text-anchor='middle' fill='#0969da'>4 packs of 3</text>
+<text x='559.0' y='137.0' font-size='34' font-weight='700' text-anchor='middle' fill='#1f2328'>=</text>
+<text x='603.0' y='138.0' font-size='38' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='330.0' y='38.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>Multiply first: count the packs, then add.</text>
+</svg>

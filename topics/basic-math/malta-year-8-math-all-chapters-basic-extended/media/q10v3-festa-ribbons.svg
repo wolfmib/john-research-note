@@ -1,0 +1,41 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 620 430' width='620' height='430' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='618' height='428' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<path d='M67,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M117,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M167,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M217,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M267,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M317,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M367,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M417,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M467,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<path d='M517,62 q9,-10 18,0 q9,10 18,0' stroke='#cf222e' stroke-width='5' fill='none' stroke-linejoin='round'/>
+<text x='310.0' y='32.0' font-size='20' font-weight='700' text-anchor='middle' fill='#1f2328'>10 × 0.28 m each</text>
+<path d='M60.0,108.0 q0,14 12,14 L298.0,122.0 q12,0 12,14 q0,-14 12,-14 L548.0,122.0 q12,0 12,-14' stroke='#1f2328' stroke-width='2.2' fill='none' stroke-linejoin='round'/>
+<text x='310.0' y='146.0' font-size='18' font-weight='500' text-anchor='middle' fill='#57606a'>10 of them</text>
+<rect x='157.0' y='170.0' width='136.0' height='38.0' rx='0' fill='#fff8c5' stroke='#1f2328' stroke-width='1.5'/>
+<text x='225.0' y='196.0' font-size='18' font-weight='700' text-anchor='middle' fill='#1f2328'>Ones</text>
+<rect x='157.0' y='208.0' width='136.0' height='62.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='157.0' y='270.0' width='136.0' height='62.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='297.0' y='170.0' width='136.0' height='38.0' rx='0' fill='#ddf4ff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='365.0' y='196.0' font-size='18' font-weight='700' text-anchor='middle' fill='#1f2328'>Tenths</text>
+<rect x='297.0' y='208.0' width='136.0' height='62.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='297.0' y='270.0' width='136.0' height='62.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='437.0' y='170.0' width='136.0' height='38.0' rx='0' fill='#ddf4ff' stroke='#1f2328' stroke-width='1.5'/>
+<text x='505.0' y='196.0' font-size='18' font-weight='700' text-anchor='middle' fill='#1f2328'>Hundredths</text>
+<rect x='437.0' y='208.0' width='136.0' height='62.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='437.0' y='270.0' width='136.0' height='62.0' rx='0' fill='#ffffff' stroke='#1f2328' stroke-width='1.5'/>
+<circle cx='295.0' cy='256.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<circle cx='295.0' cy='318.0' r='5.0' fill='#1f2328' stroke='#1f2328' stroke-width='2'/>
+<text x='225.0' y='255.0' font-size='32' font-weight='800' text-anchor='middle' fill='#1f2328'>0</text>
+<text x='365.0' y='255.0' font-size='32' font-weight='800' text-anchor='middle' fill='#1f2328'>2</text>
+<text x='505.0' y='255.0' font-size='32' font-weight='800' text-anchor='middle' fill='#1f2328'>8</text>
+<text x='225.0' y='320.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='365.0' y='320.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<line x1='351.0' y1='262.0' x2='243.0' y2='294.0' stroke='#bc4c00' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m4)'/>
+<line x1='491.0' y1='262.0' x2='383.0' y2='294.0' stroke='#bc4c00' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m4)'/>
+<text x='30.0' y='252.0' font-size='22' font-weight='700' text-anchor='start' fill='#57606a'>0.28</text>
+<text x='30.0' y='315.0' font-size='22' font-weight='800' text-anchor='start' fill='#bc4c00'>× 10</text>
+<text x='310.0' y='370.0' font-size='19' font-weight='500' text-anchor='middle' fill='#57606a'>× 10: every digit moves one place to the left</text>
+</svg>

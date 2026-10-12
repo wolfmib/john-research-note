@@ -1,0 +1,55 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 460' width='600' height='460' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='458' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='285.0' y='56.0' width='30.0' height='334.0' rx='15' fill='#ffffff' stroke='#1f2328' stroke-width='2.5'/>
+<rect x='291.0' y='230.0' width='18.0' height='166.0' rx='0' fill='#80ccff' stroke='none' stroke-width='0'/>
+<circle cx='300.0' cy='416.0' r='24.0' fill='#80ccff' stroke='#1f2328' stroke-width='2.5'/>
+<line x1='275.0' y1='390.0' x2='285.0' y2='390.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='396.0' font-size='17' font-weight='500' text-anchor='end' fill='#cf222e'>−16</text>
+<line x1='275.0' y1='374.0' x2='285.0' y2='374.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<line x1='275.0' y1='358.0' x2='285.0' y2='358.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='256.0' y='369.0' font-size='28' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<line x1='275.0' y1='342.0' x2='285.0' y2='342.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='326.0' x2='285.0' y2='326.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='332.0' font-size='17' font-weight='500' text-anchor='end' fill='#cf222e'>−12</text>
+<line x1='275.0' y1='310.0' x2='285.0' y2='310.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='294.0' x2='285.0' y2='294.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='268.0' y='300.0' font-size='17' font-weight='500' text-anchor='end' fill='#cf222e'>−10</text>
+<line x1='275.0' y1='278.0' x2='285.0' y2='278.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='262.0' x2='285.0' y2='262.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='268.0' font-size='17' font-weight='500' text-anchor='end' fill='#cf222e'>−8</text>
+<line x1='275.0' y1='246.0' x2='285.0' y2='246.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='230.0' x2='285.0' y2='230.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='236.0' font-size='17' font-weight='800' text-anchor='end' fill='#cf222e'>−6</text>
+<line x1='275.0' y1='214.0' x2='285.0' y2='214.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<line x1='275.0' y1='198.0' x2='285.0' y2='198.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='204.0' font-size='17' font-weight='500' text-anchor='end' fill='#cf222e'>−4</text>
+<line x1='275.0' y1='182.0' x2='285.0' y2='182.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='166.0' x2='285.0' y2='166.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='172.0' font-size='17' font-weight='500' text-anchor='end' fill='#cf222e'>−2</text>
+<line x1='275.0' y1='150.0' x2='285.0' y2='150.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='134.0' x2='285.0' y2='134.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<text x='268.0' y='140.0' font-size='17' font-weight='800' text-anchor='end' fill='#1f2328'>0</text>
+<line x1='275.0' y1='118.0' x2='285.0' y2='118.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='102.0' x2='285.0' y2='102.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='108.0' font-size='17' font-weight='500' text-anchor='end' fill='#1a7f37'>2</text>
+<line x1='275.0' y1='86.0' x2='285.0' y2='86.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='275.0' y1='70.0' x2='285.0' y2='70.0' stroke='#1f2328' stroke-width='1.2' stroke-linecap='round'/>
+<text x='268.0' y='76.0' font-size='17' font-weight='500' text-anchor='end' fill='#1a7f37'>4</text>
+<circle cx='300.0' cy='230.0' r='7.0' fill='#cf222e' stroke='#1f2328' stroke-width='1.5'/>
+<text x='300.0' y='44.0' font-size='20' font-weight='700' text-anchor='middle' fill='#57606a'>°C</text>
+<rect x='80.0' y='150.0' width='120.0' height='200.0' rx='10' fill='#f6f8fa' stroke='#1f2328' stroke-width='2.5'/>
+<line x1='80.0' y1='230.0' x2='200.0' y2='230.0' stroke='#1f2328' stroke-width='2' stroke-linecap='round'/>
+<rect x='180.0' y='175.0' width='8.0' height='40.0' rx='3' fill='#d0d7de' stroke='#1f2328' stroke-width='1'/>
+<rect x='180.0' y='255.0' width='8.0' height='60.0' rx='3' fill='#d0d7de' stroke='#1f2328' stroke-width='1'/>
+<text x='118.0' y='205.0' font-size='26' font-weight='800' text-anchor='middle' fill='#0969da'>*</text>
+<text x='128.0' y='191.0' font-size='26' font-weight='800' text-anchor='middle' fill='#0969da'>*</text>
+<text x='138.0' y='177.0' font-size='26' font-weight='800' text-anchor='middle' fill='#0969da'>*</text>
+<text x='140.0' y='380.0' font-size='19' font-weight='700' text-anchor='middle' fill='#57606a'>freezer</text>
+<line x1='320.0' y1='230.0' x2='360.0' y2='230.0' stroke='#cf222e' stroke-width='2' stroke-linecap='round' stroke-dasharray='5 4'/>
+<text x='370.0' y='237.0' font-size='21' font-weight='700' text-anchor='start' fill='#cf222e'>start: −6</text>
+<line x1='390.0' y1='244.0' x2='390.0' y2='352.0' stroke='#cf222e' stroke-width='3.5' stroke-linecap='round' marker-end='url(#m2)'/>
+<text x='405.0' y='302.0' font-size='21' font-weight='700' text-anchor='start' fill='#cf222e'>8 degrees colder</text>
+<line x1='320.0' y1='358.0' x2='360.0' y2='358.0' stroke='#0969da' stroke-width='2' stroke-linecap='round' stroke-dasharray='5 4'/>
+<text x='370.0' y='388.0' font-size='21' font-weight='700' text-anchor='start' fill='#0969da'>now</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 440' width='600' height='440' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='438' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<rect x='170.0' y='374.0' width='150.0' height='36.0' rx='0' fill='#efe6d8' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='383.0' width='20.0' height='18.0' rx='0' fill='#ffffff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='383.0' width='20.0' height='18.0' rx='0' fill='#ffffff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='398.0' font-size='18' font-weight='500' text-anchor='end' fill='#cf222e'>−3</text>
+<rect x='170.0' y='338.0' width='150.0' height='36.0' rx='0' fill='#efe6d8' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='347.0' width='20.0' height='18.0' rx='0' fill='#ffffff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='347.0' width='20.0' height='18.0' rx='0' fill='#ffffff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='362.0' font-size='18' font-weight='800' text-anchor='end' fill='#cf222e'>−2</text>
+<rect x='170.0' y='302.0' width='150.0' height='36.0' rx='0' fill='#efe6d8' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='311.0' width='20.0' height='18.0' rx='0' fill='#ffffff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='311.0' width='20.0' height='18.0' rx='0' fill='#ffffff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='326.0' font-size='18' font-weight='500' text-anchor='end' fill='#cf222e'>−1</text>
+<rect x='170.0' y='266.0' width='150.0' height='36.0' rx='0' fill='#eef6ff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='275.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='275.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='290.0' font-size='18' font-weight='800' text-anchor='end' fill='#1f2328'>0</text>
+<rect x='170.0' y='230.0' width='150.0' height='36.0' rx='0' fill='#eef6ff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='239.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='239.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='254.0' font-size='18' font-weight='500' text-anchor='end' fill='#1a7f37'>1</text>
+<rect x='170.0' y='194.0' width='150.0' height='36.0' rx='0' fill='#eef6ff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='203.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='203.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='218.0' font-size='18' font-weight='500' text-anchor='end' fill='#1a7f37'>2</text>
+<rect x='170.0' y='158.0' width='150.0' height='36.0' rx='0' fill='#eef6ff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='167.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='167.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='182.0' font-size='18' font-weight='500' text-anchor='end' fill='#1a7f37'>3</text>
+<rect x='170.0' y='122.0' width='150.0' height='36.0' rx='0' fill='#eef6ff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='131.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='131.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<text x='148.0' y='151.0' font-size='30' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<rect x='170.0' y='86.0' width='150.0' height='36.0' rx='0' fill='#eef6ff' stroke='#1f2328' stroke-width='1.5'/>
+<rect x='192.0' y='95.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<rect x='278.0' y='95.0' width='20.0' height='18.0' rx='0' fill='#cfe8ff' stroke='#d0d7de' stroke-width='1'/>
+<text x='158.0' y='110.0' font-size='18' font-weight='500' text-anchor='end' fill='#1a7f37'>5</text>
+<polygon points='158.0,86.0 332.0,86.0 245.0,56.0' fill='#f2d0b5' stroke='#1f2328' stroke-width='2' stroke-linejoin='round'/>
+<rect x='225.0' y='86.0' width='40.0' height='324.0' rx='0' fill='#f6f8fa' stroke='#57606a' stroke-width='1.5' stroke-dasharray='5 4'/>
+<rect x='229.0' y='342.0' width='32.0' height='28.0' rx='4' fill='#ffb77a' stroke='#1f2328' stroke-width='2'/>
+<rect x='229.0' y='126.0' width='32.0' height='28.0' rx='4' fill='none' stroke='#0969da' stroke-width='2.5' stroke-dasharray='5 4'/>
+<line x1='30.0' y1='302.0' x2='590.0' y2='302.0' stroke='#8c6d46' stroke-width='4' stroke-linecap='round'/>
+<text x='585.0' y='292.0' font-size='18' font-weight='700' text-anchor='end' fill='#8c6d46'>street level</text>
+<line x1='350.0' y1='348.0' x2='350.0' y2='150.0' stroke='#1a7f37' stroke-width='3.5' stroke-linecap='round' marker-end='url(#m3)'/>
+<text x='380.0' y='363.0' font-size='20' font-weight='700' text-anchor='start' fill='#cf222e'>start: floor −2</text>
+<text x='380.0' y='255.0' font-size='21' font-weight='800' text-anchor='start' fill='#1a7f37'>up 6 floors</text>
+<text x='380.0' y='147.0' font-size='20' font-weight='700' text-anchor='start' fill='#0969da'>the lift stops here</text>
+</svg>
