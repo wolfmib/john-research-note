@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pennes Bioheat Equation</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<style>
+    :root {
+        --bg: #f8f9fa; --ink: #2c3e50; --dim: #7f8c8d; --line: #dee2e6; --off: #b0b8bf;
+        --c1: #8e44ad; /* storage */ --c2: #2980b9; /* conduction */ --c3: #c0392b; /* perfusion */ --c4: #d35400; /* metabolism */
+        --face: #ecf0f1; --edge: #34495e;
+    }
+    html, body { margin: 0; padding: 0; background: #e9ecef; overflow: hidden; height: 100%;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    /* Fixed 1280x720 stage, scaled to the window: layout never reflows. */
+    #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; background: var(--bg);
+        transform-origin: 0 0; overflow: hidden; color: var(--ink); }
+    #series { position: absolute; left: 48px; top: 16px; font-size: 14px; color: var(--dim); letter-spacing: .3px; }
+
+    /* persistent equation bar: one KaTeX span per term so each term can be coloured and scaled by t */
+    #eqbar { position: absolute; left: 0; top: 46px; width: 1280px; text-align: center; font-size: 31px;
+        padding-bottom: 14px; }
+    #eqbar::after { content: ""; position: absolute; left: 48px; right: 48px; bottom: 0; border-bottom: 2px solid var(--line); }
+    #eqbar .term { display: inline-block; margin: 0 7px; transform-origin: 50% 60%; }
+
+    /* per-scene left column */
+    .scene { position: absolute; left: 48px; top: 140px; width: 600px; height: 560px; opacity: 0;
+        display: flex; flex-direction: column; justify-content: center; }
+    .label { font-size: 26px; font-weight: 600; margin-bottom: 16px; line-height: 1.3; }
+    .card { background: #fff; border: 1px solid var(--line); border-left: 6px solid #ccc; border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,.05); padding: 14px 22px; font-size: 22px; line-height: 1.75; }
+    .card hr { border: 0; border-top: 1px solid var(--line); margin: 8px 0; }
+    .summary { font-size: 21px; color: var(--dim); margin-top: 18px; line-height: 1.45; }
+    .c1 { color: var(--c1); } .c2 { color: var(--c2); } .c3 { color: var(--c3); } .c4 { color: var(--c4); }
+    [data-t] { opacity: 0; }
+
+    /* persistent right column: the tissue cell */
+    #viz { position: absolute; left: 680px; top: 140px; width: 560px; height: 560px; overflow: visible; }
+    .face { fill: var(--face); stroke: var(--edge); stroke-width: 2; stroke-linejoin: round; }
+    .nb { fill: rgba(41,128,185,.10); stroke: #bdc3c7; stroke-width: 1.5; stroke-linejoin: round; }
+    .cond { stroke: var(--c2); stroke-width: 4; fill: none; stroke-dasharray: 7 6; }
+    .vessel { stroke: var(--c3); stroke-width: 2; stroke-dasharray: 4 6; fill: none; opacity: .35; }
+    .ring { fill: none; stroke: var(--c4); }
+    .cap { font-size: 15px; font-weight: bold; fill: var(--dim); text-anchor: middle; }
+</style>
+</head>
+<body>
+<div id="stage">
+    <div id="series">Therma thermal dynamics &middot; Pennes bioheat equation</div>
+
+    <div id="eqbar">
+        <span class="term" id="t1">$\rho c\,\dfrac{\partial T}{\partial t}$</span><span class="term op">$=$</span><span class="term" id="t2">$\nabla\cdot(k\,\nabla T)$</span><span class="term op">$+$</span><span class="term" id="t3">$\omega_b\,\rho_b c_b\,(T_b - T)$</span><span class="term op">$+$</span><span class="term" id="t4">$Q_m$</span>
+    </div>
+
+    <!-- SCENE 0: the cell -->
+    <div class="scene" data-start="0" data-end="7">
+        <div class="label" data-t="0.4" style="font-size:30px;">Energy balance for one tissue volume cell.</div>
+        <div class="summary" data-t="2.2">Each term is a thermal power per unit volume.</div>
+    </div>
+
+    <!-- SCENE 1: storage -->
+    <div class="scene" data-start="7" data-end="22">
+        <div class="label c1" data-t="7.4">Rate of stored thermal energy change</div>
+        <div class="card" style="border-left-color: var(--c1);" data-t="7.4">
+            <div data-t="8.4">$\rho$: $\mathrm{kg/m^3}$</div>
+            <div data-t="9.4">$c$: $\mathrm{J/(kg\cdot K)}$</div>
+            <div data-t="10.4">$\partial T/\partial t$: $\mathrm{K/s}$</div>
+            <hr>
+            <div data-t="12.0"><b>Result: $\mathrm{J/(m^3\cdot s)} = \mathrm{W/m^3}$</b></div>
+        </div>
+        <div class="summary" data-t="13.6">The left term is energy storage. It tells how fast the tissue temperature changes.</div>
+    </div>
+
+    <!-- SCENE 2: conduction -->
+    <div class="scene" data-start="22" data-end="37">
+        <div class="label c2" data-t="22.4">Net heat exchange with neighboring tissue</div>
+        <div class="card" style="border-left-color: var(--c2);" data-t="22.4">
+            <div data-t="23.4">$k$: $\mathrm{W/(m\cdot K)}$</div>
+            <div data-t="24.4">$\nabla T$: $\mathrm{K/m}$</div>
+            <div data-t="25.4">$k\,\nabla T$: $\mathrm{W/m^2}$</div>
+            <hr>
+            <div data-t="27.0"><b>Result: $\nabla\cdot(k\,\nabla T)$: $\mathrm{W/m^3}$</b></div>
+        </div>
+        <div class="summary" data-t="28.6">This term is heat conduction. It describes heat exchange with neighboring tissue.</div>
+    </div>
+
+    <!-- SCENE 3: perfusion -->
+    <div class="scene" data-start="37" data-end="53">
+        <div class="label c3" data-t="37.4">Heat exchange between blood and tissue</div>
+        <div class="card" style="border-left-color: var(--c3);" data-t="37.4">
+            <div data-t="38.4">$\omega_b$: $\mathrm{1/s}$</div>
+            <div data-t="39.4">$\rho_b$: $\mathrm{kg/m^3}$</div>
+            <div data-t="40.4">$c_b$: $\mathrm{J/(kg\cdot K)}$</div>
+            <div data-t="41.4">$(T_b - T)$: $\mathrm{K}$</div>
+            <hr>
+            <div data-t="43.0"><b>Result: $\mathrm{J/(m^3\cdot s)} = \mathrm{W/m^3}$</b></div>
+        </div>
+        <div class="summary" data-t="44.6">This term is blood perfusion. Blood can bring heat to the tissue or remove heat from it.</div>
+    </div>
+
+    <!-- SCENE 4: metabolism -->
+    <div class="scene" data-start="53" data-end="63">
+        <div class="label c4" data-t="53.4">Internal heat generation by metabolism</div>
+        <div class="card" style="border-left-color: var(--c4);" data-t="53.4">
+            <div data-t="54.4"><b>$Q_m$: $\mathrm{W/m^3}$</b></div>
+        </div>
+        <div class="summary" data-t="56.0">This term is metabolic heat. The tissue generates heat inside itself.</div>
+    </div>
+
+    <!-- SCENE 5: balance -->
+    <div class="scene" data-start="63" data-end="76" data-hold="1">
+        <div class="label" data-t="63.4" style="font-size:28px;">All terms have unit $\mathrm{W/m^3}$</div>
+        <div class="card" style="border-left-color: var(--ink); font-size: 23px; line-height: 1.8;" data-t="65.0">
+            <b class="c1">Stored energy change</b> =<br>
+            <b class="c2">Conduction</b> + <b class="c3">Blood perfusion</b> + <b class="c4">Metabolism</b>
+        </div>
+        <div class="summary" data-t="67.5" style="color: var(--ink); font-weight: 600; font-size: 22px;">The Pennes equation is a thermal power balance per unit volume.</div>
+    </div>
+
+    <!-- persistent visual: one isometric tissue cell -->
+    <svg id="viz" viewBox="-200 -200 400 400">
+        <defs>
+            <marker id="ah-cond" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#2980b9"/>
+            </marker>
+            <marker id="ah-store" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="#8e44ad"/>
+            </marker>
+        </defs>
+
+        <!-- conduction: three neighbouring cells + heat flow through the faces -->
+        <g id="g-cond">
+            <path class="nb" d="M -160 20 L -110 50 L -110 -30 L -160 -60 Z"/>
+            <path class="nb" d="M 110 50 L 160 20 L 160 -60 L 110 -30 Z"/>
+            <path class="nb" d="M 0 -130 L 50 -100 L 0 -70 L -50 -100 Z"/>
+            <line id="cd1" class="cond" x1="-140" y1="10" x2="-78" y2="46" marker-end="url(#ah-cond)"/>
+            <line id="cd2" class="cond" x1="78" y1="46" x2="140" y2="10" marker-end="url(#ah-cond)"/>
+            <line id="cd3" class="cond" x1="0" y1="-115" x2="0" y2="-62" marker-end="url(#ah-cond)"/>
+        </g>
+
+        <!-- the cell -->
+        <g id="cube">
+            <path class="face" d="M 0 -50 L 60 -15 L 0 20 L -60 -15 Z"/>
+            <path class="face" d="M -60 -15 L 0 20 L 0 90 L -60 55 Z" style="fill:#d5dbdf;"/>
+            <path class="face" d="M 0 20 L 60 -15 L 60 55 L 0 90 Z" style="fill:#e3e7ea;"/>
+        </g>
+        <text class="cap" x="0" y="140">one tissue cell</text>
+
+        <!-- storage: temperature rises inside the cell -->
+        <g id="g-store">
+            <line id="st-arrow" x1="0" y1="62" x2="0" y2="6" stroke="#8e44ad" stroke-width="6" marker-end="url(#ah-store)"/>
+            <text id="st-txt" x="18" y="40" font-size="22" font-weight="bold" fill="#8e44ad">T</text>
+        </g>
+
+        <!-- perfusion: blood passes through the cell -->
+        <g id="g-perf">
+            <line class="vessel" x1="-120" y1="80" x2="120" y2="-40"/>
+            <circle class="bp" r="5" fill="#c0392b"/><circle class="bp" r="4" fill="#c0392b"/>
+            <circle class="bp" r="5" fill="#c0392b"/><circle class="bp" r="4" fill="#c0392b"/>
+        </g>
+
+        <!-- metabolism: heat made inside the cell -->
+        <g id="g-metab">
+            <circle cx="0" cy="20" r="6" fill="#d35400"/>
+            <circle class="ring" cx="0" cy="20"/><circle class="ring" cx="0" cy="20"/><circle class="ring" cx="0" cy="20"/>
+        </g>
+    </svg>
+</div>
+
+<script>
+    renderMathInElement(document.body, { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }], throwOnError: false });
+
+    // ---- deterministic timeline: the whole picture is a pure function of t -------
+    const FADE = 0.6, TOTAL = 76;
+    const SCN = [[0, 7], [7, 22], [22, 37], [37, 53], [53, 63], [63, TOTAL]];   // scene k = term k (0 = overview, 5 = balance)
+    const COL = ['#2c3e50', '#8e44ad', '#2980b9', '#c0392b', '#d35400'];
+    const clamp01 = x => Math.max(0, Math.min(1, x));
+    const ease = p => p * p * (3 - 2 * p);
+    const scenes = [...document.querySelectorAll('.scene')];
+    const timed = [...document.querySelectorAll('[data-t]')];
+    const terms = [1, 2, 3, 4].map(i => document.getElementById('t' + i));
+    const ops = [...document.querySelectorAll('#eqbar .op')];
+    const groups = { 'g-store': 1, 'g-cond': 2, 'g-perf': 3, 'g-metab': 4 };
+    const bp = [...document.querySelectorAll('.bp')], rings = [...document.querySelectorAll('.ring')];
+    const cube = document.getElementById('cube');
+
+    // visibility of term k's visual: during its own scene, and again in the final balance scene (held)
+    const vis = (t, k) => {
+        const [a, b] = SCN[k], [a5] = SCN[5];
+        const own = Math.min(clamp01((t - a) / FADE), clamp01((b - t) / FADE));
+        return Math.max(own, clamp01((t - a5) / FADE));
+    };
+
+    function renderAt(t) {
+        scenes.forEach(s => {
+            const a = +s.dataset.start, b = +s.dataset.end;
+            const fin = clamp01((t - a) / FADE), fout = s.dataset.hold ? 1 : clamp01((b - t) / FADE);
+            s.style.opacity = (t < a || (!s.dataset.hold && t > b)) ? 0 : ease(Math.min(fin, fout));
+        });
+        timed.forEach(el => {
+            const p = ease(clamp01((t - +el.dataset.t) / FADE));
+            el.style.opacity = p;
+            el.style.transform = `translateY(${16 * (1 - p)}px)`;
+        });
+
+        // equation bar: current scene's term in its colour and enlarged, the others dimmed; all coloured at the end
+        let k = SCN.findIndex(([a, b]) => t < b); if (k < 0) k = 5;
+        terms.forEach((el, i) => {
+            const n = i + 1;
+            const col = k === 0 ? COL[0] : (k === 5 || k === n) ? COL[n] : '#b0b8bf';
+            el.style.color = col;
+            el.style.transform = `scale(${k === n ? 1.14 : 1})`;
+            el.style.fontWeight = k === n ? 'bold' : 'normal';
+        });
+        ops.forEach(el => el.style.color = (k === 0 || k === 5) ? COL[0] : '#b0b8bf');
+
+        // visuals
+        const v = {}; Object.entries(groups).forEach(([id, n]) => { v[n] = vis(t, n); document.getElementById(id).style.opacity = v[n]; });
+        // storage: the cell glows and the temperature arrow bounces
+        const g = 0.5 - 0.5 * Math.cos(2 * Math.PI * t / 3);
+        cube.style.filter = v[1] > 0.01 ? `drop-shadow(0 0 ${8 + 14 * g}px rgba(142,68,173,${v[1] * (0.35 + 0.5 * g)}))` : 'none';
+        const bounce = -10 * (0.5 - 0.5 * Math.cos(2 * Math.PI * t / 2));
+        document.getElementById('st-arrow').setAttribute('transform', `translate(0 ${bounce})`);
+        document.getElementById('st-txt').setAttribute('transform', `translate(0 ${bounce})`);
+        // conduction: dashes travel along the arrows
+        const off = -13 * ((t * 1.2) % 1);
+        ['cd1', 'cd2', 'cd3'].forEach(id => document.getElementById(id).style.strokeDashoffset = off + 'px');
+        // perfusion: blood particles move along the vessel through the cell
+        bp.forEach((c, i) => {
+            const ph = ((t / 2.4) + i * 0.25) % 1;
+            c.setAttribute('cx', -120 + 240 * ph); c.setAttribute('cy', 80 - 120 * ph);
+            c.style.opacity = Math.sin(Math.PI * ph);
+        });
+        // metabolism: rings expand from the centre
+        rings.forEach((r, i) => {
+            const ph = ((t / 2.2) + i / 3) % 1;
+            r.setAttribute('r', 6 + 56 * ph);
+            r.style.opacity = 1 - ph; r.style.strokeWidth = 4 - 3 * ph;
+        });
+    }
+    window.renderAt = renderAt; window.TOTAL = TOTAL;
+
+    function fit() {
+        const s = Math.min(innerWidth / 1280, innerHeight / 720);
+        const st = document.getElementById('stage');
+        st.style.transform = `scale(${s})`;
+        st.style.left = (innerWidth - 1280 * s) / 2 + 'px'; st.style.top = (innerHeight - 720 * s) / 2 + 'px';
+    }
+    addEventListener('resize', fit); fit();
+
+    // live playback (plays once, holds on the last scene; click to replay). '#manual' = frame-stepped by a renderer.
+    (document.fonts ? document.fonts.ready : Promise.resolve()).then(() => {
+        renderAt(0); window.__ready = true;
+        if (location.hash === '#manual') return;
+        let t0 = performance.now();
+        const tick = now => { renderAt(Math.min(TOTAL, (now - t0) / 1000)); requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+        addEventListener('click', () => { t0 = performance.now(); });
+    });
+</script>
+</body>
+</html>
