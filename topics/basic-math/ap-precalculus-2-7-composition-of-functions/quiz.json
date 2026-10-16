@@ -1,0 +1,82 @@
+{
+ "slug": "ap-precalculus-2-7-composition-of-functions",
+ "title": "AP Precalculus 2.7 — Composition of Functions",
+ "course": "AP Precalculus",
+ "unit": "2.7",
+ "question": "Composite functions from formulas and tables, the cost of a car trip and the domain of a composition.",
+ "intro": "**Quick recap:**\n\n- Composition:\n\n\\[\n(f\\circ g)(x)=f\\big(g(x)\\big)\n\\]\n\n- Work from the inside out: first \\(g(x)\\), then use that output as the input of \\(f\\).\n- Order matters: \\(f\\big(g(x)\\big)\\) and \\(g\\big(f(x)\\big)\\) are usually different.\n- Domain of \\(f\\big(g(x)\\big)\\): the \\(x\\) for which \\(g(x)\\) is a valid input of \\(f\\).\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Formulas · Evaluate a composition",
+   "prompt": "Let\n\n\\[\nf(x)=x^2-1\n\\]\n\nand\n\n\\[\ng(x)=2x+1\n\\]\n\nFind \\(f\\big(g(3)\\big)\\).",
+   "choices": [
+    "\\(17\\)",
+    "\\(56\\)",
+    "\\(48\\)",
+    "\\(36\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Inside first: g(3), then f",
+   "solution": "\\[\n\\begin{aligned}\ng(3) &= 2(3)+1 \\\\\n&= 7\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\nf\\big(g(3)\\big) &= f(7) \\\\\n&= 7^2-1 \\\\\n&= \\boxed{48}\n\\end{aligned}\n\\]\n\n- Not \\(17\\): that is \\(g\\big(f(3)\\big)=g(8)\\), the other order.\n- Not \\(56\\): that is \\(f(3)\\cdot g(3)=8\\cdot7\\). Composition feeds one output in; it does not multiply.\n- Not \\(36\\): \\((2x+1)^2\\) is not \\(4x^2+1\\). Work out \\(g(3)=7\\) first, then square.",
+   "type": "mcq"
+  },
+  {
+   "title": "Table · Composition from a table",
+   "prompt": "\\[\n\\begin{array}{c|ccccc}\nx & 1 & 2 & 3 & 4 & 5\\\\\n\\hline\nf(x) & 4 & 1 & 5 & 2 & 3\\\\\ng(x) & 3 & 5 & 2 & 1 & 4\n\\end{array}\n\\]\n\nFind \\(f\\big(g(4)\\big)\\).",
+   "choices": [
+    "\\(1\\)",
+    "\\(5\\)",
+    "\\(2\\)",
+    "\\(4\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Read g first, then use its output in f",
+   "solution": "\\[\n\\begin{aligned}\ng(4) &= 1\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\nf\\big(g(4)\\big) &= f(1) \\\\\n&= \\boxed{4}\n\\end{aligned}\n\\]\n\n- Not \\(5\\): that is \\(g\\big(f(4)\\big)=g(2)\\), the other order.\n- Not \\(2\\) or \\(1\\): those are \\(f(4)\\) and \\(g(4)\\), only one step of the two.",
+   "type": "mcq"
+  },
+  {
+   "title": "Formulas · Build f(g(x))",
+   "prompt": "Let\n\n\\[\nf(x)=3x-2\n\\]\n\nand\n\n\\[\ng(x)=x^2\n\\]\n\nWhich expression is \\(f\\big(g(x)\\big)\\)?",
+   "choices": [
+    "\\((3x-2)^2\\)",
+    "\\(3x^2-2\\)",
+    "\\(9x^2-2\\)",
+    "\\(3x^2-2x\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Replace every x in f with g(x)",
+   "solution": "\\[\n\\begin{aligned}\nf\\big(g(x)\\big) &= 3\\,g(x)-2 \\\\\n&= \\boxed{3x^2-2}\n\\end{aligned}\n\\]\n\n- Not \\((3x-2)^2\\): that is \\(g\\big(f(x)\\big)\\), the other order.\n- Not \\(9x^2-2\\): only \\(x\\) is squared, not the \\(3\\). \\(9x^2\\) would be \\((3x)^2\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "Fuel · Cost of a trip",
+   "prompt": "A car uses\n\n\\[\nL(m)=0.06m\n\\]\n\nlitres of fuel to drive \\(m\\) km.\n\nFuel costs\n\n\\[\nC(L)=1.7L\n\\]\n\neuros for \\(L\\) litres.\n\nUse \\(C\\big(L(m)\\big)\\) to find the fuel cost of a \\(250\\) km trip.",
+   "choices": [
+    "€25.50",
+    "€15.00",
+    "€425.00",
+    "€0.10"
+   ],
+   "answer": "A",
+   "solution_title": "Kilometres → litres → euros",
+   "solution": "\\[\n\\begin{aligned}\nL(250) &= 0.06(250) \\\\\n&= 15 \\text{ litres}\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\nC\\big(L(250)\\big) &= C(15) \\\\\n&= 1.7(15) \\\\\n&= \\boxed{25.50\\text{ euros}}\n\\end{aligned}\n\\]\n\n- Not €15.00: \\(15\\) is the number of **litres**, the output of the inside function only.\n- Not €425.00: \\(C(250)\\) prices \\(250\\) litres. The \\(250\\) km must go into \\(L\\) first.\n\nIn one formula, in euros:\n\n\\[\n\\begin{aligned}\nC\\big(L(m)\\big) &= 1.7(0.06m) \\\\\n&= 0.102m\n\\end{aligned}\n\\]",
+   "type": "mcq"
+  },
+  {
+   "title": "Domain · Square root of 6 − x",
+   "prompt": "Let\n\n\\[\nf(x)=\\sqrt{x}\n\\]\n\nand\n\n\\[\ng(x)=6-x\n\\]\n\nWhat is the domain of \\(f\\big(g(x)\\big)\\)?",
+   "choices": [
+    "\\(x\\ge6\\)",
+    "\\(x\\le6\\)",
+    "\\(x\\ge0\\)",
+    "all real numbers"
+   ],
+   "answer": "B",
+   "solution_title": "The output of g must be in the domain of f",
+   "solution": "\\[\n\\begin{aligned}\nf\\big(g(x)\\big) &= \\sqrt{6-x}\n\\end{aligned}\n\\]\n\nThe square root needs\n\n\\[\n\\begin{aligned}\n6-x &\\ge 0\n\\end{aligned}\n\\]\n\nAdd \\(x\\) to both sides:\n\n\\[\n\\begin{aligned}\n6 &\\ge x\n\\end{aligned}\n\\]\n\nSo the domain is\n\n\\[\n\\boxed{x\\le6}\n\\]\n\n- Not \\(x\\ge6\\): at \\(x=10\\), \\(\\sqrt{6-10}=\\sqrt{-4}\\) is not a real number.\n- Not \\(x\\ge0\\): that is the domain of \\(f\\) alone. The input of \\(f\\) is \\(6-x\\), not \\(x\\).",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "In a composition the output of the inside function is the input of the outside function, so the order matters.",
+ "send_to": "John"
+}
