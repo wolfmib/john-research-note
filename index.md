@@ -170,6 +170,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [AP Calculus BC Roadmap](topics/animations/ap-roadmap-calculus-bc/content.md) | What are the ten units of AP Calculus BC and how do they extend AB? | Concept note |
 | [AP Statistics Roadmap](topics/animations/ap-roadmap-statistics/content.md) | What are the five units of AP Statistics and what does each one look like? | Concept note |
 | [UK Thunderball — Two Drums and What a £1 Line Is Worth](topics/animations/uk-thunderball-two-drums/content.md) | Why do the two Thunderball drums multiply to 8,060,598 lines, and what is the expected value of a £1 line? | Concept note |
+| [AP Precalculus 2.6: Residuals, Under or Over?](topics/animations/ap-precalculus-2-6-residuals-under-or-over/content.md) | How does a residual show whether a model underestimates or overestimates, and what does a U-shape in the residuals say about a straight line? | Concept note |
 
 ## Field Notes
 

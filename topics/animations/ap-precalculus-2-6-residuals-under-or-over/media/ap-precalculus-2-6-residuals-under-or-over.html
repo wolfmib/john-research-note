@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Residuals: under or over?</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<style>
+    :root { --ink: #ECECEC; --dim: #9AA0A6; --line: #3a4150; --exp: #FC6255; --imp: #58C4DD; --exact: #FFFFFF; --hl: #FFFF00; --ok: #83C167; }
+    html, body { margin: 0; padding: 0; background: #07090d; overflow: hidden; height: 100%;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; transform-origin: 0 0; overflow: hidden; color: var(--ink);
+        background: radial-gradient(ellipse at 50% 45%, #1c2230 0%, #11151d 55%, #07090d 100%); }
+    #series { position: absolute; left: 48px; top: 16px; font-size: 14px; color: var(--dim); letter-spacing: .3px; }
+    .scene { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; opacity: 0; }
+    .grp { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; }
+    h2 { position: absolute; left: 48px; top: 40px; font-size: 30px; margin: 0; font-weight: 600; }
+    .subtitle { position: absolute; left: 48px; top: 82px; font-size: 19px; color: var(--dim); }
+    [data-t] { opacity: 0; }
+    .red { color: var(--exp); } .blue { color: var(--imp); } .dim { color: var(--dim); } .ok { color: var(--ok); } .hl { color: var(--hl); }
+    .lab { position: absolute; left: 48px; top: 112px; font-size: 30px; font-weight: bold; }
+    #labs { position: absolute; left: 270px; top: 124px; font-size: 17px; color: var(--dim); }
+    /* chips: the current data point */
+    .chip { position: absolute; top: 158px; height: 64px; border: 2px solid var(--dim); border-radius: 10px; box-sizing: border-box; background: rgba(28,34,48,.6); }
+    .chip .cl { position: absolute; left: 10px; top: 4px; font-size: 14px; color: var(--dim); }
+    .chip .cv { position: absolute; left: 0; top: 22px; width: 100%; text-align: center; font-size: 28px; opacity: 0; }
+    /* residuals so far */
+    .hs { position: absolute; top: 240px; width: 98px; height: 34px; border: 1px solid var(--line); border-radius: 6px; box-sizing: border-box;
+        font-size: 14px; color: var(--dim); text-align: center; line-height: 32px; opacity: 0; white-space: nowrap; }
+    /* machine */
+    #machine { position: absolute; left: 48px; top: 296px; width: 560px; height: 184px; border: 2px solid var(--exp); border-radius: 10px; box-sizing: border-box; font-size: 26px; }
+    #machine .ml { position: absolute; left: 0; width: 100%; height: 46px; }
+    #machine .ml.p { top: 22px; } #machine .ml.r { top: 92px; }
+    #machine .mc { position: absolute; left: 0; width: 100%; text-align: center; top: 6px; opacity: 0; white-space: nowrap; }
+    #machine .enclosing { border: 1.5px dashed var(--dim); border-radius: 6px; padding: 1px 7px; margin: 0 2px; }
+    #machine .filled .enclosing { border: 1.5px solid var(--hl); }
+    #machine .const { position: absolute; left: 0; width: 100%; text-align: center; top: 152px; font-size: 16px; color: var(--exp); }
+    .rc { position: absolute; left: 0; top: 0; width: 170px; height: 40px; border: 2px solid var(--ok); border-radius: 8px; box-sizing: border-box; background: rgba(28,34,48,.85);
+        font-size: 22px; text-align: center; line-height: 36px; opacity: 0; white-space: nowrap; color: var(--ok); }
+    .fly { position: absolute; left: 0; top: 0; opacity: 0; white-space: nowrap; font-size: 26px; pointer-events: none;
+        padding: 1px 8px; border: 1.5px solid var(--dim); border-radius: 6px; background: rgba(28,34,48,.9); box-sizing: border-box; }
+    .fly.g { border-color: var(--ok); color: var(--ok); }
+    .glow { position: absolute; border-radius: 10px; box-shadow: 0 0 0 2px var(--hl), 0 0 14px rgba(255,255,0,.45); opacity: 0; pointer-events: none; }
+    /* verdict + key card */
+    .verdict { position: absolute; left: 48px; top: 494px; width: 560px; height: 88px; border: 2px solid var(--hl); border-radius: 10px; box-sizing: border-box;
+        background: rgba(28,34,48,.6); opacity: 0; }
+    .verdict .v1 { position: absolute; left: 0; top: 10px; width: 100%; text-align: center; font-size: 24px; color: var(--hl); }
+    .verdict .v2 { position: absolute; left: 0; top: 52px; width: 100%; text-align: center; font-size: 20px; }
+    #key { position: absolute; left: 48px; top: 598px; width: 560px; height: 92px; border: 1.5px solid var(--line); border-radius: 10px; box-sizing: border-box; }
+    #key div { position: absolute; left: 0; width: 100%; text-align: center; font-size: 23px; }
+    /* scene 3 captions */
+    .cap { position: absolute; left: 48px; width: 560px; border: 2px solid var(--hl); border-radius: 10px; box-sizing: border-box; padding: 10px 18px;
+        background: rgba(28,34,48,.6); opacity: 0; }
+    .cap .ct { font-size: 24px; font-weight: bold; color: var(--hl); margin-bottom: 6px; }
+    .cap .cl2 { font-size: 20px; line-height: 30px; }
+    /* scene 4 table */
+    #qtab { position: absolute; left: 48px; top: 196px; border-collapse: collapse; font-size: 22px; }
+    #qtab td, #qtab th { height: 44px; text-align: center; border-bottom: 1px solid var(--line); padding: 0 10px; }
+    #qtab th { font-size: 18px; color: var(--dim); font-weight: normal; }
+    #qtab td.c { opacity: 0; }
+    .qcap { position: absolute; left: 48px; top: 538px; width: 560px; font-size: 20px; line-height: 32px; opacity: 0; }
+    /* scene 5 */
+    .dcap { position: absolute; top: 552px; width: 540px; font-size: 20px; line-height: 30px; text-align: center; opacity: 0; }
+    #close { position: absolute; left: 0; top: 640px; width: 1280px; text-align: center; font-size: 26px; opacity: 0; }
+    .katex-display { margin: 0; }
+    .right { position: absolute; left: 800px; top: 112px; width: 432px; height: 512px; }
+    /* svg (dark) */
+    .axis { stroke: #555c66; stroke-width: 2; } .grid { stroke: #2a303b; stroke-width: 1; } .tick { stroke: #555c66; stroke-width: 1.5; }
+    .slab { fill: var(--dim); font-size: 14px; } .ptitle { fill: var(--dim); font-size: 14px; }
+    .zero { stroke: #6b7280; stroke-width: 1.5; stroke-dasharray: 6 5; }
+</style>
+</head>
+<body>
+<div id="stage">
+    <div id="series">AP Precalculus &middot; 2.6 Competing function model validation &middot; Residuals: under or over?</div>
+    <div class="scene" data-start="0" data-end="135" data-hold="1">
+        <h2 data-t="0.4">Residuals: under or over?</h2>
+        <div class="subtitle" data-t="0.4">App users (thousands), $x$ months after launch</div>
+
+        <!-- right panel: plot 1 (data + models) and plot 2 (residuals) -->
+        <div class="grp" id="gR"><div class="right" id="pb"></div></div>
+
+        <!-- scene 2: six points through the machine -->
+        <div class="grp" id="gA">
+            <div class="lab red" id="labn" data-t="7.0" data-nt="1">point 1 of 6</div>
+            <div id="labs" data-t="7.0" data-nt="1">the data point being checked</div>
+            <div class="chip" id="chip-x" data-t="7.2" data-nt="1" style="left: 48px; width: 170px;"><div class="cl">$x$ (months)</div>
+                <div class="cv" id="c-x0"></div><div class="cv" id="c-x1"></div><div class="cv" id="c-x2"></div>
+                <div class="cv" id="c-x3"></div><div class="cv" id="c-x4"></div><div class="cv" id="c-x5"></div></div>
+            <div class="chip" id="chip-y" data-t="7.4" data-nt="1" style="left: 238px; width: 230px;"><div class="cl">actual $y$ (thousands)</div>
+                <div class="cv" id="c-y0"></div><div class="cv" id="c-y1"></div><div class="cv" id="c-y2"></div>
+                <div class="cv" id="c-y3"></div><div class="cv" id="c-y4"></div><div class="cv" id="c-y5"></div></div>
+            <div id="machine" data-t="8.0">
+                <div class="ml p" id="mlp"></div>
+                <div class="ml r" id="mlr"></div>
+                <div class="const">Model P (linear): $\hat y = 1.36 + 6.39x$</div>
+            </div>
+            <div id="rcs"></div>
+            <div id="verdicts"></div>
+        </div>
+
+        <!-- residuals so far + key card (scenes 2 and 3) -->
+        <div class="grp" id="gH">
+            <div id="hslots"></div>
+            <div id="key"><div style="top: 12px;">$\text{residual} = \text{actual} - \text{predicted}$</div><div style="top: 50px;">$r = y - \hat y$</div></div>
+        </div>
+
+        <!-- scene 3: what the sign says -->
+        <div class="grp" id="gB">
+            <div class="lab hl" id="h3">What the sign of a residual says</div>
+            <div class="cap" id="capU" style="top: 296px;"><div class="ct">The model underestimates</div>
+                <div class="cl2">$x = 0$ and $x = 5$: the actual value is above the line.</div>
+                <div class="cl2">$r > 0$: the model predicted too little.</div></div>
+            <div class="cap" id="capO" style="top: 432px;"><div class="ct">The model overestimates</div>
+                <div class="cl2">$x = 1, 2, 3, 4$: the actual value is below the line.</div>
+                <div class="cl2">$r < 0$: the model predicted too much.</div></div>
+            <div class="cap" id="capS" style="top: 568px; border-color: var(--line);">
+                <div class="cl2">The residuals go $+,\ -,\ -,\ -,\ -,\ +$: a U-shape.</div>
+                <div class="cl2">A pattern means a line is the wrong model type.</div></div>
+        </div>
+
+        <!-- scene 4: model Q -->
+        <div class="grp" id="gC">
+            <div class="lab blue">Model Q: $\hat y = 5(1.5)^x$</div>
+            <div id="labs2" style="position: absolute; left: 48px; top: 156px; font-size: 18px; color: var(--dim);">Same data, same residual $r = y - \hat y$</div>
+            <table id="qtab"></table>
+            <div class="qcap" id="qcap"><div>Every residual is between $-0.2$ and $0.2$.</div><div>The signs switch above and below $0$ with no pattern.</div></div>
+        </div>
+
+        <!-- scene 5: compare -->
+        <div class="grp" id="gD">
+            <div id="cmp" style="position: absolute; left: 48px; top: 124px; width: 1184px; height: 420px;"></div>
+            <div class="dcap" id="dP" style="left: 48px;"><div class="red">A U-shape:</div><div>a straight line is the wrong model type.</div></div>
+            <div class="dcap" id="dQ" style="left: 692px;"><div class="blue">Small, with no pattern:</div><div>the exponential model fits.</div></div>
+            <div id="close">A good model leaves small residuals with no pattern.</div>
+        </div>
+
+        <div id="flyers"></div>
+        <div id="glows"></div>
+    </div>
+</div>
+
+<script>
+    // ---- data and the two models (every number on screen is computed here) -------------------
+    const XS = [0, 1, 2, 3, 4, 5], YS = [5.1, 7.4, 11.4, 16.7, 25.5, 37.9];
+    const P = x => 1.36 + 6.39 * x, Q = x => 5 * Math.pow(1.5, x);
+    const pP = XS.map(P), rP = XS.map((x, i) => YS[i] - pP[i]);
+    const pQ = XS.map(Q), rQ = XS.map((x, i) => YS[i] - pQ[i]);
+    const f2 = v => v.toFixed(2), sg = v => (v > 0 ? '+' : '') + f2(v), um = s => s.replace('-', '−');
+    console.assert(pP.map(f2).join() === '1.36,7.75,14.14,20.53,26.92,33.31', 'P predictions drift');
+    console.assert(rP.map(f2).join() === '3.74,-0.35,-2.74,-3.83,-1.42,4.59', 'P residuals drift');
+    console.assert(pQ.map(f2).join() === '5.00,7.50,11.25,16.88,25.31,37.97', 'Q predictions drift');
+    console.assert(rQ.map(f2).join() === '0.10,-0.10,0.15,-0.18,0.19,-0.07', 'Q residuals drift');
+    const UNDER = [0, 5], OVER = [1, 2, 3, 4];
+    console.assert(UNDER.every(i => rP[i] > 0) && OVER.every(i => rP[i] < 0), 'under/over sets drift');
+
+    const KOPT = { trust: true, strict: false, throwOnError: false };
+    const tex = (s, el) => { katex.render(s, el, KOPT); return el; };
+    const $ = id => document.getElementById(id);
+
+    // ---- page content built from the numbers -------------------------------------------------
+    XS.forEach((x, i) => { tex(`${x}`, $(`c-x${i}`)); tex(`${YS[i]}`, $(`c-y${i}`)); });
+    const sl = (line, beat, g, s) => `\\htmlId{S-${line}-${beat}-${g}}{${s}}`;
+    let mlp = `<div class="mc" id="mp-s">$\\hat y = 1.36 + 6.39\\cdot${sl('p', 's', 'a', 'x')}$</div>`;
+    let mlr = `<div class="mc" id="mr-s">$r = ${sl('r', 's', 'a', 'y')} - ${sl('r', 's', 'b', '\\hat y')}$</div>`;
+    XS.forEach((x, i) => {
+        mlp += `<div class="mc filled" id="mp-${i}">$\\hat y = 1.36 + 6.39\\cdot${sl('p', i, 'a', x)}$</div>`;
+        mlr += `<div class="mc filled" id="mr-${i}">$r = ${sl('r', i, 'a', YS[i])} - ${sl('r', i, 'b', f2(pP[i]))}$</div>`;
+    });
+    $('mlp').innerHTML = mlp; $('mlr').innerHTML = mlr;
+    let rcs = '', ver = '', hs = '';
+    XS.forEach((x, i) => {
+        rcs += `<div class="rc" id="rcp${i}">$\\hat y = ${f2(pP[i])}$</div><div class="rc" id="rcr${i}">$r = ${sg(rP[i])}$</div>`;
+        const up = rP[i] > 0;
+        ver += `<div class="verdict" id="ver${i}"><div class="v1">$r = ${sg(rP[i])} ${up ? '>' : '<'} 0$</div>` +
+               `<div class="v2">Actual ${up ? 'above' : 'below'} the line: the model <b>${up ? 'underestimates' : 'overestimates'}</b>.</div></div>`;
+        hs += `<div class="hs" id="hs${i}" style="left: ${48 + 104 * i}px;">x ${x} &middot; r ${um(sg(rP[i]))}</div>`;
+    });
+    $('rcs').innerHTML = rcs; $('verdicts').innerHTML = ver; $('hslots').innerHTML = hs;
+    let tab = '<tr><th>$x$</th><th>$y$</th><th>$\\hat y = 5(1.5)^x$</th><th>$r = y - \\hat y$</th></tr>';
+    XS.forEach((x, i) => tab += `<tr><td>$${x}$</td><td>$${YS[i]}$</td><td class="c blue" id="qh${i}">$${f2(pQ[i])}$</td><td class="c blue" id="qr${i}">$${sg(rQ[i])}$</td></tr>`);
+    $('qtab').innerHTML = tab;
+
+    // ---- right panel: plot 1 (data + models), plot 2 (residuals, +-5) --------------------------
+    const X = x => 76 + 64 * x, Y1 = v => 250 - 5.5 * v, Y2 = r => 392 - 14 * r;
+    const RED = '#FC6255', BLUE = '#58C4DD', HL = '#FFFF00', INK = '#ECECEC';
+    function panel() {
+        let s = `<svg viewBox="0 0 432 512" style="width:100%;height:100%;overflow:visible;">`;
+        s += `<g id="ax1"><text class="ptitle" x="56" y="12">plot 1 · data and model</text>`;
+        for (let v = 0; v <= 40; v += 10) s += `<line class="grid" x1="56" x2="416" y1="${Y1(v)}" y2="${Y1(v)}"/><text class="slab" x="48" y="${Y1(v) + 5}" text-anchor="end">${v}</text>`;
+        s += `<line class="axis" x1="56" y1="22" x2="56" y2="250"/><line class="axis" x1="56" y1="250" x2="416" y2="250"/>`;
+        XS.forEach(x => s += `<text class="slab" x="${X(x)}" y="270" text-anchor="middle">${x}</text>`);
+        s += `<text class="slab" x="14" y="136" text-anchor="middle" transform="rotate(-90 14 136)">users (thousands)</text></g>`;
+        s += `<g id="ax2" style="opacity:0"><text class="ptitle" x="56" y="306">plot 2 · residual r = y − ŷ</text>`;
+        s += `<line class="axis" x1="56" y1="318" x2="56" y2="466"/><line class="zero" x1="56" x2="416" y1="${Y2(0)}" y2="${Y2(0)}"/>`;
+        for (const v of [5, -5]) s += `<line class="tick" x1="50" x2="62" y1="${Y2(v)}" y2="${Y2(v)}"/><text class="slab" x="46" y="${Y2(v) + 5}" text-anchor="end">${v > 0 ? 5 : '−5'}</text>`;
+        s += `<text class="slab" x="46" y="${Y2(0) + 5}" text-anchor="end">0</text>`;
+        XS.forEach(x => s += `<text class="slab" x="${X(x)}" y="484" text-anchor="middle">${x}</text>`);
+        s += `<text class="slab" x="236" y="504" text-anchor="middle">x (months)</text></g>`;
+        s += `<line id="lineP" x1="${X(0)}" y1="${Y1(P(0))}" x2="${X(0)}" y2="${Y1(P(0))}" stroke="${RED}" stroke-width="2.5" stroke-dasharray="9 7"/>`;
+        s += `<polyline id="curveQ" points="" fill="none" stroke="${BLUE}" stroke-width="2.5" stroke-dasharray="9 7"/>`;
+        s += `<g id="legP" style="opacity:0"><line x1="84" x2="114" y1="38" y2="38" stroke="${RED}" stroke-width="2.5" stroke-dasharray="9 7"/>` +
+             `<text x="122" y="43" fill="${RED}" font-size="15" font-weight="600">P: ŷ = 1.36 + 6.39x</text></g>`;
+        s += `<g id="legQ" style="opacity:0"><line x1="84" x2="114" y1="62" y2="62" stroke="${BLUE}" stroke-width="2.5" stroke-dasharray="9 7"/>` +
+             `<text x="122" y="67" fill="${BLUE}" font-size="15" font-weight="600">Q: ŷ = 5(1.5)<tspan dy="-6" font-size="11">x</tspan></text></g>`;
+        s += `<path id="ushape" fill="none" stroke="${HL}" stroke-width="2.5" opacity="0"/>`;
+        XS.forEach((x, i) => {
+            s += `<line id="st${i}" x1="${X(x)}" x2="${X(x)}" y1="${Y1(YS[i])}" y2="${Y1(YS[i])}" stroke="${HL}" stroke-width="3" opacity="0"/>`;
+            s += `<circle id="pm${i}" cx="${X(x)}" cy="${Y1(pP[i])}" r="5" fill="none" stroke="${RED}" stroke-width="2.5" opacity="0"/>`;
+            s += `<circle id="d${i}" cx="${X(x)}" cy="${Y1(YS[i])}" r="6.5" fill="${INK}" opacity="0"/>`;
+            s += `<circle id="ring${i}" cx="${X(x)}" cy="${Y1(YS[i])}" r="13" fill="none" stroke="${HL}" stroke-width="2.5" opacity="0"/>`;
+            s += `<line id="s2${i}" x1="${X(x)}" x2="${X(x)}" y1="${Y2(0)}" y2="${Y2(rP[i])}" stroke="${RED}" stroke-width="2.5" opacity="0"/>`;
+            s += `<circle id="r2${i}" cx="${X(x)}" cy="${Y2(rP[i])}" r="6.5" fill="${RED}" opacity="0"/>`;
+            s += `<circle id="rg2${i}" cx="${X(x)}" cy="${Y2(rP[i])}" r="13" fill="none" stroke="${HL}" stroke-width="2.5" opacity="0"/>`;
+            s += `<circle id="dr${i}" cx="${X(x)}" cy="${Y1(YS[i])}" r="6.5" fill="${HL}" opacity="0"/>`;
+            s += `<line id="sq${i}" x1="${X(x) + 7}" x2="${X(x) + 7}" y1="${Y2(0)}" y2="${Y2(rQ[i])}" stroke="${BLUE}" stroke-width="2.5" opacity="0"/>`;
+            s += `<circle id="q2${i}" cx="${X(x) + 7}" cy="${Y2(rQ[i])}" r="6.5" fill="${BLUE}" opacity="0"/>`;
+            s += `<circle id="dq${i}" cx="${X(x) + 7}" cy="${Y1(YS[i])}" r="6.5" fill="${BLUE}" opacity="0"/>`;
+        });
+        return s + `</svg>`;
+    }
+    $('pb').innerHTML = panel();
+    // U-shape through the six P residual dots (Catmull-Rom -> cubic Bezier)
+    (() => { const pts = XS.map((x, i) => [X(x), Y2(rP[i])]); let d = `M${pts[0][0]},${pts[0][1]}`;
+        for (let i = 0; i < pts.length - 1; i++) { const p0 = pts[Math.max(0, i - 1)], p1 = pts[i], p2 = pts[i + 1], p3 = pts[Math.min(pts.length - 1, i + 2)];
+            d += ` C${p1[0] + (p2[0] - p0[0]) / 6},${p1[1] + (p2[1] - p0[1]) / 6} ${p2[0] - (p3[0] - p1[0]) / 6},${p2[1] - (p3[1] - p1[1]) / 6} ${p2[0]},${p2[1]}`; }
+        $('ushape').setAttribute('d', d); })();
+    const ULEN = $('ushape').getTotalLength(); $('ushape').setAttribute('stroke-dasharray', ULEN);
+
+    // ---- scene 5: both residual plots on one scale ---------------------------------------------
+    (() => { const W = 540, Xc = (o, x) => o + 92 + 80 * x, Yc = r => 200 - 26 * r;
+        let s = `<svg viewBox="0 0 1184 420" style="width:100%;height:100%;overflow:visible;">`;
+        [[0, 'Residuals of P (line)', RED, rP, 0], [644, 'Residuals of Q (curve)', BLUE, rQ, 0]].forEach(([o, title, col, rr]) => {
+            s += `<text x="${o + W / 2}" y="28" fill="${col}" font-size="22" font-weight="600" text-anchor="middle">${title}</text>`;
+            s += `<line class="axis" x1="${o + 62}" y1="56" x2="${o + 62}" y2="344"/><line class="zero" x1="${o + 62}" x2="${o + W}" y1="${Yc(0)}" y2="${Yc(0)}"/>`;
+            for (const v of [5, -5]) s += `<line class="tick" x1="${o + 56}" x2="${o + 68}" y1="${Yc(v)}" y2="${Yc(v)}"/><text class="slab" x="${o + 50}" y="${Yc(v) + 5}" text-anchor="end">${v > 0 ? 5 : '−5'}</text>`;
+            s += `<text class="slab" x="${o + 50}" y="${Yc(0) + 5}" text-anchor="end">0</text>`;
+            s += `<text class="slab" x="${o + 20}" y="200" text-anchor="middle" transform="rotate(-90 ${o + 20} 200)">residual</text>`;
+            XS.forEach((x, i) => { s += `<text class="slab" x="${Xc(o, x)}" y="372" text-anchor="middle">${x}</text>`;
+                s += `<line x1="${Xc(o, x)}" x2="${Xc(o, x)}" y1="${Yc(0)}" y2="${Yc(rr[i])}" stroke="${col}" stroke-width="3" opacity=".6"/>`;
+                s += `<circle cx="${Xc(o, x)}" cy="${Yc(rr[i])}" r="8" fill="${col}"/>`; });
+            s += `<text class="slab" x="${o + 92 + 200}" y="400" text-anchor="middle">x (months)</text>`;
+        });
+        $('cmp').innerHTML = s + '</svg>'; })();
+
+    renderMathInElement(document.body, { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }], ...KOPT });
+
+    // ---- flyers: copies of x, y and the predicted value ----------------------------------------
+    const FL = {}, flyBox = $('flyers');
+    function mkFly(id, s, cls) { const d = document.createElement('div'); d.className = 'fly ' + (cls || ''); katex.render(s, d, KOPT); flyBox.appendChild(d); FL[id] = d; }
+    XS.forEach((x, i) => { mkFly(`x${i}`, `${x}`); mkFly(`y${i}`, `${YS[i]}`); mkFly(`p${i}`, f2(pP[i]), 'g'); });
+
+    // ---- measurement (stage px, before any renderAt) -------------------------------------------
+    const stage = $('stage'), M = {}, GL = {};
+    function box(id) { const s = stage.getBoundingClientRect(), sc = s.width / 1280, r = $(id).getBoundingClientRect();
+        return { x: (r.left - s.left) / sc, y: (r.top - s.top) / sc, w: r.width / sc, h: r.height / sc }; }
+    const mid = b => ({ x: b.x + b.w / 2, y: b.y + b.h / 2 });
+    function measure() {
+        const ids = ['chip-x', 'chip-y', 'S-p-s-a', 'S-r-s-a', 'S-r-s-b'];
+        XS.forEach((x, i) => ids.push(`S-p-${i}-a`, `S-r-${i}-a`, `S-r-${i}-b`, `hs${i}`));
+        ids.forEach(id => M[id] = box(id));
+        const gb = $('glows');
+        ['chip-x', 'chip-y', 'S-p-s-a', 'S-r-s-a', 'S-r-s-b'].forEach(id => {
+            const b = M[id], d = document.createElement('div'); d.className = 'glow'; const m = id.startsWith('chip') ? 2 : 3;
+            d.style.left = (b.x - m) + 'px'; d.style.top = (b.y - m) + 'px'; d.style.width = (b.w + 2 * m) + 'px'; d.style.height = (b.h + 2 * m) + 'px';
+            if (!id.startsWith('chip')) d.style.borderRadius = '6px';
+            gb.appendChild(d); GL[id] = d;
+        });
+    }
+    function equalise(prefix) {                      // slot rule: every slot of a group gets its widest width, so operators never move
+        const sc = stage.getBoundingClientRect().width / 1280, groups = {};
+        document.querySelectorAll(`.enclosing[id^="${prefix}"]`).forEach(el => { const g = el.id.split('-').pop(); (groups[g] ||= []).push(el); });
+        for (const g in groups) { const w = Math.max(...groups[g].map(el => el.getBoundingClientRect().width / sc));
+            groups[g].forEach(el => { el.style.display = 'inline-block'; el.style.textAlign = 'center'; el.style.boxSizing = 'border-box'; el.style.width = Math.ceil(w) + 'px'; }); }
+    }
+    const RC = { p: { x: 704, y: 341 }, r: { x: 704, y: 411 } };   // result chips grow out right of the machine
+
+    // ---- deterministic timeline -----------------------------------------------------------------
+    const FADE = 0.6, TOTAL = 135, STEP = 12.5, T0 = 9.5;
+    const clamp01 = x => Math.max(0, Math.min(1, x)), ease = p => p * p * (3 - 2 * p);
+    const seg = (t, a, d) => ease(clamp01((t - a) / d));
+    const scenes = [...document.querySelectorAll('.scene')], timed = [...document.querySelectorAll('[data-t]')];
+    function place(el, x, y, s = 1) { el.style.transform = `translate(${x - el.offsetWidth / 2}px, ${y - el.offsetHeight / 2}px) scale(${s})`; }
+    function fly(el, from, to, p, bend = 0, s0 = 1, s1 = 1) {
+        if (p <= 0 || p >= 1) { el.style.opacity = 0; return; }
+        const x = from.x + (to.x - from.x) * p, y = from.y + (to.y - from.y) * p - bend * 4 * p * (1 - p);
+        el.style.opacity = p < 0.9 ? 1 : (1 - p) / 0.1;
+        place(el, x, y, s0 + (s1 - s0) * p);
+    }
+    const O = (id, v) => $(id).style.opacity = v, Ov = id => +$(id).style.opacity;
+    const A = (id, k, v) => $(id).setAttribute(k, v);
+    const glowMax = (id, v) => GL[id].style.opacity = Math.max(+GL[id].style.opacity, v);
+
+    // one data point through the machine: x -> predicted value -> residual -> verdict -> plot 2
+    function step(i, t0, t, dimP) {
+        const cx = mid(M['chip-x']), cy = mid(M['chip-y']);
+        if (i > 0) {                                                       // chips switch to this point
+            const sw = seg(t, t0, .55);
+            ['x', 'y'].forEach(c => { O(`c-${c}${i - 1}`, Ov(`c-${c}${i - 1}`) - sw); O(`c-${c}${i}`, sw); });
+            if (sw > .5) $('labn').textContent = `point ${i + 1} of 6`;
+        }
+        A(`ring${i}`, 'opacity', seg(t, t0, .6) - seg(t, t0 + 12, .5));
+        // line 1: x flies into the slot, the machine pulses, the predicted value grows out
+        glowMax('chip-x', seg(t, t0 + .3, .5) - seg(t, t0 + 2.2, .5));
+        fly(FL[`x${i}`], cx, mid(M[`S-p-${i}-a`]), seg(t, t0 + .8, 1.35), -60, 1.05, 1);
+        const fp = seg(t, t0 + 2.15, .55) - seg(t, t0 + 11.2, .8);
+        O(`mp-${i}`, fp); O('mp-s', Ov('mp-s') - fp);
+        glowMax('S-p-s-a', seg(t, t0 + 2.15, .55) - seg(t, t0 + 3.55, .5));
+        let pr = t - t0; if (pr >= 2.9 && pr <= 3.8) { const a = .5 + .5 * Math.sin(2 * Math.PI * (pr - 2.9) / .9); $('machine').style.boxShadow = `0 0 ${10 + 14 * a}px rgba(255,255,0,${.35 * a})`; }
+        const rp = $(`rcp${i}`), ep = seg(t, t0 + 3.6, .8) - seg(t, t0 + 11.2, .8);
+        rp.style.opacity = ep; place(rp, RC.p.x, RC.p.y, .5 + .5 * seg(t, t0 + 3.6, .8));
+        A(`pm${i}`, 'opacity', (seg(t, t0 + 4.2, .6) - seg(t, t0 + 12, .5)) * dimP);
+        // line 2: actual y and the predicted value fly into r = y - y_hat
+        glowMax('chip-y', seg(t, t0 + 4.3, .5) - seg(t, t0 + 6.2, .5));
+        fly(FL[`y${i}`], cy, mid(M[`S-r-${i}-a`]), seg(t, t0 + 4.6, 1.35), -60, 1.05, 1);
+        fly(FL[`p${i}`], RC.p, mid(M[`S-r-${i}-b`]), seg(t, t0 + 5.0, 1.35), 50, 1, 1);
+        const fr = seg(t, t0 + 6.35, .55) - seg(t, t0 + 11.2, .8);
+        O(`mr-${i}`, fr); O('mr-s', Ov('mr-s') - fr);
+        ['S-r-s-a', 'S-r-s-b'].forEach(id => glowMax(id, seg(t, t0 + 6.35, .55) - seg(t, t0 + 7.75, .5)));
+        if (pr >= 6.9 && pr <= 7.8) { const a = .5 + .5 * Math.sin(2 * Math.PI * (pr - 6.9) / .9); $('machine').style.boxShadow = `0 0 ${10 + 14 * a}px rgba(255,255,0,${.35 * a})`; }
+        // the residual: result chip, stick from the point to the line, verdict
+        const rr = $(`rcr${i}`), er = seg(t, t0 + 7.8, .8), fh = seg(t, t0 + 10.4, 1.1);
+        if (er <= 0) rr.style.opacity = 0;
+        else if (fh <= 0) { rr.style.opacity = er; place(rr, RC.r.x, RC.r.y, .5 + .5 * er); }
+        else fly(rr, RC.r, mid(M[`hs${i}`]), fh, 40, 1, .6);
+        O(`hs${i}`, seg(t, t0 + 11.4, .55));
+        const ps = seg(t, t0 + 8.4, .8), y0 = Y1(YS[i]);
+        A(`st${i}`, 'y2', y0 + (Y1(pP[i]) - y0) * ps); A(`st${i}`, 'opacity', ps > 0 ? .9 * dimP : 0);
+        A(`st${i}`, 'stroke', t < t0 + 12 ? HL : RED);
+        O(`ver${i}`, seg(t, t0 + 8.9, .55) - seg(t, t0 + 12, .5));
+        // the residual drops into plot 2
+        const pd = seg(t, t0 + 9.6, 1.1);
+        A(`dr${i}`, 'cy', y0 + (Y2(rP[i]) - y0) * pd); A(`dr${i}`, 'opacity', pd > 0 && pd < 1 ? 1 : 0);
+        const on2 = seg(t, t0 + 10.6, .5) * dimP;
+        A(`r2${i}`, 'opacity', on2); A(`s2${i}`, 'opacity', on2 * .7);
+    }
+
+    // scene 3: light up the points where the model underestimates, then where it overestimates
+    function signs(t) {
+        const wU = seg(t, 86, .5) - seg(t, 93, .5), wO = seg(t, 93.5, .5) - seg(t, 100, .5);
+        [[UNDER, wU], [OVER, wO]].forEach(([set, w]) => set.forEach(i => {
+            A(`ring${i}`, 'opacity', Math.max(+$(`ring${i}`).getAttribute('opacity'), w)); A(`rg2${i}`, 'opacity', w);
+            if (w > .3) A(`st${i}`, 'stroke', HL);
+            $(`hs${i}`).style.boxShadow = w > 0 ? `0 0 0 2px rgba(255,255,0,${w}), 0 0 12px rgba(255,255,0,${.4 * w})` : 'none';
+            $(`hs${i}`).style.color = w > .5 ? '#FFFF00' : '';
+        }));
+        O('h3', seg(t, 84.8, FADE));
+        O('capU', seg(t, 86, FADE) * (1 - .55 * seg(t, 93.5, FADE)));
+        O('capO', seg(t, 93.5, FADE) * (1 - .55 * seg(t, 100, FADE)));
+        O('capS', seg(t, 100, FADE));
+        const pu = seg(t, 100, 2.5);
+        A('ushape', 'stroke-dashoffset', ULEN * (1 - pu)); A('ushape', 'opacity', pu > 0 ? .9 * (1 - seg(t, 104.5, FADE)) : 0);
+    }
+
+    // scene 4: model Q, same residual, one table row at a time
+    function modelQ(t) {
+        const pc = seg(t, 105, 2);
+        const n = Math.round(100 * pc), pts = [];
+        for (let k = 0; k <= n; k++) { const x = 5 * k / 100; pts.push(`${X(x)},${Y1(Q(x))}`); }
+        A('curveQ', 'points', pc > 0 ? pts.join(' ') : '');
+        A('legQ', 'style', `opacity:${seg(t, 105, FADE)}`);
+        XS.forEach((x, i) => {
+            const R = 107.5 + 1.6 * i;
+            O(`qh${i}`, seg(t, R, .5)); O(`qr${i}`, seg(t, R + .5, .5));
+            const pd = seg(t, R + .5, .9), y0 = Y1(YS[i]);
+            A(`dq${i}`, 'cy', y0 + (Y2(rQ[i]) - y0) * pd); A(`dq${i}`, 'opacity', pd > 0 && pd < 1 ? 1 : 0);
+            const on = seg(t, R + 1.3, .4); A(`q2${i}`, 'opacity', on); A(`sq${i}`, 'opacity', on * .7);
+        });
+        O('qcap', seg(t, 117.5, FADE));
+    }
+
+    function renderAt(t) {
+        if (!M['chip-x']) return;
+        scenes.forEach(s => { const a = +s.dataset.start, b = +s.dataset.end;
+            const fin = clamp01((t - a) / FADE), fout = s.dataset.hold ? 1 : clamp01((b - t) / FADE);
+            s.style.opacity = (t < a || (!s.dataset.hold && t > b)) ? 0 : ease(Math.min(fin, fout)); });
+        timed.forEach(el => { const p = ease(clamp01((t - +el.dataset.t) / FADE)); el.style.opacity = p; if (!el.dataset.nt) el.style.transform = `translateY(${16 * (1 - p)}px)`; });
+        // groups
+        O('gA', 1 - seg(t, 84.5, FADE)); O('gH', 1 - seg(t, 104.5, FADE));
+        O('gB', seg(t, 84.6, FADE) - seg(t, 104.5, FADE)); O('gC', seg(t, 104.8, FADE) - seg(t, 122, FADE));
+        O('gR', 1 - seg(t, 122, FADE)); O('gD', seg(t, 122.6, FADE));
+        // plot 1 + plot 2 build-up
+        A('ax1', 'style', `opacity:${seg(t, .8, FADE)}`); A('ax2', 'style', `opacity:${seg(t, 6.6, FADE)}`);
+        XS.forEach((x, i) => A(`d${i}`, 'opacity', seg(t, 1.2 + .45 * i, .5)));
+        const dimP = 1 - .75 * seg(t, 104.5, FADE);
+        const pl = seg(t, 4.2, 2.0);
+        A('lineP', 'x2', X(5 * pl)); A('lineP', 'y2', Y1(P(5 * pl))); A('lineP', 'opacity', pl > 0 ? dimP : 0);
+        A('legP', 'style', `opacity:${seg(t, 4.2, FADE)}`);
+        // reset per-frame state
+        Object.values(GL).forEach(d => d.style.opacity = 0);
+        O('mp-s', 1); O('mr-s', 1); XS.forEach((x, i) => { O(`c-x${i}`, i ? 0 : 1); O(`c-y${i}`, i ? 0 : 1); });
+        $('machine').style.boxShadow = 'none'; $('labn').textContent = 'point 1 of 6';
+        // scene 2: six points, scene 3: signs, scene 4: model Q, scene 5 is static
+        XS.forEach((x, i) => step(i, T0 + STEP * i, t, dimP));
+        signs(t);
+        modelQ(t);
+        O('key', seg(t, 6.0, FADE) * (1 - seg(t, 99.4, FADE)));
+        O('dP', seg(t, 124, FADE)); O('dQ', seg(t, 126, FADE)); O('close', seg(t, 128.5, FADE));
+    }
+    window.renderAt = renderAt; window.TOTAL = TOTAL;
+
+    function fit() { const s = Math.min(innerWidth / 1280, innerHeight / 720);
+        stage.style.transform = `scale(${s})`; stage.style.left = (innerWidth - 1280 * s) / 2 + 'px'; stage.style.top = (innerHeight - 720 * s) / 2 + 'px'; }
+    addEventListener('resize', fit); fit();
+
+    void document.body.offsetHeight;
+    Promise.all(['26px KaTeX_Main', 'italic 26px KaTeX_Math', '26px KaTeX_Size1'].map(f => document.fonts.load(f))).then(() => document.fonts.ready).then(() => {
+        ['S-p-', 'S-r-'].forEach(equalise); measure(); renderAt(0); window.__ready = true;
+        if (location.hash === '#manual') return;
+        let t0 = performance.now();
+        const tick = now => { renderAt(Math.min(TOTAL, (now - t0) / 1000)); requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+        addEventListener('click', () => { t0 = performance.now(); });
+    });
+</script>
+</body>
+</html>
