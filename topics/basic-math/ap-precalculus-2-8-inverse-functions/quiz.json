@@ -1,0 +1,82 @@
+{
+ "slug": "ap-precalculus-2-8-inverse-functions",
+ "title": "AP Precalculus 2.8 — Inverse Functions",
+ "course": "AP Precalculus",
+ "unit": "2.8",
+ "question": "Inverse functions from a table and a formula, a restricted domain, a taxi fare backwards and a reflected point.",
+ "intro": "**Quick recap:**\n\n- Reverse the pair:\n\n\\[\nf(a)=b \\iff f^{-1}(b)=a\n\\]\n\n- To find \\(f^{-1}\\): write \\(y=f(x)\\), swap \\(x\\) and \\(y\\), solve for \\(y\\).\n- The domain of \\(f^{-1}\\) is the range of \\(f\\).\n- The graph of \\(f^{-1}\\) is the graph of \\(f\\) reflected over \\(y=x\\).\n- \\(f^{-1}(x)\\) is not \\(\\dfrac{1}{f(x)}\\).\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Table · Read the inverse",
+   "prompt": "The function \\(f\\) is invertible.\n\n\\[\n\\begin{array}{c|ccccc}\nx & 2 & 4 & 6 & 7 & 9\\\\\n\\hline\nf(x) & 5 & 7 & 10 & 13 & 20\n\\end{array}\n\\]\n\nFind \\(f^{-1}(7)\\).",
+   "choices": [
+    "\\(13\\)",
+    "\\(4\\)",
+    "\\(\\dfrac{1}{13}\\)",
+    "\\(\\dfrac{1}{7}\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Find 7 in the output row",
+   "solution": "\\[\n\\begin{aligned}\nf(4) &= 7\n\\end{aligned}\n\\]\n\nSo the inverse sends \\(7\\) back to \\(4\\):\n\n\\[\n\\begin{aligned}\nf^{-1}(7) &= \\boxed{4}\n\\end{aligned}\n\\]\n\n- Not \\(13\\): that is \\(f(7)\\). The inverse starts from an **output** of \\(f\\).\n- Not \\(\\dfrac{1}{13}\\) or \\(\\dfrac{1}{7}\\): the \\(-1\\) in \\(f^{-1}\\) means inverse function, not a reciprocal.",
+   "type": "mcq"
+  },
+  {
+   "title": "Formula · Find the inverse",
+   "prompt": "Let\n\n\\[\nf(x)=\\frac{x+4}{3}\n\\]\n\nWhich function is \\(f^{-1}(x)\\)?",
+   "choices": [
+    "\\(f^{-1}(x)=3x+4\\)",
+    "\\(f^{-1}(x)=\\dfrac{3}{x+4}\\)",
+    "\\(f^{-1}(x)=\\dfrac{x-4}{3}\\)",
+    "\\(f^{-1}(x)=3x-4\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Swap x and y, then solve for y",
+   "solution": "\\[\n\\begin{aligned}\ny &= \\frac{x+4}{3}\n\\end{aligned}\n\\]\n\nSwap \\(x\\) and \\(y\\):\n\n\\[\n\\begin{aligned}\nx &= \\frac{y+4}{3}\n\\end{aligned}\n\\]\n\nMultiply by \\(3\\):\n\n\\[\n\\begin{aligned}\n3x &= y+4\n\\end{aligned}\n\\]\n\nSubtract \\(4\\):\n\n\\[\n\\begin{aligned}\ny &= 3x-4\n\\end{aligned}\n\\]\n\nSo\n\n\\[\n\\boxed{f^{-1}(x)=3x-4}\n\\]\n\nCheck with \\(x=5\\):\n\n\\[\n\\begin{aligned}\nf(5) &= 3 \\\\\nf^{-1}(3) &= 3(3)-4 \\\\\n&= 5\n\\end{aligned}\n\\]\n\n- Not \\(3x+4\\): undo the steps in reverse order. \\(f\\) adds \\(4\\) then divides by \\(3\\), so \\(f^{-1}\\) multiplies by \\(3\\) then **subtracts** \\(4\\).\n- Not \\(\\dfrac{3}{x+4}\\): that is the reciprocal \\(\\dfrac{1}{f(x)}\\), not the inverse.",
+   "type": "mcq"
+  },
+  {
+   "title": "Restricted domain · Square root inverse",
+   "prompt": "Let\n\n\\[\nf(x)=x^2+3\n\\]\n\nfor \\(x\\ge0\\).\n\nWhich is \\(f^{-1}(x)\\)?",
+   "choices": [
+    "\\(f^{-1}(x)=\\sqrt{x-3}\\), for \\(x\\ge3\\)",
+    "\\(f^{-1}(x)=-\\sqrt{x-3}\\), for \\(x\\ge3\\)",
+    "\\(f^{-1}(x)=\\sqrt{x}-3\\), for \\(x\\ge0\\)",
+    "\\(f^{-1}(x)=\\sqrt{x+3}\\), for \\(x\\ge-3\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Swap, solve, keep the + root",
+   "solution": "For \\(x\\ge0\\) the outputs of \\(f\\) are \\(y\\ge3\\).\n\nSwap \\(x\\) and \\(y\\):\n\n\\[\n\\begin{aligned}\nx &= y^2+3\n\\end{aligned}\n\\]\n\nSubtract \\(3\\):\n\n\\[\n\\begin{aligned}\ny^2 &= x-3\n\\end{aligned}\n\\]\n\nThe outputs of \\(f^{-1}\\) must be \\(\\ge0\\), so take the \\(+\\) root:\n\n\\[\n\\begin{aligned}\ny &= \\sqrt{x-3}\n\\end{aligned}\n\\]\n\nThe domain of \\(f^{-1}\\) is the range of \\(f\\):\n\n\\[\n\\boxed{f^{-1}(x)=\\sqrt{x-3},\\ x\\ge3}\n\\]\n\nCheck with \\(x=2\\):\n\n\\[\n\\begin{aligned}\nf(2) &= 7 \\\\\nf^{-1}(7) &= \\sqrt{4} \\\\\n&= 2\n\\end{aligned}\n\\]\n\n- Not \\(-\\sqrt{x-3}\\): its outputs are negative, but \\(f\\) only used inputs \\(x\\ge0\\).\n- Not \\(\\sqrt{x}-3\\): subtract the \\(3\\) **before** the square root.",
+   "type": "mcq"
+  },
+  {
+   "title": "Taxi · Distance from the fare",
+   "prompt": "A taxi ride of \\(m\\) km costs\n\n\\[\nC(m)=3.5+1.2m\n\\]\n\neuros.\n\nA ride costs €15.50.\n\nUse the inverse function to find how far the taxi drove.",
+   "choices": [
+    "\\(22.1\\) km",
+    "\\(12.9\\) km",
+    "\\(10\\) km",
+    "\\(15.8\\) km"
+   ],
+   "answer": "C",
+   "solution_title": "The inverse turns a fare into kilometres",
+   "solution": "\\[\n\\begin{aligned}\nC &= 3.5+1.2m \\\\\nC-3.5 &= 1.2m \\\\\nm &= \\frac{C-3.5}{1.2}\n\\end{aligned}\n\\]\n\nPut in \\(C=15.50\\):\n\n\\[\n\\begin{aligned}\nm &= \\frac{15.5-3.5}{1.2} \\\\\n&= \\frac{12}{1.2} \\\\\n&= \\boxed{10\\text{ km}}\n\\end{aligned}\n\\]\n\n- Check: \\(3.5+1.2(10)=15.5\\)\n- Not \\(22.1\\): that is \\(C(15.5)\\), the fare for \\(15.5\\) km. The question runs backwards.\n- Not \\(12.9\\): \\(15.5\\div1.2\\) forgets to take off the €3.50 start fee first.",
+   "type": "mcq"
+  },
+  {
+   "title": "Graph · Point on the inverse",
+   "prompt": "The point \\((3,-1)\\) is on the graph of an invertible function \\(f\\).\n\nWhich point must be on the graph of \\(f^{-1}\\)?",
+   "choices": [
+    "\\((3,1)\\)",
+    "\\((-1,3)\\)",
+    "\\((-3,1)\\)",
+    "\\((1,-3)\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Swap the coordinates",
+   "solution": "\\[\n\\begin{aligned}\nf(3) &= -1\n\\end{aligned}\n\\]\n\nSo\n\n\\[\n\\begin{aligned}\nf^{-1}(-1) &= 3\n\\end{aligned}\n\\]\n\nThe point on \\(f^{-1}\\) is\n\n\\[\n\\boxed{(-1,\\ 3)}\n\\]\n\n- Swapping \\(x\\) and \\(y\\) reflects the point over the line \\(y=x\\).\n- Not \\((3,1)\\): that reflects over the \\(x\\)-axis.\n- Not \\((1,-3)\\): that changes both signs as well as swapping them.",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "An inverse function runs the function backwards: it swaps inputs and outputs, so its graph is the reflection over y = x.",
+ "send_to": "John"
+}
