@@ -1,0 +1,179 @@
+{
+ "slug": "math-material-residuals-linear-exponential-growth-and-decay",
+ "title": "Math Material — Residuals: Linear, Exponential Growth and Decay",
+ "course": "Math Material",
+ "unit": "AP Precalculus 2.6",
+ "question": "Three data sets of five points, each with its model: type the five residuals, check them, and read under or over from the sign.",
+ "intro": "**Residual:**\n\n\\[\nr=y-\\hat y\n\\]\n\n- \\(y\\) is the actual value, \\(\\hat y\\) is the value the model predicts.\n- \\(r>0\\): the model **underestimates**.\n- \\(r<0\\): the model **overestimates**.\n- Three models: linear, exponential growth, exponential decay. Each has five data points.\n\n**A calculator is allowed. Type each residual exactly (up to 2 decimal places), then press Check.**",
+ "link": [
+  "Quiz 2.6 ›",
+  "../ap-precalculus-2-6-competing-function-model-validation/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Model 1 · Linear: water in a tank",
+   "prompt": "A hose fills a tank. The water in the tank is measured every minute.\n\n- \\(x\\) = minutes, \\(y\\) = litres.\n- Model:\n\n\\[\n\\hat y=3+2x\n\\]\n\nFind each residual:\n\n\\[\nr=y-\\hat y\n\\]",
+   "figure": "res-1.svg",
+   "figure_alt": "The five data points with the dashed linear model ŷ = 3+2x",
+   "practice": {
+    "head": [
+     "\\(x\\)",
+     "actual \\(y\\)",
+     "\\(r=y-\\hat y\\)"
+    ],
+    "rows": [
+     [
+      0,
+      "3.4"
+     ],
+     [
+      1,
+      "4.8"
+     ],
+     [
+      2,
+      "7.3"
+     ],
+     [
+      3,
+      "8.6"
+     ],
+     [
+      4,
+      "11.2"
+     ]
+    ],
+    "answers": [
+     0.4,
+     -0.2,
+     0.3,
+     -0.4,
+     0.2
+    ],
+    "tolerance": 0.001,
+    "tags": [
+     "underestimate",
+     "overestimate",
+     "underestimate",
+     "overestimate",
+     "underestimate"
+    ]
+   },
+   "steps": [
+    "**Step 1 — predict.** Put each \\(x\\) into the model:\n\n\\[\n\\begin{aligned}\n\\hat y(0) &= 3+2(0) \\\\\n&= 3 \\\\\n\\hat y(1) &= 3+2(1) \\\\\n&= 5 \\\\\n\\hat y(2) &= 3+2(2) \\\\\n&= 7 \\\\\n\\hat y(3) &= 3+2(3) \\\\\n&= 9 \\\\\n\\hat y(4) &= 3+2(4) \\\\\n&= 11\n\\end{aligned}\n\\]",
+    "**Step 2 — subtract.** Actual minus predicted:\n\n\\[\n\\begin{aligned}\nr_1 &= 3.4-3 \\\\\n&= 0.4 \\\\\nr_2 &= 4.8-5 \\\\\n&= -0.2 \\\\\nr_3 &= 7.3-7 \\\\\n&= 0.3 \\\\\nr_4 &= 8.6-9 \\\\\n&= -0.4 \\\\\nr_5 &= 11.2-11 \\\\\n&= 0.2\n\\end{aligned}\n\\]",
+    "**Step 3 — read the signs.**\n\n- \\(r>0\\) at points 1, 3, 5: the data point lies above the dashed model, so the model **underestimates**.\n- \\(r<0\\) at points 2, 4: the data point lies below the dashed model, so the model **overestimates**.\n- The residuals are small and switch sign with no pattern, so this model fits the data."
+   ]
+  },
+  {
+   "title": "Model 2 · Exponential growth: bacteria in a dish",
+   "prompt": "Bacteria grow in a dish. They are counted every hour.\n\n- \\(x\\) = hours, \\(y\\) = thousands.\n- Model:\n\n\\[\n\\hat y=4(1.5)^{x}\n\\]\n\nFind each residual:\n\n\\[\nr=y-\\hat y\n\\]",
+   "figure": "res-2.svg",
+   "figure_alt": "The five data points with the dashed exponential growth model ŷ = 4(1.5)^x",
+   "practice": {
+    "head": [
+     "\\(x\\)",
+     "actual \\(y\\)",
+     "\\(r=y-\\hat y\\)"
+    ],
+    "rows": [
+     [
+      0,
+      "4.2"
+     ],
+     [
+      1,
+      "5.7"
+     ],
+     [
+      2,
+      "9.4"
+     ],
+     [
+      3,
+      "13.1"
+     ],
+     [
+      4,
+      "20.6"
+     ]
+    ],
+    "answers": [
+     0.2,
+     -0.3,
+     0.4,
+     -0.4,
+     0.35
+    ],
+    "tolerance": 0.001,
+    "tags": [
+     "underestimate",
+     "overestimate",
+     "underestimate",
+     "overestimate",
+     "underestimate"
+    ]
+   },
+   "steps": [
+    "**Step 1 — predict.** Put each \\(x\\) into the model:\n\n\\[\n\\begin{aligned}\n\\hat y(0) &= 4(1.5)^{0} \\\\\n&= 4 \\\\\n\\hat y(1) &= 4(1.5)^{1} \\\\\n&= 6 \\\\\n\\hat y(2) &= 4(1.5)^{2} \\\\\n&= 9 \\\\\n\\hat y(3) &= 4(1.5)^{3} \\\\\n&= 13.5 \\\\\n\\hat y(4) &= 4(1.5)^{4} \\\\\n&= 20.25\n\\end{aligned}\n\\]",
+    "**Step 2 — subtract.** Actual minus predicted:\n\n\\[\n\\begin{aligned}\nr_1 &= 4.2-4 \\\\\n&= 0.2 \\\\\nr_2 &= 5.7-6 \\\\\n&= -0.3 \\\\\nr_3 &= 9.4-9 \\\\\n&= 0.4 \\\\\nr_4 &= 13.1-13.5 \\\\\n&= -0.4 \\\\\nr_5 &= 20.6-20.25 \\\\\n&= 0.35\n\\end{aligned}\n\\]",
+    "**Step 3 — read the signs.**\n\n- \\(r>0\\) at points 1, 3, 5: the data point lies above the dashed model, so the model **underestimates**.\n- \\(r<0\\) at points 2, 4: the data point lies below the dashed model, so the model **overestimates**.\n- The residuals are small and switch sign with no pattern, so this model fits the data."
+   ]
+  },
+  {
+   "title": "Model 3 · Exponential decay: medicine in the blood",
+   "prompt": "A patient takes a medicine. The amount left in the blood is measured every hour.\n\n- \\(x\\) = hours, \\(y\\) = mg.\n- Model:\n\n\\[\n\\hat y=100(0.8)^{x}\n\\]\n\nFind each residual:\n\n\\[\nr=y-\\hat y\n\\]",
+   "figure": "res-3.svg",
+   "figure_alt": "The five data points with the dashed exponential decay model ŷ = 100(0.8)^x",
+   "practice": {
+    "head": [
+     "\\(x\\)",
+     "actual \\(y\\)",
+     "\\(r=y-\\hat y\\)"
+    ],
+    "rows": [
+     [
+      0,
+      "101.3"
+     ],
+     [
+      1,
+      "78.6"
+     ],
+     [
+      2,
+      "65.1"
+     ],
+     [
+      3,
+      "50.4"
+     ],
+     [
+      4,
+      "41.5"
+     ]
+    ],
+    "answers": [
+     1.3,
+     -1.4,
+     1.1,
+     -0.8,
+     0.54
+    ],
+    "tolerance": 0.001,
+    "tags": [
+     "underestimate",
+     "overestimate",
+     "underestimate",
+     "overestimate",
+     "underestimate"
+    ]
+   },
+   "steps": [
+    "**Step 1 — predict.** Put each \\(x\\) into the model:\n\n\\[\n\\begin{aligned}\n\\hat y(0) &= 100(0.8)^{0} \\\\\n&= 100 \\\\\n\\hat y(1) &= 100(0.8)^{1} \\\\\n&= 80 \\\\\n\\hat y(2) &= 100(0.8)^{2} \\\\\n&= 64 \\\\\n\\hat y(3) &= 100(0.8)^{3} \\\\\n&= 51.2 \\\\\n\\hat y(4) &= 100(0.8)^{4} \\\\\n&= 40.96\n\\end{aligned}\n\\]",
+    "**Step 2 — subtract.** Actual minus predicted:\n\n\\[\n\\begin{aligned}\nr_1 &= 101.3-100 \\\\\n&= 1.3 \\\\\nr_2 &= 78.6-80 \\\\\n&= -1.4 \\\\\nr_3 &= 65.1-64 \\\\\n&= 1.1 \\\\\nr_4 &= 50.4-51.2 \\\\\n&= -0.8 \\\\\nr_5 &= 41.5-40.96 \\\\\n&= 0.54\n\\end{aligned}\n\\]",
+    "**Step 3 — read the signs.**\n\n- \\(r>0\\) at points 1, 3, 5: the data point lies above the dashed model, so the model **underestimates**.\n- \\(r<0\\) at points 2, 4: the data point lies below the dashed model, so the model **overestimates**.\n- The residuals are small and switch sign with no pattern, so this model fits the data."
+   ]
+  }
+ ]
+}

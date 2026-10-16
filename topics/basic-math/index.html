@@ -341,6 +341,28 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .btn.reveal { width: 100%; margin-top: 16px; }
 .mq h2.qtitle { margin-bottom: 12px; }
 
+.practice { margin-top: 16px; }
+.practice table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 18px; }
+.practice th:nth-child(1) { width: 14%; } .practice th:nth-child(2) { width: 26%; } .practice th:nth-child(3) { width: 60%; }
+.practice th { padding: 6px 4px; border-bottom: 1.5px solid var(--line); font-size: 14px; font-weight: 650; color: var(--muted); text-align: center; }
+.practice td { padding: 7px 4px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; }
+.pin { display: flex; gap: 6px; }
+.pin .sign { width: 44px; height: 44px; border-radius: 10px; font-size: 20px; }
+.pin input {
+  flex: 1; width: 0; min-width: 0; height: 44px; padding: 0 8px;
+  border: 1.5px solid var(--line); border-radius: 10px;
+  background: var(--card); color: var(--ink);
+  font-family: inherit; font-size: 20px; font-weight: 650; line-height: 1; text-align: center;
+  -webkit-appearance: none; appearance: none;
+}
+.pin input:focus { outline: none; border-color: var(--accent); }
+td.correct .pin input { border-color: var(--ok); background: var(--ok-soft); }
+td.wrong .pin input { border-color: var(--bad); background: var(--bad-soft); }
+.ptag { display: block; margin-top: 3px; font-size: 13px; font-weight: 650; color: var(--muted); }
+.ptag:empty { display: none; }
+.prow { display: flex; gap: 10px; margin-top: 14px; }
+.pscore { min-height: 1.3em; margin: 10px 0 0; text-align: center; font-weight: 650; }
+
 
 .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 16px; padding: 4px; border-radius: 13px; background: var(--soft); }
 .tab {
@@ -384,7 +406,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 <a class="quiz" href="#ap" data-root="ap">
         <span class="u">AP Precalculus · Math Material</span>
         <span class="t">AP</span>
-        <span class="m">9 quizzes · 3 material pages</span></a>
+        <span class="m">9 quizzes · 4 material pages</span></a>
 <a class="quiz" href="#malta" data-root="malta">
         <span class="u">Track 3 · Year 7 and Year 8</span>
         <span class="t">Malta Year 7, Year 8</span>
@@ -460,6 +482,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         <span class="u">Math Material</span>
         <span class="t">Malta Lotto Quaterno: Combinations and Expected Value</span>
         <span class="m">4 questions<span class="lastscore"></span></span></a>
+<a class="quiz" href="math-material-residuals-linear-exponential-growth-and-decay/material.html" data-slug="math-material-residuals-linear-exponential-growth-and-decay">
+        <span class="u">AP Precalculus 2.6</span>
+        <span class="t">Residuals: Linear, Exponential Growth and Decay</span>
+        <span class="m">3 questions<span class="lastscore"></span></span></a>
 <a class="quiz" href="math-material-uk-thunderball-two-drums-combinations-and-expected-value/material.html" data-slug="math-material-uk-thunderball-two-drums-combinations-and-expected-value">
         <span class="u">Math Material</span>
         <span class="t">UK Thunderball: Two Drums, Combinations and Expected Value</span>
