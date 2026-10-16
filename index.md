@@ -134,6 +134,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math — All 19 Chapters: Basic Set C](topics/basic-math/malta-year-8-math-all-chapters-basic-set-c/content.md) | Set C: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-c/quiz.html) |
 | [Malta Year 8 Math — All 19 Chapters: Basic Set D](topics/basic-math/malta-year-8-math-all-chapters-basic-set-d/content.md) | Set D: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-d/quiz.html) |
 | [Malta Year 8 Math — All 19 Chapters: Basic Set E](topics/basic-math/malta-year-8-math-all-chapters-basic-set-e/content.md) | Set E: one quick step from each of the nineteen chapters, with new numbers. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-all-chapters-basic-set-e/quiz.html) |
+| [AP Precalculus 2.6 — Competing Function Model Validation](topics/basic-math/ap-precalculus-2-6-competing-function-model-validation/content.md) | Residuals, residual plots and model choice: weather, birds, an app and a street festival. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-6-competing-function-model-validation/quiz.html) |
 
 ## Animations
 
