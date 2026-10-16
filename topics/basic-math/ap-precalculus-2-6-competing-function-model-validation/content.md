@@ -67,20 +67,31 @@ Which type of model fits the table exactly?
 
 An app counts its users (in thousands) for the first $6$ months after launch.
 
-Two models are fitted to the same data:
+Two models are fitted to the data:
 
-- Model P is linear.
-- Model Q is exponential.
+- Model P (linear):
 
-Their residual plots are shown.
+$$
+y=1.36+6.39x
+$$
+
+- Model Q (exponential):
+
+$$
+y=5(1.5)^x
+$$
+
+Plot 1 shows the data and both models (dashed).
+
+Plot 2 shows the residuals of each model, on the same scale.
 
 Which model is appropriate for the data?
 
-![Residual plots of Model P (linear) and Model Q (exponential) for the same data](media/2-6-residual-plots.svg)
+![Plot 1: the data points with the dashed line of Model P and the dashed curve of Model Q. Plot 2: the residuals of P and of Q on the same scale, from −5 to 5.](media/2-6-residual-plots.svg)
 
-- **A.** Model P: its residuals form a U-shape
-- **B.** Model Q: its residuals are above and below 0 with no pattern
-- **C.** Model P: its residuals are both positive and negative
+- **A.** Model P: its residuals are above and below 0
+- **B.** Model Q: its residuals are small and show no pattern
+- **C.** Model P: a straight line is the simplest model
 - **D.** Both models: each has residuals above and below 0
 
 ## 4. Birds · Compute the residual
@@ -154,16 +165,38 @@ $$
 - Not linear: the first differences are $2,\ 3,\ 4.5,\ 6.75$, not constant.
 - Not quadratic: the second differences are $1,\ 1.5,\ 2.25$, not constant either.
 
-**3. B — No pattern means the model fits**
+**3. B — A pattern in the residuals means the wrong model type**
 
-- Model Q: the residuals are small and switch sign with no pattern, so the model is appropriate.
-- Model P: the residuals are positive at both ends and negative in the middle, a **U-shape**. The linear model misses the curve of the data.
+Each residual is actual − predicted ($y$ is the actual number of users):
+
+$$
+\begin{array}{c|c|c|c}
+x & y & \text{P} & \text{Q}\\
+\hline
+0 & 5.1 & 3.74 & 0.10 \\
+1 & 7.4 & -0.35 & -0.10 \\
+2 & 11.4 & -2.74 & 0.15 \\
+3 & 16.7 & -3.83 & -0.18 \\
+4 & 25.5 & -1.42 & 0.19 \\
+5 & 37.9 & 4.59 & -0.07
+\end{array}
+$$
+
+- **Model P** (the straight line):
+  - The data curves upward, but a line cannot bend.
+  - The line is too low at both ends: residuals $+$.
+  - The line is too high in the middle: residuals $-$.
+  - That is a **U-shape**, so a linear model is the wrong type.
+- **Model Q** (the curve):
+  - Every residual is smaller than $0.2$, so the dots sit on the $0$ line.
+  - The dots switch between above and below $0$ with no pattern.
 
 $$
 \boxed{\text{Model Q}}
 $$
 
-- Not "both models": having residuals above and below $0$ is not enough. Look for a **pattern**, and Model P has one.
+- Not A or D: residuals above and below $0$ are not enough. Look for a **pattern**, and Model P has one.
+- Not C: the simplest model is not the test. The residuals decide.
 
 **4. A — Predict first, then subtract**
 

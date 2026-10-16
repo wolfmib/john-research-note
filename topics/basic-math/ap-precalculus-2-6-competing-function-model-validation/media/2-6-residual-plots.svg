@@ -1,48 +1,98 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 330' width='640' height='330' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
-<rect x='1' y='1' width='638' height='328' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
-<text x='160' y='40' font-size='21' font-weight='700' text-anchor='middle' fill='#cf222e'>Model P · linear</text>
-<line x1='68' y1='54' x2='68' y2='274' stroke='#1f2328' stroke-width='2'/>
-<line x1='68' y1='168' x2='288' y2='168' stroke='#57606a' stroke-width='2' stroke-dasharray='6 5'/>
-<text x='60' y='174' font-size='17' text-anchor='end' fill='#57606a'>0</text>
-<text x='24' y='168' font-size='15' text-anchor='middle' fill='#57606a' transform='rotate(-90 24 168)'>residual</text>
-<line x1='63' y1='76.0' x2='73' y2='76.0' stroke='#1f2328' stroke-width='2'/>
-<text x='60' y='82.0' font-size='17' text-anchor='end' fill='#57606a'>5</text>
-<line x1='63' y1='260.0' x2='73' y2='260.0' stroke='#1f2328' stroke-width='2'/>
-<text x='60' y='266.0' font-size='17' text-anchor='end' fill='#57606a'>−5</text>
-<text x='86.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>0</text>
-<text x='124.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>1</text>
-<text x='162.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>2</text>
-<text x='200.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>3</text>
-<text x='238.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>4</text>
-<text x='276.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>5</text>
-<circle cx='86.0' cy='99.2' r='7' fill='#cf222e'/>
-<circle cx='124.0' cy='174.4' r='7' fill='#cf222e'/>
-<circle cx='162.0' cy='218.4' r='7' fill='#cf222e'/>
-<circle cx='200.0' cy='238.4' r='7' fill='#cf222e'/>
-<circle cx='238.0' cy='194.1' r='7' fill='#cf222e'/>
-<circle cx='276.0' cy='83.4' r='7' fill='#cf222e'/>
-<text x='178.0' y='322' font-size='16' text-anchor='middle' fill='#57606a'>x (months)</text>
-<text x='470' y='40' font-size='21' font-weight='700' text-anchor='middle' fill='#0969da'>Model Q · exponential</text>
-<line x1='378' y1='54' x2='378' y2='274' stroke='#1f2328' stroke-width='2'/>
-<line x1='378' y1='168' x2='598' y2='168' stroke='#57606a' stroke-width='2' stroke-dasharray='6 5'/>
-<text x='370' y='174' font-size='17' text-anchor='end' fill='#57606a'>0</text>
-<text x='334' y='168' font-size='15' text-anchor='middle' fill='#57606a' transform='rotate(-90 334 168)'>residual</text>
-<line x1='373' y1='76.0' x2='383' y2='76.0' stroke='#1f2328' stroke-width='2'/>
-<text x='370' y='82.0' font-size='17' text-anchor='end' fill='#57606a'>0.2</text>
-<line x1='373' y1='260.0' x2='383' y2='260.0' stroke='#1f2328' stroke-width='2'/>
-<text x='370' y='266.0' font-size='17' text-anchor='end' fill='#57606a'>−0.2</text>
-<text x='396.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>0</text>
-<text x='434.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>1</text>
-<text x='472.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>2</text>
-<text x='510.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>3</text>
-<text x='548.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>4</text>
-<text x='586.0' y='298' font-size='17' text-anchor='middle' fill='#57606a'>5</text>
-<circle cx='396.0' cy='122.0' r='7' fill='#0969da'/>
-<circle cx='434.0' cy='214.0' r='7' fill='#0969da'/>
-<circle cx='472.0' cy='99.0' r='7' fill='#0969da'/>
-<circle cx='510.0' cy='248.5' r='7' fill='#0969da'/>
-<circle cx='548.0' cy='81.8' r='7' fill='#0969da'/>
-<circle cx='586.0' cy='199.6' r='7' fill='#0969da'/>
-<text x='488.0' y='322' font-size='16' text-anchor='middle' fill='#57606a'>x (months)</text>
-<line x1='320' y1='20' x2='320' y2='310' stroke='#d0d7de' stroke-width='2'/>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 760' width='640' height='760' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='758' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<text x='24.0' y='36.0' font-size='21' font-weight='700' text-anchor='start' fill='#1f2328'>1 · Data and the two models</text>
+<line x1='92' y1='312.0' x2='612' y2='312.0' stroke='#d0d7de' stroke-width='1.2'/>
+<text x='82.0' y='318.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<line x1='92' y1='249.5' x2='612' y2='249.5' stroke='#d0d7de' stroke-width='1.2'/>
+<text x='82.0' y='255.5' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>10</text>
+<line x1='92' y1='187.0' x2='612' y2='187.0' stroke='#d0d7de' stroke-width='1.2'/>
+<text x='82.0' y='193.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>20</text>
+<line x1='92' y1='124.5' x2='612' y2='124.5' stroke='#d0d7de' stroke-width='1.2'/>
+<text x='82.0' y='130.5' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>30</text>
+<line x1='92' y1='62.0' x2='612' y2='62.0' stroke='#d0d7de' stroke-width='1.2'/>
+<text x='82.0' y='68.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>40</text>
+<line x1='92' y1='54' x2='92' y2='312' stroke='#1f2328' stroke-width='2'/>
+<line x1='92' y1='312' x2='612' y2='312' stroke='#1f2328' stroke-width='2'/>
+<text x='118.0' y='338.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>0</text>
+<text x='211.6' y='338.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>1</text>
+<text x='305.2' y='338.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>2</text>
+<text x='398.8' y='338.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>3</text>
+<text x='492.4' y='338.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>4</text>
+<text x='586.0' y='338.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>5</text>
+<text x='352.0' y='364.0' font-size='16' font-weight='500' text-anchor='middle' fill='#57606a'>x (months)</text>
+<text x='30.0' y='187.0' font-size='16' font-weight='500' text-anchor='middle' fill='#57606a' transform='rotate(-90 30 187.0)'>users (thousands)</text>
+<line x1='118.0' y1='303.5' x2='586.0' y2='103.8' stroke='#cf222e' stroke-width='3' stroke-dasharray='10 7'/>
+<polyline points='118.0,280.8 122.7,280.1 127.4,279.5 132.0,278.8 136.7,278.1 141.4,277.4 146.1,276.7 150.8,276.0 155.4,275.2 160.1,274.5 164.8,273.7 169.5,272.9 174.2,272.1 178.8,271.3 183.5,270.5 188.2,269.6 192.9,268.8 197.6,267.9 202.2,267.0 206.9,266.1 211.6,265.1 216.3,264.2 221.0,263.2 225.6,262.2 230.3,261.2 235.0,260.1 239.7,259.1 244.4,258.0 249.0,256.9 253.7,255.7 258.4,254.6 263.1,253.4 267.8,252.2 272.4,251.0 277.1,249.7 281.8,248.5 286.5,247.2 291.2,245.8 295.8,244.5 300.5,243.1 305.2,241.7 309.9,240.2 314.6,238.8 319.2,237.3 323.9,235.7 328.6,234.2 333.3,232.6 338.0,231.0 342.6,229.3 347.3,227.6 352.0,225.9 356.7,224.1 361.4,222.3 366.0,220.5 370.7,218.6 375.4,216.7 380.1,214.7 384.8,212.8 389.4,210.7 394.1,208.6 398.8,206.5 403.5,204.4 408.2,202.2 412.8,199.9 417.5,197.6 422.2,195.3 426.9,192.9 431.6,190.4 436.2,188.0 440.9,185.4 445.6,182.8 450.3,180.2 455.0,177.5 459.6,174.7 464.3,171.9 469.0,169.0 473.7,166.1 478.4,163.1 483.0,160.1 487.7,157.0 492.4,153.8 497.1,150.6 501.8,147.3 506.4,143.9 511.1,140.4 515.8,136.9 520.5,133.3 525.2,129.7 529.8,125.9 534.5,122.1 539.2,118.2 543.9,114.3 548.6,110.2 553.2,106.1 557.9,101.9 562.6,97.6 567.3,93.2 572.0,88.7 576.6,84.1 581.3,79.5 586.0,74.7' fill='none' stroke='#0969da' stroke-width='3' stroke-dasharray='10 7'/>
+<circle cx='118.0' cy='280.1' r='7.5' fill='#1f2328' stroke='#ffffff' stroke-width='2'/>
+<circle cx='211.6' cy='265.8' r='7.5' fill='#1f2328' stroke='#ffffff' stroke-width='2'/>
+<circle cx='305.2' cy='240.8' r='7.5' fill='#1f2328' stroke='#ffffff' stroke-width='2'/>
+<circle cx='398.8' cy='207.6' r='7.5' fill='#1f2328' stroke='#ffffff' stroke-width='2'/>
+<circle cx='492.4' cy='152.6' r='7.5' fill='#1f2328' stroke='#ffffff' stroke-width='2'/>
+<circle cx='586.0' cy='75.1' r='7.5' fill='#1f2328' stroke='#ffffff' stroke-width='2'/>
+<rect x='104' y='62' width='262' height='104' rx='8' fill='#ffffff' stroke='#d0d7de' stroke-width='1.5'/>
+<line x1='116' y1='84' x2='156' y2='84' stroke='#cf222e' stroke-width='3' stroke-dasharray='10 7'/>
+<text x='168.0' y='90.0' font-size='18' font-weight='600' text-anchor='start' fill='#cf222e'>P: y = 1.36 + 6.39x</text>
+<line x1='116' y1='116' x2='156' y2='116' stroke='#0969da' stroke-width='3' stroke-dasharray='10 7'/>
+<text x='168' y='122' font-size='18' font-weight='600' text-anchor='start' fill='#0969da'>Q: y = 5(1.5)<tspan dy='-8' font-size='13'>x</tspan></text>
+<circle cx='136' cy='148' r='7.5' fill='#1f2328'/>
+<text x='168.0' y='154.0' font-size='18' font-weight='600' text-anchor='start' fill='#1f2328'>data</text>
+<line x1='20' y1='386' x2='620' y2='386' stroke='#d0d7de' stroke-width='2'/>
+<text x='24.0' y='424.0' font-size='20' font-weight='700' text-anchor='start' fill='#1f2328'>2 · Residuals = actual − predicted (same scale)</text>
+<text x='170.0' y='456.0' font-size='20' font-weight='700' text-anchor='middle' fill='#cf222e'>Residuals of P</text>
+<line x1='72' y1='470' x2='72' y2='678' stroke='#1f2328' stroke-width='2'/>
+<line x1='72' y1='576' x2='288' y2='576' stroke='#57606a' stroke-width='2' stroke-dasharray='6 5'/>
+<text x='63.0' y='582.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<text x='28.0' y='576.0' font-size='15' font-weight='500' text-anchor='middle' fill='#57606a' transform='rotate(-90 28 576)'>residual</text>
+<line x1='67' y1='488.0' x2='77' y2='488.0' stroke='#1f2328' stroke-width='2'/>
+<text x='63.0' y='494.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>5</text>
+<line x1='67' y1='664.0' x2='77' y2='664.0' stroke='#1f2328' stroke-width='2'/>
+<text x='63.0' y='670.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>−5</text>
+<text x='90.0' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>0</text>
+<text x='127.2' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>1</text>
+<text x='164.4' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>2</text>
+<text x='201.6' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>3</text>
+<text x='238.8' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>4</text>
+<text x='276.0' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>5</text>
+<line x1='90.0' y1='576' x2='90.0' y2='510.2' stroke='#cf222e' stroke-width='2.5' opacity='0.55'/>
+<circle cx='90.0' cy='510.2' r='7' fill='#cf222e'/>
+<line x1='127.2' y1='576' x2='127.2' y2='582.2' stroke='#cf222e' stroke-width='2.5' opacity='0.55'/>
+<circle cx='127.2' cy='582.2' r='7' fill='#cf222e'/>
+<line x1='164.4' y1='576' x2='164.4' y2='624.2' stroke='#cf222e' stroke-width='2.5' opacity='0.55'/>
+<circle cx='164.4' cy='624.2' r='7' fill='#cf222e'/>
+<line x1='201.6' y1='576' x2='201.6' y2='643.4' stroke='#cf222e' stroke-width='2.5' opacity='0.55'/>
+<circle cx='201.6' cy='643.4' r='7' fill='#cf222e'/>
+<line x1='238.8' y1='576' x2='238.8' y2='601.0' stroke='#cf222e' stroke-width='2.5' opacity='0.55'/>
+<circle cx='238.8' cy='601.0' r='7' fill='#cf222e'/>
+<line x1='276.0' y1='576' x2='276.0' y2='495.2' stroke='#cf222e' stroke-width='2.5' opacity='0.55'/>
+<circle cx='276.0' cy='495.2' r='7' fill='#cf222e'/>
+<text x='180.0' y='726.0' font-size='16' font-weight='500' text-anchor='middle' fill='#57606a'>x (months)</text>
+<text x='480.0' y='456.0' font-size='20' font-weight='700' text-anchor='middle' fill='#0969da'>Residuals of Q</text>
+<line x1='382' y1='470' x2='382' y2='678' stroke='#1f2328' stroke-width='2'/>
+<line x1='382' y1='576' x2='598' y2='576' stroke='#57606a' stroke-width='2' stroke-dasharray='6 5'/>
+<text x='373.0' y='582.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<text x='338.0' y='576.0' font-size='15' font-weight='500' text-anchor='middle' fill='#57606a' transform='rotate(-90 338 576)'>residual</text>
+<line x1='377' y1='488.0' x2='387' y2='488.0' stroke='#1f2328' stroke-width='2'/>
+<text x='373.0' y='494.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>5</text>
+<line x1='377' y1='664.0' x2='387' y2='664.0' stroke='#1f2328' stroke-width='2'/>
+<text x='373.0' y='670.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>−5</text>
+<text x='400.0' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>0</text>
+<text x='437.2' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>1</text>
+<text x='474.4' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>2</text>
+<text x='511.6' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>3</text>
+<text x='548.8' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>4</text>
+<text x='586.0' y='702.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>5</text>
+<line x1='400.0' y1='576' x2='400.0' y2='574.2' stroke='#0969da' stroke-width='2.5' opacity='0.55'/>
+<circle cx='400.0' cy='574.2' r='7' fill='#0969da'/>
+<line x1='437.2' y1='576' x2='437.2' y2='577.8' stroke='#0969da' stroke-width='2.5' opacity='0.55'/>
+<circle cx='437.2' cy='577.8' r='7' fill='#0969da'/>
+<line x1='474.4' y1='576' x2='474.4' y2='573.4' stroke='#0969da' stroke-width='2.5' opacity='0.55'/>
+<circle cx='474.4' cy='573.4' r='7' fill='#0969da'/>
+<line x1='511.6' y1='576' x2='511.6' y2='579.1' stroke='#0969da' stroke-width='2.5' opacity='0.55'/>
+<circle cx='511.6' cy='579.1' r='7' fill='#0969da'/>
+<line x1='548.8' y1='576' x2='548.8' y2='572.7' stroke='#0969da' stroke-width='2.5' opacity='0.55'/>
+<circle cx='548.8' cy='572.7' r='7' fill='#0969da'/>
+<line x1='586.0' y1='576' x2='586.0' y2='577.2' stroke='#0969da' stroke-width='2.5' opacity='0.55'/>
+<circle cx='586.0' cy='577.2' r='7' fill='#0969da'/>
+<text x='490.0' y='726.0' font-size='16' font-weight='500' text-anchor='middle' fill='#57606a'>x (months)</text>
+<line x1='320' y1='446' x2='320' y2='740' stroke='#d0d7de' stroke-width='2'/>
 </svg>

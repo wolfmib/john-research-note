@@ -36,18 +36,18 @@
   },
   {
    "title": "Residual plots · Which model?",
-   "prompt": "An app counts its users (in thousands) for the first \\(6\\) months after launch.\n\nTwo models are fitted to the same data:\n\n- Model P is linear.\n- Model Q is exponential.\n\nTheir residual plots are shown.\n\nWhich model is appropriate for the data?",
+   "prompt": "An app counts its users (in thousands) for the first \\(6\\) months after launch.\n\nTwo models are fitted to the data:\n\n- Model P (linear):\n\n\\[\ny=1.36+6.39x\n\\]\n\n- Model Q (exponential):\n\n\\[\ny=5(1.5)^x\n\\]\n\nPlot 1 shows the data and both models (dashed).\n\nPlot 2 shows the residuals of each model, on the same scale.\n\nWhich model is appropriate for the data?",
    "figure": "2-6-residual-plots.svg",
-   "figure_alt": "Residual plots of Model P (linear) and Model Q (exponential) for the same data",
+   "figure_alt": "Plot 1: the data points with the dashed line of Model P and the dashed curve of Model Q. Plot 2: the residuals of P and of Q on the same scale, from −5 to 5.",
    "choices": [
-    "Model P: its residuals form a U-shape",
-    "Model Q: its residuals are above and below 0 with no pattern",
-    "Model P: its residuals are both positive and negative",
+    "Model P: its residuals are above and below 0",
+    "Model Q: its residuals are small and show no pattern",
+    "Model P: a straight line is the simplest model",
     "Both models: each has residuals above and below 0"
    ],
    "answer": "B",
-   "solution_title": "No pattern means the model fits",
-   "solution": "- Model Q: the residuals are small and switch sign with no pattern, so the model is appropriate.\n- Model P: the residuals are positive at both ends and negative in the middle, a **U-shape**. The linear model misses the curve of the data.\n\n\\[\n\\boxed{\\text{Model Q}}\n\\]\n\n- Not \"both models\": having residuals above and below \\(0\\) is not enough. Look for a **pattern**, and Model P has one.",
+   "solution_title": "A pattern in the residuals means the wrong model type",
+   "solution": "Each residual is actual − predicted (\\(y\\) is the actual number of users):\n\n\\[\n\\begin{array}{c|c|c|c}\nx & y & \\text{P} & \\text{Q}\\\\\n\\hline\n0 & 5.1 & 3.74 & 0.10 \\\\\n1 & 7.4 & -0.35 & -0.10 \\\\\n2 & 11.4 & -2.74 & 0.15 \\\\\n3 & 16.7 & -3.83 & -0.18 \\\\\n4 & 25.5 & -1.42 & 0.19 \\\\\n5 & 37.9 & 4.59 & -0.07\n\\end{array}\n\\]\n\n- **Model P** (the straight line):\n  - The data curves upward, but a line cannot bend.\n  - The line is too low at both ends: residuals \\(+\\).\n  - The line is too high in the middle: residuals \\(-\\).\n  - That is a **U-shape**, so a linear model is the wrong type.\n- **Model Q** (the curve):\n  - Every residual is smaller than \\(0.2\\), so the dots sit on the \\(0\\) line.\n  - The dots switch between above and below \\(0\\) with no pattern.\n\n\\[\n\\boxed{\\text{Model Q}}\n\\]\n\n- Not A or D: residuals above and below \\(0\\) are not enough. Look for a **pattern**, and Model P has one.\n- Not C: the simplest model is not the test. The residuals decide.",
    "type": "mcq"
   },
   {
