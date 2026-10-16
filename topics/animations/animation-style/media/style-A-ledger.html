@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style A - substitution ledger</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<style>
+    :root { --ink: #ECECEC; --dim: #9AA0A6; --line: #3a4150; --exp: #FC6255; --imp: #58C4DD; --exact: #FFFFFF; --hl: #FFFF00; --ok: #83C167; }
+    html, body { margin: 0; padding: 0; background: #07090d; overflow: hidden; height: 100%;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; transform-origin: 0 0; overflow: hidden; color: var(--ink);
+        background: radial-gradient(ellipse at 50% 45%, #1c2230 0%, #11151d 55%, #07090d 100%); }
+    #series { position: absolute; left: 48px; top: 16px; font-size: 14px; color: var(--dim); letter-spacing: .3px; }
+    .scene { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; opacity: 0; }
+    h2 { position: absolute; left: 48px; top: 40px; font-size: 30px; margin: 0; font-weight: 600; }
+    .subtitle { position: absolute; left: 48px; top: 82px; font-size: 19px; color: var(--dim); }
+    [data-t] { opacity: 0; }
+    .red { color: var(--exp); } .dim { color: var(--dim); } .ok { color: var(--ok); }
+    /* state table */
+    table.state { position: absolute; left: 48px; top: 124px; width: 640px; border-collapse: collapse; }
+    table.state th { height: 32px; font-size: 16px; font-weight: normal; color: var(--dim); border-bottom: 2px solid #555c66; text-align: center; }
+    table.state td { height: 40px; font-size: 22px; text-align: center; border-bottom: 1px solid var(--line); }
+    table.state td span.c { display: inline-block; padding: 0 6px; }
+    /* formula card */
+    .card { position: absolute; left: 48px; top: 296px; width: 640px; height: 108px; border: 2px solid var(--exp); border-radius: 8px; box-sizing: border-box; font-size: 28px; }
+    .card .fl { position: absolute; left: 0; width: 100%; text-align: center; }
+    .card .fl.a { top: 10px; } .card .fl.b { top: 60px; }
+    /* ledger blocks */
+    .blk { position: absolute; left: 48px; width: 640px; }
+    .blk .lab { font-size: 17px; color: var(--dim); height: 22px; }
+    .line { position: relative; height: 46px; margin-left: 16px; font-size: 26px; }
+    .beat { position: absolute; left: 0; top: 6px; opacity: 0; white-space: nowrap; }
+    .katex-display { margin: 0; text-align: left; }
+    .right { position: absolute; left: 800px; top: 120px; width: 432px; height: 504px; }
+    /* fly + glow */
+    .fly { position: absolute; left: 0; top: 0; opacity: 0; white-space: nowrap; font-size: 26px; transform-origin: center; pointer-events: none; }
+    .glow { position: absolute; border-radius: 6px; box-shadow: 0 0 0 2px var(--hl), 0 0 14px rgba(255,255,0,.45); opacity: 0; pointer-events: none; }
+    /* svg (dark) */
+    .ball { stroke-width: 2.5; } .ball.exp { fill: rgba(252,98,85,.25); stroke: var(--exp); }
+    .axis { stroke: #555c66; stroke-width: 2; } .tick { stroke: #555c66; stroke-width: 1.5; }
+    .slab { fill: var(--dim); font-size: 14px; } .ground { stroke: var(--dim); stroke-width: 4; }
+    .mk line { stroke-width: 2; } .mk text { font-size: 13px; } .mk { opacity: 0; }
+    .clk { font-size: 20px; font-weight: bold; fill: var(--ink); }
+    .colhead { font-size: 15px; font-weight: bold; text-anchor: middle; }
+</style>
+</head>
+<body>
+<div id="stage">
+    <div id="series">Therma thermal dynamics &middot; Explicit Euler, step by hand &middot; style A: substitution ledger</div>
+    <div class="scene" data-start="0" data-end="24" data-hold="1">
+        <h2 data-t="0.4" class="red">Explicit Euler, step by hand</h2>
+        <div class="subtitle" data-t="0.4">$\Delta t = 0.8\ \mathrm{s}$, &nbsp; $g = 9.81\ \mathrm{m/s^2}$, &nbsp; $\beta = 0.1\ \mathrm{s^{-1}}$, &nbsp; start $y^0 = 100\ \mathrm{m}$, $v^0 = 0$</div>
+
+        <table class="state" data-t="1.0">
+            <tr><th>$n$</th><th>$t^n$ (s)</th><th class="red">$v^n$ (m/s)</th><th class="red">$y^n$ (m)</th></tr>
+            <tr><td>0</td><td>0.0</td><td><span class="c" id="s-v0">$0.000$</span></td><td><span class="c" id="s-y0">$100.000$</span></td></tr>
+            <tr><td><span data-t="10.6" data-nt="1">1</span></td><td><span data-t="10.6" data-nt="1">0.8</span></td><td><span class="c" id="s-v1" data-t="11.2" data-nt="1">$-7.848$</span></td><td><span class="c" id="s-y1" data-t="11.4" data-nt="1">$100.000$</span></td></tr>
+            <tr><td><span data-t="19.6" data-nt="1">2</span></td><td><span data-t="19.6" data-nt="1">1.6</span></td><td><span class="c" id="s-v2" data-t="20.2" data-nt="1">$-15.068$</span></td><td><span class="c" id="s-y2" data-t="20.4" data-nt="1">$93.722$</span></td></tr>
+        </table>
+
+        <div class="card" data-t="2.0">
+            <div class="fl a">$v^{n+1} = \htmlId{f-va}{v^{n}} - \Delta t\,\bigl(g + \beta\,\htmlId{f-vb}{v^{n}}\bigr)$</div>
+            <div class="fl b">$y^{n+1} = \htmlId{f-ya}{y^{n}} + \Delta t\,\htmlId{f-yb}{v^{n}}$</div>
+        </div>
+
+        <div class="blk" id="blk1" style="top: 416px;">
+            <div class="lab" data-t="3.0">step $n = 0 \to 1$</div>
+            <div class="line" id="L1v"></div>
+            <div class="line" id="L1y"></div>
+        </div>
+        <div class="blk" id="blk2" style="top: 546px;">
+            <div class="lab" data-t="12.0">step $n = 1 \to 2$</div>
+            <div class="line" id="L2v"></div>
+            <div class="line" id="L2y"></div>
+        </div>
+
+        <div class="right" id="pb"></div>
+        <div id="flyers"></div>
+        <div id="glows"></div>
+    </div>
+</div>
+
+<script>
+    // ---- physics -----------------------------------------------------------------
+    const g = 9.81, beta = 0.1, Y0 = 100, DT = 0.8;
+    function sim(dt, n) { const pts = [{ n: 0, t: 0, y: Y0, v: 0 }]; let y = Y0, v = 0;
+        for (let k = 1; k <= n; k++) { const yn = y + dt * v; v = v - dt * (g + beta * v); y = yn; pts.push({ n: k, t: k * dt, y, v }); } return pts; }
+    const EXP = sim(DT, 5);
+    const f3 = x => x.toFixed(3);
+
+    // ---- ledger beats (every number computed, printed at 3 decimals) ------------------
+    const BEATS = {};
+    const sl = (key, i, grp, tex) => `\\htmlId{S-${key}-${i}-${grp}}{${tex}}`;   // a slot: same group => same reserved width in every beat
+    for (const k of [1, 2]) {
+        const p = EXP[k - 1], q = EXP[k], kv = `${k}v`, ky = `${k}y`;
+        const br = g + beta * p.v, prod = DT * br, prodY = DT * p.v;
+        const wrap = x => x < 0 ? `(${f3(x)})` : f3(x);
+        BEATS[kv] = [
+            `v^{${k}} = ${sl(kv, 0, 'v0', `v^{${k - 1}}`)} - ${sl(kv, 0, 'dt', '\\Delta t\\,')}\\bigl(${sl(kv, 0, 'g', 'g')} + ${sl(kv, 0, 'b', '\\beta\\,')}${sl(kv, 0, 'v1', `v^{${k - 1}}`)}\\bigr)`,
+            `v^{${k}} = ${sl(kv, 1, 'v0', f3(p.v))} - ${sl(kv, 1, 'dt', '0.8\\,')}\\bigl(${sl(kv, 1, 'g', '9.81')} + ${sl(kv, 1, 'b', '0.1\\cdot')}${sl(kv, 1, 'v1', wrap(p.v))}\\bigr)`,
+            `v^{${k}} = ${sl(kv, 2, 'v0', f3(p.v))} - ${sl(kv, 2, 'dt', '0.8\\cdot')}${f3(br)}`,
+            `v^{${k}} = ${sl(kv, 3, 'v0', f3(p.v))} - ${f3(prod)}`,
+            `v^{${k}} = ${sl(kv, 4, 'r', `\\textcolor{#83C167}{${f3(q.v)}}`)}`];
+        BEATS[ky] = [
+            `y^{${k}} = ${sl(ky, 0, 'y0', `y^{${k - 1}}`)} + ${sl(ky, 0, 'dt', '\\Delta t\\,')}${sl(ky, 0, 'v1', `v^{${k - 1}}`)}`,
+            `y^{${k}} = ${sl(ky, 1, 'y0', f3(p.y))} + ${sl(ky, 1, 'dt', '0.8\\cdot')}${sl(ky, 1, 'v1', wrap(p.v))}`,
+            `y^{${k}} = ${sl(ky, 2, 'y0', f3(p.y))} + ${wrap(prodY)}`,
+            `y^{${k}} = ${sl(ky, 3, 'r', `\\textcolor{#83C167}{${f3(q.y)}}`)}`];
+    }
+    for (const key in BEATS) document.getElementById('L' + key).innerHTML = BEATS[key].map((tex, i) => `<div class="beat" id="B${key}${i}">$${tex}$</div>`).join('');
+
+    // ---- ball panel ------------------------------------------------------------------
+    const Yp = h => 520 - 4.8 * h;
+    function fallPanel(id, cols) {
+        let s = `<svg id="${id}" viewBox="0 0 480 560" style="width:100%;height:100%;overflow:visible;">`;
+        s += `<line class="axis" x1="70" y1="30" x2="70" y2="520"/>`;
+        for (let h = 0; h <= 100; h += 20) s += `<line class="tick" x1="64" x2="76" y1="${Yp(h)}" y2="${Yp(h)}"/><text class="slab" x="56" y="${Yp(h) + 5}" text-anchor="end">${h} m</text>`;
+        s += `<line class="ground" x1="82" y1="520" x2="470" y2="520"/><text class="slab" x="250" y="545" text-anchor="middle">ground</text>`;
+        s += `<text id="${id}-clk" class="clk" x="470" y="22" text-anchor="end">t = 0.0 s</text>`;
+        cols.forEach((c, i) => {
+            s += `<text class="colhead" x="${c.x}" y="18" fill="${c.col}">${c.label}</text>`;
+            c.data.slice(1).forEach(p => s += `<g class="mk" id="${id}-m${i}-${p.n}"><line x1="${c.x - 24}" x2="${c.x + 24}" y1="${Yp(p.y)}" y2="${Yp(p.y)}" stroke="${c.col}"/><text x="${c.x + 30}" y="${Yp(p.y) + 4}" fill="${c.col}">n = ${p.n}</text></g>`);
+            s += `<circle id="${id}-b${i}" class="ball ${c.cls}" cx="${c.x}" cy="${Yp(100)}" r="12"/>`;
+        });
+        return s + `</svg>`;
+    }
+    document.getElementById('pb').innerHTML = fallPanel('fb', [{ cls: 'exp', col: '#FC6255', label: 'explicit', x: 250, data: EXP }]);
+
+    const KOPT = { trust: true, strict: false, throwOnError: false };
+    renderMathInElement(document.body, { delimiters: [{ left: '$$', right: '$$', display: true }, { left: '$', right: '$', display: false }], ...KOPT });
+
+    // ---- flyers (katex copies of the moving numbers) ---------------------------------
+    const FL = {}, flyBox = document.getElementById('flyers');
+    function mkFly(id, tex, px) { const d = document.createElement('div'); d.className = 'fly'; d.style.fontSize = px + 'px'; katex.render(tex, d, KOPT); flyBox.appendChild(d); FL[id] = d; }
+    for (const k of [1, 2]) {
+        const p = EXP[k - 1], q = EXP[k];
+        mkFly(`${k}v0`, f3(p.v), 26); mkFly(`${k}v1`, p.v < 0 ? `(${f3(p.v)})` : f3(p.v), 26);
+        mkFly(`${k}y0`, f3(p.y), 26); mkFly(`${k}y1`, p.v < 0 ? `(${f3(p.v)})` : f3(p.v), 26);
+        mkFly(`${k}rv`, `\\textcolor{#83C167}{${f3(q.v)}}`, 26); mkFly(`${k}ry`, `\\textcolor{#83C167}{${f3(q.y)}}`, 26);
+    }
+
+    // ---- measurement (stage px, before any renderAt) -------------------------------------
+    const stage = document.getElementById('stage'), M = {}, GL = {};
+    function box(id) { const s = stage.getBoundingClientRect(), sc = s.width / 1280, r = document.getElementById(id).getBoundingClientRect();
+        return { x: (r.left - s.left) / sc, y: (r.top - s.top) / sc, w: r.width / sc, h: r.height / sc }; }
+    const mid = b => ({ x: b.x + b.w / 2, y: b.y + b.h / 2 });
+    const IDS = ['s-v0', 's-y0', 's-v1', 's-y1', 's-v2', 's-y2', 'f-va', 'f-vb', 'f-ya', 'f-yb',
+        'S-1v-1-v0', 'S-1v-1-v1', 'S-1y-1-y0', 'S-1y-1-v1', 'S-1v-4-r', 'S-1y-3-r', 'S-2v-1-v0', 'S-2v-1-v1', 'S-2y-1-y0', 'S-2y-1-v1', 'S-2v-4-r', 'S-2y-3-r'];
+    function equalise(prefix) {                      // reserve every slot at the width of its widest content, before anything is shown
+        const sc = stage.getBoundingClientRect().width / 1280, groups = {};
+        document.querySelectorAll(`.enclosing[id^="${prefix}"]`).forEach(el => { const gname = el.id.split('-').pop(); (groups[gname] ||= []).push(el); });
+        for (const gname in groups) { const w = Math.max(...groups[gname].map(el => el.getBoundingClientRect().width / sc));
+            groups[gname].forEach(el => { el.style.display = 'inline-block'; el.style.textAlign = 'center'; el.style.boxSizing = 'border-box'; el.style.width = Math.ceil(w) + 'px'; }); }
+    }
+    function measure() {
+        IDS.forEach(id => M[id] = box(id));
+        const gb = document.getElementById('glows');
+        ['s-v0', 's-y0', 's-v1', 's-y1', 'f-va', 'f-vb', 'f-ya', 'f-yb'].forEach(id => {
+            const b = M[id], d = document.createElement('div'); d.className = 'glow';
+            d.style.left = (b.x - 4) + 'px'; d.style.top = (b.y - 3) + 'px'; d.style.width = (b.w + 8) + 'px'; d.style.height = (b.h + 6) + 'px';
+            gb.appendChild(d); GL[id] = d;
+        });
+    }
+
+    // ---- deterministic timeline ---------------------------------------------------------
+    const FADE = 0.6, TOTAL = 24;
+    const clamp01 = x => Math.max(0, Math.min(1, x)), ease = p => p * p * (3 - 2 * p);
+    const seg = (t, a, d) => ease(clamp01((t - a) / d));
+    const scenes = [...document.querySelectorAll('.scene')], timed = [...document.querySelectorAll('[data-t]')];
+    function fly(el, from, to, p, bend = 0, s0 = 1, s1 = 1) {
+        if (p <= 0 || p >= 1) { el.style.opacity = 0; return; }
+        const x = from.x + (to.x - from.x) * p, y = from.y + (to.y - from.y) * p - bend * 4 * p * (1 - p);
+        el.style.opacity = p < 0.9 ? 1 : (1 - p) / 0.1;
+        el.style.transform = `translate(${x - el.offsetWidth / 2}px, ${y - el.offsetHeight / 2}px) scale(${s0 + (s1 - s0) * p})`;
+    }
+    function beats(key, times, t) {
+        const n = BEATS[key].length;
+        for (let i = 0; i < n; i++) { const on = seg(t, times[i], .4), off = i + 1 < n ? seg(t, times[i + 1], .4) : 0; document.getElementById(`B${key}${i}`).style.opacity = on - off; }
+    }
+    const setBall = (id, y) => document.getElementById(id).setAttribute('cy', Yp(y));
+
+    function step(k, t0, t) {
+        const r = t - t0, p = EXP[k - 1], q = EXP[k];
+        // glows: state cells, then formula symbols
+        const gs = seg(t, t0, .6) - seg(t, t0 + 2.6, .4), gf = seg(t, t0 + .6, .6) - seg(t, t0 + 2.4, .4);
+        GL[`s-v${k - 1}`].style.opacity = gs; GL[`s-y${k - 1}`].style.opacity = gs;
+        ['f-va', 'f-vb', 'f-ya', 'f-yb'].forEach(id => GL[id].style.opacity = Math.max(+GL[id].style.opacity, gf));
+        // v line
+        beats(`${k}v`, [t0 + .8, t0 + 2.4, t0 + 3.6, t0 + 4.6, t0 + 5.6], t);
+        fly(FL[`${k}v0`], mid(M[`s-v${k - 1}`]), mid(M[`S-${k}v-1-v0`]), seg(t, t0 + 1.4, 1.0), 0, .85, 1);
+        fly(FL[`${k}v1`], mid(M[`s-v${k - 1}`]), mid(M[`S-${k}v-1-v1`]), seg(t, t0 + 1.6, 1.0), 0, .85, 1);
+        // y line
+        beats(`${k}y`, [t0 + 3.4, t0 + 5.2, t0 + 6.2, t0 + 7.0], t);
+        fly(FL[`${k}y0`], mid(M[`s-y${k - 1}`]), mid(M[`S-${k}y-1-y0`]), seg(t, t0 + 4.0, 1.0), 0, .85, 1);
+        fly(FL[`${k}y1`], mid(M[`s-v${k - 1}`]), mid(M[`S-${k}y-1-v1`]), seg(t, t0 + 4.3, 1.0), 0, .85, 1);
+        // results up into the state table
+        fly(FL[`${k}rv`], mid(M[`S-${k}v-4-r`]), mid(M[`s-v${k}`]), seg(t, t0 + 7.2, 1.0), 0, 1, .85);
+        fly(FL[`${k}ry`], mid(M[`S-${k}y-3-r`]), mid(M[`s-y${k}`]), seg(t, t0 + 7.4, 1.0), 0, 1, .85);
+        // ball
+        const pb = seg(t, t0 + 8.0, .8);
+        if (pb > 0) { setBall('fb-b0', p.y + (q.y - p.y) * pb); document.getElementById(`fb-m0-${k}`).style.opacity = pb;
+            document.getElementById('fb-clk').textContent = `t = ${(pb < 1 ? p.t + (q.t - p.t) * pb : q.t).toFixed(1)} s`; }
+    }
+
+    function renderAt(t) {
+        if (!M['s-v0']) return;
+        scenes.forEach(s => { const a = +s.dataset.start, b = +s.dataset.end;
+            const fin = clamp01((t - a) / FADE), fout = s.dataset.hold ? 1 : clamp01((b - t) / FADE);
+            s.style.opacity = (t < a || (!s.dataset.hold && t > b)) ? 0 : ease(Math.min(fin, fout)); });
+        timed.forEach(el => { const p = ease(clamp01((t - +el.dataset.t) / FADE)); el.style.opacity = p; if (!el.dataset.nt) el.style.transform = `translateY(${16 * (1 - p)}px)`; });
+        // reset ball state, then apply steps in order
+        setBall('fb-b0', Y0); document.getElementById('fb-clk').textContent = 't = 0.0 s';
+        for (let n = 1; n <= 5; n++) document.getElementById(`fb-m0-${n}`).style.opacity = 0;
+        ['f-va', 'f-vb', 'f-ya', 'f-yb'].forEach(id => GL[id].style.opacity = 0);
+        step(1, 3, t); step(2, 12, t);
+        document.getElementById('blk1').style.opacity = 1 - 0.65 * seg(t, 11.6, .5);
+    }
+    window.renderAt = renderAt; window.TOTAL = TOTAL;
+
+    function fit() { const s = Math.min(innerWidth / 1280, innerHeight / 720);
+        stage.style.transform = `scale(${s})`; stage.style.left = (innerWidth - 1280 * s) / 2 + 'px'; stage.style.top = (innerHeight - 720 * s) / 2 + 'px'; }
+    addEventListener('resize', fit); fit();
+
+    void document.body.offsetHeight;
+    Promise.all(['26px KaTeX_Main', 'italic 26px KaTeX_Math', '26px KaTeX_Size1'].map(f => document.fonts.load(f))).then(() => document.fonts.ready).then(() => {
+        ['S-1v-', 'S-1y-', 'S-2v-', 'S-2y-'].forEach(equalise); measure(); renderAt(0); window.__ready = true;
+        if (location.hash === '#manual') return;
+        let t0 = performance.now();
+        const tick = now => { renderAt(Math.min(TOTAL, (now - t0) / 1000)); requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+        addEventListener('click', () => { t0 = performance.now(); });
+    });
+</script>
+</body>
+</html>
