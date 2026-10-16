@@ -1,0 +1,152 @@
+{
+ "slug": "ap-precalculus-2-2-changes-in-linear-and-exponential-functions-practice",
+ "title": "AP Precalculus 2.2 — Changes in Linear and Exponential Functions Practice",
+ "course": "AP Precalculus",
+ "unit": "2.2",
+ "question": "Ten practice questions: tables, point forms, two points and sequences as linear or exponential functions.",
+ "intro": "**Quick recap:**\n\n- Linear (constant difference):\n\n\\[\nf(x)=b+mx\n\\]\n\n- Linear through \\((x_i,\\ y_i)\\):\n\n\\[\nf(x)=y_i+m(x-x_i)\n\\]\n\n- Exponential (constant ratio):\n\n\\[\nf(x)=a\\,b^{x}\n\\]\n\n- Exponential through \\((x_i,\\ y_i)\\):\n\n\\[\nf(x)=y_i\\,b^{(x-x_i)}\n\\]\n\n- Arithmetic \\(a_n=a_0+dn\\) becomes linear. Geometric \\(g_n=g_0r^n\\) becomes exponential.\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Table · Constant difference",
+   "prompt": "\\[\n\\begin{array}{c|cccc}\nx & 0 & 1 & 2 & 3\\\\\n\\hline\ny & 7 & 11 & 15 & 19\n\\end{array}\n\\]\n\nWhich function matches the table?",
+   "choices": [
+    "\\(f(x)=7+4x\\)",
+    "\\(f(x)=7\\cdot4^{x}\\)",
+    "\\(f(x)=4+7x\\)",
+    "\\(f(x)=7(1.5)^{x}\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Equal steps in x add the same amount",
+   "solution": "\\[\n\\begin{aligned}\n11-7 &= 4 \\\\\n15-11 &= 4 \\\\\n19-15 &= 4\n\\end{aligned}\n\\]\n\nThe difference is constant, so the function is linear with \\(b=7\\) and \\(m=4\\):\n\n\\[\n\\boxed{f(x)=7+4x}\n\\]\n\n- Not \\(7\\cdot4^x\\): that multiplies by \\(4\\) each step, giving \\(7,\\ 28,\\ 112\\).\n- Not \\(4+7x\\): the start value is \\(f(0)=7\\), so \\(7\\) is \\(b\\), not the slope.",
+   "type": "mcq"
+  },
+  {
+   "title": "Table · Constant ratio",
+   "prompt": "\\[\n\\begin{array}{c|cccc}\nx & 0 & 1 & 2 & 3\\\\\n\\hline\ny & 2 & 6 & 18 & 54\n\\end{array}\n\\]\n\nWhich function matches the table?",
+   "choices": [
+    "\\(f(x)=2+4x\\)",
+    "\\(f(x)=3\\cdot2^{x}\\)",
+    "\\(f(x)=2\\cdot3^{x}\\)",
+    "\\(f(x)=2+3x\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Equal steps in x multiply by the same number",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{6}{2} &= 3 \\\\\n\\frac{18}{6} &= 3 \\\\\n\\frac{54}{18} &= 3\n\\end{aligned}\n\\]\n\nThe ratio is constant, so the function is exponential with \\(a=2\\) and \\(b=3\\):\n\n\\[\n\\boxed{f(x)=2\\cdot3^{x}}\n\\]\n\n- Not \\(2+4x\\): it fits the first two points only (\\(2,\\ 6\\)), then gives \\(10\\), not \\(18\\).\n- Not \\(3\\cdot2^x\\): the start value \\(f(0)\\) is \\(2\\), and the ratio is \\(3\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "Table · Halving each step",
+   "prompt": "\\[\n\\begin{array}{c|cccc}\nx & 0 & 1 & 2 & 3\\\\\n\\hline\ny & 80 & 40 & 20 & 10\n\\end{array}\n\\]\n\nWhich function matches the table?",
+   "choices": [
+    "\\(f(x)=80-40x\\)",
+    "\\(f(x)=80(0.5)^{x}\\)",
+    "\\(f(x)=80\\cdot2^{x}\\)",
+    "\\(f(x)=80-20x\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Each output is half of the one before",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{40}{80} &= 0.5 \\\\\n\\frac{20}{40} &= 0.5 \\\\\n\\frac{10}{20} &= 0.5\n\\end{aligned}\n\\]\n\nThe ratio is constant, so\n\n\\[\n\\boxed{f(x)=80(0.5)^{x}}\n\\]\n\n- Not \\(80-40x\\): it fits \\(80,\\ 40\\), then gives \\(0\\) instead of \\(20\\). Check every point, not two.\n- Not \\(80\\cdot2^x\\): the outputs get smaller, so the ratio is below \\(1\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "Linear · Slope and a point",
+   "prompt": "A linear function has slope \\(4\\) and passes through the point \\((2,\\ 11)\\).\n\nFind \\(f(5)\\).",
+   "choices": [
+    "\\(20\\)",
+    "\\(31\\)",
+    "\\(15\\)",
+    "\\(23\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Use the point form",
+   "solution": "\\[\n\\begin{aligned}\nf(x) &= y_i+m(x-x_i) \\\\\nf(x) &= 11+4(x-2)\n\\end{aligned}\n\\]\n\nPut in \\(x=5\\):\n\n\\[\n\\begin{aligned}\nf(5) &= 11+4(5-2) \\\\\n&= 11+12 \\\\\n&= \\boxed{23}\n\\end{aligned}\n\\]\n\n- From \\(x=2\\) to \\(x=5\\) is \\(3\\) steps, and each step adds \\(4\\).\n- Not \\(31\\): \\(11+4\\cdot5\\) forgets to subtract \\(x_i=2\\).\n- Not \\(15\\): that adds only one step of \\(4\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "Exponential · Ratio and a point",
+   "prompt": "An exponential function passes through \\((1,\\ 6)\\).\n\nIts outputs triple for every increase of \\(1\\) in \\(x\\).\n\nFind \\(f(3)\\).",
+   "choices": [
+    "\\(18\\)",
+    "\\(162\\)",
+    "\\(54\\)",
+    "\\(12\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Use the point form with ratio 3",
+   "solution": "\\[\n\\begin{aligned}\nf(x) &= y_i\\,b^{(x-x_i)} \\\\\nf(x) &= 6\\cdot3^{(x-1)}\n\\end{aligned}\n\\]\n\nPut in \\(x=3\\):\n\n\\[\n\\begin{aligned}\nf(3) &= 6\\cdot3^{2} \\\\\n&= 6\\cdot9 \\\\\n&= \\boxed{54}\n\\end{aligned}\n\\]\n\n- From \\(x=1\\) to \\(x=3\\) is \\(2\\) steps: \\(6\\to18\\to54\\).\n- Not \\(162\\): \\(6\\cdot3^3\\) uses \\(x=3\\) instead of \\(x-1=2\\).\n- Not \\(12\\): \\(6+3\\cdot2\\) adds, but exponential change multiplies.",
+   "type": "mcq"
+  },
+  {
+   "title": "Sequence → function · Arithmetic",
+   "prompt": "An arithmetic sequence is\n\n\\[\na_n=5+2n\n\\]\n\nWhich function extends it to all real inputs \\(x\\)?",
+   "choices": [
+    "\\(f(x)=5\\cdot2^{x}\\)",
+    "\\(f(x)=5+2x\\)",
+    "\\(f(x)=2+5x\\)",
+    "\\(f(x)=2\\cdot5^{x}\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Match the parts: a₀ → b, d → m, n → x",
+   "solution": "Arithmetic matches linear:\n\n\\[\n\\begin{aligned}\na_n &= a_0+dn \\\\\nf(x) &= b+mx\n\\end{aligned}\n\\]\n\nWith \\(a_0=5\\) and \\(d=2\\):\n\n\\[\n\\boxed{f(x)=5+2x}\n\\]\n\n- Not \\(5\\cdot2^x\\): that is geometric (multiply by \\(2\\)). This sequence **adds** \\(2\\).\n- Not \\(2+5x\\): the start value \\(5\\) and the step \\(2\\) are swapped.",
+   "type": "mcq"
+  },
+  {
+   "title": "Sequence → function · Allowed inputs",
+   "prompt": "A geometric sequence is\n\n\\[\ng_n=3\\cdot2^{n}\n\\]\n\nThe matching exponential function is\n\n\\[\nf(x)=3\\cdot2^{x}\n\\]\n\nWhich input can \\(f\\) use, but the sequence cannot?",
+   "choices": [
+    "\\(0\\)",
+    "\\(1\\)",
+    "\\(4\\)",
+    "\\(2.5\\)"
+   ],
+   "answer": "D",
+   "solution_title": "A sequence uses whole numbers only",
+   "solution": "- The sequence has a 0th, 1st, 2nd … term: \\(n\\) is a whole number.\n- The function accepts every real \\(x\\).\n\nSo the input is\n\n\\[\n\\boxed{2.5}\n\\]\n\n\\[\n\\begin{aligned}\nf(2.5) &= 3\\cdot2^{2.5} \\\\\n&\\approx 16.97\n\\end{aligned}\n\\]\n\n- Not \\(0\\), \\(1\\) or \\(4\\): both the sequence and the function can use these.",
+   "type": "mcq"
+  },
+  {
+   "title": "Linear · Two points",
+   "prompt": "A linear function has\n\n\\[\nf(1)=5\n\\]\n\nand\n\n\\[\nf(4)=17\n\\]\n\nFind \\(f(0)\\).",
+   "choices": [
+    "\\(1\\)",
+    "\\(4\\)",
+    "\\(5\\)",
+    "\\(-7\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Slope first, then step back to x = 0",
+   "solution": "\\[\n\\begin{aligned}\nm &= \\frac{17-5}{4-1} \\\\\n&= \\frac{12}{3} \\\\\n&= 4\n\\end{aligned}\n\\]\n\nOne step back from \\(x=1\\) takes away \\(4\\):\n\n\\[\n\\begin{aligned}\nf(0) &= 5-4 \\\\\n&= \\boxed{1}\n\\end{aligned}\n\\]\n\n- Not \\(4\\): that is the slope \\(m\\), not a value of \\(f\\).\n- Not \\(-7\\): \\(5-12\\) steps back the whole change \\(12\\). One step of \\(x\\) changes \\(f\\) by \\(4\\) only.",
+   "type": "mcq"
+  },
+  {
+   "title": "Exponential · Two points",
+   "prompt": "An exponential function has\n\n\\[\ng(0)=3\n\\]\n\nand\n\n\\[\ng(2)=27\n\\]\n\nIts base is positive.\n\nFind \\(g(1)\\).",
+   "choices": [
+    "\\(15\\)",
+    "\\(13.5\\)",
+    "\\(9\\)",
+    "\\(12\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Two steps multiply by b twice",
+   "solution": "\\[\n\\begin{aligned}\n3\\,b^2 &= 27 \\\\\nb^2 &= 9 \\\\\nb &= 3\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\ng(1) &= 3\\cdot3 \\\\\n&= \\boxed{9}\n\\end{aligned}\n\\]\n\n- Check: \\(3\\to9\\to27\\), multiplying by \\(3\\) each step.\n- Not \\(15\\): \\(\\frac{3+27}{2}\\) is the middle of a **linear** function. Exponential change multiplies, so the middle value is \\(9\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "Context · Which change is exponential?",
+   "prompt": "Which situation is modeled by an exponential function?",
+   "choices": [
+    "A phone plan costs €20 more each year.",
+    "A town's population grows by \\(5\\%\\) each year.",
+    "A candle gets \\(3\\) cm shorter each hour.",
+    "A taxi fare adds €1.20 for each km."
+   ],
+   "answer": "B",
+   "solution_title": "Equal steps multiply by the same factor",
+   "solution": "- A \\(5\\%\\) increase multiplies the population by the same factor each year:\n\n\\[\n\\begin{aligned}\nb &= 1+0.05 \\\\\n&= 1.05\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{\\text{the population, } P(t)=P_0(1.05)^t}\n\\]\n\n- The other three **add** (or take away) the same amount each step, so they are linear.",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "Linear functions add the same amount over equal steps; exponential functions multiply by the same factor.",
+ "send_to": "John"
+}
