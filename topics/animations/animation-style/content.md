@@ -10,17 +10,17 @@ author: Wei-Che Hung
 
 # Animation Style Register: Substitution Ledger (A) and Flow Through the Formula (B)
 
-This page fixes how the animated concept figures in this repository look, so that a new animation can be built the same way on any machine. Two choreographies were tried for the scene "numbers go into the formula and come out as the next state". Style A is the one in use. Style B is kept as the alternative.
+This page fixes how the animated concept figures in this repository look, so that a new animation can be built the same way on any machine. Two choreographies were tried for the scene "numbers go into the formula and come out as the next state". **Style B is the one in use** (chosen 2026-10-16 after both were seen with the slot rule applied). Style A is kept as the alternative.
 
-**Style A, substitution ledger (in use):**
-
-![Style A, substitution ledger](media/style-A-ledger.gif)
-
-**Style B, flow through the formula (alternative):**
+**Style B, flow through the formula (in use):**
 
 ![Style B, flow through the formula](media/style-B-flow.gif)
 
-Both demos show the same thing: explicit Euler on a falling ball, step $n = 0 \to 1$ and then $n = 1 \to 2$ with $\Delta t = 0.8\ \mathrm{s}$ , $g = 9.81\ \mathrm{m/s^2}$ , $\beta = 0.1\ \mathrm{s^{-1}}$ , start $y^0 = 100\ \mathrm{m}$ , $v^0 = 0$ . Every number on screen is computed by the page, none is typed in. Video files: [style-A-ledger.mp4](media/style-A-ledger.mp4), [style-B-flow.mp4](media/style-B-flow.mp4). Page sources: [style-A-ledger.html](media/style-A-ledger.html), [style-B-flow.html](media/style-B-flow.html).
+**Style A, substitution ledger (alternative):**
+
+![Style A, substitution ledger](media/style-A-ledger.gif)
+
+Both demos show the same thing: explicit Euler on a falling ball, step $n = 0 \to 1$ and then $n = 1 \to 2$ with $\Delta t = 0.8\ \mathrm{s}$ , $g = 9.81\ \mathrm{m/s^2}$ , $\beta = 0.1\ \mathrm{s^{-1}}$ , start $y^0 = 100\ \mathrm{m}$ , $v^0 = 0$ . Every number on screen is computed by the page, none is typed in. Video files: [style-B-flow.mp4](media/style-B-flow.mp4), [style-A-ledger.mp4](media/style-A-ledger.mp4). Page sources: [style-B-flow.html](media/style-B-flow.html), [style-A-ledger.html](media/style-A-ledger.html). The style B demo runs at the registered pace (31 s); the style A demo is at the first, faster pace (24 s).
 
 ## Base look (both styles)
 
@@ -34,9 +34,19 @@ Both demos show the same thing: explicit Euler on a falling ball, step $n = 0 \t
 | Math | KaTeX for every formula; 28 px in the formula card, 26 px in worked lines, 22 px in tables, 19 to 20 px body text |
 | Series line | 14 px grey line at the top left: series, title, variant |
 | Figure panel | the right third of the stage shows the physical picture (here the falling ball with a height axis, landing ticks "n = k" and a clock), so each computed number is also seen as motion |
-| Motion | every frame is a pure function of time; fades 0.6 s; moving numbers take about 1 s; a collapse beat takes 0.4 s |
+| Motion | every frame is a pure function of time; scene fades 0.6 s (1.0 s for a step-by-hand scene); the pace of the number motion is fixed by the table below |
 
-## Style A, substitution ledger (in use)
+## Style B, flow through the formula (in use)
+
+1. The current state is three chips at the top ( $t^n$ , $v^n$ , $y^n$ ) under a large step label "n = k".
+2. The formula is a fixed machine below, with dashed slots where the state enters. Constants stay symbolic inside the machine and are listed under it.
+3. For one step: copies of the chips travel along curved paths into the slots, the slots turn solid, the machine pulses, and two green result chips emerge from its right edge.
+4. The result chips fly up and replace the state chips, which flash. The old state shrinks into a history strip under the chips. The figure on the right moves to the new value. The machine resets to its empty slots.
+5. When a line needs a value computed in the same step (implicit Euler: the position line uses $v^{n+1}$ ), a copy of that result chip travels into the slot before the line fills.
+
+Character: more motion, emphasises "state in, state out", close to how the loop runs in code.
+
+## Style A, substitution ledger (alternative)
 
 1. A state table on top: columns $n$ , $t^n$ , $v^n$ , $y^n$ . Row $n = 0$ is present from the start; later rows are empty lines waiting to be filled.
 2. The update formula in symbols sits in a bordered card below the table and never moves.
@@ -46,14 +56,22 @@ Both demos show the same thing: explicit Euler on a falling ball, step $n = 0 \t
 
 Character: calm, textbook, readable when paused.
 
-## Style B, flow through the formula (alternative)
+## Pace of the number motion (both styles)
 
-1. The current state is three chips at the top ( $t^n$ , $v^n$ , $y^n$ ) under a large step label "n = k".
-2. The formula is a fixed machine below, with dashed slots where the state enters. Constants stay symbolic inside the machine and are listed under it.
-3. For one step: copies of the chips travel along curved paths into the slots, the slots turn solid, the machine pulses, and two green result chips emerge from its right edge.
-4. The result chips fly up and replace the state chips, which flash. The old state shrinks into a history strip under the chips. The figure on the right moves to the new value. The machine resets to its empty slots.
+Set on 2026-10-16: 35 % slower than the first demos, so that the eye can follow one number from its chip to its slot before the next one leaves.
 
-Character: more motion, emphasises "state in, state out", close to how the loop runs in code.
+| Motion | Duration |
+|---|---|
+| a number copy travels from the state to a slot | 1.35 s, launches 0.4 s apart |
+| the formula switches from symbols to the filled copy | 0.55 s crossfade |
+| the formula pulses while it evaluates | 0.9 s |
+| a result chip grows out of the formula | 0.8 s |
+| a result chip travels to the state | 1.6 s |
+| the old state shrinks into the history strip | 1.1 s |
+| the state chips switch to the new values | 0.55 s, with a 0.3 s flash |
+| the figure moves to the new value | 1.1 s |
+| the formula resets to symbols | 0.8 s |
+| one explicit step ( $n \to n+1$ ) | about 12.5 s; an implicit step, whose velocity result feeds the position line, about 15 s |
 
 ## The slot rule (both styles)
 
