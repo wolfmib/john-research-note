@@ -1,0 +1,162 @@
+{
+ "slug": "ap-precalculus-evaluating-series-and-summation-notation",
+ "title": "AP Precalculus — Evaluating Series and Summation Notation",
+ "course": "AP Precalculus",
+ "unit": "Series",
+ "question": "Evaluate 15 summation-notation expressions: arithmetic, geometric, squares, cubes, alternating, fractions and factorials.",
+ "intro": "**Summation notation** (sigma notation) is shorthand for adding a list of terms:\n\n\\[\n\\sum_{n=1}^{k} a_n = a_1 + a_2 + \\cdots + a_k\n\\]\n\n- Write out every term first.\n- Then add them up.\n\n**Type your answer as a number** (decimal or fraction like 3/4).",
+ "questions": [
+  {
+   "title": "Natural numbers",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{5} n\n\\]",
+   "answer": 15,
+   "answer_display": "$15$",
+   "tolerance": 0.01,
+   "solution_title": "Write out the terms",
+   "solution": "\\[\n\\begin{aligned}\n\\sum_{n=1}^{5} n &= 1+2+3+4+5 \\\\\n&= \\boxed{15}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Arithmetic: constant times n",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{4} 3n\n\\]",
+   "answer": 30,
+   "answer_display": "$30$",
+   "tolerance": 0.01,
+   "solution_title": "Factor out the 3",
+   "solution": "\\[\n\\begin{aligned}\n&= 3(1)+3(2)+3(3)+3(4) \\\\\n&= 3+6+9+12 \\\\\n&= \\boxed{30}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Geometric: powers of 2",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=0}^{4} 2^n\n\\]",
+   "answer": 31,
+   "answer_display": "$31$",
+   "tolerance": 0.01,
+   "solution_title": "List powers of 2",
+   "solution": "\\[\n\\begin{aligned}\n&= 2^0+2^1+2^2+2^3+2^4 \\\\\n&= 1+2+4+8+16 \\\\\n&= \\boxed{31}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Odd numbers",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{5} (2n-1)\n\\]",
+   "answer": 25,
+   "answer_display": "$25$",
+   "tolerance": 0.01,
+   "solution_title": "List the odd numbers",
+   "solution": "\\[\n\\begin{aligned}\n&= 1+3+5+7+9 \\\\\n&= \\boxed{25}\n\\end{aligned}\n\\]\n\nThe sum of the first \\(k\\) odd numbers is always \\(k^2\\).\n\nHere \\(k=5\\), so \\(5^2=25\\)."
+  },
+  {
+   "title": "Sum of squares",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{k=1}^{4} k^2\n\\]",
+   "answer": 30,
+   "answer_display": "$30$",
+   "tolerance": 0.01,
+   "solution_title": "Square each term",
+   "solution": "\\[\n\\begin{aligned}\n&= 1^2+2^2+3^2+4^2 \\\\\n&= 1+4+9+16 \\\\\n&= \\boxed{30}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Alternating signs",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{6} (-1)^{{n+1}} \\\\cdot n\n\\]",
+   "answer": -3,
+   "answer_display": "$-3$",
+   "tolerance": 0.01,
+   "solution_title": "Signs alternate + - + - ...",
+   "solution": "\\[\n\\begin{aligned}\n&= (+1)+(-2)+(+3)+(-4)+(+5)+(-6) \\\\\n&= (1-2)+(3-4)+(5-6) \\\\\n&= (-1)+(-1)+(-1) \\\\\n&= \\boxed{-3}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Geometric: halving",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=0}^{3} 5 \\\\cdot \\\\left(\\\\tfrac{{1}}{{2}}\\\\right)^n\n\\]",
+   "answer": 9.375,
+   "answer_display": "$9.375$",
+   "tolerance": 0.01,
+   "solution_title": "Each term is half the previous",
+   "solution": "\\[\n\\begin{aligned}\n&= 5+2.5+1.25+0.625 \\\\\n&= \\boxed{9.375}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Telescoping fractions",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{k=1}^{3} \\\\dfrac{{1}}{{k(k+1)}}\n\\]",
+   "answer": 0.75,
+   "answer_display": "$\\frac{3}{4}$",
+   "tolerance": 0.01,
+   "solution_title": "Partial fractions cancel",
+   "solution": "Each term splits:\n\n\\[\n\\begin{aligned}\n\\frac{1}{k(k+1)} &= \\frac{1}{k}-\\frac{1}{k+1}\n\\end{aligned}\n\\]\n\nSo the sum telescopes:\n\n\\[\n\\begin{aligned}\n&= \\left(\\frac{1}{1}-\\frac{1}{2}\\right)+\\left(\\frac{1}{2}-\\frac{1}{3}\\right)+\\left(\\frac{1}{3}-\\frac{1}{4}\\right) \\\\\n&= 1-\\frac{1}{4} \\\\\n&= \\boxed{\\frac{3}{4}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Quadratic: n squared plus n",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{4} (n^2+n)\n\\]",
+   "answer": 40,
+   "answer_display": "$40$",
+   "tolerance": 0.01,
+   "solution_title": "Evaluate each term",
+   "solution": "\\[\n\\begin{aligned}\nn=1: &\\ 1+1=2 \\\\\nn=2: &\\ 4+2=6 \\\\\nn=3: &\\ 9+3=12 \\\\\nn=4: &\\ 16+4=20\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n&= 2+6+12+20 \\\\\n&= \\boxed{40}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Geometric: multiply by 3",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{3} 4 \\\\cdot 3^{{n-1}}\n\\]",
+   "answer": 52,
+   "answer_display": "$52$",
+   "tolerance": 0.01,
+   "solution_title": "List the terms",
+   "solution": "\\[\n\\begin{aligned}\nn=1: &\\ 4 \\cdot 3^0 = 4 \\\\\nn=2: &\\ 4 \\cdot 3^1 = 12 \\\\\nn=3: &\\ 4 \\cdot 3^2 = 36\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n&= 4+12+36 \\\\\n&= \\boxed{52}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Sum of cubes",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{4} n^3\n\\]",
+   "answer": 100,
+   "answer_display": "$100$",
+   "tolerance": 0.01,
+   "solution_title": "Cube each term",
+   "solution": "\\[\n\\begin{aligned}\n&= 1^3+2^3+3^3+4^3 \\\\\n&= 1+8+27+64 \\\\\n&= \\boxed{100}\n\\end{aligned}\n\\]\n\nThe sum of the first \\(k\\) cubes equals \\(\\left(\\frac{k(k+1)}{2}\\right)^2\\).\n\nHere \\(k=4\\): \\(\\left(\\frac{4 \\cdot 5}{2}\\right)^2 = 10^2 = 100\\)."
+  },
+  {
+   "title": "Alternating squares",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{5} (-1)^n \\\\cdot n^2\n\\]",
+   "answer": -15,
+   "answer_display": "$-15$",
+   "tolerance": 0.01,
+   "solution_title": "Signs: -, +, -, +, -",
+   "solution": "\\[\n\\begin{aligned}\n&= -1+4-9+16-25 \\\\\n&= (4+16)-(1+9+25) \\\\\n&= 20-35 \\\\\n&= \\boxed{-15}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Odd squares",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{k=0}^{3} (2k+1)^2\n\\]",
+   "answer": 84,
+   "answer_display": "$84$",
+   "tolerance": 0.01,
+   "solution_title": "The odd numbers 1, 3, 5, 7 squared",
+   "solution": "\\[\n\\begin{aligned}\nk=0: &\\ 1^2=1 \\\\\nk=1: &\\ 3^2=9 \\\\\nk=2: &\\ 5^2=25 \\\\\nk=3: &\\ 7^2=49\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n&= 1+9+25+49 \\\\\n&= \\boxed{84}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Factorials",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{3} n!\n\\]\n\nRecall: \\(n! = n \\times (n-1) \\times \\cdots \\times 1\\).",
+   "answer": 9,
+   "answer_display": "$9$",
+   "tolerance": 0.01,
+   "solution_title": "1! = 1, 2! = 2, 3! = 6",
+   "solution": "\\[\n\\begin{aligned}\n1! &= 1 \\\\\n2! &= 2 \\\\\n3! &= 6\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n&= 1+2+6 \\\\\n&= \\boxed{9}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Geometric: half, quarter, eighth...",
+   "type": "numeric",
+   "prompt": "Evaluate\n\n\\[\n\\sum_{n=1}^{4} \\\\dfrac{{1}}{{2^n}}\n\\]",
+   "answer": 0.9375,
+   "answer_display": "$\\frac{15}{16}$",
+   "tolerance": 0.01,
+   "solution_title": "List powers of 1/2",
+   "solution": "\\[\n\\begin{aligned}\n&= \\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\frac{1}{16}\n\\end{aligned}\n\\]\n\nCommon denominator 16:\n\n\\[\n\\begin{aligned}\n&= \\frac{8+4+2+1}{16} \\\\\n&= \\boxed{\\frac{15}{16}}\n\\end{aligned}\n\\]\n\nAs a decimal: \\(0.9375\\)."
+  }
+ ],
+ "takeaway": "To evaluate a sum, substitute each value of the index, list the terms, and add.",
+ "send_to": "John"
+}

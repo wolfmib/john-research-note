@@ -1,0 +1,282 @@
+{
+ "slug": "ap-precalculus-speed-test-fractions-and-equations",
+ "title": "AP Precalculus — Speed Test: Fractions and Equations",
+ "course": "AP Precalculus",
+ "unit": "Speed Test",
+ "question": "15 timed questions in 3 categories: fraction addition, linear equations, fractional equations.",
+ "intro": "**Speed Test** — answer each question as fast as you can.\n\nAfter you tap **Check**, you see your time and a ranking:\n\n- **Expert** — fast and confident\n- **Middle-High** — good pace\n- **Middle** — solid\n- **Middle-Low** — a bit slow\n- **Need Practice** — keep practising\n\n**Type your answer** as a number (decimal or fraction like 5/6).\n\nUse **Practice** mode so each question is timed separately.",
+ "questions": [
+  {
+   "title": "Fractions 1",
+   "group": "Category 1: Fraction Addition",
+   "type": "numeric",
+   "prompt": "\\[\n\\frac{1}{2}+\\frac{1}{3}\n\\]",
+   "answer": 0.8333333333333334,
+   "answer_display": "$\\frac{5}{6}$",
+   "tolerance": 0.02,
+   "speed": [
+    15,
+    20,
+    25,
+    30,
+    35
+   ],
+   "solution_title": "Common denominator 6",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{1}{2}+\\frac{1}{3} &= \\frac{3}{6}+\\frac{2}{6} \\\\\n&= \\boxed{\\frac{5}{6}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractions 2",
+   "group": "Category 1: Fraction Addition",
+   "type": "numeric",
+   "prompt": "\\[\n\\frac{1}{3}+\\frac{1}{4}\n\\]",
+   "answer": 0.5833333333333334,
+   "answer_display": "$\\frac{7}{12}$",
+   "tolerance": 0.02,
+   "speed": [
+    15,
+    20,
+    25,
+    30,
+    35
+   ],
+   "solution_title": "Common denominator 12",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{1}{3}+\\frac{1}{4} &= \\frac{4}{12}+\\frac{3}{12} \\\\\n&= \\boxed{\\frac{7}{12}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractions 3",
+   "group": "Category 1: Fraction Addition",
+   "type": "numeric",
+   "prompt": "\\[\n\\frac{1}{2}+\\frac{1}{5}\n\\]",
+   "answer": 0.7,
+   "answer_display": "$\\frac{7}{10}$",
+   "tolerance": 0.02,
+   "speed": [
+    15,
+    20,
+    25,
+    30,
+    35
+   ],
+   "solution_title": "Common denominator 10",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{1}{2}+\\frac{1}{5} &= \\frac{5}{10}+\\frac{2}{10} \\\\\n&= \\boxed{\\frac{7}{10}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractions 4",
+   "group": "Category 1: Fraction Addition",
+   "type": "numeric",
+   "prompt": "\\[\n\\frac{1}{2}+\\frac{1}{3}+\\frac{1}{4}\n\\]",
+   "answer": 1.0833333333333333,
+   "answer_display": "$\\frac{13}{12}$",
+   "tolerance": 0.02,
+   "speed": [
+    15,
+    20,
+    25,
+    30,
+    35
+   ],
+   "solution_title": "Common denominator 12",
+   "solution": "\\[\n\\begin{aligned}\n&= \\frac{6}{12}+\\frac{4}{12}+\\frac{3}{12} \\\\\n&= \\boxed{\\frac{13}{12}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractions 5",
+   "group": "Category 1: Fraction Addition",
+   "type": "numeric",
+   "prompt": "\\[\n\\frac{1}{3}+\\frac{1}{4}+\\frac{1}{5}\n\\]",
+   "answer": 0.7833333333333333,
+   "answer_display": "$\\frac{47}{60}$",
+   "tolerance": 0.02,
+   "speed": [
+    15,
+    20,
+    25,
+    30,
+    35
+   ],
+   "solution_title": "Common denominator 60",
+   "solution": "\\[\n\\begin{aligned}\n&= \\frac{20}{60}+\\frac{15}{60}+\\frac{12}{60} \\\\\n&= \\boxed{\\frac{47}{60}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Algebra 1",
+   "group": "Category 2: Linear Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n2x+5=17\n\\]",
+   "answer": 6,
+   "answer_display": "$6$",
+   "tolerance": 0.01,
+   "speed": [
+    20,
+    25,
+    30,
+    35,
+    40
+   ],
+   "solution_title": "x = 6",
+   "solution": "\\[\n\\begin{aligned}\n2x+5 &= 17 \\\\\n2x &= 12 \\\\\nx &= \\boxed{6}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Algebra 2",
+   "group": "Category 2: Linear Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n5x-3=2x+12\n\\]",
+   "answer": 5,
+   "answer_display": "$5$",
+   "tolerance": 0.01,
+   "speed": [
+    20,
+    25,
+    30,
+    35,
+    40
+   ],
+   "solution_title": "x = 5",
+   "solution": "\\[\n\\begin{aligned}\n5x-3 &= 2x+12 \\\\\n3x &= 15 \\\\\nx &= \\boxed{5}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Algebra 3",
+   "group": "Category 2: Linear Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n3x+7=5x-9\n\\]",
+   "answer": 8,
+   "answer_display": "$8$",
+   "tolerance": 0.01,
+   "speed": [
+    20,
+    25,
+    30,
+    35,
+    40
+   ],
+   "solution_title": "x = 8",
+   "solution": "\\[\n\\begin{aligned}\n3x+7 &= 5x-9 \\\\\n-2x &= -16 \\\\\nx &= \\boxed{8}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Algebra 4",
+   "group": "Category 2: Linear Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n7x-4=3x+16\n\\]",
+   "answer": 5,
+   "answer_display": "$5$",
+   "tolerance": 0.01,
+   "speed": [
+    20,
+    25,
+    30,
+    35,
+    40
+   ],
+   "solution_title": "x = 5",
+   "solution": "\\[\n\\begin{aligned}\n7x-4 &= 3x+16 \\\\\n4x &= 20 \\\\\nx &= \\boxed{5}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Algebra 5",
+   "group": "Category 2: Linear Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n4x+11=6x-3\n\\]",
+   "answer": 7,
+   "answer_display": "$7$",
+   "tolerance": 0.01,
+   "speed": [
+    20,
+    25,
+    30,
+    35,
+    40
+   ],
+   "solution_title": "x = 7",
+   "solution": "\\[\n\\begin{aligned}\n4x+11 &= 6x-3 \\\\\n-2x &= -14 \\\\\nx &= \\boxed{7}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractional 1",
+   "group": "Category 3: Fractional Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n\\frac{2x+1}{3}=\\frac{3x-3}{2}\n\\]",
+   "answer": 2.2,
+   "answer_display": "$\\frac{11}{5}$",
+   "tolerance": 0.02,
+   "speed": [
+    45,
+    50,
+    55,
+    60,
+    65
+   ],
+   "solution_title": "Cross-multiply",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{2x+1}{3} &= \\frac{3x-3}{2} \\\\\n2(2x+1) &= 3(3x-3) \\\\\n4x+2 &= 9x-9 \\\\\n11 &= 5x \\\\\nx &= \\boxed{\\frac{11}{5}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractional 2",
+   "group": "Category 3: Fractional Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n\\frac{x+4}{2}=\\frac{2x-1}{3}\n\\]",
+   "answer": 14.0,
+   "answer_display": "$14$",
+   "tolerance": 0.02,
+   "speed": [
+    45,
+    50,
+    55,
+    60,
+    65
+   ],
+   "solution_title": "Cross-multiply",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{x+4}{2} &= \\frac{2x-1}{3} \\\\\n3(x+4) &= 2(2x-1) \\\\\n3x+12 &= 4x-2 \\\\\n14 &= x \\\\\nx &= \\boxed{14}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractional 3",
+   "group": "Category 3: Fractional Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n\\frac{3x-2}{4}=\\frac{x+5}{3}\n\\]",
+   "answer": 5.2,
+   "answer_display": "$\\frac{26}{5}$",
+   "tolerance": 0.02,
+   "speed": [
+    45,
+    50,
+    55,
+    60,
+    65
+   ],
+   "solution_title": "Cross-multiply",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{3x-2}{4} &= \\frac{x+5}{3} \\\\\n3(3x-2) &= 4(x+5) \\\\\n9x-6 &= 4x+20 \\\\\n5x &= 26 \\\\\nx &= \\boxed{\\frac{26}{5}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractional 4",
+   "group": "Category 3: Fractional Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n\\frac{5x+1}{6}=\\frac{2x+3}{4}\n\\]",
+   "answer": 1.75,
+   "answer_display": "$\\frac{7}{4}$",
+   "tolerance": 0.02,
+   "speed": [
+    45,
+    50,
+    55,
+    60,
+    65
+   ],
+   "solution_title": "Cross-multiply",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{5x+1}{6} &= \\frac{2x+3}{4} \\\\\n4(5x+1) &= 6(2x+3) \\\\\n20x+4 &= 12x+18 \\\\\n8x &= 14 \\\\\nx &= \\boxed{\\frac{7}{4}}\n\\end{aligned}\n\\]"
+  },
+  {
+   "title": "Fractional 5",
+   "group": "Category 3: Fractional Equations",
+   "type": "numeric",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n\\frac{4x-3}{5}=\\frac{x+2}{2}\n\\]",
+   "answer": 5.333333333333333,
+   "answer_display": "$\\frac{16}{3}$",
+   "tolerance": 0.02,
+   "speed": [
+    45,
+    50,
+    55,
+    60,
+    65
+   ],
+   "solution_title": "Cross-multiply",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{4x-3}{5} &= \\frac{x+2}{2} \\\\\n2(4x-3) &= 5(x+2) \\\\\n8x-6 &= 5x+10 \\\\\n3x &= 16 \\\\\nx &= \\boxed{\\frac{16}{3}}\n\\end{aligned}\n\\]"
+  }
+ ],
+ "takeaway": "Speed comes from knowing the method cold. Practise the steps until they feel automatic.",
+ "send_to": "John"
+}

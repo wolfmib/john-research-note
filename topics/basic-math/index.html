@@ -238,6 +238,21 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .notice { margin-top: 16px; padding: 12px 14px; border-radius: 12px; background: var(--bad-soft); font-size: 15px; }
 
 
+.speed-badge { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 12px 0 4px; padding: 10px 14px; border-radius: 12px; background: var(--soft); font-weight: 700; }
+.speed-badge .stime { font-size: 28px; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.speed-badge .srank { font-size: 16px; }
+.sp-expert .srank { color: var(--ok); }
+.sp-mhigh .srank { color: #0969da; }
+.sp-mid .srank { color: #bf8700; }
+.sp-mlow .srank { color: #cf5300; }
+.sp-npract .srank { color: var(--bad); }
+@media (prefers-color-scheme: dark) {
+  .sp-mhigh .srank { color: #79b8ff; }
+  .sp-mid .srank { color: #f0c239; }
+  .sp-mlow .srank { color: #ff9b5e; }
+}
+
+
 .actions {
   position: fixed;
   left: 0; right: 0; bottom: 0;
@@ -406,7 +421,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 <a class="quiz" href="#ap" data-root="ap">
         <span class="u">AP Precalculus · Math Material</span>
         <span class="t">AP</span>
-        <span class="m">9 quizzes · 4 material pages</span></a>
+        <span class="m">11 quizzes · 5 material pages</span></a>
 <a class="quiz" href="#malta" data-root="malta">
         <span class="u">Track 3 · Year 7 and Year 8</span>
         <span class="t">Malta Year 7, Year 8</span>
@@ -434,6 +449,14 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 <div id="panel-ap-quizzes" role="tabpanel" aria-labelledby="tab-ap-quizzes">
 <h2 class="course">AP Precalculus</h2>
 <div class="quizlist">
+<a class="quiz" href="ap-precalculus-evaluating-series-and-summation-notation/quiz.html" data-slug="ap-precalculus-evaluating-series-and-summation-notation">
+        <span class="u">Series</span>
+        <span class="t">Evaluating Series and Summation Notation</span>
+        <span class="m">15 questions<span class="lastscore"></span></span></a>
+<a class="quiz" href="ap-precalculus-speed-test-fractions-and-equations/quiz.html" data-slug="ap-precalculus-speed-test-fractions-and-equations">
+        <span class="u">Speed Test</span>
+        <span class="t">Speed Test: Fractions and Equations</span>
+        <span class="m">15 questions<span class="lastscore"></span></span></a>
 <a class="quiz" href="ap-precalculus-2-2-changes-in-linear-and-exponential-functions/quiz.html" data-slug="ap-precalculus-2-2-changes-in-linear-and-exponential-functions">
         <span class="u">2.2</span>
         <span class="t">Changes in Linear and Exponential Functions</span>
@@ -473,7 +496,15 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 </div>
 </div>
 <div id="panel-ap-material" role="tabpanel" aria-labelledby="tab-ap-material" hidden>
-<div class="quizlist first">
+<h2 class="course">AP Precalculus</h2>
+<div class="quizlist">
+<a class="quiz" href="math-material-composition-of-functions/material.html" data-slug="math-material-composition-of-functions">
+        <span class="u">2.7</span>
+        <span class="t">Composition of Functions</span>
+        <span class="m">4 questions<span class="lastscore"></span></span></a>
+</div>
+<h2 class="course">Math Material</h2>
+<div class="quizlist">
 <a class="quiz" href="math-material-cone-cross-section-radius-and-area/material.html" data-slug="math-material-cone-cross-section-radius-and-area">
         <span class="u">Math Material</span>
         <span class="t">Cone Cross-Section: Radius and Area</span>
