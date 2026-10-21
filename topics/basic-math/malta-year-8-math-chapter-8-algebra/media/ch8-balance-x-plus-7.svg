@@ -1,0 +1,36 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 330' width='600' height='330' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='328' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<polygon points='300.0,120.0 280.0,290.0 320.0,290.0' fill='#d0d7de' stroke='#1f2328' stroke-width='2' stroke-linejoin='round'/>
+<line x1='90.0' y1='120.0' x2='510.0' y2='120.0' stroke='#1f2328' stroke-width='5' stroke-linecap='round'/>
+<line x1='100.0' y1='120.0' x2='100.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<line x1='240.0' y1='120.0' x2='240.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<path d='M85,200 L255,200 L240,220 L100,220 Z' stroke='#57606a' stroke-width='2' fill='#eaeef2' stroke-linejoin='round'/>
+<line x1='360.0' y1='120.0' x2='360.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<line x1='500.0' y1='120.0' x2='500.0' y2='200.0' stroke='#57606a' stroke-width='1.5' stroke-linecap='round'/>
+<path d='M345,200 L515,200 L500,220 L360,220 Z' stroke='#57606a' stroke-width='2' fill='#eaeef2' stroke-linejoin='round'/>
+<path d='M105,196 q0,-46 20,-50 l20,0 q20,4 20,50 Z' stroke='#1f2328' stroke-width='2' fill='#ffb77a' stroke-linejoin='round'/>
+<text x='135.0' y='184.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328' font-style='italic'>x</text>
+<rect x='175.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='195.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='215.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='235.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='175.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='195.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='215.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='372.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='392.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='412.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='432.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='452.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='472.0' y='178.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='372.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='392.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='412.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='432.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='452.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<rect x='472.0' y='158.0' width='18.0' height='18.0' rx='0' fill='#80ccff' stroke='#1f2328' stroke-width='1'/>
+<text x='170.0' y='258.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328'>x + 7</text>
+<text x='430.0' y='258.0' font-size='24' font-weight='800' text-anchor='middle' fill='#1f2328'>12</text>
+<text x='300.0' y='316.0' font-size='18' font-weight='500' text-anchor='middle' fill='#57606a'>take the same away from both sides: it stays balanced</text>
+</svg>

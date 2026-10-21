@@ -142,6 +142,7 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — Residuals: Linear, Exponential Growth and Decay](topics/basic-math/math-material-residuals-linear-exponential-growth-and-decay/content.md) | Three data sets of five points, each with its model: type the five residuals, check them, and read under or over from the sign. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-residuals-linear-exponential-growth-and-decay/material.html) |
 | [Malta Year 8 Math Chapter 4 — Fractions](topics/basic-math/malta-year-8-math-chapter-4-fractions/content.md) | How do you simplify, add, subtract, multiply and divide fractions, and find a fraction of an amount? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-4-fractions/material.html) |
 | [Malta Year 8 Math Chapter 4 — Fractions Practice](topics/basic-math/malta-year-8-math-chapter-4-fractions-practice/content.md) | 30 fraction questions: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-4-fractions-practice/quiz.html) |
+| [Malta Year 8 Math Chapter 8 — Algebra](topics/basic-math/malta-year-8-math-chapter-8-algebra/content.md) | How do you collect like terms and solve equations, with x on both sides and with fractions? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-8-algebra/material.html) |
 
 ## Animations
 
