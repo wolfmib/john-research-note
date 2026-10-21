@@ -1,0 +1,162 @@
+{
+ "slug": "malta-year-8-math-chapter-4-fractions",
+ "title": "Malta Year 8 Math Chapter 4 — Fractions",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 4",
+ "root": "chapters",
+ "question": "How do you simplify, add, subtract, multiply and divide fractions, and find a fraction of an amount?",
+ "intro": "Chapter 4 works with fractions step by step.\n\n**Chapter 4 has six parts:**\n\n- 4.1 Simplify and equivalent fractions\n- 4.2 Mixed numbers\n- 4.3 Add and subtract\n- 4.4 Multiply and divide (Trick 1: cancel before you multiply)\n- 4.5 Three and four terms\n- 4.6 Fraction of an amount and word problems\n\n**By the end of the chapter:**\n\n- give every answer in its simplest form\n- add and subtract with different bottoms\n- multiply and divide with Trick 1\n- work out 3 and 4 terms in the right order",
+ "link": [
+  "Practice quiz ›",
+  "../malta-year-8-math-chapter-4-fractions-practice/quiz.html"
+ ],
+ "questions": [
+  {
+   "group": "4.1 Simplify and Equivalent Fractions",
+   "title": "Simplify a fraction",
+   "prompt": "- Divide the **top** and the **bottom** by the **same number**.\n- Keep going until no number (except 1) divides both.\n- That is the **simplest form**.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{6}{8}\\)\n\n- **b)** \\(\\dfrac{10}{15}\\)\n\n- **c)** \\(\\dfrac{12}{18}\\)\n\n- **d)** \\(\\dfrac{20}{24}\\)",
+   "steps": [
+    "**a)** Both divide by 2:\n\n\\[\\begin{aligned} \\frac{6}{8} &= \\frac{6\\div2}{8\\div2} \\\\ &= \\boxed{\\frac{3}{4}} \\end{aligned}\\]",
+    "**b)** Both divide by 5:\n\n\\[\\begin{aligned} \\frac{10}{15} &= \\frac{10\\div5}{15\\div5} \\\\ &= \\boxed{\\frac{2}{3}} \\end{aligned}\\]",
+    "**c)** Both divide by 6:\n\n\\[\\begin{aligned} \\frac{12}{18} &= \\frac{12\\div6}{18\\div6} \\\\ &= \\boxed{\\frac{2}{3}} \\end{aligned}\\]",
+    "**d)** Both divide by 4:\n\n\\[\\begin{aligned} \\frac{20}{24} &= \\frac{20\\div4}{24\\div4} \\\\ &= \\boxed{\\frac{5}{6}} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.1 Simplify and Equivalent Fractions",
+   "title": "Equivalent fractions",
+   "prompt": "- **Equivalent** fractions are the same amount.\n- Multiply the **top** and the **bottom** by the **same number**.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{2}{3} = \\dfrac{?}{12}\\)\n\n- **b)** \\(\\dfrac{3}{4} = \\dfrac{?}{20}\\)\n\n- **c)** \\(\\dfrac{5}{6} = \\dfrac{?}{18}\\)\n\n- **d)** \\(\\dfrac{1}{5} = \\dfrac{4}{?}\\)",
+   "steps": [
+    "**a)** \\(3\\times4 = 12\\), so the top is also \\(\\times4\\):\n\n\\[\\begin{aligned} \\frac{2}{3} &= \\frac{2\\times4}{3\\times4} \\\\ &= \\frac{\\boxed{8}}{12} \\end{aligned}\\]",
+    "**b)** \\(4\\times5 = 20\\), so the top is also \\(\\times5\\):\n\n\\[\\begin{aligned} \\frac{3}{4} &= \\frac{3\\times5}{4\\times5} \\\\ &= \\frac{\\boxed{15}}{20} \\end{aligned}\\]",
+    "**c)** \\(6\\times3 = 18\\), so the top is also \\(\\times3\\):\n\n\\[\\begin{aligned} \\frac{5}{6} &= \\frac{5\\times3}{6\\times3} \\\\ &= \\frac{\\boxed{15}}{18} \\end{aligned}\\]",
+    "**d)** \\(1\\times4 = 4\\), so the bottom is also \\(\\times4\\):\n\n\\[\\begin{aligned} \\frac{1}{5} &= \\frac{1\\times4}{5\\times4} \\\\ &= \\frac{4}{\\boxed{20}} \\end{aligned}\\]"
+   ],
+   "figure": "ch4-equivalent-2-3.svg",
+   "figure_alt": "Two bars of the same length: 2 of 3 parts shaded, and 8 of 12 parts shaded, ending at the same place."
+  },
+  {
+   "group": "4.2 Mixed Numbers",
+   "title": "Mixed number to improper fraction",
+   "prompt": "- A **mixed number** such as \\(2\\dfrac{1}{3}\\) is a whole number and a fraction.\n- New top = whole × bottom + top.\n- The bottom stays the same.\n\n**Examples:**\n\n- **a)** \\(2\\dfrac{1}{3}\\)\n\n- **b)** \\(1\\dfrac{3}{4}\\)\n\n- **c)** \\(3\\dfrac{2}{5}\\)\n\n- **d)** \\(4\\dfrac{1}{2}\\)",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} 2\\times3 + 1 &= 7 \\\\ 2\\tfrac{1}{3} &= \\boxed{\\frac{7}{3}} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 1\\times4 + 3 &= 7 \\\\ 1\\tfrac{3}{4} &= \\boxed{\\frac{7}{4}} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 3\\times5 + 2 &= 17 \\\\ 3\\tfrac{2}{5} &= \\boxed{\\frac{17}{5}} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 4\\times2 + 1 &= 9 \\\\ 4\\tfrac{1}{2} &= \\boxed{\\frac{9}{2}} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.2 Mixed Numbers",
+   "title": "Improper fraction to mixed number",
+   "prompt": "- Divide the top by the bottom.\n- The answer is the whole number and the **remainder** is the new top.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{11}{4}\\)\n\n- **b)** \\(\\dfrac{17}{5}\\)\n\n- **c)** \\(\\dfrac{13}{6}\\)\n\n- **d)** \\(\\dfrac{9}{2}\\)",
+   "steps": [
+    "**a)** \\(11\\div4 = 2\\) remainder \\(3\\):\n\n\\[\\frac{11}{4} = \\boxed{2\\tfrac{3}{4}}\\]",
+    "**b)** \\(17\\div5 = 3\\) remainder \\(2\\):\n\n\\[\\frac{17}{5} = \\boxed{3\\tfrac{2}{5}}\\]",
+    "**c)** \\(13\\div6 = 2\\) remainder \\(1\\):\n\n\\[\\frac{13}{6} = \\boxed{2\\tfrac{1}{6}}\\]",
+    "**d)** \\(9\\div2 = 4\\) remainder \\(1\\):\n\n\\[\\frac{9}{2} = \\boxed{4\\tfrac{1}{2}}\\]"
+   ]
+  },
+  {
+   "group": "4.3 Add and Subtract",
+   "title": "Same bottom",
+   "prompt": "- When the bottoms are the **same**, add or subtract the **tops** only.\n- The bottom stays the same.\n- Then simplify.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{2}{9} + \\dfrac{5}{9}\\)\n\n- **b)** \\(\\dfrac{7}{10} - \\dfrac{3}{10}\\)\n\n- **c)** \\(\\dfrac{3}{8} + \\dfrac{1}{8}\\)\n\n- **d)** \\(\\dfrac{5}{6} - \\dfrac{1}{6}\\)",
+   "steps": [
+    "**a)**\n\n\\[\\frac{2}{9} + \\frac{5}{9} = \\boxed{\\frac{7}{9}}\\]",
+    "**b)**\n\n\\[\\begin{aligned} \\frac{7}{10} - \\frac{3}{10} &= \\frac{4}{10} \\\\ &= \\boxed{\\frac{2}{5}} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} \\frac{3}{8} + \\frac{1}{8} &= \\frac{4}{8} \\\\ &= \\boxed{\\frac{1}{2}} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} \\frac{5}{6} - \\frac{1}{6} &= \\frac{4}{6} \\\\ &= \\boxed{\\frac{2}{3}} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.3 Add and Subtract",
+   "title": "Different bottoms",
+   "prompt": "- First make the bottoms the **same**: find a number both bottoms go into.\n- Change each fraction to that bottom.\n- Then add or subtract the tops.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{1}{2} + \\dfrac{1}{3}\\)\n\n- **b)** \\(\\dfrac{2}{5} + \\dfrac{1}{4}\\)\n\n- **c)** \\(\\dfrac{3}{4} - \\dfrac{1}{6}\\)\n\n- **d)** \\(\\dfrac{5}{8} - \\dfrac{1}{4}\\)",
+   "steps": [
+    "**a)** Both go into 6:\n\n\\[\\begin{aligned} \\frac{1}{2} + \\frac{1}{3} &= \\frac{3}{6} + \\frac{2}{6} \\\\ &= \\boxed{\\frac{5}{6}} \\end{aligned}\\]",
+    "**b)** Both go into 20:\n\n\\[\\begin{aligned} \\frac{2}{5} + \\frac{1}{4} &= \\frac{8}{20} + \\frac{5}{20} \\\\ &= \\boxed{\\frac{13}{20}} \\end{aligned}\\]",
+    "**c)** Both go into 12:\n\n\\[\\begin{aligned} \\frac{3}{4} - \\frac{1}{6} &= \\frac{9}{12} - \\frac{2}{12} \\\\ &= \\boxed{\\frac{7}{12}} \\end{aligned}\\]",
+    "**d)** Both go into 8:\n\n\\[\\begin{aligned} \\frac{5}{8} - \\frac{1}{4} &= \\frac{5}{8} - \\frac{2}{8} \\\\ &= \\boxed{\\frac{3}{8}} \\end{aligned}\\]"
+   ],
+   "figure": "ch4-add-1-2-1-3.svg",
+   "figure_alt": "One half and one third drawn as bars; underneath, one bar cut into 6 parts with 3 blue and 2 green parts, and a question mark."
+  },
+  {
+   "group": "4.4 Multiply and Divide",
+   "title": "Trick 1: cancel before you multiply",
+   "prompt": "- Before you multiply, divide a **top** number and a **bottom** number by the **same number**.\n- The numbers stay small, and the answer comes out simplified.\n\n**Examples:**\n\n- **a)** \\(10\\times\\dfrac{4}{5}\\)\n\n- **b)** \\(\\dfrac{3}{5}\\times20\\)\n\n- **c)** \\(\\dfrac{2}{7}\\times21\\)\n\n- **d)** \\(\\dfrac{5}{6}\\times30\\)",
+   "steps": [
+    "**a)** Cancel 10 and 5 by 5 (10 becomes 2, 5 becomes 1):\n\n\\[\\begin{aligned} 10\\times\\frac{4}{5} &= 2\\times4 \\\\ &= \\boxed{8} \\end{aligned}\\]",
+    "**b)** Cancel 20 and 5 by 5:\n\n\\[\\begin{aligned} \\frac{3}{5}\\times20 &= 3\\times4 \\\\ &= \\boxed{12} \\end{aligned}\\]",
+    "**c)** Cancel 21 and 7 by 7:\n\n\\[\\begin{aligned} \\frac{2}{7}\\times21 &= 2\\times3 \\\\ &= \\boxed{6} \\end{aligned}\\]",
+    "**d)** Cancel 30 and 6 by 6:\n\n\\[\\begin{aligned} \\frac{5}{6}\\times30 &= 5\\times5 \\\\ &= \\boxed{25} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.4 Multiply and Divide",
+   "title": "Fraction times fraction",
+   "prompt": "- Multiply **top × top** and **bottom × bottom**.\n- Use Trick 1 first: cancel any top with any bottom.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{4}{9}\\times\\dfrac{3}{8}\\)\n\n- **b)** \\(\\dfrac{5}{6}\\times\\dfrac{9}{10}\\)\n\n- **c)** \\(\\dfrac{2}{3}\\times\\dfrac{9}{14}\\)\n\n- **d)** \\(\\dfrac{7}{12}\\times\\dfrac{8}{21}\\)",
+   "steps": [
+    "**a)** Cancel 4 and 8 by 4, then 3 and 9 by 3:\n\n\\[\\begin{aligned} \\frac{4}{9}\\times\\frac{3}{8} &= \\frac{1}{3}\\times\\frac{1}{2} \\\\ &= \\boxed{\\frac{1}{6}} \\end{aligned}\\]",
+    "**b)** Cancel 5 and 10 by 5, then 9 and 6 by 3:\n\n\\[\\begin{aligned} \\frac{5}{6}\\times\\frac{9}{10} &= \\frac{1}{2}\\times\\frac{3}{2} \\\\ &= \\boxed{\\frac{3}{4}} \\end{aligned}\\]",
+    "**c)** Cancel 2 and 14 by 2, then 9 and 3 by 3:\n\n\\[\\begin{aligned} \\frac{2}{3}\\times\\frac{9}{14} &= \\frac{1}{1}\\times\\frac{3}{7} \\\\ &= \\boxed{\\frac{3}{7}} \\end{aligned}\\]",
+    "**d)** Cancel 7 and 21 by 7, then 8 and 12 by 4:\n\n\\[\\begin{aligned} \\frac{7}{12}\\times\\frac{8}{21} &= \\frac{1}{3}\\times\\frac{2}{3} \\\\ &= \\boxed{\\frac{2}{9}} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.4 Multiply and Divide",
+   "title": "Divide: flip and multiply",
+   "prompt": "- To divide by a fraction, **flip** the second fraction (top and bottom swap) and **multiply**.\n- A whole number such as \\(2\\) is \\(\\dfrac{2}{1}\\), so it flips to \\(\\dfrac{1}{2}\\).\n\n**Examples:**\n\n- **a)** \\(\\dfrac{3}{4}\\div\\dfrac{1}{2}\\)\n\n- **b)** \\(\\dfrac{5}{6}\\div\\dfrac{5}{12}\\)\n\n- **c)** \\(\\dfrac{4}{5}\\div2\\)\n\n- **d)** \\(\\dfrac{3}{8}\\div\\dfrac{3}{4}\\)",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} \\frac{3}{4}\\div\\frac{1}{2} &= \\frac{3}{4}\\times\\frac{2}{1} \\\\ &= \\frac{6}{4} \\\\ &= \\boxed{\\frac{3}{2}} \\end{aligned}\\]",
+    "**b)** Flip, then cancel 5 with 5 and 12 with 6:\n\n\\[\\begin{aligned} \\frac{5}{6}\\div\\frac{5}{12} &= \\frac{5}{6}\\times\\frac{12}{5} \\\\ &= \\boxed{2} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} \\frac{4}{5}\\div2 &= \\frac{4}{5}\\times\\frac{1}{2} \\\\ &= \\boxed{\\frac{2}{5}} \\end{aligned}\\]",
+    "**d)** Flip, then cancel 3 with 3 and 4 with 8:\n\n\\[\\begin{aligned} \\frac{3}{8}\\div\\frac{3}{4} &= \\frac{3}{8}\\times\\frac{4}{3} \\\\ &= \\boxed{\\frac{1}{2}} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.5 Three and Four Terms",
+   "title": "Three terms: one bottom for all",
+   "prompt": "- Find **one** bottom that **all** the bottoms go into.\n- Change every fraction, then add and subtract the tops from left to right.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{1}{2} + \\dfrac{1}{4} + \\dfrac{1}{8}\\)\n\n- **b)** \\(\\dfrac{2}{3} + \\dfrac{1}{6} - \\dfrac{1}{2}\\)\n\n- **c)** \\(\\dfrac{3}{4} - \\dfrac{1}{3} + \\dfrac{1}{6}\\)\n\n- **d)** \\(\\dfrac{1}{5} + \\dfrac{1}{2} - \\dfrac{3}{10}\\)",
+   "steps": [
+    "**a)** All go into 8:\n\n\\[\\frac{4}{8} + \\frac{2}{8} + \\frac{1}{8} = \\boxed{\\frac{7}{8}}\\]",
+    "**b)** All go into 6:\n\n\\[\\begin{aligned} \\frac{4}{6} + \\frac{1}{6} - \\frac{3}{6} &= \\frac{2}{6} \\\\ &= \\boxed{\\frac{1}{3}} \\end{aligned}\\]",
+    "**c)** All go into 12:\n\n\\[\\frac{9}{12} - \\frac{4}{12} + \\frac{2}{12} = \\boxed{\\frac{7}{12}}\\]",
+    "**d)** All go into 10:\n\n\\[\\begin{aligned} \\frac{2}{10} + \\frac{5}{10} - \\frac{3}{10} &= \\frac{4}{10} \\\\ &= \\boxed{\\frac{2}{5}} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.5 Three and Four Terms",
+   "title": "With ×: multiply first",
+   "prompt": "- BIDMAS works for fractions too: do the \\(\\times\\) (or \\(\\div\\)) **first**, with Trick 1.\n- Then add and subtract.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{1}{2} + \\dfrac{1}{4}\\times\\dfrac{2}{3}\\)\n\n- **b)** \\(\\dfrac{5}{6} - \\dfrac{1}{3}\\times\\dfrac{3}{4}\\)\n\n- **c)** \\(\\dfrac{1}{3} + \\dfrac{2}{5}\\times\\dfrac{5}{8} - \\dfrac{1}{4}\\)\n\n- **d)** \\(\\dfrac{3}{4}\\times\\dfrac{2}{9} + \\dfrac{1}{2} - \\dfrac{1}{4}\\)",
+   "steps": [
+    "**a)** \\(\\dfrac{1}{4}\\times\\dfrac{2}{3} = \\dfrac{1}{6}\\) first:\n\n\\[\\begin{aligned} \\frac{1}{2} + \\frac{1}{6} &= \\frac{3}{6} + \\frac{1}{6} \\\\ &= \\frac{4}{6} \\\\ &= \\boxed{\\frac{2}{3}} \\end{aligned}\\]",
+    "**b)** \\(\\dfrac{1}{3}\\times\\dfrac{3}{4} = \\dfrac{1}{4}\\) first:\n\n\\[\\begin{aligned} \\frac{5}{6} - \\frac{1}{4} &= \\frac{10}{12} - \\frac{3}{12} \\\\ &= \\boxed{\\frac{7}{12}} \\end{aligned}\\]",
+    "**c)** \\(\\dfrac{2}{5}\\times\\dfrac{5}{8} = \\dfrac{1}{4}\\) first:\n\n\\[\\frac{1}{3} + \\frac{1}{4} - \\frac{1}{4} = \\boxed{\\frac{1}{3}}\\]",
+    "**d)** \\(\\dfrac{3}{4}\\times\\dfrac{2}{9} = \\dfrac{1}{6}\\) first:\n\n\\[\\begin{aligned} \\frac{1}{6} + \\frac{1}{2} - \\frac{1}{4} &= \\frac{2}{12} + \\frac{6}{12} - \\frac{3}{12} \\\\ &= \\boxed{\\frac{5}{12}} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "4.6 Fraction of an Amount",
+   "title": "Fraction of an amount",
+   "prompt": "To find \\(\\dfrac{2}{5}\\) of an amount: **divide by the bottom**, then **multiply by the top**.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{2}{5}\\) of €30\n\n- **b)** \\(\\dfrac{3}{4}\\) of 24 sweets\n\n- **c)** \\(\\dfrac{5}{8}\\) of 40 km\n\n- **d)** \\(\\dfrac{2}{3}\\) of 45 minutes",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} 30\\div5 &= 6 \\\\ 6\\times2 &= \\boxed{12} \\end{aligned}\\]\n\nSo it is €12.",
+    "**b)**\n\n\\[\\begin{aligned} 24\\div4 &= 6 \\\\ 6\\times3 &= \\boxed{18} \\end{aligned}\\]\n\nSo it is 18 sweets.",
+    "**c)**\n\n\\[\\begin{aligned} 40\\div8 &= 5 \\\\ 5\\times5 &= \\boxed{25} \\end{aligned}\\]\n\nSo it is 25 km.",
+    "**d)**\n\n\\[\\begin{aligned} 45\\div3 &= 15 \\\\ 15\\times2 &= \\boxed{30} \\end{aligned}\\]\n\nSo it is 30 minutes."
+   ]
+  },
+  {
+   "group": "4.6 Fraction of an Amount",
+   "title": "Word problems",
+   "prompt": "- Read slowly and write the fraction sum.\n- **The whole is 1.** Check: *of the whole* or *of the rest*?\n\n**Examples:**\n\n- **a)** A pizza: you eat \\(\\dfrac{1}{4}\\), a friend eats \\(\\dfrac{3}{8}\\). What fraction is left?\n\n- **b)** €60 pocket money: \\(\\dfrac{1}{3}\\) on a book, \\(\\dfrac{1}{4}\\) of the €60 on a cinema ticket. How much is left?\n\n- **c)** A bus with 40 people: \\(\\dfrac{1}{4}\\) get off in Mosta, then \\(\\dfrac{1}{2}\\) of the **rest** get off in Naxxar. How many are left?\n\n- **d)** \\(\\dfrac{2}{3}\\) of a litre of juice is shared equally into 4 glasses. How much in each glass?",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} 1 - \\frac{1}{4} - \\frac{3}{8} &= \\frac{8}{8} - \\frac{2}{8} - \\frac{3}{8} \\\\ &= \\boxed{\\frac{3}{8}} \\end{aligned}\\]",
+    "**b)**\n\n- Book: \\(60\\div3 = 20\\).\n- Cinema: \\(60\\div4 = 15\\).\n\n\\[60 - 20 - 15 = \\boxed{25}\\]\n\nSo €25 is left.",
+    "**c)**\n\n- Mosta: \\(40\\div4 = 10\\) get off, 30 stay.\n- Naxxar: half of 30 is 15.\n\n\\[30 - 15 = \\boxed{15}\\]\n\nSo 15 people are left.",
+    "**d)**\n\n\\[\\begin{aligned} \\frac{2}{3}\\div4 &= \\frac{2}{3}\\times\\frac{1}{4} \\\\ &= \\frac{2}{12} \\\\ &= \\boxed{\\frac{1}{6}} \\end{aligned}\\]\n\nSo each glass has \\(\\dfrac{1}{6}\\) of a litre."
+   ]
+  }
+ ]
+}

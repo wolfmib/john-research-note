@@ -167,6 +167,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 }
 .prose p { margin: 0 0 12px; }
 .prose p:last-child { margin-bottom: 0; }
+.prose li:has(.mfrac) + li, .prose li + li:has(.mfrac) { margin-top: 10px; }   
 .prose strong { font-weight: 700; }
 .tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 4px 0 14px; }
 .prose table { border-collapse: collapse; font-variant-numeric: tabular-nums; }
@@ -226,6 +227,10 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .numrow input { flex: 1; min-width: 0; }
 .sign { flex: none; width: 56px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--soft); color: var(--ink); font: 650 24px/1 inherit; }
 .sign:disabled { opacity: .5; }
+.fracbox { flex: none; width: 140px; display: flex; flex-direction: column; }
+.fracbox input { text-align: center; padding: 8px 10px; }
+.fracbar { display: block; height: 3px; margin: 7px 4px; border-radius: 2px; background: var(--ink); }
+.frachint { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
 
 #fb { scroll-margin-top: 110px; scroll-margin-bottom: 110px; }
 .feedback { margin-top: 18px; padding: 14px; border-radius: 14px; }
@@ -429,7 +434,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 <a class="quiz" href="#chapters" data-root="chapters">
         <span class="u">Track 3 · Chapter 1 to Chapter 19</span>
         <span class="t">Malta Year 8 Chapters</span>
-        <span class="m">13 quizzes · 4 material pages</span></a>
+        <span class="m">13 quizzes · 5 material pages</span></a>
 <a class="quiz" href="#sat" data-root="sat">
         <span class="u">SAT Math · 10 concepts</span>
         <span class="t">SAT</span>
@@ -659,6 +664,10 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         <span class="u">Chapter 3</span>
         <span class="t">Angles</span>
         <span class="m">11 questions<span class="lastscore"></span></span></a>
+<a class="quiz" href="malta-year-8-math-chapter-4-fractions/material.html" data-slug="malta-year-8-math-chapter-4-fractions">
+        <span class="u">Chapter 4</span>
+        <span class="t">Fractions</span>
+        <span class="m">13 questions<span class="lastscore"></span></span></a>
 </div>
 </div>
 </div>
