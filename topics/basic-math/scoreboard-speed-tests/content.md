@@ -12,7 +12,7 @@ author: Wei-Che Hung
 
 Times from the [Speed Test: Fractions and Equations](../ap-precalculus-speed-test-fractions-and-equations/quiz.html).
 
-- Every runner has a code number.
+- Every runner has a code letter.
 - 🥇 Expert · 🥈 Middle-High · 🥉 Middle · 🟠 Middle-Low · 🔴 Need Practice
 - ✗ = a wrong first answer; the penalty seconds are included in the time.
 - Each card ends with a **Next target** and the practice that trains it. **Show working** gives the fast method.
@@ -21,7 +21,7 @@ Times from the [Speed Test: Fractions and Equations](../ap-precalculus-speed-tes
 
 ### 1. Speed Test 1: all 15 questions
 
-| | Runner 7 | Runner 12 |
+| | X | A |
 |---|---:|---:|
 | 🥇 Expert | 12 | 10 |
 | 🥈 Middle-High | 1 | 3 |
@@ -32,17 +32,17 @@ Times from the [Speed Test: Fractions and Equations](../ap-precalculus-speed-tes
 | Fractional Equations | 1:43 | 2:51 |
 | **All 15** | **4:12.51** | **5:13.13** |
 
-- **Runner 7:** strongest in fractional equations (5 of 5 🥇).
-- **Runner 12:** strongest in linear equations (4 of 5 🥇).
+- **X:** strongest in fractional equations (5 of 5 at Expert).
+- **A:** strongest in linear equations (4 of 5 at Expert).
 
 <details>
 <summary><b>Working</b></summary>
 
 **How a medal is won:** each category has its own time lines.
 
-- Fraction Addition: 🥇 $\le 15$ s · 🥈 $\le 20$ s · 🥉 $\le 25$ s · 🟠 $\le 30$ s · 🔴 slower
-- Linear Equations: 🥇 $\le 20$ s · 🥈 $\le 25$ s · 🥉 $\le 30$ s · 🟠 $\le 35$ s · 🔴 slower
-- Fractional Equations: 🥇 $\le 45$ s · 🥈 $\le 50$ s · 🥉 $\le 55$ s · 🟠 $\le 60$ s · 🔴 slower
+- Fraction Addition: Expert up to 15 s, Middle-High up to 20 s, Middle up to 25 s, Middle-Low up to 30 s, slower is Need Practice.
+- Linear Equations: Expert up to 20 s, Middle-High up to 25 s, Middle up to 30 s, Middle-Low up to 35 s, slower is Need Practice.
+- Fractional Equations: Expert up to 45 s, Middle-High up to 50 s, Middle up to 55 s, Middle-Low up to 60 s, slower is Need Practice.
 
 - A wrong first answer adds penalty seconds (marked ✗).
 
@@ -50,7 +50,7 @@ Times from the [Speed Test: Fractions and Equations](../ap-precalculus-speed-tes
 
 ### 2. Fraction Addition
 
-🥇 Expert line: $15$ s or less per question.
+Expert line: $15$ s or less per question.
 
 **The questions**
 
@@ -62,7 +62,7 @@ Times from the [Speed Test: Fractions and Equations](../ap-precalculus-speed-tes
 
 **Times**
 
-| Q | Runner 7 | Runner 12 |
+| Q | X | A |
 |---|---|---|
 | Q1 | 🥇 4 s | 🥇 8 s |
 | Q2 | 🥇 9 s | 🥇 3.6 s |
@@ -70,15 +70,10 @@ Times from the [Speed Test: Fractions and Equations](../ap-precalculus-speed-tes
 | Q4 | 🥈 16 s | 🥉 23 s ✗ |
 | Q5 | 🔴 1:03 | 🔴 47 s ✗ |
 
-**Medals**
-
-- **Runner 7:** 🥇🥇🥇🥈🔴 — 3 of 5 🥇, 1:37
-- **Runner 12:** 🥇🥇🥇🥉🔴 — 3 of 5 🥇, 1:24.6
-
 **Next target**
 
-- **Runner 7:** Q5 under 30 s for 🟠 Middle-Low (now 1:03).
-- **Runner 12:** Q5 under 30 s for 🟠 Middle-Low (now 47 s).
+- **X:** practise questions like Q5 and aim for 30 s or less (now 1:03), which reaches Middle-Low.
+- **A:** practise questions like Q5 and aim for 30 s or less (now 47 s), which reaches Middle-Low.
 
 **Practise next:** [Fractions Practice — Medium (three fractions)](../malta-year-8-math-chapter-4-fractions-practice/quiz.html#g2) · [Fractions Practice — Easy (two fractions)](../malta-year-8-math-chapter-4-fractions-practice/quiz.html#g1) · [Speed Test — Fraction Addition again](../ap-precalculus-speed-test-fractions-and-equations/quiz.html#g1)
 
@@ -124,7 +119,7 @@ $$
 
 ### 3. Linear Equations
 
-🥇 Expert line: $20$ s or less per question.
+Expert line: $20$ s or less per question.
 
 **The questions**
 
@@ -136,7 +131,7 @@ $$
 
 **Times**
 
-| Q | Runner 7 | Runner 12 |
+| Q | X | A |
 |---|---|---|
 | Q6 | 🥇 3.45 s | 🥇 7 s |
 | Q7 | 🥇 7 s | 🥇 15 s |
@@ -144,15 +139,10 @@ $$
 | Q9 | 🥇 6.56 s | 🥇 10 s |
 | Q10 | 🥇 8.5 s | 🥇 5 s |
 
-**Medals**
-
-- **Runner 7:** 🥇🥇🥉🥇🥇 — 4 of 5 🥇, 52.51 s
-- **Runner 12:** 🥇🥇🥈🥇🥇 — 4 of 5 🥇, 57.53 s
-
 **Next target**
 
-- **Runner 7:** Q8 under 25 s for 🥈 Middle-High (now 27 s).
-- **Runner 12:** Q8 under 20 s for 🥇 Expert (now 20.53 s).
+- **X:** practise questions like Q8 and aim for 25 s or less (now 27 s), which reaches Middle-High.
+- **A:** practise questions like Q8 and aim for 20 s or less (now 20.53 s), which reaches Expert.
 
 **Practise next:** [Algebra Practice — Medium (x on both sides)](../malta-year-8-math-chapter-8-algebra-practice/quiz.html#g2) · [Algebra Practice — Easy](../malta-year-8-math-chapter-8-algebra-practice/quiz.html#g1) · [Speed Test — Linear Equations again](../ap-precalculus-speed-test-fractions-and-equations/quiz.html#g2)
 
@@ -187,7 +177,7 @@ $$
 
 ### 4. Fractional Equations
 
-🥇 Expert line: $45$ s or less per question.
+Expert line: $45$ s or less per question.
 
 **The questions**
 
@@ -199,7 +189,7 @@ $$
 
 **Times**
 
-| Q | Runner 7 | Runner 12 |
+| Q | X | A |
 |---|---|---|
 | Q11 | 🥇 27 s | 🥈 50 s ✗ |
 | Q12 | 🥇 17 s | 🥇 25 s |
@@ -207,15 +197,10 @@ $$
 | Q14 | 🥇 25 s | 🥇 27 s |
 | Q15 | 🥇 17 s | 🥇 22 s |
 
-**Medals**
-
-- **Runner 7:** 🥇🥇🥇🥇🥇 — 5 of 5 🥇, 1:43
-- **Runner 12:** 🥈🥇🥈🥇🥇 — 3 of 5 🥇, 2:51
-
 **Next target**
 
-- **Runner 7:** all 🥇 — beat your total of 1:43.
-- **Runner 12:** Q11 under 45 s for 🥇 Expert (now 50 s).
+- **X:** all five at Expert. Try to beat your total of 1:43.
+- **A:** practise questions like Q11 and aim for 45 s or less (now 50 s), which reaches Expert.
 
 **Practise next:** [Algebra Practice — Hard (equations with fractions)](../malta-year-8-math-chapter-8-algebra-practice/quiz.html#g3) · [Speed Test — Fractional Equations again](../ap-precalculus-speed-test-fractions-and-equations/quiz.html#g3)
 
