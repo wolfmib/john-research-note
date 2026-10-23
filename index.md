@@ -148,6 +148,7 @@ Practice quizzes and worked math material by course and topic.
 | [Scoreboard — Speed Tests](topics/basic-math/scoreboard-speed-tests/content.md) | Speed Test times and medals per runner, the next target, and the practice that helps most. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/scoreboard-speed-tests/material.html) |
 | [AP Precalculus 2.9 — Logarithmic Expressions](topics/basic-math/ap-precalculus-2-9-logarithmic-expressions/content.md) | Logarithms as exponents: exponential form, a fraction answer, a log with no value, an estimate and the pH scale. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-9-logarithmic-expressions/quiz.html) |
 | [Math Material — Logarithm Rules](topics/basic-math/math-material-logarithm-rules/content.md) | Twelve logarithm skills: the definition, fraction answers, product, quotient and power rules, change of base, solving equations. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-logarithm-rules/material.html) |
+| [Malta Year 8 Math Chapter 6 — Percentages](topics/basic-math/malta-year-8-math-chapter-6-percentages/content.md) | What does per cent mean, and how do you find a percentage of an amount, a sale price and a price with VAT? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-6-percentages/material.html) |
 
 ## Animations
 
