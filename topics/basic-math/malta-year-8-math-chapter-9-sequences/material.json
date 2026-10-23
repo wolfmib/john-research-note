@@ -1,0 +1,116 @@
+{
+ "slug": "malta-year-8-math-chapter-9-sequences",
+ "title": "Malta Year 8 Math Chapter 9 — Sequences",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 9",
+ "root": "chapters",
+ "question": "How do you continue a sequence, find any term with the nth term, and find the rule of a pattern?",
+ "intro": "Chapter 9 works with number patterns.\n\n**Chapter 9 has five parts:**\n\n- 9.1 Term-to-term rule\n- 9.2 The difference and missing terms\n- 9.3 The nth term\n- 9.4 Find the nth term rule\n- 9.5 Shape patterns\n\n**By the end of the chapter:**\n\n- continue a sequence\n- fill in missing terms\n- use the nth term to find any term\n- find the rule from the difference\n- use the rule for matchstick and tile patterns",
+ "link": [
+  "Practice quiz ›",
+  "../malta-year-8-math-chapter-9-sequences-practice/quiz.html"
+ ],
+ "questions": [
+  {
+   "group": "9.1 Term-to-Term Rule",
+   "title": "Add or take away the same number",
+   "prompt": "- A **sequence** is a list of numbers in order.\n- Each number is a **term**.\n\n- The **term-to-term rule** says how to get from one term to the next.\n- Look at the gap between neighbours. If it is always the same, keep adding it.\n\n**Examples:**\n\n- **a)** \\(3, 7, 11, 15, \\ldots\\)\n\n- **b)** \\(20, 17, 14, 11, \\ldots\\)\n\n- **c)** \\(5, 12, 19, 26, \\ldots\\)\n\n- **d)** \\(-6, -2, 2, 6, \\ldots\\)",
+   "steps": [
+    "**a)** The rule is add 4:\n\n\\[15 + 4 = \\boxed{19}\\]\n\n\\[19 + 4 = \\boxed{23}\\]",
+    "**b)** The rule is take away 3:\n\n\\[11 - 3 = \\boxed{8}\\]\n\n\\[8 - 3 = \\boxed{5}\\]",
+    "**c)** The rule is add 7:\n\n\\[26 + 7 = \\boxed{33}\\]\n\n\\[33 + 7 = \\boxed{40}\\]",
+    "**d)** The rule is add 4:\n\n\\[6 + 4 = \\boxed{10}\\]\n\n\\[10 + 4 = \\boxed{14}\\]"
+   ]
+  },
+  {
+   "group": "9.1 Term-to-Term Rule",
+   "title": "Multiply or halve",
+   "prompt": "- Some sequences **multiply** by the same number each time.\n- If the gaps keep growing (or shrinking), try dividing a term by the one before it.\n\n**Examples:**\n\n- **a)** \\(2, 6, 18, \\ldots\\)\n\n- **b)** \\(64, 32, 16, \\ldots\\)\n\n- **c)** \\(1, 10, 100, \\ldots\\)\n\n- **d)** \\(5, 10, 20, \\ldots\\)",
+   "steps": [
+    "**a)** The rule is \\(\\times3\\):\n\n\\[18\\times3 = \\boxed{54}\\]",
+    "**b)** The rule is \\(\\div2\\):\n\n\\[16\\div2 = \\boxed{8}\\]",
+    "**c)** The rule is \\(\\times10\\):\n\n\\[100\\times10 = \\boxed{1000}\\]",
+    "**d)** The rule is \\(\\times2\\):\n\n\\[20\\times2 = \\boxed{40}\\]\n\nNot 25: the gaps are 5, then 10, so it is not \\(+5\\)."
+   ]
+  },
+  {
+   "group": "9.2 The Difference and Missing Terms",
+   "title": "Find the difference",
+   "prompt": "- The **difference** \\(d\\) is next term minus this term.\n- It is the same all the way along in these sequences.\n- A sequence that goes down has a **negative** difference.\n\n**Examples:**\n\n- **a)** \\(4, 9, 14, 19, \\ldots\\)\n\n- **b)** \\(30, 26, 22, 18, \\ldots\\)\n\n- **c)** \\(1, 3, 5, 7, \\ldots\\)\n\n- **d)** \\(-5, -2, 1, 4, \\ldots\\)",
+   "steps": [
+    "**a)**\n\n\\[9 - 4 = \\boxed{5}\\]",
+    "**b)**\n\n\\[26 - 30 = \\boxed{-4}\\] It goes down, so the difference is negative.",
+    "**c)**\n\n\\[3 - 1 = \\boxed{2}\\]",
+    "**d)**\n\n\\[-2 - -5 = \\boxed{3}\\]"
+   ]
+  },
+  {
+   "group": "9.2 The Difference and Missing Terms",
+   "title": "Missing terms",
+   "prompt": "- Find the difference from two terms you know, then fill the gaps.\n- If the known terms are not neighbours, share the jump between the steps.\n\n**Examples:**\n\n- **a)** \\(7, \\ \\square, \\ 15, \\ 19\\)\n\n- **b)** \\(3, \\ \\square, \\ \\square, \\ 12\\)\n\n- **c)** \\(50, \\ 44, \\ \\square, \\ 32\\)\n\n- **d)** \\(\\square, \\ 9, \\ 14, \\ 19\\)",
+   "steps": [
+    "**a)** \\(d = 19 - 15 = 4\\):\n\n\\[7 + 4 = \\boxed{11}\\]",
+    "**b)** From 3 to 12 is 9 in 3 steps, so:\n\n\\[\\begin{aligned} d &= 3 \\\\ 3 + 3 &= \\boxed{6} \\\\ 6 + 3 &= \\boxed{9} \\end{aligned}\\]",
+    "**c)** \\(d = 44 - 50 = -6\\):\n\n\\[44 - 6 = \\boxed{38}\\]",
+    "**d)** \\(d = 14 - 9 = 5\\); go back one step:\n\n\\[9 - 5 = \\boxed{4}\\]"
+   ]
+  },
+  {
+   "group": "9.3 The nth Term",
+   "title": "The nth term gives every term",
+   "prompt": "- The **nth term** is a rule with \\(n\\) in it: \\(n\\) is the position (1st, 2nd, 3rd, …).\n- Put \\(n = 1, 2, 3, 4\\) into the rule to get the terms.\n\n**Examples:**\n\n- **a)** \\(3n + 2\\)\n\n- **b)** \\(2n - 1\\)\n\n- **c)** \\(4n + 3\\)\n\n- **d)** \\(10 - n\\)",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} 3\\times1 + 2 &= 5 \\\\ 3\\times2 + 2 &= 8 \\\\ 3\\times3 + 2 &= 11 \\end{aligned}\\]\n\nTerms: \\(\\boxed{5, 8, 11, 14}\\)",
+    "**b)**\n\n\\[\\begin{aligned} 2\\times1 - 1 &= 1 \\\\ 2\\times2 - 1 &= 3 \\\\ 2\\times3 - 1 &= 5 \\end{aligned}\\]\n\nTerms: \\(\\boxed{1, 3, 5, 7}\\)",
+    "**c)**\n\n\\[\\begin{aligned} 4\\times1 + 3 &= 7 \\\\ 4\\times2 + 3 &= 11 \\\\ 4\\times3 + 3 &= 15 \\end{aligned}\\]\n\nTerms: \\(\\boxed{7, 11, 15, 19}\\)",
+    "**d)**\n\n\\[\\begin{aligned} 10 - 1 &= 9 \\\\ 10 - 2 &= 8 \\\\ 10 - 3 &= 7 \\end{aligned}\\]\n\nTerms: \\(\\boxed{9, 8, 7, 6}\\)"
+   ]
+  },
+  {
+   "group": "9.3 The nth Term",
+   "title": "Any term: put n in",
+   "prompt": "- To find the 10th term you do **not** need to write 10 terms.\n- Put \\(n = 10\\) straight into the rule.\n\n**Examples:**\n\n- **a)** 10th term of \\(3n + 2\\)\n\n- **b)** 20th term of \\(5n - 4\\)\n\n- **c)** 50th term of \\(2n + 7\\)\n\n- **d)** 10th term of \\(100 - 3n\\)",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} 3\\times10 + 2 &= 30 + 2 \\\\ &= \\boxed{32} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} 5\\times20 - 4 &= 100 - 4 \\\\ &= \\boxed{96} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 2\\times50 + 7 &= 100 + 7 \\\\ &= \\boxed{107} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 100 - 3\\times10 &= 100 - 30 \\\\ &= \\boxed{70} \\end{aligned}\\]\n\nTimes first, then take away (BIDMAS)."
+   ]
+  },
+  {
+   "group": "9.4 Find the nth Term Rule",
+   "title": "Difference × n, then fix the start",
+   "prompt": "For a sequence that adds the same \\(d\\) each time:\n\n- The rule starts with \\(d\\,n\\) (the difference times \\(n\\)).\n- Then add or take away a number so the 1st term comes out right: \\(\\text{first term} - d\\).\n\n**Examples:**\n\n- **a)** \\(5, 8, 11, 14, \\ldots\\)\n\n- **b)** \\(4, 6, 8, 10, \\ldots\\)\n\n- **c)** \\(7, 12, 17, 22, \\ldots\\)\n\n- **d)** \\(1, 5, 9, 13, \\ldots\\)",
+   "steps": [
+    "**a)**\n\n- \\(d = 3\\), so start with \\(3n\\).\n- At \\(n = 1\\) that gives 3, but the first term is 5:\n\n\\[5 - 3 = 2\\] Rule: \\(\\boxed{3n + 2}\\)",
+    "**b)**\n\n- \\(d = 2\\), so start with \\(2n\\).\n- At \\(n = 1\\) that gives 2, but the first term is 4:\n\n\\[4 - 2 = 2\\] Rule: \\(\\boxed{2n + 2}\\)",
+    "**c)**\n\n- \\(d = 5\\), so start with \\(5n\\).\n- At \\(n = 1\\) that gives 5, but the first term is 7:\n\n\\[7 - 5 = 2\\] Rule: \\(\\boxed{5n + 2}\\)",
+    "**d)**\n\n- \\(d = 4\\), so start with \\(4n\\).\n- At \\(n = 1\\) that gives 4, but the first term is 1:\n\n\\[1 - 4 = -3\\] Rule: \\(\\boxed{4n - 3}\\)"
+   ]
+  },
+  {
+   "group": "9.4 Find the nth Term Rule",
+   "title": "Which term is it?",
+   "prompt": "- Set the rule equal to the number and solve, like Chapter 8.\n- The answer \\(n\\) is the position.\n\n**Examples:**\n\n- **a)** Which term of \\(3n + 2\\) is 47?\n\n- **b)** Which term of \\(2n + 1\\) is 41?\n\n- **c)** Which term of \\(5n - 3\\) is 72?\n\n- **d)** Which term of \\(4n + 4\\) is 60?",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} 3n + 2 &= 47 \\\\ 3n &= 45 \\\\ n &= \\boxed{15} \\end{aligned}\\]\n\n47 is the 15th term.",
+    "**b)**\n\n\\[\\begin{aligned} 2n + 1 &= 41 \\\\ 2n &= 40 \\\\ n &= \\boxed{20} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} 5n - 3 &= 72 \\\\ 5n &= 75 \\\\ n &= \\boxed{15} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} 4n + 4 &= 60 \\\\ 4n &= 56 \\\\ n &= \\boxed{14} \\end{aligned}\\]"
+   ]
+  },
+  {
+   "group": "9.5 Shape Patterns",
+   "title": "Matchsticks and tiles",
+   "prompt": "Count each pattern, then treat the counts as a sequence:\n\n- the difference tells you what each new pattern adds;\n- the nth term tells you any pattern without drawing it.\n\n**Examples:**\n\n- **a)** Squares in a row: 4, 7, 10 sticks. The rule?\n\n- **b)** How many sticks in pattern 10?\n\n- **c)** How many sticks in pattern 20?\n\n- **d)** Which pattern uses 46 sticks?",
+   "steps": [
+    "**a)**\n\n- Each square adds 3 sticks, so start with \\(3n\\).\n- Pattern 1 has 4: \\(4 - 3 = 1\\).\n- Rule: \\(\\boxed{3n + 1}\\)",
+    "**b)**\n\n\\[3\\times10 + 1 = \\boxed{31}\\] sticks",
+    "**c)**\n\n\\[3\\times20 + 1 = \\boxed{61}\\] sticks",
+    "**d)**\n\n\\[\\begin{aligned} 3n + 1 &= 46 \\\\ 3n &= 45 \\\\ n &= \\boxed{15} \\end{aligned}\\]\n\nPattern 15."
+   ],
+   "figure": "ch9-matchstick-squares.svg",
+   "figure_alt": "Patterns 1, 2 and 3 of squares in a row made of matchsticks: 4, 7 and 10 sticks."
+  }
+ ]
+}

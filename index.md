@@ -150,6 +150,7 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — Logarithm Rules](topics/basic-math/math-material-logarithm-rules/content.md) | Twelve logarithm skills: the definition, fraction answers, product, quotient and power rules, change of base, solving equations. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-logarithm-rules/material.html) |
 | [Malta Year 8 Math Chapter 6 — Percentages](topics/basic-math/malta-year-8-math-chapter-6-percentages/content.md) | What does per cent mean, and how do you find a percentage of an amount, a sale price and a price with VAT? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-6-percentages/material.html) |
 | [Malta Year 8 Math Chapter 6 — Percentages Practice](topics/basic-math/malta-year-8-math-chapter-6-percentages-practice/content.md) | 30 percentage questions: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-6-percentages-practice/quiz.html) |
+| [Malta Year 8 Math Chapter 9 — Sequences](topics/basic-math/malta-year-8-math-chapter-9-sequences/content.md) | How do you continue a sequence, find any term with the nth term, and find the rule of a pattern? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-9-sequences/material.html) |
 
 ## Animations
 
