@@ -1,0 +1,53 @@
+{
+ "slug": "scoreboard-speed-tests",
+ "title": "Scoreboard — Speed Tests",
+ "course": "Scoreboard",
+ "unit": "Speed Tests",
+ "bottom": true,
+ "question": "Speed Test times and medals per runner, the next target, and the practice that helps most.",
+ "intro": "Times from the [Speed Test: Fractions and Equations](../ap-precalculus-speed-test-fractions-and-equations/quiz.html).\n\n- Every runner has a code number.\n- 🥇 Expert · 🥈 Middle-High · 🥉 Middle · 🟠 Middle-Low · 🔴 Need Practice\n- ✗ = a wrong first answer; the penalty seconds are included in the time.\n- Each card ends with a **Next target** and the practice that trains it. **Show working** gives the fast method.",
+ "link": [
+  "Speed Test: Fractions and Equations",
+  "../ap-precalculus-speed-test-fractions-and-equations/quiz.html"
+ ],
+ "questions": [
+  {
+   "group": "Speed Test 1 · 19 Oct 2026",
+   "title": "Speed Test 1: all 15 questions",
+   "prompt": "| | Runner 7 | Runner 12 |\n|---|---:|---:|\n| 🥇 Expert | 12 | 10 |\n| 🥈 Middle-High | 1 | 3 |\n| 🥉 Middle | 1 | 1 |\n| 🔴 Need Practice | 1 | 1 |\n| Fraction Addition | 1:37 | 1:24.6 |\n| Linear Equations | 52.51 s | 57.53 s |\n| Fractional Equations | 1:43 | 2:51 |\n| **All 15** | **4:12.51** | **5:13.13** |\n\n- **Runner 7:** strongest in fractional equations (5 of 5 🥇).\n- **Runner 12:** strongest in linear equations (4 of 5 🥇).",
+   "steps": [
+    "**How a medal is won:** each category has its own time lines.\n\n- Fraction Addition: 🥇 \\(\\le 15\\) s · 🥈 \\(\\le 20\\) s · 🥉 \\(\\le 25\\) s · 🟠 \\(\\le 30\\) s · 🔴 slower\n- Linear Equations: 🥇 \\(\\le 20\\) s · 🥈 \\(\\le 25\\) s · 🥉 \\(\\le 30\\) s · 🟠 \\(\\le 35\\) s · 🔴 slower\n- Fractional Equations: 🥇 \\(\\le 45\\) s · 🥈 \\(\\le 50\\) s · 🥉 \\(\\le 55\\) s · 🟠 \\(\\le 60\\) s · 🔴 slower\n\n- A wrong first answer adds penalty seconds (marked ✗)."
+   ]
+  },
+  {
+   "group": "Speed Test 1 · 19 Oct 2026",
+   "title": "Fraction Addition",
+   "prompt": "🥇 Expert line: \\(15\\) s or less per question.\n\n**The questions**\n\n- **Q1** \\(\\displaystyle \\frac{1}{2}+\\frac{1}{3}\\)\n- **Q2** \\(\\displaystyle \\frac{1}{3}+\\frac{1}{4}\\)\n- **Q3** \\(\\displaystyle \\frac{1}{2}+\\frac{1}{5}\\)\n- **Q4** \\(\\displaystyle \\frac{1}{2}+\\frac{1}{3}+\\frac{1}{4}\\)\n- **Q5** \\(\\displaystyle \\frac{1}{3}+\\frac{1}{4}+\\frac{1}{5}\\)\n\n**Times**\n\n| Q | Runner 7 | Runner 12 |\n|---|---|---|\n| Q1 | 🥇 4 s | 🥇 8 s |\n| Q2 | 🥇 9 s | 🥇 3.6 s |\n| Q3 | 🥇 5 s | 🥇 3 s |\n| Q4 | 🥈 16 s | 🥉 23 s ✗ |\n| Q5 | 🔴 1:03 | 🔴 47 s ✗ |\n\n**Medals**\n\n- **Runner 7:** 🥇🥇🥇🥈🔴 — 3 of 5 🥇, 1:37\n- **Runner 12:** 🥇🥇🥇🥉🔴 — 3 of 5 🥇, 1:24.6\n\n**Next target**\n\n- **Runner 7:** Q5 under 30 s for 🟠 Middle-Low (now 1:03).\n- **Runner 12:** Q5 under 30 s for 🟠 Middle-Low (now 47 s).\n\n**Practise next:** [Fractions Practice — Medium (three fractions)](../malta-year-8-math-chapter-4-fractions-practice/quiz.html#g2) · [Fractions Practice — Easy (two fractions)](../malta-year-8-math-chapter-4-fractions-practice/quiz.html#g1) · [Speed Test — Fraction Addition again](../ap-precalculus-speed-test-fractions-and-equations/quiz.html#g1)",
+   "steps": [
+    "**Two unit fractions, one line:**\n\n\\[\n\\frac{1}{a}+\\frac{1}{b}=\\frac{a+b}{ab}\n\\]\n\n- Top: add the bottoms. Bottom: multiply them.\n\n\\[\n\\begin{aligned}\n\\frac{1}{3}+\\frac{1}{4} &= \\frac{3+4}{12} \\\\\n&= \\boxed{\\frac{7}{12}}\n\\end{aligned}\n\\]",
+    "**Three fractions:** find the common bottom once, then add the tops.\n\n- For \\(\\frac{1}{3}+\\frac{1}{4}+\\frac{1}{5}\\) the common bottom is \\(3 \\times 4 \\times 5 = 60\\).\n\n\\[\n\\begin{aligned}\n\\frac{1}{3}+\\frac{1}{4}+\\frac{1}{5} &= \\frac{20}{60}+\\frac{15}{60}+\\frac{12}{60} \\\\\n&= \\boxed{\\frac{47}{60}}\n\\end{aligned}\n\\]",
+    "**Same idea, common bottom 12:**\n\n\\[\n\\begin{aligned}\n\\frac{1}{2}+\\frac{1}{3}+\\frac{1}{4} &= \\frac{6}{12}+\\frac{4}{12}+\\frac{3}{12} \\\\\n&= \\boxed{\\frac{13}{12}}\n\\end{aligned}\n\\]"
+   ]
+  },
+  {
+   "group": "Speed Test 1 · 19 Oct 2026",
+   "title": "Linear Equations",
+   "prompt": "🥇 Expert line: \\(20\\) s or less per question.\n\n**The questions**\n\n- **Q6** \\(\\displaystyle 2x+5=17\\)\n- **Q7** \\(\\displaystyle 5x-3=2x+12\\)\n- **Q8** \\(\\displaystyle 3x+7=5x-9\\)\n- **Q9** \\(\\displaystyle 7x-4=3x+16\\)\n- **Q10** \\(\\displaystyle 4x+11=6x-3\\)\n\n**Times**\n\n| Q | Runner 7 | Runner 12 |\n|---|---|---|\n| Q6 | 🥇 3.45 s | 🥇 7 s |\n| Q7 | 🥇 7 s | 🥇 15 s |\n| Q8 | 🥉 27 s ✗ | 🥈 20.53 s ✗ |\n| Q9 | 🥇 6.56 s | 🥇 10 s |\n| Q10 | 🥇 8.5 s | 🥇 5 s |\n\n**Medals**\n\n- **Runner 7:** 🥇🥇🥉🥇🥇 — 4 of 5 🥇, 52.51 s\n- **Runner 12:** 🥇🥇🥈🥇🥇 — 4 of 5 🥇, 57.53 s\n\n**Next target**\n\n- **Runner 7:** Q8 under 25 s for 🥈 Middle-High (now 27 s).\n- **Runner 12:** Q8 under 20 s for 🥇 Expert (now 20.53 s).\n\n**Practise next:** [Algebra Practice — Medium (x on both sides)](../malta-year-8-math-chapter-8-algebra-practice/quiz.html#g2) · [Algebra Practice — Easy](../malta-year-8-math-chapter-8-algebra-practice/quiz.html#g1) · [Speed Test — Linear Equations again](../ap-precalculus-speed-test-fractions-and-equations/quiz.html#g2)",
+   "steps": [
+    "**x on both sides:** move the \\(x\\) terms to the side with **more** \\(x\\), so \\(x\\) stays positive.\n\n- In \\(3x+7=5x-9\\), the right side has more \\(x\\).",
+    "\\[\n\\begin{aligned}\n3x+7 &= 5x-9 \\\\\n7+9 &= 5x-3x \\\\\n16 &= 2x \\\\\nx &= \\boxed{8}\n\\end{aligned}\n\\]",
+    "**Check in 3 seconds:** put the answer back into both sides.\n\n\\[\n\\begin{aligned}\n3(8)+7 &= 31 \\\\\n5(8)-9 &= 31\n\\end{aligned}\n\\]\n\n- Both sides match, so \\(x=8\\) is right."
+   ]
+  },
+  {
+   "group": "Speed Test 1 · 19 Oct 2026",
+   "title": "Fractional Equations",
+   "prompt": "🥇 Expert line: \\(45\\) s or less per question.\n\n**The questions**\n\n- **Q11** \\(\\displaystyle \\frac{2x+1}{3}=\\frac{3x-3}{2}\\)\n- **Q12** \\(\\displaystyle \\frac{x+4}{2}=\\frac{2x-1}{3}\\)\n- **Q13** \\(\\displaystyle \\frac{3x-2}{4}=\\frac{x+5}{3}\\)\n- **Q14** \\(\\displaystyle \\frac{5x+1}{6}=\\frac{2x+3}{4}\\)\n- **Q15** \\(\\displaystyle \\frac{4x-3}{5}=\\frac{x+2}{2}\\)\n\n**Times**\n\n| Q | Runner 7 | Runner 12 |\n|---|---|---|\n| Q11 | 🥇 27 s | 🥈 50 s ✗ |\n| Q12 | 🥇 17 s | 🥇 25 s |\n| Q13 | 🥇 17 s | 🥈 47 s ✗ |\n| Q14 | 🥇 25 s | 🥇 27 s |\n| Q15 | 🥇 17 s | 🥇 22 s |\n\n**Medals**\n\n- **Runner 7:** 🥇🥇🥇🥇🥇 — 5 of 5 🥇, 1:43\n- **Runner 12:** 🥈🥇🥈🥇🥇 — 3 of 5 🥇, 2:51\n\n**Next target**\n\n- **Runner 7:** all 🥇 — beat your total of 1:43.\n- **Runner 12:** Q11 under 45 s for 🥇 Expert (now 50 s).\n\n**Practise next:** [Algebra Practice — Hard (equations with fractions)](../malta-year-8-math-chapter-8-algebra-practice/quiz.html#g3) · [Speed Test — Fractional Equations again](../ap-precalculus-speed-test-fractions-and-equations/quiz.html#g3)",
+   "steps": [
+    "**One fraction on each side:** cross-multiply first.\n\n\\[\n\\frac{A}{3}=\\frac{B}{2}\\quad\\Longrightarrow\\quad 2A=3B\n\\]",
+    "**Example:** \\(\\dfrac{2x+1}{3}=\\dfrac{3x-3}{2}\\)\n\n\\[\n\\begin{aligned}\n2(2x+1) &= 3(3x-3) \\\\\n4x+2 &= 9x-9 \\\\\n2+9 &= 9x-4x \\\\\n11 &= 5x \\\\\nx &= \\boxed{2.2}\n\\end{aligned}\n\\]",
+    "**A decimal answer is fine.** \\(x = \\frac{11}{5} = 2.2\\) is not a mistake.\n\n\\[\n\\begin{aligned}\n3(3x-2) &= 4(x+5) \\\\\n9x-6 &= 4x+20 \\\\\n5x &= 26 \\\\\nx &= \\boxed{5.2}\n\\end{aligned}\n\\]"
+   ]
+  }
+ ]
+}
