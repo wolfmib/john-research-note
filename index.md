@@ -146,6 +146,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 8 — Algebra Practice](topics/basic-math/malta-year-8-math-chapter-8-algebra-practice/content.md) | 30 equations to solve: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-8-algebra-practice/quiz.html) |
 | [Math Material — Summation Formulas](topics/basic-math/math-material-summation-formulas/content.md) | Seven summation formulas: sum rules, sums of k, k squared and k cubed, arithmetic, finite and infinite geometric series. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-summation-formulas/material.html) |
 | [Scoreboard — Speed Tests](topics/basic-math/scoreboard-speed-tests/content.md) | Speed Test times and medals per runner, the next target, and the practice that helps most. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/scoreboard-speed-tests/material.html) |
+| [AP Precalculus 2.9 — Logarithmic Expressions](topics/basic-math/ap-precalculus-2-9-logarithmic-expressions/content.md) | Logarithms as exponents: exponential form, a fraction answer, a log with no value, an estimate and the pH scale. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-9-logarithmic-expressions/quiz.html) |
 
 ## Animations
 

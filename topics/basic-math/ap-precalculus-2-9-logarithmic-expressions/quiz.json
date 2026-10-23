@@ -1,0 +1,82 @@
+{
+ "slug": "ap-precalculus-2-9-logarithmic-expressions",
+ "title": "AP Precalculus 2.9 — Logarithmic Expressions",
+ "course": "AP Precalculus",
+ "unit": "2.9",
+ "question": "Logarithms as exponents: exponential form, a fraction answer, a log with no value, an estimate and the pH scale.",
+ "intro": "**Quick recap:**\n\n- A logarithm is an exponent:\n\n\\[\n\\log_b c=a \\iff b^{a}=c\n\\]\n\n- No base written means base \\(10\\): \\(\\log 1000=3\\).\n- \\(\\log_b 1=0\\) and \\(\\log_b b=1\\).\n- The input must be positive: \\(\\log_b 0\\) and \\(\\log_b(-4)\\) have no value.\n- On a log scale each step multiplies by the base.\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Definition · Exponential form",
+   "prompt": "Which equation means the same as\n\n\\[\n\\log_2 32=5\n\\]",
+   "choices": [
+    "\\(5^2=32\\)",
+    "\\(32^5=2\\)",
+    "\\(2^5=32\\)",
+    "\\(2^{32}=5\\)"
+   ],
+   "answer": "C",
+   "solution_title": "The base stays the base, the answer is the exponent",
+   "solution": "\\[\n\\log_b c=a \\iff b^{a}=c\n\\]\n\n- Base \\(b=2\\)\n- Answer \\(a=5\\) is the exponent\n- Input \\(c=32\\) is the result\n\n\\[\n\\boxed{2^5=32}\n\\]\n\nCheck:\n\n\\[\n\\begin{aligned}\n2^5 &= 2\\cdot2\\cdot2\\cdot2\\cdot2 \\\\\n&= 32\n\\end{aligned}\n\\]\n\n- Not \\(5^2=32\\): the base of the log stays the base of the power, and \\(5^2\\) is \\(25\\).\n- Not \\(2^{32}=5\\): the \\(32\\) is the result, not the exponent.",
+   "type": "mcq"
+  },
+  {
+   "title": "Evaluate · Fraction exponent",
+   "prompt": "Find the value of\n\n\\[\n\\log_8 2\n\\]",
+   "choices": [
+    "\\(\\dfrac{1}{3}\\)",
+    "\\(4\\)",
+    "\\(3\\)",
+    "\\(-3\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Which power of 8 gives 2?",
+   "solution": "Ask: \\(8\\) to what power is \\(2\\)?\n\n- \\(2\\) is the cube root of \\(8\\).\n\n\\[\n\\begin{aligned}\n2 &= \\sqrt[3]{8} \\\\\n&= 8^{1/3}\n\\end{aligned}\n\\]\n\nSo\n\n\\[\n\\begin{aligned}\n\\log_8 2 &= \\log_8 8^{1/3} \\\\\n&= \\boxed{\\frac{1}{3}}\n\\end{aligned}\n\\]\n\n- Not \\(4\\): that is \\(8\\div2\\). A log asks for an exponent, not a division.\n- Not \\(3\\): that is \\(\\log_2 8\\), the base and input swapped.\n- Not \\(-3\\): the input \\(2\\) is bigger than \\(1\\), so the answer is positive.",
+   "type": "mcq"
+  },
+  {
+   "title": "Domain · Which log does not exist?",
+   "prompt": "Which of these has **no** value?",
+   "choices": [
+    "\\(\\log_3 1\\)",
+    "\\(\\log_5 \\dfrac{1}{5}\\)",
+    "\\(\\log 0.1\\)",
+    "\\(\\log_2 0\\)"
+   ],
+   "answer": "D",
+   "solution_title": "A power of a positive base is never 0",
+   "solution": "\\(\\log_2 0\\) asks for \\(a\\) with\n\n\\[\n2^{a}=0\n\\]\n\n- Every power of \\(2\\) is positive, so no \\(a\\) works.\n- The input of a logarithm must be **positive**.\n\n\\[\n\\boxed{\\log_2 0 \\text{ has no value}}\n\\]\n\nThe others exist:\n\n\\[\n\\begin{aligned}\n\\log_3 1 &= 0 \\\\\n\\log_5 \\tfrac{1}{5} &= -1 \\\\\n\\log 0.1 &= -1\n\\end{aligned}\n\\]\n\n- \\(\\log_3 1=0\\) because \\(3^0=1\\). An answer of \\(0\\) is fine.\n- A negative answer is fine too: \\(5^{-1}=\\tfrac15\\) and \\(10^{-1}=0.1\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "Estimate · Between two powers",
+   "prompt": "Without a calculator, where is\n\n\\[\n\\log_2 50\n\\]",
+   "choices": [
+    "Between \\(4\\) and \\(5\\)",
+    "Between \\(5\\) and \\(6\\)",
+    "Between \\(6\\) and \\(7\\)",
+    "Equal to \\(25\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Place 50 between two powers of 2",
+   "solution": "List powers of \\(2\\):\n\n\\[\n\\begin{aligned}\n2^5 &= 32 \\\\\n2^6 &= 64\n\\end{aligned}\n\\]\n\n\\(50\\) sits between them:\n\n\\[\n32<50<64\n\\]\n\nSo the exponent sits between \\(5\\) and \\(6\\):\n\n\\[\n\\boxed{5<\\log_2 50<6}\n\\]\n\n- A calculator gives \\(\\log_2 50\\approx5.64\\).\n- Not \\(25\\): that is \\(50\\div2\\). A log asks for an exponent.",
+   "type": "mcq"
+  },
+  {
+   "title": "pH · A log scale",
+   "prompt": "The pH of a drink is\n\n\\[\n\\text{pH}=-\\log[\\text{H}^+]\n\\]\n\nwhere \\([\\text{H}^+]\\) is the acid concentration.\n\n- Lemon juice has pH \\(2\\).\n- Black coffee has pH \\(5\\).\n\nHow many times more acid is in lemon juice than in coffee?",
+   "choices": [
+    "\\(3\\)",
+    "\\(2.5\\)",
+    "\\(1000\\)",
+    "\\(30\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Each pH step is a factor of 10",
+   "solution": "Undo the log for each drink:\n\n\\[\n\\begin{aligned}\n[\\text{H}^+]_{\\text{lemon}} &= 10^{-2} \\\\\n[\\text{H}^+]_{\\text{coffee}} &= 10^{-5}\n\\end{aligned}\n\\]\n\nDivide:\n\n\\[\n\\begin{aligned}\n\\frac{10^{-2}}{10^{-5}} &= 10^{-2-(-5)} \\\\\n&= 10^{3} \\\\\n&= \\boxed{1000}\n\\end{aligned}\n\\]\n\n- \\(5-2=3\\) steps on the pH scale, and each step multiplies by \\(10\\).\n- Not \\(3\\): that is the number of steps, not the factor.\n- Not \\(2.5\\): that is \\(5\\div2\\). On a log scale the gap is what counts.",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "A logarithm answers one question: which exponent turns the base into this number?",
+ "send_to": "John"
+}
