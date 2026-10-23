@@ -1,0 +1,584 @@
+{
+ "slug": "math-material-logarithm-rules",
+ "title": "Math Material — Logarithm Rules",
+ "course": "AP Precalculus",
+ "unit": "Logarithms",
+ "question": "Twelve logarithm skills: the definition, fraction answers, product, quotient and power rules, change of base, solving equations.",
+ "intro": "**A logarithm is an exponent:**\n\n\\[\n\\log_b c = a \\iff b^{a} = c\n\\]\n\n- Cards 1–2: what a log means.\n- Cards 3–6: the three rules, then all of them together.\n- Cards 7–10: using the rules (calculator, cancelling, the main trap, solving).\n- Cards 11–12: advanced.\n\nType your answers in each table and tap **Check**.",
+ "link": [
+  "AP Precalculus 2.9 — Logarithmic Expressions (5 questions)",
+  "../ap-precalculus-2-9-logarithmic-expressions/quiz.html"
+ ],
+ "questions": [
+  {
+   "group": "Basics",
+   "title": "Definition: a log is an exponent",
+   "prompt": "\\[\n\\log_b c = a \\iff b^{a} = c\n\\]\n\n- Ask: **\\(b\\) to what power gives \\(c\\)?**\n- No base written means base \\(10\\).\n- Two values for every base: \\(\\log_b 1 = 0\\) and \\(\\log_b b = 1\\).\n\n**Practice:** find each value.\n\n- **(a)** \\(\\displaystyle \\log_2 8\\)\n- **(b)** \\(\\displaystyle \\log_3 81\\)\n- **(c)** \\(\\displaystyle \\log 1000\\)\n- **(d)** \\(\\displaystyle \\log_5 1\\)\n- **(e)** \\(\\displaystyle \\log_7 7\\)",
+   "steps": [
+    "**Example 1:** \\(\\log_5 25\\).\n\n- \\(5\\) to what power gives \\(25\\)?\n\n\\[\n\\begin{aligned}\n5^2 &= 25 \\\\\n\\log_5 25 &= \\boxed{2}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\log 10000\\) (base \\(10\\)).\n\n\\[\n\\begin{aligned}\n10^4 &= 10000 \\\\\n\\log 10000 &= \\boxed{4}\n\\end{aligned}\n\\]",
+    "**Example 3:** the two special values.\n\n\\[\n\\begin{aligned}\n6^0 &= 1 \\\\\n\\log_6 1 &= \\boxed{0}\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n6^1 &= 6 \\\\\n\\log_6 6 &= \\boxed{1}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Log",
+     "Base",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "2"
+     ],
+     [
+      "\\text{(b)}",
+      "3"
+     ],
+     [
+      "\\text{(c)}",
+      "10"
+     ],
+     [
+      "\\text{(d)}",
+      "5"
+     ],
+     [
+      "\\text{(e)}",
+      "7"
+     ]
+    ],
+    "answers": [
+     3.0,
+     4.0,
+     2.9999999999999996,
+     0.0,
+     1.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Basics",
+   "title": "Fraction and negative answers",
+   "prompt": "- Input **below 1** (like \\(\\tfrac{1}{8}\\)): the answer is **negative**.\n\n\\[\nb^{-n} = \\frac{1}{b^n}\n\\]\n\n- Input is a **root** of the base (like \\(2 = \\sqrt{4}\\)): the answer is a **fraction**.\n\n\\[\n\\sqrt[n]{b} = b^{1/n}\n\\]\n\n**Practice:** find each value. Type fractions like 1/2.\n\n- **(a)** \\(\\displaystyle \\log_2 \\tfrac{1}{8}\\)\n- **(b)** \\(\\displaystyle \\log_3 \\tfrac{1}{9}\\)\n- **(c)** \\(\\displaystyle \\log 0.01\\)\n- **(d)** \\(\\displaystyle \\log_4 2\\)\n- **(e)** \\(\\displaystyle \\log_{27} 3\\)",
+   "steps": [
+    "**Example 1:** \\(\\log_5 \\tfrac{1}{25}\\).\n\n\\[\n\\begin{aligned}\n\\frac{1}{25} &= \\frac{1}{5^2} \\\\\n&= 5^{-2}\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n\\log_5 \\tfrac{1}{25} &= \\boxed{-2}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\log_9 3\\).\n\n\\[\n\\begin{aligned}\n3 &= \\sqrt{9} \\\\\n&= 9^{1/2}\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n\\log_9 3 &= \\boxed{\\tfrac{1}{2}}\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(\\log_9 3 = 3\\) is wrong.\n\n- \\(9^3 = 729\\), not \\(3\\). The base is bigger than the input, so the answer is below \\(1\\)."
+   ],
+   "practice": {
+    "head": [
+     "Log",
+     "Base",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "2"
+     ],
+     [
+      "\\text{(b)}",
+      "3"
+     ],
+     [
+      "\\text{(c)}",
+      "10"
+     ],
+     [
+      "\\text{(d)}",
+      "4"
+     ],
+     [
+      "\\text{(e)}",
+      "27"
+     ]
+    ],
+    "answers": [
+     -3.0,
+     -2.0,
+     -1.9999999999999996,
+     0.5,
+     0.33333333333333337
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Rules",
+   "title": "Product rule: add logs, multiply inside",
+   "prompt": "\\[\n\\log_b m + \\log_b n = \\log_b (mn)\n\\]\n\n- Same base on both logs.\n- Adding the logs **multiplies** the inputs.\n\n\\[\n\\log 2 + \\log 3 = \\log 6\n\\]\n\n**Practice:** write each as one log. Type the number inside the log.\n\n- **(a)** \\(\\displaystyle \\log 2 + \\log 5\\)\n- **(b)** \\(\\displaystyle \\log_3 4 + \\log_3 5\\)\n- **(c)** \\(\\displaystyle \\log_2 3 + \\log_2 6\\)\n- **(d)** \\(\\displaystyle \\log 4 + \\log 25\\)\n- **(e)** \\(\\displaystyle \\log_6 4 + \\log_6 9\\)",
+   "steps": [
+    "**Example 1:** \\(\\log 2 + \\log 3\\).\n\n\\[\n\\begin{aligned}\n\\log 2 + \\log 3 &= \\log (2 \\times 3) \\\\\n&= \\boxed{\\log 6}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\log_2 4 + \\log_2 8\\), checked both ways.\n\n\\[\n\\begin{aligned}\n\\log_2 4 + \\log_2 8 &= \\log_2 32 \\\\\n&= 5\n\\end{aligned}\n\\]\n\n- Check: \\(\\log_2 4 = 2\\) and \\(\\log_2 8 = 3\\), and \\(2 + 3 = 5\\).",
+    "**Why it works:** logs are exponents, and exponents add when powers multiply.\n\n\\[\n\\begin{aligned}\n2^2 \\times 2^3 &= 2^{2+3} \\\\\n4 \\times 8 &= 32\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Sum",
+     "Base",
+     "Inside"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "10"
+     ],
+     [
+      "\\text{(b)}",
+      "3"
+     ],
+     [
+      "\\text{(c)}",
+      "2"
+     ],
+     [
+      "\\text{(d)}",
+      "10"
+     ],
+     [
+      "\\text{(e)}",
+      "6"
+     ]
+    ],
+    "answers": [
+     10.0,
+     20.0,
+     18.0,
+     100.0,
+     36.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Rules",
+   "title": "Quotient rule: subtract logs, divide inside",
+   "prompt": "\\[\n\\log_b m - \\log_b n = \\log_b \\frac{m}{n}\n\\]\n\n- Subtracting the logs **divides** the inputs.\n- The first input goes on top.\n\n\\[\n\\log 12 - \\log 3 = \\log 4\n\\]\n\n**Practice:** write each as one log. Type the number inside (a fraction like 1/25 is fine).\n\n- **(a)** \\(\\displaystyle \\log 20 - \\log 2\\)\n- **(b)** \\(\\displaystyle \\log_2 40 - \\log_2 5\\)\n- **(c)** \\(\\displaystyle \\log_3 54 - \\log_3 2\\)\n- **(d)** \\(\\displaystyle \\log 500 - \\log 5\\)\n- **(e)** \\(\\displaystyle \\log_5 3 - \\log_5 75\\)",
+   "steps": [
+    "**Example 1:** \\(\\log 12 - \\log 3\\).\n\n\\[\n\\begin{aligned}\n\\log 12 - \\log 3 &= \\log \\frac{12}{3} \\\\\n&= \\boxed{\\log 4}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\log_3 54 - \\log_3 2\\), then find its value.\n\n\\[\n\\begin{aligned}\n\\log_3 54 - \\log_3 2 &= \\log_3 27 \\\\\n&= \\boxed{3}\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(\\log 12 - \\log 3 = \\log 9\\) is wrong.\n\n- Subtracting logs divides: \\(12 \\div 3 = 4\\), not \\(12 - 3\\)."
+   ],
+   "practice": {
+    "head": [
+     "Diff",
+     "Base",
+     "Inside"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "10"
+     ],
+     [
+      "\\text{(b)}",
+      "2"
+     ],
+     [
+      "\\text{(c)}",
+      "3"
+     ],
+     [
+      "\\text{(d)}",
+      "10"
+     ],
+     [
+      "\\text{(e)}",
+      "5"
+     ]
+    ],
+    "answers": [
+     10.0,
+     8.0,
+     27.0,
+     100.0,
+     0.04
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Rules",
+   "title": "Power rule: the exponent comes out in front",
+   "prompt": "\\[\n\\log_b m^{k} = k\\log_b m\n\\]\n\n- Read it both ways:\n- **Out:** \\(\\log 2^5 = 5\\log 2\\)\n- **In:** \\(3\\log 2 = \\log 2^3 = \\log 8\\)\n\n**Practice:** move the number in front back inside. Type the number inside the log.\n\n- **(a)** \\(\\displaystyle 3\\log 2\\)\n- **(b)** \\(\\displaystyle 2\\log 5\\)\n- **(c)** \\(\\displaystyle 4\\log_3 2\\)\n- **(d)** \\(\\displaystyle \\tfrac{1}{2}\\log 49\\)\n- **(e)** \\(\\displaystyle -\\log 2\\)",
+   "steps": [
+    "**Example 1 (out):** \\(\\log_2 8^5\\).\n\n\\[\n\\begin{aligned}\n\\log_2 8^5 &= 5\\log_2 8 \\\\\n&= 5 \\times 3 \\\\\n&= \\boxed{15}\n\\end{aligned}\n\\]",
+    "**Example 2 (in):** \\(3\\log 2\\).\n\n\\[\n\\begin{aligned}\n3\\log 2 &= \\log 2^3 \\\\\n&= \\boxed{\\log 8}\n\\end{aligned}\n\\]",
+    "**Example 3:** a half in front means a square root.\n\n\\[\n\\begin{aligned}\n\\tfrac{1}{2}\\log 9 &= \\log 9^{1/2} \\\\\n&= \\log \\sqrt{9} \\\\\n&= \\boxed{\\log 3}\n\\end{aligned}\n\\]",
+    "**A minus in front** means one over:\n\n\\[\n\\begin{aligned}\n-\\log 5 &= \\log 5^{-1} \\\\\n&= \\log \\tfrac{1}{5}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Expr",
+     "Base",
+     "Inside"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "10"
+     ],
+     [
+      "\\text{(b)}",
+      "10"
+     ],
+     [
+      "\\text{(c)}",
+      "3"
+     ],
+     [
+      "\\text{(d)}",
+      "10"
+     ],
+     [
+      "\\text{(e)}",
+      "10"
+     ]
+    ],
+    "answers": [
+     8.0,
+     25.0,
+     16.0,
+     7.0,
+     0.5
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Rules",
+   "title": "Combine into one log",
+   "prompt": "Use the rules in this order:\n\n- **Power** first: move every number in front inside.\n- **Product:** each \\(+\\) multiplies.\n- **Quotient:** each \\(-\\) divides.\n\n**Practice:** write each as one log. Type the number inside the log.\n\n- **(a)** \\(\\displaystyle 2\\log 3 + \\log 2\\)\n- **(b)** \\(\\displaystyle \\log 8 + \\log 5 - \\log 4\\)\n- **(c)** \\(\\displaystyle 3\\log 2 - \\log 4\\)\n- **(d)** \\(\\displaystyle 2\\log_2 6 - \\log_2 9\\)\n- **(e)** \\(\\displaystyle \\log 50 + 2\\log 2 - \\log 2\\)",
+   "steps": [
+    "**Example 1:** \\(2\\log 3 + \\log 4 - \\log 6\\).\n\n- Power first: \\(2\\log 3 = \\log 9\\).\n\n\\[\n\\begin{aligned}\n2\\log 3 + \\log 4 - \\log 6 &= \\log 9 + \\log 4 - \\log 6 \\\\\n&= \\log \\frac{9 \\times 4}{6} \\\\\n&= \\log \\frac{36}{6} \\\\\n&= \\boxed{\\log 6}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(2\\log_2 6 - \\log_2 9\\), then its value.\n\n\\[\n\\begin{aligned}\n2\\log_2 6 - \\log_2 9 &= \\log_2 36 - \\log_2 9 \\\\\n&= \\log_2 \\frac{36}{9} \\\\\n&= \\log_2 4 \\\\\n&= \\boxed{2}\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(2\\log 3 + \\log 4 = \\log 24\\) is wrong.\n\n- The \\(2\\) must go inside first: \\(\\log 9 + \\log 4 = \\log 36\\)."
+   ],
+   "practice": {
+    "head": [
+     "Expr",
+     "Base",
+     "Inside"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "10"
+     ],
+     [
+      "\\text{(b)}",
+      "10"
+     ],
+     [
+      "\\text{(c)}",
+      "10"
+     ],
+     [
+      "\\text{(d)}",
+      "2"
+     ],
+     [
+      "\\text{(e)}",
+      "10"
+     ]
+    ],
+    "answers": [
+     18.0,
+     10.0,
+     2.0,
+     4.0,
+     100.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Using the rules",
+   "title": "Change of base: any log on a calculator",
+   "prompt": "\\[\n\\log_b c = \\frac{\\log c}{\\log b}\n\\]\n\n- The calculator has \\(\\log\\) (base \\(10\\)), so divide two base-10 logs.\n- The input goes on **top**, the base on the **bottom**.\n\n**Practice:** use a calculator. Give each value to 2 decimal places.\n\n- **(a)** \\(\\displaystyle \\log_2 7\\)\n- **(b)** \\(\\displaystyle \\log_3 20\\)\n- **(c)** \\(\\displaystyle \\log_5 100\\)\n- **(d)** \\(\\displaystyle \\log_4 10\\)\n- **(e)** \\(\\displaystyle \\log_6 50\\)",
+   "steps": [
+    "**Example 1:** \\(\\log_2 7\\).\n\n\\[\n\\begin{aligned}\n\\log_2 7 &= \\frac{\\log 7}{\\log 2} \\\\\n&= \\frac{0.8451}{0.3010} \\\\\n&\\approx \\boxed{2.81}\n\\end{aligned}\n\\]",
+    "**Check:** it should sit between two whole powers.\n\n- \\(2^2 = 4\\) and \\(2^3 = 8\\), so \\(\\log_2 7\\) is between \\(2\\) and \\(3\\). It fits.",
+    "**Example 2:** an exact answer with change of base, \\(\\log_8 32\\).\n\n\\[\n\\begin{aligned}\n\\log_8 32 &= \\frac{\\log 2^5}{\\log 2^3} \\\\\n&= \\frac{5\\log 2}{3\\log 2} \\\\\n&= \\boxed{\\tfrac{5}{3}}\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(\\dfrac{\\log 2}{\\log 7}\\) is upside down.\n\n- That gives \\(0.36\\), which is \\(\\log_7 2\\)."
+   ],
+   "practice": {
+    "head": [
+     "Log",
+     "Calculator",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "\\frac{\\log 7}{\\log 2}"
+     ],
+     [
+      "\\text{(b)}",
+      "\\frac{\\log 20}{\\log 3}"
+     ],
+     [
+      "\\text{(c)}",
+      "\\frac{\\log 100}{\\log 5}"
+     ],
+     [
+      "\\text{(d)}",
+      "\\frac{\\log 10}{\\log 4}"
+     ],
+     [
+      "\\text{(e)}",
+      "\\frac{\\log 50}{\\log 6}"
+     ]
+    ],
+    "answers": [
+     2.81,
+     2.73,
+     2.86,
+     1.66,
+     2.18
+    ],
+    "tolerance": 0.01
+   }
+  },
+  {
+   "group": "Using the rules",
+   "title": "Inverse pair: a log and its power cancel",
+   "prompt": "\\[\nb^{\\log_b x} = x\n\\]\n\n\\[\n\\log_b b^{x} = x\n\\]\n\n- \\(b^x\\) and \\(\\log_b x\\) undo each other (inverse functions, 2.10).\n- The bases must match.\n\n**Practice:** find each value. For (e), use the power rule first.\n\n- **(a)** \\(\\displaystyle 2^{\\log_2 5}\\)\n- **(b)** \\(\\displaystyle 10^{\\log 7}\\)\n- **(c)** \\(\\displaystyle \\log_3 3^{4}\\)\n- **(d)** \\(\\displaystyle \\log 10^{-2}\\)\n- **(e)** \\(\\displaystyle 5^{2\\log_5 3}\\)",
+   "steps": [
+    "**Example 1:** \\(3^{\\log_3 11}\\).\n\n- Base \\(3\\) and \\(\\log_3\\) match, so they cancel.\n\n\\[\n\\begin{aligned}\n3^{\\log_3 11} &= \\boxed{11}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\log_2 2^7\\).\n\n\\[\n\\begin{aligned}\n\\log_2 2^7 &= \\boxed{7}\n\\end{aligned}\n\\]",
+    "**Example 3:** a number in front, \\(10^{2\\log 4}\\).\n\n- Move the \\(2\\) inside first (power rule).\n\n\\[\n\\begin{aligned}\n10^{2\\log 4} &= 10^{\\log 16} \\\\\n&= \\boxed{16}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Expr",
+     "Rule",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "\\text{cancel}"
+     ],
+     [
+      "\\text{(b)}",
+      "\\text{cancel}"
+     ],
+     [
+      "\\text{(c)}",
+      "\\text{cancel}"
+     ],
+     [
+      "\\text{(d)}",
+      "\\text{cancel}"
+     ],
+     [
+      "\\text{(e)}",
+      "\\text{power}"
+     ]
+    ],
+    "answers": [
+     4.999999999999999,
+     7.0,
+     4.0,
+     -2.0,
+     9.000000000000002
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Using the rules",
+   "title": "The trap: there is no rule for log(a + b)",
+   "prompt": "These two look alike but are **not** equal:\n\n\\[\n\\log (a + b) \\ne \\log a + \\log b\n\\]\n\n- \\(\\log a + \\log b\\) is \\(\\log (ab)\\), the product rule.\n- \\(\\log (a + b)\\) cannot be split. Add inside first, then take the log.\n\n\\[\n\\frac{\\log a}{\\log b} \\ne \\log \\frac{a}{b}\n\\]\n\n- A fraction of two logs is change of base, not the quotient rule.\n\n**Practice:** find each value. (d) needs a calculator, 2 decimal places.\n\n- **(a)** \\(\\displaystyle \\log_2 4 + \\log_2 4\\)\n- **(b)** \\(\\displaystyle \\log_2 (4 + 4)\\)\n- **(c)** \\(\\displaystyle \\log 20 + \\log 5\\)\n- **(d)** \\(\\displaystyle \\log (20 + 5)\\)\n- **(e)** \\(\\displaystyle \\frac{\\log 100}{\\log 10}\\)",
+   "steps": [
+    "**Example 1:** compare (a) and (b).\n\n\\[\n\\begin{aligned}\n\\log_2 4 + \\log_2 4 &= 2 + 2 \\\\\n&= \\boxed{4}\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n\\log_2 (4 + 4) &= \\log_2 8 \\\\\n&= \\boxed{3}\n\\end{aligned}\n\\]\n\n- Different answers, so the two are not the same thing.",
+    "**Example 2:** \\(\\log 2 + \\log 3\\).\n\n\\[\n\\begin{aligned}\n\\log 2 + \\log 3 &= \\log 6\n\\end{aligned}\n\\]\n\n- Not \\(\\log 5\\): adding logs multiplies the inputs, it never adds them.",
+    "**Example 3:** compare a fraction of logs with the log of a fraction.\n\n\\[\n\\begin{aligned}\n\\frac{\\log 100}{\\log 10} &= \\frac{2}{1} \\\\\n&= 2\n\\end{aligned}\n\\]\n\n\\[\n\\begin{aligned}\n\\log \\frac{100}{10} &= \\log 10 \\\\\n&= 1\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Expr",
+     "Rule",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "\\text{product}"
+     ],
+     [
+      "\\text{(b)}",
+      "\\text{add first}"
+     ],
+     [
+      "\\text{(c)}",
+      "\\text{product}"
+     ],
+     [
+      "\\text{(d)}",
+      "\\text{add first}"
+     ],
+     [
+      "\\text{(e)}",
+      "\\text{divide}"
+     ]
+    ],
+    "answers": [
+     4.0,
+     3.0,
+     2.0,
+     1.4,
+     2.0
+    ],
+    "tolerance": 0.01
+   }
+  },
+  {
+   "group": "Using the rules",
+   "title": "Solve an exponential with logs",
+   "prompt": "To get \\(x\\) down from the exponent, take \\(\\log\\) of both sides:\n\n\\[\nb^{x} = c\n\\]\n\n\\[\nx\\log b = \\log c\n\\]\n\n\\[\nx = \\frac{\\log c}{\\log b}\n\\]\n\n- If a number multiplies the power, divide it away first.\n\n**Practice:** solve for \\(x\\). Give \\(x\\) to 2 decimal places.\n\n- **(a)** \\(\\displaystyle 2^x = 10\\)\n- **(b)** \\(\\displaystyle 3^x = 50\\)\n- **(c)** \\(\\displaystyle 5^x = 0.2\\)\n- **(d)** \\(\\displaystyle 1.05^x = 2\\)\n- **(e)** \\(\\displaystyle 4 \\cdot 3^x = 100\\)",
+   "steps": [
+    "**Example 1:** \\(7^x = 30\\).\n\n\\[\n\\begin{aligned}\n7^x &= 30 \\\\\n\\log 7^x &= \\log 30 \\\\\nx\\log 7 &= \\log 30 \\\\\nx &= \\frac{\\log 30}{\\log 7} \\\\\nx &\\approx \\boxed{1.75}\n\\end{aligned}\n\\]",
+    "**Check:** \\(7^1 = 7\\) and \\(7^2 = 49\\), so \\(x\\) is between \\(1\\) and \\(2\\). It fits.",
+    "**Example 2:** money growing \\(5\\%\\) a year. When does it double?\n\n\\[\n\\begin{aligned}\n1.05^x &= 2 \\\\\nx &= \\frac{\\log 2}{\\log 1.05} \\\\\nx &\\approx \\boxed{14.2 \\text{ years}}\n\\end{aligned}\n\\]",
+    "**Example 3:** divide first, \\(4 \\cdot 3^x = 100\\).\n\n\\[\n\\begin{aligned}\n4 \\cdot 3^x &= 100 \\\\\n3^x &= 25 \\\\\nx &= \\frac{\\log 25}{\\log 3} \\\\\nx &\\approx \\boxed{2.93}\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(\\log 12^x\\) from \\(4 \\cdot 3^x\\) is wrong.\n\n- \\(4 \\cdot 3^x\\) is not \\(12^x\\). Divide by \\(4\\) first."
+   ],
+   "practice": {
+    "head": [
+     "Eq",
+     "\\(x =\\)",
+     "\\(x\\)"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "\\frac{\\log 10}{\\log 2}"
+     ],
+     [
+      "\\text{(b)}",
+      "\\frac{\\log 50}{\\log 3}"
+     ],
+     [
+      "\\text{(c)}",
+      "\\frac{\\log 0.2}{\\log 5}"
+     ],
+     [
+      "\\text{(d)}",
+      "\\frac{\\log 2}{\\log 1.05}"
+     ],
+     [
+      "\\text{(e)}",
+      "\\frac{\\log 25}{\\log 3}"
+     ]
+    ],
+    "answers": [
+     3.32,
+     3.56,
+     -1.0,
+     14.21,
+     2.93
+    ],
+    "tolerance": 0.01
+   }
+  },
+  {
+   "group": "Advanced",
+   "title": "Expand one log into pieces",
+   "prompt": "Run the rules backwards:\n\n\\[\n\\log \\frac{x^2 y}{z} = 2\\log x + \\log y - \\log z\n\\]\n\n- Each factor on top becomes \\(+\\log\\).\n- Each factor on the bottom becomes \\(-\\log\\).\n- Each power comes out in front.\n\n**Practice:** you are given\n\n\\[\n\\begin{aligned}\n\\log_b x &= 2 \\\\\n\\log_b y &= 5 \\\\\n\\log_b z &= 3\n\\end{aligned}\n\\]\n\nExpand, then find each value:\n\n- **(a)** \\(\\displaystyle \\log_b (xy)\\)\n- **(b)** \\(\\displaystyle \\log_b \\frac{x}{z}\\)\n- **(c)** \\(\\displaystyle \\log_b x^3\\)\n- **(d)** \\(\\displaystyle \\log_b \\frac{x y^2}{z}\\)\n- **(e)** \\(\\displaystyle \\log_b (\\sqrt{x}\\, z)\\)",
+   "steps": [
+    "**Example 1:** expand \\(\\log \\dfrac{x^2 y}{z}\\).\n\n\\[\n\\begin{aligned}\n\\log \\frac{x^2 y}{z} &= \\log x^2 + \\log y - \\log z \\\\\n&= \\boxed{2\\log x + \\log y - \\log z}\n\\end{aligned}\n\\]",
+    "**Example 2:** the same with the given values.\n\n\\[\n\\begin{aligned}\n\\log_b \\frac{x^2 y}{z} &= 2(2) + 5 - 3 \\\\\n&= \\boxed{6}\n\\end{aligned}\n\\]",
+    "**A square root is a power of one half:**\n\n\\[\n\\begin{aligned}\n\\log_b \\sqrt{x} &= \\log_b x^{1/2} \\\\\n&= \\tfrac{1}{2}\\log_b x\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(\\log_b \\dfrac{x}{z} = \\dfrac{\\log_b x}{\\log_b z}\\) is wrong.\n\n- It is a subtraction: \\(2 - 3 = -1\\), not \\(\\tfrac{2}{3}\\)."
+   ],
+   "practice": {
+    "head": [
+     "Log",
+     "Rule",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "\\text{product}"
+     ],
+     [
+      "\\text{(b)}",
+      "\\text{quotient}"
+     ],
+     [
+      "\\text{(c)}",
+      "\\text{power}"
+     ],
+     [
+      "\\text{(d)}",
+      "\\text{all three}"
+     ],
+     [
+      "\\text{(e)}",
+      "\\text{root}"
+     ]
+    ],
+    "answers": [
+     7.0,
+     -1.0,
+     6.0,
+     9.0,
+     4.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Advanced",
+   "title": "Solve a log equation",
+   "prompt": "Three steps:\n\n- **Combine** into one log on each side (product / quotient rule).\n- **Undo** the log with the definition:\n\n\\[\n\\log_b M = k \\iff M = b^{k}\n\\]\n\n- **Check** every answer: the input of each log must be positive.\n\n**Practice:** solve for \\(x\\).\n\n- **(a)** \\(\\displaystyle \\log_2 x = 5\\)\n- **(b)** \\(\\displaystyle \\log_3 (x - 1) = 2\\)\n- **(c)** \\(\\displaystyle \\log x + \\log 4 = 2\\)\n- **(d)** \\(\\displaystyle \\log_2 x - \\log_2 3 = 2\\)\n- **(e)** \\(\\displaystyle \\log_6 x + \\log_6 (x - 1) = 1\\)",
+   "steps": [
+    "**Example 1:** \\(\\log_3 x = 4\\).\n\n\\[\n\\begin{aligned}\n\\log_3 x &= 4 \\\\\nx &= 3^4 \\\\\nx &= \\boxed{81}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\log_2 x + \\log_2 (x - 2) = 3\\).\n\n- Combine with the product rule, then undo the log.\n\n\\[\n\\begin{aligned}\n\\log_2 \\big(x(x - 2)\\big) &= 3 \\\\\nx(x - 2) &= 2^3 \\\\\nx^2 - 2x &= 8 \\\\\nx^2 - 2x - 8 &= 0 \\\\\n(x - 4)(x + 2) &= 0\n\\end{aligned}\n\\]",
+    "Two candidates: \\(x = 4\\) or \\(x = -2\\).\n\n- \\(x = -2\\) gives \\(\\log_2 (-2)\\), which has no value. Reject it.\n\n\\[\n\\begin{aligned}\nx &= \\boxed{4}\n\\end{aligned}\n\\]",
+    "**Check \\(x = 4\\):**\n\n\\[\n\\begin{aligned}\n\\log_2 4 + \\log_2 2 &= 2 + 1 \\\\\n&= 3\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Eq",
+     "Step",
+     "\\(x\\)"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "\\text{undo}"
+     ],
+     [
+      "\\text{(b)}",
+      "\\text{undo}"
+     ],
+     [
+      "\\text{(c)}",
+      "\\text{combine}"
+     ],
+     [
+      "\\text{(d)}",
+      "\\text{combine}"
+     ],
+     [
+      "\\text{(e)}",
+      "\\text{check}"
+     ]
+    ],
+    "answers": [
+     32.0,
+     10.0,
+     25.0,
+     12.0,
+     3.0
+    ],
+    "tolerance": 0.001
+   }
+  }
+ ]
+}
