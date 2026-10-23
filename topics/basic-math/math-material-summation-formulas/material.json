@@ -1,0 +1,346 @@
+{
+ "slug": "math-material-summation-formulas",
+ "title": "Math Material — Summation Formulas",
+ "course": "AP Precalculus",
+ "unit": "Series",
+ "question": "Seven summation formulas: sum rules, sums of k, k squared and k cubed, arithmetic, finite and infinite geometric series.",
+ "intro": "**Sigma notation** is a short way to write a long sum:\n\n\\[\n\\sum_{k=1}^{n} a_k = a_1 + a_2 + \\dots + a_n\n\\]\n\n- \\(k\\) counts from the bottom number to the top number.\n- Seven formulas below give the total without adding every term.\n- Cards 5–7 are the sums of the arithmetic (linear) and geometric (exponential) sequences from 2.1–2.2.\n\nType your answers in each table and tap **Check**.",
+ "link": [
+  "Sigma Notation Quiz (15 questions)",
+  "../ap-precalculus-evaluating-series-and-summation-notation/quiz.html"
+ ],
+ "questions": [
+  {
+   "group": "Rules",
+   "title": "Sum rules: split, pull out, count",
+   "prompt": "Three rules let you break any sum into pieces you already know:\n\n\\[\n\\sum_{k=1}^{n} c = nc\n\\]\n\n- Adding the same number \\(c\\) exactly \\(n\\) times.\n\n\\[\n\\sum_{k=1}^{n} c\\,a_k = c\\sum_{k=1}^{n} a_k\n\\]\n\n- A constant factor comes out of the sum.\n\n\\[\n\\sum_{k=1}^{n} (a_k + b_k) = \\sum_{k=1}^{n} a_k + \\sum_{k=1}^{n} b_k\n\\]\n\n- A sum of two sequences splits into two sums.\n\n**Practice:** you are given\n\n\\[\n\\sum_{k=1}^{10} a_k = 40\n\\]\n\nand\n\n\\[\n\\sum_{k=1}^{10} b_k = 15\n\\]\n\nFind each sum (every sum runs from \\(k=1\\) to \\(10\\)):\n\n- **(a)** \\(\\displaystyle \\sum 5\\)\n- **(b)** \\(\\displaystyle \\sum 3a_k\\)\n- **(c)** \\(\\displaystyle \\sum (a_k + b_k)\\)\n- **(d)** \\(\\displaystyle \\sum (a_k - 2b_k)\\)\n- **(e)** \\(\\displaystyle \\sum (2a_k + 3)\\)",
+   "steps": [
+    "**Example 1:** find \\(\\displaystyle\\sum_{k=1}^{10} (3a_k - 2b_k + 1)\\).\n\n- Split into three sums.\n- Pull the constants out.\n- The \\(1\\) is added 10 times.",
+    "\\[\n\\begin{aligned}\n\\sum (3a_k - 2b_k + 1) &= 3\\sum a_k - 2\\sum b_k + \\sum 1 \\\\\n&= 3(40) - 2(15) + 10 \\\\\n&= 120 - 30 + 10 \\\\\n&= \\boxed{100}\n\\end{aligned}\n\\]",
+    "**Example 2:** find \\(\\displaystyle\\sum_{k=1}^{10} (3k + 2)\\), using \\(\\displaystyle\\sum_{k=1}^{10} k = 55\\) (card 2).\n\n\\[\n\\begin{aligned}\n\\sum_{k=1}^{10} (3k + 2) &= 3\\sum_{k=1}^{10} k + \\sum_{k=1}^{10} 2 \\\\\n&= 3(55) + 10(2) \\\\\n&= 165 + 20 \\\\\n&= \\boxed{185}\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(\\displaystyle\\sum_{k=1}^{10} 2 = 2\\) is wrong.\n\n- The 2 is added once for every \\(k\\), so the sum is \\(10 \\times 2 = 20\\)."
+   ],
+   "practice": {
+    "head": [
+     "Sum",
+     "Rule",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "\\text{count}"
+     ],
+     [
+      "\\text{(b)}",
+      "\\text{pull out}"
+     ],
+     [
+      "\\text{(c)}",
+      "\\text{split}"
+     ],
+     [
+      "\\text{(d)}",
+      "\\text{split, pull}"
+     ],
+     [
+      "\\text{(e)}",
+      "\\text{all three}"
+     ]
+    ],
+    "answers": [
+     50.0,
+     120.0,
+     55.0,
+     10.0,
+     110.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Powers of k",
+   "title": "Sum of k: 1 + 2 + 3 + … + n",
+   "prompt": "\\[\n\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}\n\\]\n\n**Where it comes from (Gauss):**\n\n- Write the sum forwards and backwards.\n- Each column adds to \\(n+1\\), and there are \\(n\\) columns.\n- That is twice the sum, so divide by 2.\n\n**Practice:** find each sum. Sum (e) starts at \\(k = 11\\), not at 1.\n\n- **(a)** \\(\\displaystyle \\sum_{k=1}^{10} k\\)\n- **(b)** \\(\\displaystyle \\sum_{k=1}^{30} k\\)\n- **(c)** \\(\\displaystyle \\sum_{k=1}^{50} k\\)\n- **(d)** \\(\\displaystyle \\sum_{k=1}^{100} k\\)\n- **(e)** \\(\\displaystyle \\sum_{k=11}^{20} k\\)",
+   "steps": [
+    "**Example 1:** \\(1 + 2 + 3 + \\dots + 100\\).\n\n\\[\n\\begin{aligned}\nS &= 1 + 2 + \\dots + 99 + 100 \\\\\nS &= 100 + 99 + \\dots + 2 + 1 \\\\\n2S &= 101 + 101 + \\dots + 101 \\\\\n2S &= 100 \\times 101 \\\\\nS &= \\boxed{5050}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\displaystyle\\sum_{k=1}^{20} k\\) with the formula, \\(n = 20\\):\n\n\\[\n\\begin{aligned}\n\\sum_{k=1}^{20} k &= \\frac{20 \\times 21}{2} \\\\\n&= \\frac{420}{2} \\\\\n&= \\boxed{210}\n\\end{aligned}\n\\]",
+    "**Example 3:** a sum that does not start at 1: \\(\\displaystyle\\sum_{k=11}^{20} k\\).\n\n- Take everything up to 20, then remove 1 to 10.\n\n\\[\n\\begin{aligned}\n\\sum_{k=11}^{20} k &= \\sum_{k=1}^{20} k - \\sum_{k=1}^{10} k \\\\\n&= 210 - 55 \\\\\n&= \\boxed{155}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Sum",
+     "\\(n\\)",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "10"
+     ],
+     [
+      "\\text{(b)}",
+      "30"
+     ],
+     [
+      "\\text{(c)}",
+      "50"
+     ],
+     [
+      "\\text{(d)}",
+      "100"
+     ],
+     [
+      "\\text{(e)}",
+      "20 - 10"
+     ]
+    ],
+    "answers": [
+     55.0,
+     465.0,
+     1275.0,
+     5050.0,
+     155.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Powers of k",
+   "title": "Sum of squares: 1² + 2² + … + n²",
+   "prompt": "\\[\n\\sum_{k=1}^{n} k^2 = \\frac{n(n+1)(2n+1)}{6}\n\\]\n\n- Three factors on top: \\(n\\), the next number \\(n+1\\), and \\(2n+1\\).\n- The top is always a multiple of 6, so the answer is a whole number.\n\n**Practice:** the **Top** column gives \\(n(n+1)(2n+1)\\). Divide by 6.\n\n- **(a)** \\(\\displaystyle \\sum_{k=1}^{3} k^2\\)\n- **(b)** \\(\\displaystyle \\sum_{k=1}^{5} k^2\\)\n- **(c)** \\(\\displaystyle \\sum_{k=1}^{6} k^2\\)\n- **(d)** \\(\\displaystyle \\sum_{k=1}^{10} k^2\\)\n- **(e)** \\(\\displaystyle \\sum_{k=1}^{12} k^2\\)",
+   "steps": [
+    "**Example 1:** \\(\\displaystyle\\sum_{k=1}^{4} k^2\\), checked term by term first:\n\n\\[\n\\begin{aligned}\n1^2 + 2^2 + 3^2 + 4^2 &= 1 + 4 + 9 + 16 \\\\\n&= 30\n\\end{aligned}\n\\]",
+    "Now with the formula, \\(n = 4\\):\n\n\\[\n\\begin{aligned}\n\\sum_{k=1}^{4} k^2 &= \\frac{4 \\times 5 \\times 9}{6} \\\\\n&= \\frac{180}{6} \\\\\n&= \\boxed{30}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\displaystyle\\sum_{k=1}^{10} k^2\\), \\(n = 10\\):\n\n\\[\n\\begin{aligned}\n\\sum_{k=1}^{10} k^2 &= \\frac{10 \\times 11 \\times 21}{6} \\\\\n&= \\frac{2310}{6} \\\\\n&= \\boxed{385}\n\\end{aligned}\n\\]",
+    "**Common mistake:** \\(\\displaystyle\\sum k^2 \\ne \\Big(\\sum k\\Big)^2\\).\n\n- For \\(n = 4\\): \\(30 \\ne 10^2 = 100\\)."
+   ],
+   "practice": {
+    "head": [
+     "Sum",
+     "Top",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "84"
+     ],
+     [
+      "\\text{(b)}",
+      "330"
+     ],
+     [
+      "\\text{(c)}",
+      "546"
+     ],
+     [
+      "\\text{(d)}",
+      "2310"
+     ],
+     [
+      "\\text{(e)}",
+      "3900"
+     ]
+    ],
+    "answers": [
+     14.0,
+     55.0,
+     91.0,
+     385.0,
+     650.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Powers of k",
+   "title": "Sum of cubes: 1³ + 2³ + … + n³",
+   "prompt": "\\[\n\\sum_{k=1}^{n} k^3 = \\left(\\frac{n(n+1)}{2}\\right)^2\n\\]\n\n- The sum of cubes is the **square of the sum of k** (card 2).\n- So: find \\(1 + 2 + \\dots + n\\) first, then square it.\n\n**Practice:** the middle column gives \\(\\displaystyle\\sum k\\). Square it.\n\n- **(a)** \\(\\displaystyle \\sum_{k=1}^{3} k^3\\)\n- **(b)** \\(\\displaystyle \\sum_{k=1}^{5} k^3\\)\n- **(c)** \\(\\displaystyle \\sum_{k=1}^{6} k^3\\)\n- **(d)** \\(\\displaystyle \\sum_{k=1}^{10} k^3\\)\n- **(e)** \\(\\displaystyle \\sum_{k=1}^{20} k^3\\)",
+   "steps": [
+    "**Example 1:** \\(\\displaystyle\\sum_{k=1}^{4} k^3\\), checked term by term first:\n\n\\[\n\\begin{aligned}\n1^3 + 2^3 + 3^3 + 4^3 &= 1 + 8 + 27 + 64 \\\\\n&= 100\n\\end{aligned}\n\\]",
+    "With the formula, \\(n = 4\\):\n\n\\[\n\\begin{aligned}\n1 + 2 + 3 + 4 &= 10 \\\\\n\\sum_{k=1}^{4} k^3 &= 10^2 \\\\\n&= \\boxed{100}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(\\displaystyle\\sum_{k=1}^{10} k^3\\), \\(n = 10\\):\n\n\\[\n\\begin{aligned}\n\\sum_{k=1}^{10} k &= \\frac{10 \\times 11}{2} \\\\\n&= 55 \\\\\n\\sum_{k=1}^{10} k^3 &= 55^2 \\\\\n&= \\boxed{3025}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Sum",
+     "\\(\\sum k\\)",
+     "Value"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "6"
+     ],
+     [
+      "\\text{(b)}",
+      "15"
+     ],
+     [
+      "\\text{(c)}",
+      "21"
+     ],
+     [
+      "\\text{(d)}",
+      "55"
+     ],
+     [
+      "\\text{(e)}",
+      "210"
+     ]
+    ],
+    "answers": [
+     36.0,
+     225.0,
+     441.0,
+     3025.0,
+     44100.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Sequences (2.1–2.2)",
+   "title": "Arithmetic series: add a linear pattern",
+   "prompt": "An **arithmetic** sequence adds the same \\(d\\) each time (linear, topic 2.2).\n\n\\[\na_n = a_1 + (n-1)d\n\\]\n\nThe sum of its first \\(n\\) terms:\n\n\\[\nS_n = \\frac{n\\,(a_1 + a_n)}{2}\n\\]\n\n- Number of terms × the average of the first and last term.\n- Same pairing idea as \\(1 + 2 + \\dots + n\\).\n\n**Practice:** the middle column gives the number of terms \\(n\\).\n\n- **(a)** \\(\\displaystyle 2 + 4 + \\dots + 20\\)\n- **(b)** \\(\\displaystyle 5 + 8 + \\dots + 32\\)\n- **(c)** \\(\\displaystyle \\sum_{n=1}^{8} (3n + 1)\\)\n- **(d)** \\(\\displaystyle 100 + 95 + \\dots + 55\\)\n- **(e)** \\(\\displaystyle \\sum_{k=1}^{20} (2k - 1)\\)",
+   "steps": [
+    "**Example 1:** \\(\\displaystyle\\sum_{n=1}^{5} (2n - 1) = 1 + 3 + 5 + 7 + 9\\).\n\n- First term 1, last term 9, \\(n = 5\\) terms.\n\n\\[\n\\begin{aligned}\nS_5 &= \\frac{5\\,(1 + 9)}{2} \\\\\n&= \\frac{50}{2} \\\\\n&= \\boxed{25}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(3 + 7 + 11 + \\dots + 39\\).\n\n- First find how many terms: \\(d = 4\\).\n\n\\[\n\\begin{aligned}\n39 &= 3 + (n-1)(4) \\\\\n36 &= (n-1)(4) \\\\\nn - 1 &= 9 \\\\\nn &= 10\n\\end{aligned}\n\\]",
+    "Then the sum:\n\n\\[\n\\begin{aligned}\nS_{10} &= \\frac{10\\,(3 + 39)}{2} \\\\\n&= \\frac{420}{2} \\\\\n&= \\boxed{210}\n\\end{aligned}\n\\]",
+    "**Common mistake:** counting terms as \\((39 - 3) \\div 4 = 9\\).\n\n- That counts the gaps. There is one more term than gaps: \\(n = 10\\)."
+   ],
+   "practice": {
+    "head": [
+     "Series",
+     "\\(n\\)",
+     "Sum"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "10"
+     ],
+     [
+      "\\text{(b)}",
+      "10"
+     ],
+     [
+      "\\text{(c)}",
+      "8"
+     ],
+     [
+      "\\text{(d)}",
+      "10"
+     ],
+     [
+      "\\text{(e)}",
+      "20"
+     ]
+    ],
+    "answers": [
+     110.0,
+     185.0,
+     116.0,
+     775.0,
+     400.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Sequences (2.1–2.2)",
+   "title": "Finite geometric series: add an exponential pattern",
+   "prompt": "A **geometric** sequence multiplies by the same \\(r\\) each time (exponential, topic 2.2).\n\n\\[\na_n = a_1 r^{\\,n-1}\n\\]\n\nThe sum of its first \\(n\\) terms (\\(r \\ne 1\\)):\n\n\\[\nS_n = \\frac{a_1\\,(1 - r^n)}{1 - r}\n\\]\n\n**Where it comes from:**\n\n- Write \\(S_n\\) and \\(rS_n\\) one under the other.\n- Subtract: every middle term cancels, leaving \\(a_1 - a_1 r^n\\).\n\n**Practice:** the middle column gives \\(a_1,\\ r,\\ n\\). Fractions like 155/16 are fine.\n\n- **(a)** \\(\\displaystyle 1 + 2 + 4 + 8 + 16\\)\n- **(b)** \\(\\displaystyle 3 + 6 + 12 + \\dots\\)\n- **(c)** \\(\\displaystyle \\sum_{n=1}^{4} 2 \\cdot 5^{\\,n-1}\\)\n- **(d)** \\(\\displaystyle 81 + 27 + 9 + 3 + 1\\)\n- **(e)** \\(\\displaystyle \\sum_{n=0}^{4} 5\\left(\\tfrac{1}{2}\\right)^{n}\\)",
+   "steps": [
+    "**Example 1:** \\(\\displaystyle\\sum_{n=1}^{3} 4 \\cdot 3^{\\,n-1} = 4 + 12 + 36\\).\n\n- \\(a_1 = 4\\), \\(r = 3\\), \\(n = 3\\).\n\n\\[\n\\begin{aligned}\nS_3 &= \\frac{4\\,(1 - 3^3)}{1 - 3} \\\\\n&= \\frac{4\\,(1 - 27)}{-2} \\\\\n&= \\frac{-104}{-2} \\\\\n&= \\boxed{52}\n\\end{aligned}\n\\]",
+    "**Example 2:** \\(1 + 2 + 4 + \\dots + 2^9\\).\n\n- \\(a_1 = 1\\), \\(r = 2\\), and \\(2^0\\) to \\(2^9\\) is \\(n = 10\\) terms.\n\n\\[\n\\begin{aligned}\nS_{10} &= \\frac{1\\,(1 - 2^{10})}{1 - 2} \\\\\n&= \\frac{1 - 1024}{-1} \\\\\n&= \\boxed{1023}\n\\end{aligned}\n\\]",
+    "**Why it works** (with \\(a_1 = 4\\), \\(r = 3\\)):\n\n\\[\n\\begin{aligned}\nS &= 4 + 12 + 36 \\\\\n3S &= 12 + 36 + 108 \\\\\nS - 3S &= 4 - 108 \\\\\n-2S &= -104 \\\\\nS &= 52\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Series",
+     "\\(a_1,\\ r,\\ n\\)",
+     "Sum"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "1,\\ 2,\\ 5"
+     ],
+     [
+      "\\text{(b)}",
+      "3,\\ 2,\\ 6"
+     ],
+     [
+      "\\text{(c)}",
+      "2,\\ 5,\\ 4"
+     ],
+     [
+      "\\text{(d)}",
+      "81,\\ \\tfrac{1}{3},\\ 5"
+     ],
+     [
+      "\\text{(e)}",
+      "5,\\ \\tfrac{1}{2},\\ 5"
+     ]
+    ],
+    "answers": [
+     31.0,
+     189.0,
+     312.0,
+     121.0,
+     9.6875
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "group": "Sequences (2.1–2.2)",
+   "title": "Infinite geometric series: when the sum stops growing",
+   "prompt": "If the ratio is small, \\(|r| < 1\\), the terms shrink towards 0 and the sum settles at\n\n\\[\nS_\\infty = \\frac{a_1}{1 - r}\n\\]\n\n- It is card 6 with \\(n \\to \\infty\\): \\(r^n \\to 0\\), so \\(1 - r^n \\to 1\\).\n- If \\(|r| \\ge 1\\) the terms do not shrink, and there is **no** finite sum.\n\n**Practice:** the middle column gives \\(a_1,\\ r\\). Fractions like 20/3 are fine.\n\n- **(a)** \\(\\displaystyle 1 + \\tfrac{1}{2} + \\tfrac{1}{4} + \\dots\\)\n- **(b)** \\(\\displaystyle 6 + 2 + \\tfrac{2}{3} + \\dots\\)\n- **(c)** \\(\\displaystyle 10 - 5 + 2.5 - \\dots\\)\n- **(d)** \\(\\displaystyle \\sum_{n=1}^{\\infty} 4(0.2)^{n-1}\\)\n- **(e)** \\(\\displaystyle 0.9 + 0.09 + 0.009 + \\dots\\)",
+   "steps": [
+    "**Example 1:** \\(\\displaystyle\\sum_{n=1}^{\\infty} \\left(\\tfrac{1}{2}\\right)^n = \\tfrac{1}{2} + \\tfrac{1}{4} + \\tfrac{1}{8} + \\dots\\)\n\n- \\(a_1 = \\tfrac{1}{2}\\), \\(r = \\tfrac{1}{2}\\).\n\n\\[\n\\begin{aligned}\nS_\\infty &= \\frac{\\tfrac{1}{2}}{1 - \\tfrac{1}{2}} \\\\\n&= \\frac{\\tfrac{1}{2}}{\\tfrac{1}{2}} \\\\\n&= \\boxed{1}\n\\end{aligned}\n\\]",
+    "**Example 2:** the repeating decimal \\(0.333\\ldots = 0.3 + 0.03 + 0.003 + \\dots\\)\n\n- \\(a_1 = 0.3\\), \\(r = 0.1\\).\n\n\\[\n\\begin{aligned}\nS_\\infty &= \\frac{0.3}{1 - 0.1} \\\\\n&= \\frac{0.3}{0.9} \\\\\n&= \\boxed{\\tfrac{1}{3}}\n\\end{aligned}\n\\]",
+    "**Check first:** \\(2 + 4 + 8 + \\dots\\) has \\(r = 2\\).\n\n- \\(|r| \\ge 1\\): the terms grow, so there is no sum.\n- The formula would give \\(\\frac{2}{1 - 2} = -2\\), which is nonsense for positive terms."
+   ],
+   "practice": {
+    "head": [
+     "Series",
+     "\\(a_1,\\ r\\)",
+     "Sum"
+    ],
+    "rows": [
+     [
+      "\\text{(a)}",
+      "1,\\ \\tfrac{1}{2}"
+     ],
+     [
+      "\\text{(b)}",
+      "6,\\ \\tfrac{1}{3}"
+     ],
+     [
+      "\\text{(c)}",
+      "10,\\ -\\tfrac{1}{2}"
+     ],
+     [
+      "\\text{(d)}",
+      "4,\\ 0.2"
+     ],
+     [
+      "\\text{(e)}",
+      "0.9,\\ 0.1"
+     ]
+    ],
+    "answers": [
+     2.0,
+     9.0,
+     6.666666666666667,
+     5.0,
+     1.0
+    ],
+    "tolerance": 0.001
+   }
+  }
+ ]
+}

@@ -144,6 +144,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 4 — Fractions Practice](topics/basic-math/malta-year-8-math-chapter-4-fractions-practice/content.md) | 30 fraction questions: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-4-fractions-practice/quiz.html) |
 | [Malta Year 8 Math Chapter 8 — Algebra](topics/basic-math/malta-year-8-math-chapter-8-algebra/content.md) | How do you collect like terms and solve equations, with x on both sides and with fractions? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-8-algebra/material.html) |
 | [Malta Year 8 Math Chapter 8 — Algebra Practice](topics/basic-math/malta-year-8-math-chapter-8-algebra-practice/content.md) | 30 equations to solve: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-8-algebra-practice/quiz.html) |
+| [Math Material — Summation Formulas](topics/basic-math/math-material-summation-formulas/content.md) | Seven summation formulas: sum rules, sums of k, k squared and k cubed, arithmetic, finite and infinite geometric series. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-summation-formulas/material.html) |
 
 ## Animations
 
