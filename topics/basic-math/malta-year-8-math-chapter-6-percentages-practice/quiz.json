@@ -1,0 +1,260 @@
+{
+ "slug": "malta-year-8-math-chapter-6-percentages-practice",
+ "title": "Malta Year 8 Math Chapter 6 — Percentages Practice",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 6",
+ "root": "chapters",
+ "question": "30 percentage questions: 10 Easy, 10 Medium, 10 Hard.",
+ "intro": "**Three levels:**\n\n- Easy: percent, fraction, decimal and the quick percentages\n- Medium: build from 10%, 5% and 1%; a score as a percentage\n- Hard: sale prices, VAT, rises and falls\n\n- **Answers:** type the number only (no € or % sign).\n- A fraction goes in two boxes, in its simplest form.",
+ "questions": [
+  {
+   "group": "Easy",
+   "title": "Percent to decimal",
+   "prompt": "Write \\(30\\%\\) as a decimal.",
+   "type": "numeric",
+   "answer": 0.3,
+   "solution": "\\[30\\div100 = \\boxed{0.3}\\]\n\n\\(3\\) is \\(300\\%\\); divide by 100, not by 10."
+  },
+  {
+   "group": "Easy",
+   "title": "Decimal to percent",
+   "prompt": "Write \\(0.45\\) as a percentage.\n\nType the number only.",
+   "type": "numeric",
+   "answer": 45,
+   "solution": "\\[0.45\\times100 = \\boxed{45}\\%\\]\n\n\\(4.5\\) moves the digits only one place."
+  },
+  {
+   "group": "Easy",
+   "title": "Fraction to percent",
+   "prompt": "Write \\(\\dfrac{3}{4}\\) as a percentage.\n\nType the number only.",
+   "type": "numeric",
+   "answer": 75,
+   "solution": "\\[\\begin{aligned} \\frac{3}{4} &= \\frac{75}{100} \\\\ &= \\boxed{75}\\% \\end{aligned}\\]\n\n\\(34\\) just joins the digits; make the bottom 100."
+  },
+  {
+   "group": "Easy",
+   "title": "Percent to fraction",
+   "prompt": "Write \\(40\\%\\) as a fraction in its simplest form.",
+   "type": "fraction",
+   "answer": [
+    2,
+    5
+   ],
+   "solution": "\\[\\begin{aligned} 40\\% &= \\frac{40}{100} \\\\ &= \\boxed{\\frac{2}{5}} \\end{aligned}\\]\n\n\\(\\dfrac{40}{100}\\) is right but not simplest: divide top and bottom by 20."
+  },
+  {
+   "group": "Easy",
+   "title": "Half",
+   "prompt": "Find \\(50\\%\\) of 64.",
+   "type": "numeric",
+   "answer": 32,
+   "solution": "\\[64\\div2 = \\boxed{32}\\]\n\n\\(128\\) doubles instead of halving."
+  },
+  {
+   "group": "Easy",
+   "title": "Ten per cent",
+   "prompt": "Find \\(10\\%\\) of €90.\n\nType the number of euros.",
+   "type": "numeric",
+   "answer": 9,
+   "solution": "\\[90\\div10 = \\boxed{9}\\]\n\n\\(0.9\\) divides by 100; \\(10\\%\\) divides by 10."
+  },
+  {
+   "group": "Easy",
+   "title": "A quarter",
+   "prompt": "Find \\(25\\%\\) of 44.",
+   "type": "numeric",
+   "answer": 11,
+   "solution": "\\[\\begin{aligned} 44\\div2 &= 22 \\\\ 22\\div2 &= \\boxed{11} \\end{aligned}\\]\n\n\\(22\\) is only \\(50\\%\\); halve again."
+  },
+  {
+   "group": "Easy",
+   "title": "One per cent",
+   "prompt": "Find \\(1\\%\\) of 500.",
+   "type": "numeric",
+   "answer": 5,
+   "solution": "\\[500\\div100 = \\boxed{5}\\]\n\n\\(50\\) is \\(10\\%\\)."
+  },
+  {
+   "group": "Easy",
+   "title": "Twenty per cent",
+   "prompt": "Find \\(20\\%\\) of 35.",
+   "type": "numeric",
+   "answer": 7,
+   "solution": "\\[\\begin{aligned} 10\\% &= 3.5 \\\\ 20\\% &= 2\\times3.5 \\\\ &= \\boxed{7} \\end{aligned}\\]\n\n\\(3.5\\) is only \\(10\\%\\); double it."
+  },
+  {
+   "group": "Easy",
+   "title": "Three quarters",
+   "prompt": "Find \\(75\\%\\) of 20 pastizzi.",
+   "type": "numeric",
+   "answer": 15,
+   "solution": "\\[\\begin{aligned} 25\\% &= 5 \\\\ 75\\% &= 3\\times5 \\\\ &= \\boxed{15} \\end{aligned}\\]\n\n\\(5\\) is \\(25\\%\\); \\(75\\%\\) is three of those."
+  },
+  {
+   "group": "Medium",
+   "title": "Fifteen per cent",
+   "prompt": "Find \\(15\\%\\) of €60.\n\nType the number of euros.",
+   "type": "numeric",
+   "answer": 9,
+   "solution": "\\[\\begin{aligned} 10\\% &= 6 \\\\ 5\\% &= 3 \\\\ 6 + 3 &= \\boxed{9} \\end{aligned}\\]\n\n\\(6\\) is only the \\(10\\%\\); add the \\(5\\%\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Thirty-five per cent",
+   "prompt": "Find \\(35\\%\\) of 80.",
+   "type": "numeric",
+   "answer": 28,
+   "solution": "\\[\\begin{aligned} 10\\% &= 8 \\\\ 30\\% &= 24 \\\\ 5\\% &= 4 \\\\ 24 + 4 &= \\boxed{28} \\end{aligned}\\]\n\n\\(24\\) forgets the \\(5\\%\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Twelve per cent",
+   "prompt": "Find \\(12\\%\\) of 50.",
+   "type": "numeric",
+   "answer": 6,
+   "solution": "\\[\\begin{aligned} 10\\% &= 5 \\\\ 1\\% &= 0.5 \\\\ 5 + 0.5 + 0.5 &= \\boxed{6} \\end{aligned}\\]\n\n\\(5.5\\) adds only one \\(1\\%\\); \\(12\\% = 10\\% + 1\\% + 1\\%\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Forty-five per cent",
+   "prompt": "Find \\(45\\%\\) of €20.\n\nType the number of euros.",
+   "type": "numeric",
+   "answer": 9,
+   "solution": "\\[\\begin{aligned} 10\\% &= 2 \\\\ 40\\% &= 8 \\\\ 5\\% &= 1 \\\\ 8 + 1 &= \\boxed{9} \\end{aligned}\\]\n\n\\(8\\) forgets the \\(5\\%\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Test score",
+   "prompt": "You get 18 out of 20 in a test.\n\nWhat percentage is that?\n\nType the number only.",
+   "type": "numeric",
+   "answer": 90,
+   "solution": "\\[\\begin{aligned} \\frac{18}{20} &= \\frac{90}{100} \\\\ &= \\boxed{90}\\% \\end{aligned}\\]\n\n\\(18\\%\\) forgets that the whole is 20, not 100."
+  },
+  {
+   "group": "Medium",
+   "title": "Out of 25",
+   "prompt": "14 out of 25 students take the bus.\n\nWhat percentage is that?\n\nType the number only.",
+   "type": "numeric",
+   "answer": 56,
+   "solution": "\\[\\begin{aligned} \\frac{14}{25} &= \\frac{56}{100} \\\\ &= \\boxed{56}\\% \\end{aligned}\\]\n\n\\(\\times4\\) top and bottom makes the bottom 100."
+  },
+  {
+   "group": "Medium",
+   "title": "Out of 12",
+   "prompt": "9 out of 12 boats in the harbour are luzzi.\n\nWhat percentage is that?\n\nType the number only.",
+   "type": "numeric",
+   "answer": 75,
+   "solution": "\\[\\begin{aligned} \\frac{9}{12} &= \\frac{3}{4} \\\\ &= \\frac{75}{100} \\\\ &= \\boxed{75}\\% \\end{aligned}\\]\n\nSimplify first: \\(\\dfrac{9}{12} = \\dfrac{3}{4}\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Six per cent",
+   "prompt": "Find \\(6\\%\\) of 150.",
+   "type": "numeric",
+   "answer": 9,
+   "solution": "\\[\\begin{aligned} 1\\% &= 1.5 \\\\ 6\\% &= 6\\times1.5 \\\\ &= \\boxed{9} \\end{aligned}\\]\n\n\\(1.5\\) is only \\(1\\%\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Bus seats",
+   "prompt": "A bus has 40 seats and 32 are taken.\n\nWhat percentage is taken?\n\nType the number only.",
+   "type": "numeric",
+   "answer": 80,
+   "solution": "\\[\\begin{aligned} \\frac{32}{40} &= \\frac{8}{10} \\\\ &= \\boxed{80}\\% \\end{aligned}\\]\n\n\\(32\\%\\) forgets that the whole is 40."
+  },
+  {
+   "group": "Medium",
+   "title": "Seventeen and a half",
+   "prompt": "Find \\(17.5\\%\\) of 200.",
+   "type": "numeric",
+   "answer": 35,
+   "solution": "\\[\\begin{aligned} 10\\% &= 20 \\\\ 5\\% &= 10 \\\\ 2.5\\% &= 5 \\\\ 20 + 10 + 5 &= \\boxed{35} \\end{aligned}\\]\n\n\\(2.5\\%\\) is half of \\(5\\%\\)."
+  },
+  {
+   "group": "Hard",
+   "title": "Jacket sale",
+   "prompt": "A jacket costs €80.\n\nThe sale takes \\(25\\%\\) off.\n\nWhat is the sale price in euros?",
+   "type": "numeric",
+   "answer": 60,
+   "solution": "\\[\\begin{aligned} 25\\% \\text{ of } 80 &= 20 \\\\ 80 - 20 &= \\boxed{60} \\end{aligned}\\]\n\n\\(20\\) is the money off, not the new price."
+  },
+  {
+   "group": "Hard",
+   "title": "VAT",
+   "prompt": "A pair of trainers costs €50 before VAT.\n\nVAT is \\(18\\%\\).\n\nWhat is the price with VAT, in euros?",
+   "type": "numeric",
+   "answer": 59,
+   "solution": "\\[\\begin{aligned} 10\\% &= 5 \\\\ 8\\% &= 4 \\\\ 18\\% &= 9 \\\\ 50 + 9 &= \\boxed{59} \\end{aligned}\\]\n\n\\(9\\) is only the VAT; add it on."
+  },
+  {
+   "group": "Hard",
+   "title": "Bike sale",
+   "prompt": "A bike costs €120 and is \\(15\\%\\) off.\n\nWhat is the sale price in euros?",
+   "type": "numeric",
+   "answer": 102,
+   "solution": "\\[\\begin{aligned} 10\\% &= 12 \\\\ 5\\% &= 6 \\\\ 15\\% &= 18 \\\\ 120 - 18 &= \\boxed{102} \\end{aligned}\\]\n\n\\(138\\) adds the \\(15\\%\\) on instead of taking it off."
+  },
+  {
+   "group": "Hard",
+   "title": "Rent rise",
+   "prompt": "Rent is €600 a month.\n\nIt rises by \\(5\\%\\).\n\nWhat is the new rent in euros?",
+   "type": "numeric",
+   "answer": 630,
+   "solution": "\\[\\begin{aligned} 5\\% \\text{ of } 600 &= 30 \\\\ 600 + 30 &= \\boxed{630} \\end{aligned}\\]\n\n\\(605\\) adds 5 euros, not \\(5\\%\\)."
+  },
+  {
+   "group": "Hard",
+   "title": "Festa crowd",
+   "prompt": "250 people came to a festa last year.\n\nThis year \\(20\\%\\) more came.\n\nHow many came this year?",
+   "type": "numeric",
+   "answer": 300,
+   "solution": "\\[\\begin{aligned} 20\\% \\text{ of } 250 &= 50 \\\\ 250 + 50 &= \\boxed{300} \\end{aligned}\\]\n\n\\(270\\) adds 20 people, not \\(20\\%\\)."
+  },
+  {
+   "group": "Hard",
+   "title": "Phone sale",
+   "prompt": "A phone costs €240 and is \\(30\\%\\) off.\n\nWhat is the sale price in euros?",
+   "type": "numeric",
+   "answer": 168,
+   "solution": "\\[\\begin{aligned} 10\\% &= 24 \\\\ 30\\% &= 72 \\\\ 240 - 72 &= \\boxed{168} \\end{aligned}\\]\n\n\\(72\\) is the money off."
+  },
+  {
+   "group": "Hard",
+   "title": "Tip",
+   "prompt": "A meal costs €30.\n\nYou leave a \\(10\\%\\) tip.\n\nHow much do you pay in total, in euros?",
+   "type": "numeric",
+   "answer": 33,
+   "solution": "\\[\\begin{aligned} 10\\% \\text{ of } 30 &= 3 \\\\ 30 + 3 &= \\boxed{33} \\end{aligned}\\]\n\n\\(3\\) is only the tip."
+  },
+  {
+   "group": "Hard",
+   "title": "Shoe sale",
+   "prompt": "Shoes cost €45 and are \\(20\\%\\) off.\n\nWhat is the sale price in euros?",
+   "type": "numeric",
+   "answer": 36,
+   "solution": "\\[\\begin{aligned} 10\\% &= 4.5 \\\\ 20\\% &= 9 \\\\ 45 - 9 &= \\boxed{36} \\end{aligned}\\]\n\n\\(25\\) takes away 20 euros, not \\(20\\%\\)."
+  },
+  {
+   "group": "Hard",
+   "title": "Village",
+   "prompt": "A village has 800 people.\n\nThe number falls by \\(5\\%\\).\n\nHow many people live there now?",
+   "type": "numeric",
+   "answer": 760,
+   "solution": "\\[\\begin{aligned} 10\\% &= 80 \\\\ 5\\% &= 40 \\\\ 800 - 40 &= \\boxed{760} \\end{aligned}\\]\n\n\\(795\\) takes away 5 people, not \\(5\\%\\)."
+  },
+  {
+   "group": "Hard",
+   "title": "Multiplier",
+   "prompt": "A ferry ticket costs €64.\n\nThe price goes up by \\(25\\%\\).\n\nUse \\(\\times1.25\\) to find the new price in euros.",
+   "type": "numeric",
+   "answer": 80,
+   "solution": "\\[64\\times1.25 = \\boxed{80}\\]\n\n\\(64\\times0.25 = 16\\) is only the rise; \\(\\times1.25\\) gives the new price."
+  }
+ ],
+ "takeaway": "- Per cent means out of 100.\n- 10%: divide by 10. 5% is half of 10%. 1%: divide by 100.\n- Sale: take the percentage off. VAT or a rise: add it on.",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-chapter-6-percentages/material.html"
+ ],
+ "send_to": "John"
+}
