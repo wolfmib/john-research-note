@@ -1,0 +1,275 @@
+{
+ "slug": "malta-year-8-math-chapter-9-sequences-practice",
+ "title": "Malta Year 8 Math Chapter 9 — Sequences Practice",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 9",
+ "root": "chapters",
+ "question": "30 sequence questions: 10 Easy, 10 Medium, 10 Hard.",
+ "intro": "**Three levels:**\n\n- Easy: next term, the difference, missing terms\n- Medium: the nth term gives any term; which term is it?\n- Hard: find the rule, then use it; matchstick and tile patterns\n\n- **Answers:** type the number.\n- Use the ± button for a minus.",
+ "questions": [
+  {
+   "group": "Easy",
+   "title": "Next term",
+   "prompt": "Find the next term: \\(4, 10, 16, 22, \\ldots\\)",
+   "type": "numeric",
+   "answer": 28,
+   "solution": "\\[22 + 6 = \\boxed{28}\\]\n\nThe step is \\(+6\\); \\(26\\) adds 4."
+  },
+  {
+   "group": "Easy",
+   "title": "Next term",
+   "prompt": "Find the next term: \\(41, 36, 31, 26, \\ldots\\)",
+   "type": "numeric",
+   "answer": 21,
+   "solution": "\\[26 - 5 = \\boxed{21}\\]\n\nIt goes down by 5; \\(31\\) goes up."
+  },
+  {
+   "group": "Easy",
+   "title": "Next term",
+   "prompt": "Find the next term: \\(-8, -5, -2, 1, \\ldots\\)",
+   "type": "numeric",
+   "answer": 4,
+   "solution": "\\[1 + 3 = \\boxed{4}\\]\n\nThe step is \\(+3\\) all the way, also past zero."
+  },
+  {
+   "group": "Easy",
+   "title": "Next term, multiply",
+   "prompt": "Find the next term: \\(3, 6, 12, 24, \\ldots\\)",
+   "type": "numeric",
+   "answer": 48,
+   "solution": "\\[24\\times2 = \\boxed{48}\\]\n\nThe gaps grow (3, 6, 12), so it is \\(\\times2\\), not \\(+\\) a fixed number."
+  },
+  {
+   "group": "Easy",
+   "title": "Next term, halve",
+   "prompt": "Find the next term: \\(80, 40, 20, 10, \\ldots\\)",
+   "type": "numeric",
+   "answer": 5,
+   "solution": "\\[10\\div2 = \\boxed{5}\\]\n\n\\(0\\) takes 10 away; the rule is halve."
+  },
+  {
+   "group": "Easy",
+   "title": "The difference",
+   "prompt": "What is the difference of \\(6, 13, 20, 27, \\ldots\\)?",
+   "type": "numeric",
+   "answer": 7,
+   "solution": "\\[13 - 6 = \\boxed{7}\\]\n\nNext term minus this term."
+  },
+  {
+   "group": "Easy",
+   "title": "The difference, going down",
+   "prompt": "What is the difference of \\(50, 46, 42, 38, \\ldots\\)?\n\nUse the ± button for a minus.",
+   "type": "numeric",
+   "answer": -4,
+   "solution": "\\[46 - 50 = \\boxed{-4}\\]\n\nIt goes down, so the difference is negative."
+  },
+  {
+   "group": "Easy",
+   "title": "Missing term",
+   "prompt": "Find the missing term: \\(9, \\ \\square, \\ 23, \\ 30\\)",
+   "type": "numeric",
+   "answer": 16,
+   "solution": "\\[\\begin{aligned} d &= 30 - 23 \\\\ &= 7 \\\\ 9 + 7 &= \\boxed{16} \\end{aligned}\\]\n\nCheck: \\(16 + 7 = 23\\)."
+  },
+  {
+   "group": "Easy",
+   "title": "Missing term",
+   "prompt": "Find the missing term: \\(\\square, \\ 15, \\ 21, \\ 27\\)",
+   "type": "numeric",
+   "answer": 9,
+   "solution": "\\[\\begin{aligned} d &= 6 \\\\ 15 - 6 &= \\boxed{9} \\end{aligned}\\]\n\nGo back one step: take the difference away."
+  },
+  {
+   "group": "Easy",
+   "title": "Missing term",
+   "prompt": "Find the missing term: \\(60, \\ 52, \\ \\square, \\ 36\\)",
+   "type": "numeric",
+   "answer": 44,
+   "solution": "\\[\\begin{aligned} d &= 52 - 60 \\\\ &= -8 \\\\ 52 - 8 &= \\boxed{44} \\end{aligned}\\]\n\nCheck: \\(44 - 8 = 36\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Term from the rule",
+   "prompt": "The nth term is \\(4n + 1\\).\n\nFind the 10th term.",
+   "type": "numeric",
+   "answer": 41,
+   "solution": "\\[4\\times10 + 1 = \\boxed{41}\\]\n\n\\(50\\) adds before multiplying."
+  },
+  {
+   "group": "Medium",
+   "title": "Term from the rule",
+   "prompt": "The nth term is \\(5n - 2\\).\n\nFind the 6th term.",
+   "type": "numeric",
+   "answer": 28,
+   "solution": "\\[5\\times6 - 2 = \\boxed{28}\\]\n\n\\(20\\) is \\(5\\times(6 - 2)\\): times first."
+  },
+  {
+   "group": "Medium",
+   "title": "Term from the rule",
+   "prompt": "The nth term is \\(2n + 9\\).\n\nFind the 20th term.",
+   "type": "numeric",
+   "answer": 49,
+   "solution": "\\[2\\times20 + 9 = \\boxed{49}\\]\n\n\\(31\\) adds 2 instead of doubling."
+  },
+  {
+   "group": "Medium",
+   "title": "Term from the rule",
+   "prompt": "The nth term is \\(7n - 4\\).\n\nFind the 1st term.",
+   "type": "numeric",
+   "answer": 3,
+   "solution": "\\[7\\times1 - 4 = \\boxed{3}\\]\n\nThe 1st term uses \\(n = 1\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Term from the rule",
+   "prompt": "The nth term is \\(30 - 2n\\).\n\nFind the 8th term.",
+   "type": "numeric",
+   "answer": 14,
+   "solution": "\\[\\begin{aligned} 30 - 2\\times8 &= 30 - 16 \\\\ &= \\boxed{14} \\end{aligned}\\]\n\n\\(224\\) is \\((30 - 2)\\times8\\); times first."
+  },
+  {
+   "group": "Medium",
+   "title": "Term from the rule",
+   "prompt": "The nth term is \\(3n + 5\\).\n\nFind the 100th term.",
+   "type": "numeric",
+   "answer": 305,
+   "solution": "\\[3\\times100 + 5 = \\boxed{305}\\]\n\nNo need to list 100 terms."
+  },
+  {
+   "group": "Medium",
+   "title": "Which term?",
+   "prompt": "Which term of \\(3n + 1\\) is 31?",
+   "type": "numeric",
+   "answer": 10,
+   "solution": "\\[\\begin{aligned} 3n + 1 &= 31 \\\\ 3n &= 30 \\\\ n &= \\boxed{10} \\end{aligned}\\]\n\nCheck: \\(3\\times10 + 1 = 31\\)."
+  },
+  {
+   "group": "Medium",
+   "title": "Which term?",
+   "prompt": "Which term of \\(4n - 2\\) is 38?",
+   "type": "numeric",
+   "answer": 10,
+   "solution": "\\[\\begin{aligned} 4n - 2 &= 38 \\\\ 4n &= 40 \\\\ n &= \\boxed{10} \\end{aligned}\\]\n\n\\(-2\\) moves across as \\(+2\\) (Trick 2)."
+  },
+  {
+   "group": "Medium",
+   "title": "Which term?",
+   "prompt": "Which term of \\(2n + 5\\) is 45?",
+   "type": "numeric",
+   "answer": 20,
+   "solution": "\\[\\begin{aligned} 2n + 5 &= 45 \\\\ 2n &= 40 \\\\ n &= \\boxed{20} \\end{aligned}\\]\n\n\\(25\\) forgets to take the 5 off first."
+  },
+  {
+   "group": "Medium",
+   "title": "Which term?",
+   "prompt": "Which term of \\(6n + 3\\) is 63?",
+   "type": "numeric",
+   "answer": 10,
+   "solution": "\\[\\begin{aligned} 6n + 3 &= 63 \\\\ 6n &= 60 \\\\ n &= \\boxed{10} \\end{aligned}\\]\n\nCheck: \\(6\\times10 + 3 = 63\\)."
+  },
+  {
+   "group": "Hard",
+   "title": "Find the rule",
+   "type": "mcq",
+   "prompt": "Which is the nth term of \\(5, 9, 13, 17, \\ldots\\)?",
+   "choices": [
+    "\\(1n + 4\\)",
+    "\\(4n + 1\\)",
+    "\\(4n + 5\\)",
+    "\\(5n + 4\\)"
+   ],
+   "answer": "B",
+   "solution": "- The difference is 4, so start with \\(4n\\).\n- At \\(n = 1\\): \\(4\\); the first term is 5, and \\(5 - 4 = 1\\).\n\n\\[\\boxed{4n + 1}\\]\n\n\\(n + 4\\) adds 1 each time; \\(4n + 5\\) starts at 9."
+  },
+  {
+   "group": "Hard",
+   "title": "Find the rule",
+   "type": "mcq",
+   "prompt": "Which is the nth term of \\(8, 11, 14, 17, \\ldots\\)?",
+   "choices": [
+    "\\(5n + 3\\)",
+    "\\(1n + 7\\)",
+    "\\(3n + 5\\)",
+    "\\(3n + 8\\)"
+   ],
+   "answer": "C",
+   "solution": "- The difference is 3, so start with \\(3n\\).\n- At \\(n = 1\\): \\(3\\); the first term is 8, and \\(8 - 3 = 5\\).\n\n\\[\\boxed{3n + 5}\\]\n\n\\(3n + 8\\) starts at 11: the 1st term must come out as 8."
+  },
+  {
+   "group": "Hard",
+   "title": "Find the rule",
+   "type": "mcq",
+   "prompt": "Which is the nth term of \\(2, 8, 14, 20, \\ldots\\)?",
+   "choices": [
+    "\\(2n + 6\\)",
+    "\\(6n - 2\\)",
+    "\\(6n - 4\\)",
+    "\\(6n + 2\\)"
+   ],
+   "answer": "C",
+   "solution": "- The difference is 6, so start with \\(6n\\).\n- At \\(n = 1\\): \\(6\\); the first term is 2, and \\(2 - 6 = -4\\).\n\n\\[\\boxed{6n - 4}\\]\n\n\\(6n + 2\\) starts at 8; take 4 away to start at 2."
+  },
+  {
+   "group": "Hard",
+   "title": "Rule, then a term",
+   "prompt": "Find the 20th term of \\(7, 10, 13, 16, \\ldots\\)",
+   "type": "numeric",
+   "answer": 64,
+   "solution": "\\[\\begin{aligned} d &= 3 \\\\ 7 - 3 &= 4 \\\\ & 3n + 4 \\\\ 3\\times20 + 4 &= \\boxed{64} \\end{aligned}\\]\n\n\\(67\\) uses \\(3n + 7\\): the start needs fixing."
+  },
+  {
+   "group": "Hard",
+   "title": "Rule, then a term",
+   "prompt": "Find the 50th term of \\(1, 3, 5, 7, \\ldots\\)",
+   "type": "numeric",
+   "answer": 99,
+   "solution": "\\[\\begin{aligned} d &= 2 \\\\ 1 - 2 &= -1 \\\\ & 2n - 1 \\\\ 2\\times50 - 1 &= \\boxed{99} \\end{aligned}\\]\n\n\\(101\\) uses \\(2n + 1\\), which starts at 3."
+  },
+  {
+   "group": "Hard",
+   "title": "Rule, then which term",
+   "prompt": "\\(6, 11, 16, 21, \\ldots\\) Which term is 96?",
+   "type": "numeric",
+   "answer": 19,
+   "solution": "\\[\\begin{aligned} 5n + 1 &= 96 \\\\ 5n &= 95 \\\\ n &= \\boxed{19} \\end{aligned}\\]\n\nThe rule is \\(5n + 1\\) (\\(6 - 5 = 1\\))."
+  },
+  {
+   "group": "Hard",
+   "title": "Matchsticks",
+   "prompt": "Squares in a row use 4, 7, 10 matchsticks for patterns 1, 2, 3.\n\nHow many sticks does pattern 12 use?",
+   "type": "numeric",
+   "answer": 37,
+   "solution": "\\[\\begin{aligned} & 3n + 1 \\\\ 3\\times12 + 1 &= \\boxed{37} \\end{aligned}\\]\n\n\\(40\\) is \\(10 + 3\\times10\\): count from pattern 1, not pattern 3."
+  },
+  {
+   "group": "Hard",
+   "title": "Triangles",
+   "prompt": "Triangles in a row use 3, 5, 7 matchsticks for patterns 1, 2, 3.\n\nHow many sticks does pattern 15 use?",
+   "type": "numeric",
+   "answer": 31,
+   "solution": "\\[\\begin{aligned} & 2n + 1 \\\\ 2\\times15 + 1 &= \\boxed{31} \\end{aligned}\\]\n\nEach new triangle adds 2 sticks, so start with \\(2n\\)."
+  },
+  {
+   "group": "Hard",
+   "title": "Tiles",
+   "prompt": "A path of tiles uses 6, 10, 14 tiles for patterns 1, 2, 3.\n\nWhich pattern uses 50 tiles?",
+   "type": "numeric",
+   "answer": 12,
+   "solution": "\\[\\begin{aligned} 4n + 2 &= 50 \\\\ 4n &= 48 \\\\ n &= \\boxed{12} \\end{aligned}\\]\n\nThe rule is \\(4n + 2\\) (\\(6 - 4 = 2\\))."
+  },
+  {
+   "group": "Hard",
+   "title": "Festa chairs",
+   "prompt": "At a festa, row 1 has 12 chairs, row 2 has 15, row 3 has 18.\n\nHow many chairs are in row 10?",
+   "type": "numeric",
+   "answer": 39,
+   "solution": "\\[\\begin{aligned} & 3n + 9 \\\\ 3\\times10 + 9 &= \\boxed{39} \\end{aligned}\\]\n\n\\(42\\) uses \\(3n + 12\\); the 1st row must give 12."
+  }
+ ],
+ "takeaway": "- Find the difference first.\n- nth term: difference × n, then fix the start (first term − difference).\n- Any term: put n into the rule. Which term: set the rule equal to the number and solve.",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-chapter-9-sequences/material.html"
+ ],
+ "send_to": "John"
+}
