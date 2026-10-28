@@ -1,0 +1,49 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 470' width='480' height='470' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='478' height='468' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='70.0' y1='60.0' x2='70.0' y2='460.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='110.0' y1='60.0' x2='110.0' y2='460.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='150.0' y1='60.0' x2='150.0' y2='460.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='190.0' y1='60.0' x2='190.0' y2='460.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='230.0' y1='60.0' x2='230.0' y2='460.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='270.0' y1='60.0' x2='270.0' y2='460.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='460.0' x2='270.0' y2='460.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='420.0' x2='270.0' y2='420.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='380.0' x2='270.0' y2='380.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='340.0' x2='270.0' y2='340.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='300.0' x2='270.0' y2='300.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='260.0' x2='270.0' y2='260.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='220.0' x2='270.0' y2='220.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='180.0' x2='270.0' y2='180.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='140.0' x2='270.0' y2='140.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='100.0' x2='270.0' y2='100.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='60.0' x2='270.0' y2='60.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='60.0' y1='420.0' x2='288.0' y2='420.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<line x1='70.0' y1='470.0' x2='70.0' y2='42.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<text x='300.0' y='428.0' font-size='22' font-weight='700' text-anchor='middle' fill='#1f2328' font-style='italic'>x</text>
+<text x='70.0' y='34.0' font-size='22' font-weight='700' text-anchor='middle' fill='#1f2328' font-style='italic'>y</text>
+<text x='110.0' y='444.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>1</text>
+<text x='150.0' y='444.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>2</text>
+<text x='190.0' y='444.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>3</text>
+<text x='230.0' y='444.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>4</text>
+<text x='270.0' y='444.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>5</text>
+<text x='56.0' y='466.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>−1</text>
+<text x='56.0' y='386.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>1</text>
+<text x='56.0' y='346.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>2</text>
+<text x='56.0' y='306.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>3</text>
+<text x='56.0' y='266.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>4</text>
+<text x='56.0' y='226.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>5</text>
+<text x='56.0' y='186.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>6</text>
+<text x='56.0' y='146.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>7</text>
+<text x='56.0' y='106.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>8</text>
+<text x='56.0' y='66.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>9</text>
+<text x='58.0' y='442.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<line x1='70.0' y1='460.0' x2='270.0' y2='60.0' stroke='#0969da' stroke-width='3.5' stroke-linecap='round'/>
+<rect x='194.0' y='296.0' width='118.0' height='27.0' rx='5' fill='#ffffff' stroke='none' stroke-width='0'/>
+<text x='198.0' y='316.0' font-size='19' font-weight='800' text-anchor='start' fill='#0969da'>y = 2x − 1</text>
+<line x1='150.0' y1='420.0' x2='150.0' y2='300.0' stroke='#bc4c00' stroke-width='2.5' stroke-linecap='round' stroke-dasharray='6 5'/>
+<line x1='150.0' y1='300.0' x2='70.0' y2='300.0' stroke='#bc4c00' stroke-width='2.5' stroke-linecap='round' stroke-dasharray='6 5' marker-end='url(#m4)'/>
+<circle cx='150.0' cy='300.0' r='7.0' fill='#bc4c00' stroke='#1f2328' stroke-width='1.5'/>
+<text x='310.0' y='120.0' font-size='18' font-weight='700' text-anchor='start' fill='#bc4c00'>up from x,</text>
+<text x='310.0' y='144.0' font-size='18' font-weight='700' text-anchor='start' fill='#bc4c00'>across to y</text>
+</svg>

@@ -1,0 +1,119 @@
+{
+ "slug": "malta-year-8-math-chapter-13-graphs",
+ "title": "Malta Year 8 Math Chapter 13 — Graphs",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 13",
+ "root": "chapters",
+ "question": "How do you read and plot points, name horizontal and vertical lines, draw a straight-line graph and read a real-life graph?",
+ "intro": "Chapter 13 works with coordinates and graphs.\n\n**Chapter 13 has four parts:**\n\n- 13.1 Coordinates\n- 13.2 Horizontal and vertical lines\n- 13.3 Straight-line graphs\n- 13.4 Real-life graphs\n\n**By the end of the chapter:**\n\n- read and plot points in all four quarters\n- name a line \\(x = a\\) or \\(y = b\\)\n- make a table of values and draw the line\n- read a conversion graph and a distance–time graph",
+ "link": [
+  "Practice quiz ›",
+  "../malta-year-8-math-chapter-13-graphs-practice/quiz.html"
+ ],
+ "questions": [
+  {
+   "group": "13.1 Coordinates",
+   "title": "Read a point: across, then up",
+   "prompt": "- A point is written \\((x, y)\\).\n- Start at 0.\n- Go **across** \\(x\\), then **up** \\(y\\).\n\n**Examples:**\n\n- **a)** point A\n\n- **b)** point B\n\n- **c)** point C\n\n- **d)** point D",
+   "steps": [
+    "**a)** 2 across, 3 up:\n\n\\[\\boxed{(2, 3)}\\]",
+    "**b)** 5 across, 1 up:\n\n\\[\\boxed{(5, 1)}\\]",
+    "**c)** 0 across, 4 up:\n\n\\[\\boxed{(0, 4)}\\]",
+    "**d)** 3 across, 0 up:\n\n\\[\\boxed{(3, 0)}\\]\n\nNot \\((3, 2)\\) for A: across comes first."
+   ],
+   "figure": "ch13-read-points.svg",
+   "figure_alt": "A grid from 0 to 6 across and 0 to 5 up with A (2, 3), B (5, 1), C (0, 4) and D (3, 0); arrows show across first, then up."
+  },
+  {
+   "group": "13.1 Coordinates",
+   "title": "Four quarters: negative coordinates",
+   "prompt": "- Left of 0, \\(x\\) is **negative**.\n- Below 0, \\(y\\) is **negative**.\n\n**Examples:**\n\n- **a)** point E\n\n- **b)** point F\n\n- **c)** point G\n\n- **d)** point H",
+   "steps": [
+    "**a)** 3 left, 2 up:\n\n\\[\\boxed{(-3, 2)}\\]",
+    "**b)** 2 left, 4 down:\n\n\\[\\boxed{(-2, -4)}\\]",
+    "**c)** 4 right, 1 down:\n\n\\[\\boxed{(4, -1)}\\]",
+    "**d)** 5 left, 0 up:\n\n\\[\\boxed{(-5, 0)}\\]\n\nNot \\((2, -3)\\) for E: still across first, then up or down."
+   ],
+   "figure": "ch13-four-quarters.svg",
+   "figure_alt": "A grid from −6 to 6 across and −5 to 5 up with E (−3, 2), F (−2, −4), G (4, −1) and H (−5, 0)."
+  },
+  {
+   "group": "13.2 Horizontal and Vertical Lines",
+   "title": "Vertical x = …, horizontal y = …",
+   "prompt": "- On a **vertical** line every point has the same \\(x\\): the line is \\(x = \\ldots\\).\n- On a **horizontal** line every point has the same \\(y\\): the line is \\(y = \\ldots\\).\n\n**Examples:**\n\n- **a)** the line through \\((3, 1)\\) and \\((3, 4)\\)\n\n- **b)** the line through \\((-1, -2)\\) and \\((4, -2)\\)\n\n- **c)** the \\(y\\)-axis\n\n- **d)** the line through \\((-4, 5)\\) and \\((2, 5)\\)",
+   "steps": [
+    "**a)** \\(x\\) is 3 both times:\n\n\\[\\boxed{x = 3}\\]",
+    "**b)** \\(y\\) is \\(-2\\) both times:\n\n\\[\\boxed{y = -2}\\]",
+    "**c)** every point on it has:\n\n\\[\\begin{aligned} x &= 0 \\\\ & \\boxed{x = 0} \\end{aligned}\\]",
+    "**d)** \\(y\\) is 5 both times:\n\n\\[\\boxed{y = 5}\\]\n\nNot \\(y = 3\\) for a): the 3 is the \\(x\\) that stays the same, so \\(x = 3\\) (and the line stands up)."
+   ],
+   "figure": "ch13-vertical-horizontal.svg",
+   "figure_alt": "A grid with the vertical line x = 3 through (3, 1) and (3, 4), and the horizontal line y = −2 through (−1, −2) and (4, −2)."
+  },
+  {
+   "group": "13.2 Horizontal and Vertical Lines",
+   "title": "Is the point on the line?",
+   "prompt": "- Put the \\(x\\) of the point into the rule.\n- If you get its \\(y\\), the point is **on** the line.\n\n**Examples:**\n\n- **a)** \\((2, 5)\\) and \\(y = 2x + 1\\)\n\n- **b)** \\((3, 6)\\) and \\(y = 2x + 1\\)\n\n- **c)** \\((0, 1)\\) and \\(y = 2x + 1\\)\n\n- **d)** \\((-1, -1)\\) and \\(y = 2x + 1\\)",
+   "steps": [
+    "**a)**\n\n\\[2\\times2 + 1 = 5\\] It gives 5: \\(\\boxed{\\text{on the line}}\\)",
+    "**b)**\n\n\\[2\\times3 + 1 = 7\\] 7, not 6: \\(\\boxed{\\text{not on the line}}\\)",
+    "**c)**\n\n\\[2\\times0 + 1 = 1\\] \\(\\boxed{\\text{on the line}}\\)",
+    "**d)**\n\n\\[2\\times(-1) + 1 = -1\\] \\(\\boxed{\\text{on the line}}\\)\n\nTimes first, then add."
+   ],
+   "figure": "ch13-on-the-line.svg",
+   "figure_alt": "The line y = 2x + 1 with the points a (2, 5), c (0, 1) and d (−1, −1) on it, and b (3, 6) just off it."
+  },
+  {
+   "group": "13.3 Straight-Line Graphs",
+   "title": "Table of values, then plot",
+   "prompt": "Pick some \\(x\\) values, work out each \\(y\\) with the rule, then plot the pairs \\((x, y)\\) and join them: a straight line.\n\n**Examples:**\n\n- **a)** \\(y = x + 2\\) at \\(x = 0\\)\n\n- **b)** \\(y = x + 2\\) at \\(x = 1\\)\n\n- **c)** \\(y = x + 2\\) at \\(x = 2\\)\n\n- **d)** \\(y = x + 2\\) at \\(x = 3\\)",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} y &= 0 + 2 \\\\ &= \\boxed{2} \\end{aligned}\\] plot \\((0, 2)\\)",
+    "**b)**\n\n\\[\\begin{aligned} y &= 1 + 2 \\\\ &= \\boxed{3} \\end{aligned}\\] plot \\((1, 3)\\)",
+    "**c)**\n\n\\[\\begin{aligned} y &= 2 + 2 \\\\ &= \\boxed{4} \\end{aligned}\\] plot \\((2, 4)\\)",
+    "**d)**\n\n\\[\\begin{aligned} y &= 3 + 2 \\\\ &= \\boxed{5} \\end{aligned}\\] plot \\((3, 5)\\)\n\nIf one point is off the straight line, check that \\(y\\) again."
+   ],
+   "figure": "ch13-table-plot.svg",
+   "figure_alt": "A table x = 0, 1, 2, 3 and y = 2, 3, 4, 5, and the four points plotted on a grid and joined: the line y = x + 2."
+  },
+  {
+   "group": "13.3 Straight-Line Graphs",
+   "title": "Read the line: y from x, x from y",
+   "prompt": "- To find \\(y\\): go **up** from \\(x\\) to the line, then **across** to the \\(y\\)-axis.\n- To find \\(x\\): go across from \\(y\\) to the line, then down.\n\n**Examples:**\n\n- **a)** \\(y\\) when \\(x = 2\\)\n\n- **b)** \\(y\\) when \\(x = 4\\)\n\n- **c)** \\(x\\) when \\(y = 5\\)\n\n- **d)** \\(x\\) when \\(y = 1\\)",
+   "steps": [
+    "**a)** up from 2, across:\n\n\\[y = \\boxed{3}\\] Check: \\(2\\times2 - 1 = 3\\)",
+    "**b)** up from 4, across:\n\n\\[y = \\boxed{7}\\] Check: \\(2\\times4 - 1 = 7\\)",
+    "**c)** across from 5, down:\n\n\\[x = \\boxed{3}\\] Check: \\(2\\times3 - 1 = 5\\)",
+    "**d)** across from 1, down:\n\n\\[x = \\boxed{1}\\] Check: \\(2\\times1 - 1 = 1\\)"
+   ],
+   "figure": "ch13-read-the-line.svg",
+   "figure_alt": "The line y = 2x − 1 on a grid; a dashed path goes up from x = 2 to the line and across to y = 3."
+  },
+  {
+   "group": "13.4 Real-Life Graphs",
+   "title": "Conversion graph",
+   "prompt": "- A straight line through 0 changes one unit into another.\n- Go up from one axis to the line, then across.\n\n**Examples:**\n\n- **a)** 16 km in miles\n\n- **b)** 32 km in miles\n\n- **c)** 15 miles in km\n\n- **d)** 5 miles in km",
+   "steps": [
+    "**a)** up from 16, across:\n\n\\[\\boxed{10 \\text{ miles}}\\]",
+    "**b)** up from 32, across:\n\n\\[\\boxed{20 \\text{ miles}}\\]",
+    "**c)** across from 15, down:\n\n\\[\\boxed{24 \\text{ km}}\\]",
+    "**d)** across from 5, down:\n\n\\[\\boxed{8 \\text{ km}}\\]\n\nCheck with \\(8 \\text{ km} = 5 \\text{ miles}\\): 16 km is twice 8, so twice 5."
+   ],
+   "figure": "ch13-conversion.svg",
+   "figure_alt": "A straight conversion line from 0 to 40 km = 25 miles; a dashed path goes up from 16 km and across to 10 miles."
+  },
+  {
+   "group": "13.4 Real-Life Graphs",
+   "title": "Distance–time graph",
+   "prompt": "- Time goes across, distance goes up.\n- A **flat** part means the bus is **stopped**: time passes, the distance stays.\n\n**Examples:**\n\n- **a)** how far after 20 minutes?\n\n- **b)** how long is the stop?\n\n- **c)** how far is the whole trip?\n\n- **d)** how long does the whole trip take?",
+   "steps": [
+    "**a)** up from 20, across:\n\n\\[\\boxed{10 \\text{ km}}\\]",
+    "**b)** flat from 20 to 30:\n\n\\[30 - 20 = \\boxed{10 \\text{ minutes}}\\]",
+    "**c)** the top of the graph:\n\n\\[\\boxed{18 \\text{ km}}\\]",
+    "**d)** the end of the graph:\n\n\\[\\boxed{50 \\text{ minutes}}\\]\n\nNot 30 km for c): the flat part adds no distance."
+   ],
+   "figure": "ch13-distance-time.svg",
+   "figure_alt": "A distance–time graph of a bus trip: 10 km in 20 minutes, flat from 20 to 30 minutes, then up to 18 km at 50 minutes."
+  }
+ ]
+}
