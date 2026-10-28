@@ -1,0 +1,203 @@
+{
+ "slug": "malta-year-8-math-chapter-10-circles-practice",
+ "title": "Malta Year 8 Math Chapter 10 — Circles Practice",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 10",
+ "root": "chapters",
+ "question": "15 circle questions, each with a picture: 5 Easy, 5 Medium, 5 Hard.",
+ "intro": "**Three levels:**\n\n- Easy: radius and diameter, name a part, one formula\n- Medium: circumference from the radius, area from the radius or the diameter, a quarter circle\n- Hard: semicircles, a wheel turning, a fence, the most pizza\n\n**Answers:** use \\(\\pi \\approx 3.14\\) and type the number only (no units).",
+ "questions": [
+  {
+   "group": "Easy",
+   "title": "Round mirror",
+   "prompt": "A round mirror has radius 12 cm.\n\nFind its diameter.",
+   "type": "numeric",
+   "answer": 24,
+   "answer_display": "24 cm",
+   "figure": "p01-mirror.svg",
+   "figure_alt": "A round mirror with radius 12 cm drawn from the centre; the diameter across is the question mark.",
+   "solution": "\\[\\begin{aligned} d &= 2r \\\\ &= 2\\times12 \\\\ &= \\boxed{24} \\end{aligned}\\]\n\n\\(6\\) halves the radius; the diameter is **double**."
+  },
+  {
+   "group": "Easy",
+   "title": "Dartboard",
+   "prompt": "A dartboard has diameter 46 cm.\n\nFind its radius.",
+   "type": "numeric",
+   "answer": 23,
+   "answer_display": "23 cm",
+   "figure": "p02-dartboard.svg",
+   "figure_alt": "A dartboard with diameter 46 cm across; the radius from the centre is the question mark.",
+   "solution": "\\[\\begin{aligned} r &= d\\div2 \\\\ &= 46\\div2 \\\\ &= \\boxed{23} \\end{aligned}\\]\n\n\\(92\\) doubles; from the diameter, **halve**."
+  },
+  {
+   "group": "Easy",
+   "title": "Name the part",
+   "prompt": "What is the name of the blue line?",
+   "type": "mcq",
+   "choices": [
+    "Radius",
+    "Diameter",
+    "Chord",
+    "Tangent"
+   ],
+   "answer": "C",
+   "figure": "p03-name-the-part.svg",
+   "figure_alt": "A circle with one straight line from edge to edge that does not pass through the centre, drawn in blue.",
+   "solution": "It goes from edge to edge but misses the centre:\n\n\\[\\boxed{\\text{chord}}\\]\n\nA diameter would go **through** the centre; a radius starts at the centre; a tangent stays outside and touches once."
+  },
+  {
+   "group": "Easy",
+   "title": "Round biscuit",
+   "prompt": "A round biscuit has diameter 6 cm.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its circumference.",
+   "type": "numeric",
+   "answer": 18.84,
+   "answer_display": "18.84 cm",
+   "figure": "p04-biscuit.svg",
+   "figure_alt": "A round biscuit 6 cm across, rolled out into a line a bit more than 3 diameters long.",
+   "solution": "\\[\\begin{aligned} C &= \\pi d \\\\ &= 3.14\\times6 \\\\ &= \\boxed{18.84} \\end{aligned}\\]\n\n\\(28.26\\) is the area \\(\\pi r^2\\), not the distance round.",
+   "tolerance": 0.07
+  },
+  {
+   "group": "Easy",
+   "title": "Flower bed",
+   "prompt": "A round flower bed has radius 10 m.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its area.",
+   "type": "numeric",
+   "answer": 314,
+   "answer_display": "314 m²",
+   "figure": "p05-flower-bed.svg",
+   "figure_alt": "A round flower bed with radius 10 m; its area is the question mark.",
+   "solution": "\\[\\begin{aligned} A &= \\pi r^2 \\\\ &= 3.14\\times10\\times10 \\\\ &= 3.14\\times100 \\\\ &= \\boxed{314} \\end{aligned}\\]\n\n\\(62.8\\) is the circumference \\(2\\pi r\\).",
+   "tolerance": 0.22
+  },
+  {
+   "group": "Medium",
+   "title": "CD",
+   "prompt": "A CD has radius 6 cm.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its circumference.",
+   "type": "numeric",
+   "answer": 37.68,
+   "answer_display": "37.68 cm",
+   "figure": "p06-cd.svg",
+   "figure_alt": "A CD with radius 6 cm, rolled out into a line; the length is the question mark.",
+   "solution": "\\[\\begin{aligned} d &= 2\\times6 \\\\ &= 12 \\\\ C &= 3.14\\times12 \\\\ &= \\boxed{37.68} \\end{aligned}\\]\n\n\\(18.84\\) forgets to double the radius.",
+   "tolerance": 0.08
+  },
+  {
+   "group": "Medium",
+   "title": "Placemat",
+   "prompt": "A round placemat has radius 9 cm.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its area.",
+   "type": "numeric",
+   "answer": 254.34,
+   "answer_display": "254.34 cm²",
+   "figure": "p07-placemat.svg",
+   "figure_alt": "A round placemat with rings, radius 9 cm; its area is the question mark.",
+   "solution": "\\[\\begin{aligned} r^2 &= 9\\times9 \\\\ &= 81 \\\\ A &= 3.14\\times81 \\\\ &= \\boxed{254.34} \\end{aligned}\\]\n\n\\(56.52\\) is \\(3.14\\times9\\times2\\): \\(r^2\\) is \\(9\\times9\\), not \\(9\\times2\\).",
+   "tolerance": 0.19
+  },
+  {
+   "group": "Medium",
+   "title": "Drum",
+   "prompt": "The top of a drum is a circle with diameter 24 cm.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its area.",
+   "type": "numeric",
+   "answer": 452.16,
+   "answer_display": "452.16 cm²",
+   "figure": "p08-drum.svg",
+   "figure_alt": "The round top of a drum with diameter 24 cm across; its area is the question mark.",
+   "solution": "\\[\\begin{aligned} r &= 24\\div2 \\\\ &= 12 \\\\ r^2 &= 144 \\\\ A &= 3.14\\times144 \\\\ &= \\boxed{452.16} \\end{aligned}\\]\n\n\\(1808.64\\) uses the diameter: \\(24\\times24\\) is 4 times too big.",
+   "tolerance": 0.29
+  },
+  {
+   "group": "Medium",
+   "title": "Pond",
+   "prompt": "The distance round a round pond is 31.4 m.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its diameter.",
+   "type": "numeric",
+   "answer": 10,
+   "answer_display": "10 m",
+   "figure": "p09-pond.svg",
+   "figure_alt": "A round pond rolled out into a line 31.4 m long; its diameter is the question mark.",
+   "solution": "\\[\\begin{aligned} C &= \\pi d \\\\ 31.4 &= 3.14\\times d \\\\ d &= 31.4\\div3.14 \\\\ &= \\boxed{10} \\end{aligned}\\]\n\n\\(98.596\\) multiplies by 3.14; to go back from \\(C\\) to \\(d\\), **divide**.",
+   "tolerance": 0.066
+  },
+  {
+   "group": "Medium",
+   "title": "Quarter-circle tile",
+   "prompt": "A floor tile is a quarter circle with radius 10 cm.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its area.",
+   "type": "numeric",
+   "answer": 78.5,
+   "answer_display": "78.5 cm²",
+   "figure": "p10-quarter-tile.svg",
+   "figure_alt": "A quarter circle with radius 10 cm along its straight edge and a right angle at the corner; its area is the question mark.",
+   "solution": "\\[\\begin{aligned} \\pi r^2 &= 3.14\\times100 \\\\ &= 314 \\\\ 314\\div4 &= \\boxed{78.5} \\end{aligned}\\]\n\n\\(314\\) is the whole circle; a quarter circle is \\(314\\div4\\).",
+   "tolerance": 0.1
+  },
+  {
+   "group": "Hard",
+   "title": "Semicircle perimeter",
+   "prompt": "A window is a semicircle with diameter 20 cm.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its perimeter (the curved edge plus the straight edge).",
+   "type": "numeric",
+   "answer": 51.4,
+   "answer_display": "51.4 cm",
+   "figure": "p11-semicircle-window.svg",
+   "figure_alt": "A semicircle window with a 20 cm straight edge; the curved edge and the straight edge are both marked.",
+   "solution": "\\[\\begin{aligned} \\pi d &= 3.14\\times20 \\\\ &= 62.8 \\\\ 62.8\\div2 &= 31.4 \\\\ 31.4 + 20 &= \\boxed{51.4} \\end{aligned}\\]\n\n\\(31.4\\) is only the curved edge; add the straight edge, 20 cm.",
+   "tolerance": 0.076
+  },
+  {
+   "group": "Hard",
+   "title": "Wheelchair wheel",
+   "prompt": "A wheelchair wheel has diameter 0.6 m.\n\nIt turns 10 times.\n\nUse \\(\\pi \\approx 3.14\\).\n\nHow far does it go?",
+   "type": "numeric",
+   "answer": 18.84,
+   "answer_display": "18.84 m",
+   "figure": "p12-wheelchair-wheel.svg",
+   "figure_alt": "A wheel of diameter 0.6 m on the ground; an arrow shows 10 turns; the distance is the question mark.",
+   "solution": "\\[\\begin{aligned} C &= 3.14\\times0.6 \\\\ &= 1.884 \\\\ 1.884\\times10 &= \\boxed{18.84} \\end{aligned}\\]\n\n\\(1.884\\) is one turn only; 10 turns go 10 circumferences.",
+   "tolerance": 0.07
+  },
+  {
+   "group": "Hard",
+   "title": "Fountain fence",
+   "prompt": "A round fountain has radius 7 m.\n\nA fence goes once round its edge.\n\nUse \\(\\pi \\approx 3.14\\).\n\nHow long is the fence?",
+   "type": "numeric",
+   "answer": 43.96,
+   "answer_display": "43.96 m",
+   "figure": "p13-fountain.svg",
+   "figure_alt": "A round fountain with radius 7 m on square paving and a dashed fence round its edge; the length is the question mark.",
+   "solution": "\\[\\begin{aligned} d &= 2\\times7 \\\\ &= 14 \\\\ C &= 3.14\\times14 \\\\ &= \\boxed{43.96} \\end{aligned}\\]\n\n\\(153.86\\) is the area of the water; a fence goes **round**.",
+   "tolerance": 0.083
+  },
+  {
+   "group": "Hard",
+   "title": "Most pizza",
+   "prompt": "Which offer gives the most pizza (the biggest total area)?\n\nUse \\(\\pi \\approx 3.14\\).",
+   "type": "mcq",
+   "choices": [
+    "2 pizzas of 15 cm",
+    "1 pizza of 30 cm",
+    "3 pizzas of 10 cm",
+    "4 pizzas of 12 cm"
+   ],
+   "answer": "B",
+   "figure": "p14-pizzas.svg",
+   "figure_alt": "Four offers drawn to scale: A two 15 cm pizzas, B one 30 cm pizza, C three 10 cm pizzas, D four 12 cm pizzas.",
+   "solution": "Area of one pizza: radius = half the diameter, then \\(3.14\\times r^2\\).\n\n- A: \\(2\\times3.14\\times7.5^2 = 353.25\\)\n- B: \\(1\\times3.14\\times15^2 = 706.5\\)\n- C: \\(3\\times3.14\\times5^2 = 235.5\\)\n- D: \\(4\\times3.14\\times6^2 = 452.16\\)\n\n\\[\\boxed{\\text{B: one pizza of 30 cm}}\\]\n\nDoubling the diameter makes the area **4 times** as big, so one 30 cm pizza beats two 15 cm pizzas."
+  },
+  {
+   "group": "Hard",
+   "title": "Semicircle lawn",
+   "prompt": "A lawn is a semicircle with radius 6 m.\n\nUse \\(\\pi \\approx 3.14\\).\n\nFind its area.",
+   "type": "numeric",
+   "answer": 56.52,
+   "answer_display": "56.52 m²",
+   "figure": "p15-semicircle-lawn.svg",
+   "figure_alt": "A semicircle lawn with radius 6 m; its area is the question mark.",
+   "solution": "\\[\\begin{aligned} \\pi r^2 &= 3.14\\times36 \\\\ &= 113.04 \\\\ 113.04\\div2 &= \\boxed{56.52} \\end{aligned}\\]\n\n\\(113.04\\) is the whole circle; a semicircle is half.",
+   "tolerance": 0.089
+  }
+ ],
+ "takeaway": "- \\(d = 2r\\) and \\(r = d\\div2\\).\n- Distance round: \\(C = \\pi d\\).\n- Space inside: \\(A = \\pi r^2\\), with the **radius**.\n- A semicircle's perimeter adds the straight edge.",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-chapter-10-circles/material.html"
+ ],
+ "send_to": "John"
+}

@@ -154,6 +154,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 9 — Sequences Practice](topics/basic-math/malta-year-8-math-chapter-9-sequences-practice/content.md) | 30 sequence questions: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-9-sequences-practice/quiz.html) |
 | [Malta Year 8 Math Chapter 10 — Circles](topics/basic-math/malta-year-8-math-chapter-10-circles/content.md) | What are the parts of a circle, and how do you find its circumference and its area? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-10-circles/material.html) |
 | [Malta Year 8 Math Chapter 13 — Graphs](topics/basic-math/malta-year-8-math-chapter-13-graphs/content.md) | How do you read and plot points, name horizontal and vertical lines, draw a straight-line graph and read a real-life graph? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-13-graphs/material.html) |
+| [Malta Year 8 Math Chapter 10 — Circles Practice](topics/basic-math/malta-year-8-math-chapter-10-circles-practice/content.md) | 15 circle questions, each with a picture: 5 Easy, 5 Medium, 5 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-10-circles-practice/quiz.html) |
 
 ## Animations
 
