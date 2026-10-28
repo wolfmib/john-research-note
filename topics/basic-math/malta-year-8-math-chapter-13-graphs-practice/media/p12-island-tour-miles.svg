@@ -1,0 +1,36 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400' width='600' height='400' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='598' height='398' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='80.0' y1='330.0' x2='80.0' y2='55.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='80.0' y='356.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>0</text>
+<line x1='168.0' y1='330.0' x2='168.0' y2='55.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='168.0' y='356.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>16</text>
+<line x1='256.0' y1='330.0' x2='256.0' y2='55.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='256.0' y='356.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>32</text>
+<line x1='344.0' y1='330.0' x2='344.0' y2='55.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='344.0' y='356.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>48</text>
+<line x1='432.0' y1='330.0' x2='432.0' y2='55.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='432.0' y='356.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>64</text>
+<line x1='520.0' y1='330.0' x2='520.0' y2='55.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='520.0' y='356.0' font-size='20' font-weight='500' text-anchor='middle' fill='#57606a'>80</text>
+<line x1='80.0' y1='330.0' x2='520.0' y2='330.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='70.0' y='337.0' font-size='20' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<line x1='80.0' y1='275.0' x2='520.0' y2='275.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='70.0' y='282.0' font-size='20' font-weight='500' text-anchor='end' fill='#57606a'>10</text>
+<line x1='80.0' y1='220.0' x2='520.0' y2='220.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='70.0' y='227.0' font-size='20' font-weight='500' text-anchor='end' fill='#57606a'>20</text>
+<line x1='80.0' y1='165.0' x2='520.0' y2='165.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='70.0' y='172.0' font-size='20' font-weight='500' text-anchor='end' fill='#57606a'>30</text>
+<line x1='80.0' y1='110.0' x2='520.0' y2='110.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='70.0' y='117.0' font-size='20' font-weight='500' text-anchor='end' fill='#57606a'>40</text>
+<line x1='80.0' y1='55.0' x2='520.0' y2='55.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<text x='70.0' y='62.0' font-size='20' font-weight='500' text-anchor='end' fill='#57606a'>50</text>
+<line x1='80.0' y1='330.0' x2='538.0' y2='330.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<line x1='80.0' y1='330.0' x2='80.0' y2='37.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<text x='300.0' y='386.0' font-size='19' font-weight='700' text-anchor='middle' fill='#1f2328'>kilometres (km)</text>
+<text x='72.0' y='27.0' font-size='18' font-weight='700' text-anchor='start' fill='#1f2328'>miles</text>
+<line x1='80.0' y1='330.0' x2='520.0' y2='55.0' stroke='#0969da' stroke-width='3.5' stroke-linecap='round'/>
+<text x='366.0' y='231.0' font-size='18' font-weight='800' text-anchor='start' fill='#0969da'>8 km = 5 miles</text>
+<rect x='96.0' y='47.5' width='190.0' height='34.0' rx='6' fill='#ffffff' stroke='#bc4c00' stroke-width='2'/>
+<text x='107.5' y='71.5' font-size='20' font-weight='800' text-anchor='start' fill='#bc4c00'>64 km = ? miles</text>
+</svg>

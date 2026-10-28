@@ -1,0 +1,47 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 440' width='480' height='440' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='478' height='438' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='70.0' y1='50.0' x2='70.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='104.0' y1='50.0' x2='104.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='138.0' y1='50.0' x2='138.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='172.0' y1='50.0' x2='172.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='206.0' y1='50.0' x2='206.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='240.0' y1='50.0' x2='240.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='274.0' y1='50.0' x2='274.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='390.0' x2='274.0' y2='390.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='356.0' x2='274.0' y2='356.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='322.0' x2='274.0' y2='322.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='288.0' x2='274.0' y2='288.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='254.0' x2='274.0' y2='254.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='220.0' x2='274.0' y2='220.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='186.0' x2='274.0' y2='186.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='152.0' x2='274.0' y2='152.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='118.0' x2='274.0' y2='118.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='84.0' x2='274.0' y2='84.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='70.0' y1='50.0' x2='274.0' y2='50.0' stroke='#d0d7de' stroke-width='1.2' stroke-linecap='round'/>
+<line x1='60.0' y1='390.0' x2='292.0' y2='390.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<line x1='70.0' y1='400.0' x2='70.0' y2='32.0' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round' marker-end='url(#m0)'/>
+<text x='304.0' y='398.0' font-size='22' font-weight='700' text-anchor='middle' fill='#1f2328' font-style='italic'>x</text>
+<text x='70.0' y='24.0' font-size='22' font-weight='700' text-anchor='middle' fill='#1f2328' font-style='italic'>y</text>
+<text x='104.0' y='414.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>1</text>
+<text x='138.0' y='414.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>2</text>
+<text x='172.0' y='414.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>3</text>
+<text x='206.0' y='414.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>4</text>
+<text x='240.0' y='414.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>5</text>
+<text x='274.0' y='414.0' font-size='17' font-weight='500' text-anchor='middle' fill='#57606a'>6</text>
+<text x='56.0' y='362.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>1</text>
+<text x='56.0' y='328.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>2</text>
+<text x='56.0' y='294.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>3</text>
+<text x='56.0' y='260.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>4</text>
+<text x='56.0' y='226.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>5</text>
+<text x='56.0' y='192.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>6</text>
+<text x='56.0' y='158.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>7</text>
+<text x='56.0' y='124.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>8</text>
+<text x='56.0' y='90.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>9</text>
+<text x='56.0' y='56.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>10</text>
+<text x='58.0' y='412.0' font-size='17' font-weight='500' text-anchor='end' fill='#57606a'>0</text>
+<line x1='70.0' y1='288.0' x2='274.0' y2='84.0' stroke='#0969da' stroke-width='3.5' stroke-linecap='round'/>
+<line x1='206.0' y1='390.0' x2='206.0' y2='152.0' stroke='#bc4c00' stroke-width='2.5' stroke-linecap='round' stroke-dasharray='6 5'/>
+<text x='226.4' y='131.6' font-size='30' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='400.0' y='40.0' font-size='18' font-weight='700' text-anchor='middle' fill='#57606a'>read the graph</text>
+</svg>
