@@ -152,6 +152,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 6 — Percentages Practice](topics/basic-math/malta-year-8-math-chapter-6-percentages-practice/content.md) | 30 percentage questions: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-6-percentages-practice/quiz.html) |
 | [Malta Year 8 Math Chapter 9 — Sequences](topics/basic-math/malta-year-8-math-chapter-9-sequences/content.md) | How do you continue a sequence, find any term with the nth term, and find the rule of a pattern? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-9-sequences/material.html) |
 | [Malta Year 8 Math Chapter 9 — Sequences Practice](topics/basic-math/malta-year-8-math-chapter-9-sequences-practice/content.md) | 30 sequence questions: 10 Easy, 10 Medium, 10 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-9-sequences-practice/quiz.html) |
+| [Malta Year 8 Math Chapter 10 — Circles](topics/basic-math/malta-year-8-math-chapter-10-circles/content.md) | What are the parts of a circle, and how do you find its circumference and its area? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-10-circles/material.html) |
 
 ## Animations
 

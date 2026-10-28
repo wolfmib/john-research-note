@@ -1,0 +1,117 @@
+{
+ "slug": "malta-year-8-math-chapter-10-circles",
+ "title": "Malta Year 8 Math Chapter 10 — Circles",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 10",
+ "root": "chapters",
+ "question": "What are the parts of a circle, and how do you find its circumference and its area?",
+ "intro": "- Chapter 10 works with circles.\n- Use \\(\\pi \\approx 3.14\\).\n\n**Chapter 10 has four parts:**\n\n- 10.1 Parts of a circle\n- 10.2 Circumference\n- 10.3 Area\n- 10.4 Semicircles and real life\n\n**By the end of the chapter:**\n\n- name the radius, diameter, chord, arc, sector and tangent\n- find the circumference from the diameter or the radius\n- find the area from the radius or the diameter\n- work with half and quarter circles, and pick the right formula in a real problem",
+ "link": [
+  "Practice quiz ›",
+  "../malta-year-8-math-chapter-10-circles-practice/quiz.html"
+ ],
+ "questions": [
+  {
+   "group": "10.1 Parts of a Circle",
+   "title": "Radius and diameter",
+   "prompt": "- The **radius** \\(r\\) goes from the centre to the edge.\n- The **diameter** \\(d\\) goes right across, through the centre: two radii.\n\n\\[\\begin{aligned} d &= 2r \\\\ r &= d\\div2 \\end{aligned}\\]\n\n**Examples:**\n\n- **a)** radius 4 cm: find the diameter\n\n- **b)** radius 9 m: find the diameter\n\n- **c)** diameter 18 cm: find the radius\n\n- **d)** diameter 50 cm: find the radius",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} d &= 2\\times4 \\\\ &= \\boxed{8 \\text{ cm}} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} d &= 2\\times9 \\\\ &= \\boxed{18 \\text{ m}} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} r &= 18\\div2 \\\\ &= \\boxed{9 \\text{ cm}} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} r &= 50\\div2 \\\\ &= \\boxed{25 \\text{ cm}} \\end{aligned}\\]\n\nNot \\(100\\): from the diameter, **halve**; from the radius, double."
+   ],
+   "figure": "ch10-radius-diameter.svg",
+   "figure_alt": "A circle with its radius r from the centre to the edge and its dashed diameter d right across."
+  },
+  {
+   "group": "10.1 Parts of a Circle",
+   "title": "Name the part",
+   "prompt": "The parts of a circle:\n\n- **centre**: the middle point\n- **circumference**: the distance all the way round\n- **chord**: a straight line from edge to edge that does **not** go through the centre\n- **arc**: a piece of the curved edge\n- **sector**: a slice, like a pizza slice (two radii and an arc)\n- **tangent**: a straight line outside that touches the circle at **one** point\n\n**Examples:**\n\n- **a)** a straight line across the circle that misses the centre\n\n- **b)** the shape of one pizza slice\n\n- **c)** a straight line that just touches the circle once\n\n- **d)** a piece of the curved edge",
+   "steps": [
+    "**a)** Edge to edge, not through the centre:\n\n\\[\\boxed{\\text{chord}}\\]",
+    "**b)** Two radii and an arc:\n\n\\[\\boxed{\\text{sector}}\\]",
+    "**c)** Touches at one point:\n\n\\[\\boxed{\\text{tangent}}\\]",
+    "**d)** Part of the circumference:\n\n\\[\\boxed{\\text{arc}}\\]\n\nNot a diameter for a): a diameter goes **through** the centre."
+   ],
+   "figure": "ch10-parts.svg",
+   "figure_alt": "A circle with its radius, diameter, a chord, an arc, a shaded sector and a tangent, each labelled."
+  },
+  {
+   "group": "10.2 Circumference",
+   "title": "Circumference from the diameter",
+   "prompt": "- Roll a circle out flat: it is a bit more than 3 diameters long.\n- That number is \\(\\pi \\approx 3.14\\).\n\n\\[C = \\pi d\\]\n\n**Examples:**\n\n- **a)** diameter 10 cm\n\n- **b)** diameter 5 cm\n\n- **c)** diameter 8 m\n\n- **d)** diameter 100 cm",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} C &= 3.14\\times10 \\\\ &= \\boxed{31.4 \\text{ cm}} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} C &= 3.14\\times5 \\\\ &= \\boxed{15.7 \\text{ cm}} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} C &= 3.14\\times8 \\\\ &= \\boxed{25.12 \\text{ m}} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} C &= 3.14\\times100 \\\\ &= \\boxed{314 \\text{ cm}} \\end{aligned}\\]\n\nTimes 10 or times 100: move the digits of \\(3.14\\) one or two places."
+   ],
+   "figure": "ch10-unrolled.svg",
+   "figure_alt": "A circle rolled out along a line: the line is a bit more than 3 diameters long."
+  },
+  {
+   "group": "10.2 Circumference",
+   "title": "Circumference from the radius",
+   "prompt": "Double the radius first to get the diameter, then times \\(3.14\\).\n\n\\[C = 2\\pi r\\]\n\n**Examples:**\n\n- **a)** radius 5 cm\n\n- **b)** radius 3 cm\n\n- **c)** radius 10 m\n\n- **d)** radius 1 m",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} d &= 10 \\\\ C &= 3.14\\times10 \\\\ &= \\boxed{31.4 \\text{ cm}} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} d &= 6 \\\\ C &= 3.14\\times6 \\\\ &= \\boxed{18.84 \\text{ cm}} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} d &= 20 \\\\ C &= 3.14\\times20 \\\\ &= \\boxed{62.8 \\text{ m}} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} d &= 2 \\\\ C &= 3.14\\times2 \\\\ &= \\boxed{6.28 \\text{ m}} \\end{aligned}\\]\n\nNot \\(3.14\\times5 = 15.7\\) for a): that forgets to double the radius."
+   ]
+  },
+  {
+   "group": "10.3 Area",
+   "title": "Area from the radius",
+   "prompt": "- \\(r^2\\) means \\(r\\times r\\).\n- The area is about 3.14 squares of side \\(r\\).\n\n\\[A = \\pi r^2\\]\n\n**Examples:**\n\n- **a)** radius 10 cm\n\n- **b)** radius 5 cm\n\n- **c)** radius 4 m\n\n- **d)** radius 3 cm",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} r^2 &= 10\\times10 \\\\ &= 100 \\\\ A &= 3.14\\times100 \\\\ &= \\boxed{314 \\text{ cm}^2} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} r^2 &= 5\\times5 \\\\ &= 25 \\\\ A &= 3.14\\times25 \\\\ &= \\boxed{78.5 \\text{ cm}^2} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} r^2 &= 4\\times4 \\\\ &= 16 \\\\ A &= 3.14\\times16 \\\\ &= \\boxed{50.24 \\text{ m}^2} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} r^2 &= 3\\times3 \\\\ &= 9 \\\\ A &= 3.14\\times9 \\\\ &= \\boxed{28.26 \\text{ cm}^2} \\end{aligned}\\]\n\nNot \\(3.14\\times3\\times2\\) for d): \\(r^2\\) is \\(r\\times r\\), not \\(r\\times2\\)."
+   ],
+   "figure": "ch10-area.svg",
+   "figure_alt": "A filled circle with its radius r and a dashed r by r square: the area is about 3.14 of those squares."
+  },
+  {
+   "group": "10.3 Area",
+   "title": "Area from the diameter: halve first",
+   "prompt": "- The area formula uses the **radius**.\n- Given the diameter, halve it, then use \\(A = \\pi r^2\\).\n\n**Examples:**\n\n- **a)** diameter 10 cm\n\n- **b)** diameter 6 cm\n\n- **c)** diameter 20 m\n\n- **d)** diameter 8 cm",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} r &= 5 \\\\ A &= 3.14\\times25 \\\\ &= \\boxed{78.5 \\text{ cm}^2} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} r &= 3 \\\\ A &= 3.14\\times9 \\\\ &= \\boxed{28.26 \\text{ cm}^2} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} r &= 10 \\\\ A &= 3.14\\times100 \\\\ &= \\boxed{314 \\text{ m}^2} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} r &= 4 \\\\ A &= 3.14\\times16 \\\\ &= \\boxed{50.24 \\text{ cm}^2} \\end{aligned}\\]\n\nNot \\(3.14\\times10\\times10 = 314\\) for a): that uses the diameter, so it is 4 times too big."
+   ],
+   "figure": "ch10-area-from-diameter.svg",
+   "figure_alt": "A filled circle with its diameter labelled d; the radius is half of d."
+  },
+  {
+   "group": "10.4 Semicircles and Real Life",
+   "title": "Semicircles and quarter circles",
+   "prompt": "A **semicircle** is half a circle; a **quarter circle** is a quarter.\n\n- area: half (or a quarter) of \\(\\pi r^2\\)\n- perimeter of a semicircle: half of \\(\\pi d\\), **plus** the straight edge \\(d\\)\n\n**Examples:**\n\n- **a)** semicircle, radius 10 cm: area\n\n- **b)** semicircle, diameter 10 cm: perimeter\n\n- **c)** quarter circle, radius 2 m: area\n\n- **d)** semicircle, radius 4 cm: area",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} \\pi r^2 &= 3.14\\times100 \\\\ &= 314 \\\\ 314\\div2 &= \\boxed{157 \\text{ cm}^2} \\end{aligned}\\]",
+    "**b)**\n\n\\[\\begin{aligned} \\pi d &= 31.4 \\\\ 31.4\\div2 &= 15.7 \\\\ 15.7 + 10 &= \\boxed{25.7 \\text{ cm}} \\end{aligned}\\]",
+    "**c)**\n\n\\[\\begin{aligned} \\pi r^2 &= 3.14\\times4 \\\\ &= 12.56 \\\\ 12.56\\div4 &= \\boxed{3.14 \\text{ m}^2} \\end{aligned}\\]",
+    "**d)**\n\n\\[\\begin{aligned} \\pi r^2 &= 3.14\\times16 \\\\ &= 50.24 \\\\ 50.24\\div2 &= \\boxed{25.12 \\text{ cm}^2} \\end{aligned}\\]\n\nNot \\(15.7\\) for b): the straight edge is part of the perimeter too."
+   ],
+   "figure": "ch10-semicircle.svg",
+   "figure_alt": "A semicircle with a 10 cm straight edge; its curved edge and its straight edge are both marked."
+  },
+  {
+   "group": "10.4 Semicircles and Real Life",
+   "title": "Round or cover? Pick the formula",
+   "prompt": "**Distance round** (a fence, a ribbon, a wheel turning once): circumference \\(C = \\pi d\\).\n\n**Space inside** (cloth, paint, grass, pizza): area \\(A = \\pi r^2\\).\n\n**Examples:**\n\n- **a)** a wheel of diameter 0.5 m turns once: how far does it go?\n\n- **b)** a fence round a round fountain of radius 3 m\n\n- **c)** a round tablecloth of radius 1 m: how much cloth?\n\n- **d)** a pizza of diameter 30 cm: how much pizza?",
+   "steps": [
+    "**a)** Distance round:\n\n\\[\\begin{aligned} C &= 3.14\\times0.5 \\\\ &= \\boxed{1.57 \\text{ m}} \\end{aligned}\\]",
+    "**b)** Distance round,:\n\n\\[\\begin{aligned} d &= 6 \\\\ C &= 3.14\\times6 \\\\ &= \\boxed{18.84 \\text{ m}} \\end{aligned}\\]",
+    "**c)** Cover:\n\n\\[\\begin{aligned} A &= 3.14\\times1\\times1 \\\\ &= \\boxed{3.14 \\text{ m}^2} \\end{aligned}\\]",
+    "**d)** Cover,:\n\n\\[\\begin{aligned} r &= 15 \\\\ A &= 3.14\\times225 \\\\ &= \\boxed{706.5 \\text{ cm}^2} \\end{aligned}\\]\n\nUnits: a distance is in cm or m; an area is in \\(\\text{cm}^2\\) or \\(\\text{m}^2\\)."
+   ],
+   "figure": "ch10-wheel.svg",
+   "figure_alt": "A wheel of diameter 0.5 m on the ground; one turn moves it one circumference."
+  }
+ ]
+}
