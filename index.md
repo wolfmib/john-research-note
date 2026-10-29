@@ -47,6 +47,7 @@ handwritten pages, then one note per method (math + worked example + SVG figure)
 | [Pennes Skin Cancer Simulator Model](topics/thermal-dynamics/pennes-skin-cancer-simulator-model/content.md) | How does a 3D Pennes bioheat model of skin with a lesion turn a heating stimulus into a noisy recovery video with a known noise-free truth? | Concept note |
 | [Pennes Bioheat Equation: Four Terms, One Unit](topics/thermal-dynamics/pennes-bioheat-equation/content.md) | What do the four terms of the Pennes bioheat equation mean for one tissue cell, and why is every term a power per unit volume? | Concept note |
 | [Explicit vs Implicit Euler: A Falling Ball](topics/thermal-dynamics/explicit-vs-implicit-euler/content.md) | Why does explicit Euler land above the exact height and implicit Euler below it, and how does the time step set the error? | Concept note |
+| [Pennes Equation of the Monte-Carlo Skin Lesion Simulator: Melanoma and Benign Show-case](topics/thermal-dynamics/pennes-mc-lesion-showcase/content.md) | How does the Pennes bioheat equation, term by term and parameter by parameter, turn a heating pad on simulated skin into the different recovery of a melanoma and a benign lesion? | Concept note |
 
 ## Medical Imaging
 
