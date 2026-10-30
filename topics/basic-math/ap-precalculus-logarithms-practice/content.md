@@ -11,7 +11,7 @@ author: Wei-Che Hung
 
 # AP Precalculus — Logarithms Practice
 
-**12 questions: 4 Easy, 4 Medium, 4 Hard.** Rules to keep in mind:
+**14 questions: 4 Easy, 6 Medium, 4 Hard.** Rules to keep in mind:
 
 - $\log_b c = a \iff b^{a} = c$; no base written means base $10$.
 - $\log_b 1 = 0$, $\log_b b = 1$; an input between $0$ and $1$ gives a negative log.
@@ -130,8 +130,6 @@ $$
 - **C.** $625$
 - **D.** $3$
 
-## Hard
-
 ### 9. Product rule
 
 Simplify
@@ -157,6 +155,8 @@ $$
 - **B.** $9$
 - **C.** $\log_2 4$
 - **D.** $1$
+
+## Hard
 
 ### 11. Change of base
 
@@ -190,6 +190,32 @@ How many times more power does the drill have?
 - **B.** $30$
 - **C.** $300$
 - **D.** $1000$
+
+### 13. A fraction of two logs
+
+Without a calculator, simplify
+
+$$
+\frac{\log 64}{\log 4}
+$$
+
+- **A.** $3$
+- **B.** $16$
+- **C.** $1.8$
+- **D.** $\log 60$
+
+### 14. Combine into one log
+
+Write as a single number:
+
+$$
+2\log 5 + \log 4
+$$
+
+- **A.** $\log 14$
+- **B.** $2$
+- **C.** $10$
+- **D.** $100$
 
 ---
 
@@ -401,6 +427,48 @@ $$
 - $30$ dB is three steps of $10$ dB, and each step multiplies the power by $10$.
 - Not $30$: that is the gap in decibels, not the factor.
 - Not $3$: that is the number of steps.
+
+**13. A — Change of base, read backwards**
+
+$$
+\frac{\log c}{\log b} = \log_b c
+$$
+
+- Top $c = 64$, bottom $b = 4$: the fraction **is** $\log_4 64$.
+
+$$
+\begin{aligned}
+\frac{\log 64}{\log 4} &= \log_4 64 \\
+&= \boxed{3}
+\end{aligned}
+$$
+
+Check: $4^3 = 64$.
+
+- Not $16$: the logs are not cancelled like numbers; $\frac{\log 64}{\log 4} \ne \frac{64}{4}$.
+- Not $\log 60$: dividing logs does not subtract the inputs; subtracting logs does ($\log 64 - \log 4 = \log 16$).
+- Not $1.8$: that is $\log 64$ alone; it still has to be divided by $\log 4 \approx 0.6$.
+
+**14. B — Power rule first, then the product rule**
+
+Read the rules in the **combining** direction:
+
+$$
+k\log m = \log m^{k}, \qquad \log m + \log n = \log (mn)
+$$
+
+$$
+\begin{aligned}
+2\log 5 + \log 4 &= \log 5^2 + \log 4 \\
+&= \log 25 + \log 4 \\
+&= \log (25 \cdot 4) \\
+&= \log 100 \\
+&= \boxed{2}
+\end{aligned}
+$$
+
+- Not $\log 14$: $2\log 5$ is $\log 25$, not $\log 10$; and logs add by multiplying the inputs.
+- Not $100$: that is the input of the final log. The question asks for its value, $\log 100 = 2$.
 
 A logarithm is an exponent. Every rule on this page is a rule about exponents written backwards.
 
