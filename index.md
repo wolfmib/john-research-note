@@ -157,6 +157,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 13 — Graphs](topics/basic-math/malta-year-8-math-chapter-13-graphs/content.md) | How do you read and plot points, name horizontal and vertical lines, draw a straight-line graph and read a real-life graph? | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-13-graphs/material.html) |
 | [Malta Year 8 Math Chapter 10 — Circles Practice](topics/basic-math/malta-year-8-math-chapter-10-circles-practice/content.md) | 15 circle questions, each with a picture: 5 Easy, 5 Medium, 5 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-10-circles-practice/quiz.html) |
 | [Malta Year 8 Math Chapter 13 — Graphs Practice](topics/basic-math/malta-year-8-math-chapter-13-graphs-practice/content.md) | 15 graph questions, each with a picture: 5 Easy, 5 Medium, 5 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-13-graphs-practice/quiz.html) |
+| [Math Material — Finite Geometric Sum: Where Sₙ Comes From](topics/basic-math/math-material-finite-geometric-sum-derivation/content.md) | Derive Sₙ = a_1(1 - r^n)/(1 - r) in five moves: write the sum twice, subtract, factor and divide, flip the signs, check small cases and let n grow. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-finite-geometric-sum-derivation/material.html) |
 
 ## Animations
 
