@@ -1,0 +1,104 @@
+{
+ "slug": "ap-precalculus-2-10-inverses-of-exponential-functions",
+ "title": "AP Precalculus 2.10 — Inverses of Exponential Functions",
+ "course": "AP Precalculus",
+ "unit": "2.10",
+ "question": "The logarithm as the inverse of the exponential: swap the pair, compose to x, match a table, domain and range, reflection over y = x (not the reciprocal).",
+ "intro": "**Quick recap:**\n\n- \\(f(x)=\\log_b x\\) and \\(g(x)=b^{x}\\) are **inverse functions**:\n\n\\[\nb^{\\log_b x}=x \\qquad \\log_b\\!\\left(b^{x}\\right)=x\n\\]\n\n- If \\((s,t)\\) is on \\(b^{x}\\), then \\((t,s)\\) is on \\(\\log_b x\\).\n- The graph of \\(\\log_b x\\) is the graph of \\(b^{x}\\) reflected over the line \\(y=x\\).\n- Domain and range swap: \\(\\log_b x\\) takes \\(x>0\\) and gives every real number.\n- Exponential: inputs **add**, outputs **multiply**. Logarithmic: inputs **multiply**, outputs **add**.\n- A logarithm is the inverse, **not** the reciprocal.\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Swap the pair",
+   "prompt": "The graph of \\(g(x)=4^{x}\\) contains the point \\((2.5,\\,32)\\).\n\nWhich point is on the graph of \\(f(x)=\\log_4 x\\)?",
+   "choices": [
+    "\\((2.5,\\,32)\\)",
+    "\\((-2.5,\\,32)\\)",
+    "\\((32,\\,2.5)\\)",
+    "\\((32,\\,-2.5)\\)"
+   ],
+   "solution_title": "Inverse functions swap input and output",
+   "solution": "- \\(4^{2.5}=32\\) means the exponential takes \\(2.5\\) to \\(32\\).\n- The logarithm runs it backwards: it takes \\(32\\) to \\(2.5\\).\n\n\\[\n\\begin{aligned}\n\\log_4 32 &= 2.5 \\\\\n\\text{so } (s,t)=(2.5,32) &\\to (t,s)=\\boxed{(32,\\,2.5)}\n\\end{aligned}\n\\]\n\nCheck: \\(4^{2.5}=4^{2}\\cdot4^{0.5}=16\\cdot2=32\\).\n\n- Not \\((2.5,32)\\): that is the same point; swapping changes which number is the input.\n- Not \\((32,-2.5)\\): \\(32>1\\), so \\(\\log_4 32\\) is positive. A negative output would need an input below \\(1\\).",
+   "answer": "C",
+   "type": "mcq"
+  },
+  {
+   "title": "Compose to x",
+   "prompt": "Simplify both expressions:\n\n\\[\n5^{\\log_5 7} \\qquad\\text{and}\\qquad \\log_3\\!\\left(3^{4}\\right)\n\\]",
+   "choices": [
+    "\\(7\\) and \\(4\\)",
+    "\\(35\\) and \\(12\\)",
+    "\\(7\\) and \\(81\\)",
+    "\\(\\log_5 7\\) and \\(12\\)"
+   ],
+   "solution_title": "An exponential and a logarithm with the same base undo each other",
+   "solution": "\\[\nb^{\\log_b x}=x \\qquad\\text{and}\\qquad \\log_b\\!\\left(b^{x}\\right)=x\n\\]\n\n- \\(\\log_5 7\\) is *the exponent that turns 5 into 7*. Raising \\(5\\) to it gives \\(7\\).\n- \\(\\log_3(3^4)\\) asks *which exponent turns 3 into \\(3^4\\)*. The answer is \\(4\\).\n\n\\[\n\\begin{aligned}\n5^{\\log_5 7} &= \\boxed{7} \\\\\n\\log_3\\!\\left(3^{4}\\right) &= \\boxed{4}\n\\end{aligned}\n\\]\n\n- Not \\(35\\): the \\(5\\) and the \\(7\\) are not multiplied; the log is an exponent.\n- Not \\(81\\): \\(3^4=81\\) is the *input* of the log, not its value.\n- Not \\(12\\): \\(3\\cdot4\\) multiplies base and exponent, which has no meaning here.",
+   "answer": "A",
+   "type": "mcq"
+  },
+  {
+   "title": "Match the table",
+   "prompt": "\\[\n\\begin{array}{c|cccc}\nx & 1 & 5 & 25 & 125\\\\\n\\hline\nf(x) & 0 & 3 & 6 & 9\n\\end{array}\n\\]\n\nWhich function fits the table?",
+   "choices": [
+    "\\(f(x)=5\\log_3 x\\)",
+    "\\(f(x)=3\\log_5 x\\)",
+    "\\(f(x)=3\\cdot5^{x}\\)",
+    "\\(f(x)=\\log_5(3x)\\)"
+   ],
+   "solution_title": "Inputs multiply, outputs add: a logarithm",
+   "solution": "- Inputs go \\(1\\to5\\to25\\to125\\): each time **times 5**.\n- Outputs go \\(0\\to3\\to6\\to9\\): each time **plus 3**.\n- Multiply in, add out: that is \\(a\\log_b x\\) with base \\(b=5\\). Each \\(\\times5\\) adds \\(a\\), so \\(a=3\\).\n\nCheck two entries:\n\n\\[\n\\begin{aligned}\n3\\log_5 25 &= 3\\cdot2 \\\\\n&= 6 \\\\\n3\\log_5 125 &= 3\\cdot3 \\\\\n&= \\boxed{9}\n\\end{aligned}\n\\]\n\n- Not \\(5\\log_3 x\\): base and factor swapped; \\(5\\log_3 25\\approx14.6\\), not \\(6\\).\n- Not \\(3\\cdot5^{x}\\): an exponential would give \\(3\\cdot5^{1}=15\\) at \\(x=1\\), not \\(3\\).\n- Not \\(\\log_5(3x)\\): \\(\\log_5 3\\ne0\\) at \\(x=1\\).",
+   "answer": "B",
+   "type": "mcq"
+  },
+  {
+   "title": "Domain and range",
+   "prompt": "\\(f(x)=\\log_6 x\\) is the inverse of \\(g(x)=6^{x}\\).\n\nWhat are the domain and range of \\(f\\)?",
+   "choice_header": [
+    "Domain",
+    "Range"
+   ],
+   "choices": [
+    [
+     "all real numbers",
+     "\\(y>0\\)"
+    ],
+    [
+     "\\(x>0\\)",
+     "\\(y>0\\)"
+    ],
+    [
+     "all real numbers",
+     "all real numbers"
+    ],
+    [
+     "\\(x>0\\)",
+     "all real numbers"
+    ]
+   ],
+   "solution_title": "The inverse swaps domain and range",
+   "solution": "For the exponential \\(g(x)=6^{x}\\):\n\n- Domain: any real \\(x\\).\n- Range: outputs are always positive, \\(y>0\\).\n\nThe inverse swaps them. For \\(f(x)=\\log_6 x\\):\n\n- Domain: \\(x>0\\) (the old range).\n- Range: all real numbers (the old domain).\n\n\\[\n\\boxed{\\text{domain } x>0,\\quad \\text{range all reals}}\n\\]\n\nTwo values show the range goes both ways:\n\n\\[\n\\begin{aligned}\n\\log_6 36 &= 2 \\\\\n\\log_6 \\tfrac{1}{36} &= -2\n\\end{aligned}\n\\]\n\n- Not choice A: that is the exponential's own domain and range, unswapped.\n- Not \\(y>0\\): a log of an input between \\(0\\) and \\(1\\) is negative.",
+   "answer": "D",
+   "type": "mcq"
+  },
+  {
+   "title": "Reflection, not reciprocal",
+   "prompt": "The figure shows \\(y=2^{x}\\), \\(y=\\log_2 x\\) and the dashed line \\(y=x\\). The point \\((3,\\,8)\\) is marked on \\(y=2^{x}\\).\n\nWhich statement is **false**?",
+   "figure": "2-10-exp-log-reflection.svg",
+   "figure_alt": "y = 2^x and y = log_2 x, mirror images across the dashed line y = x; (3, 8) marked on the exponential",
+   "choices": [
+    "\\(\\log_2 x\\) is the inverse function of \\(2^{x}\\)",
+    "\\(\\log_2 x\\) is the graph of \\(2^{x}\\) reflected over \\(y=x\\)",
+    "\\(\\log_2 x\\) is the reciprocal: \\(\\log_2 x=\\dfrac{1}{2^{x}}\\)",
+    "\\((8,\\,3)\\) is on the graph of \\(\\log_2 x\\)"
+   ],
+   "solution_title": "Inverse means undo, not divide",
+   "solution": "- **Inverse** (true): \\(\\log_2 x\\) undoes \\(2^{x}\\), so \\(\\log_2(2^{x})=x\\).\n- **Reflection** (true): swapping \\((s,t)\\to(t,s)\\) for every point is a reflection over \\(y=x\\).\n- **\\((8,3)\\)** (true): \\((3,8)\\) on \\(2^{x}\\) swaps to \\((8,3)\\) on \\(\\log_2 x\\).\n- **Reciprocal** (false): test it at \\(x=8\\).\n\n\\[\n\\begin{aligned}\n\\log_2 8 &= 3 \\\\\n\\frac{1}{2^{8}} &= \\frac{1}{256}\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{\\log_2 x \\ne \\frac{1}{2^{x}}}\n\\]\n\n- The notation \\(f^{-1}\\) means the inverse function, not \\(\\dfrac{1}{f}\\).",
+   "answer": "C",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "A logarithm runs the exponential backwards: swap every (input, output) pair, swap the domain and range, reflect the graph over y = x.",
+ "link": [
+  "Quiz 2.9 Logarithmic Expressions",
+  "../ap-precalculus-2-9-logarithmic-expressions/quiz.html"
+ ],
+ "send_to": "John"
+}
