@@ -1,0 +1,198 @@
+{
+ "slug": "ap-precalculus-recap-set-a-unit-1-to-2-10",
+ "title": "AP Precalculus — Recap Set A (Unit 1 to 2.10)",
+ "course": "AP Precalculus",
+ "unit": "Recap · Set A",
+ "question": "Recap Set A: 13 questions in topic order from Unit 1 (rates of change, polynomials, rational functions, transformations, models) to 2.10 (sequences, exponential models, residuals, composition, inverses, logarithms); 9 calculations, 4 ideas.",
+ "intro": "**13 questions, Unit 1 to 2.10, in topic order.**\n\n- 9 questions ask for a calculation: work it out on paper, then pick A–D.\n- 4 questions ask for the idea behind a topic.\n- The title of each question names the topic (1.2, 2.5, …).\n\n**A calculator is allowed. Show your working before choosing A–D.**",
+ "questions": [
+  {
+   "title": "1.2 · Average rate of change",
+   "prompt": "\\(f(x) = x^2 - 3x\\). Find the average rate of change of \\(f\\) on \\([1,\\,4]\\).",
+   "choices": [
+    "\\(2\\)",
+    "\\(6\\)",
+    "\\(1\\)",
+    "\\(-2\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Change in output over change in input",
+   "solution": "\\[\n\\begin{aligned}\nf(4) &= 16 - 12 = 4 \\\\\nf(1) &= 1 - 3 = -2 \\\\\n\\frac{f(4) - f(1)}{4 - 1} &= \\frac{4 - (-2)}{3} \\\\\n&= \\boxed{2}\n\\end{aligned}\n\\]\n\n- Not \\(6\\): that is \\(f(4) - f(1)\\) without dividing by the width \\(3\\).\n- Not \\(-2\\): that is \\(f(1)\\), not a rate.",
+   "type": "mcq"
+  },
+  {
+   "title": "1.3 · Rate of change from a table",
+   "prompt": "\\[\n\\begin{array}{c|cccc}\nx & 0 & 1 & 2 & 3\\\\\n\\hline\nf(x) & 2 & 5 & 10 & 17\n\\end{array}\n\\]\n\nWhich statement about \\(f\\) on this interval is true?",
+   "choices": [
+    "The rate of change is constant, so \\(f\\) is linear",
+    "The rate of change is decreasing, so the graph is concave down",
+    "The rate of change is increasing, so the graph is concave up",
+    "The rate of change is negative, so \\(f\\) is decreasing"
+   ],
+   "answer": "C",
+   "solution_title": "Look at the differences",
+   "solution": "Differences between consecutive outputs:\n\n\\[\n\\begin{aligned}\n5 - 2 &= 3 \\\\\n10 - 5 &= 5 \\\\\n17 - 10 &= 7\n\\end{aligned}\n\\]\n\n- The differences grow: the rate of change is **increasing**.\n- Increasing rate of change = **concave up**.\n- Not linear: a linear function has the same difference every step.\n- Not negative: every difference is positive, \\(f\\) is increasing.",
+   "type": "mcq"
+  },
+  {
+   "title": "1.5 · Zeros of a polynomial",
+   "prompt": "Find all real zeros of\n\n\\[\np(x) = x^3 - 4x^2 - 5x\n\\]",
+   "choices": [
+    "\\(x = 0,\\ -5,\\ 1\\)",
+    "\\(x = 0,\\ 5,\\ -1\\)",
+    "\\(x = 5,\\ -1\\)",
+    "\\(x = 0,\\ 4,\\ 5\\)"
+   ],
+   "answer": "B",
+   "solution_title": "Take out the common factor, then factor the quadratic",
+   "solution": "\\[\n\\begin{aligned}\np(x) &= x\\,(x^2 - 4x - 5) \\\\\n&= x\\,(x - 5)(x + 1)\n\\end{aligned}\n\\]\n\nEach factor gives a zero:\n\n\\[\n\\boxed{x = 0,\\quad x = 5,\\quad x = -1}\n\\]\n\n- Not \\(5, -1\\) only: the factor \\(x\\) gives the zero \\(x = 0\\) too.\n- Not \\(-5, 1\\): \\((x-5)(x+1)\\), so the signs are \\(+5\\) and \\(-1\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "1.9 · Vertical asymptote or hole",
+   "prompt": "\\[\nr(x) = \\frac{x^2 - 9}{x^2 - x - 6}\n\\]\n\nWhere is the **vertical asymptote** of \\(r\\)?",
+   "choices": [
+    "\\(x = 3\\)",
+    "\\(x = -3\\)",
+    "\\(x = 2\\)",
+    "\\(x = -2\\)"
+   ],
+   "answer": "D",
+   "solution_title": "Factor first; a common factor is a hole, not an asymptote",
+   "solution": "\\[\n\\begin{aligned}\nr(x) &= \\frac{(x - 3)(x + 3)}{(x - 3)(x + 2)} \\\\\n&= \\frac{x + 3}{x + 2}, \\quad x \\ne 3\n\\end{aligned}\n\\]\n\n- \\(x = 3\\) cancels: a **hole** at \\(x = 3\\).\n- \\(x = -2\\) stays in the bottom: \\(\\boxed{\\text{vertical asymptote } x = -2}\\).\n- Not \\(x = -3\\): that makes the top zero, so it is a zero of \\(r\\), not an asymptote.",
+   "type": "mcq"
+  },
+  {
+   "title": "1.12 · Transformations",
+   "prompt": "The point \\((1,\\,4)\\) is on the graph of \\(f\\). Let\n\n\\[\ng(x) = 2\\,f(x - 3) + 1\n\\]\n\nWhich point is on the graph of \\(g\\)?",
+   "choices": [
+    "\\((4,\\,9)\\)",
+    "\\((-2,\\,9)\\)",
+    "\\((4,\\,7)\\)",
+    "\\((-2,\\,7)\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Inside moves x, outside moves y",
+   "solution": "- \\(x - 3\\) inside: shift **right** by \\(3\\): \\(x = 1 \\to 4\\).\n- \\(2(\\dots) + 1\\) outside: stretch by \\(2\\), then up \\(1\\): \\(y = 4 \\to 2\\cdot4 + 1 = 9\\).\n\n\\[\n\\begin{aligned}\ng(4) &= 2\\,f(4 - 3) + 1 \\\\\n&= 2\\,f(1) + 1 \\\\\n&= 2\\cdot4 + 1 \\\\\n&= \\boxed{9}\n\\end{aligned}\n\\]\n\n- Not \\((-2, 9)\\): \\(x - 3\\) shifts right, not left.\n- Not \\((4, 7)\\): the \\(+1\\) comes after the \\(\\times2\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "1.13 · Choose the model",
+   "prompt": "\\[\n\\begin{array}{c|cccc}\nx & 0 & 1 & 2 & 3\\\\\n\\hline\ny & 8 & 12 & 18 & 27\n\\end{array}\n\\]\n\nThe \\(x\\) values go up by the same amount. Which type of function fits the data?",
+   "choices": [
+    "Linear",
+    "Quadratic",
+    "Exponential",
+    "Logarithmic"
+   ],
+   "answer": "C",
+   "solution_title": "Equal steps in x, constant ratio in y",
+   "solution": "\\[\n\\begin{aligned}\n12 \\div 8 &= 1.5 \\\\\n18 \\div 12 &= 1.5 \\\\\n27 \\div 18 &= 1.5\n\\end{aligned}\n\\]\n\n- Each step **multiplies** \\(y\\) by the same factor \\(1.5\\): \\(\\boxed{\\text{exponential}}\\).\n- Linear would add the same amount each step (\\(4, 6, 9\\) are not equal).\n- Quadratic would have equal second differences (\\(2, 3\\) are not equal).",
+   "type": "mcq"
+  },
+  {
+   "title": "2.1 · Arithmetic sequence",
+   "prompt": "An arithmetic sequence has \\(a_1 = 7\\) and common difference \\(d = 4\\). Find \\(a_{15}\\).",
+   "choices": [
+    "\\(67\\)",
+    "\\(63\\)",
+    "\\(60\\)",
+    "\\(59\\)"
+   ],
+   "answer": "B",
+   "solution_title": "a_n = a_1 + (n − 1)d",
+   "solution": "\\[\n\\begin{aligned}\na_{15} &= 7 + (15 - 1)\\cdot4 \\\\\n&= 7 + 56 \\\\\n&= \\boxed{63}\n\\end{aligned}\n\\]\n\n- Not \\(67\\): that uses \\(15\\cdot4\\); the first term already counts, so only \\(14\\) steps of \\(4\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "2.2 · Geometric sequence",
+   "prompt": "A geometric sequence starts \\(5,\\ 10,\\ 20,\\ 40,\\ \\dots\\). Find \\(a_8\\).",
+   "choices": [
+    "\\(1280\\)",
+    "\\(320\\)",
+    "\\(40\\)",
+    "\\(640\\)"
+   ],
+   "answer": "D",
+   "solution_title": "a_n = a_1 · r^(n − 1)",
+   "solution": "\\[\n\\begin{aligned}\nr &= 10 \\div 5 = 2 \\\\\na_8 &= 5 \\cdot 2^{\\,8-1} \\\\\n&= 5 \\cdot 128 \\\\\n&= \\boxed{640}\n\\end{aligned}\n\\]\n\n- Not \\(1280\\): that is \\(5\\cdot2^8\\), one multiplication too many.\n- Not \\(40\\): that is \\(a_4\\).",
+   "type": "mcq"
+  },
+  {
+   "title": "2.5 · Exponential model in context",
+   "prompt": "A colony of \\(2000\\) bacteria **doubles every 6 hours**. About how many bacteria are there after \\(15\\) hours? (Calculator allowed.)",
+   "choices": [
+    "about \\(11{,}300\\)",
+    "about \\(10{,}000\\)",
+    "about \\(8{,}000\\)",
+    "about \\(16{,}000\\)"
+   ],
+   "answer": "A",
+   "solution_title": "Count the doublings as a fraction",
+   "solution": "Number of doublings in \\(15\\) hours: \\(15 \\div 6 = 2.5\\).\n\n\\[\n\\begin{aligned}\nP &= 2000 \\cdot 2^{15/6} \\\\\n&= 2000 \\cdot 2^{2.5} \\\\\n&\\approx 2000 \\cdot 5.657 \\\\\n&\\approx \\boxed{11{,}300}\n\\end{aligned}\n\\]\n\n- Not \\(8{,}000\\): that is \\(2\\) doublings (12 hours), stopping early.\n- Not \\(16{,}000\\): that is \\(3\\) doublings (18 hours).\n- Not \\(10{,}000\\): \\(2.5\\) doublings is **not** \\(2.5 \\times 2000\\); the growth is multiplicative.",
+   "type": "mcq"
+  },
+  {
+   "title": "2.6 · Residuals",
+   "prompt": "A model predicts \\(13\\) for \\(x = 4\\); the actual data value there is \\(10\\). The residual at \\(x = 4\\) is \\(-3\\).\n\nWhat does this residual tell you?",
+   "choices": [
+    "The model **overestimates** the data at \\(x = 4\\) by \\(3\\)",
+    "The model underestimates the data at \\(x = 4\\) by \\(3\\)",
+    "The model is exact at \\(x = 4\\)",
+    "The model must be replaced by an exponential model"
+   ],
+   "answer": "A",
+   "solution_title": "residual = actual − predicted",
+   "solution": "\\[\n\\begin{aligned}\n\\text{residual} &= \\text{actual} - \\text{predicted} \\\\\n&= 10 - 13 \\\\\n&= -3\n\\end{aligned}\n\\]\n\n- A **negative** residual means the prediction was too high: the model \\(\\boxed{\\text{overestimates}}\\).\n- One residual says nothing about which model type to use; that needs the whole residual plot.",
+   "type": "mcq"
+  },
+  {
+   "title": "2.7 · Composition",
+   "prompt": "\\(f(x) = 3x - 1\\) and \\(g(x) = x^2\\). Find \\(f(g(2))\\).",
+   "choices": [
+    "\\(25\\)",
+    "\\(5\\)",
+    "\\(11\\)",
+    "\\(7\\)"
+   ],
+   "answer": "C",
+   "solution_title": "Inside first",
+   "solution": "\\[\n\\begin{aligned}\ng(2) &= 2^2 = 4 \\\\\nf(g(2)) &= f(4) \\\\\n&= 3\\cdot4 - 1 \\\\\n&= \\boxed{11}\n\\end{aligned}\n\\]\n\n- Not \\(25\\): that is \\(g(f(2)) = (3\\cdot2 - 1)^2\\), the other order.\n- Not \\(5\\): that is \\(f(2)\\), the \\(g\\) was skipped.",
+   "type": "mcq"
+  },
+  {
+   "title": "2.9 · Logarithmic expressions",
+   "prompt": "Solve for \\(x\\):\n\n\\[\n2^{x} = \\frac{1}{32}\n\\]",
+   "choices": [
+    "\\(x = 5\\)",
+    "\\(x = -5\\)",
+    "\\(x = \\tfrac{1}{5}\\)",
+    "\\(x = -32\\)"
+   ],
+   "answer": "B",
+   "solution_title": "A fraction below 1 needs a negative exponent",
+   "solution": "\\[\n\\begin{aligned}\n\\frac{1}{32} &= \\frac{1}{2^5} \\\\\n&= 2^{-5} \\\\\nx &= \\log_2 \\tfrac{1}{32} \\\\\n&= \\boxed{-5}\n\\end{aligned}\n\\]\n\n- Not \\(5\\): \\(2^5 = 32\\), not \\(\\tfrac{1}{32}\\).\n- Not \\(\\tfrac{1}{5}\\): the minus sign goes on the exponent, not under it.",
+   "type": "mcq"
+  },
+  {
+   "title": "2.10 · The logarithmic function",
+   "prompt": "\\(f(x) = \\log_b x\\) with \\(b > 1\\). Which statement is true for **every** such base \\(b\\)?",
+   "choices": [
+    "\\(f(0) = 0\\)",
+    "The domain of \\(f\\) is all real numbers",
+    "\\(f(x) = \\dfrac{1}{b^{x}}\\)",
+    "\\(f(1) = 0\\)"
+   ],
+   "answer": "D",
+   "solution_title": "b to the power 0 is 1",
+   "solution": "\\[\n\\begin{aligned}\nb^0 &= 1 \\\\\n\\log_b 1 &= \\boxed{0}\n\\end{aligned}\n\\]\n\n- Not \\(f(0) = 0\\): \\(\\log_b 0\\) has no value; the input must be positive.\n- Not all reals: the domain is \\(x > 0\\) (the range is all reals).\n- Not \\(\\tfrac{1}{b^x}\\): the log is the **inverse** of \\(b^x\\), not its reciprocal.",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "Unit 1 is about how functions change; Unit 2 is about functions that add (linear) or multiply (exponential), and running them backwards (logarithms).",
+ "link": [
+  "Recap Set B",
+  "../ap-precalculus-recap-set-b-unit-1-to-2-10/quiz.html"
+ ],
+ "send_to": "John"
+}
