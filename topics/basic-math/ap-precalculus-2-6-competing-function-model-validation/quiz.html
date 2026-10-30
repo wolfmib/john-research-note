@@ -168,6 +168,7 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 }
 .prose p { margin: 0 0 12px; }
 .prose p:last-child { margin-bottom: 0; }
+.prose li:has(.mfrac) + li, .prose li + li:has(.mfrac) { margin-top: 10px; }   
 .prose strong { font-weight: 700; }
 .tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 4px 0 14px; }
 .prose table { border-collapse: collapse; font-variant-numeric: tabular-nums; }
@@ -227,6 +228,10 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .numrow input { flex: 1; min-width: 0; }
 .sign { flex: none; width: 56px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--soft); color: var(--ink); font: 650 24px/1 inherit; }
 .sign:disabled { opacity: .5; }
+.fracbox { flex: none; width: 140px; display: flex; flex-direction: column; }
+.fracbox input { text-align: center; padding: 8px 10px; }
+.fracbar { display: block; height: 3px; margin: 7px 4px; border-radius: 2px; background: var(--ink); }
+.frachint { margin: 8px 0 0; font-size: 14px; color: var(--muted); }
 
 #fb { scroll-margin-top: 110px; scroll-margin-bottom: 110px; }
 .feedback { margin-top: 18px; padding: 14px; border-radius: 14px; }
@@ -237,6 +242,21 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .feedback.bad .verdict { color: var(--bad); }
 .solution { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--line); }
 .notice { margin-top: 16px; padding: 12px 14px; border-radius: 12px; background: var(--bad-soft); font-size: 15px; }
+
+
+.speed-badge { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 12px 0 4px; padding: 10px 14px; border-radius: 12px; background: var(--soft); font-weight: 700; }
+.speed-badge .stime { font-size: 28px; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.speed-badge .srank { font-size: 16px; }
+.sp-expert .srank { color: var(--ok); }
+.sp-mhigh .srank { color: #0969da; }
+.sp-mid .srank { color: #bf8700; }
+.sp-mlow .srank { color: #cf5300; }
+.sp-npract .srank { color: var(--bad); }
+@media (prefers-color-scheme: dark) {
+  .sp-mhigh .srank { color: #79b8ff; }
+  .sp-mid .srank { color: #f0c239; }
+  .sp-mlow .srank { color: #ff9b5e; }
+}
 
 
 .actions {
@@ -292,6 +312,8 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 
 .picklist { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 8px; }
 .picklist > li { min-width: 0; }
+.picklist > li.phead { margin: 10px 0 -2px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.picklist > li.phead:first-child { margin-top: 0; }
 .pickq {
   display: flex; align-items: center; gap: 12px;
   width: 100%; min-height: 52px;
@@ -342,6 +364,28 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 .btn.reveal { width: 100%; margin-top: 16px; }
 .mq h2.qtitle { margin-bottom: 12px; }
 
+.practice { margin-top: 16px; }
+.practice table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: 18px; }
+.practice th:nth-child(1) { width: 14%; } .practice th:nth-child(2) { width: 26%; } .practice th:nth-child(3) { width: 60%; }
+.practice th { padding: 6px 4px; border-bottom: 1.5px solid var(--line); font-size: 14px; font-weight: 650; color: var(--muted); text-align: center; }
+.practice td { padding: 7px 4px; border-bottom: 1px solid var(--line); text-align: center; vertical-align: middle; }
+.pin { display: flex; gap: 6px; }
+.pin .sign { width: 44px; height: 44px; border-radius: 10px; font-size: 20px; }
+.pin input {
+  flex: 1; width: 0; min-width: 0; height: 44px; padding: 0 8px;
+  border: 1.5px solid var(--line); border-radius: 10px;
+  background: var(--card); color: var(--ink);
+  font-family: inherit; font-size: 20px; font-weight: 650; line-height: 1; text-align: center;
+  -webkit-appearance: none; appearance: none;
+}
+.pin input:focus { outline: none; border-color: var(--accent); }
+td.correct .pin input { border-color: var(--ok); background: var(--ok-soft); }
+td.wrong .pin input { border-color: var(--bad); background: var(--bad-soft); }
+.ptag { display: block; margin-top: 3px; font-size: 13px; font-weight: 650; color: var(--muted); }
+.ptag:empty { display: none; }
+.prow { display: flex; gap: 10px; margin-top: 14px; }
+.pscore { min-height: 1.3em; margin: 10px 0 0; text-align: center; font-weight: 650; }
+
 
 .tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: 16px; padding: 4px; border-radius: 13px; background: var(--soft); }
 .tab {
@@ -389,7 +433,8 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
   const LETTERS = 'ABCDEFGH';
   const app = document.getElementById('app');
   const actions = document.getElementById('actions');
-  // Optional groups (e.g. 5 versions of one question): Choose a question then lists the groups.
+  // Optional groups (e.g. 5 versions of one question): Choose a question lists every question under group headings;
+  // Next stays inside a group and #g<k> opens group k.
   const GROUPS = [];
   D.questions.forEach((q, i) => {
     if (!q.group) return;
@@ -410,6 +455,8 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 
   let S = null;              // current attempt: { n, mode, idx, answers, checked, elapsed, done, finishedAt }
   let timerId = null;
+  let qStart = null;
+  const HAS_SPEED = D.questions.some(q => q.speed);
   let confirmSubmit = false;
 
   const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -426,8 +473,20 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     if (f) { const b = parseFloat(f[2]); return b ? parseFloat(f[1]) / b : null; }
     return /^-?(\d+\.?\d*|\.\d+)$/.test(s) ? parseFloat(s) : null;
   }
+  // Fraction answers: two boxes (top / bottom), stored as "n/d" — the phone keypad has no "/" key.
+  // Marked right only in simplest form; the same value unsimplified gets its own hint.
+  function parseFrac(s) {
+    const m = String(s).trim().replace(/−/g, '-').match(/^(-?\d+)\/(\d+)$/);
+    return m && +m[2] ? [+m[1], +m[2]] : null;
+  }
+  const fracText = q => (q.answer[0] < 0 ? '-' : '') + Math.abs(q.answer[0]) + '/' + q.answer[1];
+  function sameValueOnly(q, a) {
+    const f = q.type === 'fraction' && parseFrac(a);
+    return !!f && !isCorrect(q, a) && f[0] * q.answer[1] === q.answer[0] * f[1];
+  }
   function isCorrect(q, a) {
     if (blank(a)) return false;
+    if (q.type === 'fraction') { const f = parseFrac(a); return !!f && f[0] === q.answer[0] && f[1] === q.answer[1]; }
     if (q.type === 'numeric') { const v = parseNum(a); return v !== null && Math.abs(v - q.answer) <= (q.tolerance || 1e-9); }
     return a === q.answer;
   }
@@ -441,7 +500,8 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     timerId = setInterval(() => {
       if (!S || S.done || document.visibilityState !== 'visible') return;
       S.elapsed++; save();
-      const t = document.getElementById('timer'); if (t) t.textContent = fmtTime(S.elapsed);
+      const t = document.getElementById('timer');
+      if (t) t.textContent = HAS_SPEED && qStart ? fmtTime(Math.round((Date.now() - qStart) / 1000)) : fmtTime(S.elapsed);
     }, 1000);
   }
   function stopTimer() { if (timerId) clearInterval(timerId); timerId = null; }
@@ -482,8 +542,8 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     const resumable = saved && saved.n === N && !saved.done;
     const reviewable = saved && saved.n === N && saved.done;
     const last = store.get(KEY + ':last', null);
-    const kinds = new Set(D.questions.map(q => q.type));
-    const kindText = kinds.size > 1 ? 'multiple choice and written answers' : kinds.has('numeric') ? 'written answers' : 'multiple choice';
+    const kinds = new Set(D.questions.map(q => (q.type === 'fraction' ? 'numeric' : q.type)));
+    const kindText = kinds.size > 1 ? 'multiple choice and written answers' : (kinds.has('numeric') || kinds.has('fraction')) ? 'written answers' : 'multiple choice';
     app.innerHTML = `
       <section class="card">
         <p class="eyebrow">${esc(D.course)} · ${esc(D.unit)}</p>
@@ -509,7 +569,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
   }
 
   function begin(mode) {
-    S = { n: N, mode, idx: 0, answers: {}, checked: {}, elapsed: 0, done: false };
+    S = { n: N, mode, idx: 0, answers: {}, checked: {}, elapsed: 0, done: false, ...(HAS_SPEED ? {qTimes: {}} : {}) };
     confirmSubmit = false; save();
     renderQuestion(); window.scrollTo(0, 0); startTimer();
   }
@@ -522,15 +582,12 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     if (!S || S.n !== N) S = freshPick();
     const done = Object.keys(S.checked).length;
     const right = D.questions.filter((q, i) => S.checked[i] && isCorrect(q, S.answers[i])).length;
-    const items = GROUPS.length ? GROUPS.map((g, k) => {
-      const c = g.idx.filter(i => S.checked[i]).length, ok = g.idx.filter(i => S.checked[i] && isCorrect(D.questions[i], S.answers[i])).length;
-      const cls = c === g.idx.length ? (ok === c ? ' ok' : ' bad') : '';
-      return `<li><button class="pickq${cls}" data-act="opengroup" data-g="${k}" aria-label="${k + 1}: ${esc(g.name)}, ${g.idx.length} questions${c ? `, ${ok} of ${c} correct` : ''}">
-        <span class="qnum" aria-hidden="true">${k + 1}</span><span class="ptitle">${esc(g.name)}<small class="pmeta">${g.idx.length} questions${c ? ` · ${ok}/${c} correct` : ''}</small></span></button></li>`;
-    }).join('') : D.questions.map((q, i) => {
+    // Every question is one tap away (John, 2026-10-30): grouped quizzes get a heading row where the group changes.
+    const items = D.questions.map((q, i) => {
       const c = !!S.checked[i], ok = c && isCorrect(q, S.answers[i]);
-      return `<li><button class="pickq${c ? (ok ? ' ok' : ' bad') : ''}" data-act="open" data-i="${i}" aria-label="Question ${i + 1}: ${esc(q.title)}${c ? (ok ? ', correct' : ', wrong') : ''}">
-        <span class="qnum" aria-hidden="true">${i + 1}</span><span class="ptitle">${esc(q.title)}</span>${c ? `<span class="mark ${ok ? 'ok' : 'bad'}" aria-hidden="true">${ok ? '✓' : '✗'}</span>` : ''}</button></li>`;
+      const k = groupOf(i), head = k >= 0 && GROUPS[k].idx[0] === i ? `<li class="phead" aria-hidden="true">${esc(GROUPS[k].name)}</li>` : '';
+      return head + `<li><button class="pickq${c ? (ok ? ' ok' : ' bad') : ''}" data-act="open" data-i="${i}" aria-label="Question ${qlabel(i)}: ${esc(q.title)}${c ? (ok ? ', correct' : ', wrong') : ''}">
+        <span class="qnum" aria-hidden="true">${qlabel(i)}</span><span class="ptitle">${esc(q.title)}</span>${c ? `<span class="mark ${ok ? 'ok' : 'bad'}" aria-hidden="true">${ok ? '✓' : '✗'}</span>` : ''}</button></li>`;
     }).join('');
     app.innerHTML = `
       <section class="card">
@@ -544,7 +601,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
       ? '<button class="btn ghost" data-act="choose-reset">Clear marks</button>' : ''}</div>`;
     actions.hidden = false;
     fitAll();
-    const cur = app.querySelector(GROUPS.length ? `.pickq[data-g="${groupOf(S.idx)}"]` : `.pickq[data-i="${S.idx}"]`);
+    const cur = app.querySelector(`.pickq[data-i="${S.idx}"]`);
     if (cur && done) cur.scrollIntoView({ block: 'center' }); else window.scrollTo(0, 0);
   }
 
@@ -556,13 +613,25 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 
   function renderQuestion() {
     const i = S.idx, q = D.questions[i], a = S.answers[i];
+    if (HAS_SPEED) qStart = S.checked[i] ? null : Date.now();
     const locked = S.mode !== 'test' && !!S.checked[i];
     const dots = S.mode === 'test'
       ? `<div class="dots">${D.questions.map((_, j) =>
           `<button class="dot${blank(S.answers[j]) ? '' : ' answered'}${j === i ? ' current' : ''}" data-act="goto" data-i="${j}" aria-label="Question ${j + 1}${blank(S.answers[j]) ? '' : ', answered'}">${j + 1}</button>`).join('')}</div>`
       : '';
     let body;
-    if (q.type === 'numeric') {
+    if (q.type === 'fraction') {
+      const cls = locked ? (isCorrect(q, a) ? ' correct' : ' wrong') : '';
+      const [top, bot] = blank(a) ? ['', ''] : String(a).split('/');
+      const dis = locked ? ' disabled' : '';
+      body = `<div class="numeric frac${cls}">
+        <div class="numrow"><button type="button" class="sign" data-act="sign" aria-label="Change sign"${dis}>±</button>
+        <div class="fracbox"><label class="sr" for="num">Top number</label>
+          <input id="num" type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" enterkeyhint="next" placeholder="top" value="${esc(top)}"${dis}>
+          <span class="fracbar" aria-hidden="true"></span><label class="sr" for="den">Bottom number</label>
+          <input id="den" type="text" inputmode="numeric" pattern="[0-9]*" autocomplete="off" enterkeyhint="done" placeholder="bottom" value="${esc(bot)}"${dis}></div></div>
+        <p class="frachint">Simplest form. Top box, then bottom box.</p></div>`;
+    } else if (q.type === 'numeric') {
       const cls = locked ? (isCorrect(q, a) ? ' correct' : ' wrong') : '';
       body = `<div class="numeric${cls}"><label class="sr" for="num">Your answer</label>
         <div class="numrow"><button type="button" class="sign" data-act="sign" aria-label="Change sign"${locked ? ' disabled' : ''}>±</button>
@@ -581,7 +650,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
           <button class="quit" data-act="${S.mode === 'pick' ? 'choose' : 'home'}" aria-label="${S.mode === 'pick' ? 'Back to the question list' : 'Leave quiz (progress is kept)'}">✕</button>
           <span class="count">${inGroup() ? `Question ${GROUPS[groupOf(i)].idx.indexOf(i) + 1} of ${GROUPS[groupOf(i)].idx.length}` : `Question ${i + 1} of ${N}`}</span>
           <span class="pill">${modeName(S.mode)}</span>
-          ${S.mode === 'pick' ? '' : `<span class="timer" id="timer" aria-label="Time">${fmtTime(S.elapsed)}</span>`}
+          ${S.mode === 'pick' ? '' : `<span class="timer" id="timer" aria-label="Time">${HAS_SPEED ? '0:00' : fmtTime(S.elapsed)}</span>`}
         </div>
         <div class="bar" aria-hidden="true"><i style="width:${progress()}%"></i></div>
         ${dots}
@@ -599,11 +668,23 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 
   const moreHtml = q => (q.more ? `<p class="more"><a class="morelink" href="${esc(q.more[1])}">${esc(q.more[0])}</a></p>` : '');
 
+  function speedRank(q, secs) {
+    if (!q.speed || secs == null) return null;
+    const [expert, mh, mid, ml] = q.speed;
+    if (secs <= expert) return { label: 'Expert', cls: 'sp-expert' };
+    if (secs <= mh) return { label: 'Middle-High', cls: 'sp-mhigh' };
+    if (secs <= mid) return { label: 'Middle', cls: 'sp-mid' };
+    if (secs <= ml) return { label: 'Middle-Low', cls: 'sp-mlow' };
+    return { label: 'Need Practice', cls: 'sp-npract' };
+  }
   function feedbackHtml(q, a) {
     const ok = isCorrect(q, a);
-    const ans = q.type === 'numeric' ? q.answerHtml : `<b>${q.answer}</b>`;
+    const ans = q.type === 'mcq' ? `<b>${q.answer}</b>` : q.answerHtml;
+    const st = S.qTimes ? S.qTimes[S.idx] : null;
+    const sp = speedRank(q, st);
+    const spHtml = sp ? `<div class="speed-badge ${sp.cls}"><span class="stime">${fmtTime(st)}</span> <span class="srank">${sp.label}</span></div>` : '';
     return `<div class="feedback ${ok ? 'ok' : 'bad'}">
-      <p class="verdict">${ok ? '✓ Correct' : '✗ Not quite — the answer is ' + ans}</p>
+      <p class="verdict">${ok ? '✓ Correct' : sameValueOnly(q, a) ? '✗ Right value, but simplify it — the answer is ' + ans : '✗ Not quite — the answer is ' + ans}</p>${spHtml}
       <div class="prose solution">${q.solutionTitle ? `<p class="stitle">${q.solutionTitle}</p>` : ''}${q.solution}</div>${moreHtml(q)}</div>`;
   }
 
@@ -660,7 +741,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     const items = D.questions.map((q, i) => {
       const a = S.answers[i], ok = isCorrect(q, a), skip = blank(a);
       const yours = skip ? 'no answer' : esc(a);
-      const right = q.type === 'numeric' ? q.answerHtml : q.answer;
+      const right = q.type === 'mcq' ? q.answer : q.answerHtml;
       return `<li><details>
         <summary><span class="mark ${ok ? 'ok' : skip ? 'skip' : 'bad'}" aria-label="${ok ? 'correct' : skip ? 'not answered' : 'wrong'}">${ok ? '✓' : skip ? '–' : '✗'}</span>
           <span class="rq"><b>Q${qlabel(i)}</b> ${esc(q.title)}</span><svg class="chev" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
@@ -692,7 +773,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     const marks = D.questions.map((q, i) => {
       const a = S.answers[i];
       if (blank(a)) return `Q${qlabel(i)} –`;
-      return isCorrect(q, a) ? `Q${qlabel(i)} ✓` : `Q${qlabel(i)} ✗ (${a}, answer ${q.answer})`;
+      return isCorrect(q, a) ? `Q${qlabel(i)} ✓` : `Q${qlabel(i)} ✗ (${a}, answer ${q.type === 'fraction' ? fracText(q) : q.answer})`;
     }).join('   ');
     return [
       `Quiz result — ${getName() || '(no name)'}`,
@@ -750,6 +831,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
         break;
       }
       case 'check': {
+        if (HAS_SPEED && qStart) { if (!S.qTimes) S.qTimes = {}; S.qTimes[S.idx] = Math.round((Date.now() - qStart) / 1000); qStart = null; }
         S.checked[S.idx] = true; save();
         const y = window.scrollY; renderQuestion(); window.scrollTo(0, y);
         document.getElementById('fb').scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'nearest' });
@@ -783,18 +865,25 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
 
   document.addEventListener('input', e => {
     if (e.target.id === 'name') { store.set(NAME_KEY, e.target.value.trim()); return; }
-    if (e.target.id === 'num' && S) {
-      S.answers[S.idx] = e.target.value; confirmSubmit = false; save();
+    if ((e.target.id === 'num' || e.target.id === 'den') && S) {
+      if (D.questions[S.idx].type === 'fraction') {   // saved only once both boxes are filled
+        const top = document.getElementById('num').value.trim(), bot = document.getElementById('den').value.trim();
+        S.answers[S.idx] = top !== '' && bot !== '' ? top.replace(/^−/, '-') + '/' + bot : '';
+      } else S.answers[S.idx] = e.target.value;
+      confirmSubmit = false; save();
       renderActions();
       const dot = app.querySelector(`.dot[data-i="${S.idx}"]`);
-      if (dot) dot.classList.toggle('answered', !blank(e.target.value));
+      if (dot) dot.classList.toggle('answered', !blank(S.answers[S.idx]));
     }
   });
 
   document.addEventListener('keydown', e => {
-    if (e.key !== 'Enter' || !['num', 'name'].includes(e.target.id)) return;
-    e.preventDefault(); e.target.blur();
-    if (e.target.id === 'num') { const p = actions.querySelector('.btn.primary'); if (p && !p.disabled) p.click(); }
+    if (e.key !== 'Enter' || !['num', 'den', 'name'].includes(e.target.id)) return;
+    e.preventDefault();
+    const den = document.getElementById('den');
+    if (e.target.id === 'num' && den) { den.focus(); return; }   // fraction: top box → bottom box
+    e.target.blur();
+    if (e.target.id === 'num' || e.target.id === 'den') { const p = actions.querySelector('.btn.primary'); if (p && !p.disabled) p.click(); }
   });
 
   // Deep link: quiz.html#g4 opens group 4 (e.g. the 5 versions of question 4) straight away.

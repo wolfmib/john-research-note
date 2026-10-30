@@ -312,6 +312,8 @@ h1 { font-size: 26px; line-height: 1.2; letter-spacing: -.01em; margin: 6px 0 8p
 
 .picklist { list-style: none; margin: 16px 0 0; padding: 0; display: grid; gap: 8px; }
 .picklist > li { min-width: 0; }
+.picklist > li.phead { margin: 10px 0 -2px; font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.picklist > li.phead:first-child { margin-top: 0; }
 .pickq {
   display: flex; align-items: center; gap: 12px;
   width: 100%; min-height: 52px;
@@ -431,7 +433,8 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
   const LETTERS = 'ABCDEFGH';
   const app = document.getElementById('app');
   const actions = document.getElementById('actions');
-  // Optional groups (e.g. 5 versions of one question): Choose a question then lists the groups.
+  // Optional groups (e.g. 5 versions of one question): Choose a question lists every question under group headings;
+  // Next stays inside a group and #g<k> opens group k.
   const GROUPS = [];
   D.questions.forEach((q, i) => {
     if (!q.group) return;
@@ -579,15 +582,12 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
     if (!S || S.n !== N) S = freshPick();
     const done = Object.keys(S.checked).length;
     const right = D.questions.filter((q, i) => S.checked[i] && isCorrect(q, S.answers[i])).length;
-    const items = GROUPS.length ? GROUPS.map((g, k) => {
-      const c = g.idx.filter(i => S.checked[i]).length, ok = g.idx.filter(i => S.checked[i] && isCorrect(D.questions[i], S.answers[i])).length;
-      const cls = c === g.idx.length ? (ok === c ? ' ok' : ' bad') : '';
-      return `<li><button class="pickq${cls}" data-act="opengroup" data-g="${k}" aria-label="${k + 1}: ${esc(g.name)}, ${g.idx.length} questions${c ? `, ${ok} of ${c} correct` : ''}">
-        <span class="qnum" aria-hidden="true">${k + 1}</span><span class="ptitle">${esc(g.name)}<small class="pmeta">${g.idx.length} questions${c ? ` · ${ok}/${c} correct` : ''}</small></span></button></li>`;
-    }).join('') : D.questions.map((q, i) => {
+    // Every question is one tap away (John, 2026-10-30): grouped quizzes get a heading row where the group changes.
+    const items = D.questions.map((q, i) => {
       const c = !!S.checked[i], ok = c && isCorrect(q, S.answers[i]);
-      return `<li><button class="pickq${c ? (ok ? ' ok' : ' bad') : ''}" data-act="open" data-i="${i}" aria-label="Question ${i + 1}: ${esc(q.title)}${c ? (ok ? ', correct' : ', wrong') : ''}">
-        <span class="qnum" aria-hidden="true">${i + 1}</span><span class="ptitle">${esc(q.title)}</span>${c ? `<span class="mark ${ok ? 'ok' : 'bad'}" aria-hidden="true">${ok ? '✓' : '✗'}</span>` : ''}</button></li>`;
+      const k = groupOf(i), head = k >= 0 && GROUPS[k].idx[0] === i ? `<li class="phead" aria-hidden="true">${esc(GROUPS[k].name)}</li>` : '';
+      return head + `<li><button class="pickq${c ? (ok ? ' ok' : ' bad') : ''}" data-act="open" data-i="${i}" aria-label="Question ${qlabel(i)}: ${esc(q.title)}${c ? (ok ? ', correct' : ', wrong') : ''}">
+        <span class="qnum" aria-hidden="true">${qlabel(i)}</span><span class="ptitle">${esc(q.title)}</span>${c ? `<span class="mark ${ok ? 'ok' : 'bad'}" aria-hidden="true">${ok ? '✓' : '✗'}</span>` : ''}</button></li>`;
     }).join('');
     app.innerHTML = `
       <section class="card">
@@ -601,7 +601,7 @@ a.quiz .m { font-size: 14px; color: var(--muted); }
       ? '<button class="btn ghost" data-act="choose-reset">Clear marks</button>' : ''}</div>`;
     actions.hidden = false;
     fitAll();
-    const cur = app.querySelector(GROUPS.length ? `.pickq[data-g="${groupOf(S.idx)}"]` : `.pickq[data-i="${S.idx}"]`);
+    const cur = app.querySelector(`.pickq[data-i="${S.idx}"]`);
     if (cur && done) cur.scrollIntoView({ block: 'center' }); else window.scrollTo(0, 0);
   }
 
