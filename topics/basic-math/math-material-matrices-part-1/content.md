@@ -30,11 +30,11 @@ The entry $a_{12}$ is in **row 1, column 2**. Use the pictured matrix for the ch
 
 ![Two coloured rows and two labelled columns; row 1 column 2 is highlighted.](media/matrix-entries.svg)
 
-| Find | Given | Answer |
-|---:|---:|---:|
-| \text{Rows} | A | ? |
-| \text{Columns} | A | ? |
-| a_{12} | \text{row 1, col 2} | ? |
+| Question | Answer |
+|---:|---:|
+| $\text{Rows?}$ | ? |
+| $\text{Columns?}$ | ? |
+| $\text{Find }a_{12}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -61,19 +61,19 @@ $$
 - The second row uses only $y$.
 - With nonzero diagonal entries, divide each right-hand value by its diagonal entry.
 
+![Zero off-diagonal entries give 2x=6 and 4y=20, so the unknowns separate.](media/matrix-diagonal.svg)
+
 **Try:**
 
 $$
 \begin{bmatrix}3 & 0\\0 & 2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}12\\10\end{bmatrix}
 $$
 
-![Zero off-diagonal entries give 2x=6 and 4y=20, so the unknowns separate.](media/matrix-diagonal.svg)
-
-| Find | Given | Answer |
-|---:|---:|---:|
-| x | 3x=12 | ? |
-| y | 2y=10 | ? |
-| d_{12} | \text{off diagonal} | ? |
+| Question | Answer |
+|---:|---:|
+| $\text{Find }x$ | ? |
+| $\text{Find }y$ | ? |
+| $\text{Find }d_{12}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -108,6 +108,8 @@ $$
 \begin{bmatrix}2 & 1\\1 & 3\end{bmatrix}+\begin{bmatrix}1 & 4\\2 & 0\end{bmatrix}=\begin{bmatrix}3 & 5\\3 & 3\end{bmatrix}
 $$
 
+![Four position colours match across A, B and A+B.](media/matrix-addition.svg)
+
 **Try a new pair:**
 
 $$
@@ -122,13 +124,11 @@ $$
 C=P+Q
 $$
 
-![Four position colours match across A, B and A+B.](media/matrix-addition.svg)
-
-| Find | Given | Answer |
-|---:|---:|---:|
-| c_{11} | \text{top left} | ? |
-| c_{12} | \text{top right} | ? |
-| c_{22} | \text{bottom right} | ? |
+| Question | Answer |
+|---:|---:|
+| $\text{Find }c_{11}$ | ? |
+| $\text{Find }c_{12}$ | ? |
+| $\text{Find }c_{22}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -156,6 +156,8 @@ $$
 - Multiply the first row by the column, then add: that gives the top entry.
 - Do the same with the second row for the bottom entry.
 
+![The first and second row each combine with the same column to produce one output entry.](media/matrix-column-product.svg)
+
 **Try:**
 
 $$
@@ -166,13 +168,11 @@ $$
 v=\begin{bmatrix}2\\5\end{bmatrix}
 $$
 
-![The first and second row each combine with the same column to produce one output entry.](media/matrix-column-product.svg)
-
-| Find | Given | Answer |
-|---:|---:|---:|
-| (Mv)_1 | \text{top entry} | ? |
-| (Mv)_2 | \text{bottom entry} | ? |
-| \text{Output rows} | Mv | ? |
+| Question | Answer |
+|---:|---:|
+| $\text{Find }(Mv)_1$ | ? |
+| $\text{Find }(Mv)_2$ | ? |
+| $\text{Output rows?}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -218,6 +218,8 @@ $$
 AX=B
 $$
 
+![The coefficients, unknowns and right-hand values are shown as A, X and B.](media/matrix-system.svg)
+
 **Try writing a matrix system for:**
 
 $$
@@ -227,13 +229,11 @@ $$
 \end{aligned}
 $$
 
-![The coefficients, unknowns and right-hand values are shown as A, X and B.](media/matrix-system.svg)
-
-| Find | Given | Answer |
-|---:|---:|---:|
-| a_{12} | \text{coefficient of }y\text{ in row 1} | ? |
-| a_{21} | \text{coefficient of }x\text{ in row 2} | ? |
-| b_2 | \text{right side, row 2} | ? |
+| Question | Answer |
+|---:|---:|
+| $\text{Find }a_{12}$ | ? |
+| $\text{Find }a_{21}$ | ? |
+| $\text{Find }b_2$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -263,6 +263,8 @@ Use row operations to remove the off-diagonal entries.
 
 Start from the system above. In the picture, the vertical bar separates the coefficients from the right side.
 
+![Two equivalent row changes create a diagonal coefficient matrix, including the corresponding changes to the right-hand column.](media/matrix-row-operations.svg)
+
 **Try this diagonal form of another system:**
 
 $$
@@ -271,13 +273,11 @@ $$
 
 It comes from $x+y=7$ and $2x-y=5$.
 
-![Two equivalent row changes create a diagonal coefficient matrix, including the corresponding changes to the right-hand column.](media/matrix-row-operations.svg)
-
-| Find | Given | Answer |
-|---:|---:|---:|
-| x | 3x=12 | ? |
-| y | -3y=-9 | ? |
-| 2x-y | \text{check original row 2} | ? |
+| Question | Answer |
+|---:|---:|
+| $\text{Find }x$ | ? |
+| $\text{Find }y$ | ? |
+| $\text{Find }2x-y$ | ? |
 
 <details>
 <summary><b>Working</b></summary>

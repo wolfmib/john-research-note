@@ -17,22 +17,18 @@
       "figure_alt": "Two coloured rows and two labelled columns; row 1 column 2 is highlighted.",
       "practice": {
         "head": [
-          "Find",
-          "Given",
+          "Question",
           "Answer"
         ],
         "rows": [
           [
-            "\\text{Rows}",
-            "A"
+            "\\text{Rows?}"
           ],
           [
-            "\\text{Columns}",
-            "A"
+            "\\text{Columns?}"
           ],
           [
-            "a_{12}",
-            "\\text{row 1, col 2}"
+            "\\text{Find }a_{12}"
           ]
         ],
         "answers": [
@@ -45,7 +41,7 @@
     },
     {
       "title": "A diagonal matrix separates the two unknowns",
-      "prompt": "In a **diagonal matrix**, the entries off the main diagonal are zero.\n\n\\[\nD=\\begin{bmatrix}2 & 0\\\\0 & 4\\end{bmatrix}\n\\]\n\n- The first row uses only \\(x\\).\n- The second row uses only \\(y\\).\n- With nonzero diagonal entries, divide each right-hand value by its diagonal entry.\n\n**Try:**\n\n\\[\n\\begin{bmatrix}3 & 0\\\\0 & 2\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}12\\\\10\\end{bmatrix}\n\\]",
+      "prompt": "In a **diagonal matrix**, the entries off the main diagonal are zero.\n\n\\[\nD=\\begin{bmatrix}2 & 0\\\\0 & 4\\end{bmatrix}\n\\]\n\n- The first row uses only \\(x\\).\n- The second row uses only \\(y\\).\n- With nonzero diagonal entries, divide each right-hand value by its diagonal entry.",
       "steps": [
         "\\[\n2x=6\n\\]",
         "\\[\nx=\\frac{6}{2}\n\\]",
@@ -57,22 +53,18 @@
       "figure_alt": "Zero off-diagonal entries give 2x=6 and 4y=20, so the unknowns separate.",
       "practice": {
         "head": [
-          "Find",
-          "Given",
+          "Question",
           "Answer"
         ],
         "rows": [
           [
-            "x",
-            "3x=12"
+            "\\text{Find }x"
           ],
           [
-            "y",
-            "2y=10"
+            "\\text{Find }y"
           ],
           [
-            "d_{12}",
-            "\\text{off diagonal}"
+            "\\text{Find }d_{12}"
           ]
         ],
         "answers": [
@@ -80,12 +72,13 @@
           5,
           0
         ],
-        "tolerance": 1e-09
+        "tolerance": 1e-09,
+        "intro": "**Try:**\n\n\\[\n\\begin{bmatrix}3 & 0\\\\0 & 2\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}12\\\\10\\end{bmatrix}\n\\]"
       }
     },
     {
       "title": "A + B: add matching entries",
-      "prompt": "Addition needs matrices of the **same size**. Add entries at the same position.\n\n\\[\n\\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix}+\\begin{bmatrix}1 & 4\\\\2 & 0\\end{bmatrix}=\\begin{bmatrix}3 & 5\\\\3 & 3\\end{bmatrix}\n\\]\n\n**Try a new pair:**\n\n\\[\nP=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix}\n\\]\n\n\\[\nQ=\\begin{bmatrix}5 & 6\\\\7 & 8\\end{bmatrix}\n\\]\n\n\\[\nC=P+Q\n\\]",
+      "prompt": "Addition needs matrices of the **same size**. Add entries at the same position.\n\n\\[\n\\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix}+\\begin{bmatrix}1 & 4\\\\2 & 0\\end{bmatrix}=\\begin{bmatrix}3 & 5\\\\3 & 3\\end{bmatrix}\n\\]",
       "steps": [
         "\\[\n(A+B)_{11}=2+1\n\\]",
         "\\[\n(A+B)_{11}=3\n\\]",
@@ -95,22 +88,18 @@
       "figure_alt": "Four position colours match across A, B and A+B.",
       "practice": {
         "head": [
-          "Find",
-          "Given",
+          "Question",
           "Answer"
         ],
         "rows": [
           [
-            "c_{11}",
-            "\\text{top left}"
+            "\\text{Find }c_{11}"
           ],
           [
-            "c_{12}",
-            "\\text{top right}"
+            "\\text{Find }c_{12}"
           ],
           [
-            "c_{22}",
-            "\\text{bottom right}"
+            "\\text{Find }c_{22}"
           ]
         ],
         "answers": [
@@ -118,12 +107,13 @@
           8,
           12
         ],
-        "tolerance": 1e-09
+        "tolerance": 1e-09,
+        "intro": "**Try a new pair:**\n\n\\[\nP=\\begin{bmatrix}1 & 2\\\\3 & 4\\end{bmatrix}\n\\]\n\n\\[\nQ=\\begin{bmatrix}5 & 6\\\\7 & 8\\end{bmatrix}\n\\]\n\n\\[\nC=P+Q\n\\]"
       }
     },
     {
       "title": "AB: a 2 × 2 matrix times a 2 × 1 column",
-      "prompt": "The number of columns in \\(A\\) must match the number of rows in \\(B\\).\n\n\\[\n(2\\times2)(2\\times1)\\longrightarrow2\\times1\n\\]\n\n- Multiply the first row by the column, then add: that gives the top entry.\n- Do the same with the second row for the bottom entry.\n\n**Try:**\n\n\\[\nM=\\begin{bmatrix}1 & 2\\\\3 & 1\\end{bmatrix}\n\\]\n\n\\[\nv=\\begin{bmatrix}2\\\\5\\end{bmatrix}\n\\]",
+      "prompt": "The number of columns in \\(A\\) must match the number of rows in \\(B\\).\n\n\\[\n(2\\times2)(2\\times1)\\longrightarrow2\\times1\n\\]\n\n- Multiply the first row by the column, then add: that gives the top entry.\n- Do the same with the second row for the bottom entry.",
       "steps": [
         "\\[\n(AB)_1=2\\cdot3+1\\cdot4\n\\]",
         "\\[\n(AB)_1=10\n\\]",
@@ -135,22 +125,18 @@
       "figure_alt": "The first and second row each combine with the same column to produce one output entry.",
       "practice": {
         "head": [
-          "Find",
-          "Given",
+          "Question",
           "Answer"
         ],
         "rows": [
           [
-            "(Mv)_1",
-            "\\text{top entry}"
+            "\\text{Find }(Mv)_1"
           ],
           [
-            "(Mv)_2",
-            "\\text{bottom entry}"
+            "\\text{Find }(Mv)_2"
           ],
           [
-            "\\text{Output rows}",
-            "Mv"
+            "\\text{Output rows?}"
           ]
         ],
         "answers": [
@@ -158,12 +144,13 @@
           11,
           2
         ],
-        "tolerance": 1e-09
+        "tolerance": 1e-09,
+        "intro": "**Try:**\n\n\\[\nM=\\begin{bmatrix}1 & 2\\\\3 & 1\\end{bmatrix}\n\\]\n\n\\[\nv=\\begin{bmatrix}2\\\\5\\end{bmatrix}\n\\]"
       }
     },
     {
       "title": "Two equations become AX = B",
-      "prompt": "Keep the equations in the same row order and the unknowns in the order \\(x,y\\).\n\n\\[\n\\begin{aligned}\n2x+y&=10 \\\\\nx+3y&=15\n\\end{aligned}\n\\]\n\n- \\(A\\) contains the coefficients of \\(x\\) and \\(y\\).\n- \\(X\\) is the unknown column.\n- \\(B\\) contains the right-hand values.\n\n\\[\nAX=B\n\\]\n\n**Try writing a matrix system for:**\n\n\\[\n\\begin{aligned}\n3x-2y&=7 \\\\\n4x+y&=9\n\\end{aligned}\n\\]",
+      "prompt": "Keep the equations in the same row order and the unknowns in the order \\(x,y\\).\n\n\\[\n\\begin{aligned}\n2x+y&=10 \\\\\nx+3y&=15\n\\end{aligned}\n\\]\n\n- \\(A\\) contains the coefficients of \\(x\\) and \\(y\\).\n- \\(X\\) is the unknown column.\n- \\(B\\) contains the right-hand values.\n\n\\[\nAX=B\n\\]",
       "steps": [
         "\\[\nA=\\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix}\n\\]",
         "\\[\nX=\\begin{bmatrix}x\\\\y\\end{bmatrix}\n\\]",
@@ -174,22 +161,18 @@
       "figure_alt": "The coefficients, unknowns and right-hand values are shown as A, X and B.",
       "practice": {
         "head": [
-          "Find",
-          "Given",
+          "Question",
           "Answer"
         ],
         "rows": [
           [
-            "a_{12}",
-            "\\text{coefficient of }y\\text{ in row 1}"
+            "\\text{Find }a_{12}"
           ],
           [
-            "a_{21}",
-            "\\text{coefficient of }x\\text{ in row 2}"
+            "\\text{Find }a_{21}"
           ],
           [
-            "b_2",
-            "\\text{right side, row 2}"
+            "\\text{Find }b_2"
           ]
         ],
         "answers": [
@@ -197,12 +180,13 @@
           4,
           9
         ],
-        "tolerance": 1e-09
+        "tolerance": 1e-09,
+        "intro": "**Try writing a matrix system for:**\n\n\\[\n\\begin{aligned}\n3x-2y&=7 \\\\\n4x+y&=9\n\\end{aligned}\n\\]"
       }
     },
     {
       "title": "Make the system diagonal, then read the solution",
-      "prompt": "Use row operations to remove the off-diagonal entries.\n\n- Apply each row operation to **both sides** of the equations.\n- The equations change, but their solution stays the same.\n\nStart from the system above. In the picture, the vertical bar separates the coefficients from the right side.\n\n**Try this diagonal form of another system:**\n\n\\[\n\\begin{bmatrix}3 & 0\\\\0 & -3\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}12\\\\-9\\end{bmatrix}\n\\]\n\nIt comes from \\(x+y=7\\) and \\(2x-y=5\\).",
+      "prompt": "Use row operations to remove the off-diagonal entries.\n\n- Apply each row operation to **both sides** of the equations.\n- The equations change, but their solution stays the same.\n\nStart from the system above. In the picture, the vertical bar separates the coefficients from the right side.",
       "steps": [
         "Replace row 2 by twice row 2 minus row 1.\n\n\\[\n\\begin{aligned}\n2(x+3y)-(2x+y)&=2(15)-10 \\\\\n5y&=20\n\\end{aligned}\n\\]",
         "Now replace row 1 by five times row 1 minus the new row 2.\n\n\\[\n\\begin{aligned}\n5(2x+y)-5y&=5(10)-20 \\\\\n10x&=30\n\\end{aligned}\n\\]",
@@ -214,22 +198,18 @@
       "figure_alt": "Two equivalent row changes create a diagonal coefficient matrix, including the corresponding changes to the right-hand column.",
       "practice": {
         "head": [
-          "Find",
-          "Given",
+          "Question",
           "Answer"
         ],
         "rows": [
           [
-            "x",
-            "3x=12"
+            "\\text{Find }x"
           ],
           [
-            "y",
-            "-3y=-9"
+            "\\text{Find }y"
           ],
           [
-            "2x-y",
-            "\\text{check original row 2}"
+            "\\text{Find }2x-y"
           ]
         ],
         "answers": [
@@ -237,7 +217,8 @@
           3,
           5
         ],
-        "tolerance": 1e-09
+        "tolerance": 1e-09,
+        "intro": "**Try this diagonal form of another system:**\n\n\\[\n\\begin{bmatrix}3 & 0\\\\0 & -3\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}12\\\\-9\\end{bmatrix}\n\\]\n\nIt comes from \\(x+y=7\\) and \\(2x-y=5\\)."
       }
     }
   ]
