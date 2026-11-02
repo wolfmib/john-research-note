@@ -8,7 +8,7 @@
   "questions": [
     {
       "title": "Read a 2 × 2 matrix",
-      "prompt": "A **matrix** is a rectangular arrangement of numbers.\n\n- Rows run across.\n- Columns run down.\n- The size is **rows × columns**.\n\n\\[\nA=\\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix}\n\\]\n\nThe entry \\(a_{12}\\) is in **row 1, column 2**. Use the pictured matrix for the checks.",
+      "prompt": "A **matrix** is a rectangular arrangement of numbers.\n\n- Rows run across.\n- Columns run down.\n- The size is **rows × columns**.\n\n\\[\nA=\\begin{bmatrix}2 & 1\\\\1 & 3\\end{bmatrix}\n\\]\n\nThe entry \\(a_{12}\\) is in **row 1, column 2**.",
       "steps": [
         "There are two rows and two columns, so the size is \\(2\\times2\\).",
         "Read the row number first.\n\n\\[\na_{12}=1\n\\]"
@@ -22,21 +22,22 @@
         ],
         "rows": [
           [
-            "\\text{Rows?}"
+            "\\text{Find }p_{12}"
           ],
           [
-            "\\text{Columns?}"
+            "\\text{Find }p_{21}"
           ],
           [
-            "\\text{Find }a_{12}"
+            "\\text{Find }p_{22}"
           ]
         ],
         "answers": [
-          2,
-          2,
-          1
+          -2,
+          5,
+          9
         ],
-        "tolerance": 1e-09
+        "tolerance": 1e-09,
+        "intro": "**Try a new matrix:**\n\n\\[\nP=\\begin{bmatrix}6 & -2\\\\5 & 9\\end{bmatrix}\n\\]"
       }
     },
     {
@@ -64,16 +65,16 @@
             "\\text{Find }y"
           ],
           [
-            "\\text{Find }d_{12}"
+            "\\text{Find }x-y"
           ]
         ],
         "answers": [
-          4,
-          5,
-          0
+          -4,
+          7,
+          -11
         ],
         "tolerance": 1e-09,
-        "intro": "**Try:**\n\n\\[\n\\begin{bmatrix}3 & 0\\\\0 & 2\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}12\\\\10\\end{bmatrix}\n\\]"
+        "intro": "**Try a new system:**\n\n\\[\n\\begin{bmatrix}3 & 0\\\\0 & 5\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}-12\\\\35\\end{bmatrix}\n\\]"
       }
     },
     {
@@ -130,22 +131,22 @@
         ],
         "rows": [
           [
-            "\\text{Find }(Mv)_1"
+            "\\text{Find }w_1"
           ],
           [
-            "\\text{Find }(Mv)_2"
+            "\\text{Find }w_2"
           ],
           [
-            "\\text{Output rows?}"
+            "\\text{Find }w_1+w_2"
           ]
         ],
         "answers": [
           12,
           11,
-          2
+          23
         ],
         "tolerance": 1e-09,
-        "intro": "**Try:**\n\n\\[\nM=\\begin{bmatrix}1 & 2\\\\3 & 1\\end{bmatrix}\n\\]\n\n\\[\nv=\\begin{bmatrix}2\\\\5\\end{bmatrix}\n\\]"
+        "intro": "**Try:**\n\n\\[\nM=\\begin{bmatrix}1 & 2\\\\3 & 1\\end{bmatrix}\n\\]\n\n\\[\nv=\\begin{bmatrix}2\\\\5\\end{bmatrix}\n\\]\n\n\\[\nw=Mv\n\\]"
       }
     },
     {
@@ -209,16 +210,16 @@
             "\\text{Find }y"
           ],
           [
-            "\\text{Find }2x-y"
+            "\\text{Find }x+y"
           ]
         ],
         "answers": [
-          4,
-          3,
-          5
+          7,
+          -6,
+          1
         ],
         "tolerance": 1e-09,
-        "intro": "**Try this diagonal form of another system:**\n\n\\[\n\\begin{bmatrix}3 & 0\\\\0 & -3\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}12\\\\-9\\end{bmatrix}\n\\]\n\nIt comes from \\(x+y=7\\) and \\(2x-y=5\\)."
+        "intro": "**Try a new diagonal system:**\n\n\\[\n\\begin{bmatrix}4 & 0\\\\0 & -2\\end{bmatrix}\\begin{bmatrix}x\\\\y\\end{bmatrix}=\\begin{bmatrix}28\\\\12\\end{bmatrix}\n\\]"
       }
     }
   ]

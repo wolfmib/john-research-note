@@ -26,15 +26,21 @@ $$
 A=\begin{bmatrix}2 & 1\\1 & 3\end{bmatrix}
 $$
 
-The entry $a_{12}$ is in **row 1, column 2**. Use the pictured matrix for the checks.
+The entry $a_{12}$ is in **row 1, column 2**.
 
 ![Two coloured rows and two labelled columns; row 1 column 2 is highlighted.](media/matrix-entries.svg)
 
+**Try a new matrix:**
+
+$$
+P=\begin{bmatrix}6 & -2\\5 & 9\end{bmatrix}
+$$
+
 | Question | Answer |
 |---:|---:|
-| $\text{Rows?}$ | ? |
-| $\text{Columns?}$ | ? |
-| $\text{Find }a_{12}$ | ? |
+| $\text{Find }p_{12}$ | ? |
+| $\text{Find }p_{21}$ | ? |
+| $\text{Find }p_{22}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -63,17 +69,17 @@ $$
 
 ![Zero off-diagonal entries give 2x=6 and 4y=20, so the unknowns separate.](media/matrix-diagonal.svg)
 
-**Try:**
+**Try a new system:**
 
 $$
-\begin{bmatrix}3 & 0\\0 & 2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}12\\10\end{bmatrix}
+\begin{bmatrix}3 & 0\\0 & 5\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}-12\\35\end{bmatrix}
 $$
 
 | Question | Answer |
 |---:|---:|
 | $\text{Find }x$ | ? |
 | $\text{Find }y$ | ? |
-| $\text{Find }d_{12}$ | ? |
+| $\text{Find }x-y$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -168,11 +174,15 @@ $$
 v=\begin{bmatrix}2\\5\end{bmatrix}
 $$
 
+$$
+w=Mv
+$$
+
 | Question | Answer |
 |---:|---:|
-| $\text{Find }(Mv)_1$ | ? |
-| $\text{Find }(Mv)_2$ | ? |
-| $\text{Output rows?}$ | ? |
+| $\text{Find }w_1$ | ? |
+| $\text{Find }w_2$ | ? |
+| $\text{Find }w_1+w_2$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -265,19 +275,17 @@ Start from the system above. In the picture, the vertical bar separates the coef
 
 ![Two equivalent row changes create a diagonal coefficient matrix, including the corresponding changes to the right-hand column.](media/matrix-row-operations.svg)
 
-**Try this diagonal form of another system:**
+**Try a new diagonal system:**
 
 $$
-\begin{bmatrix}3 & 0\\0 & -3\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}12\\-9\end{bmatrix}
+\begin{bmatrix}4 & 0\\0 & -2\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}=\begin{bmatrix}28\\12\end{bmatrix}
 $$
-
-It comes from $x+y=7$ and $2x-y=5$.
 
 | Question | Answer |
 |---:|---:|
 | $\text{Find }x$ | ? |
 | $\text{Find }y$ | ? |
-| $\text{Find }2x-y$ | ? |
+| $\text{Find }x+y$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
