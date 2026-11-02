@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 1090" role="img" aria-label="Three different head-to-tail paths all produce the vector five five">
+<title>Three different head-to-tail paths all produce the vector five five</title>
+<rect width="560" height="100%" rx="20" fill="#fff"/>
+<defs><marker id="arrow-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285ac7"/></marker><marker id="arrow-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#078477"/></marker><marker id="arrow-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc5b16"/></marker><marker id="arrow-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7951b5"/></marker><marker id="arrow-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52647b"/></marker></defs>
+<text x="28" y="42" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#285ac7" text-anchor="start">One result, different paths</text>
+<rect x="22" y="71" width="516" height="315" rx="10" fill="#f7f9fd"/>
+<text x="40" y="106" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="600" fill="#285ac7" text-anchor="start">Across, then up</text>
+<line x1="84" y1="342" x2="84" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="102" y1="342" x2="102" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="120" y1="342" x2="120" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="138" y1="342" x2="138" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="156" y1="342" x2="156" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="174" y1="342" x2="174" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="192" y1="342" x2="192" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="210" y1="342" x2="210" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="228" y1="342" x2="228" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="342" x2="228" y2="342" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="324" x2="228" y2="324" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="306" x2="228" y2="306" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="288" x2="228" y2="288" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="270" x2="228" y2="270" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="252" x2="228" y2="252" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="234" x2="228" y2="234" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="216" x2="228" y2="216" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="198" x2="228" y2="198" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="180" x2="228" y2="180" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="162" x2="228" y2="162" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="144" x2="228" y2="144" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="342" x2="233.4" y2="342" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<line x1="84" y1="342" x2="84" y2="138.6" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<text x="84" y="353.7" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">0</text>
+<text x="174" y="353.7" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">5</text>
+<text x="75.9" y="258" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">5</text>
+<text x="75.9" y="168" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">10</text>
+<text x="236.1" y="349" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">x</text>
+<text x="79" y="134.1" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">y</text>
+<line x1="84" y1="342" x2="174" y2="342" stroke="#078477" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-1)"/>
+<line x1="174" y1="342" x2="174" y2="252" stroke="#bc5b16" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-2)"/>
+<line x1="84" y1="342" x2="174" y2="252" stroke="#285ac7" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-0)"/>
+<text x="290" y="183" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#078477" text-anchor="start">A = (5, 0)</text>
+<text x="290" y="223" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#bc5b16" text-anchor="start">B = (0, 5)</text>
+<text x="290" y="278" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#285ac7" text-anchor="start">C = (5, 5)</text>
+<rect x="22" y="401" width="516" height="315" rx="10" fill="#f7f9fd"/>
+<text x="40" y="436" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="600" fill="#285ac7" text-anchor="start">Up, then diagonally down</text>
+<line x1="84" y1="672" x2="84" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="102" y1="672" x2="102" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="120" y1="672" x2="120" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="138" y1="672" x2="138" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="156" y1="672" x2="156" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="174" y1="672" x2="174" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="192" y1="672" x2="192" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="210" y1="672" x2="210" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="228" y1="672" x2="228" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="672" x2="228" y2="672" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="654" x2="228" y2="654" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="636" x2="228" y2="636" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="618" x2="228" y2="618" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="600" x2="228" y2="600" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="582" x2="228" y2="582" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="564" x2="228" y2="564" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="546" x2="228" y2="546" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="528" x2="228" y2="528" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="510" x2="228" y2="510" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="492" x2="228" y2="492" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="474" x2="228" y2="474" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="672" x2="233.4" y2="672" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<line x1="84" y1="672" x2="84" y2="468.6" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<text x="84" y="683.7" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">0</text>
+<text x="174" y="683.7" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">5</text>
+<text x="75.9" y="588" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">5</text>
+<text x="75.9" y="498" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">10</text>
+<text x="236.1" y="679" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">x</text>
+<text x="79" y="464.1" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">y</text>
+<line x1="84" y1="672" x2="84" y2="492" stroke="#078477" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-1)"/>
+<line x1="84" y1="492" x2="174" y2="582" stroke="#bc5b16" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-2)"/>
+<line x1="84" y1="672" x2="174" y2="582" stroke="#285ac7" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-0)"/>
+<text x="290" y="513" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#078477" text-anchor="start">A = (0, 10)</text>
+<text x="290" y="553" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#bc5b16" text-anchor="start">B = (5, -5)</text>
+<text x="290" y="608" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#285ac7" text-anchor="start">C = (5, 5)</text>
+<rect x="22" y="731" width="516" height="315" rx="10" fill="#f7f9fd"/>
+<text x="40" y="766" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="600" fill="#285ac7" text-anchor="start">Two slanted arrows</text>
+<line x1="84" y1="1002" x2="84" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="102" y1="1002" x2="102" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="120" y1="1002" x2="120" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="138" y1="1002" x2="138" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="156" y1="1002" x2="156" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="174" y1="1002" x2="174" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="192" y1="1002" x2="192" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="210" y1="1002" x2="210" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="228" y1="1002" x2="228" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="1002" x2="228" y2="1002" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="984" x2="228" y2="984" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="966" x2="228" y2="966" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="948" x2="228" y2="948" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="930" x2="228" y2="930" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="912" x2="228" y2="912" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="894" x2="228" y2="894" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="876" x2="228" y2="876" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="858" x2="228" y2="858" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="840" x2="228" y2="840" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="822" x2="228" y2="822" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="804" x2="228" y2="804" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="84" y1="1002" x2="233.4" y2="1002" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<line x1="84" y1="1002" x2="84" y2="798.6" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<text x="84" y="1013.7" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">0</text>
+<text x="174" y="1013.7" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">5</text>
+<text x="75.9" y="918" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">5</text>
+<text x="75.9" y="828" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">10</text>
+<text x="236.1" y="1009" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">x</text>
+<text x="79" y="794.1" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">y</text>
+<line x1="84" y1="1002" x2="120" y2="984" stroke="#078477" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-1)"/>
+<line x1="120" y1="984" x2="174" y2="912" stroke="#bc5b16" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-2)"/>
+<line x1="84" y1="1002" x2="174" y2="912" stroke="#285ac7" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-0)"/>
+<text x="290" y="843" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#078477" text-anchor="start">A = (2, 1)</text>
+<text x="290" y="883" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#bc5b16" text-anchor="start">B = (3, 4)</text>
+<text x="290" y="938" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#285ac7" text-anchor="start">C = (5, 5)</text>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 505" role="img" aria-label="Slide the second vector to the first arrow tip and add head to tail">
+<title>Slide the second vector to the first arrow tip and add head to tail</title>
+<rect width="560" height="100%" rx="20" fill="#fff"/>
+<defs><marker id="arrow-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285ac7"/></marker><marker id="arrow-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#078477"/></marker><marker id="arrow-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc5b16"/></marker><marker id="arrow-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7951b5"/></marker><marker id="arrow-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52647b"/></marker></defs>
+<text x="28" y="42" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#285ac7" text-anchor="start">Put the second arrow at the tip.</text>
+<line x1="80" y1="365" x2="80" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="127" y1="365" x2="127" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="174" y1="365" x2="174" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="221" y1="365" x2="221" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="268" y1="365" x2="268" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="315" y1="365" x2="315" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="362" y1="365" x2="362" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="409" y1="365" x2="409" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="456" y1="365" x2="456" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="365" x2="456" y2="365" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="318" x2="456" y2="318" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="271" x2="456" y2="271" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="224" x2="456" y2="224" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="177" x2="456" y2="177" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="130" x2="456" y2="130" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="80" y1="365" x2="470.1" y2="365" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<line x1="80" y1="365" x2="80" y2="115.9" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<text x="80" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">0</text>
+<text x="127" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">1</text>
+<text x="174" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">2</text>
+<text x="221" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">3</text>
+<text x="268" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">4</text>
+<text x="315" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">5</text>
+<text x="362" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">6</text>
+<text x="409" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">7</text>
+<text x="456" y="395.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">8</text>
+<text x="58.849999999999994" y="324" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">1</text>
+<text x="58.849999999999994" y="277" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">2</text>
+<text x="58.849999999999994" y="230" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">3</text>
+<text x="58.849999999999994" y="183" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">4</text>
+<text x="58.849999999999994" y="136" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">5</text>
+<text x="477.15" y="372" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">x</text>
+<text x="75" y="104.15000000000003" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">y</text>
+<line x1="80" y1="365" x2="127" y2="224" stroke="#bc5b16" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-2)" stroke-dasharray="8 7"/>
+<line x1="80" y1="365" x2="174" y2="318" stroke="#078477" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-1)"/>
+<line x1="174" y1="318" x2="221" y2="177" stroke="#bc5b16" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-2)"/>
+<line x1="80" y1="365" x2="221" y2="177" stroke="#285ac7" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow-0)"/>
+<text x="300" y="175" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#bc5b16" text-anchor="start">B = (1, 3)</text>
+<text x="300" y="210" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="500" fill="#52647b" text-anchor="start">same movement</text>
+<text x="300" y="291" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#078477" text-anchor="start">A = (2, 1)</text>
+<text x="280" y="448" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="500" fill="#285ac7" text-anchor="middle">A + B = (3, 4)</text>
+<text x="280" y="484" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="middle">The arrows need not meet at 90°.</text>
+</svg>

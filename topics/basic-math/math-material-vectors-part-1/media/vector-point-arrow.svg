@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 465" role="img" aria-label="The arrow from O at zero zero to P at three four moves three right and four up">
+<title>The arrow from O at zero zero to P at three four moves three right and four up</title>
+<rect width="560" height="100%" rx="20" fill="#fff"/>
+<defs><marker id="arrow-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285ac7"/></marker><marker id="arrow-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#078477"/></marker><marker id="arrow-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc5b16"/></marker><marker id="arrow-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7951b5"/></marker><marker id="arrow-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52647b"/></marker></defs>
+<text x="28" y="42" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#285ac7" text-anchor="start">A point marks a place.</text>
+<text x="28" y="78" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#52647b" text-anchor="start">A vector describes a movement.</text>
+<line x1="88" y1="363" x2="88" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="135" y1="363" x2="135" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="182" y1="363" x2="182" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="229" y1="363" x2="229" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="276" y1="363" x2="276" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="323" y1="363" x2="323" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="370" y1="363" x2="370" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="417" y1="363" x2="417" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="88" y1="363" x2="417" y2="363" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="88" y1="316" x2="417" y2="316" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="88" y1="269" x2="417" y2="269" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="88" y1="222" x2="417" y2="222" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="88" y1="175" x2="417" y2="175" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="88" y1="128" x2="417" y2="128" stroke="#e6ecf3" stroke-width="2" stroke-linecap="round"/>
+<line x1="88" y1="363" x2="431.09999999999997" y2="363" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<line x1="88" y1="363" x2="88" y2="113.9" stroke="#52647b" stroke-width="2" stroke-linecap="round" marker-end="url(#arrow-4)"/>
+<text x="88" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">0</text>
+<text x="135" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">1</text>
+<text x="182" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">2</text>
+<text x="229" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">3</text>
+<text x="276" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">4</text>
+<text x="323" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">5</text>
+<text x="370" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">6</text>
+<text x="417" y="393.55" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="middle">7</text>
+<text x="66.85" y="322" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">1</text>
+<text x="66.85" y="275" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">2</text>
+<text x="66.85" y="228" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">3</text>
+<text x="66.85" y="181" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">4</text>
+<text x="66.85" y="134" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="500" fill="#52647b" text-anchor="end">5</text>
+<text x="438.15000000000003" y="370" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">x</text>
+<text x="83" y="102.15000000000003" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#52647b" text-anchor="start">y</text>
+<line x1="88" y1="363" x2="229" y2="175" stroke="#285ac7" stroke-width="6" stroke-linecap="round" marker-end="url(#arrow-0)"/>
+<circle cx="229" cy="175" r="5" fill="#285ac7"/>
+<text x="263" y="162" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="500" fill="#285ac7" text-anchor="start">P = (3, 4)</text>
+<text x="310" y="303" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#285ac7" text-anchor="start">3 right</text>
+<text x="310" y="336" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#285ac7" text-anchor="start">4 up</text>
+<text x="280" y="438" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="500" fill="#285ac7" text-anchor="middle">A = (3, 4)</text>
+</svg>
