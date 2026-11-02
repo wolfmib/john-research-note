@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 460" role="img" aria-label="Matrix addition pairs entries at the same row and column">
+<title>Matrix addition pairs entries at the same row and column</title>
+<rect width="560" height="100%" rx="20" fill="#fff"/>
+<defs><marker id="arrow-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285ac7"/></marker><marker id="arrow-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#078477"/></marker><marker id="arrow-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc5b16"/></marker><marker id="arrow-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7951b5"/></marker><marker id="arrow-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52647b"/></marker></defs>
+<text x="28" y="42" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#285ac7" text-anchor="start">Add matching positions</text>
+<text x="113" y="85" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="500" fill="#17263d" text-anchor="middle">A</text>
+<text x="412" y="85" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="500" fill="#17263d" text-anchor="middle">B</text>
+<rect x="48" y="108" width="60" height="60" rx="8" fill="#e8f0ff"/>
+<text x="78.0" y="148.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#285ac7" text-anchor="middle">2</text>
+<rect x="114" y="108" width="60" height="60" rx="8" fill="#fff0dc"/>
+<text x="144.0" y="148.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#bc5b16" text-anchor="middle">1</text>
+<rect x="48" y="174" width="60" height="60" rx="8" fill="#ddf5ed"/>
+<text x="78.0" y="214.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#078477" text-anchor="middle">1</text>
+<rect x="114" y="174" width="60" height="60" rx="8" fill="#f0e5ff"/>
+<text x="144.0" y="214.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#7951b5" text-anchor="middle">3</text>
+<path d="M 51 105 H 39 V 237 H 51" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 171 105 H 183 V 237 H 171" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="267" y="181" font-family="Arial,Helvetica,sans-serif" font-size="40" font-weight="500" fill="#17263d" text-anchor="middle">+</text>
+<rect x="348" y="108" width="60" height="60" rx="8" fill="#e8f0ff"/>
+<text x="378.0" y="148.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#285ac7" text-anchor="middle">1</text>
+<rect x="414" y="108" width="60" height="60" rx="8" fill="#fff0dc"/>
+<text x="444.0" y="148.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#bc5b16" text-anchor="middle">4</text>
+<rect x="348" y="174" width="60" height="60" rx="8" fill="#ddf5ed"/>
+<text x="378.0" y="214.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#078477" text-anchor="middle">2</text>
+<rect x="414" y="174" width="60" height="60" rx="8" fill="#f0e5ff"/>
+<text x="444.0" y="214.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#7951b5" text-anchor="middle">0</text>
+<path d="M 351 105 H 339 V 237 H 351" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 471 105 H 483 V 237 H 471" fill="none" stroke="#17263d" stroke-width="3"/>
+<line x1="279" y1="252" x2="279" y2="294" stroke="#285ac7" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow-0)"/>
+<rect x="213" y="310" width="60" height="60" rx="8" fill="#e8f0ff"/>
+<text x="243.0" y="350.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#285ac7" text-anchor="middle">3</text>
+<rect x="279" y="310" width="60" height="60" rx="8" fill="#fff0dc"/>
+<text x="309.0" y="350.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#bc5b16" text-anchor="middle">5</text>
+<rect x="213" y="376" width="60" height="60" rx="8" fill="#ddf5ed"/>
+<text x="243.0" y="416.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#078477" text-anchor="middle">3</text>
+<rect x="279" y="376" width="60" height="60" rx="8" fill="#f0e5ff"/>
+<text x="309.0" y="416.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#7951b5" text-anchor="middle">3</text>
+<path d="M 216 307 H 204 V 439 H 216" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 336 307 H 348 V 439 H 336" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="32" y="354" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="500" fill="#285ac7" text-anchor="start">A + B</text>
+</svg>

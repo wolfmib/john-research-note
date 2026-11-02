@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 390" role="img" aria-label="A diagonal matrix gives two separate equations">
+<title>A diagonal matrix gives two separate equations</title>
+<rect width="560" height="100%" rx="20" fill="#fff"/>
+<defs><marker id="arrow-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285ac7"/></marker><marker id="arrow-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#078477"/></marker><marker id="arrow-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc5b16"/></marker><marker id="arrow-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7951b5"/></marker><marker id="arrow-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52647b"/></marker></defs>
+<text x="28" y="42" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#285ac7" text-anchor="start">Diagonal: no cross-mixing</text>
+<rect x="50" y="95" width="57" height="60" rx="8" fill="#ddf5ed"/>
+<text x="78.5" y="135.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#078477" text-anchor="middle">2</text>
+<text x="141.5" y="135.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#52647b" text-anchor="middle">0</text>
+<text x="78.5" y="201.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#52647b" text-anchor="middle">0</text>
+<rect x="113" y="161" width="57" height="60" rx="8" fill="#ddf5ed"/>
+<text x="141.5" y="201.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#078477" text-anchor="middle">4</text>
+<path d="M 53 92 H 41 V 224 H 53" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 167 92 H 179 V 224 H 167" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="200" y="169" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="500" fill="#17263d" text-anchor="start">×</text>
+<text x="270.0" y="135.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#17263d" text-anchor="middle">x</text>
+<text x="270.0" y="201.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#17263d" text-anchor="middle">y</text>
+<path d="M 246 92 H 234 V 224 H 246" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 294 92 H 306 V 224 H 294" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="329" y="169" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="500" fill="#17263d" text-anchor="start">=</text>
+<text x="421.0" y="135.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#17263d" text-anchor="middle">6</text>
+<text x="421.0" y="201.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#17263d" text-anchor="middle">20</text>
+<path d="M 388 92 H 376 V 224 H 388" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 454 92 H 466 V 224 H 454" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="48" y="284" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="500" fill="#285ac7" text-anchor="start">2x = 6</text>
+<text x="300" y="284" font-family="Arial,Helvetica,sans-serif" font-size="31" font-weight="500" fill="#bc5b16" text-anchor="start">4y = 20</text>
+<text x="48" y="337" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="500" fill="#285ac7" text-anchor="start">x = 3</text>
+<text x="300" y="337" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="500" fill="#bc5b16" text-anchor="start">y = 5</text>
+</svg>

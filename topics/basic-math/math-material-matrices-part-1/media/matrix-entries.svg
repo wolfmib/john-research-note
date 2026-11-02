@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 355" role="img" aria-label="A two by two matrix: two rows, two columns, and entry a12">
+<title>A two by two matrix: two rows, two columns, and entry a12</title>
+<rect width="560" height="100%" rx="20" fill="#fff"/>
+<defs><marker id="arrow-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285ac7"/></marker><marker id="arrow-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#078477"/></marker><marker id="arrow-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc5b16"/></marker><marker id="arrow-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7951b5"/></marker><marker id="arrow-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52647b"/></marker></defs>
+<text x="30" y="42" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#285ac7" text-anchor="start">Read a 2 × 2 matrix</text>
+<rect x="124" y="99" width="206" height="64" rx="10" fill="#e9f0ff"/>
+<rect x="124" y="165" width="206" height="64" rx="10" fill="#fff0df"/>
+<text x="188.0" y="143.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#285ac7" text-anchor="middle">2</text>
+<rect x="229" y="103" width="70" height="60" rx="8" fill="#bcd0ff"/>
+<text x="264.0" y="143.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#285ac7" text-anchor="middle">1</text>
+<text x="188.0" y="209.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#bc5b16" text-anchor="middle">1</text>
+<text x="264.0" y="209.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#bc5b16" text-anchor="middle">3</text>
+<path d="M 156 100 H 144 V 232 H 156" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 296 100 H 308 V 232 H 296" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="188" y="83" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="500" fill="#52647b" text-anchor="middle">col 1</text>
+<text x="264" y="83" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="500" fill="#52647b" text-anchor="middle">col 2</text>
+<text x="343" y="141" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#285ac7" text-anchor="start">row 1</text>
+<text x="343" y="207" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="500" fill="#bc5b16" text-anchor="start">row 2</text>
+<text x="30" y="281" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#17263d" text-anchor="start">a₁₂ means row 1, column 2.</text>
+<text x="30" y="321" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="500" fill="#285ac7" text-anchor="start">Here a₁₂ = 1.</text>
+</svg>

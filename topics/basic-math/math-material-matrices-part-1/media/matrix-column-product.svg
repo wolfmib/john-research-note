@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 550" role="img" aria-label="A two by two matrix times a two by one column gives a two by one column">
+<title>A two by two matrix times a two by one column gives a two by one column</title>
+<rect width="560" height="100%" rx="20" fill="#fff"/>
+<defs><marker id="arrow-0" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#285ac7"/></marker><marker id="arrow-1" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#078477"/></marker><marker id="arrow-2" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#bc5b16"/></marker><marker id="arrow-3" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7951b5"/></marker><marker id="arrow-4" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#52647b"/></marker></defs>
+<text x="28" y="42" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#285ac7" text-anchor="start">One row × one column</text>
+<text x="115" y="83" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#17263d" text-anchor="middle">A: 2 × 2</text>
+<rect x="50" y="108" width="59" height="60" rx="8" fill="#e8f0ff"/>
+<text x="79.5" y="148.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#285ac7" text-anchor="middle">2</text>
+<rect x="115" y="108" width="59" height="60" rx="8" fill="#e8f0ff"/>
+<text x="144.5" y="148.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#285ac7" text-anchor="middle">1</text>
+<rect x="50" y="174" width="59" height="60" rx="8" fill="#fff0dc"/>
+<text x="79.5" y="214.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#bc5b16" text-anchor="middle">1</text>
+<rect x="115" y="174" width="59" height="60" rx="8" fill="#fff0dc"/>
+<text x="144.5" y="214.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#bc5b16" text-anchor="middle">3</text>
+<path d="M 53 105 H 41 V 237 H 53" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 171 105 H 183 V 237 H 171" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="217" y="182" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="500" fill="#17263d" text-anchor="start">×</text>
+<text x="317" y="83" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="500" fill="#17263d" text-anchor="middle">B: 2 × 1</text>
+<rect x="288" y="108" width="58" height="60" rx="8" fill="#ddf5ed"/>
+<text x="317.0" y="148.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#078477" text-anchor="middle">3</text>
+<rect x="288" y="174" width="58" height="60" rx="8" fill="#ddf5ed"/>
+<text x="317.0" y="214.56" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="600" fill="#078477" text-anchor="middle">4</text>
+<path d="M 291 105 H 279 V 237 H 291" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 343 105 H 355 V 237 H 343" fill="none" stroke="#17263d" stroke-width="3"/>
+<text x="390" y="146" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="500" fill="#285ac7" text-anchor="start">Row 1</text>
+<text x="390" y="210" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="500" fill="#bc5b16" text-anchor="start">Row 2</text>
+<rect x="27" y="266" width="506" height="58" rx="10" fill="#e8f0ff"/>
+<text x="48" y="305" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="500" fill="#285ac7" text-anchor="start">2 × 3 + 1 × 4 = 10</text>
+<rect x="27" y="338" width="506" height="58" rx="10" fill="#fff0dc"/>
+<text x="48" y="377" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="500" fill="#bc5b16" text-anchor="start">1 × 3 + 3 × 4 = 15</text>
+<text x="51" y="465" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="500" fill="#17263d" text-anchor="start">AB is 2 × 1</text>
+<text x="380.0" y="457.0" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="600" fill="#285ac7" text-anchor="middle">10</text>
+<text x="380.0" y="507.0" font-family="Arial,Helvetica,sans-serif" font-size="30" font-weight="600" fill="#bc5b16" text-anchor="middle">15</text>
+<path d="M 348 424 H 336 V 524 H 348" fill="none" stroke="#17263d" stroke-width="3"/>
+<path d="M 412 424 H 424 V 524 H 412" fill="none" stroke="#17263d" stroke-width="3"/>
+</svg>
