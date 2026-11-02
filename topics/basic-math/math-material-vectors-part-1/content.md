@@ -33,13 +33,23 @@ The pair $(3,4)$ gives the horizontal and vertical movements.
 
 ![An arrow from the origin to (3,4), with axes on an equal-unit grid.](media/vector-point-arrow.svg)
 
-**Try:** first use the arrow from $(0,0)$ to $(2,5)$. For the last check, use $(1,2)$ to $(4,6)$.
+**Try new points:**
+
+$$
+P=(2,-1)
+$$
+
+$$
+Q=(7,5)
+$$
+
+Checks 1–2: go from $P$ to $Q$. Check 3: reverse the arrow.
 
 | Question | Answer |
 |---:|---:|
-| $\text{First arrow: }\Delta x$ | ? |
-| $\text{First arrow: }\Delta y$ | ? |
-| $\text{Last arrow: }\Delta y$ | ? |
+| $\text{Find }\Delta x$ | ? |
+| $\text{Find }\Delta y$ | ? |
+| $\text{Reverse: }\Delta x$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -80,17 +90,23 @@ $$
 
 ![A blue arrow (3,4), a teal horizontal (3,0), and an orange vertical (0,4) placed head to tail.](media/vector-horizontal-vertical.svg)
 
-**Try the same split for:**
+**Try a new route:**
 
 $$
-\vec C=\begin{bmatrix}6\\2\end{bmatrix}
+P=(1,2)
 $$
+
+$$
+Q=(6,-1)
+$$
+
+Go horizontally from $P$ to a corner $R$, then vertically to $Q$. Find the total movements $\Delta x$, $\Delta y$, and the corner’s height $R_y$.
 
 | Question | Answer |
 |---:|---:|
-| $\text{Across: }x$ | ? |
-| $\text{Up: }y$ | ? |
-| $\text{Up: }x$ | ? |
+| $\text{Find }\Delta x$ | ? |
+| $\text{Find }\Delta y$ | ? |
+| $\text{Find }R_y$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -128,13 +144,27 @@ $$
 
 ![Two slanted component arrows form a head-to-tail path, with their resultant drawn from the original start to the final endpoint.](media/vector-head-to-tail.svg)
 
-**Try:** use these two vectors.
+**Try new vectors:**
+
+$$
+\vec A=\begin{bmatrix}-3\\2\end{bmatrix}
+$$
+
+$$
+\vec B=\begin{bmatrix}8\\4\end{bmatrix}
+$$
+
+$$
+\vec C=\vec A+\vec B
+$$
+
+For check 3, start at $P=(2,1)$, then follow $\vec A$ and $\vec B$. Find the final x-coordinate.
 
 | Question | Answer |
 |---:|---:|
-| $\text{Find }(\vec A+\vec B)_x$ | ? |
-| $\text{Find }(\vec A+\vec B)_y$ | ? |
-| $\text{Find }(\vec B+\vec A)_x$ | ? |
+| $\text{Find }C_x$ | ? |
+| $\text{Find }C_y$ | ? |
+| $\text{Final }x\text{ from }P$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -172,13 +202,13 @@ $$
 **Checks 1–2:**
 
 $$
-\vec C=\begin{bmatrix}0\\9\end{bmatrix}+\begin{bmatrix}6\\-5\end{bmatrix}
+\vec C=\begin{bmatrix}2\\9\end{bmatrix}+\begin{bmatrix}6\\-5\end{bmatrix}
 $$
 
 **Check 3:**
 
 $$
-\begin{bmatrix}6\\2\end{bmatrix}=\begin{bmatrix}0\\9\end{bmatrix}+\vec B
+\begin{bmatrix}8\\2\end{bmatrix}=\begin{bmatrix}2\\9\end{bmatrix}+\vec B
 $$
 
 | Question | Answer |
@@ -224,10 +254,14 @@ The three pictured routes all produce $\vec C=(5,5)$.
 
 ![Three equal-scale grids show horizontal/vertical, vertical/downward-slanted, and two-slanted-arrow paths with the same resultant (5,5).](media/vector-many-paths.svg)
 
-**Try:** keep $\vec C=(5,5)$.
+**Try a new target:**
 
-- Checks 1–2: use $\vec A=(1,2)$.
-- Check 3: use $\vec A=(-2,7)$.
+$$
+\vec C=\begin{bmatrix}8\\6\end{bmatrix}
+$$
+
+- Checks 1–2: use $\vec A=(3,2)$.
+- Check 3: use $\vec A=(-2,9)$.
 
 | Question | Answer |
 |---:|---:|

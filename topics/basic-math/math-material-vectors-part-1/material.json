@@ -23,22 +23,22 @@
         ],
         "rows": [
           [
-            "\\text{First arrow: }\\Delta x"
+            "\\text{Find }\\Delta x"
           ],
           [
-            "\\text{First arrow: }\\Delta y"
+            "\\text{Find }\\Delta y"
           ],
           [
-            "\\text{Last arrow: }\\Delta y"
+            "\\text{Reverse: }\\Delta x"
           ]
         ],
         "answers": [
-          2,
           5,
-          4
+          6,
+          -5
         ],
         "tolerance": 1e-09,
-        "intro": "**Try:** first use the arrow from \\((0,0)\\) to \\((2,5)\\). For the last check, use \\((1,2)\\) to \\((4,6)\\)."
+        "intro": "**Try new points:**\n\n\\[\nP=(2,-1)\n\\]\n\n\\[\nQ=(7,5)\n\\]\n\nChecks 1–2: go from \\(P\\) to \\(Q\\). Check 3: reverse the arrow."
       }
     },
     {
@@ -58,22 +58,22 @@
         ],
         "rows": [
           [
-            "\\text{Across: }x"
+            "\\text{Find }\\Delta x"
           ],
           [
-            "\\text{Up: }y"
+            "\\text{Find }\\Delta y"
           ],
           [
-            "\\text{Up: }x"
+            "\\text{Find }R_y"
           ]
         ],
         "answers": [
-          6,
-          2,
-          0
+          5,
+          -3,
+          2
         ],
         "tolerance": 1e-09,
-        "intro": "**Try the same split for:**\n\n\\[\n\\vec C=\\begin{bmatrix}6\\\\2\\end{bmatrix}\n\\]"
+        "intro": "**Try a new route:**\n\n\\[\nP=(1,2)\n\\]\n\n\\[\nQ=(6,-1)\n\\]\n\nGo horizontally from \\(P\\) to a corner \\(R\\), then vertically to \\(Q\\). Find the total movements \\(\\Delta x\\), \\(\\Delta y\\), and the corner’s height \\(R_y\\)."
       }
     },
     {
@@ -93,22 +93,22 @@
         ],
         "rows": [
           [
-            "\\text{Find }(\\vec A+\\vec B)_x"
+            "\\text{Find }C_x"
           ],
           [
-            "\\text{Find }(\\vec A+\\vec B)_y"
+            "\\text{Find }C_y"
           ],
           [
-            "\\text{Find }(\\vec B+\\vec A)_x"
+            "\\text{Final }x\\text{ from }P"
           ]
         ],
         "answers": [
-          3,
-          4,
-          3
+          5,
+          6,
+          7
         ],
         "tolerance": 1e-09,
-        "intro": "**Try:** use these two vectors."
+        "intro": "**Try new vectors:**\n\n\\[\n\\vec A=\\begin{bmatrix}-3\\\\2\\end{bmatrix}\n\\]\n\n\\[\n\\vec B=\\begin{bmatrix}8\\\\4\\end{bmatrix}\n\\]\n\n\\[\n\\vec C=\\vec A+\\vec B\n\\]\n\nFor check 3, start at \\(P=(2,1)\\), then follow \\(\\vec A\\) and \\(\\vec B\\). Find the final x-coordinate."
       }
     },
     {
@@ -138,12 +138,12 @@
           ]
         ],
         "answers": [
-          6,
+          8,
           4,
           -7
         ],
         "tolerance": 1e-09,
-        "intro": "**Checks 1–2:**\n\n\\[\n\\vec C=\\begin{bmatrix}0\\\\9\\end{bmatrix}+\\begin{bmatrix}6\\\\-5\\end{bmatrix}\n\\]\n\n**Check 3:**\n\n\\[\n\\begin{bmatrix}6\\\\2\\end{bmatrix}=\\begin{bmatrix}0\\\\9\\end{bmatrix}+\\vec B\n\\]"
+        "intro": "**Checks 1–2:**\n\n\\[\n\\vec C=\\begin{bmatrix}2\\\\9\\end{bmatrix}+\\begin{bmatrix}6\\\\-5\\end{bmatrix}\n\\]\n\n**Check 3:**\n\n\\[\n\\begin{bmatrix}8\\\\2\\end{bmatrix}=\\begin{bmatrix}2\\\\9\\end{bmatrix}+\\vec B\n\\]"
       }
     },
     {
@@ -174,12 +174,12 @@
           ]
         ],
         "answers": [
+          5,
           4,
-          3,
-          -2
+          -3
         ],
         "tolerance": 1e-09,
-        "intro": "**Try:** keep \\(\\vec C=(5,5)\\).\n\n- Checks 1–2: use \\(\\vec A=(1,2)\\).\n- Check 3: use \\(\\vec A=(-2,7)\\)."
+        "intro": "**Try a new target:**\n\n\\[\n\\vec C=\\begin{bmatrix}8\\\\6\\end{bmatrix}\n\\]\n\n- Checks 1–2: use \\(\\vec A=(3,2)\\).\n- Check 3: use \\(\\vec A=(-2,9)\\)."
       }
     }
   ]
