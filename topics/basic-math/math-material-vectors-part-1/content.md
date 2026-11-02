@@ -31,15 +31,15 @@ $$
 
 The pair $(3,4)$ gives the horizontal and vertical movements.
 
-**Try:** first use the arrow from $(0,0)$ to $(2,5)$. For the last check, use $(1,2)$ to $(4,6)$.
-
 ![An arrow from the origin to (3,4), with axes on an equal-unit grid.](media/vector-point-arrow.svg)
 
-| Find | Given | Answer |
-|---:|---:|---:|
-| \Delta x | (0,0)\to(2,5) | ? |
-| \Delta y | (0,0)\to(2,5) | ? |
-| \Delta y | (1,2)\to(4,6) | ? |
+**Try:** first use the arrow from $(0,0)$ to $(2,5)$. For the last check, use $(1,2)$ to $(4,6)$.
+
+| Question | Answer |
+|---:|---:|
+| $\text{First arrow: }\Delta x$ | ? |
+| $\text{First arrow: }\Delta y$ | ? |
+| $\text{Last arrow: }\Delta y$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -78,19 +78,19 @@ $$
 - Slide the vertical arrow to the horizontal arrow’s tip.
 - The result still ends at $(3,4)$.
 
+![A blue arrow (3,4), a teal horizontal (3,0), and an orange vertical (0,4) placed head to tail.](media/vector-horizontal-vertical.svg)
+
 **Try the same split for:**
 
 $$
 \vec C=\begin{bmatrix}6\\2\end{bmatrix}
 $$
 
-![A blue arrow (3,4), a teal horizontal (3,0), and an orange vertical (0,4) placed head to tail.](media/vector-horizontal-vertical.svg)
-
-| Find | Given | Answer |
-|---:|---:|---:|
-| \text{Horizontal }x | \vec C=(6,2) | ? |
-| \text{Vertical }y | \vec C=(6,2) | ? |
-| \text{Vertical }x | \text{vertical part only} | ? |
+| Question | Answer |
+|---:|---:|
+| $\text{Across: }x$ | ? |
+| $\text{Up: }y$ | ? |
+| $\text{Up: }x$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -126,15 +126,15 @@ $$
 - Slide $\vec B$ so it starts at the tip of $\vec A$.
 - Draw the result from the original start to the final finish.
 
-**Try:** use these two vectors.
-
 ![Two slanted component arrows form a head-to-tail path, with their resultant drawn from the original start to the final endpoint.](media/vector-head-to-tail.svg)
 
-| Find | Given | Answer |
-|---:|---:|---:|
-| (\vec A+\vec B)_x | \text{horizontal sum} | ? |
-| (\vec A+\vec B)_y | \text{vertical sum} | ? |
-| (\vec B+\vec A)_x | \text{reverse the order} | ? |
+**Try:** use these two vectors.
+
+| Question | Answer |
+|---:|---:|
+| $\text{Find }(\vec A+\vec B)_x$ | ? |
+| $\text{Find }(\vec A+\vec B)_y$ | ? |
+| $\text{Find }(\vec B+\vec A)_x$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -167,19 +167,25 @@ $$
 - It starts at $(0,10)$ and ends at $(5,5)$.
 - The two component arrows are not perpendicular.
 
-**Try:**
+![The path (0,0) to (0,10) to (5,5) adds (0,10) and (5,-5), with the straight resultant (5,5).](media/vector-oblique-decomposition.svg)
+
+**Checks 1–2:**
 
 $$
 \vec C=\begin{bmatrix}0\\9\end{bmatrix}+\begin{bmatrix}6\\-5\end{bmatrix}
 $$
 
-![The path (0,0) to (0,10) to (5,5) adds (0,10) and (5,-5), with the straight resultant (5,5).](media/vector-oblique-decomposition.svg)
+**Check 3:**
 
-| Find | Given | Answer |
-|---:|---:|---:|
-| C_x | (0,9)+(6,-5) | ? |
-| C_y | (0,9)+(6,-5) | ? |
-| B_y | (6,2)=(0,9)+\vec B | ? |
+$$
+\begin{bmatrix}6\\2\end{bmatrix}=\begin{bmatrix}0\\9\end{bmatrix}+\vec B
+$$
+
+| Question | Answer |
+|---:|---:|
+| $\text{1. Find }C_x$ | ? |
+| $\text{2. Find }C_y$ | ? |
+| $\text{3. Find }B_y$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -216,15 +222,18 @@ $$
 
 The three pictured routes all produce $\vec C=(5,5)$.
 
-**Try:** keep $\vec C=(5,5)$ and find the missing component of $\vec B$.
-
 ![Three equal-scale grids show horizontal/vertical, vertical/downward-slanted, and two-slanted-arrow paths with the same resultant (5,5).](media/vector-many-paths.svg)
 
-| Find | Given | Answer |
-|---:|---:|---:|
-| B_x | \vec A=(1,2) | ? |
-| B_y | \vec A=(1,2) | ? |
-| B_y | \vec A=(-2,7) | ? |
+**Try:** keep $\vec C=(5,5)$.
+
+- Checks 1–2: use $\vec A=(1,2)$.
+- Check 3: use $\vec A=(-2,7)$.
+
+| Question | Answer |
+|---:|---:|
+| $\text{1. Find }B_x$ | ? |
+| $\text{2. Find }B_y$ | ? |
+| $\text{3. Find }B_y$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
