@@ -1,0 +1,96 @@
+{
+ "slug": "malta-year-8-math-test-prep-prime-factors",
+ "title": "Malta Year 8 Math — Prime Factors",
+ "course": "Malta Year 8 Math",
+ "root": "chapters",
+ "unit": "Test Prep",
+ "question": "Prime Factors: two worked examples with fresh practice.",
+ "intro": "- A **prime number** has exactly two positive factors: 1 and itself.\n- 1 is not prime; 2 is the only even prime.\n- Prime factorisation writes a whole number as a product of primes.\n- Powers show how many times a prime is repeated.\n- Extension: use prime factors to find HCF and LCM.",
+ "questions": [
+  {
+   "title": "Style 1 · Break a number into primes",
+   "prompt": "**How it works**\n\n- Divide by the smallest prime possible: 2, then 3, then 5, and so on.\n- Continue until the remaining number is prime. Every final factor must be prime.\n- Combine repeated factors using powers.\n\n**Worked example:** factorise **84 and 126**, use index notation, and identify their common prime factors.",
+   "steps": [
+    "**1 · Break up 84.**\n\n\\[\n\\begin{aligned}\n84&=2\\times42 \\\\\n&=2\\times2\\times21 \\\\\n&=2\\times2\\times3\\times7\n\\end{aligned}\n\\]\n\n\\[\n84=\\boxed{2^2\\times3\\times7}\n\\]",
+    "**2 · Break up 126.**\n\n\\[\n\\begin{aligned}\n126&=2\\times63 \\\\\n&=2\\times3\\times21 \\\\\n&=2\\times3\\times3\\times7\n\\end{aligned}\n\\]\n\n\\[\n126=\\boxed{2\\times3^2\\times7}\n\\]",
+    "**3 · Compare the prime bases.**\n\nThe primes appearing in both are **2, 3 and 7**.\n\nA prime factor is the prime itself; its power records how often it occurs.",
+    "**Practice check — after you try:**\n\n\\[\n60=\\boxed{2^2\\times3\\times5}\n\\]\n\n\\[\n90=\\boxed{2\\times3^2\\times5}\n\\]\n\nCommon prime factors: **2, 3 and 5**."
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "intro": "- **Your turn:** Factorise **60 and 90** on paper and write each using powers.\n- Identify the common prime factors.\n- Enter each exponent below; an unwritten exponent is 1.",
+    "rows": [
+     [
+      "60:\\ \\text{power of }2"
+     ],
+     [
+      "60:\\ \\text{power of }3"
+     ],
+     [
+      "60:\\ \\text{power of }5"
+     ],
+     [
+      "90:\\ \\text{power of }2"
+     ],
+     [
+      "90:\\ \\text{power of }3"
+     ],
+     [
+      "90:\\ \\text{power of }5"
+     ]
+    ],
+    "answers": [
+     2,
+     1,
+     1,
+     1,
+     2,
+     1
+    ],
+    "tolerance": 0
+   }
+  },
+  {
+   "title": "Style 2 · HCF and LCM from primes",
+   "prompt": "**How it works — extension**\n\n- **HCF:** take only primes common to both numbers, with the **smaller power** of each.\n- **LCM:** take every prime present, with the **larger power** of each.\n- For two positive whole numbers, HCF times LCM equals their product.\n\n- **Worked example:** factorise **72 and 120**.\n- Find their HCF and LCM, then check the product rule.",
+   "steps": [
+    "**1 · Write both prime factorisations.**\n\n\\[\n72=2^3\\times3^2\n\\]\n\n\\[\n120=2^3\\times3\\times5\n\\]",
+    "**2 · HCF: the smaller powers of common primes.**\n\n\\[\n\\operatorname{HCF}(72,120)=2^3\\times3\n\\]\n\n\\[\n\\operatorname{HCF}(72,120)=\\boxed{24}\n\\]\n\nDo not include 5: it does not divide 72.",
+    "**3 · LCM: the larger powers of every prime.**\n\n\\[\n\\operatorname{LCM}(72,120)=2^3\\times3^2\\times5\n\\]\n\n\\[\n\\operatorname{LCM}(72,120)=\\boxed{360}\n\\]",
+    "**4 · Check both products.**\n\n\\[\n24\\times360=8640\n\\]\n\n\\[\n72\\times120=8640\n\\]\n\nThe products agree.",
+    "**Practice check — after you try:**\n\n\\[\n48=2^4\\times3\n\\]\n\n\\[\n150=2\\times3\\times5^2\n\\]\n\n\\[\n\\operatorname{HCF}(48,150)=\\boxed{6}\n\\]\n\n\\[\n\\operatorname{LCM}(48,150)=\\boxed{1200}\n\\]\n\n\\[\n6\\times1200=7200\n\\]\n\n\\[\n48\\times150=7200\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "intro": "- **Your turn:** Factorise **48 and 150**.\n- Use the prime factors to find the HCF and LCM, then check their product against the product of the original numbers.",
+    "rows": [
+     [
+      "\\operatorname{HCF}(48,150)"
+     ],
+     [
+      "\\operatorname{LCM}(48,150)"
+     ],
+     [
+      "\\text{HCF}\\times\\text{LCM}"
+     ]
+    ],
+    "answers": [
+     6,
+     1200,
+     7200
+    ],
+    "tolerance": 0
+   }
+  }
+ ],
+ "link": [
+  "Squares, Cubes & Roots ›",
+  "../malta-year-8-math-test-prep-squares-cubes-and-roots/material.html"
+ ]
+}
