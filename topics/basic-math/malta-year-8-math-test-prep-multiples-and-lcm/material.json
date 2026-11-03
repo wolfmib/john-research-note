@@ -5,49 +5,54 @@
  "root": "chapters",
  "unit": "Test Prep",
  "question": "Multiples & LCM: two worked examples with fresh practice.",
- "intro": "- Multiples are the positive times-table answers.\n- A common multiple appears in every list.\n- The **lowest common multiple (LCM)** is the smallest positive common multiple.\n- Use a ladder to find an LCM and solve repeating-event problems.",
+ "intro": "- Multiples are the positive times-table answers.\n- A common multiple appears in every list.\n- The **lowest common multiple (LCM)** is the smallest positive common multiple.\n- A **common-factor ladder** shows the HCF on the left and helps find the LCM.\n- Use the LCM to solve repeating-event problems.",
  "questions": [
   {
    "title": "Style 1 · Lists and the ladder",
-   "prompt": "**How it works**\n\n- List multiples by adding the original number each time.\n- For the ladder, choose a prime dividing at least one entry. Divide every entry it divides; carry the others unchanged.\n- Continue until every entry is 1, then multiply the primes down the left.\n\n- **Worked example:** find the LCM of **12, 18 and 30**.\n- Write the first five multiples, then use a ladder.",
+   "prompt": "**How it works**\n\n- List multiples by adding the original number each time.\n- Choose a prime that divides **both** entries, then divide both.\n- Stop when no factor greater than 1 divides both bottom entries.\n- **HCF:** multiply the common factors on the left.\n- **LCM:** multiply the left factors **and both bottom entries**.\n\n- **Worked example:** find the HCF and LCM of **18 and 24**.\n- Write the first five multiples, then use a ladder.",
    "steps": [
-    "**1 · First five positive multiples.**\n\n- 12: 12, 24, 36, 48, 60.\n- 18: 18, 36, 54, 72, 90.\n- 30: 30, 60, 90, 120, 150.\n\n- These short lists do not yet contain a number common to all three.\n- The lists continue.",
-    "**2 · Divide by primes, carrying entries unchanged when needed.**\n\n\\[\n\\begin{array}{r|rrr}\n2 & 12 & 18 & 30 \\\\ 2 & 6 & 9 & 15 \\\\ 3 & 3 & 9 & 15 \\\\ 3 & 1 & 3 & 5 \\\\ 5 & 1 & 1 & 5 \\\\  & 1 & 1 & 1\n\\end{array}\n\\]",
-    "**3 · Multiply the ladder primes.**\n\n\\[\n\\operatorname{LCM}(12,18,30)=2\\times2\\times3\\times3\\times5\n\\]\n\n\\[\n\\operatorname{LCM}(12,18,30)=\\boxed{180}\n\\]",
-    "**4 · Why it is the lowest.**\n\n- 180 is divisible by 12, 18 and 30.\n- The ladder includes exactly the prime factors needed to cover every number.\n- Any common multiple must contain these factors, so none can be smaller.\n\n**Practice check — after you try:**\n\n\\[\n\\begin{array}{r|rrr}\n2 & 8 & 12 & 20 \\\\ 2 & 4 & 6 & 10 \\\\ 2 & 2 & 3 & 5 \\\\ 3 & 1 & 3 & 5 \\\\ 5 & 1 & 1 & 5 \\\\  & 1 & 1 & 1\n\\end{array}\n\\]\n\n\\[\n\\operatorname{LCM}(8,12,20)=\\boxed{120}\n\\]"
+    "**1 · First five positive multiples.**\n\n- 18: 18, 36, 54, 72, 90.\n- 24: 24, 48, 72, 96, 120.\n\nThe first common multiple is **72**.",
+    "**2 · Divide both numbers by common primes.**\n\n\\[\n\\begin{array}{r|rr}\n2 & 18 & 24 \\\\ 3 & 9 & 12 \\\\  & 3 & 4\n\\end{array}\n\\]\n\n- Stop at 3 and 4: neither 2 nor 3 divides both.\n- Keep these bottom entries.",
+    "**3 · HCF: the left side only.**\n\n\\[\n\\operatorname{HCF}(18,24)=2\\times3\n\\]\n\n\\[\n\\operatorname{HCF}(18,24)=\\boxed{6}\n\\]",
+    "**4 · LCM: the left side and the bottom.**\n\n\\[\n\\operatorname{LCM}(18,24)=2\\times3\\times3\\times4\n\\]\n\n\\[\n\\operatorname{LCM}(18,24)=\\boxed{72}\n\\]\n\nThe common factors are counted once; the bottom entries supply what each number still needs.",
+    "**Practice check — after you try:**\n\n- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rr}\n2 & 16 & 24 \\\\ 2 & 8 & 12 \\\\ 2 & 4 & 6 \\\\  & 2 & 3\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\\times2\\times2\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{8}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times2\\times2\\times2\\times3\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{48}\n\\]"
    ],
    "practice": {
     "head": [
      "Question",
      "Answer"
     ],
-    "intro": "- **Your turn:** For **8, 12 and 20**, write the first five multiples of each.\n- Use the ladder method to find the LCM.",
+    "intro": "- **Your turn:** For **16 and 24**, write the first five multiples of each.\n- Use the common-factor ladder to find both HCF and LCM.",
     "rows": [
      [
-      "\\operatorname{LCM}(8,12,20)"
+      "\\operatorname{HCF}(16,24)"
+     ],
+     [
+      "\\operatorname{LCM}(16,24)"
      ]
     ],
     "answers": [
-     120
+     8,
+     48
     ],
     "tolerance": 0
    }
   },
   {
    "title": "Style 2 · When do they ring together?",
-   "prompt": "**How it works**\n\n- Repeating events coincide again after the **LCM of their intervals**.\n- Find the waiting time first, then add it to the starting clock time.\n\n- **Worked example:** three bells ring every **12, 18 and 24 minutes**.\n- All ring at **9:00 am**.\n\n- Find how long until they next ring together and the clock time.\n- Show a ladder.",
+   "prompt": "**How it works**\n\n- Repeating events coincide again after the **LCM of their intervals**.\n- Divide by primes common to **all three** numbers; the left product is their HCF.\n- In this example, no two bottom entries share a factor, so left factors × bottom entries gives the LCM.\n- Find the waiting time first, then add it to the starting clock time.\n\n- **Worked example:** three bells ring every **12, 18 and 30 minutes**.\n- All ring at **9:00 am**.\n\n- Find how long until they next ring together and the clock time.\n- Show a ladder.",
    "steps": [
-    "**1 · The waiting time must be a multiple of all three intervals.** Use the LCM.\n\n\\[\n\\begin{array}{r|rrr}\n2 & 12 & 18 & 24 \\\\ 2 & 6 & 9 & 12 \\\\ 2 & 3 & 9 & 6 \\\\ 3 & 3 & 9 & 3 \\\\ 3 & 1 & 3 & 1 \\\\  & 1 & 1 & 1\n\\end{array}\n\\]",
-    "**2 · Multiply the ladder primes.**\n\n\\[\n\\operatorname{LCM}(12,18,24)=2\\times2\\times2\\times3\\times3\n\\]\n\n\\[\n\\text{Waiting time}=\\boxed{72\\text{ minutes}}\n\\]",
-    "**3 · Convert to hours and minutes.**\n\n\\[\n72\\text{ minutes}=1\\text{ hour }12\\text{ minutes}\n\\]\n\nStarting at 9:00 am, one hour takes us to 10:00 am; another 12 minutes gives **10:12 am**.",
-    "**Practice check — after you try:**\n\n\\[\n\\begin{array}{r|rrr}\n2 & 10 & 15 & 20 \\\\ 2 & 5 & 15 & 10 \\\\ 3 & 5 & 15 & 5 \\\\ 5 & 5 & 5 & 5 \\\\  & 1 & 1 & 1\n\\end{array}\n\\]\n\n\\[\n\\text{Waiting time}=\\boxed{60\\text{ minutes}}\n\\]\n\nOne hour after 10:15 am is **11:15 am**."
+    "**1 · Divide by primes common to all three.**\n\n\\[\n\\begin{array}{r|rrr}\n2 & 12 & 18 & 30 \\\\ 3 & 6 & 9 & 15 \\\\  & 2 & 3 & 5\n\\end{array}\n\\]\n\nThe left factors are 2 and 3; the bottom entries are 2, 3 and 5.\n\n\\[\n\\operatorname{HCF}(12,18,30)=2\\times3\n\\]\n\n\\[\n\\operatorname{HCF}(12,18,30)=\\boxed{6}\n\\]",
+    "**2 · Multiply the left factors and the bottom entries.**\n\nNo two of 2, 3 and 5 share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}(12,18,30)=2\\times3\\times2\\times3\\times5\n\\]\n\n\\[\n\\text{Waiting time}=\\boxed{180\\text{ minutes}}\n\\]",
+    "**3 · Convert to hours and minutes.**\n\n\\[\n180\\text{ minutes}=3\\text{ hours}\n\\]\n\nThree hours after 9:00 am is **12:00 noon**.",
+    "**4 · A check for three numbers.**\n\n- The left product is always the HCF.\n- Multiply all bottom entries only if **no two share a factor greater than 1**.\n- If bottom entries still share factors, find their LCM first, then multiply by the left product.\n\n**Practice check — after you try:**\n\n- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rrr}\n2 & 4 & 6 & 10 \\\\  & 2 & 3 & 5\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{2}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times2\\times3\\times5\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{60}\n\\]\n\nOne hour after 10:15 am is **11:15 am**."
    ],
    "practice": {
     "head": [
      "Question",
      "Answer"
     ],
-    "intro": "- **Your turn:** Three bells ring every **10, 15 and 20 minutes**.\n- They ring together at **10:15 am**.\n- Use a ladder to find when they next ring together.",
+    "intro": "- **Your turn:** Three bells ring every **4, 6 and 10 minutes**.\n- They ring together at **10:15 am**.\n- Use a common-factor ladder to find when they next ring together.",
     "rows": [
      [
       "\\text{Minutes to wait}"
