@@ -170,6 +170,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math — Squares, Cubes & Roots](topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots/content.md) | Squares, Cubes & Roots: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots/material.html) |
 | [Malta Year 8 Math — BIDMAS](topics/basic-math/malta-year-8-math-test-prep-bidmas/content.md) | BIDMAS: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-bidmas/material.html) |
 | [Malta Year 8 Math — BIDMAS Practice](topics/basic-math/malta-year-8-math-test-prep-bidmas-practice/content.md) | 12 questions: BIDMAS Practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-bidmas-practice/quiz.html) |
+| [Malta Year 8 Math — LCM & HCF Practice](topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm-practice/content.md) | 8 questions: LCM & HCF Practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm-practice/quiz.html) |
 
 ## Animations
 

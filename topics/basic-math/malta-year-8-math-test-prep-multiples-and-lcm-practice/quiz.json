@@ -1,0 +1,177 @@
+{
+ "slug": "malta-year-8-math-test-prep-multiples-and-lcm-practice",
+ "title": "Malta Year 8 Math — LCM & HCF Practice",
+ "course": "Malta Year 8 Math",
+ "root": "chapters",
+ "unit": "Test Prep",
+ "question": "8 questions: LCM & HCF Practice.",
+ "intro": "**8 questions:** 4 with two numbers (find HCF and LCM), then 4 with three numbers (find LCM).\n\n- Every starting number in the two-number questions is below 50.\n- In a common-factor ladder, divide only when a prime divides **every** entry.\n- The product on the left is the **HCF**.\n- For two numbers, multiply the left factors and the bottom entries to get the **LCM**.\n- For three numbers, check that no two bottom entries share a factor before multiplying them; otherwise find the LCM of the bottom row first.",
+ "questions": [
+  {
+   "group": "Two numbers · HCF and LCM",
+   "title": "HCF and LCM of 12 and 20",
+   "type": "mcq",
+   "prompt": "Use a common-factor ladder for **12 and 20**.\n\nChoose the row giving **both** the HCF and the LCM.",
+   "choice_header": [
+    "HCF",
+    "LCM"
+   ],
+   "choices": [
+    [
+     "60",
+     "4"
+    ],
+    [
+     "4",
+     "60"
+    ],
+    [
+     "4",
+     "240"
+    ],
+    [
+     "2",
+     "60"
+    ]
+   ],
+   "answer": "B",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rr}\n2 & 12 & 20 \\\\ 2 & 6 & 10 \\\\  & 3 & 5\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\\times2\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{4}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times2\\times3\\times5\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{60}\n\\]\n\n**Check:**\n\n\\[\n4\\times60=240\n\\]\n\n\\[\n12\\times20=240\n\\]\n\n- **Avoid the trap:** multiplying the two starting numbers counts their common factors twice.\n- The HCF and LCM columns also have different meanings."
+  },
+  {
+   "group": "Two numbers · HCF and LCM",
+   "title": "HCF and LCM of 18 and 30",
+   "type": "mcq",
+   "prompt": "Use a common-factor ladder for **18 and 30**.\n\nChoose the row giving **both** the HCF and the LCM.",
+   "choice_header": [
+    "HCF",
+    "LCM"
+   ],
+   "choices": [
+    [
+     "90",
+     "6"
+    ],
+    [
+     "6",
+     "540"
+    ],
+    [
+     "3",
+     "90"
+    ],
+    [
+     "6",
+     "90"
+    ]
+   ],
+   "answer": "D",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rr}\n2 & 18 & 30 \\\\ 3 & 9 & 15 \\\\  & 3 & 5\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\\times3\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{6}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times3\\times3\\times5\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{90}\n\\]\n\n**Check:**\n\n\\[\n6\\times90=540\n\\]\n\n\\[\n18\\times30=540\n\\]\n\n- **Avoid the trap:** multiplying the two starting numbers counts their common factors twice.\n- The HCF and LCM columns also have different meanings."
+  },
+  {
+   "group": "Two numbers · HCF and LCM",
+   "title": "HCF and LCM of 24 and 36",
+   "type": "mcq",
+   "prompt": "Use a common-factor ladder for **24 and 36**.\n\nChoose the row giving **both** the HCF and the LCM.",
+   "choice_header": [
+    "HCF",
+    "LCM"
+   ],
+   "choices": [
+    [
+     "12",
+     "72"
+    ],
+    [
+     "72",
+     "12"
+    ],
+    [
+     "12",
+     "864"
+    ],
+    [
+     "6",
+     "72"
+    ]
+   ],
+   "answer": "A",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rr}\n2 & 24 & 36 \\\\ 2 & 12 & 18 \\\\ 3 & 6 & 9 \\\\  & 2 & 3\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\\times2\\times3\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{12}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times2\\times3\\times2\\times3\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{72}\n\\]\n\n**Check:**\n\n\\[\n12\\times72=864\n\\]\n\n\\[\n24\\times36=864\n\\]\n\n- **Avoid the trap:** multiplying the two starting numbers counts their common factors twice.\n- The HCF and LCM columns also have different meanings."
+  },
+  {
+   "group": "Two numbers · HCF and LCM",
+   "title": "HCF and LCM of 28 and 42",
+   "type": "mcq",
+   "prompt": "Use a common-factor ladder for **28 and 42**.\n\nChoose the row giving **both** the HCF and the LCM.",
+   "choice_header": [
+    "HCF",
+    "LCM"
+   ],
+   "choices": [
+    [
+     "84",
+     "14"
+    ],
+    [
+     "14",
+     "1176"
+    ],
+    [
+     "14",
+     "84"
+    ],
+    [
+     "7",
+     "84"
+    ]
+   ],
+   "answer": "C",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rr}\n2 & 28 & 42 \\\\ 7 & 14 & 21 \\\\  & 2 & 3\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\\times7\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{14}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times7\\times2\\times3\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{84}\n\\]\n\n**Check:**\n\n\\[\n14\\times84=1176\n\\]\n\n\\[\n28\\times42=1176\n\\]\n\n- **Avoid the trap:** multiplying the two starting numbers counts their common factors twice.\n- The HCF and LCM columns also have different meanings."
+  },
+  {
+   "group": "Three numbers · LCM",
+   "title": "LCM of 9, 15, 21",
+   "type": "numeric",
+   "prompt": "Use a common-factor ladder to find the LCM of **9, 15, 21**.\n\nShow your ladder on paper, then enter the LCM.",
+   "answer": 315,
+   "tolerance": 0,
+   "answer_display": "\\(315\\)",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rrr}\n3 & 9 & 15 & 21 \\\\  & 3 & 5 & 7\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=3\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{3}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=3\\times3\\times5\\times7\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{315}\n\\]\n\n- **Avoid the trap:** the left-hand product is the HCF.\n- The LCM also needs the bottom entries.\n- Here no two bottom entries share a factor greater than 1."
+  },
+  {
+   "group": "Three numbers · LCM",
+   "title": "LCM of 8, 12, 28",
+   "type": "numeric",
+   "prompt": "Use a common-factor ladder to find the LCM of **8, 12, 28**.\n\nShow your ladder on paper, then enter the LCM.",
+   "answer": 168,
+   "tolerance": 0,
+   "answer_display": "\\(168\\)",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rrr}\n2 & 8 & 12 & 28 \\\\ 2 & 4 & 6 & 14 \\\\  & 2 & 3 & 7\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\\times2\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{4}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times2\\times2\\times3\\times7\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{168}\n\\]\n\n- **Avoid the trap:** the left-hand product is the HCF.\n- The LCM also needs the bottom entries.\n- Here no two bottom entries share a factor greater than 1."
+  },
+  {
+   "group": "Three numbers · LCM",
+   "title": "LCM of 12, 18, 42",
+   "type": "numeric",
+   "prompt": "Use a common-factor ladder to find the LCM of **12, 18, 42**.\n\nShow your ladder on paper, then enter the LCM.",
+   "answer": 252,
+   "tolerance": 0,
+   "answer_display": "\\(252\\)",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rrr}\n2 & 12 & 18 & 42 \\\\ 3 & 6 & 9 & 21 \\\\  & 2 & 3 & 7\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=2\\times3\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{6}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=2\\times3\\times2\\times3\\times7\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{252}\n\\]\n\n- **Avoid the trap:** the left-hand product is the HCF.\n- The LCM also needs the bottom entries.\n- Here no two bottom entries share a factor greater than 1."
+  },
+  {
+   "group": "Three numbers · LCM",
+   "title": "LCM of 14, 35, 49",
+   "type": "numeric",
+   "prompt": "Use a common-factor ladder to find the LCM of **14, 35, 49**.\n\nShow your ladder on paper, then enter the LCM.",
+   "answer": 490,
+   "tolerance": 0,
+   "answer_display": "\\(490\\)",
+   "solution": "- Divide only by a prime that divides **every** number in the row.\n- Stop when no prime divides them all.\n\n\\[\n\\begin{array}{r|rrr}\n7 & 14 & 35 & 49 \\\\  & 2 & 5 & 7\n\\end{array}\n\\]\n\n**HCF: multiply the common factors on the left.**\n\n\\[\n\\operatorname{HCF}=7\n\\]\n\n\\[\n\\operatorname{HCF}=\\boxed{7}\n\\]\n\n**LCM: left factors × bottom entries.** No two bottom entries share a factor greater than 1.\n\n\\[\n\\operatorname{LCM}=7\\times2\\times5\\times7\n\\]\n\n\\[\n\\operatorname{LCM}=\\boxed{490}\n\\]\n\n- **Avoid the trap:** the left-hand product is the HCF.\n- The LCM also needs the bottom entries.\n- Here no two bottom entries share a factor greater than 1."
+  }
+ ],
+ "takeaway": "- HCF: left factors only.\n- LCM: left product times the LCM of the bottom row; for coprime bottom entries, multiply them.",
+ "send_to": "John",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-test-prep-multiples-and-lcm/material.html"
+ ]
+}
