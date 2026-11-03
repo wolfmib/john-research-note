@@ -1,0 +1,137 @@
+{
+ "slug": "malta-year-8-math-test-prep-bidmas-practice",
+ "title": "Malta Year 8 Math — BIDMAS Practice",
+ "course": "Malta Year 8 Math",
+ "root": "chapters",
+ "unit": "Test Prep",
+ "question": "12 questions: BIDMAS Practice.",
+ "intro": "**12 questions: 4 Easy, 4 Middle, 4 Difficult.**\n\n- Work inside brackets first, then calculate powers.\n- Multiplication/division share priority: work left to right.\n- Addition/subtraction share priority: work left to right.\n- Show your working on paper before entering an answer.",
+ "questions": [
+  {
+   "group": "Easy",
+   "title": "Multiplication before addition",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n8+3\\times4\n\\]",
+   "answer": 20,
+   "tolerance": 0,
+   "answer_display": "\\(20\\)",
+   "solution": "\\[\n8+3\\times4\n\\]\n\n\\[\n\\begin{aligned}\n&=8+12 \\\\\n&=\\boxed{20}\n\\end{aligned}\n\\]\n\nMultiply before adding."
+  },
+  {
+   "group": "Easy",
+   "title": "Division before subtraction",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n30-18\\div3\n\\]",
+   "answer": 24,
+   "tolerance": 0,
+   "answer_display": "\\(24\\)",
+   "solution": "\\[\n30-18\\div3\n\\]\n\n\\[\n\\begin{aligned}\n&=30-6 \\\\\n&=\\boxed{24}\n\\end{aligned}\n\\]\n\nDivide before subtracting."
+  },
+  {
+   "group": "Easy",
+   "title": "Brackets first",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n(7+5)\\times2\n\\]",
+   "answer": 24,
+   "tolerance": 0,
+   "answer_display": "\\(24\\)",
+   "solution": "\\[\n(7+5)\\times2\n\\]\n\n\\[\n\\begin{aligned}\n&=12\\times2 \\\\\n&=\\boxed{24}\n\\end{aligned}\n\\]\n\nComplete the brackets before multiplying."
+  },
+  {
+   "group": "Easy",
+   "title": "Division and multiplication left to right",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n24\\div6\\times2\n\\]",
+   "answer": 8,
+   "tolerance": 0,
+   "answer_display": "\\(8\\)",
+   "solution": "\\[\n24\\div6\\times2\n\\]\n\n\\[\n\\begin{aligned}\n&=4\\times2 \\\\\n&=\\boxed{8}\n\\end{aligned}\n\\]\n\n- Division and multiplication share priority: work left to right.\n- Do not multiply 6 by 2 first."
+  },
+  {
+   "group": "Middle",
+   "title": "Power, division, addition",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n5^2+18\\div3\n\\]",
+   "answer": 31,
+   "tolerance": 0,
+   "answer_display": "\\(31\\)",
+   "solution": "\\[\n5^2+18\\div3\n\\]\n\n\\[\n\\begin{aligned}\n&=25+18\\div3 \\\\\n&=25+6 \\\\\n&=\\boxed{31}\n\\end{aligned}\n\\]\n\nCalculate the power first, then divide, then add."
+  },
+  {
+   "group": "Middle",
+   "title": "A bracket and a power",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n48\\div(2+4)+3^2\n\\]",
+   "answer": 17,
+   "tolerance": 0,
+   "answer_display": "\\(17\\)",
+   "solution": "\\[\n48\\div(2+4)+3^2\n\\]\n\n\\[\n\\begin{aligned}\n&=48\\div6+3^2 \\\\\n&=48\\div6+9 \\\\\n&=8+9 \\\\\n&=\\boxed{17}\n\\end{aligned}\n\\]\n\nThe entire bracket is the divisor; simplify it before dividing."
+  },
+  {
+   "group": "Middle",
+   "title": "Subtract a cube",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n7\\times6-2^3+4\n\\]",
+   "answer": 38,
+   "tolerance": 0,
+   "answer_display": "\\(38\\)",
+   "solution": "\\[\n7\\times6-2^3+4\n\\]\n\n\\[\n\\begin{aligned}\n&=7\\times6-8+4 \\\\\n&=42-8+4 \\\\\n&=34+4 \\\\\n&=\\boxed{38}\n\\end{aligned}\n\\]\n\nCube first, multiply next, then subtract and add from left to right."
+  },
+  {
+   "group": "Middle",
+   "title": "Equal priority with a final subtraction",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n36\\div3\\times2-5\n\\]",
+   "answer": 19,
+   "tolerance": 0,
+   "answer_display": "\\(19\\)",
+   "solution": "\\[\n36\\div3\\times2-5\n\\]\n\n\\[\n\\begin{aligned}\n&=12\\times2-5 \\\\\n&=24-5 \\\\\n&=\\boxed{19}\n\\end{aligned}\n\\]\n\nDivide then multiply from left to right, before the subtraction."
+  },
+  {
+   "group": "Difficult",
+   "title": "Nested divisor and powers",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n120\\div[3\\times(2+3)]+4^2-2^3\n\\]",
+   "answer": 16,
+   "tolerance": 0,
+   "answer_display": "\\(16\\)",
+   "solution": "\\[\n120\\div[3\\times(2+3)]+4^2-2^3\n\\]\n\n\\[\n\\begin{aligned}\n&=120\\div[3\\times5]+4^2-2^3 \\\\\n&=120\\div15+4^2-2^3 \\\\\n&=120\\div15+16-8 \\\\\n&=8+16-8 \\\\\n&=24-8 \\\\\n&=\\boxed{16}\n\\end{aligned}\n\\]\n\n- Finish the whole divisor bracket before dividing.\n- Powers come before the remaining division."
+  },
+  {
+   "group": "Difficult",
+   "title": "A squared bracket",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n(18-6)^2\\div[3\\times(2+2)]+5\n\\]",
+   "answer": 17,
+   "tolerance": 0,
+   "answer_display": "\\(17\\)",
+   "solution": "\\[\n(18-6)^2\\div[3\\times(2+2)]+5\n\\]\n\n\\[\n\\begin{aligned}\n&=12^2\\div[3\\times4]+5 \\\\\n&=12^2\\div12+5 \\\\\n&=144\\div12+5 \\\\\n&=12+5 \\\\\n&=\\boxed{17}\n\\end{aligned}\n\\]\n\nSquare the completed bracket, not only one of the original terms."
+  },
+  {
+   "group": "Difficult",
+   "title": "Nested brackets, cube and square",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n84\\div[2\\times(3+4)]+(5-2)^3-4^2\n\\]",
+   "answer": 17,
+   "tolerance": 0,
+   "answer_display": "\\(17\\)",
+   "solution": "\\[\n84\\div[2\\times(3+4)]+(5-2)^3-4^2\n\\]\n\n\\[\n\\begin{aligned}\n&=84\\div[2\\times7]+3^3-4^2 \\\\\n&=84\\div14+3^3-4^2 \\\\\n&=84\\div14+27-16 \\\\\n&=6+27-16 \\\\\n&=33-16 \\\\\n&=\\boxed{17}\n\\end{aligned}\n\\]\n\nWork from the innermost brackets outwards, then powers, then division, then addition/subtraction."
+  },
+  {
+   "group": "Difficult",
+   "title": "A negative final result",
+   "type": "numeric",
+   "prompt": "Calculate using BIDMAS.\n\n\\[\n200\\div[5\\times(3+1)]-(4^2-3^2)\\times2\n\\]",
+   "answer": -4,
+   "tolerance": 0,
+   "answer_display": "\\(-4\\)",
+   "solution": "\\[\n200\\div[5\\times(3+1)]-(4^2-3^2)\\times2\n\\]\n\n\\[\n\\begin{aligned}\n&=200\\div[5\\times4]-(4^2-3^2)\\times2 \\\\\n&=200\\div20-(16-9)\\times2 \\\\\n&=200\\div20-7\\times2 \\\\\n&=10-14 \\\\\n&=\\boxed{-4}\n\\end{aligned}\n\\]\n\n- Finish the subtraction inside the bracket, then multiply its value by 2.\n- A correct final answer can be negative."
+  }
+ ],
+ "takeaway": "Brackets, powers, multiplication/division left to right, then addition/subtraction left to right.",
+ "send_to": "John",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-test-prep-bidmas/material.html"
+ ]
+}
