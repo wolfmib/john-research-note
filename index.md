@@ -167,6 +167,7 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — Vectors Part 1](topics/basic-math/math-material-vectors-part-1/content.md) | Turn two points into a vector, add arrows head to tail, and split the same movement in different ways. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-vectors-part-1/material.html) |
 | [Malta Year 8 Math — Multiples & LCM](topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm/content.md) | Multiples & LCM: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm/material.html) |
 | [Malta Year 8 Math — Prime Factors](topics/basic-math/malta-year-8-math-test-prep-prime-factors/content.md) | Prime Factors: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-prime-factors/material.html) |
+| [Malta Year 8 Math — Squares, Cubes & Roots](topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots/content.md) | Squares, Cubes & Roots: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots/material.html) |
 
 ## Animations
 
