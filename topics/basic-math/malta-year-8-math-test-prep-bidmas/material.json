@@ -1,0 +1,68 @@
+{
+ "slug": "malta-year-8-math-test-prep-bidmas",
+ "title": "Malta Year 8 Math — BIDMAS",
+ "course": "Malta Year 8 Math",
+ "root": "chapters",
+ "unit": "Test Prep",
+ "question": "BIDMAS: two worked examples with fresh practice.",
+ "intro": "- **B**rackets, then **I**ndices (powers).\n- **D**ivision and **M**ultiplication share one priority: work left to right.\n- **A**ddition and **S**ubtraction share one priority: work left to right.\n- Show one new stage of working on each line.",
+ "questions": [
+  {
+   "title": "Style 1 · Powers and mixed operations",
+   "prompt": "**How it works**\n\n- With no brackets, calculate powers first.\n- Next multiply or divide, working left to right.\n- Finally add or subtract, working left to right.\n\n**Worked example:** calculate step by step.\n\n\\[\n48\\div6+3^2\\times4-5\n\\]\n\nWhich operation comes first?",
+   "steps": [
+    "**1 · The power comes first.**\n\n\\[\n3^2=9\n\\]\n\nThe expression becomes:\n\n\\[\n48\\div6+9\\times4-5\n\\]",
+    "**2 · Divide and multiply before adding or subtracting.**\n\n\\[\n48\\div6=8\n\\]\n\n\\[\n9\\times4=36\n\\]\n\nThe expression becomes:\n\n\\[\n8+36-5\n\\]",
+    "**3 · Add and subtract from left to right.**\n\n\\[\n\\begin{aligned}\n8+36-5&=44-5 \\\\\n&=\\boxed{39}\n\\end{aligned}\n\\]",
+    "**Practice check — after you try:**\n\n\\[\n\\begin{aligned}\n56\\div7+4^2\\times3-6&=56\\div7+16\\times3-6 \\\\\n&=8+48-6 \\\\\n&=56-6 \\\\\n&=\\boxed{50}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "intro": "- **Your turn:** Calculate on paper using BIDMAS, then enter your answer.\n- State which operation comes first.\n\n\\[\n56\\div7+4^2\\times3-6\n\\]",
+    "rows": [
+     [
+      "\\text{Final answer}"
+     ]
+    ],
+    "answers": [
+     50
+    ],
+    "tolerance": 0
+   }
+  },
+  {
+   "title": "Style 2 · Nested brackets",
+   "prompt": "**How it works**\n\n- Work from the innermost brackets outwards.\n- Simplify powers before the remaining multiplication or division.\n- Finish with addition and subtraction from left to right.\n\n**Worked example:** calculate and explain why you cannot start by working everything from left to right.\n\n\\[\n72\\div[3\\times(2+4)]+5^2-2^3\n\\]",
+   "steps": [
+    "**1 · Innermost brackets first.**\n\n\\[\n2+4=6\n\\]\n\n\\[\n72\\div[3\\times6]+5^2-2^3\n\\]",
+    "**2 · Finish the outer bracket.**\n\n\\[\n3\\times6=18\n\\]\n\n\\[\n72\\div18+5^2-2^3\n\\]",
+    "**3 · Simplify both powers.**\n\n\\[\n5^2=25\n\\]\n\n\\[\n2^3=8\n\\]\n\n\\[\n72\\div18+25-8\n\\]",
+    "**4 · Divide, then add and subtract.**\n\n\\[\n\\begin{aligned}\n72\\div18+25-8&=4+25-8 \\\\\n&=29-8 \\\\\n&=\\boxed{21}\n\\end{aligned}\n\\]",
+    "**5 · Why not strictly left to right?**\n\n- The whole bracket is the divisor. Dividing 72 by 3 first would ignore it.\n- Left to right applies **within a shared priority**, after brackets and powers.\n\n**Practice check — after you try:**\n\n\\[\n\\begin{aligned}\n96\\div[4\\times(2+4)]+6^2-3^3&=96\\div24+36-27 \\\\\n&=4+36-27 \\\\\n&=40-27 \\\\\n&=\\boxed{13}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "intro": "- **Your turn:** Calculate on paper.\n- Explain which brackets you work out first.\n\n\\[\n96\\div[4\\times(2+4)]+6^2-3^3\n\\]",
+    "rows": [
+     [
+      "\\text{Final answer}"
+     ]
+    ],
+    "answers": [
+     13
+    ],
+    "tolerance": 0
+   }
+  }
+ ],
+ "link": [
+  "Multiples & LCM ›",
+  "../malta-year-8-math-test-prep-multiples-and-lcm/material.html"
+ ]
+}

@@ -168,6 +168,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math — Multiples & LCM](topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm/content.md) | Multiples & LCM: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm/material.html) |
 | [Malta Year 8 Math — Prime Factors](topics/basic-math/malta-year-8-math-test-prep-prime-factors/content.md) | Prime Factors: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-prime-factors/material.html) |
 | [Malta Year 8 Math — Squares, Cubes & Roots](topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots/content.md) | Squares, Cubes & Roots: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots/material.html) |
+| [Malta Year 8 Math — BIDMAS](topics/basic-math/malta-year-8-math-test-prep-bidmas/content.md) | BIDMAS: two worked examples with fresh practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-bidmas/material.html) |
 
 ## Animations
 
