@@ -1,0 +1,77 @@
+{
+ "slug": "malta-year-8-math-test-prep-squares-cubes-and-roots-practice",
+ "title": "Malta Year 8 Math — Squares, Cubes & Roots Practice",
+ "course": "Malta Year 8 Math",
+ "root": "chapters",
+ "unit": "Test Prep",
+ "question": "6 questions: Squares, Cubes & Roots Practice.",
+ "intro": "**6 questions:** 3 on squares and square roots, then 3 on cubes and cube roots.\n\nWork without a calculator and show your calculations on paper.",
+ "questions": [
+  {
+   "group": "Squares and square roots",
+   "title": "Square a number",
+   "type": "numeric",
+   "prompt": "Calculate without a calculator.\n\n\\[\n14^2\n\\]",
+   "answer": 196,
+   "tolerance": 0,
+   "answer_display": "\\(196\\)",
+   "solution": "\\[\n\\begin{aligned}\n14^2&=14\\times14 \\\\\n&=\\boxed{196}\n\\end{aligned}\n\\]\n\nA square is two copies multiplied together; it is not multiplication by 2."
+  },
+  {
+   "group": "Squares and square roots",
+   "title": "Find a square root",
+   "type": "numeric",
+   "prompt": "Calculate without a calculator.\n\n\\[\n\\sqrt{324}\n\\]",
+   "answer": 18,
+   "tolerance": 0,
+   "answer_display": "\\(18\\)",
+   "solution": "\\[\n18\\times18=324\n\\]\n\n\\[\n\\sqrt{324}=\\boxed{18}\n\\]\n\nThe square-root symbol asks for the non-negative root."
+  },
+  {
+   "group": "Squares and square roots",
+   "title": "A square plus a root",
+   "type": "numeric",
+   "prompt": "Calculate without a calculator.\n\n\\[\n9^2+\\sqrt{121}\n\\]",
+   "answer": 92,
+   "tolerance": 0,
+   "answer_display": "\\(92\\)",
+   "solution": "\\[\n\\begin{aligned}\n9^2+\\sqrt{121}&=81+11 \\\\\n&=\\boxed{92}\n\\end{aligned}\n\\]\n\nCalculate the square and root before adding."
+  },
+  {
+   "group": "Cubes and cube roots",
+   "title": "Cube a number",
+   "type": "numeric",
+   "prompt": "Calculate without a calculator.\n\n\\[\n5^3\n\\]",
+   "answer": 125,
+   "tolerance": 0,
+   "answer_display": "\\(125\\)",
+   "solution": "\\[\n\\begin{aligned}\n5^3&=5\\times5\\times5 \\\\\n&=\\boxed{125}\n\\end{aligned}\n\\]\n\nCubing uses three copies of the number; it is not multiplication by 3."
+  },
+  {
+   "group": "Cubes and cube roots",
+   "title": "Find a cube root",
+   "type": "numeric",
+   "prompt": "Calculate without a calculator.\n\n\\[\n\\sqrt[3]{729}\n\\]",
+   "answer": 9,
+   "tolerance": 0,
+   "answer_display": "\\(9\\)",
+   "solution": "\\[\n9\\times9\\times9=729\n\\]\n\n\\[\n\\sqrt[3]{729}=\\boxed{9}\n\\]\n\nA cube root reverses cubing; a square root is a different operation."
+  },
+  {
+   "group": "Cubes and cube roots",
+   "title": "Unit cubes along an edge",
+   "type": "numeric",
+   "prompt": "A large cube is built from **1000 identical unit cubes**, with no gaps.\n\nHow many unit cubes are along **each edge**?",
+   "answer": 10,
+   "tolerance": 0,
+   "answer_display": "\\(10\\)",
+   "solution": "The edge count is multiplied three times to give the total.\n\n\\[\n10\\times10\\times10=1000\n\\]\n\n\\[\n\\sqrt[3]{1000}=\\boxed{10}\n\\]\n\n- There are **10 unit cubes along each edge**.\n- Dividing the total by 3 would not recover an edge length."
+  }
+ ],
+ "takeaway": "- Square roots undo squares; cube roots undo cubes.\n- Work out each power or root before adding.",
+ "send_to": "John",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-test-prep-squares-cubes-and-roots/material.html"
+ ]
+}
