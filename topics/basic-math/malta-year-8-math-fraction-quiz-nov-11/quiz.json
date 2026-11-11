@@ -1,0 +1,116 @@
+{
+ "slug": "malta-year-8-math-fraction-quiz-nov-11",
+ "title": "Malta Year 8 Math — Fraction Quiz (Nov-11)",
+ "course": "Malta Year 8 Math",
+ "unit": "Homework Recap · Nov-11",
+ "root": "chapters",
+ "question": "10 questions: multiply first, share fractions, four terms and fractional equations.",
+ "intro": "- Homework recap · 11 November 2026 · about 20 minutes.\n- Two new questions for each of Homework 1 Q4, Q5, Q6, Q11 and Q12.\n- Write fraction answers in simplest form.\n- For equations, enter the value of \\(x\\).",
+ "questions": [
+  {
+   "group": "Homework Q4 · Multiply first",
+   "title": "Multiply, then subtract",
+   "prompt": "Work out \\(\\dfrac{5}{6}-\\dfrac{2}{3}\\times\\dfrac{1}{4}\\).",
+   "solution": "Multiply before subtracting.\n\n\\[\\frac{2}{3}\\times\\frac{1}{4}=\\frac{1}{6}\\]\n\n\\[\\frac{5}{6}-\\frac{1}{6}=\\frac{4}{6}\\]\n\n\\[\\frac{4}{6}=\\boxed{\\frac{2}{3}}\\]\n\nSubtracting first would change the order of operations.",
+   "type": "fraction",
+   "answer": [
+    2,
+    3
+   ]
+  },
+  {
+   "group": "Homework Q4 · Multiply first",
+   "title": "Different denominators",
+   "prompt": "Work out \\(\\dfrac{7}{8}-\\dfrac{3}{4}\\times\\dfrac{2}{5}\\).",
+   "solution": "Multiply first, then use a common denominator.\n\n\\[\\frac{3}{4}\\times\\frac{2}{5}=\\frac{3}{10}\\]\n\n\\[\\frac{7}{8}-\\frac{3}{10}=\\frac{35}{40}-\\frac{12}{40}\\]\n\n\\[\\frac{35}{40}-\\frac{12}{40}=\\boxed{\\frac{23}{40}}\\]\n\nSubtracting the denominators does not give a common unit.",
+   "type": "fraction",
+   "answer": [
+    23,
+    40
+   ]
+  },
+  {
+   "group": "Homework Q5 · Share equally",
+   "title": "Juice in four glasses",
+   "prompt": "\\(\\dfrac{2}{3}\\) of a litre of juice is shared equally into 4 glasses.\n\nHow many litres are in each glass?",
+   "solution": "Divide the total by the number of glasses.\n\n\\[\\frac{2}{3}\\div4=\\frac{2}{3}\\times\\frac{1}{4}\\]\n\n\\[\\frac{2}{3}\\times\\frac{1}{4}=\\frac{2}{12}\\]\n\n\\[\\frac{2}{12}=\\boxed{\\frac{1}{6}}\\text{ litre}\\]\n\nMultiplying by 4 would make the quantity larger instead of sharing it.",
+   "type": "fraction",
+   "answer": [
+    1,
+    6
+   ]
+  },
+  {
+   "group": "Homework Q5 · Share equally",
+   "title": "Lemonade in four cups",
+   "prompt": "\\(\\dfrac{5}{6}\\) of a litre of lemonade is shared equally into 4 cups.\n\nHow many litres are in each cup?",
+   "solution": "Dividing by 4 means multiplying by its reciprocal.\n\n\\[\\frac{5}{6}\\div4=\\frac{5}{6}\\times\\frac{1}{4}\\]\n\n\\[\\frac{5}{6}\\times\\frac{1}{4}=\\boxed{\\frac{5}{24}}\\text{ litre}\\]\n\nKeep the numerator 5; sharing into four cups multiplies the denominator by 4.",
+   "type": "fraction",
+   "answer": [
+    5,
+    24
+   ]
+  },
+  {
+   "group": "Homework Q6 · Four terms",
+   "title": "Opposite terms cancel",
+   "prompt": "Work out \\(\\dfrac{7}{10}-\\dfrac{3}{5}\\times\\dfrac{5}{12}+\\dfrac{1}{4}\\).",
+   "solution": "Multiply first.\n\n\\[\\frac{3}{5}\\times\\frac{5}{12}=\\frac{1}{4}\\]\n\n\\[\\frac{7}{10}-\\frac{1}{4}+\\frac{1}{4}=\\boxed{\\frac{7}{10}}\\]\n\nThe subtraction and addition of the same quarter cancel; the multiplication must be done first.",
+   "type": "fraction",
+   "answer": [
+    7,
+    10
+   ]
+  },
+  {
+   "group": "Homework Q6 · Four terms",
+   "title": "Combine all four terms",
+   "prompt": "Work out \\(\\dfrac{7}{8}-\\dfrac{3}{4}\\times\\dfrac{2}{9}+\\dfrac{1}{12}\\).",
+   "solution": "Multiply first, then write the remaining fractions in twenty-fourths.\n\n\\[\\frac{3}{4}\\times\\frac{2}{9}=\\frac{1}{6}\\]\n\n\\[\\frac{7}{8}-\\frac{1}{6}+\\frac{1}{12}=\\frac{21}{24}-\\frac{4}{24}+\\frac{2}{24}\\]\n\n\\[\\frac{21}{24}-\\frac{4}{24}+\\frac{2}{24}=\\boxed{\\frac{19}{24}}\\]\n\nKeep the minus sign with the product; only the last term is added.",
+   "type": "fraction",
+   "answer": [
+    19,
+    24
+   ]
+  },
+  {
+   "group": "Homework Q11 · Same denominator",
+   "title": "Collect the x terms",
+   "prompt": "Solve \\(\\dfrac{4x}{7}-2=\\dfrac{x}{7}+4\\).",
+   "solution": "Subtract \\(x/7\\) from both sides and add 2 to both sides.\n\n\\[\\frac{4x}{7}-\\frac{x}{7}=4+2\\]\n\n\\[\\frac{3x}{7}=6\\]\n\n\\[3x=42\\]\n\n\\[x=\\boxed{14}\\]\n\nDividing by 7 again would make the fraction smaller; multiply both sides by 7 to clear it.",
+   "type": "numeric",
+   "answer": 14
+  },
+  {
+   "group": "Homework Q11 · Same denominator",
+   "title": "Clear the denominator",
+   "prompt": "Solve \\(\\dfrac{5x}{6}-1=\\dfrac{x}{6}+5\\).",
+   "solution": "Subtract \\(x/6\\) from both sides and add 1 to both sides.\n\n\\[\\frac{5x}{6}-\\frac{x}{6}=5+1\\]\n\n\\[\\frac{4x}{6}=6\\]\n\n\\[4x=36\\]\n\n\\[x=\\boxed{9}\\]\n\nThe minus 1 is undone by adding 1 to both sides.",
+   "type": "numeric",
+   "answer": 9
+  },
+  {
+   "group": "Homework Q12 · Fraction solution",
+   "title": "Simplify the coefficient",
+   "prompt": "Solve \\(\\dfrac{3x}{6}+\\dfrac{1}{3}=3-\\dfrac{x}{3}\\).\n\nWrite your answer in simplest form.",
+   "solution": "Simplify the first fraction.\n\n\\[\\frac{x}{2}+\\frac{1}{3}=3-\\frac{x}{3}\\]\n\nAdd \\(x/3\\) and subtract \\(1/3\\) on both sides.\n\n\\[\\frac{x}{2}+\\frac{x}{3}=3-\\frac{1}{3}\\]\n\n\\[\\frac{5x}{6}=\\frac{8}{3}\\]\n\n\\[5x=16\\]\n\n\\[x=\\boxed{\\frac{16}{5}}\\]\n\nTo undo multiplication by \\(5/6\\), multiply by \\(6/5\\).",
+   "type": "fraction",
+   "answer": [
+    16,
+    5
+   ]
+  },
+  {
+   "group": "Homework Q12 · Fraction solution",
+   "title": "Collect fractional terms",
+   "prompt": "Solve \\(\\dfrac{7x}{14}+\\dfrac{1}{6}=2-\\dfrac{x}{3}\\).\n\nWrite your answer in simplest form.",
+   "solution": "Simplify the first fraction.\n\n\\[\\frac{x}{2}+\\frac{1}{6}=2-\\frac{x}{3}\\]\n\nAdd \\(x/3\\) and subtract \\(1/6\\) on both sides.\n\n\\[\\frac{x}{2}+\\frac{x}{3}=2-\\frac{1}{6}\\]\n\n\\[\\frac{5x}{6}=\\frac{11}{6}\\]\n\n\\[5x=11\\]\n\n\\[x=\\boxed{\\frac{11}{5}}\\]\n\nKeep the coefficient numerator 5 when dividing to find \\(x\\); the denominator 6 has already been cleared.",
+   "type": "fraction",
+   "answer": [
+    11,
+    5
+   ]
+  }
+ ],
+ "send_to": "John"
+}

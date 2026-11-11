@@ -173,6 +173,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math — LCM & HCF Practice](topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm-practice/content.md) | 8 questions: LCM & HCF Practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-multiples-and-lcm-practice/quiz.html) |
 | [Malta Year 8 Math — Prime Factors Practice](topics/basic-math/malta-year-8-math-test-prep-prime-factors-practice/content.md) | 6 questions: Prime Factors Practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-prime-factors-practice/quiz.html) |
 | [Malta Year 8 Math — Squares, Cubes & Roots Practice](topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots-practice/content.md) | 6 questions: Squares, Cubes & Roots Practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots-practice/quiz.html) |
+| [Malta Year 8 Math — Fraction Quiz (Nov-11)](topics/basic-math/malta-year-8-math-fraction-quiz-nov-11/content.md) | 10 questions: multiply first, share fractions, four terms and fractional equations. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-fraction-quiz-nov-11/quiz.html) |
 
 ## Animations
 
