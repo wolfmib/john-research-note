@@ -1,0 +1,502 @@
+{
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 7",
+ "root": "chapters",
+ "send_to": "John",
+ "slug": "malta-year-8-math-chapter-7-ratio-practice",
+ "title": "Malta Year 8 Math Chapter 7 — Ratio Practice",
+ "question": "48 fresh questions: two for each of the 24 worked Ratio examples.",
+ "intro": "- Two fresh questions for every worked example in the Ratio Material.\n- Groups follow cards 1–6 and examples a–d.\n- For a numerical question, enter only the requested value in the stated unit.\n- Use simplest form for fractions and ratios.",
+ "questions": [
+  {
+   "prompt": "4 notebooks cost €12.\n\nHow much do 7 notebooks cost?",
+   "solution": "\\[\\text{Cost of one notebook}=12\\div 4\\]\n\n\\[\\text{One unit}=3\\]\n\n\\[3\\times 7=21\\]\n\n\\[\\boxed{21}\\text{ euros}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "numeric",
+   "answer": 21,
+   "tolerance": 1e-06,
+   "group": "Card 1 · Example a · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · a1"
+  },
+  {
+   "prompt": "5 notebooks cost €15.\n\nHow much do 8 notebooks cost?",
+   "solution": "\\[\\text{Cost of one notebook}=15\\div 5\\]\n\n\\[\\text{One unit}=3\\]\n\n\\[3\\times 8=24\\]\n\n\\[\\boxed{24}\\text{ euros}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "numeric",
+   "answer": 24,
+   "tolerance": 1e-06,
+   "group": "Card 1 · Example a · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · a2"
+  },
+  {
+   "prompt": "A recipe for 3 people uses 240 g of flour.\n\nHow many grams of flour are needed for 5 people?",
+   "solution": "\\[\\text{Flour for one person}=240\\div 3\\]\n\n\\[\\text{One unit}=80\\]\n\n\\[80\\times 5=400\\]\n\n\\[\\boxed{400}\\text{ g}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "numeric",
+   "answer": 400,
+   "tolerance": 1e-06,
+   "group": "Card 1 · Example b · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · b1"
+  },
+  {
+   "prompt": "A recipe for 6 people uses 450 g of flour.\n\nHow many grams of flour are needed for 4 people?",
+   "solution": "\\[\\text{Flour for one person}=450\\div 6\\]\n\n\\[\\text{One unit}=75\\]\n\n\\[75\\times 4=300\\]\n\n\\[\\boxed{300}\\text{ g}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "numeric",
+   "answer": 300,
+   "tolerance": 1e-06,
+   "group": "Card 1 · Example b · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · b2"
+  },
+  {
+   "prompt": "4 kg of apples costs €10.\n\nWhat is the cost of 6 kg at the same price per kg?",
+   "solution": "\\[\\text{Cost of one kilogram}=10\\div 4\\]\n\n\\[\\text{One unit}=\\frac{5}{2}\\]\n\n\\[\\frac{5}{2}\\times 6=15\\]\n\n\\[\\boxed{15}\\text{ euros}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "numeric",
+   "answer": 15,
+   "tolerance": 1e-06,
+   "group": "Card 1 · Example c · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · c1"
+  },
+  {
+   "prompt": "5 kg of apples costs €15.\n\nWhat is the cost of 3 kg at the same price per kg?",
+   "solution": "\\[\\text{Cost of one kilogram}=15\\div 5\\]\n\n\\[\\text{One unit}=3\\]\n\n\\[3\\times 3=9\\]\n\n\\[\\boxed{9}\\text{ euros}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "numeric",
+   "answer": 9,
+   "tolerance": 1e-06,
+   "group": "Card 1 · Example c · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · c2"
+  },
+  {
+   "prompt": "4 identical full bottles hold 3 litres altogether.\n\nHow many litres do 6 full bottles hold?",
+   "solution": "\\[\\text{Capacity of one bottle}=3\\div 4\\]\n\n\\[\\text{One unit}=\\frac{3}{4}\\]\n\n\\[\\frac{3}{4}\\times 6=\\frac{9}{2}\\]\n\n\\[\\boxed{\\frac{9}{2}}\\text{ litres}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "fraction",
+   "answer": [
+    9,
+    2
+   ],
+   "group": "Card 1 · Example d · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · d1"
+  },
+  {
+   "prompt": "5 identical full bottles hold 2.5 litres altogether.\n\nHow many litres do 7 full bottles hold?",
+   "solution": "\\[\\text{Capacity of one bottle}=\\frac{5}{2}\\div 5\\]\n\n\\[\\text{One unit}=\\frac{1}{2}\\]\n\n\\[\\frac{1}{2}\\times 7=\\frac{7}{2}\\]\n\n\\[\\boxed{\\frac{7}{2}}\\text{ litres}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+   "type": "fraction",
+   "answer": [
+    7,
+    2
+   ],
+   "group": "Card 1 · Example d · Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling · d2"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(80\\) cm : \\(2\\) m in simplest form.",
+   "choices": [
+    "\\(5 : 2\\)",
+    "\\(4 : 10\\)",
+    "\\(3 : 5\\)",
+    "\\(2 : 5\\)"
+   ],
+   "answer": "D",
+   "solution": "\\[2\\text{ m}=200\\text{ cm}\\]\n\n\\[80 : 200=80 : 200\\]\n\n\\[\\text{HCF}=40\\]\n\n\\[80 : 200=\\boxed{2 : 5}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example a · Same units first, including decimals",
+   "title": "Same units first, including decimals · a1"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(30\\) cm : \\(1.5\\) m in simplest form.",
+   "choices": [
+    "\\(2 : 10\\)",
+    "\\(2 : 5\\)",
+    "\\(1 : 5\\)",
+    "\\(5 : 1\\)"
+   ],
+   "answer": "C",
+   "solution": "\\[1.5\\text{ m}=150\\text{ cm}\\]\n\n\\[30 : 150=30 : 150\\]\n\n\\[\\text{HCF}=30\\]\n\n\\[30 : 150=\\boxed{1 : 5}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example a · Same units first, including decimals",
+   "title": "Same units first, including decimals · a2"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(0.8\\) kg : \\(1200\\) g in simplest form.",
+   "choices": [
+    "\\(3 : 3\\)",
+    "\\(2 : 3\\)",
+    "\\(3 : 2\\)",
+    "\\(4 : 6\\)"
+   ],
+   "answer": "B",
+   "solution": "\\[0.8\\text{ kg}=800\\text{ g}\\]\n\n\\[800 : 1200=800 : 1200\\]\n\n\\[\\text{HCF}=400\\]\n\n\\[800 : 1200=\\boxed{2 : 3}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example b · Same units first, including decimals",
+   "title": "Same units first, including decimals · b1"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(2.4\\) kg : \\(600\\) g in simplest form.",
+   "choices": [
+    "\\(4 : 1\\)",
+    "\\(1 : 4\\)",
+    "\\(8 : 2\\)",
+    "\\(5 : 1\\)"
+   ],
+   "answer": "A",
+   "solution": "\\[2.4\\text{ kg}=2400\\text{ g}\\]\n\n\\[2400 : 600=2400 : 600\\]\n\n\\[\\text{HCF}=600\\]\n\n\\[2400 : 600=\\boxed{4 : 1}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example b · Same units first, including decimals",
+   "title": "Same units first, including decimals · b2"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(40\\) min : \\(2\\) hours in simplest form.",
+   "choices": [
+    "\\(3 : 1\\)",
+    "\\(2 : 6\\)",
+    "\\(2 : 3\\)",
+    "\\(1 : 3\\)"
+   ],
+   "answer": "D",
+   "solution": "\\[2\\text{ hours}=120\\text{ min}\\]\n\n\\[40 : 120=40 : 120\\]\n\n\\[\\text{HCF}=40\\]\n\n\\[40 : 120=\\boxed{1 : 3}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example c · Same units first, including decimals",
+   "title": "Same units first, including decimals · c1"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(75\\) min : \\(2.5\\) hours in simplest form.",
+   "choices": [
+    "\\(2 : 4\\)",
+    "\\(2 : 2\\)",
+    "\\(1 : 2\\)",
+    "\\(2 : 1\\)"
+   ],
+   "answer": "C",
+   "solution": "\\[2.5\\text{ hours}=150\\text{ min}\\]\n\n\\[75 : 150=75 : 150\\]\n\n\\[\\text{HCF}=75\\]\n\n\\[75 : 150=\\boxed{1 : 2}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example c · Same units first, including decimals",
+   "title": "Same units first, including decimals · c2"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(1.2\\) litres : \\(1.8\\) litres in simplest form.",
+   "choices": [
+    "\\(3 : 3\\)",
+    "\\(2 : 3\\)",
+    "\\(3 : 2\\)",
+    "\\(4 : 6\\)"
+   ],
+   "answer": "B",
+   "solution": "\\[1.2 : 1.8=6 : 9\\]\n\n\\[\\text{HCF}=3\\]\n\n\\[6 : 9=\\boxed{2 : 3}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example d · Same units first, including decimals",
+   "title": "Same units first, including decimals · d1"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Write \\(0.6\\) litres : \\(1.5\\) litres in simplest form.",
+   "choices": [
+    "\\(2 : 5\\)",
+    "\\(5 : 2\\)",
+    "\\(4 : 10\\)",
+    "\\(3 : 5\\)"
+   ],
+   "answer": "A",
+   "solution": "\\[0.6 : 1.5=6 : 15\\]\n\n\\[\\text{HCF}=3\\]\n\n\\[6 : 15=\\boxed{2 : 5}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+   "group": "Card 2 · Example d · Same units first, including decimals",
+   "title": "Same units first, including decimals · d2"
+  },
+  {
+   "prompt": "Find \\(x\\):\n\n\\[3:5=12:x\\]",
+   "solution": "\\[\\text{Multiplier}=12\\div 3\\]\n\n\\[\\text{Multiplier}=4\\]\n\n\\[x=5\\times 4\\]\n\n\\[\\boxed{20}\\]\n\nMultiply both ratio terms by the same number; adding the same amount does not preserve a ratio.",
+   "type": "numeric",
+   "answer": 20,
+   "tolerance": 1e-06,
+   "group": "Card 3 · Example a · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · a1"
+  },
+  {
+   "prompt": "Find \\(x\\):\n\n\\[4:7=20:x\\]",
+   "solution": "\\[\\text{Multiplier}=20\\div 4\\]\n\n\\[\\text{Multiplier}=5\\]\n\n\\[x=7\\times 5\\]\n\n\\[\\boxed{35}\\]\n\nMultiply both ratio terms by the same number; adding the same amount does not preserve a ratio.",
+   "type": "numeric",
+   "answer": 35,
+   "tolerance": 1e-06,
+   "group": "Card 3 · Example a · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · a2"
+  },
+  {
+   "prompt": "Find \\(x\\):\n\n\\[15:25=3:x\\]",
+   "solution": "\\[\\text{Multiplier}=3\\div 15\\]\n\n\\[\\text{Multiplier}=\\frac{1}{5}\\]\n\n\\[x=25\\times \\frac{1}{5}\\]\n\n\\[\\boxed{5}\\]\n\nMultiply both ratio terms by the same number; adding the same amount does not preserve a ratio.",
+   "type": "numeric",
+   "answer": 5,
+   "tolerance": 1e-06,
+   "group": "Card 3 · Example b · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · b1"
+  },
+  {
+   "prompt": "Find \\(x\\):\n\n\\[18:30=6:x\\]",
+   "solution": "\\[\\text{Multiplier}=6\\div 18\\]\n\n\\[\\text{Multiplier}=\\frac{1}{3}\\]\n\n\\[x=30\\times \\frac{1}{3}\\]\n\n\\[\\boxed{10}\\]\n\nMultiply both ratio terms by the same number; adding the same amount does not preserve a ratio.",
+   "type": "numeric",
+   "answer": 10,
+   "tolerance": 1e-06,
+   "group": "Card 3 · Example b · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · b2"
+  },
+  {
+   "prompt": "Find \\(x\\), or decide that no solution exists:\n\n\\[3:4:7=x:8:14\\]",
+   "solution": "\\[\\text{Middle multiplier}=8\\div 4\\]\n\n\\[\\text{Middle multiplier}=2\\]\n\n\\[\\text{Last multiplier}=14\\div 7\\]\n\n\\[\\text{Last multiplier}=2\\]\n\n\\[x=3\\times 2\\]\n\n\\[\\boxed{6}\\]\n\nThe known pairs agree, so apply their common multiplier to the missing term.",
+   "type": "numeric",
+   "answer": 6,
+   "tolerance": 1e-06,
+   "group": "Card 3 · Example c · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · c1"
+  },
+  {
+   "prompt": "Find \\(x\\), or decide that no solution exists:\n\n\\[4:6:10=x:3:5\\]",
+   "solution": "\\[\\text{Middle multiplier}=3\\div 6\\]\n\n\\[\\text{Middle multiplier}=\\frac{1}{2}\\]\n\n\\[\\text{Last multiplier}=5\\div 10\\]\n\n\\[\\text{Last multiplier}=\\frac{1}{2}\\]\n\n\\[x=4\\times \\frac{1}{2}\\]\n\n\\[\\boxed{2}\\]\n\nThe known pairs agree, so apply their common multiplier to the missing term.",
+   "type": "numeric",
+   "answer": 2,
+   "tolerance": 1e-06,
+   "group": "Card 3 · Example c · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · c2"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Find \\(x\\), or decide that no solution exists:\n\n\\[3:4:8=x:6:10\\]",
+   "choices": [
+    "\\(3\\)",
+    "No solution",
+    "\\(\\dfrac{9}{2}\\)",
+    "\\(\\dfrac{15}{4}\\)"
+   ],
+   "answer": "B",
+   "solution": "\\[\\text{Middle multiplier}=6\\div 4\\]\n\n\\[\\text{Middle multiplier}=\\frac{3}{2}\\]\n\n\\[\\text{Last multiplier}=10\\div 8\\]\n\n\\[\\text{Last multiplier}=\\frac{5}{4}\\]\n\n\\[\\frac{3}{2}\\ne \\frac{5}{4}\\]\n\n\\[\\boxed{\\text{No solution}}\\]\n\n- All three terms need one common multiplier.\n- A value from just one known pair cannot repair the other pair.",
+   "group": "Card 3 · Example d · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · d1"
+  },
+  {
+   "type": "mcq",
+   "prompt": "Find \\(x\\), or decide that no solution exists:\n\n\\[4:5:9=x:10:15\\]",
+   "choices": [
+    "No solution",
+    "\\(8\\)",
+    "\\(\\dfrac{20}{3}\\)",
+    "\\(4\\)"
+   ],
+   "answer": "A",
+   "solution": "\\[\\text{Middle multiplier}=10\\div 5\\]\n\n\\[\\text{Middle multiplier}=2\\]\n\n\\[\\text{Last multiplier}=15\\div 9\\]\n\n\\[\\text{Last multiplier}=\\frac{5}{3}\\]\n\n\\[2\\ne \\frac{5}{3}\\]\n\n\\[\\boxed{\\text{No solution}}\\]\n\n- All three terms need one common multiplier.\n- A value from just one known pair cannot repair the other pair.",
+   "group": "Card 3 · Example d · Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks · d2"
+  },
+  {
+   "prompt": "Share €60 in the ratio \\(2 : 3\\).\n\nHow many euros are in the first share?",
+   "solution": "\\[\\text{Total parts}=2+3\\]\n\n\\[\\text{Total parts}=5\\]\n\n\\[\\text{One part}=60\\div 5\\]\n\n\\[\\text{One part}=12\\]\n\n\\[\\text{First share}=2\\times 12\\]\n\n\\[\\boxed{24}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 24,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example a · Share a total in a ratio",
+   "title": "Share a total in a ratio · a1"
+  },
+  {
+   "prompt": "Share €35 in the ratio \\(2 : 5\\).\n\nHow many euros are in the second share?",
+   "solution": "\\[\\text{Total parts}=2+5\\]\n\n\\[\\text{Total parts}=7\\]\n\n\\[\\text{One part}=35\\div 7\\]\n\n\\[\\text{One part}=5\\]\n\n\\[\\text{Second share}=5\\times 5\\]\n\n\\[\\boxed{25}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 25,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example a · Share a total in a ratio",
+   "title": "Share a total in a ratio · a2"
+  },
+  {
+   "prompt": "Share €56 in the ratio \\(3 : 5\\).\n\nHow many euros are in the second share?",
+   "solution": "\\[\\text{Total parts}=3+5\\]\n\n\\[\\text{Total parts}=8\\]\n\n\\[\\text{One part}=56\\div 8\\]\n\n\\[\\text{One part}=7\\]\n\n\\[\\text{Second share}=5\\times 7\\]\n\n\\[\\boxed{35}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 35,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example b · Share a total in a ratio",
+   "title": "Share a total in a ratio · b1"
+  },
+  {
+   "prompt": "Share €54 in the ratio \\(4 : 5\\).\n\nHow many euros are in the first share?",
+   "solution": "\\[\\text{Total parts}=4+5\\]\n\n\\[\\text{Total parts}=9\\]\n\n\\[\\text{One part}=54\\div 9\\]\n\n\\[\\text{One part}=6\\]\n\n\\[\\text{First share}=4\\times 6\\]\n\n\\[\\boxed{24}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 24,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example b · Share a total in a ratio",
+   "title": "Share a total in a ratio · b2"
+  },
+  {
+   "prompt": "Share €48 in the ratio \\(5 : 7\\).\n\nHow many euros are in the second share?",
+   "solution": "\\[\\text{Total parts}=5+7\\]\n\n\\[\\text{Total parts}=12\\]\n\n\\[\\text{One part}=48\\div 12\\]\n\n\\[\\text{One part}=4\\]\n\n\\[\\text{Second share}=7\\times 4\\]\n\n\\[\\boxed{28}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 28,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example c · Share a total in a ratio",
+   "title": "Share a total in a ratio · c1"
+  },
+  {
+   "prompt": "Share €66 in the ratio \\(5 : 6\\).\n\nHow many euros are in the first share?",
+   "solution": "\\[\\text{Total parts}=5+6\\]\n\n\\[\\text{Total parts}=11\\]\n\n\\[\\text{One part}=66\\div 11\\]\n\n\\[\\text{One part}=6\\]\n\n\\[\\text{First share}=5\\times 6\\]\n\n\\[\\boxed{30}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 30,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example c · Share a total in a ratio",
+   "title": "Share a total in a ratio · c2"
+  },
+  {
+   "prompt": "Share €60 in the ratio \\(1 : 2 : 3\\).\n\nHow many euros are in the second share?",
+   "solution": "\\[\\text{Total parts}=1+2+3\\]\n\n\\[\\text{Total parts}=6\\]\n\n\\[\\text{One part}=60\\div 6\\]\n\n\\[\\text{One part}=10\\]\n\n\\[\\text{Second share}=2\\times 10\\]\n\n\\[\\boxed{20}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 20,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example d · Share a total in a ratio",
+   "title": "Share a total in a ratio · d1"
+  },
+  {
+   "prompt": "Share €96 in the ratio \\(2 : 3 : 7\\).\n\nHow many euros are in the third share?",
+   "solution": "\\[\\text{Total parts}=2+3+7\\]\n\n\\[\\text{Total parts}=12\\]\n\n\\[\\text{One part}=96\\div 12\\]\n\n\\[\\text{One part}=8\\]\n\n\\[\\text{Third share}=7\\times 8\\]\n\n\\[\\boxed{56}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+   "type": "numeric",
+   "answer": 56,
+   "tolerance": 1e-06,
+   "group": "Card 4 · Example d · Share a total in a ratio",
+   "title": "Share a total in a ratio · d2"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(3 : 4\\).\n\nThe first amount is €18.\n\nFind the second amount in euros.",
+   "solution": "\\[\\text{One part}=18\\div 3\\]\n\n\\[\\text{One part}=6\\]\n\n\\[\\text{Second amount}=4\\times 6\\]\n\n\\[\\boxed{24}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 24,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example a · One share is known",
+   "title": "One share is known · a1"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(2 : 5\\).\n\nThe first amount is €14.\n\nFind the second amount in euros.",
+   "solution": "\\[\\text{One part}=14\\div 2\\]\n\n\\[\\text{One part}=7\\]\n\n\\[\\text{Second amount}=5\\times 7\\]\n\n\\[\\boxed{35}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 35,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example a · One share is known",
+   "title": "One share is known · a2"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(2 : 7\\).\n\nThe second amount is €28.\n\nFind the first amount in euros.",
+   "solution": "\\[\\text{One part}=28\\div 7\\]\n\n\\[\\text{One part}=4\\]\n\n\\[\\text{First amount}=2\\times 4\\]\n\n\\[\\boxed{8}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 8,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example b · One share is known",
+   "title": "One share is known · b1"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(5 : 6\\).\n\nThe second amount is €30.\n\nFind the first amount in euros.",
+   "solution": "\\[\\text{One part}=30\\div 6\\]\n\n\\[\\text{One part}=5\\]\n\n\\[\\text{First amount}=5\\times 5\\]\n\n\\[\\boxed{25}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 25,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example b · One share is known",
+   "title": "One share is known · b2"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(3 : 5\\).\n\nThe second amount is €25.\n\nFind the total amount in euros.",
+   "solution": "\\[\\text{One part}=25\\div 5\\]\n\n\\[\\text{One part}=5\\]\n\n\\[\\text{Total amount}=8\\times 5\\]\n\n\\[\\boxed{40}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 40,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example c · One share is known",
+   "title": "One share is known · c1"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(2 : 7\\).\n\nThe first amount is €12.\n\nFind the total amount in euros.",
+   "solution": "\\[\\text{One part}=12\\div 2\\]\n\n\\[\\text{One part}=6\\]\n\n\\[\\text{Total amount}=9\\times 6\\]\n\n\\[\\boxed{54}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 54,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example c · One share is known",
+   "title": "One share is known · c2"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(1 : 4 : 6\\).\n\nThe second amount is €20.\n\nFind the third amount in euros.",
+   "solution": "\\[\\text{One part}=20\\div 4\\]\n\n\\[\\text{One part}=5\\]\n\n\\[\\text{Third amount}=6\\times 5\\]\n\n\\[\\boxed{30}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 30,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example d · One share is known",
+   "title": "One share is known · d1"
+  },
+  {
+   "prompt": "Amounts are in the ratio \\(2 : 5 : 7\\).\n\nThe third amount is €21.\n\nFind the first amount in euros.",
+   "solution": "\\[\\text{One part}=21\\div 7\\]\n\n\\[\\text{One part}=3\\]\n\n\\[\\text{First amount}=2\\times 3\\]\n\n\\[\\boxed{6}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+   "type": "numeric",
+   "answer": 6,
+   "tolerance": 1e-06,
+   "group": "Card 5 · Example d · One share is known",
+   "title": "One share is known · d2"
+  },
+  {
+   "prompt": "A map has scale \\(1:20000\\).\n\nTwo places are \\(4\\) cm apart on the map.\n\nFind the real distance in m.",
+   "solution": "\\[\\text{Real distance (cm)}=4\\times 20000\\]\n\n\\[\\text{Real distance (cm)}=80000\\]\n\n\\[\\text{Real distance (m)}=80000\\div 100\\]\n\n\\[\\boxed{800}\\text{ m}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 800,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example a · Map scales in both directions",
+   "title": "Map scales in both directions · a1"
+  },
+  {
+   "prompt": "A map has scale \\(1:10000\\).\n\nTwo places are \\(2.5\\) cm apart on the map.\n\nFind the real distance in m.",
+   "solution": "\\[\\text{Real distance (cm)}=\\frac{5}{2}\\times 10000\\]\n\n\\[\\text{Real distance (cm)}=25000\\]\n\n\\[\\text{Real distance (m)}=25000\\div 100\\]\n\n\\[\\boxed{250}\\text{ m}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 250,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example a · Map scales in both directions",
+   "title": "Map scales in both directions · a2"
+  },
+  {
+   "prompt": "A map has scale \\(1:20000\\).\n\nThe real distance is \\(600\\) m.\n\nFind the map distance in cm.",
+   "solution": "\\[600\\text{ m}=60000\\text{ cm}\\]\n\n\\[\\text{Map distance (cm)}=60000\\div 20000\\]\n\n\\[\\boxed{3}\\text{ cm}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 3,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example b · Map scales in both directions",
+   "title": "Map scales in both directions · b1"
+  },
+  {
+   "prompt": "A map has scale \\(1:5000\\).\n\nThe real distance is \\(400\\) m.\n\nFind the map distance in cm.",
+   "solution": "\\[400\\text{ m}=40000\\text{ cm}\\]\n\n\\[\\text{Map distance (cm)}=40000\\div 5000\\]\n\n\\[\\boxed{8}\\text{ cm}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 8,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example b · Map scales in both directions",
+   "title": "Map scales in both directions · b2"
+  },
+  {
+   "prompt": "A map has scale \\(1:25000\\).\n\nTwo places are \\(8\\) cm apart on the map.\n\nFind the real distance in km.",
+   "solution": "\\[\\text{Real distance (cm)}=8\\times 25000\\]\n\n\\[\\text{Real distance (cm)}=200000\\]\n\n\\[\\text{Real distance (km)}=200000\\div 100000\\]\n\n\\[\\boxed{2}\\text{ km}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 2,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example c · Map scales in both directions",
+   "title": "Map scales in both directions · c1"
+  },
+  {
+   "prompt": "A map has scale \\(1:50000\\).\n\nTwo places are \\(6\\) cm apart on the map.\n\nFind the real distance in km.",
+   "solution": "\\[\\text{Real distance (cm)}=6\\times 50000\\]\n\n\\[\\text{Real distance (cm)}=300000\\]\n\n\\[\\text{Real distance (km)}=300000\\div 100000\\]\n\n\\[\\boxed{3}\\text{ km}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 3,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example c · Map scales in both directions",
+   "title": "Map scales in both directions · c2"
+  },
+  {
+   "prompt": "A map has scale \\(1:50000\\).\n\nThe real distance is \\(2.5\\) km.\n\nFind the map distance in cm.",
+   "solution": "\\[\\frac{5}{2}\\text{ km}=250000\\text{ cm}\\]\n\n\\[\\text{Map distance (cm)}=250000\\div 50000\\]\n\n\\[\\boxed{5}\\text{ cm}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 5,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example d · Map scales in both directions",
+   "title": "Map scales in both directions · d1"
+  },
+  {
+   "prompt": "A map has scale \\(1:25000\\).\n\nThe real distance is \\(1.5\\) km.\n\nFind the map distance in cm.",
+   "solution": "\\[\\frac{3}{2}\\text{ km}=150000\\text{ cm}\\]\n\n\\[\\text{Map distance (cm)}=150000\\div 25000\\]\n\n\\[\\boxed{6}\\text{ cm}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+   "type": "numeric",
+   "answer": 6,
+   "tolerance": 1e-06,
+   "group": "Card 6 · Example d · Map scales in both directions",
+   "title": "Map scales in both directions · d2"
+  }
+ ],
+ "link": [
+  "Ratio Material ›",
+  "../malta-year-8-math-chapter-7-ratio/material.html"
+ ]
+}

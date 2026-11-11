@@ -175,6 +175,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math — Squares, Cubes & Roots Practice](topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots-practice/content.md) | 6 questions: Squares, Cubes & Roots Practice. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-test-prep-squares-cubes-and-roots-practice/quiz.html) |
 | [Malta Year 8 Math — Fraction Quiz (Nov-11)](topics/basic-math/malta-year-8-math-fraction-quiz-nov-11/content.md) | 10 questions: multiply first, share fractions, four terms and fractional equations. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-fraction-quiz-nov-11/quiz.html) |
 | [Malta Year 8 Math Chapter 7 — Ratio](topics/basic-math/malta-year-8-math-chapter-7-ratio/content.md) | Six cards: unitary method, units, equivalent ratios, sharing, known shares and map scales. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-7-ratio/material.html) |
+| [Malta Year 8 Math Chapter 7 — Ratio Practice](topics/basic-math/malta-year-8-math-chapter-7-ratio-practice/content.md) | 48 fresh questions: two for each of the 24 worked Ratio examples. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-7-ratio-practice/quiz.html) |
 
 ## Animations
 
