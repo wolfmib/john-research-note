@@ -1,0 +1,190 @@
+{
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 7",
+ "root": "chapters",
+ "send_to": "John",
+ "slug": "malta-year-8-math-chapter-7-ratio",
+ "title": "Malta Year 8 Math Chapter 7 — Ratio",
+ "question": "Six cards: unitary method, units, equivalent ratios, sharing, known shares and map scales.",
+ "intro": "- Six ideas, with four worked examples on each card.\n- Includes valid and inconsistent three-term ratios.\n- By the end: scale quantities, simplify ratios, find missing shares and use map scales.",
+ "questions": [
+  {
+   "group": "7.1 Unitary method and recipe scaling",
+   "title": "Unitary method and recipe scaling",
+   "prompt": "- Find the amount for **one** item, person, kilogram or bottle first.\n- Then multiply by the number needed.\n- Use this when the price per item, recipe per person or capacity per bottle stays the same.\n\n**Examples:**\n\n- **a)** 3 notebooks cost €6.\n\nHow much do 5 notebooks cost?\n\n- **b)** A recipe for 4 people uses 300 g of flour.\n\nHow many grams of flour are needed for 6 people?\n\n- **c)** 3 kg of apples costs €6.\n\nWhat is the cost of 5 kg at the same price per kg?\n\n- **d)** 3 identical full bottles hold 1.5 litres altogether.\n\nHow many litres do 8 full bottles hold?",
+   "steps": [
+    "**a)**\n\n\\[\\text{Cost of one notebook}=6\\div 3\\]\n\n\\[\\text{One unit}=2\\]\n\n\\[2\\times 5=10\\]\n\n\\[\\boxed{10}\\text{ euros}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+    "**b)**\n\n\\[\\text{Flour for one person}=300\\div 4\\]\n\n\\[\\text{One unit}=75\\]\n\n\\[75\\times 6=450\\]\n\n\\[\\boxed{450}\\text{ g}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+    "**c)**\n\n\\[\\text{Cost of one kilogram}=6\\div 3\\]\n\n\\[\\text{One unit}=2\\]\n\n\\[2\\times 5=10\\]\n\n\\[\\boxed{10}\\text{ euros}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together.",
+    "**d)**\n\n\\[\\text{Capacity of one bottle}=\\frac{3}{2}\\div 3\\]\n\n\\[\\text{One unit}=\\frac{1}{2}\\]\n\n\\[\\frac{1}{2}\\times 8=4\\]\n\n\\[\\boxed{4}\\text{ litres}\\]\n\nFind one unit first, then multiply by the number needed; both quantities scale together."
+   ],
+   "figure": "ch7-card-1.svg",
+   "figure_alt": "Find the price of one notebook, then scale to the number needed.",
+   "practice": {
+    "intro": "6 notebooks cost €15 at a constant price per notebook.\n\nFind the cost of 4 notebooks.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Cost (euros)}"
+     ]
+    ],
+    "answers": [
+     10
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "7.2 Same units first, including decimals",
+   "title": "Same units first, including decimals",
+   "prompt": "- Compare quantities in the **same unit**.\n- For decimals, multiply both terms by 10 or 100 to make whole numbers.\n- Divide both terms by their HCF; keep the original order.\n\n**Examples:**\n\n- **a)** Write \\(50\\) cm : \\(2\\) m in simplest form.\n\n- **b)** Write \\(1.5\\) kg : \\(500\\) g in simplest form.\n\n- **c)** Write \\(45\\) min : \\(1.5\\) hours in simplest form.\n\n- **d)** Write \\(2.5\\) litres : \\(4.5\\) litres in simplest form.",
+   "steps": [
+    "**a)**\n\n\\[2\\text{ m}=200\\text{ cm}\\]\n\n\\[50 : 200=50 : 200\\]\n\n\\[\\text{HCF}=50\\]\n\n\\[50 : 200=\\boxed{1 : 4}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+    "**b)**\n\n\\[1.5\\text{ kg}=1500\\text{ g}\\]\n\n\\[1500 : 500=1500 : 500\\]\n\n\\[\\text{HCF}=500\\]\n\n\\[1500 : 500=\\boxed{3 : 1}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+    "**c)**\n\n\\[1.5\\text{ hours}=90\\text{ min}\\]\n\n\\[45 : 90=45 : 90\\]\n\n\\[\\text{HCF}=45\\]\n\n\\[45 : 90=\\boxed{1 : 2}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order.",
+    "**d)**\n\n\\[2.5 : 4.5=5 : 9\\]\n\n\\[\\text{HCF}=1\\]\n\n\\[5 : 9=\\boxed{5 : 9}\\]\n\n- Use the same units first; clear decimals if needed, then divide both terms by their HCF.\n- Keep the order."
+   ],
+   "figure": "ch7-card-2.svg",
+   "figure_alt": "Convert 2 metres to 200 centimetres before simplifying the ratio with 50 centimetres.",
+   "practice": {
+    "intro": "Simplify 75 cm : 1.5 m to \\(1:x\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Find }x"
+     ]
+    ],
+    "answers": [
+     2
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "7.3 Equivalent ratios and three-term checks",
+   "title": "Equivalent ratios and three-term checks",
+   "prompt": "- **Every term** uses the same multiplier.\n- Check the known matching pairs first, especially with three terms.\n- If the known pairs need different multipliers, **no solution** exists.\n\n**Examples:**\n\n- **a)** Find \\(x\\):\n\n\\[2:3=8:x\\]\n\n- **b)** Find \\(x\\):\n\n\\[8:12=2:x\\]\n\n- **c)** Find \\(x\\), or decide that no solution exists:\n\n\\[2:3:7=x:6:14\\]\n\n- **d)** Find \\(x\\), or decide that no solution exists:\n\n\\[2:3:7=x:2:3\\]",
+   "steps": [
+    "**a)**\n\n\\[\\text{Multiplier}=8\\div 2\\]\n\n\\[\\text{Multiplier}=4\\]\n\n\\[x=3\\times 4\\]\n\n\\[\\boxed{12}\\]\n\nMultiply both ratio terms by the same number; adding the same amount does not preserve a ratio.",
+    "**b)**\n\n\\[\\text{Multiplier}=2\\div 8\\]\n\n\\[\\text{Multiplier}=\\frac{1}{4}\\]\n\n\\[x=12\\times \\frac{1}{4}\\]\n\n\\[\\boxed{3}\\]\n\nMultiply both ratio terms by the same number; adding the same amount does not preserve a ratio.",
+    "**c)**\n\n\\[\\text{Middle multiplier}=6\\div 3\\]\n\n\\[\\text{Middle multiplier}=2\\]\n\n\\[\\text{Last multiplier}=14\\div 7\\]\n\n\\[\\text{Last multiplier}=2\\]\n\n\\[x=2\\times 2\\]\n\n\\[\\boxed{4}\\]\n\nThe known pairs agree, so apply their common multiplier to the missing term.",
+    "**d)**\n\n\\[\\text{Middle multiplier}=2\\div 3\\]\n\n\\[\\text{Middle multiplier}=\\frac{2}{3}\\]\n\n\\[\\text{Last multiplier}=3\\div 7\\]\n\n\\[\\text{Last multiplier}=\\frac{3}{7}\\]\n\n\\[\\frac{2}{3}\\ne \\frac{3}{7}\\]\n\n\\[\\boxed{\\text{No solution}}\\]\n\n- All three terms need one common multiplier.\n- A value from just one known pair cannot repair the other pair."
+   ],
+   "figure": "ch7-card-3.svg",
+   "figure_alt": "Three matching ratio terms each use the same multiplier of two; the first result is unknown.",
+   "practice": {
+    "intro": "\\(3:5:8=x:15:24\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Find }x"
+     ]
+    ],
+    "answers": [
+     9
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "7.4 Share a total in a ratio",
+   "title": "Share a total in a ratio",
+   "prompt": "- Add **all the parts** to find how many equal parts make the total.\n- Divide the total by that number to find one part.\n- Multiply one part by the number of parts in the requested share.\n- The same method works for two or three shares.\n\n**Examples:**\n\n- **a)** Share €40 in the ratio \\(2 : 3\\).\n\nHow many euros are in the first share?\n\n- **b)** Share €45 in the ratio \\(4 : 5\\).\n\nHow many euros are in the second share?\n\n- **c)** Share €72 in the ratio \\(5 : 7\\).\n\nHow many euros are in the first share?\n\n- **d)** Share €84 in the ratio \\(2 : 3 : 7\\).\n\nHow many euros are in the third share?",
+   "steps": [
+    "**a)**\n\n\\[\\text{Total parts}=2+3\\]\n\n\\[\\text{Total parts}=5\\]\n\n\\[\\text{One part}=40\\div 5\\]\n\n\\[\\text{One part}=8\\]\n\n\\[\\text{First share}=2\\times 8\\]\n\n\\[\\boxed{16}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+    "**b)**\n\n\\[\\text{Total parts}=4+5\\]\n\n\\[\\text{Total parts}=9\\]\n\n\\[\\text{One part}=45\\div 9\\]\n\n\\[\\text{One part}=5\\]\n\n\\[\\text{Second share}=5\\times 5\\]\n\n\\[\\boxed{25}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+    "**c)**\n\n\\[\\text{Total parts}=5+7\\]\n\n\\[\\text{Total parts}=12\\]\n\n\\[\\text{One part}=72\\div 12\\]\n\n\\[\\text{One part}=6\\]\n\n\\[\\text{First share}=5\\times 6\\]\n\n\\[\\boxed{30}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares.",
+    "**d)**\n\n\\[\\text{Total parts}=2+3+7\\]\n\n\\[\\text{Total parts}=12\\]\n\n\\[\\text{One part}=84\\div 12\\]\n\n\\[\\text{One part}=7\\]\n\n\\[\\text{Third share}=7\\times 7\\]\n\n\\[\\boxed{49}\\text{ euros}\\]\n\n- Add all the ratio parts before dividing the total.\n- A ratio does not mean equal shares."
+   ],
+   "figure": "ch7-card-4.svg",
+   "figure_alt": "A total of 40 euros is split into five equal parts, two blue and three green.",
+   "practice": {
+    "intro": "Share €63 in the ratio \\(2:5\\).\n\nFind the larger share.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Share (euros)}"
+     ]
+    ],
+    "answers": [
+     45
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "7.5 One share is known",
+   "title": "One share is known",
+   "prompt": "- The given amount is **one share**, so divide by **its own number of parts**.\n- Use one part to find another share or the total.\n- Check that the known share comes back correctly.\n\n**Examples:**\n\n- **a)** Amounts are in the ratio \\(2 : 3\\).\n\nThe first amount is €10.\n\nFind the second amount in euros.\n\n- **b)** Amounts are in the ratio \\(3 : 5\\).\n\nThe second amount is €20.\n\nFind the first amount in euros.\n\n- **c)** Amounts are in the ratio \\(4 : 7\\).\n\nThe first amount is €16.\n\nFind the total amount in euros.\n\n- **d)** Amounts are in the ratio \\(2 : 3 : 5\\).\n\nThe second amount is €12.\n\nFind the third amount in euros.",
+   "steps": [
+    "**a)**\n\n\\[\\text{One part}=10\\div 2\\]\n\n\\[\\text{One part}=5\\]\n\n\\[\\text{Second amount}=3\\times 5\\]\n\n\\[\\boxed{15}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+    "**b)**\n\n\\[\\text{One part}=20\\div 5\\]\n\n\\[\\text{One part}=4\\]\n\n\\[\\text{First amount}=3\\times 4\\]\n\n\\[\\boxed{12}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+    "**c)**\n\n\\[\\text{One part}=16\\div 4\\]\n\n\\[\\text{One part}=4\\]\n\n\\[\\text{Total amount}=11\\times 4\\]\n\n\\[\\boxed{44}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts.",
+    "**d)**\n\n\\[\\text{One part}=12\\div 3\\]\n\n\\[\\text{One part}=4\\]\n\n\\[\\text{Third amount}=5\\times 4\\]\n\n\\[\\boxed{20}\\text{ euros}\\]\n\n- The given amount is one share, not the whole total.\n- Divide it by its own number of parts."
+   ],
+   "figure": "ch7-card-5.svg",
+   "figure_alt": "The first two equal parts are worth 10 euros; three other parts are unknown.",
+   "practice": {
+    "intro": "The ratio is \\(3:4\\); the first share is €21.\n\nFind the total amount.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Total (euros)}"
+     ]
+    ],
+    "answers": [
+     49
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "7.6 Map scales in both directions",
+   "title": "Map scales in both directions",
+   "prompt": "- A scale of **1 : 10,000** means 1 cm on the map represents 10,000 cm in real life.\n- **Map to real:** multiply by the scale number, then convert units.\n- **Real to map:** convert to centimetres first, then divide by the scale number.\n- Remember: 100 cm make 1 m, and 100,000 cm make 1 km.\n\n**Examples:**\n\n- **a)** A map has scale \\(1:10000\\).\n\nTwo places are \\(3\\) cm apart on the map.\n\nFind the real distance in m.\n\n- **b)** A map has scale \\(1:10000\\).\n\nThe real distance is \\(500\\) m.\n\nFind the map distance in cm.\n\n- **c)** A map has scale \\(1:50000\\).\n\nTwo places are \\(4\\) cm apart on the map.\n\nFind the real distance in km.\n\n- **d)** A map has scale \\(1:75000\\).\n\nThe real distance is \\(3\\) km.\n\nFind the map distance in cm.",
+   "steps": [
+    "**a)**\n\n\\[\\text{Real distance (cm)}=3\\times 10000\\]\n\n\\[\\text{Real distance (cm)}=30000\\]\n\n\\[\\text{Real distance (m)}=30000\\div 100\\]\n\n\\[\\boxed{300}\\text{ m}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+    "**b)**\n\n\\[500\\text{ m}=50000\\text{ cm}\\]\n\n\\[\\text{Map distance (cm)}=50000\\div 10000\\]\n\n\\[\\boxed{5}\\text{ cm}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+    "**c)**\n\n\\[\\text{Real distance (cm)}=4\\times 50000\\]\n\n\\[\\text{Real distance (cm)}=200000\\]\n\n\\[\\text{Real distance (km)}=200000\\div 100000\\]\n\n\\[\\boxed{2}\\text{ km}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully.",
+    "**d)**\n\n\\[3\\text{ km}=300000\\text{ cm}\\]\n\n\\[\\text{Map distance (cm)}=300000\\div 75000\\]\n\n\\[\\boxed{4}\\text{ cm}\\]\n\n- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.\n- Convert units carefully."
+   ],
+   "figure": "ch7-card-6.svg",
+   "figure_alt": "Two points are 3 cm apart on a map of scale 1 to 10000; their real distance is unknown.",
+   "practice": {
+    "intro": "A map has scale \\(1:25{,}000\\); the map distance is 6 cm.\n\nFind the real distance in km.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Distance (km)}"
+     ]
+    ],
+    "answers": [
+     1.5
+    ],
+    "tolerance": 1e-06
+   }
+  }
+ ],
+ "link": [
+  "Ratio Practice ›",
+  "../malta-year-8-math-chapter-7-ratio-practice/quiz.html"
+ ]
+}
