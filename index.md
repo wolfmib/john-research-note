@@ -177,6 +177,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 7 — Ratio](topics/basic-math/malta-year-8-math-chapter-7-ratio/content.md) | Six cards: unitary method, units, equivalent ratios, sharing, known shares and map scales. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-7-ratio/material.html) |
 | [Malta Year 8 Math Chapter 7 — Ratio Practice](topics/basic-math/malta-year-8-math-chapter-7-ratio-practice/content.md) | 48 fresh questions: two for each of the 24 worked Ratio examples. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-7-ratio-practice/quiz.html) |
 | [AP Precalculus 2.11 — Logarithmic Functions](topics/basic-math/ap-precalculus-2-11-logarithmic-functions/content.md) | Logarithmic functions: domain and vertical asymptote of a shifted log, direction and concavity, end behaviour, spot a log in a table, read a log formula from a graph. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-11-logarithmic-functions/quiz.html) |
+| [AP Precalculus 2.12 — Logarithmic Function Manipulation](topics/basic-math/ap-precalculus-2-12-logarithmic-function-manipulation/content.md) | Log properties: expand a product with a power, expand three factors, condense to a number, a fractional log, change of base. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-12-logarithmic-function-manipulation/quiz.html) |
 
 ## Animations
 
