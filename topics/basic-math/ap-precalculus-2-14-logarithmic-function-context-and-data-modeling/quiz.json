@@ -1,0 +1,86 @@
+{
+ "slug": "ap-precalculus-2-14-logarithmic-function-context-and-data-modeling",
+ "title": "AP Precalculus 2.14 — Logarithmic Function Context and Data Modeling",
+ "course": "AP Precalculus",
+ "unit": "2.14",
+ "question": "Log models: spot a log table, a model from two points, decibels, the Richter scale, a prediction from a regression model.",
+ "intro": "**Quick recap:**\n\n\\[\ny=a+b\\log x\n\\]\n\n\\[\nL=10\\log\\frac{I}{I_0}\n\\]\n\n\\[\nM=\\log\\frac{A}{A_0}\n\\]\n\n- A log model: each \\(\\times10\\) in \\(x\\) adds \\(b\\) to \\(y\\).\n- \\(\\log1=0\\) and \\(\\log10=1\\), so the points \\(x=1\\) and \\(x=10\\) give \\(a\\) and \\(b\\) fast.\n- Decibels: every \\(10\\) dB is \\(\\times10\\) in intensity.\n- Richter: every \\(1\\) in magnitude is \\(\\times10\\) in amplitude.\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Which table fits a log model?",
+   "prompt": "Which table is best modelled by a logarithmic function\n\n\\[\ny=a+b\\log x\\,?\n\\]",
+   "choices": [
+    "\\(x\\): \\(0\\), \\(1\\), \\(2\\), \\(3\\) → \\(y\\): \\(2\\), \\(5\\), \\(8\\), \\(11\\)",
+    "\\(x\\): \\(1\\), \\(10\\), \\(100\\), \\(1000\\) → \\(y\\): \\(2\\), \\(5\\), \\(8\\), \\(11\\)",
+    "\\(x\\): \\(0\\), \\(1\\), \\(2\\), \\(3\\) → \\(y\\): \\(2\\), \\(6\\), \\(18\\), \\(54\\)",
+    "\\(x\\): \\(1\\), \\(2\\), \\(3\\), \\(4\\) → \\(y\\): \\(1\\), \\(4\\), \\(9\\), \\(16\\)"
+   ],
+   "solution_title": "Inputs multiply by 10, outputs add the same amount",
+   "solution": "- In a log model, **multiplying** \\(x\\) by the same factor **adds** the same amount to \\(y\\).\n- Table B: each \\(\\times10\\) in \\(x\\) adds \\(3\\) to \\(y\\).\n\n\\[\n\\begin{aligned}\ny &= 2+3\\log x \\\\\ny(1000) &= 2+3\\log1000 \\\\\n&= 2+3(3) \\\\\n&= 11\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{\\text{Table B}}\n\\]\n\n- Not A: \\(x\\) goes up by \\(1\\) and \\(y\\) adds \\(3\\). That is linear.\n- Not C: \\(x\\) goes up by \\(1\\) and \\(y\\) is multiplied by \\(3\\). That is exponential.\n- Not D: \\(y=x^{2}\\). That is quadratic.",
+   "answer": "B",
+   "type": "mcq"
+  },
+  {
+   "title": "A log model from two points",
+   "prompt": "A model \\(y=a+b\\log x\\) passes through the points \\((1,3)\\) and \\((10,7)\\). Which is the model?",
+   "choices": [
+    "\\(y=3+4\\ln x\\)",
+    "\\(y=4+3\\log x\\)",
+    "\\(y=7+3\\log x\\)",
+    "\\(y=3+4\\log x\\)"
+   ],
+   "solution_title": "Use x = 1 first: log 1 = 0",
+   "solution": "- At \\(x=1\\), \\(\\log1=0\\), so the point \\((1,3)\\) gives \\(a\\) at once.\n- At \\(x=10\\), \\(\\log10=1\\), so the point \\((10,7)\\) gives \\(b\\).\n\n\\[\n\\begin{aligned}\n3 &= a+b\\log1 \\\\\na &= 3 \\\\\n7 &= 3+b\\log10 \\\\\nb &= 4\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{y=3+4\\log x}\n\\]\n\n- Not \\(3+4\\ln x\\): \\(\\ln10\\approx2.30\\), so \\(x=10\\) gives about \\(12.2\\), not \\(7\\).\n- Not \\(4+3\\log x\\): at \\(x=1\\) it gives \\(4\\), not \\(3\\).",
+   "answer": "D",
+   "type": "mcq"
+  },
+  {
+   "title": "Decibels",
+   "prompt": "Sound level in decibels:\n\n\\[\nL=10\\log\\frac{I}{I_0}\n\\]\n\n- A busy street is \\(70\\) dB.\n- A loud concert is \\(90\\) dB.\n\nHow many times greater is the intensity \\(I\\) of the concert?",
+   "choices": [
+    "\\(100\\) times",
+    "\\(20\\) times",
+    "\\(1000\\) times",
+    "about \\(1.3\\) times"
+   ],
+   "solution_title": "Every 10 dB is a factor of 10",
+   "solution": "- \\(+10\\) dB multiplies the intensity by \\(10\\).\n- \\(90-70=20\\) dB is two steps of \\(10\\) dB.\n\n\\[\n\\begin{aligned}\n\\frac{I_{\\rm concert}}{I_{\\rm street}} &= 10^{(90-70)/10} \\\\\n&= 10^{2} \\\\\n&= 100\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{100\\text{ times}}\n\\]\n\n- Not \\(20\\): \\(20\\) dB is the difference in level, not the ratio of intensities.\n- Not \\(1000\\): that would be \\(30\\) dB.\n- Not \\(1.3\\): \\(90\\div70\\) treats the scale as linear.",
+   "answer": "A",
+   "type": "mcq"
+  },
+  {
+   "title": "The Richter scale",
+   "prompt": "Earthquake magnitude:\n\n\\[\nM=\\log\\frac{A}{A_0}\n\\]\n\nHere \\(A\\) is the wave amplitude. One earthquake has magnitude \\(7.5\\) and another has magnitude \\(4.5\\). How many times greater is the amplitude of the stronger one?",
+   "choices": [
+    "\\(3\\) times",
+    "\\(30\\) times",
+    "\\(1000\\) times",
+    "about \\(1.7\\) times"
+   ],
+   "solution_title": "Each magnitude step is a factor of 10",
+   "solution": "- \\(+1\\) in magnitude multiplies the amplitude by \\(10\\).\n- \\(7.5-4.5=3\\) steps.\n\n\\[\n\\begin{aligned}\n\\frac{A_{7.5}}{A_{4.5}} &= 10^{7.5-4.5} \\\\\n&= 10^{3} \\\\\n&= 1000\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{1000\\text{ times}}\n\\]\n\n- Not \\(3\\): that is the difference in magnitude, not the ratio.\n- Not \\(30\\): the steps multiply (\\(10\\times10\\times10\\)), they do not add \\(10\\) each.\n- Not \\(1.7\\): \\(7.5\\div4.5\\) treats the scale as linear.",
+   "answer": "C",
+   "type": "mcq"
+  },
+  {
+   "title": "Predict from a regression model",
+   "prompt": "A logarithmic regression gives the distance \\(d\\) (km) a new cyclist can ride after \\(t\\) weeks of training:\n\n\\[\nd=2.1+4.3\\ln t\n\\]\n\nPredict the distance after \\(20\\) weeks.",
+   "choices": [
+    "about \\(7.7\\) km",
+    "about \\(15.0\\) km",
+    "about \\(19.2\\) km",
+    "about \\(88.1\\) km"
+   ],
+   "solution_title": "Substitute t = 20, using ln",
+   "solution": "\\[\n\\begin{aligned}\nd &= 2.1+4.3\\ln20 \\\\\n&\\approx 2.1+4.3(2.996) \\\\\n&\\approx 2.1+12.88 \\\\\n&\\approx 15.0\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{d\\approx15.0\\text{ km}}\n\\]\n\n- Not \\(7.7\\): the model uses \\(\\ln\\), not \\(\\log\\) base \\(10\\).\n- Not \\(19.2\\): only the \\(4.3\\) multiplies \\(\\ln t\\); the \\(2.1\\) is added.\n- Not \\(88.1\\): \\(\\ln t\\) was replaced by \\(t\\).",
+   "answer": "B",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "On a log scale, equal steps mean equal factors: add to the level, multiply the quantity.",
+ "link": [
+  "Quiz 2.13 Exponential and Logarithmic Equations and Inequalities",
+  "../ap-precalculus-2-13-exponential-and-logarithmic-equations-and-inequalities/quiz.html"
+ ],
+ "send_to": "John"
+}
