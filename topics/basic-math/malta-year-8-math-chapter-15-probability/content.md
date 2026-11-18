@@ -10,44 +10,57 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math Chapter 15 — Probability
 
-- Six ideas, from the basic one to two events, with four worked examples on each card.
+- Six ideas, each with four worked examples.
 - Each card builds on the one before.
-- By the end: find a probability, use 1 − P, add for “or”, estimate from experiments and use a sample space.
+- By the end you can work out a probability, find the chance that something does not happen, add for one or the other, use real results, and list every pair for two things at once.
 
-## 15.1 Probability scale: words and numbers
+## 15.1 How likely is it? Words and numbers
 
-### 1. Probability scale: words and numbers
+### 1. How likely is it? Words and numbers
 
-- Every probability is between **0** and **1**.
-- 0 = impossible, less than ½ = unlikely, ½ = even chance, more than ½ = likely, 1 = certain.
-- The same probability can be a fraction, a decimal or a percentage.
+- A probability tells you how likely something is to happen.
+- It is always a number from 0 to 1.
+- 0 means it can never happen (impossible). 1 means it will surely happen (certain).
+- ½ means half and half (even chance). Below ½ is unlikely, above ½ is likely.
+- You can write the same probability as a fraction, a decimal or a percentage.
 
 **Examples:**
 
-- **a)** A fair dice is rolled.
+**a)** You roll a normal dice with the numbers 1 to 6.
 
-Which word describes getting a number less than 7?
+Which word best describes your chance of getting a number less than 7?
 
-- **b)** A bag has 3 red and 7 blue counters.
+---
 
-- One counter is picked without looking.
-- Which word describes picking red?
+**b)** A bag has 3 red counters and 7 blue counters.
 
-- **c)** A probability is $\dfrac{3}{4}$.
+You take out one counter without looking.
 
-Write it as a decimal.
+Which word best describes your chance of getting a red one?
 
-- **d)** A probability is $\dfrac{3}{5}$.
+---
 
-Write it as a percentage.
+**c)** The probability that something happens is $\dfrac{3}{4}$.
+
+Write this probability as a decimal.
+
+---
+
+**d)** The probability that something happens is $\dfrac{3}{5}$.
+
+Write this probability as a percentage.
+
+Type the number only.
 
 ![A line from 0 to 1 with the words impossible, unlikely, even chance, likely and certain along it.](media/ch15-card-1.svg)
 
-Write the probability $\dfrac{11}{20}$ as a percentage.
+The probability that something happens is $\dfrac{11}{20}$.
+
+Write it as a percentage.
 
 | Question | Answer |
 |---:|---:|
-| $\text{Percentage (number only)}$ | ? |
+| $\text{Percentage}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -55,20 +68,26 @@ Write the probability $\dfrac{11}{20}$ as a percentage.
 **a)**
 
 $$
-\begin{aligned} P &= \frac{6}{6} \\ &= 1 \end{aligned}
+\text{Numbers that work: 1, 2, 3, 4, 5, 6}
 $$
 
-6 of the 6 outcomes give a number less than 7, so the event is **certain**.
+$$
+\text{Probability} = \frac{6}{6}
+$$
 
-0 = impossible, below ½ = unlikely, ½ = even chance, above ½ = likely, 1 = certain.
+6 of the 6 numbers work, so the chance is **certain**.
+
+Remember: 0 = impossible (it can never happen), less than ½ = unlikely, ½ = even chance (half and half), more than ½ = likely, 1 = certain (it will surely happen).
 
 **b)**
 
 $$
-P(\text{red}) = \frac{3}{10}
+\text{Probability of red} = \frac{3}{10}
 $$
 
-Compare with ½: 3 out of 10 is less than half, so picking red is **unlikely**.
+3 out of 10 counters are red.
+
+That is less than half of them, so the chance is **unlikely**.
 
 **c)**
 
@@ -80,7 +99,9 @@ $$
 \boxed{0.75}
 $$
 
-A probability as a decimal is always between 0 and 1.
+Divide the top number by the bottom number.
+
+A probability written as a decimal is always between 0 and 1.
 
 **d)**
 
@@ -92,50 +113,65 @@ $$
 \boxed{60}\%
 $$
 
-- A probability as a percentage is between 0% and 100%.
-- Enter the number only.
+Multiply by 100 to get a percentage.
+
+A probability as a percentage is between 0% and 100%.
 
 </details>
 
-## 15.2 Simple probability: wanted ÷ total
+## 15.2 Probability = results you want ÷ all results
 
-### 2. Simple probability: wanted ÷ total
+### 2. Probability = results you want ÷ all results
 
-- **P(event) = number of wanted outcomes ÷ total number of outcomes**.
-- The outcomes must be equally likely: a fair dice, a random pick.
-- Write the answer as a fraction in its simplest form.
+- Count how many results give what you want.
+- Count how many results there are altogether.
+- Probability = results you want ÷ all results.
+- This works when every result has the same chance: a normal dice, or taking one out without looking.
+- Simplify the fraction.
 
 **Examples:**
 
-- **a)** A fair dice is rolled.
+**a)** You roll a normal dice with the numbers 1 to 6.
 
-Find P(an even number).
+What is the probability of getting an even number?
 
-- **b)** A bag has 4 red, 5 blue, 3 green counters.
+---
 
-- One counter is picked at random.
-- Find P(blue).
+**b)** A bag has 4 red, 5 blue and 3 green counters.
 
-- **c)** Cards are numbered 1 to 20.
+You take out one counter without looking.
 
-- One card is picked at random.
-- Find P(a multiple of 5).
+What is the probability that it is blue?
 
-- **d)** Each letter of the word MATHEMATICS is written on a card.
+---
 
-- One card is picked at random.
-- Find P(the letter A).
+**c)** A box has 20 cards with the numbers 1 to 20.
+
+You take out one card without looking.
+
+What is the probability that its number is a multiple of 5?
+
+---
+
+**d)** Each letter of the word MATHEMATICS is written on its own card.
+
+You take out one card without looking.
+
+What is the probability that it shows the letter A?
 
 ![Six dice faces 1 to 6; the even faces 2, 4 and 6 are shaded.](media/ch15-card-2.svg)
 
-- A bag has 6 red and 9 blue counters.
-- One is picked at random.
+A bag has 6 red counters and 9 blue counters.
 
-Find P(red) as a decimal.
+You take out one counter without looking.
+
+What is the probability that it is red?
+
+Give it as a decimal.
 
 | Question | Answer |
 |---:|---:|
-| $P(\text{red})$ | ? |
+| $\text{Red}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -143,104 +179,133 @@ Find P(red) as a decimal.
 **a)**
 
 $$
-\text{Wanted: } 2, 4, 6
+\text{Numbers you want: 2, 4, 6}
 $$
 
 $$
-P = \frac{3}{6}
+\text{Probability} = \frac{3}{6}
 $$
 
 $$
 \boxed{\frac{1}{2}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **b)**
 
 $$
-\begin{aligned} \text{Total} &= 4 + 5 + 3 \\ &= 12 \end{aligned}
+\begin{aligned} \text{All counters} &= 4 + 5 + 3 \\ &= 12 \end{aligned}
 $$
 
 $$
-P(\text{blue}) = \frac{5}{12}
+\text{Probability of blue} = \frac{5}{12}
 $$
 
 $$
 \boxed{\frac{5}{12}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **c)**
 
 $$
-\text{Wanted: } 5, 10, 15, 20
+\text{Numbers you want: 5, 10, 15, 20}
 $$
 
 $$
-P = \frac{4}{20}
+\text{Probability} = \frac{4}{20}
 $$
 
 $$
 \boxed{\frac{1}{5}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **d)**
 
 $$
-\text{MATHEMATICS has 11 letters; A appears 2 times}
+\text{Letters in MATHEMATICS} = 11
 $$
 
 $$
-P(A) = \frac{2}{11}
+\text{Times A appears} = 2
+$$
+
+$$
+\text{Probability} = \frac{2}{11}
 $$
 
 $$
 \boxed{\frac{2}{11}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 </details>
 
-## 15.3 Complement: P(not A) = 1 − P(A)
+## 15.3 The chance that something does not happen
 
-### 3. Complement: P(not A) = 1 − P(A)
+### 3. The chance that something does not happen
 
-- An event either **happens** or **does not happen**.
-- So P(not A) = 1 − P(A).
-- With percentages: P(not A) = 100% − P(A).
+- Something either happens or it does not happen.
+- These two probabilities always add up to 1.
+- So: probability it does not happen = 1 − probability it happens.
+- With percentages, use 100% instead of 1.
 
 **Examples:**
 
-- **a)** P(the bus is late) = $\dfrac{2}{7}$.
+**a)** The probability that the bus is late is $\dfrac{2}{7}$.
 
-Find P(not the bus is late).
+What is the probability that the bus is not late?
 
-- **b)** P(rain tomorrow) = 0.3.
+---
 
-Find P(not rain tomorrow).
+**b)** The probability that it rains tomorrow is 0.3.
 
-- **c)** P(a faulty bulb) = 4%.
+What is the probability that it does not rain tomorrow?
 
-Find P(not a faulty bulb) as a percentage.
+---
 
-- **d)** A fair dice is rolled.
+**c)** The probability that a light bulb is broken is 4%.
 
-Find P(not a 4).
+What is the probability that the light bulb is not broken?
 
-![A bar of length 1: the rain part is 0.3, the rest is not rain and unknown.](media/ch15-card-3.svg)
+Type the percentage as a number only.
 
-P(a train is late) = 0.12.
+---
 
-Find P(the train is not late).
+**d)** You roll a normal dice with the numbers 1 to 6.
+
+What is the probability that you do not get a 4?
+
+![A bar of length 1: the rain part is 0.3, the no-rain part is unknown.](media/ch15-card-3.svg)
+
+The probability that a train is late is 0.12.
+
+What is the probability that the train is not late?
 
 | Question | Answer |
 |---:|---:|
-| $P(\text{not late})$ | ? |
+| $\text{Not late}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -248,81 +313,87 @@ Find P(the train is not late).
 **a)**
 
 $$
-P(\text{not}) = 1 - \frac{2}{7}
-$$
-
-$$
-= \frac{7}{7} - \frac{2}{7}
+1 - \frac{2}{7} = \frac{7}{7} - \frac{2}{7}
 $$
 
 $$
 \boxed{\frac{5}{7}}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **b)**
 
 $$
-P(\text{not}) = 1 - 0.3
+1 - 0.3
 $$
 
 $$
 \boxed{0.7}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **c)**
 
 $$
-P(\text{not}) = 100\% - 4\%
+100\% - 4\%
 $$
 
 $$
 \boxed{96}\%
 $$
 
-- An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
-- Enter the number only.
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **d)**
 
 $$
-P(\text{a 4}) = \frac{1}{6}
+\text{Probability of a 4} = \frac{1}{6}
 $$
 
 $$
-P(\text{not}) = 1 - \frac{1}{6}
+\text{Probability of not} = 1 - \frac{1}{6}
 $$
 
 $$
 \boxed{\frac{5}{6}}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 </details>
 
-## 15.4 Mutually exclusive: add for “or”; all outcomes add to 1
+## 15.4 One or the other, and everything adds up to 1
 
-### 4. Mutually exclusive: add for “or”; all outcomes add to 1
+### 4. One or the other, and everything adds up to 1
 
-- **Mutually exclusive** events cannot happen at the same time (one roll shows one number).
-- For them: P(A or B) = P(A) + P(B).
-- The probabilities of **all** the outcomes add up to 1, so a missing one is 1 − (the rest).
+- Some results cannot happen together. One roll of a dice cannot show a 1 and a 2 at the same time. The book calls these *mutually exclusive*.
+- For these, the probability of one **or** the other = add the two probabilities.
+- All the possible results together always add up to 1.
+- So a missing probability = 1 − all the others.
 
 **Examples:**
 
-- **a)** A fair dice is rolled once.
+**a)** You roll a normal dice with the numbers 1 to 6.
 
-Find P(a 1 or a 2).
+You roll it once.
 
-- **b)** A spinner has four colours. P(red) = 0.25 and P(blue) = 0.4.
+What is the probability of getting a 1 or a 2?
 
-Find P(red or blue).
+---
 
-- **c)** A spinner lands on one of four colours.
+**b)** A spinner has four colours.
+
+The probability of red is 0.25, and the probability of blue is 0.4.
+
+What is the probability that it lands on red or blue?
+
+---
+
+**c)** A spinner always lands on one of four colours.
+
+The table shows the probability of each colour.
 
 | Colour | Probability |
 |---|---|
@@ -331,22 +402,29 @@ Find P(red or blue).
 | green | ? |
 | yellow | 0.15 |
 
-Find P(green).
+What is the probability of green?
 
-- **d)** A spinner is red, blue or green. P(red) = 0.4.
+---
 
-- Blue and green are equally likely.
-- Find P(blue).
+**d)** A spinner is red, blue or green.
 
-![A spinner with red, blue, green and yellow sectors; red 0.2, blue 0.35, yellow 0.15, green unknown.](media/ch15-card-4.svg)
+The probability of red is 0.4.
 
-A spinner: P(red) = 0.3, P(blue) = 0.25, P(green) = 0.1, and the rest is yellow.
+Blue and green have the same probability.
 
-Find P(yellow).
+What is the probability of blue?
+
+![A spinner with red, blue, green and yellow parts; red 0.2, blue 0.35, yellow 0.15, green unknown.](media/ch15-card-4.svg)
+
+A spinner is red, blue, green or yellow.
+
+The probability of red is 0.3, of blue 0.25 and of green 0.1.
+
+What is the probability of yellow?
 
 | Question | Answer |
 |---:|---:|
-| $P(\text{yellow})$ | ? |
+| $\text{Yellow}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -354,34 +432,34 @@ Find P(yellow).
 **a)**
 
 $$
-P(\text{a 1}) = \frac{1}{6}
+\text{Probability of a 1} = \frac{1}{6}
 $$
 
 $$
-P(\text{a 2}) = \frac{1}{6}
+\text{Probability of a 2} = \frac{1}{6}
 $$
 
 $$
-P(\text{a 1 or a 2}) = \frac{1}{6} + \frac{1}{6}
+\frac{1}{6} + \frac{1}{6}
 $$
 
 $$
 \boxed{\frac{1}{3}}
 $$
 
-The two events cannot happen together on one roll, so add their probabilities.
+One roll cannot give both at the same time, so add the two probabilities.
 
 **b)**
 
 $$
-P(\text{red or blue}) = 0.25 + 0.4
+0.25 + 0.4
 $$
 
 $$
 \boxed{0.65}
 $$
 
-The spinner lands on one colour only, so the events are mutually exclusive: add.
+The spinner can only land on one colour at a time, so add the two probabilities.
 
 **c)**
 
@@ -390,70 +468,86 @@ $$
 $$
 
 $$
-P(\text{green}) = 1 - 0.7
+1 - 0.7
 $$
 
 $$
 \boxed{0.3}
 $$
 
-All the outcomes together have probability 1, so subtract the known ones from 1.
+All the colours together must add up to 1.
+
+Add the ones you know, then take that away from 1.
 
 **d)**
 
 $$
-\begin{aligned} P(\text{blue}) + P(\text{green}) &= 1 - 0.4 \\ &= 0.6 \end{aligned}
+\begin{aligned} \text{Blue and green together} &= 1 - 0.4 \\ &= 0.6 \end{aligned}
 $$
 
 $$
-P(\text{blue}) = 0.6 \div 2
+\text{Blue} = 0.6 \div 2
 $$
 
 $$
 \boxed{0.3}
 $$
 
-First find what is left for blue and green together, then split it into two equal parts.
+First find what is left for blue and green together.
+
+Then split it into two equal parts.
 
 </details>
 
-## 15.5 Experimental and theoretical probability
+## 15.5 Working it out, or trying it many times
 
-### 5. Experimental and theoretical probability
+### 5. Working it out, or trying it many times
 
-- **Theoretical:** worked out from equally likely outcomes, without doing it (fair dice: P(6) = 1/6).
-- **Experimental:** from real results, times it happened ÷ number of trials.
-- **Expected number** = probability × number of trials (an estimate).
+- **Worked out:** you use the numbers without doing anything. A normal dice gives a 6 with probability 1/6. The book calls this *theoretical* probability.
+- **From real results:** do it many times and count. Probability = times it happened ÷ number of tries. The book calls this *experimental* probability.
+- **Expected number** = probability × number of tries. It is a good guess, not an exact result.
 
 **Examples:**
 
-- **a)** A coin is tossed 50 times and lands heads 28 times.
+**a)** You toss a coin 50 times.
 
-Find the experimental probability as a decimal.
+It lands on heads 28 times.
 
-- **b)** A fair dice is rolled. The event is rolling a 6.
+Using these results, what is the probability of heads?
 
-How many times would you expect it in 60 trials?
+Give it as a decimal.
 
-- **c)** A drawing pin landed point up 20 times in 50 drops.
+---
 
-Estimate how many times this happens in 400 trials.
+**b)** You roll a normal dice 60 times.
 
-- **d)** A fair dice is rolled 120 times and shows a 6 40 times.
+About how many times would you expect to get a 6?
 
-- The theoretical probability is $\dfrac{1}{6}$.
-- By how many does the result differ from the expected number?
+---
 
-![Bars for 50 coin tosses: heads 28, tails 22.](media/ch15-card-5.svg)
+**c)** A drawing pin landed point up 20 times out of 50 drops.
 
-- A spinner has P(blue) = 0.2.
-- It is spun 150 times.
+About how many times would it land point up in 400 drops?
 
-How many blues do you expect?
+---
+
+**d)** You roll a normal dice 120 times and get a 6 on 40 of them.
+
+The chance of a 6 on each try is $\dfrac{1}{6}$.
+
+How many times would you expect a 6, and what is the difference between that and what you got?
+
+![Bars for a coin tossed 50 times: heads 28, tails 22.](media/ch15-card-5.svg)
+
+A spinner lands on blue with probability 0.2.
+
+You spin it 150 times.
+
+About how many times would you expect blue?
 
 | Question | Answer |
 |---:|---:|
-| $\text{Expected blues}$ | ? |
+| $\text{Blues}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -468,25 +562,26 @@ $$
 \boxed{0.56}
 $$
 
-Experimental probability = number of times it happened ÷ number of trials.
+From real results: probability = number of times it happened ÷ number of tries.
 
 **b)**
 
 $$
-\text{Expected} = \frac{1}{6} \times 60
+\frac{1}{6} \times 60
 $$
 
 $$
 \boxed{10}
 $$
 
-- Expected number = probability × number of trials.
-- It is an estimate, not a promise.
+Expected number = probability × number of tries.
+
+It is a good guess, not an exact result.
 
 **c)**
 
 $$
-P \approx \frac{20}{50}
+\text{Probability from the results} = \frac{20}{50}
 $$
 
 $$
@@ -497,7 +592,7 @@ $$
 \boxed{160}
 $$
 
-Use the experimental probability as the estimate, then multiply by the new number of trials.
+Use the results to get a probability, then multiply by the new number of tries.
 
 **d)**
 
@@ -506,53 +601,68 @@ $$
 $$
 
 $$
-|40 - 20|
+\text{Difference} = 40 - 20
 $$
 
 $$
 \boxed{20}
 $$
 
-- Theoretical probability predicts; an experiment only gets close.
-- More trials usually get closer.
+The worked-out chance tells you what should happen.
+
+Real results only come close, and they usually get closer when you try more times.
 
 </details>
 
-## 15.6 Two events: the sample space
+## 15.6 Two things at once: list every pair
 
-### 6. Two events: the sample space
+### 6. Two things at once: list every pair
 
-- For two events (a coin **and** a dice), list every pair, or draw a grid.
-- Number of outcomes = outcomes of the first × outcomes of the second.
-- Then P = wanted pairs ÷ all pairs.
+- When you do two things (toss a coin **and** roll a dice), write down every possible pair of results, or draw a grid.
+- Number of pairs = results of the first thing × results of the second thing.
+- Probability = pairs you want ÷ all pairs.
 
 **Examples:**
 
-- **a)** A coin is tossed and a fair dice is rolled.
+**a)** You toss a coin and roll a normal dice with the numbers 1 to 6.
 
-How many outcomes are in the sample space?
+How many different pairs of results are possible altogether?
 
-- **b)** A coin is tossed and a fair dice is rolled.
+For example, heads and 3 is one pair.
 
-Find P(heads and an even number).
+---
 
-- **c)** Two fair dice are rolled and the scores are added.
+**b)** You toss a coin and roll a normal dice with the numbers 1 to 6.
 
-Find P(a total of 7).
+What is the probability of getting heads and an even number?
 
-- **d)** Spinner A shows 1, 2, 3. Spinner B shows 1, 2, 3, 4. Both are spun and the scores are added.
+---
 
-Find P(a total of 5).
+**c)** You roll two normal dice and add the two numbers.
 
-![A 2 by 6 grid of coin and dice outcomes H1 to T6; heads with an even number are shaded.](media/ch15-card-6.svg)
+What is the probability that the total is 7?
 
-A coin is tossed and a fair dice is rolled.
+---
 
-Find P(heads and a number less than 4) as a decimal.
+**d)** Spinner A has the numbers 1, 2, 3.
+
+Spinner B has the numbers 1, 2, 3, 4.
+
+You spin both and add the two numbers.
+
+What is the probability that the total is 5?
+
+![A 2 by 6 grid of coin and dice pairs H1 to T6; heads with an even number are shaded.](media/ch15-card-6.svg)
+
+You toss a coin and roll a normal dice with the numbers 1 to 6.
+
+What is the probability of heads and a number less than 4?
+
+Give it as a decimal.
 
 | Question | Answer |
 |---:|---:|
-| $P$ | ? |
+| $\text{Probability}$ | ? |
 
 <details>
 <summary><b>Working</b></summary>
@@ -567,62 +677,66 @@ $$
 \boxed{12}
 $$
 
-Each of the first outcomes can pair with each of the second: multiply, or draw the grid.
+Every result of the first thing can go with every result of the second, so multiply.
+
+You can also draw a grid and count the boxes.
 
 **b)**
 
 $$
-\text{12 outcomes: H1, …, H6, T1, …, T6}
+\text{All pairs: H1, …, H6, T1, …, T6} = 12
 $$
 
 $$
-\text{Wanted: } H2, H4, H6
+\text{Pairs you want: } H2, H4, H6
 $$
 
 $$
-P = \frac{3}{12}
+\text{Probability} = \frac{3}{12}
 $$
 
 $$
 \boxed{\frac{1}{4}}
 $$
 
-List or draw the 12 outcomes, then count the ones that match both parts.
+Write out the 12 pairs (or draw the grid), then count the pairs that match both parts.
 
 **c)**
 
 $$
-\text{Wanted: } (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)
+\text{Pairs you want: } (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)
 $$
 
 $$
-P = \frac{6}{36}
+\text{Probability} = \frac{6}{36}
 $$
 
 $$
 \boxed{\frac{1}{6}}
 $$
 
-The sum grid has 6 × 6 = 36 cells; count the cells with the wanted total.
+A 6 by 6 grid of totals has 36 boxes.
+
+Count the boxes with the total you want.
 
 **d)**
 
 $$
-\begin{aligned} \text{Outcomes} &= 3 \times 4 \\ &= 12 \end{aligned}
+\begin{aligned} \text{All pairs} &= 3 \times 4 \\ &= 12 \end{aligned}
 $$
 
 $$
-\text{Wanted: } (1,4), (2,3), (3,2)
+\text{Pairs you want: } (1,4), (2,3), (3,2)
 $$
 
 $$
-P = \frac{3}{12}
+\text{Probability} = \frac{3}{12}
 $$
 
 $$
 \boxed{\frac{1}{4}}
 $$
 
-Make the grid of all pairs, then count the pairs with the wanted total.
+Draw the grid of all pairs, then count the pairs with the total you want.
 
 </details>

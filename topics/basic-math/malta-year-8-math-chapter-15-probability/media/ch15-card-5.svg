@@ -1,12 +1,12 @@
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 240' width='640' height='240' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
 <rect x='1' y='1' width='638' height='238' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
 <defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
-<text x='320.0' y='40.0' font-size='26' font-weight='700' text-anchor='middle' fill='#1f2328'>Coin tossed 50 times</text>
+<text x='320.0' y='40.0' font-size='26' font-weight='700' text-anchor='middle' fill='#1f2328'>A coin tossed 50 times</text>
 <text x='120.0' y='110.0' font-size='22' font-weight='700' text-anchor='end' fill='#1f2328'>heads</text>
 <rect x='135.0' y='80.0' width='336.0' height='42.0' rx='0' fill='#ddf4ff' stroke='#1f2328' stroke-width='2'/>
 <text x='481.0' y='110.0' font-size='22' font-weight='700' text-anchor='start' fill='#0969da'>28</text>
 <text x='120.0' y='170.0' font-size='22' font-weight='700' text-anchor='end' fill='#1f2328'>tails</text>
 <rect x='135.0' y='140.0' width='264.0' height='42.0' rx='0' fill='#fff8c5' stroke='#1f2328' stroke-width='2'/>
 <text x='409.0' y='170.0' font-size='22' font-weight='700' text-anchor='start' fill='#0969da'>22</text>
-<text x='320.0' y='222.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>experimental P(heads) = ? ÷ 50</text>
+<text x='320.0' y='222.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>chance of heads from the results = ? ÷ 50</text>
 </svg>
