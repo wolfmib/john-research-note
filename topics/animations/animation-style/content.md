@@ -89,7 +89,7 @@ The rule: render every version of the line first (symbolic, with numbers, each c
 
 ## Taste rules for the notes and animations
 
-- No slogans. A plain closing sentence instead.
+- No slogans. No closing recap sentence: the last scene ends on the labelled picture and holds.
 - Every number is written out and computed in the page. Vector and matrix products are shown as a row times a column with every element visible.
 - Skip inner-method details that the viewer does not need for the concept.
 - A note has the sections What happens, Concept and Summary, with the Summary also in 繁體中文, Français, Deutsch and Русский.
