@@ -17,7 +17,7 @@ the areas the notes cover.
 | [Machine Learning](index.md#machine-learning) | The classical classification family for medical data, one method per note: PCA, ICA, KNN, decision tree, random forest, LDA, SVM | 9 |
 | [Thermal Dynamics](index.md#thermal-dynamics) | Thermal recovery curves of skin lesions, fitted parameters, the features built from them, and a bioheat simulator with known truth || 7 |
 | [Medical Imaging](index.md#medical-imaging) | Diffuse optical imaging, from photon transport in tissue to oxygenation maps | 5 |
-| [Quantum Computing](index.md#quantum-computing) | Grover search, QSVT, and Dürr–Høyer minimum finding with its query bound | 4 |
+| [Quantum Computing](index.md#quantum-computing) | Grover search, QSVT, Dürr–Høyer minimum finding with its query bound, and the Interaction-Guided Schedule Oracle | 5 |
 | [Basic Math](index.md#basic-math) | Practice quizzes and worked math material by course and topic | 97 |
 | [Animations](index.md#animations) | Animated concept figures for mathematics, machine learning, and quantum search, with the style register | 22 |
 | [Papers](index.md#papers) | Handwritten guides to the author's own papers, and the reading queue | 3 |

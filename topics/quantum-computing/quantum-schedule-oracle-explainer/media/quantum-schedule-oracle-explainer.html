@@ -1,0 +1,1640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can Quantum Search Methods Support Adaptive ML Training? — The Quantum Schedule Oracle</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-navy: #070D1A;
+      --cyan: #38BDF8;
+      --gold: #FBBF24;
+      --coral: #FB7185;
+      --mint: #34D399;
+    }
+    * {
+      box-sizing: border-box;
+      user-select: none;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #040811;
+      color: #F8FAFC;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+    }
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Custom subtle range scrubber styling */
+    input[type="range"].timeline-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      cursor: pointer;
+    }
+    input[type="range"].timeline-slider::-webkit-slider-runnable-track {
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.22);
+    }
+    input[type="range"].timeline-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #38BDF8;
+      border: 2px solid #070D1A;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+      margin-top: -5px;
+      transition: transform 0.15s ease;
+    }
+    input[type="range"].timeline-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.2);
+    }
+    input[type="range"].timeline-slider::-moz-range-track {
+      height: 6px;
+      border-radius: 999px;
+      background: rgba(148, 163, 184, 0.22);
+    }
+    input[type="range"].timeline-slider::-moz-range-thumb {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: #38BDF8;
+      border: 2px solid #070D1A;
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.8);
+    }
+    /* render mode (#manual): stage only, 1920x1080, no player chrome */
+    html.manual body { padding: 0 !important; display: block !important; min-height: 0 !important; overflow: hidden; background: #070D1A; }
+    html.manual body > div { max-width: none !important; width: 100vw !important; height: 100vh !important; gap: 0 !important; }
+    html.manual body > div > div:first-child { border: 0 !important; border-radius: 0 !important; box-shadow: none !important; width: 100vw !important; height: 100vh !important; }
+    html.manual body > div > div:nth-child(2), html.manual #export-modal { display: none !important; }
+  </style>
+  <script>if (location.hash === "#manual") document.documentElement.classList.add("manual");</script>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-2 sm:p-4">
+
+  <!-- Main Stage Wrapper (16:9 Cinema Frame + Minimal Dark Glass Control Bar) -->
+  <div class="w-full max-w-[1600px] flex flex-col gap-2.5">
+
+    <!-- 16:9 SVG Animation Stage -->
+    <div class="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-800/80 shadow-[0_24px_80px_rgba(0,0,0,0.85)] bg-[#070D1A]">
+      <svg id="stage" viewBox="0 0 1920 1080" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" class="block w-full h-full">
+        <defs>
+          <!-- Deep Navy Radial Background -->
+          <radialGradient id="bg-vignette" cx="50%" cy="46%" r="68%" fx="50%" fy="46%">
+            <stop offset="0%" stop-color="#0D192E" />
+            <stop offset="62%" stop-color="#070D1A" />
+            <stop offset="100%" stop-color="#040812" />
+          </radialGradient>
+
+          <!-- Subtle Mathematical Grid Pattern -->
+          <pattern id="math-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#38BDF8" stroke-width="0.6" stroke-opacity="0.045" />
+          </pattern>
+
+          <!-- Restrained SVG Glow Filters -->
+          <filter id="glow-cyan" x="-35%" y="-35%" width="170%" height="170%">
+            <feGaussianBlur stdDeviation="5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+
+          <filter id="glow-gold" x="-35%" y="-35%" width="170%" height="170%">
+            <feGaussianBlur stdDeviation="6" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+
+          <filter id="glow-mint" x="-35%" y="-35%" width="170%" height="170%">
+            <feGaussianBlur stdDeviation="6" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+
+          <filter id="glow-coral" x="-35%" y="-35%" width="170%" height="170%">
+            <feGaussianBlur stdDeviation="5" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+
+          <!-- Linear Gradients for Flows and Waves -->
+          <linearGradient id="grad-bridge-gold" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.95" />
+            <stop offset="50%" stop-color="#FDE68A" stop-opacity="1" />
+            <stop offset="100%" stop-color="#FBBF24" stop-opacity="0.95" />
+          </linearGradient>
+
+          <linearGradient id="grad-cyan-wave" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2" />
+            <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.95" />
+            <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2" />
+          </linearGradient>
+
+          <linearGradient id="grad-scan-beam" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+            <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.24" />
+            <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+          </linearGradient>
+
+          <linearGradient id="grad-triptych-flow" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#FBBF24" stop-opacity="0.85" />
+            <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.95" />
+            <stop offset="100%" stop-color="#34D399" stop-opacity="0.9" />
+          </linearGradient>
+
+          <!-- Arrowhead Markers -->
+          <marker id="arrow-cyan" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#38BDF8" />
+          </marker>
+          <marker id="arrow-gold" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#FBBF24" />
+          </marker>
+          <marker id="arrow-mint" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 1 1.5 L 8.5 5 L 1 8.5 z" fill="#34D399" />
+          </marker>
+        </defs>
+
+        <!-- Persistent Deep Navy Canvas -->
+        <rect x="0" y="0" width="1920" height="1080" fill="url(#bg-vignette)" />
+        <rect x="0" y="0" width="1920" height="1080" fill="url(#math-grid)" />
+
+        <!-- =================================================================== -->
+        <!-- SCENE 1 (0–13s): THE SURPRISE — INDIVIDUAL CHANGES CAN MISLEAD      -->
+        <!-- =================================================================== -->
+        <g id="scene-1" opacity="1">
+          <!-- Three Abstract Layer-Group Columns (Populated by JS) -->
+          <g id="s1-groups"></g>
+
+          <!-- Golden Interaction Bridge between G1 and G2 -->
+          <g id="s1-bridge-group" opacity="0">
+            <path id="s1-bridge-glow" d="M 560 440 Q 760 235 960 440" fill="none" stroke="#FBBF24" stroke-width="10" stroke-opacity="0.28" filter="url(#glow-gold)" stroke-linecap="round" />
+            <path id="s1-bridge-path" d="M 560 440 Q 760 235 960 440" fill="none" stroke="url(#grad-bridge-gold)" stroke-width="3.5" stroke-linecap="round" />
+            <!-- Bridge Interaction Coefficient Pill (+4) -->
+            <g id="s1-bridge-badge" transform="translate(760, 315)">
+              <rect x="-46" y="-22" width="92" height="44" rx="22" fill="#0B1528" stroke="#FBBF24" stroke-width="2" filter="url(#glow-gold)" />
+              <text x="0" y="7" text-anchor="middle" fill="#FBBF24" font-family="JetBrains Mono, monospace" font-size="24" font-weight="600">+4</text>
+            </g>
+          </g>
+
+          <!-- Floating Individual Contribution Badges (-1 on G1, -1 on G2) -->
+          <g id="s1-contrib-g1" transform="translate(560, 725)" opacity="0">
+            <rect x="-36" y="-18" width="72" height="36" rx="18" fill="#1E0E17" stroke="#FB7185" stroke-width="1.8" />
+            <text x="0" y="6" text-anchor="middle" fill="#FB7185" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600">−1</text>
+          </g>
+          <g id="s1-contrib-g2" transform="translate(960, 725)" opacity="0">
+            <rect x="-36" y="-18" width="72" height="36" rx="18" fill="#1E0E17" stroke="#FB7185" stroke-width="1.8" />
+            <text x="0" y="6" text-anchor="middle" fill="#FB7185" font-family="JetBrains Mono, monospace" font-size="20" font-weight="600">−1</text>
+          </g>
+
+          <!-- Zero-Centered Score Indicator Bar -->
+          <g id="s1-score-meter" transform="translate(960, 825)">
+            <!-- Track -->
+            <rect x="-340" y="-14" width="680" height="28" rx="14" fill="#0C172A" stroke="#1E293B" stroke-width="1.5" />
+            <!-- Tick Marks (-2, -1, 0, +1, +2) -->
+            <line x1="-240" y1="-22" x2="-240" y2="22" stroke="#334155" stroke-width="1.5" />
+            <line x1="-120" y1="-22" x2="-120" y2="22" stroke="#334155" stroke-width="1.5" />
+            <line x1="0" y1="-28" x2="0" y2="28" stroke="#94A3B8" stroke-width="2.5" />
+            <line x1="120" y1="-22" x2="120" y2="22" stroke="#334155" stroke-width="1.5" />
+            <line x1="240" y1="-22" x2="240" y2="22" stroke="#334155" stroke-width="1.5" />
+
+            <text x="-240" y="42" text-anchor="middle" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="16">−2</text>
+            <text x="-120" y="42" text-anchor="middle" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="16">−1</text>
+            <text x="0" y="42" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="17" font-weight="600">0</text>
+            <text x="120" y="42" text-anchor="middle" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="16">+1</text>
+            <text x="240" y="42" text-anchor="middle" fill="#64748B" font-family="JetBrains Mono, monospace" font-size="16">+2</text>
+
+            <!-- Active Score Bar & Marker -->
+            <rect id="s1-score-fill" x="0" y="-10" width="0" height="20" rx="10" fill="#FB7185" />
+            <circle id="s1-score-dot" cx="0" cy="0" r="11" fill="#F8FAFC" stroke="#38BDF8" stroke-width="3" />
+
+            <!-- Score Arithmetic Readout Above Meter -->
+            <text id="s1-score-readout" x="0" y="-44" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="26" font-weight="600">0</text>
+          </g>
+
+          <!-- Minimal Scene 1 Takeaway Caption (2 words) -->
+          <text id="s1-caption" x="960" y="965" text-anchor="middle" fill="#F8FAFC" font-size="34" font-weight="500" letter-spacing="0.02em" opacity="0">Interactions matter.</text>
+        </g>
+
+        <!-- =================================================================== -->
+        <!-- SCENE 2 (13–25s): WHERE THE SCORE COMES FROM                        -->
+        <!-- =================================================================== -->
+        <g id="scene-2" opacity="0">
+          <!-- Classical Checkpoint Probe Zone Divider (Spatial Clarity: Classical vs Quantum) -->
+          <line x1="940" y1="210" x2="940" y2="850" stroke="#334155" stroke-width="1.5" stroke-dasharray="8 8" opacity="0.6" />
+          <text x="510" y="210" text-anchor="middle" fill="#FBBF24" font-size="23" font-weight="500" letter-spacing="0.03em">Classical checkpoint probes</text>
+
+          <!-- Three Compact Layer Groups on Left (G1, G2, G3 in Triangle/Arc Geometry) -->
+          <g id="s2-groups"></g>
+
+          <!-- Geometric Layer 3: Triple Interaction Triangle -->
+          <g id="s2-triples-layer" opacity="0">
+            <polygon id="s2-triple-poly" points="350,560 510,340 670,560" fill="#FBBF24" fill-opacity="0.14" stroke="#FBBF24" stroke-width="2" stroke-dasharray="6 4" />
+            <circle cx="510" cy="487" r="9" fill="#FBBF24" filter="url(#glow-gold)" />
+            <text x="510" y="675" text-anchor="middle" fill="#FBBF24" font-size="22" font-weight="500">Triples</text>
+          </g>
+
+          <!-- Geometric Layer 2: Pair Interaction Edges -->
+          <g id="s2-pairs-layer" opacity="0">
+            <line x1="350" y1="560" x2="510" y2="340" stroke="#FBBF24" stroke-width="3.2" filter="url(#glow-gold)" />
+            <line x1="510" y1="340" x2="670" y2="560" stroke="#FBBF24" stroke-width="3.2" filter="url(#glow-gold)" />
+            <line x1="350" y1="560" x2="670" y2="560" stroke="#FBBF24" stroke-width="3.2" filter="url(#glow-gold)" />
+            <text x="510" y="675" text-anchor="middle" fill="#FBBF24" font-size="22" font-weight="500">Pairs</text>
+          </g>
+
+          <!-- Geometric Layer 1: Single Main-Effect Nodes -->
+          <g id="s2-singles-layer" opacity="0">
+            <circle cx="350" cy="560" r="15" fill="#FBBF24" filter="url(#glow-gold)" />
+            <circle cx="510" cy="340" r="15" fill="#FBBF24" filter="url(#glow-gold)" />
+            <circle cx="670" cy="560" r="15" fill="#FBBF24" filter="url(#glow-gold)" />
+            <text x="510" y="675" text-anchor="middle" fill="#FBBF24" font-size="22" font-weight="500">Singles</text>
+          </g>
+
+          <!-- Flowing Streams into Classical Score Accumulator -->
+          <g id="s2-flows">
+            <path id="s2-flow-1" d="M 685 370 C 920 350, 1120 430, 1340 485" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="10 8" opacity="0" />
+            <path id="s2-flow-2" d="M 695 480 C 930 480, 1120 495, 1340 500" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="10 8" opacity="0" />
+            <path id="s2-flow-3" d="M 685 575 C 920 610, 1120 555, 1340 515" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="10 8" opacity="0" />
+          </g>
+
+          <!-- Classical Score Accumulator Vessel on Right -->
+          <g id="s2-accumulator" transform="translate(1480, 500)">
+            <rect x="-135" y="-120" width="270" height="240" rx="28" fill="#0B162C" stroke="#FBBF24" stroke-width="2.5" filter="url(#glow-gold)" />
+            <rect x="-118" y="-103" width="236" height="206" rx="20" fill="none" stroke="#FBBF24" stroke-width="1" stroke-opacity="0.3" />
+            <!-- Stacked Coefficient Bars inside Accumulator -->
+            <rect id="s2-acc-bar1" x="-85" y="45" width="170" height="32" rx="8" fill="#FBBF24" fill-opacity="0.25" stroke="#FBBF24" stroke-width="1.5" opacity="0" />
+            <rect id="s2-acc-bar2" x="-85" y="0" width="170" height="32" rx="8" fill="#FBBF24" fill-opacity="0.45" stroke="#FBBF24" stroke-width="1.5" opacity="0" />
+            <rect id="s2-acc-bar3" x="-85" y="-45" width="170" height="32" rx="8" fill="#FBBF24" fill-opacity="0.7" stroke="#FBBF24" stroke-width="1.5" opacity="0" />
+            <text x="0" y="-70" text-anchor="middle" fill="#FDE68A" font-family="JetBrains Mono, monospace" font-size="18" font-weight="600">Φ(z)</text>
+            <text x="0" y="158" text-anchor="middle" fill="#FBBF24" font-size="23" font-weight="500">Score Accumulator</text>
+          </g>
+
+          <!-- Central Piecewise Equation -->
+          <g id="s2-equation" transform="translate(960, 120)">
+            <text text-anchor="middle" font-family="JetBrains Mono, monospace" font-size="34" font-weight="600">
+              <tspan id="eq-score" fill="#F8FAFC" opacity="0">Score = </tspan>
+              <tspan id="eq-singles" fill="#FBBF24" opacity="0">Singles</tspan>
+              <tspan id="eq-pairs" fill="#FBBF24" opacity="0"> + Pairs</tspan>
+              <tspan id="eq-triples" fill="#FBBF24" opacity="0"> + Triples</tspan>
+            </text>
+          </g>
+        </g>
+
+        <!-- =================================================================== -->
+        <!-- SCENE 3 (25–37s): FROM 8 EXAMPLES TO 4,096 SCHEDULES                -->
+        <!-- =================================================================== -->
+        <g id="scene-3" opacity="0">
+          <!-- 8 Floating Three-Bit Toy Schedules (000..111) -->
+          <g id="s3-toy-8"></g>
+
+          <!-- 6 Layer-Group Architecture Header (G = 6, K = 4 rates, 12 qubits) -->
+          <g id="s3-architecture" opacity="0">
+            <text x="960" y="125" text-anchor="middle" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="44" font-weight="600" filter="url(#glow-cyan)">4⁶ = 4,096</text>
+            <text x="960" y="172" text-anchor="middle" fill="#94A3B8" font-size="22" font-weight="400">12 search qubits · {0.5, 0.7, 1.0, 1.4}</text>
+          </g>
+
+          <!-- 64x64 Lattice of 4,096 Candidate Schedules (64 row groups x 64 vector dots) -->
+          <g id="s3-lattice-4096" opacity="0"></g>
+
+          <!-- Coherent Uniform Quantum Superposition Field -->
+          <g id="s3-superposition" opacity="0">
+            <line x1="360" y1="620" x2="1560" y2="620" stroke="#334155" stroke-width="1.5" />
+            <path id="s3-wave-fill" d="" fill="#38BDF8" fill-opacity="0.16" />
+            <path id="s3-wave-line" d="" fill="none" stroke="#38BDF8" stroke-width="3.5" filter="url(#glow-cyan)" />
+            <text x="960" y="455" text-anchor="middle" fill="#7DD3FC" font-family="JetBrains Mono, monospace" font-size="24">1 / √4,096</text>
+          </g>
+
+          <text id="s3-caption" x="960" y="965" text-anchor="middle" fill="#F8FAFC" font-size="32" font-weight="500" opacity="0">Uniform quantum superposition</text>
+        </g>
+
+        <!-- =================================================================== -->
+        <!-- SCENE 4 (37–56s): INSIDE THE SCHEDULE ORACLE                        -->
+        <!-- =================================================================== -->
+        <g id="scene-4" opacity="0">
+          <!-- Sequential Stage Title: Compute -> Mark -> Uncompute -->
+          <text id="s4-stage-label" x="960" y="125" text-anchor="middle" fill="#FBBF24" font-size="42" font-weight="600" letter-spacing="0.03em">Compute</text>
+
+          <!-- Sweeping Quantum Wavefront Beam -->
+          <rect id="s4-scan-beam" x="320" y="210" width="140" height="660" rx="24" fill="url(#grad-scan-beam)" opacity="0" />
+
+          <!-- TOP REGISTER: Schedule Register (12 qubits) -->
+          <g id="s4-top-register">
+            <rect x="280" y="220" width="1360" height="230" rx="24" fill="#0A162B" fill-opacity="0.72" stroke="#38BDF8" stroke-width="1.8" stroke-opacity="0.55" />
+            <text x="315" y="258" fill="#38BDF8" font-size="22" font-weight="500">Schedule Register (12 qubits)</text>
+            <!-- 12 Qubit Rails -->
+            <g id="s4-schedule-rails"></g>
+            <!-- Horizontal Zero-Phase Axis -->
+            <line x1="340" y1="345" x2="1580" y2="345" stroke="#475569" stroke-width="1.2" stroke-dasharray="5 5" />
+            <!-- Coherent Schedule Amplitude Wave (Flips negative on improving branches during Mark!) -->
+            <path id="s4-sched-wave-pos" d="" fill="none" stroke="#38BDF8" stroke-width="3.5" filter="url(#glow-cyan)" />
+            <path id="s4-sched-wave-neg" d="" fill="none" stroke="#FB7185" stroke-width="4" filter="url(#glow-coral)" opacity="0" />
+            <text id="s4-phase-flip-tag" x="1080" y="428" text-anchor="middle" fill="#FB7185" font-size="20" font-weight="500" opacity="0">Phase flip (−)</text>
+          </g>
+
+          <!-- Controlled Interaction Coupling Arrows between Registers -->
+          <g id="s4-couplings" opacity="0"></g>
+
+          <!-- BOTTOM REGISTER: Reversible Score Accumulator (aux qubits) -->
+          <g id="s4-bottom-register">
+            <rect x="280" y="570" width="1360" height="270" rx="24" fill="#0A162B" fill-opacity="0.72" stroke="#FBBF24" stroke-width="1.8" stroke-opacity="0.55" />
+            <text id="s4-acc-title" x="315" y="608" fill="#FBBF24" font-size="22" font-weight="500">Score Accumulator (aux qubits)</text>
+            <!-- Accumulator Rails -->
+            <g id="s4-acc-rails"></g>
+            <!-- Fourier-Basis Phase Rotors (Rotate forward in Compute, backward in Uncompute) -->
+            <g id="s4-fourier-rotors"></g>
+            <!-- Coherent Score Branches in Superposition -->
+            <path id="s4-acc-branch-high" d="" fill="none" stroke="#34D399" stroke-width="3.2" filter="url(#glow-mint)" opacity="0" />
+            <path id="s4-acc-branch-mid" d="" fill="none" stroke="#FBBF24" stroke-width="2.5" opacity="0" />
+            <path id="s4-acc-branch-low" d="" fill="none" stroke="#FB7185" stroke-width="2.5" opacity="0" />
+
+            <!-- Threshold Line at Score = 0 (Uniform Baseline) -->
+            <g id="s4-threshold-group" opacity="0">
+              <line x1="340" y1="715" x2="1580" y2="715" stroke="#34D399" stroke-width="2" stroke-dasharray="10 6" filter="url(#glow-mint)" />
+              <rect x="1462" y="696" width="160" height="34" rx="17" fill="#071B18" stroke="#34D399" stroke-width="1.5" />
+              <text x="1542" y="718" text-anchor="middle" fill="#34D399" font-family="JetBrains Mono, monospace" font-size="17" font-weight="600">Threshold = 0</text>
+            </g>
+          </g>
+        </g>
+
+        <!-- =================================================================== -->
+        <!-- SCENE 5 (56–69s): GROVER AMPLIFICATION                              -->
+        <!-- =================================================================== -->
+        <g id="scene-5" opacity="0">
+          <!-- 8-State Toy Amplitude Amplification View -->
+          <g id="s5-toy-group">
+            <!-- Zero Amplitude Axis -->
+            <line x1="360" y1="560" x2="1560" y2="560" stroke="#475569" stroke-width="2" />
+            <!-- 8 Amplitude Bars (Populated by JS) -->
+            <g id="s5-bars"></g>
+            <!-- Mean Amplitude Reflection Line -->
+            <g id="s5-mean-group" opacity="0">
+              <line id="s5-mean-line" x1="360" y1="485" x2="1560" y2="485" stroke="#FBBF24" stroke-width="2.2" stroke-dasharray="10 7" filter="url(#glow-gold)" />
+              <text x="1575" y="492" text-anchor="start" fill="#FBBF24" font-size="20" font-weight="500">Mean amplitude</text>
+            </g>
+            <!-- Probability Area Callout for 110 (12.5% -> 78.125%) -->
+            <g id="s5-prob-callout" transform="translate(1260, 210)" opacity="0">
+              <rect x="-155" y="-32" width="310" height="64" rx="18" fill="#0A1E1C" stroke="#34D399" stroke-width="2" filter="url(#glow-mint)" />
+              <text id="s5-prob-text" x="0" y="8" text-anchor="middle" fill="#34D399" font-family="JetBrains Mono, monospace" font-size="24" font-weight="600">12.5% → 78.125%</text>
+            </g>
+          </g>
+
+          <!-- 4,096-Schedule Multi-Round BBHT Amplification Spectrum -->
+          <g id="s5-macro-group" opacity="0">
+            <line x1="320" y1="700" x2="1600" y2="700" stroke="#475569" stroke-width="2" />
+            <g id="s5-macro-bars"></g>
+            <g transform="translate(960, 145)">
+              <text id="s5-bbht-counter" x="0" y="0" text-anchor="middle" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="30" font-weight="600">N = 4,096 · j = 1</text>
+            </g>
+          </g>
+
+          <text id="s5-caption" x="960" y="965" text-anchor="middle" fill="#F8FAFC" font-size="34" font-weight="500" opacity="0">Amplify the improvement.</text>
+        </g>
+
+        <!-- =================================================================== -->
+        <!-- SCENE 6 (69–82s): MEASUREMENT AND ADAPTIVE TRAINING                 -->
+        <!-- =================================================================== -->
+        <g id="scene-6" opacity="0">
+          <!-- Step 1 (Left): Quantum Collapse to Measured Candidate & 6 Dials -->
+          <g id="s6-measured-panel" transform="translate(420, 440)">
+            <rect x="-250" y="-210" width="500" height="420" rx="28" fill="#0B162B" stroke="#38BDF8" stroke-width="2" />
+            <text x="0" y="-160" text-anchor="middle" fill="#38BDF8" font-size="24" font-weight="500">Measured candidate</text>
+            <!-- 6 Rotary Learning-Rate Dials (Populated by JS) -->
+            <g id="s6-dials"></g>
+          </g>
+
+          <!-- Flow Arrow: Measured Candidate -> Classical Threshold Check -->
+          <path id="s6-arrow-1" d="M 685 440 L 805 440" fill="none" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow-cyan)" opacity="0" />
+
+          <!-- Step 2 (Center): Classical Threshold Check -->
+          <g id="s6-check-panel" transform="translate(990, 440)" opacity="0">
+            <rect x="-165" y="-175" width="330" height="350" rx="26" fill="#0B162B" stroke="#FBBF24" stroke-width="2" />
+            <text x="0" y="-125" text-anchor="middle" fill="#FBBF24" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600">Score &gt; Threshold</text>
+            <!-- Rising Threshold Gauge -->
+            <rect x="-55" y="-65" width="110" height="190" rx="14" fill="#070D1A" stroke="#334155" stroke-width="1.5" />
+            <rect id="s6-thresh-fill" x="-47" y="65" width="94" height="52" rx="10" fill="#34D399" fill-opacity="0.35" stroke="#34D399" stroke-width="1.5" />
+            <line id="s6-thresh-line" x1="-70" y1="65" x2="70" y2="65" stroke="#34D399" stroke-width="3" filter="url(#glow-mint)" />
+            <text id="s6-thresh-val" x="0" y="152" text-anchor="middle" fill="#34D399" font-family="JetBrains Mono, monospace" font-size="22" font-weight="600">0 → Φ(ẑ)</text>
+          </g>
+
+          <!-- Flow Arrow: Classical Check -> Training Timeline -->
+          <path id="s6-arrow-2" d="M 1170 440 L 1285 440" fill="none" stroke="#34D399" stroke-width="3" marker-end="url(#arrow-mint)" opacity="0" />
+
+          <!-- Step 3 (Right): 200 Classical Steps -> Next Checkpoint -->
+          <g id="s6-train-panel" transform="translate(1545, 440)" opacity="0">
+            <rect x="-240" y="-210" width="480" height="420" rx="28" fill="#0B162B" stroke="#34D399" stroke-width="2" />
+            <text x="0" y="-160" text-anchor="middle" fill="#34D399" font-size="24" font-weight="500">200 classical steps</text>
+
+            <!-- Compact 6-Group Neural Stack Driven by Selected Schedule -->
+            <g id="s6-nn-mini"></g>
+
+            <!-- Training Progress Timeline -->
+            <line x1="-180" y1="115" x2="180" y2="115" stroke="#334155" stroke-width="5" stroke-linecap="round" />
+            <line id="s6-progress-bar" x1="-180" y1="115" x2="-180" y2="115" stroke="#34D399" stroke-width="5" stroke-linecap="round" filter="url(#glow-mint)" />
+            <circle cx="-180" cy="115" r="8" fill="#38BDF8" />
+            <circle id="s6-next-ckpt-dot" cx="180" cy="115" r="9" fill="#070D1A" stroke="#FBBF24" stroke-width="2.5" />
+            <text x="-180" y="148" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="16">t = 200</text>
+            <text id="s6-next-ckpt-label" x="222" y="148" text-anchor="end" fill="#FBBF24" font-family="JetBrains Mono, monospace" font-size="16">Next checkpoint</text>
+          </g>
+
+          <!-- Adaptive Feedback Loop Curve back to Left -->
+          <path id="s6-loop-return" d="M 1545 665 C 1545 815, 420 815, 420 665" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="10 7" marker-end="url(#arrow-gold)" opacity="0" />
+        </g>
+
+        <!-- =================================================================== -->
+        <!-- SCENE 7 / FINAL COMPOSITION (82–90s): LUMINOUS TRIPTYCH & TITLE     -->
+        <!-- =================================================================== -->
+        <g id="scene-7" opacity="0">
+          <!-- Flowing Connecting Curves Linking the Triptych -->
+          <path id="s7-conn-1" d="M 540 570 C 640 480, 700 480, 775 560" fill="none" stroke="#FBBF24" stroke-width="3" marker-end="url(#arrow-gold)" filter="url(#glow-gold)" />
+          <path id="s7-conn-2" d="M 1145 560 C 1220 480, 1280 480, 1380 570" fill="none" stroke="#38BDF8" stroke-width="3" marker-end="url(#arrow-cyan)" filter="url(#glow-cyan)" />
+          <path id="s7-conn-3" d="M 1420 715 C 1150 865, 770 865, 500 715" fill="none" stroke="#34D399" stroke-width="2.8" stroke-dasharray="10 7" marker-end="url(#arrow-mint)" />
+
+          <!-- LEFT PILLAR: 6 Neural-Network Layer Groups -->
+          <g id="s7-left" transform="translate(360, 600)">
+            <rect x="-185" y="-155" width="370" height="310" rx="28" fill="#0B162C" stroke="#FBBF24" stroke-width="2" />
+            <g id="s7-left-groups"></g>
+            <text x="0" y="195" text-anchor="middle" fill="#FBBF24" font-size="24" font-weight="500">Layer Groups</text>
+          </g>
+
+          <!-- CENTER PILLAR: Luminous Interaction-Guided Schedule Oracle -->
+          <g id="s7-center" transform="translate(960, 600)">
+            <rect x="-195" y="-165" width="390" height="330" rx="30" fill="#0B182F" stroke="#38BDF8" stroke-width="2.5" filter="url(#glow-cyan)" />
+            <!-- Miniature Quantum Register + Phase Wave + Clean Accumulator -->
+            <line x1="-145" y1="-65" x2="145" y2="-65" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.45" />
+            <line x1="-145" y1="-35" x2="145" y2="-35" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.45" />
+            <path d="M -145 -50 Q -95 -105, -45 -50 T 45 -50 Q 95 5, 145 -50" fill="none" stroke="#38BDF8" stroke-width="3.5" filter="url(#glow-cyan)" />
+            <circle cx="95" cy="-22" r="7" fill="#FB7185" filter="url(#glow-coral)" />
+            <!-- Clean Uncomputed Accumulator Line -->
+            <line x1="-145" y1="65" x2="145" y2="65" stroke="#34D399" stroke-width="2.5" stroke-opacity="0.85" />
+            <text x="0" y="102" text-anchor="middle" fill="#34D399" font-family="JetBrains Mono, monospace" font-size="16">|0⟩ clean</text>
+            <text x="0" y="205" text-anchor="middle" fill="#38BDF8" font-size="24" font-weight="500">Schedule Oracle</text>
+          </g>
+
+          <!-- RIGHT PILLAR: Adaptive Training Timeline -->
+          <g id="s7-right" transform="translate(1560, 600)">
+            <rect x="-185" y="-155" width="370" height="310" rx="28" fill="#0B162C" stroke="#34D399" stroke-width="2" />
+            <line x1="-130" y1="15" x2="130" y2="15" stroke="#334155" stroke-width="4" stroke-linecap="round" />
+            <line x1="-130" y1="15" x2="75" y2="15" stroke="#34D399" stroke-width="4" stroke-linecap="round" filter="url(#glow-mint)" />
+            <circle cx="-130" cy="15" r="10" fill="#38BDF8" />
+            <circle cx="-25" cy="15" r="10" fill="#FBBF24" />
+            <circle cx="75" cy="15" r="11" fill="#34D399" filter="url(#glow-mint)" />
+            <circle cx="130" cy="15" r="8" fill="#070D1A" stroke="#64748B" stroke-width="2" />
+            <text x="-130" y="-15" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="15">200</text>
+            <text x="-25" y="-15" text-anchor="middle" fill="#94A3B8" font-family="JetBrains Mono, monospace" font-size="15">400</text>
+            <text x="75" y="-15" text-anchor="middle" fill="#34D399" font-family="JetBrains Mono, monospace" font-size="15" font-weight="600">600</text>
+            <text x="0" y="195" text-anchor="middle" fill="#34D399" font-size="24" font-weight="500">Training Loop</text>
+          </g>
+
+          <!-- Title, Subtitle, and Attribution Footer -->
+          <g id="s7-titles" opacity="0">
+            <text x="960" y="128" text-anchor="middle" fill="#F8FAFC" font-size="44" font-weight="600" letter-spacing="-0.01em">Can Quantum Search Methods Support Adaptive ML Training?</text>
+            <text x="960" y="186" text-anchor="middle" fill="#38BDF8" font-size="30" font-weight="400" letter-spacing="0.02em">Interaction-Guided Schedule Oracle</text>
+            <text x="960" y="1018" text-anchor="middle" fill="#94A3B8" font-size="21" font-weight="400" letter-spacing="0.04em">Wei-Che Hung · arXiv:2611.21701</text>
+          </g>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Minimal, Non-Intrusive Dark Glass Player Bar -->
+    <div class="w-full rounded-xl bg-slate-950/85 backdrop-blur-md border border-slate-800/90 px-3.5 py-2.5 flex flex-wrap items-center justify-between gap-3 shadow-lg">
+
+      <!-- Left Transport Controls -->
+      <div class="flex items-center gap-2">
+        <button id="btn-play" type="button" title="Play / Pause (Space)" class="flex items-center justify-center w-9 h-9 rounded-lg bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-400/30 transition">
+          <svg id="icon-play" class="w-4 h-4 hidden" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          <svg id="icon-pause" class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+        </button>
+
+        <button id="btn-restart" type="button" title="Restart (0.0s)" class="flex items-center justify-center w-9 h-9 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700/70 transition">
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8" />
+            <path d="M3 3v5h5" />
+          </svg>
+        </button>
+
+        <span id="time-display" class="font-mono-code text-xs sm:text-sm text-slate-300 min-w-[92px] text-center">00.0s / 90.0s</span>
+      </div>
+
+      <!-- Center Timeline Scrubber -->
+      <div class="flex-1 min-w-[180px] flex items-center gap-2">
+        <input id="timeline-scrubber" type="range" min="0" max="90" step="0.05" value="0" class="timeline-slider w-full" aria-label="Animation timeline scrubber" />
+      </div>
+
+      <!-- Scene Selector Pills -->
+      <div class="flex flex-wrap items-center gap-1" id="scene-pills">
+        <button data-time="0" class="scene-pill px-2 py-1 rounded-md text-xs font-medium bg-sky-500/25 text-sky-300 border border-sky-400/40 transition">1: Surprise</button>
+        <button data-time="13" class="scene-pill px-2 py-1 rounded-md text-xs font-medium bg-slate-900/90 text-slate-400 hover:text-slate-200 border border-slate-800 transition">2: Score</button>
+        <button data-time="25" class="scene-pill px-2 py-1 rounded-md text-xs font-medium bg-slate-900/90 text-slate-400 hover:text-slate-200 border border-slate-800 transition">3: 4,096 Space</button>
+        <button data-time="37" class="scene-pill px-2 py-1 rounded-md text-xs font-medium bg-slate-900/90 text-slate-400 hover:text-slate-200 border border-slate-800 transition">4: Oracle</button>
+        <button data-time="56" class="scene-pill px-2 py-1 rounded-md text-xs font-medium bg-slate-900/90 text-slate-400 hover:text-slate-200 border border-slate-800 transition">5: Grover</button>
+        <button data-time="69" class="scene-pill px-2 py-1 rounded-md text-xs font-medium bg-slate-900/90 text-slate-400 hover:text-slate-200 border border-slate-800 transition">6: Adaptive Loop</button>
+        <button data-time="82" class="scene-pill px-2 py-1 rounded-md text-xs font-medium bg-slate-900/90 text-slate-400 hover:text-slate-200 border border-slate-800 transition">7: Finale</button>
+      </div>
+
+      <!-- Right Speed & Export SVG Controls -->
+      <div class="flex items-center gap-2">
+        <button id="btn-speed" type="button" class="font-mono-code px-2.5 py-1.5 rounded-lg text-xs font-medium bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-700/80 transition">1.0x</button>
+        <button id="btn-export-modal" type="button" class="px-3 py-1.5 rounded-lg text-xs font-medium bg-amber-400/15 hover:bg-amber-400/25 text-amber-300 border border-amber-400/40 transition flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6" />
+            <polyline points="8 6 2 12 8 18" />
+          </svg>
+          <span>Export SVG</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Export SVG Frame / View SVG Code Modal -->
+  <div id="export-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4">
+    <div class="w-full max-w-3xl rounded-2xl bg-[#0A1222] border border-slate-700/90 shadow-2xl overflow-hidden flex flex-col max-h-[88vh]">
+      <div class="px-5 py-3.5 border-b border-slate-800 flex items-center justify-between">
+        <div>
+          <h2 class="text-base font-semibold text-slate-100">Export Standalone 1920×1080 SVG Frame</h2>
+          <p id="export-frame-subtitle" class="text-xs text-slate-400 font-mono-code mt-0.5">Captured at t = 0.00s</p>
+        </div>
+        <button id="btn-close-modal" type="button" class="w-8 h-8 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-400 hover:text-slate-200 flex items-center justify-center transition">✕</button>
+      </div>
+
+      <div class="p-5 flex-1 overflow-hidden flex flex-col gap-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <span id="copy-feedback" class="text-xs text-emerald-400 opacity-0 transition-opacity">Copied SVG source to clipboard!</span>
+          <div class="flex items-center gap-2">
+            <button id="btn-copy-svg" type="button" class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-sky-500/20 hover:bg-sky-500/30 text-sky-300 border border-sky-400/40 transition">Copy SVG Code</button>
+            <button id="btn-download-svg" type="button" class="px-3.5 py-1.5 rounded-lg text-xs font-medium bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-400/40 transition">Download .svg File</button>
+          </div>
+        </div>
+        <textarea id="svg-code-output" readonly class="w-full flex-1 min-h-[320px] rounded-xl bg-[#050912] border border-slate-800 p-3.5 font-mono-code text-xs text-slate-300 focus:outline-none resize-none"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /**
+     * =========================================================================
+     * THE QUANTUM SCHEDULE ORACLE — 60FPS MATHEMATICAL VISUALIZATION ENGINE
+     * Based on Wei-Che Hung, arXiv:2611.21701v1 (Section 2.4, Fig 2, App J, A8)
+     * =========================================================================
+     */
+
+    const SVG_NS = "http://www.w3.org/2000/svg";
+    const TOTAL_DURATION = 90.0;
+
+    // Semantic Design Tokens
+    const COLORS = {
+      navy: "#070D1A",
+      cyan: "#38BDF8",
+      gold: "#FBBF24",
+      coral: "#FB7185",
+      mint: "#34D399",
+      slate: "#94A3B8",
+      muted: "#475569",
+      white: "#F8FAFC"
+    };
+
+    // Mathematical Interpolation & Easing Utilities
+    const clamp01 = (v) => Math.max(0, Math.min(1, v));
+    const lerp = (a, b, t) => a + (b - a) * t;
+    const invLerp = (a, b, v) => clamp01((v - a) / (b - a));
+    const smoothstep = (edge0, edge1, x) => {
+      const t = clamp01((x - edge0) / (edge1 - edge0));
+      return t * t * (3 - 2 * t);
+    };
+    const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    const easeOutQuart = (t) => 1 - Math.pow(1 - t, 4);
+    const easeOutBack = (t) => {
+      const c1 = 1.70158;
+      const c3 = c1 + 1;
+      return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
+    };
+
+    // Helper to create SVG elements cleanly
+    function createSvgEl(tag, attrs = {}) {
+      const el = document.createElementNS(SVG_NS, tag);
+      for (const [k, v] of Object.entries(attrs)) {
+        el.setAttribute(k, v);
+      }
+      return el;
+    }
+
+    // Playback State
+    let currentTime = 0.0;
+    let isPlaying = true;
+    let playbackRate = 1.0;
+    let lastTimestamp = null;
+
+    // Cached DOM References for 60fps updates
+    const dom = {};
+
+    /**
+     * Build Procedural Vector Geometry Once on Load
+     */
+    function initSceneGeometry() {
+      // -----------------------------------------------------------------------
+      // SCENE 1: Three Abstract Layer-Group Structures (G1, G2, G3) + Rotary Dials
+      // -----------------------------------------------------------------------
+      const s1Groups = document.getElementById("s1-groups");
+      const groupXs = [560, 960, 1360];
+      const groupNames = ["G₁", "G₂", "G₃"];
+      dom.s1Dials = [];
+
+      groupXs.forEach((cx, idx) => {
+        const g = createSvgEl("g", { id: `s1-col-${idx}` });
+
+        // Rotary Learning-Rate Dial above column (y = 185)
+        const dialG = createSvgEl("g", { transform: `translate(${cx}, 185)` });
+        dialG.appendChild(createSvgEl("circle", {
+          r: 44, fill: "#0B162C", stroke: "#38BDF8", "stroke-width": 2.2, id: `s1-dial-ring-${idx}`
+        }));
+        // Dial scale ticks (0.5, 0.7, 1.0, 1.4)
+        const tickAngles = [-120, -45, 25, 105];
+        tickAngles.forEach((deg) => {
+          const rad = (deg - 90) * Math.PI / 180;
+          dialG.appendChild(createSvgEl("line", {
+            x1: Math.cos(rad) * 33, y1: Math.sin(rad) * 33,
+            x2: Math.cos(rad) * 41, y2: Math.sin(rad) * 41,
+            stroke: "#64748B", "stroke-width": 2, "stroke-linecap": "round"
+          }));
+        });
+        const needle = createSvgEl("line", {
+          x1: 0, y1: 0, x2: 0, y2: -32,
+          stroke: "#38BDF8", "stroke-width": 3.5, "stroke-linecap": "round",
+          transform: "rotate(25)"
+        });
+        dialG.appendChild(needle);
+        dialG.appendChild(createSvgEl("circle", { r: 6, fill: "#F8FAFC" }));
+
+        const rateText = createSvgEl("text", {
+          x: 0, y: -58, "text-anchor": "middle", fill: "#38BDF8",
+          "font-family": "JetBrains Mono, monospace", "font-size": 22, "font-weight": "600"
+        });
+        rateText.textContent = "1.0";
+        dialG.appendChild(rateText);
+        g.appendChild(dialG);
+
+        // Tall Vertical Neural-Network Layer Stack (y = 265..665)
+        const colRect = createSvgEl("rect", {
+          x: cx - 72, y: 265, width: 144, height: 390, rx: 22,
+          fill: "#0B162C", stroke: "#1E293B", "stroke-width": 2, id: `s1-box-${idx}`
+        });
+        g.appendChild(colRect);
+
+        // 5 Stacked Transformer Layer Plates inside each group
+        for (let layer = 0; layer < 5; layer++) {
+          const ly = 295 + layer * 66;
+          g.appendChild(createSvgEl("rect", {
+            x: cx - 50, y: ly, width: 100, height: 42, rx: 10,
+            fill: "#112240", stroke: "#38BDF8", "stroke-width": 1.3, "stroke-opacity": 0.55
+          }));
+          // Subtle internal weight-matrix dots (to show layers, while dial controls η_g)
+          for (let d = -1; d <= 1; d++) {
+            g.appendChild(createSvgEl("circle", {
+              cx: cx + d * 24, cy: ly + 21, r: 3.2, fill: "#38BDF8", "fill-opacity": 0.65
+            }));
+          }
+        }
+
+        // Group Label (G1, G2, G3)
+        const lbl = createSvgEl("text", {
+          x: cx, y: 695, "text-anchor": "middle", fill: "#94A3B8",
+          "font-family": "JetBrains Mono, monospace", "font-size": 24, "font-weight": "600"
+        });
+        lbl.textContent = groupNames[idx];
+        g.appendChild(lbl);
+
+        s1Groups.appendChild(g);
+        dom.s1Dials.push({
+          needle,
+          rateText,
+          ring: document.getElementById(`s1-dial-ring-${idx}`),
+          box: colRect
+        });
+      });
+
+      // -----------------------------------------------------------------------
+      // SCENE 2: Compact Triangle Arrangement of G1, G2, G3 for Classical Probes
+      // -----------------------------------------------------------------------
+      const s2Groups = document.getElementById("s2-groups");
+      const s2Coords = [
+        { x: 350, y: 560, label: "G₁" },
+        { x: 510, y: 340, label: "G₂" },
+        { x: 670, y: 560, label: "G₃" }
+      ];
+      s2Coords.forEach((pt) => {
+        const g = createSvgEl("g", { transform: `translate(${pt.x}, ${pt.y})` });
+        g.appendChild(createSvgEl("rect", {
+          x: -44, y: -56, width: 88, height: 112, rx: 16,
+          fill: "#0B162C", stroke: "#38BDF8", "stroke-width": 1.8, "stroke-opacity": 0.75
+        }));
+        for (let k = -1; k <= 1; k++) {
+          g.appendChild(createSvgEl("rect", {
+            x: -28, y: k * 28 - 9, width: 56, height: 18, rx: 5,
+            fill: "#112240", stroke: "#38BDF8", "stroke-width": 1, "stroke-opacity": 0.5
+          }));
+        }
+        const t = createSvgEl("text", {
+          x: 0, y: 80, "text-anchor": "middle", fill: "#94A3B8",
+          "font-family": "JetBrains Mono, monospace", "font-size": 20, "font-weight": "600"
+        });
+        t.textContent = pt.label;
+        g.appendChild(t);
+        s2Groups.appendChild(g);
+      });
+
+      // -----------------------------------------------------------------------
+      // SCENE 3: 8 Toy Schedule Nodes (000..111) + 64x64 = 4,096 Lattice
+      // -----------------------------------------------------------------------
+      const s3Toy8 = document.getElementById("s3-toy-8");
+      dom.s3ToyNodes = [];
+      for (let i = 0; i < 8; i++) {
+        const angle = (i / 8) * Math.PI * 2 - Math.PI / 2;
+        const rx = 340, ry = 220;
+        const nx = 960 + Math.cos(angle) * rx;
+        const ny = 515 + Math.sin(angle) * ry;
+        const bits = i.toString(2).padStart(3, "0");
+
+        const nodeG = createSvgEl("g", { transform: `translate(${nx}, ${ny})` });
+        nodeG.appendChild(createSvgEl("rect", {
+          x: -54, y: -38, width: 108, height: 76, rx: 16,
+          fill: "#0B162C", stroke: "#38BDF8", "stroke-width": 2, filter: "url(#glow-cyan)"
+        }));
+        // 3 mini rate bars representing one complete schedule
+        for (let b = 0; b < 3; b++) {
+          const isHigh = bits[b] === "1";
+          const bh = isHigh ? 28 : 16;
+          nodeG.appendChild(createSvgEl("rect", {
+            x: -28 + b * 22, y: 8 - bh, width: 12, height: bh, rx: 3,
+            fill: isHigh ? "#FBBF24" : "#38BDF8"
+          }));
+        }
+        const lbl = createSvgEl("text", {
+          x: 0, y: 27, "text-anchor": "middle", fill: "#E2E8F0",
+          "font-family": "JetBrains Mono, monospace", "font-size": 15, "font-weight": "600"
+        });
+        lbl.textContent = `|${bits}⟩`;
+        nodeG.appendChild(lbl);
+        s3Toy8.appendChild(nodeG);
+        dom.s3ToyNodes.push({ el: nodeG, nx, ny });
+      }
+
+      // 64 x 64 Lattice = Exact 4,096 Schedule Points (grouped by 64 rows for 60fps performance)
+      const s3Lattice = document.getElementById("s3-lattice-4096");
+      dom.s3Rows = [];
+      const gridW = 860, gridH = 540;
+      const startX = 960 - gridW / 2;
+      const startY = 235;
+      for (let r = 0; r < 64; r++) {
+        const rowG = createSvgEl("g");
+        const py = startY + (r / 63) * gridH;
+        for (let c = 0; c < 64; c++) {
+          const px = startX + (c / 63) * gridW;
+          rowG.appendChild(createSvgEl("circle", {
+            cx: px.toFixed(1), cy: py.toFixed(1), r: 2.2,
+            fill: "#38BDF8", "fill-opacity": 0.85
+          }));
+        }
+        s3Lattice.appendChild(rowG);
+        dom.s3Rows.push({ el: rowG, baseY: py, rowIdx: r });
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 4: Inside the Schedule Oracle (12 Qubit Rails + Fourier Rotors)
+      // -----------------------------------------------------------------------
+      const s4SchedRails = document.getElementById("s4-schedule-rails");
+      for (let q = 0; q < 12; q++) {
+        const qy = 280 + q * 12;
+        s4SchedRails.appendChild(createSvgEl("line", {
+          x1: 340, y1: qy, x2: 1580, y2: qy,
+          stroke: "#38BDF8", "stroke-width": 1, "stroke-opacity": 0.22
+        }));
+      }
+
+      const s4AccRails = document.getElementById("s4-acc-rails");
+      for (let a = 0; a < 8; a++) {
+        const ay = 635 + a * 22;
+        s4AccRails.appendChild(createSvgEl("line", {
+          x1: 340, y1: ay, x2: 1580, y2: ay,
+          stroke: "#FBBF24", "stroke-width": 1, "stroke-opacity": 0.18
+        }));
+      }
+
+      // Controlled Coupling Lines (Top Register -> Bottom Accumulator)
+      const s4Couplings = document.getElementById("s4-couplings");
+      const couplingXs = [480, 620, 760, 900, 1040, 1180, 1320, 1460];
+      couplingXs.forEach((cx, idx) => {
+        s4Couplings.appendChild(createSvgEl("line", {
+          x1: cx, y1: 430, x2: cx, y2: 590,
+          stroke: idx % 2 === 0 ? "#FBBF24" : "#38BDF8",
+          "stroke-width": 1.8, "stroke-dasharray": "4 4", "stroke-opacity": 0.65
+        }));
+        s4Couplings.appendChild(createSvgEl("circle", {
+          cx, cy: 430, r: 4.5, fill: "#38BDF8"
+        }));
+        s4Couplings.appendChild(createSvgEl("circle", {
+          cx, cy: 590, r: 4.5, fill: "#FBBF24"
+        }));
+      });
+
+      // Fourier-Basis Phase Rotors in Accumulator (QFT phase rotations)
+      const s4Rotors = document.getElementById("s4-fourier-rotors");
+      dom.s4RotorHands = [];
+      const rotorXs = [520, 700, 880, 1060, 1240, 1420];
+      rotorXs.forEach((rx, idx) => {
+        const rg = createSvgEl("g", { transform: `translate(${rx}, 715)` });
+        rg.appendChild(createSvgEl("circle", {
+          r: 28, fill: "#070D1A", "fill-opacity": 0.85, stroke: "#FBBF24", "stroke-width": 1.6, "stroke-opacity": 0.7
+        }));
+        const hand = createSvgEl("line", {
+          x1: 0, y1: 0, x2: 0, y2: -22,
+          stroke: "#FBBF24", "stroke-width": 2.5, "stroke-linecap": "round"
+        });
+        rg.appendChild(hand);
+        rg.appendChild(createSvgEl("circle", { r: 3.5, fill: "#FDE68A" }));
+        s4Rotors.appendChild(rg);
+        dom.s4RotorHands.push({ hand, speed: (idx + 1) * 55 });
+      });
+
+      // -----------------------------------------------------------------------
+      // SCENE 5: Grover Amplification (8-State Toy + 64-Bin 4,096 Spectrum)
+      // -----------------------------------------------------------------------
+      const s5BarsGroup = document.getElementById("s5-bars");
+      dom.s5ToyBars = [];
+      // Exact toy scores from prompt:
+      // 000: 0, 001: -1, 010: -1, 011: -2, 100: -1, 101: -2, 110: +2, 111: -2
+      const toyScores = [0, -1, -1, -2, -1, -2, +2, -2];
+      const baseZeroY = 560;
+      const ampScale = 360; // 1.0 amplitude = 360px
+
+      for (let i = 0; i < 8; i++) {
+        const bx = 450 + i * 145;
+        const bits = i.toString(2).padStart(3, "0");
+        const isMarked = i === 6; // 110 is the unique improving schedule (+2)
+
+        const g = createSvgEl("g");
+        const barRect = createSvgEl("rect", {
+          x: bx - 36, y: baseZeroY - 127, width: 72, height: 127, rx: 10,
+          fill: isMarked ? "#34D399" : "#38BDF8",
+          "fill-opacity": 0.85,
+          stroke: isMarked ? "#6EE7B7" : "#7DD3FC",
+          "stroke-width": 1.8
+        });
+        g.appendChild(barRect);
+
+        // Basis label below axis
+        const bitLbl = createSvgEl("text", {
+          x: bx, y: 765, "text-anchor": "middle",
+          fill: isMarked ? "#34D399" : "#94A3B8",
+          "font-family": "JetBrains Mono, monospace", "font-size": 21, "font-weight": "600"
+        });
+        bitLbl.textContent = `|${bits}⟩`;
+        g.appendChild(bitLbl);
+
+        // Score badge below basis label
+        const scVal = toyScores[i];
+        const scLbl = createSvgEl("text", {
+          x: bx, y: 800, "text-anchor": "middle",
+          fill: scVal > 0 ? "#34D399" : (scVal < 0 ? "#FB7185" : "#64748B"),
+          "font-family": "JetBrains Mono, monospace", "font-size": 19, "font-weight": "600"
+        });
+        scLbl.textContent = scVal > 0 ? `+${scVal}` : `${scVal}`;
+        g.appendChild(scLbl);
+
+        s5BarsGroup.appendChild(g);
+        dom.s5ToyBars.push({ rect: barRect, isMarked, bx });
+      }
+
+      // 4,096-Schedule Representative Spectrum (64 bins)
+      const s5MacroBars = document.getElementById("s5-macro-bars");
+      dom.s5MacroRects = [];
+      const markedBins = new Set([9, 23, 38, 51]); // Subset of improving schedules out of 4,096
+      for (let b = 0; b < 64; b++) {
+        const mx = 340 + b * 19.6;
+        const isTarget = markedBins.has(b);
+        const r = createSvgEl("rect", {
+          x: mx, y: 675, width: 13, height: 25, rx: 4,
+          fill: isTarget ? "#34D399" : "#38BDF8",
+          "fill-opacity": isTarget ? 0.95 : 0.65
+        });
+        s5MacroBars.appendChild(r);
+        dom.s5MacroRects.push({ rect: r, isTarget, idx: b });
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 6: 6 Rotary Dials for Measured Candidate + Mini 6-Group NN
+      // -----------------------------------------------------------------------
+      const s6Dials = document.getElementById("s6-dials");
+      dom.s6DialNeedles = [];
+      // Checkpoint 200 measured schedule example from Table 3: (1.4, 0.7, 1.4, 1.4, 0.5, 1.4)
+      const selectedRates = ["1.4", "0.7", "1.4", "1.4", "0.5", "1.4"];
+      const rateAngles = { "0.5": -120, "0.7": -45, "1.0": 25, "1.4": 105 };
+
+      for (let g = 0; g < 6; g++) {
+        const col = g % 3;
+        const row = Math.floor(g / 3);
+        const dx = -145 + col * 145;
+        const dy = -55 + row * 155;
+        const rateStr = selectedRates[g];
+        const isHigh = rateStr === "1.4";
+
+        const dg = createSvgEl("g", { transform: `translate(${dx}, ${dy})` });
+        dg.appendChild(createSvgEl("circle", {
+          r: 36, fill: "#070D1A", stroke: isHigh ? "#34D399" : "#38BDF8", "stroke-width": 2
+        }));
+        const needle = createSvgEl("line", {
+          x1: 0, y1: 0, x2: 0, y2: -26,
+          stroke: isHigh ? "#34D399" : "#38BDF8", "stroke-width": 3, "stroke-linecap": "round",
+          transform: "rotate(25)"
+        });
+        dg.appendChild(needle);
+        dg.appendChild(createSvgEl("circle", { r: 4.5, fill: "#F8FAFC" }));
+
+        const rTxt = createSvgEl("text", {
+          x: 0, y: 56, "text-anchor": "middle",
+          fill: isHigh ? "#34D399" : "#38BDF8",
+          "font-family": "JetBrains Mono, monospace", "font-size": 17, "font-weight": "600"
+        });
+        rTxt.textContent = `G${g + 1}: ${rateStr}`;
+        dg.appendChild(rTxt);
+        s6Dials.appendChild(dg);
+        dom.s6DialNeedles.push({ needle, targetDeg: rateAngles[rateStr] });
+      }
+
+      // Compact 6-Group Neural Stack in Scene 6
+      const s6NnMini = document.getElementById("s6-nn-mini");
+      for (let g = 0; g < 6; g++) {
+        const gx = -150 + g * 60;
+        s6NnMini.appendChild(createSvgEl("rect", {
+          x: gx - 20, y: -95, width: 40, height: 155, rx: 10,
+          fill: "#112240", stroke: "#34D399", "stroke-width": 1.6, "stroke-opacity": 0.75
+        }));
+        for (let k = 0; k < 4; k++) {
+          s6NnMini.appendChild(createSvgEl("rect", {
+            x: gx - 12, y: -78 + k * 34, width: 24, height: 20, rx: 4,
+            fill: "#34D399", "fill-opacity": 0.28
+          }));
+        }
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 7: Left Pillar 6 Layer Groups in Final Triptych
+      // -----------------------------------------------------------------------
+      const s7LeftGroups = document.getElementById("s7-left-groups");
+      for (let g = 0; g < 6; g++) {
+        const gx = -125 + g * 50;
+        s7LeftGroups.appendChild(createSvgEl("rect", {
+          x: gx - 16, y: -95, width: 32, height: 175, rx: 8,
+          fill: "#112240", stroke: "#FBBF24", "stroke-width": 1.6, "stroke-opacity": 0.8
+        }));
+        s7LeftGroups.appendChild(createSvgEl("circle", {
+          cx: gx, cy: -115, r: 10, fill: "#070D1A", stroke: "#34D399", "stroke-width": 1.8
+        }));
+      }
+
+      // Cache Scene Containers
+      dom.scenes = [
+        document.getElementById("scene-1"),
+        document.getElementById("scene-2"),
+        document.getElementById("scene-3"),
+        document.getElementById("scene-4"),
+        document.getElementById("scene-5"),
+        document.getElementById("scene-6"),
+        document.getElementById("scene-7")
+      ];
+    }
+
+    /**
+     * Build Smooth Sine/Superposition SVG Path Strings
+     */
+    function buildWavePath(x0, x1, baseY, amp, freq, phase, closeBottomY = null) {
+      const steps = 120;
+      let d = "";
+      for (let i = 0; i <= steps; i++) {
+        const u = i / steps;
+        const x = lerp(x0, x1, u);
+        const env = Math.sin(u * Math.PI); // Smooth taper at register boundaries
+        const y = baseY - amp * env * (0.78 + 0.22 * Math.cos(u * freq * Math.PI * 2 + phase));
+        d += (i === 0 ? `M ${x.toFixed(1)} ${y.toFixed(1)}` : ` L ${x.toFixed(1)} ${y.toFixed(1)}`);
+      }
+      if (closeBottomY !== null) {
+        d += ` L ${x1} ${closeBottomY} L ${x0} ${closeBottomY} Z`;
+      }
+      return d;
+    }
+
+    /**
+     * Master 60fps Timeline Choreography Renderer (t in [0, 90])
+     */
+    function renderAtTime(t) {
+      // -----------------------------------------------------------------------
+      // SCENE 1 (0.0s – 13.0s): The Surprise — Individual Changes Can Mislead
+      // -----------------------------------------------------------------------
+      const s1Opacity = t < 12.2 ? smoothstep(0.0, 0.8, t) : 1 - smoothstep(12.2, 13.2, t);
+      dom.scenes[0].setAttribute("opacity", s1Opacity.toFixed(3));
+
+      if (s1Opacity > 0.001) {
+        // Dial rotation states:
+        // 1.8–3.8s: G1 -> 1.4, reset 3.8–4.8s
+        // 5.0–7.0s: G2 -> 1.4, reset 7.0–7.8s
+        // 8.0–13.0s: BOTH G1 & G2 -> 1.4
+        const g1Solo = smoothstep(1.8, 2.5, t) * (1 - smoothstep(3.8, 4.5, t));
+        const g2Solo = smoothstep(5.0, 5.7, t) * (1 - smoothstep(7.0, 7.6, t));
+        const bothOn = smoothstep(8.0, 8.8, t);
+
+        const g1Active = Math.max(g1Solo, bothOn);
+        const g2Active = Math.max(g2Solo, bothOn);
+
+        // Update Dials (25 deg = 1.0, 105 deg = 1.4)
+        const updateDial = (idx, activeAmt, isJoint) => {
+          const d = dom.s1Dials[idx];
+          const deg = lerp(25, 105, easeInOutCubic(activeAmt));
+          d.needle.setAttribute("transform", `rotate(${deg.toFixed(1)})`);
+          const color = activeAmt > 0.5 ? (isJoint ? COLORS.mint : COLORS.coral) : COLORS.cyan;
+          d.needle.setAttribute("stroke", color);
+          d.ring.setAttribute("stroke", color);
+          d.box.setAttribute("stroke", activeAmt > 0.5 ? color : "#1E293B");
+          d.rateText.setAttribute("fill", color);
+          d.rateText.textContent = activeAmt > 0.5 ? "1.4" : "1.0";
+        };
+        updateDial(0, g1Active, bothOn > 0.4);
+        updateDial(1, g2Active, bothOn > 0.4);
+        updateDial(2, 0, false);
+
+        // Individual -1 Contribution Badges
+        const c1Op = Math.max(
+          smoothstep(2.2, 2.6, t) * (1 - smoothstep(3.8, 4.3, t)),
+          smoothstep(8.4, 8.9, t)
+        );
+        const c2Op = Math.max(
+          smoothstep(5.4, 5.8, t) * (1 - smoothstep(7.0, 7.5, t)),
+          smoothstep(8.4, 8.9, t)
+        );
+        document.getElementById("s1-contrib-g1").setAttribute("opacity", c1Op.toFixed(3));
+        document.getElementById("s1-contrib-g2").setAttribute("opacity", c2Op.toFixed(3));
+
+        // Golden Curved Interaction Bridge (+4) between G1 and G2
+        const bridgeProg = easeOutQuart(invLerp(9.1, 10.2, t));
+        const bridgeGroup = document.getElementById("s1-bridge-group");
+        bridgeGroup.setAttribute("opacity", bridgeProg.toFixed(3));
+        const bridgePath = document.getElementById("s1-bridge-path");
+        bridgePath.setAttribute("stroke-dasharray", "520");
+        bridgePath.setAttribute("stroke-dashoffset", (520 * (1 - bridgeProg)).toFixed(1));
+        document.getElementById("s1-bridge-badge").setAttribute("opacity", smoothstep(9.6, 10.2, t).toFixed(3));
+
+        // Score Indicator Calculation (-1, -1, then -1 - 1 + 4 = +2)
+        const bridgeScoreContrib = 4 * easeInOutCubic(invLerp(9.8, 10.9, t));
+        const currentScore = -1 * g1Active - 1 * g2Active + bridgeScoreContrib;
+        const pxPerUnit = 120;
+        const barX = currentScore >= 0 ? 0 : currentScore * pxPerUnit;
+        const barW = Math.abs(currentScore) * pxPerUnit;
+
+        const scoreFill = document.getElementById("s1-score-fill");
+        const scoreDot = document.getElementById("s1-score-dot");
+        const scoreReadout = document.getElementById("s1-score-readout");
+
+        scoreFill.setAttribute("x", barX.toFixed(1));
+        scoreFill.setAttribute("width", barW.toFixed(1));
+        scoreDot.setAttribute("cx", (currentScore * pxPerUnit).toFixed(1));
+
+        if (currentScore > 0.15) {
+          scoreFill.setAttribute("fill", COLORS.mint);
+          scoreFill.setAttribute("filter", "url(#glow-mint)");
+          scoreDot.setAttribute("stroke", COLORS.mint);
+          scoreReadout.setAttribute("fill", COLORS.mint);
+          scoreReadout.textContent = currentScore > 1.85 ? "−1 − 1 + 4 = +2" : `+${currentScore.toFixed(1)}`;
+        } else if (currentScore < -0.15) {
+          scoreFill.setAttribute("fill", COLORS.coral);
+          scoreFill.setAttribute("filter", "url(#glow-coral)");
+          scoreDot.setAttribute("stroke", COLORS.coral);
+          scoreReadout.setAttribute("fill", COLORS.coral);
+          scoreReadout.textContent = currentScore < -1.7 ? "−2" : "−1";
+        } else {
+          scoreFill.removeAttribute("filter");
+          scoreDot.setAttribute("stroke", COLORS.cyan);
+          scoreReadout.setAttribute("fill", COLORS.slate);
+          scoreReadout.textContent = "0";
+        }
+
+        // Caption: "Interactions matter."
+        document.getElementById("s1-caption").setAttribute("opacity", smoothstep(10.8, 11.5, t).toFixed(3));
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 2 (13.0s – 25.0s): Where the Score Comes From
+      // -----------------------------------------------------------------------
+      const s2Opacity = smoothstep(12.6, 13.5, t) * (1 - smoothstep(24.3, 25.2, t));
+      dom.scenes[1].setAttribute("opacity", s2Opacity.toFixed(3));
+
+      if (s2Opacity > 0.001) {
+        // Sequential assembly of 3 geometric layers:
+        // 14.2–17.0s: Singles
+        // 17.0–19.8s: Pairs
+        // 19.8–22.8s: Triples
+        const pSingles = smoothstep(14.2, 15.0, t);
+        const pPairs = smoothstep(17.0, 17.8, t);
+        const pTriples = smoothstep(19.8, 20.6, t);
+
+        // Show active layer label cleanly one at a time
+        const singlesG = document.getElementById("s2-singles-layer");
+        const pairsG = document.getElementById("s2-pairs-layer");
+        const triplesG = document.getElementById("s2-triples-layer");
+
+        singlesG.setAttribute("opacity", pSingles.toFixed(3));
+        singlesG.querySelector("text").setAttribute("opacity", (pSingles * (1 - pPairs)).toFixed(3));
+
+        pairsG.setAttribute("opacity", pPairs.toFixed(3));
+        pairsG.querySelector("text").setAttribute("opacity", (pPairs * (1 - pTriples)).toFixed(3));
+
+        triplesG.setAttribute("opacity", pTriples.toFixed(3));
+        triplesG.querySelector("text").setAttribute("opacity", pTriples.toFixed(3));
+
+        // Animated flow lines into Score Accumulator
+        const dashOffset = -(t * 65) % 36;
+        ["s2-flow-1", "s2-flow-2", "s2-flow-3"].forEach((id, i) => {
+          const gate = i === 0 ? pSingles : (i === 1 ? pPairs : pTriples);
+          const f = document.getElementById(id);
+          f.setAttribute("opacity", (gate * 0.9).toFixed(3));
+          f.setAttribute("stroke-dashoffset", dashOffset.toFixed(1));
+        });
+
+        // Accumulator internal bars & Piecewise Equation: Score = Singles + Pairs + Triples
+        document.getElementById("eq-score").setAttribute("opacity", smoothstep(13.6, 14.3, t).toFixed(3));
+        document.getElementById("eq-singles").setAttribute("opacity", smoothstep(15.2, 16.0, t).toFixed(3));
+        document.getElementById("s2-acc-bar1").setAttribute("opacity", smoothstep(15.2, 16.0, t).toFixed(3));
+
+        document.getElementById("eq-pairs").setAttribute("opacity", smoothstep(18.0, 18.8, t).toFixed(3));
+        document.getElementById("s2-acc-bar2").setAttribute("opacity", smoothstep(18.0, 18.8, t).toFixed(3));
+
+        document.getElementById("eq-triples").setAttribute("opacity", smoothstep(20.8, 21.6, t).toFixed(3));
+        document.getElementById("s2-acc-bar3").setAttribute("opacity", smoothstep(20.8, 21.6, t).toFixed(3));
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 3 (25.0s – 37.0s): From 8 Examples to 4,096 Schedules
+      // -----------------------------------------------------------------------
+      const s3Opacity = smoothstep(24.7, 25.5, t) * (1 - smoothstep(36.4, 37.3, t));
+      dom.scenes[2].setAttribute("opacity", s3Opacity.toFixed(3));
+
+      if (s3Opacity > 0.001) {
+        // 25.0–28.2s: 8 floating 3-bit toy schedules
+        const toyOut = smoothstep(28.0, 29.3, t);
+        const toyOp = (1 - toyOut);
+        const toyScale = lerp(1.0, 0.35, easeInOutCubic(toyOut));
+        const s3ToyG = document.getElementById("s3-toy-8");
+        s3ToyG.setAttribute("opacity", toyOp.toFixed(3));
+        s3ToyG.setAttribute("transform", `translate(960, 515) scale(${toyScale.toFixed(3)}) translate(-960, -515)`);
+
+        // 28.5–33.5s: 64x64 Lattice of 4,096 schedules + "4^6 = 4,096"
+        const latticeIn = smoothstep(28.5, 29.8, t);
+        const morphToWave = smoothstep(32.5, 34.4, t);
+        const latticeOp = latticeIn * (1 - morphToWave);
+        const latticeG = document.getElementById("s3-lattice-4096");
+        latticeG.setAttribute("opacity", latticeOp.toFixed(3));
+
+        // Subtle zoom-out scale on lattice as it appears
+        const latScale = lerp(1.18, 1.0, easeOutQuart(latticeIn));
+        latticeG.setAttribute("transform", `translate(960, 505) scale(${latScale.toFixed(3)}) translate(-960, -505)`);
+
+        document.getElementById("s3-architecture").setAttribute("opacity", latticeIn.toFixed(3));
+
+        // 32.8–37.0s: Coherent Uniform Quantum Superposition Field
+        const waveOp = morphToWave;
+        const supG = document.getElementById("s3-superposition");
+        supG.setAttribute("opacity", waveOp.toFixed(3));
+        if (waveOp > 0.01) {
+          const amp = 115 * easeOutQuart(waveOp);
+          const phase = (t - 32.5) * 4.2;
+          document.getElementById("s3-wave-line").setAttribute("d", buildWavePath(380, 1540, 620, amp, 9, phase));
+          document.getElementById("s3-wave-fill").setAttribute("d", buildWavePath(380, 1540, 620, amp, 9, phase, 620));
+        }
+        document.getElementById("s3-caption").setAttribute("opacity", smoothstep(33.4, 34.3, t).toFixed(3));
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 4 (37.0s – 56.0s): Inside the Schedule Oracle (Compute -> Mark -> Uncompute)
+      // -----------------------------------------------------------------------
+      const s4Opacity = smoothstep(36.7, 37.6, t) * (1 - smoothstep(55.3, 56.2, t));
+      dom.scenes[3].setAttribute("opacity", s4Opacity.toFixed(3));
+
+      if (s4Opacity > 0.001) {
+        // Stage timing within Scene 4:
+        // 37.5–44.8s: Compute
+        // 44.8–50.6s: Mark
+        // 50.6–56.0s: Uncompute
+        const isMark = t >= 44.8 && t < 50.6;
+        const isUncompute = t >= 50.6;
+
+        const stageLbl = document.getElementById("s4-stage-label");
+        if (isUncompute) {
+          stageLbl.textContent = "Uncompute";
+          stageLbl.setAttribute("fill", COLORS.cyan);
+        } else if (isMark) {
+          stageLbl.textContent = "Mark";
+          stageLbl.setAttribute("fill", COLORS.mint);
+        } else {
+          stageLbl.textContent = "Compute";
+          stageLbl.setAttribute("fill", COLORS.gold);
+        }
+
+        // Compute build-up (38.8–43.5s) and Uncompute exact reversal (51.0–54.8s)
+        const computeLevel = smoothstep(38.8, 43.2, t) * (1 - smoothstep(51.0, 54.6, t));
+
+        // Sweeping wavefront beam across the circuit
+        const scanProg = isUncompute
+          ? (1 - invLerp(50.8, 54.8, t))
+          : (isMark ? invLerp(44.8, 49.5, t) : invLerp(38.5, 43.8, t));
+        const beam = document.getElementById("s4-scan-beam");
+        const beamVisible = (t >= 38.5 && t <= 55.0) ? 0.85 : 0;
+        beam.setAttribute("opacity", beamVisible.toFixed(2));
+        beam.setAttribute("x", lerp(320, 1460, clamp01(scanProg)).toFixed(1));
+
+        // Controlled couplings & Fourier phase rotors
+        document.getElementById("s4-couplings").setAttribute("opacity", computeLevel.toFixed(3));
+        dom.s4RotorHands.forEach((r) => {
+          const rotDeg = computeLevel * r.speed * 2.4;
+          r.hand.setAttribute("transform", `rotate(${rotDeg.toFixed(1)})`);
+        });
+
+        // Coherent Score Branches in Bottom Accumulator (separate vertically by score, then return to 0!)
+        const accHigh = document.getElementById("s4-acc-branch-high");
+        const accMid = document.getElementById("s4-acc-branch-mid");
+        const accLow = document.getElementById("s4-acc-branch-low");
+
+        accHigh.setAttribute("opacity", computeLevel.toFixed(3));
+        accMid.setAttribute("opacity", (computeLevel * 0.85).toFixed(3));
+        accLow.setAttribute("opacity", (computeLevel * 0.85).toFixed(3));
+
+        if (computeLevel > 0.005) {
+          const wPhase = t * 3.0;
+          accHigh.setAttribute("d", buildWavePath(350, 1570, 715 - 62 * computeLevel, 16 * computeLevel, 6, wPhase));
+          accMid.setAttribute("d", buildWavePath(350, 1570, 715, 8 * computeLevel, 5, wPhase + 1));
+          accLow.setAttribute("d", buildWavePath(350, 1570, 715 + 58 * computeLevel, 15 * computeLevel, 7, wPhase + 2));
+        }
+
+        // Threshold line at Score = 0 appears during Mark & stays until Uncompute clears
+        const threshOp = smoothstep(44.6, 45.4, t) * (1 - smoothstep(53.5, 54.5, t));
+        document.getElementById("s4-threshold-group").setAttribute("opacity", threshOp.toFixed(3));
+
+        // Phase Flip on Top Schedule Register (Persists AFTER Uncompute!)
+        const phaseMarked = smoothstep(46.2, 48.2, t);
+        const wPhaseTop = t * 3.2;
+
+        // Positive cyan wave in top register
+        document.getElementById("s4-sched-wave-pos").setAttribute(
+          "d", buildWavePath(350, 1570, 345, 56, 8, wPhaseTop)
+        );
+
+        // Phase-flipped negative wave lobes on improving branches (x = 920..1260)
+        const negWave = document.getElementById("s4-sched-wave-neg");
+        negWave.setAttribute("opacity", phaseMarked.toFixed(3));
+        if (phaseMarked > 0.005) {
+          const invAmp = lerp(-56, 64, easeInOutCubic(phaseMarked));
+          negWave.setAttribute("d", buildWavePath(930, 1250, 345, -invAmp, 2.5, wPhaseTop));
+        }
+        document.getElementById("s4-phase-flip-tag").setAttribute("opacity", phaseMarked.toFixed(3));
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 5 (56.0s – 69.0s): Grover Amplification
+      // -----------------------------------------------------------------------
+      const s5Opacity = smoothstep(55.7, 56.5, t) * (1 - smoothstep(68.4, 69.3, t));
+      dom.scenes[4].setAttribute("opacity", s5Opacity.toFixed(3));
+
+      if (s5Opacity > 0.001) {
+        // 56.0–64.5s: 8-State Toy Amplitude Mechanics
+        // 64.5–69.0s: Zoom out to 4,096-schedule repeated BBHT Grover search
+        const toMacro = smoothstep(64.2, 65.4, t);
+        document.getElementById("s5-toy-group").setAttribute("opacity", (1 - toMacro).toFixed(3));
+        document.getElementById("s5-macro-group").setAttribute("opacity", toMacro.toFixed(3));
+
+        // Exact amplitudes in 8-state toy:
+        // Initial: a_0 = 1/sqrt(8) = 0.35355
+        // Oracle flip (58.3–59.6s): a_110 -> -0.35355
+        // Diffuser reflection about mean mu = 3/(4*sqrt(8)) = 0.26517 (61.0–63.2s):
+        //   a_110 -> 5/sqrt(32) = 0.88388 (prob = 78.125%)
+        //   others -> 1/sqrt(32) = 0.17678 (prob = 3.125%)
+        const a0 = 1 / Math.sqrt(8);
+        const aMarkedFinal = 5 / Math.sqrt(32);
+        const aOtherFinal = 1 / Math.sqrt(32);
+
+        const oracleFlip = easeInOutCubic(invLerp(58.2, 59.5, t));
+        const diffuseStep = easeInOutCubic(invLerp(61.0, 63.2, t));
+
+        const ampMarkedAfterOracle = lerp(a0, -a0, oracleFlip);
+        const ampMarked = lerp(ampMarkedAfterOracle, aMarkedFinal, diffuseStep);
+        const ampOther = lerp(a0, aOtherFinal, diffuseStep);
+
+        const barScale = 360;
+        const zeroY = 560;
+
+        dom.s5ToyBars.forEach((b) => {
+          const amp = b.isMarked ? ampMarked : ampOther;
+          const h = Math.abs(amp) * barScale;
+          const y = amp >= 0 ? zeroY - h : zeroY;
+          b.rect.setAttribute("y", y.toFixed(1));
+          b.rect.setAttribute("height", Math.max(2, h).toFixed(1));
+          if (b.isMarked) {
+            b.rect.setAttribute("fill", amp < 0 ? COLORS.coral : COLORS.mint);
+            b.rect.setAttribute("filter", amp < 0 ? "url(#glow-coral)" : "url(#glow-mint)");
+          }
+        });
+
+        // Mean Amplitude Line & Probability Area Callout
+        const meanOp = smoothstep(59.8, 60.6, t) * (1 - smoothstep(63.8, 64.4, t));
+        document.getElementById("s5-mean-group").setAttribute("opacity", meanOp.toFixed(3));
+        document.getElementById("s5-prob-callout").setAttribute("opacity", smoothstep(61.8, 62.8, t).toFixed(3));
+
+        // 4,096-Schedule Multi-Round Grover Search with Varying BBHT j
+        if (toMacro > 0.01) {
+          const macroT = t - 64.5; // 0 to 4.5s
+          // Cycle through 3 BBHT rounds with varying j (j=1, j=4, j=11)
+          const roundIdx = Math.min(2, Math.floor(macroT / 1.5));
+          const jValues = [1, 4, 11];
+          const roundLocal = (macroT % 1.5) / 1.5;
+          const boost = Math.sin(Math.min(1, roundLocal * 1.15) * (Math.PI / 2));
+
+          document.getElementById("s5-bbht-counter").textContent = `N = 4,096 · j = ${jValues[roundIdx]}`;
+
+          dom.s5MacroRects.forEach((item) => {
+            // Note: never 100% deterministic certainty; background remains slightly non-zero
+            const h = item.isTarget
+              ? lerp(28, 290 + roundIdx * 45, boost)
+              : lerp(28, 11, boost);
+            item.rect.setAttribute("y", (700 - h).toFixed(1));
+            item.rect.setAttribute("height", h.toFixed(1));
+          });
+        }
+
+        document.getElementById("s5-caption").setAttribute("opacity", smoothstep(57.0, 57.8, t).toFixed(3));
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 6 (69.0s – 82.0s): Measurement and Adaptive Training
+      // -----------------------------------------------------------------------
+      const s6Opacity = smoothstep(68.7, 69.5, t) * (1 - smoothstep(81.5, 82.4, t));
+      dom.scenes[5].setAttribute("opacity", s6Opacity.toFixed(3));
+
+      if (s6Opacity > 0.001) {
+        // 69.2–71.2s: Dials rotate to measured schedule values
+        const dialSettle = easeOutBack(invLerp(69.2, 71.2, t));
+        dom.s6DialNeedles.forEach((d) => {
+          const deg = lerp(25, d.targetDeg, clamp01(dialSettle));
+          d.needle.setAttribute("transform", `rotate(${deg.toFixed(1)})`);
+        });
+
+        // 71.5–74.5s: Classical check confirms Score > Threshold & raises threshold bar
+        const checkOp = smoothstep(71.5, 72.3, t);
+        document.getElementById("s6-arrow-1").setAttribute("opacity", checkOp.toFixed(3));
+        document.getElementById("s6-check-panel").setAttribute("opacity", checkOp.toFixed(3));
+
+        const threshRise = easeInOutCubic(invLerp(72.6, 74.4, t));
+        const fillH = lerp(52, 155, threshRise);
+        const fillY = 117 - fillH;
+        document.getElementById("s6-thresh-fill").setAttribute("y", fillY.toFixed(1));
+        document.getElementById("s6-thresh-fill").setAttribute("height", fillH.toFixed(1));
+        document.getElementById("s6-thresh-line").setAttribute("y1", fillY.toFixed(1));
+        document.getElementById("s6-thresh-line").setAttribute("y2", fillY.toFixed(1));
+
+        // 74.8–80.5s: Selected schedule controls next 200 classical steps -> Next checkpoint
+        const trainOp = smoothstep(74.8, 75.6, t);
+        document.getElementById("s6-arrow-2").setAttribute("opacity", trainOp.toFixed(3));
+        document.getElementById("s6-train-panel").setAttribute("opacity", trainOp.toFixed(3));
+
+        const stepProg = easeInOutCubic(invLerp(75.8, 79.6, t));
+        const barEndX = lerp(-180, 180, stepProg);
+        document.getElementById("s6-progress-bar").setAttribute("x2", barEndX.toFixed(1));
+
+        // Next checkpoint pulses & adaptive loop curve illuminates (79.5–82.0s)
+        const nextCkptPulse = smoothstep(79.2, 80.0, t);
+        document.getElementById("s6-next-ckpt-dot").setAttribute("fill", nextCkptPulse > 0.5 ? COLORS.gold : COLORS.navy);
+        document.getElementById("s6-loop-return").setAttribute("opacity", smoothstep(79.6, 80.8, t).toFixed(3));
+      }
+
+      // -----------------------------------------------------------------------
+      // SCENE 7 / FINAL COMPOSITION (82.0s – 90.0s): Triptych & Clean 3s Hold
+      // -----------------------------------------------------------------------
+      const s7Opacity = smoothstep(81.8, 83.0, t);
+      dom.scenes[6].setAttribute("opacity", s7Opacity.toFixed(3));
+
+      if (s7Opacity > 0.001) {
+        const zoomScale = lerp(1.06, 1.0, easeOutQuart(invLerp(81.8, 85.0, t)));
+        dom.scenes[6].setAttribute("transform", `translate(960, 560) scale(${zoomScale.toFixed(4)}) translate(-960, -560)`);
+
+        // Title, Subtitle, Footer cleanly settled by 86.5s, held cleanly 87.0–90.0s
+        document.getElementById("s7-titles").setAttribute("opacity", smoothstep(83.8, 86.2, t).toFixed(3));
+      }
+
+      // Update Timeline UI Readout & Active Scene Pill
+      updatePlayerUI(t);
+    }
+
+    /**
+     * Synchronize Player Scrubber, Clock Readout, and Scene Highlight Pills
+     */
+    function updatePlayerUI(t) {
+      const scrubber = document.getElementById("timeline-scrubber");
+      const timeDisplay = document.getElementById("time-display");
+      if (document.activeElement !== scrubber) {
+        scrubber.value = t.toFixed(2);
+      }
+      timeDisplay.textContent = `${t.toFixed(1).padStart(4, "0")}s / 90.0s`;
+
+      // Highlight active scene pill
+      const pills = document.querySelectorAll(".scene-pill");
+      const starts = [0, 13, 25, 37, 56, 69, 82];
+      let activeIdx = 0;
+      for (let i = 0; i < starts.length; i++) {
+        if (t >= starts[i]) activeIdx = i;
+      }
+      pills.forEach((pill, idx) => {
+        if (idx === activeIdx) {
+          pill.className = "scene-pill px-2 py-1 rounded-md text-xs font-medium bg-sky-500/25 text-sky-300 border border-sky-400/40 transition";
+        } else {
+          pill.className = "scene-pill px-2 py-1 rounded-md text-xs font-medium bg-slate-900/90 text-slate-400 hover:text-slate-200 border border-slate-800 transition";
+        }
+      });
+    }
+
+    /**
+     * 60fps requestAnimationFrame Loop
+     */
+    function animationLoop(timestamp) {
+      if (lastTimestamp === null) lastTimestamp = timestamp;
+      const dt = (timestamp - lastTimestamp) / 1000;
+      lastTimestamp = timestamp;
+
+      if (isPlaying) {
+        currentTime += dt * playbackRate;
+        if (currentTime >= TOTAL_DURATION) {
+          currentTime = TOTAL_DURATION;
+          setPlayingState(false);
+        }
+        renderAtTime(currentTime);
+      }
+      requestAnimationFrame(animationLoop);
+    }
+
+    function setPlayingState(play) {
+      isPlaying = play;
+      lastTimestamp = null;
+      document.getElementById("icon-play").classList.toggle("hidden", play);
+      document.getElementById("icon-pause").classList.toggle("hidden", !play);
+    }
+
+    /**
+     * Serialize Current 1920x1080 SVG Frame as Clean Standalone Vector Document
+     */
+    function getStandaloneSvgString() {
+      const stage = document.getElementById("stage");
+      const clone = stage.cloneNode(true);
+      clone.removeAttribute("class");
+      clone.setAttribute("width", "1920");
+      clone.setAttribute("height", "1080");
+
+      const styleEl = document.createElementNS(SVG_NS, "style");
+      styleEl.textContent = `
+        text { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; }
+      `;
+      clone.insertBefore(styleEl, clone.firstChild);
+
+      const serializer = new XMLSerializer();
+      const raw = serializer.serializeToString(clone);
+      return `<?xml version="1.0" encoding="UTF-8"?>\n<!-- The Quantum Schedule Oracle (arXiv:2611.21701v1) · Frame t = ${currentTime.toFixed(2)}s -->\n${raw}`;
+    }
+
+    /**
+     * Wire Player Controls, Keyboard Shortcuts & SVG Export Modal
+     */
+    function initControls() {
+      document.getElementById("btn-play").addEventListener("click", () => {
+        if (!isPlaying && currentTime >= TOTAL_DURATION - 0.05) {
+          currentTime = 0;
+        }
+        setPlayingState(!isPlaying);
+      });
+
+      document.getElementById("btn-restart").addEventListener("click", () => {
+        currentTime = 0;
+        renderAtTime(0);
+        setPlayingState(true);
+      });
+
+      const scrubber = document.getElementById("timeline-scrubber");
+      scrubber.addEventListener("input", (e) => {
+        currentTime = parseFloat(e.target.value);
+        renderAtTime(currentTime);
+      });
+
+      document.querySelectorAll(".scene-pill").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          currentTime = parseFloat(btn.dataset.time);
+          renderAtTime(currentTime);
+        });
+      });
+
+      const speedBtn = document.getElementById("btn-speed");
+      speedBtn.addEventListener("click", () => {
+        playbackRate = playbackRate === 1.0 ? 1.5 : 1.0;
+        speedBtn.textContent = `${playbackRate.toFixed(1)}x`;
+      });
+
+      // Spacebar & Arrow Key Navigation
+      window.addEventListener("keydown", (e) => {
+        if (e.target.tagName === "TEXTAREA") return;
+        if (e.code === "Space") {
+          e.preventDefault();
+          setPlayingState(!isPlaying);
+        } else if (e.code === "ArrowRight") {
+          currentTime = Math.min(TOTAL_DURATION, currentTime + 2.0);
+          renderAtTime(currentTime);
+        } else if (e.code === "ArrowLeft") {
+          currentTime = Math.max(0, currentTime - 2.0);
+          renderAtTime(currentTime);
+        }
+      });
+
+      // Export SVG Modal Handlers
+      const modal = document.getElementById("export-modal");
+      const codeArea = document.getElementById("svg-code-output");
+      const subtitle = document.getElementById("export-frame-subtitle");
+
+      document.getElementById("btn-export-modal").addEventListener("click", () => {
+        setPlayingState(false);
+        subtitle.textContent = `Captured at t = ${currentTime.toFixed(2)}s · 1920×1080 Vector SVG`;
+        codeArea.value = getStandaloneSvgString();
+        modal.classList.remove("hidden");
+        modal.classList.add("flex");
+      });
+
+      document.getElementById("btn-close-modal").addEventListener("click", () => {
+        modal.classList.add("hidden");
+        modal.classList.remove("flex");
+      });
+
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+        }
+      });
+
+      // Reliable iFrame-safe Clipboard Copy
+      document.getElementById("btn-copy-svg").addEventListener("click", () => {
+        codeArea.select();
+        codeArea.setSelectionRange(0, codeArea.value.length);
+        try {
+          document.execCommand("copy");
+          const fb = document.getElementById("copy-feedback");
+          fb.style.opacity = "1";
+          setTimeout(() => { fb.style.opacity = "0"; }, 2200);
+        } catch (err) {
+          console.error("Clipboard copy failed:", err);
+        }
+      });
+
+      // Direct .svg File Download
+      document.getElementById("btn-download-svg").addEventListener("click", () => {
+        const svgContent = getStandaloneSvgString();
+        const blob = new Blob([svgContent], { type: "image/svg+xml;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = `quantum_schedule_oracle_t${currentTime.toFixed(1).replace(".", "_")}s.svg`;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+      });
+    }
+
+    window.addEventListener("DOMContentLoaded", () => {
+      initSceneGeometry();
+      initControls();
+      renderAtTime(0);
+      // Renderer contract (ja-um-task29): window.renderAt(t), window.TOTAL, window.__ready; #manual = no clock loop
+      window.TOTAL = TOTAL_DURATION;
+      window.renderAt = (t) => { currentTime = t; renderAtTime(t); };
+      if (location.hash === "#manual") {
+        isPlaying = false;
+        document.fonts.ready.then(() => { window.__ready = true; });
+      } else {
+        requestAnimationFrame(animationLoop);
+      }
+    });
+  </script>
+</body>
+</html>
