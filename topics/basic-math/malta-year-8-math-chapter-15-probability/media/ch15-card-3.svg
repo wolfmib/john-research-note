@@ -1,0 +1,10 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 240' width='640' height='240' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='638' height='238' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<text x='320.0' y='40.0' font-size='26' font-weight='700' text-anchor='middle' fill='#1f2328'>P(rain) + P(not rain) = 1</text>
+<rect x='60.0' y='85.0' width='156.0' height='70.0' rx='0' fill='#ddf4ff' stroke='#1f2328' stroke-width='2'/>
+<rect x='216.0' y='85.0' width='364.0' height='70.0' rx='0' fill='#fff8c5' stroke='#1f2328' stroke-width='2'/>
+<text x='138.0' y='128.0' font-size='22' font-weight='700' text-anchor='middle' fill='#1f2328'>rain 0.3</text>
+<text x='398.0' y='132.0' font-size='34' font-weight='800' text-anchor='middle' fill='#0969da'>?</text>
+<text x='320.0' y='205.0' font-size='22' font-weight='500' text-anchor='middle' fill='#57606a'>the whole bar is 1</text>
+</svg>

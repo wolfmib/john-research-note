@@ -1,0 +1,190 @@
+{
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 15",
+ "root": "chapters",
+ "send_to": "John",
+ "slug": "malta-year-8-math-chapter-15-probability",
+ "title": "Malta Year 8 Math Chapter 15 — Probability",
+ "question": "Six cards: the scale, simple probability, complement, mutually exclusive events, experiments and two events.",
+ "intro": "- Six ideas, from the basic one to two events, with four worked examples on each card.\n- Each card builds on the one before.\n- By the end: find a probability, use 1 − P, add for “or”, estimate from experiments and use a sample space.",
+ "questions": [
+  {
+   "group": "15.1 Probability scale: words and numbers",
+   "title": "Probability scale: words and numbers",
+   "prompt": "- Every probability is between **0** and **1**.\n- 0 = impossible, less than ½ = unlikely, ½ = even chance, more than ½ = likely, 1 = certain.\n- The same probability can be a fraction, a decimal or a percentage.\n\n**Examples:**\n\n- **a)** A fair dice is rolled.\n\nWhich word describes getting a number less than 7?\n\n- **b)** A bag has 3 red and 7 blue counters.\n\n- One counter is picked without looking.\n- Which word describes picking red?\n\n- **c)** A probability is \\(\\dfrac{3}{4}\\).\n\nWrite it as a decimal.\n\n- **d)** A probability is \\(\\dfrac{3}{5}\\).\n\nWrite it as a percentage.",
+   "steps": [
+    "**a)**\n\n\\[\\begin{aligned} P &= \\frac{6}{6} \\\\ &= 1 \\end{aligned}\\]\n\n6 of the 6 outcomes give a number less than 7, so the event is **certain**.\n\n0 = impossible, below ½ = unlikely, ½ = even chance, above ½ = likely, 1 = certain.",
+    "**b)**\n\n\\[P(\\text{red}) = \\frac{3}{10}\\]\n\nCompare with ½: 3 out of 10 is less than half, so picking red is **unlikely**.",
+    "**c)**\n\n\\[\\frac{3}{4} = 3 \\div 4\\]\n\n\\[\\boxed{0.75}\\]\n\nA probability as a decimal is always between 0 and 1.",
+    "**d)**\n\n\\[\\frac{3}{5} \\times 100\\%\\]\n\n\\[\\boxed{60}\\%\\]\n\n- A probability as a percentage is between 0% and 100%.\n- Enter the number only."
+   ],
+   "figure": "ch15-card-1.svg",
+   "figure_alt": "A line from 0 to 1 with the words impossible, unlikely, even chance, likely and certain along it.",
+   "practice": {
+    "intro": "Write the probability \\(\\dfrac{11}{20}\\) as a percentage.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Percentage (number only)}"
+     ]
+    ],
+    "answers": [
+     55
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "15.2 Simple probability: wanted ÷ total",
+   "title": "Simple probability: wanted ÷ total",
+   "prompt": "- **P(event) = number of wanted outcomes ÷ total number of outcomes**.\n- The outcomes must be equally likely: a fair dice, a random pick.\n- Write the answer as a fraction in its simplest form.\n\n**Examples:**\n\n- **a)** A fair dice is rolled.\n\nFind P(an even number).\n\n- **b)** A bag has 4 red, 5 blue, 3 green counters.\n\n- One counter is picked at random.\n- Find P(blue).\n\n- **c)** Cards are numbered 1 to 20.\n\n- One card is picked at random.\n- Find P(a multiple of 5).\n\n- **d)** Each letter of the word MATHEMATICS is written on a card.\n\n- One card is picked at random.\n- Find P(the letter A).",
+   "steps": [
+    "**a)**\n\n\\[\\text{Wanted: } 2, 4, 6\\]\n\n\\[P = \\frac{3}{6}\\]\n\n\\[\\boxed{\\frac{1}{2}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+    "**b)**\n\n\\[\\begin{aligned} \\text{Total} &= 4 + 5 + 3 \\\\ &= 12 \\end{aligned}\\]\n\n\\[P(\\text{blue}) = \\frac{5}{12}\\]\n\n\\[\\boxed{\\frac{5}{12}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+    "**c)**\n\n\\[\\text{Wanted: } 5, 10, 15, 20\\]\n\n\\[P = \\frac{4}{20}\\]\n\n\\[\\boxed{\\frac{1}{5}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+    "**d)**\n\n\\[\\text{MATHEMATICS has 11 letters; A appears 2 times}\\]\n\n\\[P(A) = \\frac{2}{11}\\]\n\n\\[\\boxed{\\frac{2}{11}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify."
+   ],
+   "figure": "ch15-card-2.svg",
+   "figure_alt": "Six dice faces 1 to 6; the even faces 2, 4 and 6 are shaded.",
+   "practice": {
+    "intro": "- A bag has 6 red and 9 blue counters.\n- One is picked at random.\n\nFind P(red) as a decimal.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "P(\\text{red})"
+     ]
+    ],
+    "answers": [
+     0.4
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "15.3 Complement: P(not A) = 1 − P(A)",
+   "title": "Complement: P(not A) = 1 − P(A)",
+   "prompt": "- An event either **happens** or **does not happen**.\n- So P(not A) = 1 − P(A).\n- With percentages: P(not A) = 100% − P(A).\n\n**Examples:**\n\n- **a)** P(the bus is late) = \\(\\dfrac{2}{7}\\).\n\nFind P(not the bus is late).\n\n- **b)** P(rain tomorrow) = 0.3.\n\nFind P(not rain tomorrow).\n\n- **c)** P(a faulty bulb) = 4%.\n\nFind P(not a faulty bulb) as a percentage.\n\n- **d)** A fair dice is rolled.\n\nFind P(not a 4).",
+   "steps": [
+    "**a)**\n\n\\[P(\\text{not}) = 1 - \\frac{2}{7}\\]\n\n\\[= \\frac{7}{7} - \\frac{2}{7}\\]\n\n\\[\\boxed{\\frac{5}{7}}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+    "**b)**\n\n\\[P(\\text{not}) = 1 - 0.3\\]\n\n\\[\\boxed{0.7}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+    "**c)**\n\n\\[P(\\text{not}) = 100\\% - 4\\%\\]\n\n\\[\\boxed{96}\\%\\]\n\n- An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).\n- Enter the number only.",
+    "**d)**\n\n\\[P(\\text{a 4}) = \\frac{1}{6}\\]\n\n\\[P(\\text{not}) = 1 - \\frac{1}{6}\\]\n\n\\[\\boxed{\\frac{5}{6}}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%)."
+   ],
+   "figure": "ch15-card-3.svg",
+   "figure_alt": "A bar of length 1: the rain part is 0.3, the rest is not rain and unknown.",
+   "practice": {
+    "intro": "P(a train is late) = 0.12.\n\nFind P(the train is not late).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "P(\\text{not late})"
+     ]
+    ],
+    "answers": [
+     0.88
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "15.4 Mutually exclusive: add for “or”; all outcomes add to 1",
+   "title": "Mutually exclusive: add for “or”; all outcomes add to 1",
+   "prompt": "- **Mutually exclusive** events cannot happen at the same time (one roll shows one number).\n- For them: P(A or B) = P(A) + P(B).\n- The probabilities of **all** the outcomes add up to 1, so a missing one is 1 − (the rest).\n\n**Examples:**\n\n- **a)** A fair dice is rolled once.\n\nFind P(a 1 or a 2).\n\n- **b)** A spinner has four colours. P(red) = 0.25 and P(blue) = 0.4.\n\nFind P(red or blue).\n\n- **c)** A spinner lands on one of four colours.\n\n| Colour | Probability |\n|---|---|\n| red | 0.2 |\n| blue | 0.35 |\n| green | ? |\n| yellow | 0.15 |\n\nFind P(green).\n\n- **d)** A spinner is red, blue or green. P(red) = 0.4.\n\n- Blue and green are equally likely.\n- Find P(blue).",
+   "steps": [
+    "**a)**\n\n\\[P(\\text{a 1}) = \\frac{1}{6}\\]\n\n\\[P(\\text{a 2}) = \\frac{1}{6}\\]\n\n\\[P(\\text{a 1 or a 2}) = \\frac{1}{6} + \\frac{1}{6}\\]\n\n\\[\\boxed{\\frac{1}{3}}\\]\n\nThe two events cannot happen together on one roll, so add their probabilities.",
+    "**b)**\n\n\\[P(\\text{red or blue}) = 0.25 + 0.4\\]\n\n\\[\\boxed{0.65}\\]\n\nThe spinner lands on one colour only, so the events are mutually exclusive: add.",
+    "**c)**\n\n\\[0.2 + 0.35 + 0.15 = 0.7\\]\n\n\\[P(\\text{green}) = 1 - 0.7\\]\n\n\\[\\boxed{0.3}\\]\n\nAll the outcomes together have probability 1, so subtract the known ones from 1.",
+    "**d)**\n\n\\[\\begin{aligned} P(\\text{blue}) + P(\\text{green}) &= 1 - 0.4 \\\\ &= 0.6 \\end{aligned}\\]\n\n\\[P(\\text{blue}) = 0.6 \\div 2\\]\n\n\\[\\boxed{0.3}\\]\n\nFirst find what is left for blue and green together, then split it into two equal parts."
+   ],
+   "figure": "ch15-card-4.svg",
+   "figure_alt": "A spinner with red, blue, green and yellow sectors; red 0.2, blue 0.35, yellow 0.15, green unknown.",
+   "practice": {
+    "intro": "A spinner: P(red) = 0.3, P(blue) = 0.25, P(green) = 0.1, and the rest is yellow.\n\nFind P(yellow).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "P(\\text{yellow})"
+     ]
+    ],
+    "answers": [
+     0.35
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "15.5 Experimental and theoretical probability",
+   "title": "Experimental and theoretical probability",
+   "prompt": "- **Theoretical:** worked out from equally likely outcomes, without doing it (fair dice: P(6) = 1/6).\n- **Experimental:** from real results, times it happened ÷ number of trials.\n- **Expected number** = probability × number of trials (an estimate).\n\n**Examples:**\n\n- **a)** A coin is tossed 50 times and lands heads 28 times.\n\nFind the experimental probability as a decimal.\n\n- **b)** A fair dice is rolled. The event is rolling a 6.\n\nHow many times would you expect it in 60 trials?\n\n- **c)** A drawing pin landed point up 20 times in 50 drops.\n\nEstimate how many times this happens in 400 trials.\n\n- **d)** A fair dice is rolled 120 times and shows a 6 40 times.\n\n- The theoretical probability is \\(\\dfrac{1}{6}\\).\n- By how many does the result differ from the expected number?",
+   "steps": [
+    "**a)**\n\n\\[\\frac{28}{50} = 28 \\div 50\\]\n\n\\[\\boxed{0.56}\\]\n\nExperimental probability = number of times it happened ÷ number of trials.",
+    "**b)**\n\n\\[\\text{Expected} = \\frac{1}{6} \\times 60\\]\n\n\\[\\boxed{10}\\]\n\n- Expected number = probability × number of trials.\n- It is an estimate, not a promise.",
+    "**c)**\n\n\\[P \\approx \\frac{20}{50}\\]\n\n\\[\\frac{20}{50} \\times 400\\]\n\n\\[\\boxed{160}\\]\n\nUse the experimental probability as the estimate, then multiply by the new number of trials.",
+    "**d)**\n\n\\[\\begin{aligned} \\text{Expected} &= \\frac{1}{6} \\times 120 \\\\ &= 20 \\end{aligned}\\]\n\n\\[|40 - 20|\\]\n\n\\[\\boxed{20}\\]\n\n- Theoretical probability predicts; an experiment only gets close.\n- More trials usually get closer."
+   ],
+   "figure": "ch15-card-5.svg",
+   "figure_alt": "Bars for 50 coin tosses: heads 28, tails 22.",
+   "practice": {
+    "intro": "- A spinner has P(blue) = 0.2.\n- It is spun 150 times.\n\nHow many blues do you expect?",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Expected blues}"
+     ]
+    ],
+    "answers": [
+     30
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "15.6 Two events: the sample space",
+   "title": "Two events: the sample space",
+   "prompt": "- For two events (a coin **and** a dice), list every pair, or draw a grid.\n- Number of outcomes = outcomes of the first × outcomes of the second.\n- Then P = wanted pairs ÷ all pairs.\n\n**Examples:**\n\n- **a)** A coin is tossed and a fair dice is rolled.\n\nHow many outcomes are in the sample space?\n\n- **b)** A coin is tossed and a fair dice is rolled.\n\nFind P(heads and an even number).\n\n- **c)** Two fair dice are rolled and the scores are added.\n\nFind P(a total of 7).\n\n- **d)** Spinner A shows 1, 2, 3. Spinner B shows 1, 2, 3, 4. Both are spun and the scores are added.\n\nFind P(a total of 5).",
+   "steps": [
+    "**a)**\n\n\\[2 \\times 6\\]\n\n\\[\\boxed{12}\\]\n\nEach of the first outcomes can pair with each of the second: multiply, or draw the grid.",
+    "**b)**\n\n\\[\\text{12 outcomes: H1, …, H6, T1, …, T6}\\]\n\n\\[\\text{Wanted: } H2, H4, H6\\]\n\n\\[P = \\frac{3}{12}\\]\n\n\\[\\boxed{\\frac{1}{4}}\\]\n\nList or draw the 12 outcomes, then count the ones that match both parts.",
+    "**c)**\n\n\\[\\text{Wanted: } (1,6), (2,5), (3,4), (4,3), (5,2), (6,1)\\]\n\n\\[P = \\frac{6}{36}\\]\n\n\\[\\boxed{\\frac{1}{6}}\\]\n\nThe sum grid has 6 × 6 = 36 cells; count the cells with the wanted total.",
+    "**d)**\n\n\\[\\begin{aligned} \\text{Outcomes} &= 3 \\times 4 \\\\ &= 12 \\end{aligned}\\]\n\n\\[\\text{Wanted: } (1,4), (2,3), (3,2)\\]\n\n\\[P = \\frac{3}{12}\\]\n\n\\[\\boxed{\\frac{1}{4}}\\]\n\nMake the grid of all pairs, then count the pairs with the wanted total."
+   ],
+   "figure": "ch15-card-6.svg",
+   "figure_alt": "A 2 by 6 grid of coin and dice outcomes H1 to T6; heads with an even number are shaded.",
+   "practice": {
+    "intro": "A coin is tossed and a fair dice is rolled.\n\nFind P(heads and a number less than 4) as a decimal.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "P"
+     ]
+    ],
+    "answers": [
+     0.25
+    ],
+    "tolerance": 1e-06
+   }
+  }
+ ],
+ "link": [
+  "Probability Practice ›",
+  "../malta-year-8-math-chapter-15-probability-practice/quiz.html"
+ ]
+}
