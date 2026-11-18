@@ -1,0 +1,106 @@
+{
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 8",
+ "root": "chapters",
+ "send_to": "John",
+ "slug": "malta-year-8-math-chapter-8-algebra-word-problems",
+ "title": "Malta Year 8 Math Chapter 8 — Algebra Word Problems",
+ "question": "Four stories with two unknown prices. Write the two equations yourself, then solve them.",
+ "intro": "- Each story has two things with unknown prices.\n- Read the story and write two equations yourself, one for each person or family.\n- Solve them to find both prices.\n- In stories 3 and 4, part (c) asks how many ways there are to spend a budget exactly.\n- Type money as a number only, for example 2.5 for 2.50 euros.",
+ "questions": [
+  {
+   "group": "Q1 · Pens and notebooks",
+   "title": "Pens and notebooks · (a) one pen",
+   "type": "numeric",
+   "answer": 1.5,
+   "tolerance": 0.001,
+   "prompt": "At a stationery shop in Sliema, all pens cost the same and all notebooks cost the same.\n\nMaria buys 4 pens and 3 notebooks and pays 15 euros.\n\nDaniel buys 2 pens and 5 notebooks and pays 18 euros.\n\n(a) How much does one pen cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one pen \\(x\\) euros and the price of one notebook \\(y\\) euros.\n\nWrite one equation for each:\n\n\\[4x + 3y = 15 \\;\\;\\text{(1)}\\]\n\n\\[2x + 5y = 18 \\;\\;\\text{(2)}\\]\n\nMake the number of pens the same: multiply (1) by 2 and (2) by 4.\n\n\\[8x + 6y = 30\\]\n\n\\[8x + 20y = 72\\]\n\nTake one away from the other, so the pens disappear:\n\n\\[14y = 42\\]\n\n\\[\\begin{aligned} y &= 42 \\div 14 \\\\ &= 3 \\end{aligned}\\]\n\nPut \\(y = 3\\) back into (1):\n\n\\[4x + 3 \\times 3 = 15\\]\n\n\\[\\begin{aligned} 4x &= 15 - 9 \\\\ &= 6 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 6 \\div 4 \\\\ &= 1.50 \\end{aligned}\\]\n\nCheck with (2): 2 × 1.50 + 5 × 3 = 18.\n\nIt matches.\n\n\\[\\boxed{1.50}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q1 · Pens and notebooks",
+   "title": "Pens and notebooks · (b) one notebook",
+   "type": "numeric",
+   "answer": 3,
+   "tolerance": 0.001,
+   "prompt": "At a stationery shop in Sliema, all pens cost the same and all notebooks cost the same.\n\nMaria buys 4 pens and 3 notebooks and pays 15 euros.\n\nDaniel buys 2 pens and 5 notebooks and pays 18 euros.\n\n(b) How much does one notebook cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one pen \\(x\\) euros and the price of one notebook \\(y\\) euros.\n\nWrite one equation for each:\n\n\\[4x + 3y = 15 \\;\\;\\text{(1)}\\]\n\n\\[2x + 5y = 18 \\;\\;\\text{(2)}\\]\n\nMake the number of pens the same: multiply (1) by 2 and (2) by 4.\n\n\\[8x + 6y = 30\\]\n\n\\[8x + 20y = 72\\]\n\nTake one away from the other, so the pens disappear:\n\n\\[14y = 42\\]\n\n\\[\\begin{aligned} y &= 42 \\div 14 \\\\ &= 3 \\end{aligned}\\]\n\nPut \\(y = 3\\) back into (1):\n\n\\[4x + 3 \\times 3 = 15\\]\n\n\\[\\begin{aligned} 4x &= 15 - 9 \\\\ &= 6 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 6 \\div 4 \\\\ &= 1.50 \\end{aligned}\\]\n\nCheck with (2): 2 × 1.50 + 5 × 3 = 18.\n\nIt matches.\n\n\\[\\boxed{3}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q2 · Coffee and pastizzi",
+   "title": "Coffee and pastizzi · (a) one coffee",
+   "type": "numeric",
+   "answer": 2,
+   "tolerance": 0.001,
+   "prompt": "At a kiosk in Valletta, every coffee costs the same and every pastizz costs the same.\n\nRyan orders 3 coffees and 4 pastizzi and pays 8.40 euros.\n\nLeah orders 2 coffees and 7 pastizzi and pays 8.20 euros.\n\n(a) How much does one coffee cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one coffee \\(x\\) euros and the price of one pastizz \\(y\\) euros.\n\nWrite one equation for each:\n\n\\[3x + 4y = 8.40 \\;\\;\\text{(1)}\\]\n\n\\[2x + 7y = 8.20 \\;\\;\\text{(2)}\\]\n\nMake the number of coffees the same: multiply (1) by 2 and (2) by 3.\n\n\\[6x + 8y = 16.80\\]\n\n\\[6x + 21y = 24.60\\]\n\nTake one away from the other, so the coffees disappear:\n\n\\[13y = 7.80\\]\n\n\\[\\begin{aligned} y &= 7.80 \\div 13 \\\\ &= 0.60 \\end{aligned}\\]\n\nPut \\(y = 0.60\\) back into (1):\n\n\\[3x + 4 \\times 0.60 = 8.40\\]\n\n\\[\\begin{aligned} 3x &= 8.40 - 2.40 \\\\ &= 6 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 6 \\div 3 \\\\ &= 2 \\end{aligned}\\]\n\nCheck with (2): 2 × 2 + 7 × 0.60 = 8.20.\n\nIt matches.\n\n\\[\\boxed{2}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q2 · Coffee and pastizzi",
+   "title": "Coffee and pastizzi · (b) one pastizz",
+   "type": "numeric",
+   "answer": 0.6,
+   "tolerance": 0.001,
+   "prompt": "At a kiosk in Valletta, every coffee costs the same and every pastizz costs the same.\n\nRyan orders 3 coffees and 4 pastizzi and pays 8.40 euros.\n\nLeah orders 2 coffees and 7 pastizzi and pays 8.20 euros.\n\n(b) How much does one pastizz cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one coffee \\(x\\) euros and the price of one pastizz \\(y\\) euros.\n\nWrite one equation for each:\n\n\\[3x + 4y = 8.40 \\;\\;\\text{(1)}\\]\n\n\\[2x + 7y = 8.20 \\;\\;\\text{(2)}\\]\n\nMake the number of coffees the same: multiply (1) by 2 and (2) by 3.\n\n\\[6x + 8y = 16.80\\]\n\n\\[6x + 21y = 24.60\\]\n\nTake one away from the other, so the coffees disappear:\n\n\\[13y = 7.80\\]\n\n\\[\\begin{aligned} y &= 7.80 \\div 13 \\\\ &= 0.60 \\end{aligned}\\]\n\nPut \\(y = 0.60\\) back into (1):\n\n\\[3x + 4 \\times 0.60 = 8.40\\]\n\n\\[\\begin{aligned} 3x &= 8.40 - 2.40 \\\\ &= 6 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 6 \\div 3 \\\\ &= 2 \\end{aligned}\\]\n\nCheck with (2): 2 × 2 + 7 × 0.60 = 8.20.\n\nIt matches.\n\n\\[\\boxed{0.60}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q3 · Two books and a gift budget",
+   "title": "Two books · (a) one copy of book A",
+   "type": "numeric",
+   "answer": 8,
+   "tolerance": 0.001,
+   "prompt": "A bookshop sells two books for school: book A and book B.\n\nNina gets 60 euros from her parents.\n\nShe buys 3 copies of book A and 2 copies of book B, and gets 8 euros back.\n\nKarl gets 95 euros from his parents.\n\nHe buys 5 copies of book A and 3 copies of book B, and gets 13 euros back.\n\n(a) How much does one copy of book A cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one copy of book A \\(x\\) euros and the price of one copy of book B \\(y\\) euros.\n\nFirst find the money spent.\n\nNina spends 60 − 8 = 52 euros.\n\nKarl spends 95 − 13 = 82 euros.\n\nWrite one equation for each:\n\n\\[3x + 2y = 52 \\;\\;\\text{(1)}\\]\n\n\\[5x + 3y = 82 \\;\\;\\text{(2)}\\]\n\nMake the number of copies of book A the same: multiply (1) by 5 and (2) by 3.\n\n\\[15x + 10y = 260\\]\n\n\\[15x + 9y = 246\\]\n\nTake one away from the other, so the copies of book A disappear:\n\n\\[y = 14\\]\n\nPut \\(y = 14\\) back into (1):\n\n\\[3x + 2 \\times 14 = 52\\]\n\n\\[\\begin{aligned} 3x &= 52 - 28 \\\\ &= 24 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 24 \\div 3 \\\\ &= 8 \\end{aligned}\\]\n\nCheck with (2): 5 × 8 + 3 × 14 = 82.\n\nIt matches.\n\n\\[\\boxed{8}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q3 · Two books and a gift budget",
+   "title": "Two books · (b) one copy of book B",
+   "type": "numeric",
+   "answer": 14,
+   "tolerance": 0.001,
+   "prompt": "A bookshop sells two books for school: book A and book B.\n\nNina gets 60 euros from her parents.\n\nShe buys 3 copies of book A and 2 copies of book B, and gets 8 euros back.\n\nKarl gets 95 euros from his parents.\n\nHe buys 5 copies of book A and 3 copies of book B, and gets 13 euros back.\n\n(b) How much does one copy of book B cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one copy of book A \\(x\\) euros and the price of one copy of book B \\(y\\) euros.\n\nFirst find the money spent.\n\nNina spends 60 − 8 = 52 euros.\n\nKarl spends 95 − 13 = 82 euros.\n\nWrite one equation for each:\n\n\\[3x + 2y = 52 \\;\\;\\text{(1)}\\]\n\n\\[5x + 3y = 82 \\;\\;\\text{(2)}\\]\n\nMake the number of copies of book A the same: multiply (1) by 5 and (2) by 3.\n\n\\[15x + 10y = 260\\]\n\n\\[15x + 9y = 246\\]\n\nTake one away from the other, so the copies of book A disappear:\n\n\\[y = 14\\]\n\nPut \\(y = 14\\) back into (1):\n\n\\[3x + 2 \\times 14 = 52\\]\n\n\\[\\begin{aligned} 3x &= 52 - 28 \\\\ &= 24 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 24 \\div 3 \\\\ &= 8 \\end{aligned}\\]\n\nCheck with (2): 5 × 8 + 3 × 14 = 82.\n\nIt matches.\n\n\\[\\boxed{14}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q3 · Two books and a gift budget",
+   "title": "Two books · (c) ways to spend 150 euros",
+   "type": "numeric",
+   "answer": 3,
+   "tolerance": 0.001,
+   "prompt": "A bookshop sells two books for school: book A and book B.\n\nNina gets 60 euros from her parents.\n\nShe buys 3 copies of book A and 2 copies of book B, and gets 8 euros back.\n\nKarl gets 95 euros from his parents.\n\nHe buys 5 copies of book A and 3 copies of book B, and gets 13 euros back.\n\n(c) The head of school gives a class a gift budget of 150 euros for these two books.\n\nThe class wants at least one copy of book A and at least one copy of book B, and they must spend exactly 150 euros.\n\nHow many different ways can they do this?",
+   "solution": "First find the prices from parts (a) and (b): one copy of book A costs 8 euros and one copy of book B costs 14 euros.\n\nNow try 1 copy of book A, then 2, then 3, and so on.\n\nEach time, check if the money left buys an exact number of copies of book B.\n\nThe ways that spend exactly 150 euros are:\n\n\\[3 \\times 8 + 9 \\times 14 = 150\\]\n\n\\[10 \\times 8 + 5 \\times 14 = 150\\]\n\n\\[17 \\times 8 + 1 \\times 14 = 150\\]\n\n\\[\\boxed{3}\\text{ ways}\\]"
+  },
+  {
+   "group": "Q4 · Ferry tickets and a club budget",
+   "title": "Ferry tickets · (a) one adult ticket",
+   "type": "numeric",
+   "answer": 7,
+   "tolerance": 0.001,
+   "prompt": "On the ferry to Gozo, every adult ticket costs the same and every child ticket costs the same.\n\nThe Vella family pays with 30 euros for 2 adult tickets and 3 child tickets, and gets 4 euros back.\n\nThe Grech family pays with 60 euros for 4 adult tickets and 5 child tickets, and gets 12 euros back.\n\n(a) How much does one adult ticket cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one adult ticket \\(x\\) euros and the price of one child ticket \\(y\\) euros.\n\nFirst find the money spent.\n\nThe Vella family spends 30 − 4 = 26 euros.\n\nThe Grech family spends 60 − 12 = 48 euros.\n\nWrite one equation for each:\n\n\\[2x + 3y = 26 \\;\\;\\text{(1)}\\]\n\n\\[4x + 5y = 48 \\;\\;\\text{(2)}\\]\n\nMake the number of adult tickets the same: multiply (1) by 4 and (2) by 2.\n\n\\[8x + 12y = 104\\]\n\n\\[8x + 10y = 96\\]\n\nTake one away from the other, so the adult tickets disappear:\n\n\\[2y = 8\\]\n\n\\[\\begin{aligned} y &= 8 \\div 2 \\\\ &= 4 \\end{aligned}\\]\n\nPut \\(y = 4\\) back into (1):\n\n\\[2x + 3 \\times 4 = 26\\]\n\n\\[\\begin{aligned} 2x &= 26 - 12 \\\\ &= 14 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 14 \\div 2 \\\\ &= 7 \\end{aligned}\\]\n\nCheck with (2): 4 × 7 + 5 × 4 = 48.\n\nIt matches.\n\n\\[\\boxed{7}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q4 · Ferry tickets and a club budget",
+   "title": "Ferry tickets · (b) one child ticket",
+   "type": "numeric",
+   "answer": 4,
+   "tolerance": 0.001,
+   "prompt": "On the ferry to Gozo, every adult ticket costs the same and every child ticket costs the same.\n\nThe Vella family pays with 30 euros for 2 adult tickets and 3 child tickets, and gets 4 euros back.\n\nThe Grech family pays with 60 euros for 4 adult tickets and 5 child tickets, and gets 12 euros back.\n\n(b) How much does one child ticket cost?\n\nType the euros as a number only.",
+   "solution": "Call the price of one adult ticket \\(x\\) euros and the price of one child ticket \\(y\\) euros.\n\nFirst find the money spent.\n\nThe Vella family spends 30 − 4 = 26 euros.\n\nThe Grech family spends 60 − 12 = 48 euros.\n\nWrite one equation for each:\n\n\\[2x + 3y = 26 \\;\\;\\text{(1)}\\]\n\n\\[4x + 5y = 48 \\;\\;\\text{(2)}\\]\n\nMake the number of adult tickets the same: multiply (1) by 4 and (2) by 2.\n\n\\[8x + 12y = 104\\]\n\n\\[8x + 10y = 96\\]\n\nTake one away from the other, so the adult tickets disappear:\n\n\\[2y = 8\\]\n\n\\[\\begin{aligned} y &= 8 \\div 2 \\\\ &= 4 \\end{aligned}\\]\n\nPut \\(y = 4\\) back into (1):\n\n\\[2x + 3 \\times 4 = 26\\]\n\n\\[\\begin{aligned} 2x &= 26 - 12 \\\\ &= 14 \\end{aligned}\\]\n\n\\[\\begin{aligned} x &= 14 \\div 2 \\\\ &= 7 \\end{aligned}\\]\n\nCheck with (2): 4 × 7 + 5 × 4 = 48.\n\nIt matches.\n\n\\[\\boxed{4}\\text{ euros}\\]"
+  },
+  {
+   "group": "Q4 · Ferry tickets and a club budget",
+   "title": "Ferry tickets · (c) ways to spend 80 euros",
+   "type": "numeric",
+   "answer": 2,
+   "tolerance": 0.001,
+   "prompt": "On the ferry to Gozo, every adult ticket costs the same and every child ticket costs the same.\n\nThe Vella family pays with 30 euros for 2 adult tickets and 3 child tickets, and gets 4 euros back.\n\nThe Grech family pays with 60 euros for 4 adult tickets and 5 child tickets, and gets 12 euros back.\n\n(c) A football club has 80 euros for ferry tickets.\n\nThey want at least one adult ticket and at least one child ticket, and they must spend exactly 80 euros.\n\nHow many different ways can they do this?",
+   "solution": "First find the prices from parts (a) and (b): one adult ticket costs 7 euros and one child ticket costs 4 euros.\n\nNow try 1 adult ticket, then 2, then 3, and so on.\n\nEach time, check if the money left buys an exact number of child tickets.\n\nThe ways that spend exactly 80 euros are:\n\n\\[4 \\times 7 + 13 \\times 4 = 80\\]\n\n\\[8 \\times 7 + 6 \\times 4 = 80\\]\n\n\\[\\boxed{2}\\text{ ways}\\]"
+  }
+ ],
+ "link": [
+  "Algebra Material ›",
+  "../malta-year-8-math-chapter-8-algebra/material.html"
+ ]
+}

@@ -184,6 +184,7 @@ Practice quizzes and worked math material by course and topic.
 | [AP Precalculus 2.14 — Logarithmic Function Context and Data Modeling](topics/basic-math/ap-precalculus-2-14-logarithmic-function-context-and-data-modeling/content.md) | Log models: spot a log table, a model from two points, decibels, the Richter scale, a prediction from a regression model. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-14-logarithmic-function-context-and-data-modeling/quiz.html) |
 | [Malta Year 8 Math Chapter 15 — Probability](topics/basic-math/malta-year-8-math-chapter-15-probability/content.md) | Six cards, from how likely something is to two things happening at once. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-15-probability/material.html) |
 | [Malta Year 8 Math Chapter 15 — Probability Practice](topics/basic-math/malta-year-8-math-chapter-15-probability-practice/content.md) | 48 new questions: two for each of the 24 worked examples in the Probability Material. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-15-probability-practice/quiz.html) |
+| [Malta Year 8 Math Chapter 8 — Algebra Word Problems](topics/basic-math/malta-year-8-math-chapter-8-algebra-word-problems/content.md) | Four stories with two unknown prices. Write the two equations yourself, then solve them. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-8-algebra-word-problems/quiz.html) |
 
 ## Animations
 
