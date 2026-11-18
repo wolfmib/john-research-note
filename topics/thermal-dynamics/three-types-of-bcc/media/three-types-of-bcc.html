@@ -28,15 +28,13 @@
     <g id="compare" opacity="0">
         <line x1="20" y1="358" x2="1260" y2="358" stroke="#ECECEC" stroke-width="2" stroke-dasharray="7 7" stroke-opacity=".35"/>
         <g id="panels"></g>
-        <text id="closing" x="640" y="630" text-anchor="middle" font-size="22" fill="#ECECEC" opacity="0">Same skin surface, three shapes around it.</text>
-        <text id="closing2" x="640" y="664" text-anchor="middle" font-size="19" fill="#9AA0A6" opacity="0">Almost flat and wide · raised and round · a little raised, with branching strands.</text>
     </g>
 </svg>
 </div>
 
 <script>
     const NS = 'http://www.w3.org/2000/svg';
-    const TOTAL = 37, FADE = 0.6, SURF = 114, BOT = 505;
+    const TOTAL = 33.5, FADE = 0.6, SURF = 114, BOT = 505;
     const clamp01 = v => Math.max(0, Math.min(1, v));
     const ease = p => p < .5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
     const seg = (t, a, d) => ease(clamp01((t - a) / d));
@@ -161,7 +159,7 @@
         [5, 11.5, 'It grows along the base of the epidermis'],
         [11.5, 18, 'It rises above the skin and grows down as one round mass'],
         [18, 25, 'It grows down as thin branching strands'],
-        [25, 31.2, 'Side by side, on the same skin surface'], [31.2, 99, 'How they grow']];
+        [25, 99, 'Side by side, on the same skin surface']];
     const subEls = SUBS.map(s => { const e = el('text', { x: 48, y: 104, opacity: 0 }, $('subs')); e.textContent = s[2]; return e; });
     const CAPS = [[5, 11.5, 'sup', 'A wide, shallow ribbon, almost flat at the surface. It spreads sideways.'],
         [11.5, 18, 'nod', 'A raised round mass. It also grows down and pushes the dermis aside.'],
@@ -216,7 +214,6 @@
             if (p.k === 'nod') s.nod = { r, v: seg(t, t0, .3), bar: b };
             if (p.k === 'inf') s.inf = { r, v: seg(t, t0, .3), cap: seg(t, t0 + .4, 1.2), island: seg(t, t0 + 1.4, .6), halo: seg(t, t0 + 1.8, .8), bar: b };
             p.ctx.render(s); O(p.lab, seg(t, 29.2 + i * .25, .6)); });
-        O('closing', seg(t, 31.4, .8)); O('closing2', seg(t, 32.4, .8));
     }
     window.renderAt = renderAt; window.TOTAL = TOTAL;
 
