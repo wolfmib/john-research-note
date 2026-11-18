@@ -11,305 +11,319 @@ author: Wei-Che Hung
 
 # Malta Year 8 Math Chapter 15 — Probability Practice
 
-- Two fresh questions for every worked example in the Probability Material.
-- Groups follow cards 1–6 and examples a–d.
-- Fractions in simplest form; decimals and percentages as numbers only.
+- Two new questions for every worked example in the Probability Material.
+- The groups follow cards 1–6 and examples a–d.
+- Write fractions in their simplest form. For decimals and percentages, type the number only.
 
 ---
 
-## Card 1 · Example a · Probability scale: words and numbers
+## Card 1 · Example a · How likely is it? Words and numbers
 
-### 1. Probability scale: words and numbers · a1
+### 1. How likely is it? Words and numbers · a1
 
-A fair dice is rolled.
+You roll a normal dice with the numbers 1 to 6.
 
-Which word describes getting an 8?
-
-- **A.** unlikely
-- **B.** even chance
-- **C.** likely
-- **D.** impossible
-
-### 2. Probability scale: words and numbers · a2
-
-A fair dice is rolled.
-
-Which word describes getting a number from 1 to 5?
+Which word best describes your chance of getting an 8?
 
 - **A.** unlikely
 - **B.** even chance
 - **C.** likely
 - **D.** impossible
 
-## Card 1 · Example b · Probability scale: words and numbers
+### 2. How likely is it? Words and numbers · a2
 
-### 3. Probability scale: words and numbers · b1
+You roll a normal dice with the numbers 1 to 6.
 
-A bag has 5 red and 5 blue counters.
+Which word best describes your chance of getting a number from 1 to 5?
 
-One counter is picked without looking.
+- **A.** unlikely
+- **B.** even chance
+- **C.** likely
+- **D.** impossible
 
-Which word describes picking red?
+## Card 1 · Example b · How likely is it? Words and numbers
+
+### 3. How likely is it? Words and numbers · b1
+
+A bag has 5 red counters and 5 blue counters.
+
+You take out one counter without looking.
+
+Which word best describes your chance of getting a red one?
 
 - **A.** likely
 - **B.** even chance
 - **C.** impossible
 - **D.** unlikely
 
-### 4. Probability scale: words and numbers · b2
+### 4. How likely is it? Words and numbers · b2
 
-A bag has 8 red and 2 blue counters.
+A bag has 8 red counters and 2 blue counters.
 
-One counter is picked without looking.
+You take out one counter without looking.
 
-Which word describes picking red?
+Which word best describes your chance of getting a red one?
 
 - **A.** likely
 - **B.** impossible
 - **C.** unlikely
 - **D.** even chance
 
-## Card 1 · Example c · Probability scale: words and numbers
+## Card 1 · Example c · How likely is it? Words and numbers
 
-### 5. Probability scale: words and numbers · c1
+### 5. How likely is it? Words and numbers · c1
 
-A probability is $\dfrac{2}{5}$.
+The probability that something happens is $\dfrac{2}{5}$.
 
-Write it as a decimal.
-
-Answer: ______
-
-### 6. Probability scale: words and numbers · c2
-
-A probability is $\dfrac{7}{20}$.
-
-Write it as a decimal.
+Write this probability as a decimal.
 
 Answer: ______
 
-## Card 1 · Example d · Probability scale: words and numbers
+### 6. How likely is it? Words and numbers · c2
 
-### 7. Probability scale: words and numbers · d1
+The probability that something happens is $\dfrac{7}{20}$.
 
-A probability is $\dfrac{1}{4}$.
-
-Write it as a percentage.
+Write this probability as a decimal.
 
 Answer: ______
 
-### 8. Probability scale: words and numbers · d2
+## Card 1 · Example d · How likely is it? Words and numbers
 
-A probability is $\dfrac{9}{20}$.
+### 7. How likely is it? Words and numbers · d1
 
-Write it as a percentage.
+The probability that something happens is $\dfrac{1}{4}$.
 
-Answer: ______
+Write this probability as a percentage.
 
-## Card 2 · Example a · Simple probability: wanted ÷ total
-
-### 9. Simple probability: wanted ÷ total · a1
-
-A fair dice is rolled.
-
-Find P(a number greater than 4).
+Type the number only.
 
 Answer: ______
 
-### 10. Simple probability: wanted ÷ total · a2
+### 8. How likely is it? Words and numbers · d2
 
-A fair dice is rolled.
+The probability that something happens is $\dfrac{9}{20}$.
 
-Find P(a number less than 5).
+Write this probability as a percentage.
 
-Answer: ______
-
-## Card 2 · Example b · Simple probability: wanted ÷ total
-
-### 11. Simple probability: wanted ÷ total · b1
-
-A bag has 2 red, 6 blue, 4 green counters.
-
-One counter is picked at random.
-
-Find P(green).
+Type the number only.
 
 Answer: ______
 
-### 12. Simple probability: wanted ÷ total · b2
+## Card 2 · Example a · Probability = results you want ÷ all results
 
-A bag has 7 red, 3 blue, 5 green counters.
+### 9. Probability = results you want ÷ all results · a1
 
-One counter is picked at random.
+You roll a normal dice with the numbers 1 to 6.
 
-Find P(red).
-
-Answer: ______
-
-## Card 2 · Example c · Simple probability: wanted ÷ total
-
-### 13. Simple probability: wanted ÷ total · c1
-
-Cards are numbered 1 to 20.
-
-One card is picked at random.
-
-Find P(a prime number).
+What is the probability of getting a number greater than 4?
 
 Answer: ______
 
-### 14. Simple probability: wanted ÷ total · c2
+### 10. Probability = results you want ÷ all results · a2
 
-Cards are numbered 1 to 30.
+You roll a normal dice with the numbers 1 to 6.
 
-One card is picked at random.
-
-Find P(a multiple of 4).
+What is the probability of getting a number less than 5?
 
 Answer: ______
 
-## Card 2 · Example d · Simple probability: wanted ÷ total
+## Card 2 · Example b · Probability = results you want ÷ all results
 
-### 15. Simple probability: wanted ÷ total · d1
+### 11. Probability = results you want ÷ all results · b1
 
-Each letter of the word STATISTICS is written on a card.
+A bag has 2 red, 6 blue and 4 green counters.
 
-One card is picked at random.
+You take out one counter without looking.
 
-Find P(the letter S).
-
-Answer: ______
-
-### 16. Simple probability: wanted ÷ total · d2
-
-Each letter of the word CALCULATOR is written on a card.
-
-One card is picked at random.
-
-Find P(the letter C).
+What is the probability that it is green?
 
 Answer: ______
 
-## Card 3 · Example a · Complement: P(not A) = 1 − P(A)
+### 12. Probability = results you want ÷ all results · b2
 
-### 17. Complement: P(not A) = 1 − P(A) · a1
+A bag has 7 red, 3 blue and 5 green counters.
 
-P(winning a game) = $\dfrac{3}{8}$.
+You take out one counter without looking.
 
-Find P(not winning a game).
-
-Answer: ______
-
-### 18. Complement: P(not A) = 1 − P(A) · a2
-
-P(a red sweet) = $\dfrac{4}{9}$.
-
-Find P(not a red sweet).
+What is the probability that it is red?
 
 Answer: ______
 
-## Card 3 · Example b · Complement: P(not A) = 1 − P(A)
+## Card 2 · Example c · Probability = results you want ÷ all results
 
-### 19. Complement: P(not A) = 1 − P(A) · b1
+### 13. Probability = results you want ÷ all results · c1
 
-P(a goal) = 0.65.
+A box has 20 cards with the numbers 1 to 20.
 
-Find P(not a goal).
+You take out one card without looking.
 
-Answer: ______
-
-### 20. Complement: P(not A) = 1 − P(A) · b2
-
-P(a flat tyre) = 0.08.
-
-Find P(not a flat tyre).
+What is the probability that its number is a prime number?
 
 Answer: ______
 
-## Card 3 · Example c · Complement: P(not A) = 1 − P(A)
+### 14. Probability = results you want ÷ all results · c2
 
-### 21. Complement: P(not A) = 1 − P(A) · c1
+A box has 30 cards with the numbers 1 to 30.
 
-P(a late ferry) = 15%.
+You take out one card without looking.
 
-Find P(not a late ferry) as a percentage.
-
-Answer: ______
-
-### 22. Complement: P(not A) = 1 − P(A) · c2
-
-P(snow) = 37%.
-
-Find P(not snow) as a percentage.
+What is the probability that its number is a multiple of 4?
 
 Answer: ______
 
-## Card 3 · Example d · Complement: P(not A) = 1 − P(A)
+## Card 2 · Example d · Probability = results you want ÷ all results
 
-### 23. Complement: P(not A) = 1 − P(A) · d1
+### 15. Probability = results you want ÷ all results · d1
+
+Each letter of the word STATISTICS is written on its own card.
+
+You take out one card without looking.
+
+What is the probability that it shows the letter S?
+
+Answer: ______
+
+### 16. Probability = results you want ÷ all results · d2
+
+Each letter of the word CALCULATOR is written on its own card.
+
+You take out one card without looking.
+
+What is the probability that it shows the letter C?
+
+Answer: ______
+
+## Card 3 · Example a · The chance that something does not happen
+
+### 17. The chance that something does not happen · a1
+
+The probability that you win the game is $\dfrac{3}{8}$.
+
+What is the probability that you do not win the game?
+
+Answer: ______
+
+### 18. The chance that something does not happen · a2
+
+The probability that you pick a red sweet is $\dfrac{4}{9}$.
+
+What is the probability that you do not pick a red sweet?
+
+Answer: ______
+
+## Card 3 · Example b · The chance that something does not happen
+
+### 19. The chance that something does not happen · b1
+
+The probability that the team scores a goal is 0.65.
+
+What is the probability that the team does not score a goal?
+
+Answer: ______
+
+### 20. The chance that something does not happen · b2
+
+The probability that a car gets a flat tyre is 0.08.
+
+What is the probability that the car does not get a flat tyre?
+
+Answer: ______
+
+## Card 3 · Example c · The chance that something does not happen
+
+### 21. The chance that something does not happen · c1
+
+The probability that the ferry is late is 15%.
+
+What is the probability that the ferry is not late?
+
+Type the percentage as a number only.
+
+Answer: ______
+
+### 22. The chance that something does not happen · c2
+
+The probability that it snows is 37%.
+
+What is the probability that it does not snow?
+
+Type the percentage as a number only.
+
+Answer: ______
+
+## Card 3 · Example d · The chance that something does not happen
+
+### 23. The chance that something does not happen · d1
 
 A bag has 5 red, 7 blue and 3 green counters.
 
-One is picked at random.
+You take out one counter without looking.
 
-Find P(not green).
-
-Answer: ______
-
-### 24. Complement: P(not A) = 1 − P(A) · d2
-
-Cards are numbered 1 to 10.
-
-One is picked at random.
-
-Find P(not a multiple of 3).
+What is the probability that it is not green?
 
 Answer: ______
 
-## Card 4 · Example a · Mutually exclusive: add for “or”; all outcomes add to 1
+### 24. The chance that something does not happen · d2
 
-### 25. Mutually exclusive: add for “or”; all outcomes add to 1 · a1
+A box has 10 cards with the numbers 1 to 10.
 
-A fair dice is rolled once.
+You take out one card without looking.
 
-Find P(a 2 or an odd number).
-
-Answer: ______
-
-### 26. Mutually exclusive: add for “or”; all outcomes add to 1 · a2
-
-A fair dice is rolled once.
-
-Find P(a 6 or a number less than 3).
+What is the probability that its number is not a multiple of 3?
 
 Answer: ______
 
-## Card 4 · Example b · Mutually exclusive: add for “or”; all outcomes add to 1
+## Card 4 · Example a · One or the other, and everything adds up to 1
 
-### 27. Mutually exclusive: add for “or”; all outcomes add to 1 · b1
+### 25. One or the other, and everything adds up to 1 · a1
+
+You roll a normal dice with the numbers 1 to 6.
+
+You roll it once.
+
+What is the probability of getting a 2 or an odd number?
+
+Answer: ______
+
+### 26. One or the other, and everything adds up to 1 · a2
+
+You roll a normal dice with the numbers 1 to 6.
+
+You roll it once.
+
+What is the probability of getting a 6 or a number less than 3?
+
+Answer: ______
+
+## Card 4 · Example b · One or the other, and everything adds up to 1
+
+### 27. One or the other, and everything adds up to 1 · b1
 
 A spinner has four colours.
 
-P(green) = 0.15 and P(yellow) = 0.35.
+The probability of green is 0.15, and the probability of yellow is 0.35.
 
-Find P(green or yellow).
+What is the probability that it lands on green or yellow?
 
 Answer: ______
 
-### 28. Mutually exclusive: add for “or”; all outcomes add to 1 · b2
+### 28. One or the other, and everything adds up to 1 · b2
 
 A spinner has four colours.
 
-P(red) = 0.32 and P(green) = 0.45.
+The probability of red is 0.32, and the probability of green is 0.45.
 
-Find P(red or green).
+What is the probability that it lands on red or green?
 
 Answer: ______
 
-## Card 4 · Example c · Mutually exclusive: add for “or”; all outcomes add to 1
+## Card 4 · Example c · One or the other, and everything adds up to 1
 
-### 29. Mutually exclusive: add for “or”; all outcomes add to 1 · c1
+### 29. One or the other, and everything adds up to 1 · c1
 
-A spinner lands on one of four colours.
+A spinner always lands on one of four colours.
+
+The table shows the probability of each colour.
 
 | Colour | Probability |
 |---|---|
@@ -318,13 +332,15 @@ A spinner lands on one of four colours.
 | green | ? |
 | yellow | 0.25 |
 
-Find P(green).
+What is the probability of green?
 
 Answer: ______
 
-### 30. Mutually exclusive: add for “or”; all outcomes add to 1 · c2
+### 30. One or the other, and everything adds up to 1 · c2
 
-A spinner lands on one of four colours.
+A spinner always lands on one of four colours.
+
+The table shows the probability of each colour.
 
 | Colour | Probability |
 |---|---|
@@ -333,193 +349,205 @@ A spinner lands on one of four colours.
 | green | 0.4 |
 | yellow | ? |
 
-Find P(yellow).
+What is the probability of yellow?
 
 Answer: ______
 
-## Card 4 · Example d · Mutually exclusive: add for “or”; all outcomes add to 1
+## Card 4 · Example d · One or the other, and everything adds up to 1
 
-### 31. Mutually exclusive: add for “or”; all outcomes add to 1 · d1
+### 31. One or the other, and everything adds up to 1 · d1
 
 A spinner is red, blue or green.
 
-P(red) = 0.2.
+The probability of red is 0.2.
 
-Blue and green are equally likely.
+Blue and green have the same probability.
 
-Find P(blue).
+What is the probability of blue?
 
 Answer: ______
 
-### 32. Mutually exclusive: add for “or”; all outcomes add to 1 · d2
+### 32. One or the other, and everything adds up to 1 · d2
 
 A spinner is red, blue or green.
 
-P(red) = 0.5.
+The probability of red is 0.5.
 
-Blue and green are equally likely.
+Blue and green have the same probability.
 
-Find P(blue).
-
-Answer: ______
-
-## Card 5 · Example a · Experimental and theoretical probability
-
-### 33. Experimental and theoretical probability · a1
-
-A drawing pin is dropped 40 times and lands point up 26 times.
-
-Find the experimental probability as a decimal.
+What is the probability of blue?
 
 Answer: ______
 
-### 34. Experimental and theoretical probability · a2
+## Card 5 · Example a · Working it out, or trying it many times
 
-A spinner is spun 80 times and lands on red 12 times.
+### 33. Working it out, or trying it many times · a1
 
-Find the experimental probability as a decimal.
+You drop a drawing pin 40 times.
 
-Answer: ______
+It lands point up 26 times.
 
-## Card 5 · Example b · Experimental and theoretical probability
+Using these results, what is the probability of point up?
 
-### 35. Experimental and theoretical probability · b1
-
-A fair coin is tossed.
-
-The event is landing heads.
-
-How many times would you expect it in 90 trials?
+Give it as a decimal.
 
 Answer: ______
 
-### 36. Experimental and theoretical probability · b2
+### 34. Working it out, or trying it many times · a2
 
-A spinner has P(red) = 0.3.
+You spin a spinner 80 times.
 
-The event is landing on red.
+It lands on red 12 times.
 
-How many times would you expect it in 200 trials?
+Using these results, what is the probability of red?
 
-Answer: ______
-
-## Card 5 · Example c · Experimental and theoretical probability
-
-### 37. Experimental and theoretical probability · c1
-
-A bus was late on 12 of 40 school days.
-
-Estimate how many times this happens in 200 trials.
+Give it as a decimal.
 
 Answer: ______
 
-### 38. Experimental and theoretical probability · c2
+## Card 5 · Example b · Working it out, or trying it many times
 
-A machine made 9 faulty bottles in a test of 30.
+### 35. Working it out, or trying it many times · b1
 
-Estimate how many times this happens in 500 trials.
+You toss a coin 90 times.
 
-Answer: ______
-
-## Card 5 · Example d · Experimental and theoretical probability
-
-### 39. Experimental and theoretical probability · d1
-
-A fair coin is tossed 100 times and lands heads 62 times.
-
-The theoretical probability is $\dfrac{1}{2}$.
-
-By how many does the result differ from the expected number?
+About how many times would you expect heads?
 
 Answer: ______
 
-### 40. Experimental and theoretical probability · d2
+### 36. Working it out, or trying it many times · b2
 
-A fair spinner with 4 equal colours is spun 80 times and lands on red 26 times.
+A spinner lands on red with probability 0.3.
 
-The theoretical probability is $\dfrac{1}{4}$.
+You spin it 200 times.
 
-By how many does the result differ from the expected number?
-
-Answer: ______
-
-## Card 6 · Example a · Two events: the sample space
-
-### 41. Two events: the sample space · a1
-
-A fair dice is rolled and a spinner numbered 1 to 4 is spun.
-
-How many outcomes are in the sample space?
+About how many times would you expect red?
 
 Answer: ______
 
-### 42. Two events: the sample space · a2
+## Card 5 · Example c · Working it out, or trying it many times
 
-A coin is tossed and a spinner with 5 colours is spun.
+### 37. Working it out, or trying it many times · c1
 
-How many outcomes are in the sample space?
+A bus was late on 12 out of 40 school days.
 
-Answer: ______
-
-## Card 6 · Example b · Two events: the sample space
-
-### 43. Two events: the sample space · b1
-
-A coin is tossed and a fair dice is rolled.
-
-Find P(tails and a number greater than 4).
+About how many late days would you expect in 200 school days?
 
 Answer: ______
 
-### 44. Two events: the sample space · b2
+### 38. Working it out, or trying it many times · c2
 
-A coin is tossed and a fair dice is rolled.
+A machine made 9 broken bottles out of 30 in a test.
 
-Find P(heads and a multiple of 3).
-
-Answer: ______
-
-## Card 6 · Example c · Two events: the sample space
-
-### 45. Two events: the sample space · c1
-
-Two fair dice are rolled and the scores are added.
-
-Find P(a total of 9).
+About how many broken bottles would you expect out of 500?
 
 Answer: ______
 
-### 46. Two events: the sample space · c2
+## Card 5 · Example d · Working it out, or trying it many times
 
-Two fair dice are rolled and the scores are added.
+### 39. Working it out, or trying it many times · d1
 
-Find P(a total greater than 10).
+You toss a coin 100 times and get heads 62 times.
 
-Answer: ______
+The chance of heads on each try is $\dfrac{1}{2}$.
 
-## Card 6 · Example d · Two events: the sample space
-
-### 47. Two events: the sample space · d1
-
-Spinner A shows 1, 2, 3.
-
-Spinner B shows 1, 2, 3.
-
-Both are spun and the scores are added.
-
-Find P(a total of 4).
+How many times would you expect heads, and what is the difference between that and what you got?
 
 Answer: ______
 
-### 48. Two events: the sample space · d2
+### 40. Working it out, or trying it many times · d2
 
-Spinner A shows 1, 2.
+A spinner has 4 equal parts: red, blue, green and yellow.
 
-Spinner B shows 1, 2, 3, 4, 5.
+You spin it 80 times and get red 26 times.
 
-Both are spun and the scores are added.
+The chance of red on each try is $\dfrac{1}{4}$.
 
-Find P(an even total).
+How many times would you expect red, and what is the difference between that and what you got?
+
+Answer: ______
+
+## Card 6 · Example a · Two things at once: list every pair
+
+### 41. Two things at once: list every pair · a1
+
+You roll a normal dice with the numbers 1 to 6 and spin a spinner with the numbers 1 to 4.
+
+How many different pairs of results are possible altogether?
+
+For example, 5 and 2 is one pair.
+
+Answer: ______
+
+### 42. Two things at once: list every pair · a2
+
+You toss a coin and spin a spinner with 5 colours.
+
+How many different pairs of results are possible altogether?
+
+For example, tails and red is one pair.
+
+Answer: ______
+
+## Card 6 · Example b · Two things at once: list every pair
+
+### 43. Two things at once: list every pair · b1
+
+You toss a coin and roll a normal dice with the numbers 1 to 6.
+
+What is the probability of getting tails and a number greater than 4?
+
+Answer: ______
+
+### 44. Two things at once: list every pair · b2
+
+You toss a coin and roll a normal dice with the numbers 1 to 6.
+
+What is the probability of getting heads and a multiple of 3?
+
+Answer: ______
+
+## Card 6 · Example c · Two things at once: list every pair
+
+### 45. Two things at once: list every pair · c1
+
+You roll two normal dice and add the two numbers.
+
+What is the probability that the total is 9?
+
+Answer: ______
+
+### 46. Two things at once: list every pair · c2
+
+You roll two normal dice and add the two numbers.
+
+What is the probability that the total is more than 10?
+
+Answer: ______
+
+## Card 6 · Example d · Two things at once: list every pair
+
+### 47. Two things at once: list every pair · d1
+
+Spinner A has the numbers 1, 2, 3.
+
+Spinner B has the numbers 1, 2, 3.
+
+You spin both and add the two numbers.
+
+What is the probability that the total is 4?
+
+Answer: ______
+
+### 48. Two things at once: list every pair · d2
+
+Spinner A has the numbers 1, 2.
+
+Spinner B has the numbers 1, 2, 3, 4, 5.
+
+You spin both and add the two numbers.
+
+What is the probability that the total is an even number?
 
 Answer: ______
 
@@ -531,38 +559,50 @@ Answer: ______
 **1. D**
 
 $$
-\begin{aligned} P &= \frac{0}{6} \\ &= 0 \end{aligned}
+\text{Numbers that work: none}
 $$
 
-0 of the 6 outcomes give an 8, so the event is **impossible**.
+$$
+\text{Probability} = \frac{0}{6}
+$$
 
-0 = impossible, below ½ = unlikely, ½ = even chance, above ½ = likely, 1 = certain.
+0 of the 6 numbers work, so the chance is **impossible**.
+
+Remember: 0 = impossible (it can never happen), less than ½ = unlikely, ½ = even chance (half and half), more than ½ = likely, 1 = certain (it will surely happen).
 
 **2. C**
 
 $$
-P = \frac{5}{6}
+\text{Numbers that work: 1, 2, 3, 4, 5}
 $$
 
-5 of the 6 outcomes give a number from 1 to 5, so the event is **likely**.
+$$
+\text{Probability} = \frac{5}{6}
+$$
 
-0 = impossible, below ½ = unlikely, ½ = even chance, above ½ = likely, 1 = certain.
+5 of the 6 numbers work, so the chance is **likely**.
+
+Remember: 0 = impossible (it can never happen), less than ½ = unlikely, ½ = even chance (half and half), more than ½ = likely, 1 = certain (it will surely happen).
 
 **3. B**
 
 $$
-P(\text{red}) = \frac{5}{10}
+\text{Probability of red} = \frac{5}{10}
 $$
 
-Compare with ½: 5 out of 10 is exactly half, so picking red is **even chance**.
+5 out of 10 counters are red.
+
+That is exactly half of them, so the chance is **even chance**.
 
 **4. A**
 
 $$
-P(\text{red}) = \frac{8}{10}
+\text{Probability of red} = \frac{8}{10}
 $$
 
-Compare with ½: 8 out of 10 is more than half, so picking red is **likely**.
+8 out of 10 counters are red.
+
+That is more than half of them, so the chance is **likely**.
 
 **5. $0.4$**
 
@@ -574,7 +614,9 @@ $$
 \boxed{0.4}
 $$
 
-A probability as a decimal is always between 0 and 1.
+Divide the top number by the bottom number.
+
+A probability written as a decimal is always between 0 and 1.
 
 **6. $0.35$**
 
@@ -586,7 +628,9 @@ $$
 \boxed{0.35}
 $$
 
-A probability as a decimal is always between 0 and 1.
+Divide the top number by the bottom number.
+
+A probability written as a decimal is always between 0 and 1.
 
 **7. $25$**
 
@@ -598,8 +642,9 @@ $$
 \boxed{25}\%
 $$
 
-- A probability as a percentage is between 0% and 100%.
-- Enter the number only.
+Multiply by 100 to get a percentage.
+
+A probability as a percentage is between 0% and 100%.
 
 **8. $45$**
 
@@ -611,314 +656,345 @@ $$
 \boxed{45}\%
 $$
 
-- A probability as a percentage is between 0% and 100%.
-- Enter the number only.
+Multiply by 100 to get a percentage.
+
+A probability as a percentage is between 0% and 100%.
 
 **9. $\frac{1}{3}$**
 
 $$
-\text{Wanted: } 5, 6
+\text{Numbers you want: 5, 6}
 $$
 
 $$
-P = \frac{2}{6}
+\text{Probability} = \frac{2}{6}
 $$
 
 $$
 \boxed{\frac{1}{3}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **10. $\frac{2}{3}$**
 
 $$
-\text{Wanted: } 1, 2, 3, 4
+\text{Numbers you want: 1, 2, 3, 4}
 $$
 
 $$
-P = \frac{4}{6}
+\text{Probability} = \frac{4}{6}
 $$
 
 $$
 \boxed{\frac{2}{3}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **11. $\frac{1}{3}$**
 
 $$
-\begin{aligned} \text{Total} &= 2 + 6 + 4 \\ &= 12 \end{aligned}
+\begin{aligned} \text{All counters} &= 2 + 6 + 4 \\ &= 12 \end{aligned}
 $$
 
 $$
-P(\text{green}) = \frac{4}{12}
+\text{Probability of green} = \frac{4}{12}
 $$
 
 $$
 \boxed{\frac{1}{3}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **12. $\frac{7}{15}$**
 
 $$
-\begin{aligned} \text{Total} &= 7 + 3 + 5 \\ &= 15 \end{aligned}
+\begin{aligned} \text{All counters} &= 7 + 3 + 5 \\ &= 15 \end{aligned}
 $$
 
 $$
-P(\text{red}) = \frac{7}{15}
+\text{Probability of red} = \frac{7}{15}
 $$
 
 $$
 \boxed{\frac{7}{15}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **13. $\frac{2}{5}$**
 
 $$
-\text{Wanted: } 2, 3, 5, 7, 11, 13, 17, 19
+\text{Numbers you want: 2, 3, 5, 7, 11, 13, 17, 19}
 $$
 
 $$
-P = \frac{8}{20}
+\text{Probability} = \frac{8}{20}
 $$
 
 $$
 \boxed{\frac{2}{5}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **14. $\frac{7}{30}$**
 
 $$
-\text{Wanted: } 4, 8, 12, 16, 20, 24, 28
+\text{Numbers you want: 4, 8, 12, 16, 20, 24, 28}
 $$
 
 $$
-P = \frac{7}{30}
+\text{Probability} = \frac{7}{30}
 $$
 
 $$
 \boxed{\frac{7}{30}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **15. $\frac{3}{10}$**
 
 $$
-\text{STATISTICS has 10 letters; S appears 3 times}
+\text{Letters in STATISTICS} = 10
 $$
 
 $$
-P(S) = \frac{3}{10}
+\text{Times S appears} = 3
+$$
+
+$$
+\text{Probability} = \frac{3}{10}
 $$
 
 $$
 \boxed{\frac{3}{10}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **16. $\frac{1}{5}$**
 
 $$
-\text{CALCULATOR has 10 letters; C appears 2 times}
+\text{Letters in CALCULATOR} = 10
 $$
 
 $$
-P(C) = \frac{2}{10}
+\text{Times C appears} = 2
+$$
+
+$$
+\text{Probability} = \frac{2}{10}
 $$
 
 $$
 \boxed{\frac{1}{5}}
 $$
 
-Count the outcomes you want, divide by all the equally likely outcomes, then simplify.
+Count the results you want.
+
+Count all the results.
+
+Divide the first by the second, then simplify the fraction.
 
 **17. $\frac{5}{8}$**
 
 $$
-P(\text{not}) = 1 - \frac{3}{8}
-$$
-
-$$
-= \frac{8}{8} - \frac{3}{8}
+1 - \frac{3}{8} = \frac{8}{8} - \frac{3}{8}
 $$
 
 $$
 \boxed{\frac{5}{8}}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **18. $\frac{5}{9}$**
 
 $$
-P(\text{not}) = 1 - \frac{4}{9}
-$$
-
-$$
-= \frac{9}{9} - \frac{4}{9}
+1 - \frac{4}{9} = \frac{9}{9} - \frac{4}{9}
 $$
 
 $$
 \boxed{\frac{5}{9}}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **19. $0.35$**
 
 $$
-P(\text{not}) = 1 - 0.65
+1 - 0.65
 $$
 
 $$
 \boxed{0.35}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **20. $0.92$**
 
 $$
-P(\text{not}) = 1 - 0.08
+1 - 0.08
 $$
 
 $$
 \boxed{0.92}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **21. $85$**
 
 $$
-P(\text{not}) = 100\% - 15\%
+100\% - 15\%
 $$
 
 $$
 \boxed{85}\%
 $$
 
-- An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
-- Enter the number only.
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **22. $63$**
 
 $$
-P(\text{not}) = 100\% - 37\%
+100\% - 37\%
 $$
 
 $$
 \boxed{63}\%
 $$
 
-- An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
-- Enter the number only.
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **23. $\frac{4}{5}$**
 
 $$
-P(\text{green}) = \frac{3}{15}
+\text{Probability of green} = \frac{3}{15}
 $$
 
 $$
-P(\text{not}) = 1 - \frac{3}{15}
+\text{Probability of not} = 1 - \frac{3}{15}
 $$
 
 $$
 \boxed{\frac{4}{5}}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **24. $\frac{7}{10}$**
 
 $$
-P(\text{a multiple of 3}) = \frac{3}{10}
+\text{Probability of a multiple of 3} = \frac{3}{10}
 $$
 
 $$
-P(\text{not}) = 1 - \frac{3}{10}
+\text{Probability of not} = 1 - \frac{3}{10}
 $$
 
 $$
 \boxed{\frac{7}{10}}
 $$
 
-An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).
+Something either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).
 
 **25. $\frac{2}{3}$**
 
 $$
-P(\text{a 2}) = \frac{1}{6}
+\text{Probability of a 2} = \frac{1}{6}
 $$
 
 $$
-P(\text{an odd number}) = \frac{1}{2}
+\text{Probability of an odd number} = \frac{1}{2}
 $$
 
 $$
-P(\text{a 2 or an odd number}) = \frac{1}{6} + \frac{1}{2}
+\frac{1}{6} + \frac{1}{2}
 $$
 
 $$
 \boxed{\frac{2}{3}}
 $$
 
-The two events cannot happen together on one roll, so add their probabilities.
+One roll cannot give both at the same time, so add the two probabilities.
 
 **26. $\frac{1}{2}$**
 
 $$
-P(\text{a 6}) = \frac{1}{6}
+\text{Probability of a 6} = \frac{1}{6}
 $$
 
 $$
-P(\text{a number less than 3}) = \frac{1}{3}
+\text{Probability of a number less than 3} = \frac{1}{3}
 $$
 
 $$
-P(\text{a 6 or a number less than 3}) = \frac{1}{6} + \frac{1}{3}
+\frac{1}{6} + \frac{1}{3}
 $$
 
 $$
 \boxed{\frac{1}{2}}
 $$
 
-The two events cannot happen together on one roll, so add their probabilities.
+One roll cannot give both at the same time, so add the two probabilities.
 
 **27. $0.5$**
 
 $$
-P(\text{green or yellow}) = 0.15 + 0.35
+0.15 + 0.35
 $$
 
 $$
 \boxed{0.5}
 $$
 
-The spinner lands on one colour only, so the events are mutually exclusive: add.
+The spinner can only land on one colour at a time, so add the two probabilities.
 
 **28. $0.77$**
 
 $$
-P(\text{red or green}) = 0.32 + 0.45
+0.32 + 0.45
 $$
 
 $$
 \boxed{0.77}
 $$
 
-The spinner lands on one colour only, so the events are mutually exclusive: add.
+The spinner can only land on one colour at a time, so add the two probabilities.
 
 **29. $0.2$**
 
@@ -927,14 +1003,16 @@ $$
 $$
 
 $$
-P(\text{green}) = 1 - 0.8
+1 - 0.8
 $$
 
 $$
 \boxed{0.2}
 $$
 
-All the outcomes together have probability 1, so subtract the known ones from 1.
+All the colours together must add up to 1.
+
+Add the ones you know, then take that away from 1.
 
 **30. $0.25$**
 
@@ -943,46 +1021,52 @@ $$
 $$
 
 $$
-P(\text{yellow}) = 1 - 0.75
+1 - 0.75
 $$
 
 $$
 \boxed{0.25}
 $$
 
-All the outcomes together have probability 1, so subtract the known ones from 1.
+All the colours together must add up to 1.
+
+Add the ones you know, then take that away from 1.
 
 **31. $0.4$**
 
 $$
-\begin{aligned} P(\text{blue}) + P(\text{green}) &= 1 - 0.2 \\ &= 0.8 \end{aligned}
+\begin{aligned} \text{Blue and green together} &= 1 - 0.2 \\ &= 0.8 \end{aligned}
 $$
 
 $$
-P(\text{blue}) = 0.8 \div 2
+\text{Blue} = 0.8 \div 2
 $$
 
 $$
 \boxed{0.4}
 $$
 
-First find what is left for blue and green together, then split it into two equal parts.
+First find what is left for blue and green together.
+
+Then split it into two equal parts.
 
 **32. $0.25$**
 
 $$
-\begin{aligned} P(\text{blue}) + P(\text{green}) &= 1 - 0.5 \\ &= 0.5 \end{aligned}
+\begin{aligned} \text{Blue and green together} &= 1 - 0.5 \\ &= 0.5 \end{aligned}
 $$
 
 $$
-P(\text{blue}) = 0.5 \div 2
+\text{Blue} = 0.5 \div 2
 $$
 
 $$
 \boxed{0.25}
 $$
 
-First find what is left for blue and green together, then split it into two equal parts.
+First find what is left for blue and green together.
+
+Then split it into two equal parts.
 
 **33. $0.65$**
 
@@ -994,7 +1078,7 @@ $$
 \boxed{0.65}
 $$
 
-Experimental probability = number of times it happened ÷ number of trials.
+From real results: probability = number of times it happened ÷ number of tries.
 
 **34. $0.15$**
 
@@ -1006,38 +1090,40 @@ $$
 \boxed{0.15}
 $$
 
-Experimental probability = number of times it happened ÷ number of trials.
+From real results: probability = number of times it happened ÷ number of tries.
 
 **35. $45$**
 
 $$
-\text{Expected} = 0.5 \times 90
+\frac{1}{2} \times 90
 $$
 
 $$
 \boxed{45}
 $$
 
-- Expected number = probability × number of trials.
-- It is an estimate, not a promise.
+Expected number = probability × number of tries.
+
+It is a good guess, not an exact result.
 
 **36. $60$**
 
 $$
-\text{Expected} = 0.3 \times 200
+0.3 \times 200
 $$
 
 $$
 \boxed{60}
 $$
 
-- Expected number = probability × number of trials.
-- It is an estimate, not a promise.
+Expected number = probability × number of tries.
+
+It is a good guess, not an exact result.
 
 **37. $60$**
 
 $$
-P \approx \frac{12}{40}
+\text{Probability from the results} = \frac{12}{40}
 $$
 
 $$
@@ -1048,12 +1134,12 @@ $$
 \boxed{60}
 $$
 
-Use the experimental probability as the estimate, then multiply by the new number of trials.
+Use the results to get a probability, then multiply by the new number of tries.
 
 **38. $150$**
 
 $$
-P \approx \frac{9}{30}
+\text{Probability from the results} = \frac{9}{30}
 $$
 
 $$
@@ -1064,7 +1150,7 @@ $$
 \boxed{150}
 $$
 
-Use the experimental probability as the estimate, then multiply by the new number of trials.
+Use the results to get a probability, then multiply by the new number of tries.
 
 **39. $12$**
 
@@ -1073,15 +1159,16 @@ $$
 $$
 
 $$
-|62 - 50|
+\text{Difference} = 62 - 50
 $$
 
 $$
 \boxed{12}
 $$
 
-- Theoretical probability predicts; an experiment only gets close.
-- More trials usually get closer.
+The worked-out chance tells you what should happen.
+
+Real results only come close, and they usually get closer when you try more times.
 
 **40. $6$**
 
@@ -1090,15 +1177,16 @@ $$
 $$
 
 $$
-|26 - 20|
+\text{Difference} = 26 - 20
 $$
 
 $$
 \boxed{6}
 $$
 
-- Theoretical probability predicts; an experiment only gets close.
-- More trials usually get closer.
+The worked-out chance tells you what should happen.
+
+Real results only come close, and they usually get closer when you try more times.
 
 **41. $24$**
 
@@ -1110,7 +1198,9 @@ $$
 \boxed{24}
 $$
 
-Each of the first outcomes can pair with each of the second: multiply, or draw the grid.
+Every result of the first thing can go with every result of the second, so multiply.
+
+You can also draw a grid and count the boxes.
 
 **42. $10$**
 
@@ -1122,118 +1212,124 @@ $$
 \boxed{10}
 $$
 
-Each of the first outcomes can pair with each of the second: multiply, or draw the grid.
+Every result of the first thing can go with every result of the second, so multiply.
+
+You can also draw a grid and count the boxes.
 
 **43. $\frac{1}{6}$**
 
 $$
-\text{12 outcomes: H1, …, H6, T1, …, T6}
+\text{All pairs: H1, …, H6, T1, …, T6} = 12
 $$
 
 $$
-\text{Wanted: } T5, T6
+\text{Pairs you want: } T5, T6
 $$
 
 $$
-P = \frac{2}{12}
+\text{Probability} = \frac{2}{12}
 $$
 
 $$
 \boxed{\frac{1}{6}}
 $$
 
-List or draw the 12 outcomes, then count the ones that match both parts.
+Write out the 12 pairs (or draw the grid), then count the pairs that match both parts.
 
 **44. $\frac{1}{6}$**
 
 $$
-\text{12 outcomes: H1, …, H6, T1, …, T6}
+\text{All pairs: H1, …, H6, T1, …, T6} = 12
 $$
 
 $$
-\text{Wanted: } H3, H6
+\text{Pairs you want: } H3, H6
 $$
 
 $$
-P = \frac{2}{12}
+\text{Probability} = \frac{2}{12}
 $$
 
 $$
 \boxed{\frac{1}{6}}
 $$
 
-List or draw the 12 outcomes, then count the ones that match both parts.
+Write out the 12 pairs (or draw the grid), then count the pairs that match both parts.
 
 **45. $\frac{1}{9}$**
 
 $$
-\text{Wanted: } (3,6), (4,5), (5,4), (6,3)
+\text{Pairs you want: } (3,6), (4,5), (5,4), (6,3)
 $$
 
 $$
-P = \frac{4}{36}
+\text{Probability} = \frac{4}{36}
 $$
 
 $$
 \boxed{\frac{1}{9}}
 $$
 
-The sum grid has 6 × 6 = 36 cells; count the cells with the wanted total.
+A 6 by 6 grid of totals has 36 boxes.
+
+Count the boxes with the total you want.
 
 **46. $\frac{1}{12}$**
 
 $$
-\text{Wanted: } (5,6), (6,5), (6,6)
+\text{Pairs you want: } (5,6), (6,5), (6,6)
 $$
 
 $$
-P = \frac{3}{36}
+\text{Probability} = \frac{3}{36}
 $$
 
 $$
 \boxed{\frac{1}{12}}
 $$
 
-The sum grid has 6 × 6 = 36 cells; count the cells with the wanted total.
+A 6 by 6 grid of totals has 36 boxes.
+
+Count the boxes with the total you want.
 
 **47. $\frac{1}{3}$**
 
 $$
-\begin{aligned} \text{Outcomes} &= 3 \times 3 \\ &= 9 \end{aligned}
+\begin{aligned} \text{All pairs} &= 3 \times 3 \\ &= 9 \end{aligned}
 $$
 
 $$
-\text{Wanted: } (1,3), (2,2), (3,1)
+\text{Pairs you want: } (1,3), (2,2), (3,1)
 $$
 
 $$
-P = \frac{3}{9}
+\text{Probability} = \frac{3}{9}
 $$
 
 $$
 \boxed{\frac{1}{3}}
 $$
 
-Make the grid of all pairs, then count the pairs with the wanted total.
+Draw the grid of all pairs, then count the pairs with the total you want.
 
 **48. $\frac{1}{2}$**
 
 $$
-\begin{aligned} \text{Outcomes} &= 2 \times 5 \\ &= 10 \end{aligned}
+\begin{aligned} \text{All pairs} &= 2 \times 5 \\ &= 10 \end{aligned}
 $$
 
 $$
-\text{Wanted: } (1,1), (1,3), (1,5), (2,2), (2,4)
+\text{Pairs you want: } (1,1), (1,3), (1,5), (2,2), (2,4)
 $$
 
 $$
-P = \frac{5}{10}
+\text{Probability} = \frac{5}{10}
 $$
 
 $$
 \boxed{\frac{1}{2}}
 $$
 
-Make the grid of all pairs, then count the pairs with the wanted total.
+Draw the grid of all pairs, then count the pairs with the total you want.
 
 </details>

@@ -5,12 +5,12 @@
  "send_to": "John",
  "slug": "malta-year-8-math-chapter-15-probability-practice",
  "title": "Malta Year 8 Math Chapter 15 — Probability Practice",
- "question": "48 fresh questions: two for each of the 24 worked Probability examples.",
- "intro": "- Two fresh questions for every worked example in the Probability Material.\n- Groups follow cards 1–6 and examples a–d.\n- Fractions in simplest form; decimals and percentages as numbers only.",
+ "question": "48 new questions: two for each of the 24 worked examples in the Probability Material.",
+ "intro": "- Two new questions for every worked example in the Probability Material.\n- The groups follow cards 1–6 and examples a–d.\n- Write fractions in their simplest form. For decimals and percentages, type the number only.",
  "questions": [
   {
    "type": "mcq",
-   "prompt": "A fair dice is rolled.\n\nWhich word describes getting an 8?",
+   "prompt": "You roll a normal dice with the numbers 1 to 6.\n\nWhich word best describes your chance of getting an 8?",
    "choices": [
     "unlikely",
     "even chance",
@@ -18,13 +18,13 @@
     "impossible"
    ],
    "answer": "D",
-   "solution": "\\[\\begin{aligned} P &= \\frac{0}{6} \\\\ &= 0 \\end{aligned}\\]\n\n0 of the 6 outcomes give an 8, so the event is **impossible**.\n\n0 = impossible, below ½ = unlikely, ½ = even chance, above ½ = likely, 1 = certain.",
-   "group": "Card 1 · Example a · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · a1"
+   "solution": "\\[\\text{Numbers that work: none}\\]\n\n\\[\\text{Probability} = \\frac{0}{6}\\]\n\n0 of the 6 numbers work, so the chance is **impossible**.\n\nRemember: 0 = impossible (it can never happen), less than ½ = unlikely, ½ = even chance (half and half), more than ½ = likely, 1 = certain (it will surely happen).",
+   "group": "Card 1 · Example a · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · a1"
   },
   {
    "type": "mcq",
-   "prompt": "A fair dice is rolled.\n\nWhich word describes getting a number from 1 to 5?",
+   "prompt": "You roll a normal dice with the numbers 1 to 6.\n\nWhich word best describes your chance of getting a number from 1 to 5?",
    "choices": [
     "unlikely",
     "even chance",
@@ -32,13 +32,13 @@
     "impossible"
    ],
    "answer": "C",
-   "solution": "\\[P = \\frac{5}{6}\\]\n\n5 of the 6 outcomes give a number from 1 to 5, so the event is **likely**.\n\n0 = impossible, below ½ = unlikely, ½ = even chance, above ½ = likely, 1 = certain.",
-   "group": "Card 1 · Example a · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · a2"
+   "solution": "\\[\\text{Numbers that work: 1, 2, 3, 4, 5}\\]\n\n\\[\\text{Probability} = \\frac{5}{6}\\]\n\n5 of the 6 numbers work, so the chance is **likely**.\n\nRemember: 0 = impossible (it can never happen), less than ½ = unlikely, ½ = even chance (half and half), more than ½ = likely, 1 = certain (it will surely happen).",
+   "group": "Card 1 · Example a · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · a2"
   },
   {
    "type": "mcq",
-   "prompt": "A bag has 5 red and 5 blue counters.\n\nOne counter is picked without looking.\n\nWhich word describes picking red?",
+   "prompt": "A bag has 5 red counters and 5 blue counters.\n\nYou take out one counter without looking.\n\nWhich word best describes your chance of getting a red one?",
    "choices": [
     "likely",
     "even chance",
@@ -46,13 +46,13 @@
     "unlikely"
    ],
    "answer": "B",
-   "solution": "\\[P(\\text{red}) = \\frac{5}{10}\\]\n\nCompare with ½: 5 out of 10 is exactly half, so picking red is **even chance**.",
-   "group": "Card 1 · Example b · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · b1"
+   "solution": "\\[\\text{Probability of red} = \\frac{5}{10}\\]\n\n5 out of 10 counters are red.\n\nThat is exactly half of them, so the chance is **even chance**.",
+   "group": "Card 1 · Example b · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · b1"
   },
   {
    "type": "mcq",
-   "prompt": "A bag has 8 red and 2 blue counters.\n\nOne counter is picked without looking.\n\nWhich word describes picking red?",
+   "prompt": "A bag has 8 red counters and 2 blue counters.\n\nYou take out one counter without looking.\n\nWhich word best describes your chance of getting a red one?",
    "choices": [
     "likely",
     "impossible",
@@ -60,445 +60,445 @@
     "even chance"
    ],
    "answer": "A",
-   "solution": "\\[P(\\text{red}) = \\frac{8}{10}\\]\n\nCompare with ½: 8 out of 10 is more than half, so picking red is **likely**.",
-   "group": "Card 1 · Example b · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · b2"
+   "solution": "\\[\\text{Probability of red} = \\frac{8}{10}\\]\n\n8 out of 10 counters are red.\n\nThat is more than half of them, so the chance is **likely**.",
+   "group": "Card 1 · Example b · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · b2"
   },
   {
-   "prompt": "A probability is \\(\\dfrac{2}{5}\\).\n\nWrite it as a decimal.",
-   "solution": "\\[\\frac{2}{5} = 2 \\div 5\\]\n\n\\[\\boxed{0.4}\\]\n\nA probability as a decimal is always between 0 and 1.",
+   "prompt": "The probability that something happens is \\(\\dfrac{2}{5}\\).\n\nWrite this probability as a decimal.",
+   "solution": "\\[\\frac{2}{5} = 2 \\div 5\\]\n\n\\[\\boxed{0.4}\\]\n\nDivide the top number by the bottom number.\n\nA probability written as a decimal is always between 0 and 1.",
    "type": "numeric",
    "answer": 0.4,
    "tolerance": 1e-06,
-   "group": "Card 1 · Example c · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · c1"
+   "group": "Card 1 · Example c · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · c1"
   },
   {
-   "prompt": "A probability is \\(\\dfrac{7}{20}\\).\n\nWrite it as a decimal.",
-   "solution": "\\[\\frac{7}{20} = 7 \\div 20\\]\n\n\\[\\boxed{0.35}\\]\n\nA probability as a decimal is always between 0 and 1.",
+   "prompt": "The probability that something happens is \\(\\dfrac{7}{20}\\).\n\nWrite this probability as a decimal.",
+   "solution": "\\[\\frac{7}{20} = 7 \\div 20\\]\n\n\\[\\boxed{0.35}\\]\n\nDivide the top number by the bottom number.\n\nA probability written as a decimal is always between 0 and 1.",
    "type": "numeric",
    "answer": 0.35,
    "tolerance": 1e-06,
-   "group": "Card 1 · Example c · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · c2"
+   "group": "Card 1 · Example c · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · c2"
   },
   {
-   "prompt": "A probability is \\(\\dfrac{1}{4}\\).\n\nWrite it as a percentage.",
-   "solution": "\\[\\frac{1}{4} \\times 100\\%\\]\n\n\\[\\boxed{25}\\%\\]\n\n- A probability as a percentage is between 0% and 100%.\n- Enter the number only.",
+   "prompt": "The probability that something happens is \\(\\dfrac{1}{4}\\).\n\nWrite this probability as a percentage.\n\nType the number only.",
+   "solution": "\\[\\frac{1}{4} \\times 100\\%\\]\n\n\\[\\boxed{25}\\%\\]\n\nMultiply by 100 to get a percentage.\n\nA probability as a percentage is between 0% and 100%.",
    "type": "numeric",
    "answer": 25,
    "tolerance": 1e-06,
-   "group": "Card 1 · Example d · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · d1"
+   "group": "Card 1 · Example d · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · d1"
   },
   {
-   "prompt": "A probability is \\(\\dfrac{9}{20}\\).\n\nWrite it as a percentage.",
-   "solution": "\\[\\frac{9}{20} \\times 100\\%\\]\n\n\\[\\boxed{45}\\%\\]\n\n- A probability as a percentage is between 0% and 100%.\n- Enter the number only.",
+   "prompt": "The probability that something happens is \\(\\dfrac{9}{20}\\).\n\nWrite this probability as a percentage.\n\nType the number only.",
+   "solution": "\\[\\frac{9}{20} \\times 100\\%\\]\n\n\\[\\boxed{45}\\%\\]\n\nMultiply by 100 to get a percentage.\n\nA probability as a percentage is between 0% and 100%.",
    "type": "numeric",
    "answer": 45,
    "tolerance": 1e-06,
-   "group": "Card 1 · Example d · Probability scale: words and numbers",
-   "title": "Probability scale: words and numbers · d2"
+   "group": "Card 1 · Example d · How likely is it? Words and numbers",
+   "title": "How likely is it? Words and numbers · d2"
   },
   {
-   "prompt": "A fair dice is rolled.\n\nFind P(a number greater than 4).",
-   "solution": "\\[\\text{Wanted: } 5, 6\\]\n\n\\[P = \\frac{2}{6}\\]\n\n\\[\\boxed{\\frac{1}{3}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "You roll a normal dice with the numbers 1 to 6.\n\nWhat is the probability of getting a number greater than 4?",
+   "solution": "\\[\\text{Numbers you want: 5, 6}\\]\n\n\\[\\text{Probability} = \\frac{2}{6}\\]\n\n\\[\\boxed{\\frac{1}{3}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     1,
     3
    ],
-   "group": "Card 2 · Example a · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · a1"
+   "group": "Card 2 · Example a · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · a1"
   },
   {
-   "prompt": "A fair dice is rolled.\n\nFind P(a number less than 5).",
-   "solution": "\\[\\text{Wanted: } 1, 2, 3, 4\\]\n\n\\[P = \\frac{4}{6}\\]\n\n\\[\\boxed{\\frac{2}{3}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "You roll a normal dice with the numbers 1 to 6.\n\nWhat is the probability of getting a number less than 5?",
+   "solution": "\\[\\text{Numbers you want: 1, 2, 3, 4}\\]\n\n\\[\\text{Probability} = \\frac{4}{6}\\]\n\n\\[\\boxed{\\frac{2}{3}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     2,
     3
    ],
-   "group": "Card 2 · Example a · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · a2"
+   "group": "Card 2 · Example a · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · a2"
   },
   {
-   "prompt": "A bag has 2 red, 6 blue, 4 green counters.\n\nOne counter is picked at random.\n\nFind P(green).",
-   "solution": "\\[\\begin{aligned} \\text{Total} &= 2 + 6 + 4 \\\\ &= 12 \\end{aligned}\\]\n\n\\[P(\\text{green}) = \\frac{4}{12}\\]\n\n\\[\\boxed{\\frac{1}{3}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "A bag has 2 red, 6 blue and 4 green counters.\n\nYou take out one counter without looking.\n\nWhat is the probability that it is green?",
+   "solution": "\\[\\begin{aligned} \\text{All counters} &= 2 + 6 + 4 \\\\ &= 12 \\end{aligned}\\]\n\n\\[\\text{Probability of green} = \\frac{4}{12}\\]\n\n\\[\\boxed{\\frac{1}{3}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     1,
     3
    ],
-   "group": "Card 2 · Example b · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · b1"
+   "group": "Card 2 · Example b · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · b1"
   },
   {
-   "prompt": "A bag has 7 red, 3 blue, 5 green counters.\n\nOne counter is picked at random.\n\nFind P(red).",
-   "solution": "\\[\\begin{aligned} \\text{Total} &= 7 + 3 + 5 \\\\ &= 15 \\end{aligned}\\]\n\n\\[P(\\text{red}) = \\frac{7}{15}\\]\n\n\\[\\boxed{\\frac{7}{15}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "A bag has 7 red, 3 blue and 5 green counters.\n\nYou take out one counter without looking.\n\nWhat is the probability that it is red?",
+   "solution": "\\[\\begin{aligned} \\text{All counters} &= 7 + 3 + 5 \\\\ &= 15 \\end{aligned}\\]\n\n\\[\\text{Probability of red} = \\frac{7}{15}\\]\n\n\\[\\boxed{\\frac{7}{15}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     7,
     15
    ],
-   "group": "Card 2 · Example b · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · b2"
+   "group": "Card 2 · Example b · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · b2"
   },
   {
-   "prompt": "Cards are numbered 1 to 20.\n\nOne card is picked at random.\n\nFind P(a prime number).",
-   "solution": "\\[\\text{Wanted: } 2, 3, 5, 7, 11, 13, 17, 19\\]\n\n\\[P = \\frac{8}{20}\\]\n\n\\[\\boxed{\\frac{2}{5}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "A box has 20 cards with the numbers 1 to 20.\n\nYou take out one card without looking.\n\nWhat is the probability that its number is a prime number?",
+   "solution": "\\[\\text{Numbers you want: 2, 3, 5, 7, 11, 13, 17, 19}\\]\n\n\\[\\text{Probability} = \\frac{8}{20}\\]\n\n\\[\\boxed{\\frac{2}{5}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     2,
     5
    ],
-   "group": "Card 2 · Example c · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · c1"
+   "group": "Card 2 · Example c · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · c1"
   },
   {
-   "prompt": "Cards are numbered 1 to 30.\n\nOne card is picked at random.\n\nFind P(a multiple of 4).",
-   "solution": "\\[\\text{Wanted: } 4, 8, 12, 16, 20, 24, 28\\]\n\n\\[P = \\frac{7}{30}\\]\n\n\\[\\boxed{\\frac{7}{30}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "A box has 30 cards with the numbers 1 to 30.\n\nYou take out one card without looking.\n\nWhat is the probability that its number is a multiple of 4?",
+   "solution": "\\[\\text{Numbers you want: 4, 8, 12, 16, 20, 24, 28}\\]\n\n\\[\\text{Probability} = \\frac{7}{30}\\]\n\n\\[\\boxed{\\frac{7}{30}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     7,
     30
    ],
-   "group": "Card 2 · Example c · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · c2"
+   "group": "Card 2 · Example c · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · c2"
   },
   {
-   "prompt": "Each letter of the word STATISTICS is written on a card.\n\nOne card is picked at random.\n\nFind P(the letter S).",
-   "solution": "\\[\\text{STATISTICS has 10 letters; S appears 3 times}\\]\n\n\\[P(S) = \\frac{3}{10}\\]\n\n\\[\\boxed{\\frac{3}{10}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "Each letter of the word STATISTICS is written on its own card.\n\nYou take out one card without looking.\n\nWhat is the probability that it shows the letter S?",
+   "solution": "\\[\\text{Letters in STATISTICS} = 10\\]\n\n\\[\\text{Times S appears} = 3\\]\n\n\\[\\text{Probability} = \\frac{3}{10}\\]\n\n\\[\\boxed{\\frac{3}{10}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     3,
     10
    ],
-   "group": "Card 2 · Example d · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · d1"
+   "group": "Card 2 · Example d · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · d1"
   },
   {
-   "prompt": "Each letter of the word CALCULATOR is written on a card.\n\nOne card is picked at random.\n\nFind P(the letter C).",
-   "solution": "\\[\\text{CALCULATOR has 10 letters; C appears 2 times}\\]\n\n\\[P(C) = \\frac{2}{10}\\]\n\n\\[\\boxed{\\frac{1}{5}}\\]\n\nCount the outcomes you want, divide by all the equally likely outcomes, then simplify.",
+   "prompt": "Each letter of the word CALCULATOR is written on its own card.\n\nYou take out one card without looking.\n\nWhat is the probability that it shows the letter C?",
+   "solution": "\\[\\text{Letters in CALCULATOR} = 10\\]\n\n\\[\\text{Times C appears} = 2\\]\n\n\\[\\text{Probability} = \\frac{2}{10}\\]\n\n\\[\\boxed{\\frac{1}{5}}\\]\n\nCount the results you want.\n\nCount all the results.\n\nDivide the first by the second, then simplify the fraction.",
    "type": "fraction",
    "answer": [
     1,
     5
    ],
-   "group": "Card 2 · Example d · Simple probability: wanted ÷ total",
-   "title": "Simple probability: wanted ÷ total · d2"
+   "group": "Card 2 · Example d · Probability = results you want ÷ all results",
+   "title": "Probability = results you want ÷ all results · d2"
   },
   {
-   "prompt": "P(winning a game) = \\(\\dfrac{3}{8}\\).\n\nFind P(not winning a game).",
-   "solution": "\\[P(\\text{not}) = 1 - \\frac{3}{8}\\]\n\n\\[= \\frac{8}{8} - \\frac{3}{8}\\]\n\n\\[\\boxed{\\frac{5}{8}}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+   "prompt": "The probability that you win the game is \\(\\dfrac{3}{8}\\).\n\nWhat is the probability that you do not win the game?",
+   "solution": "\\[1 - \\frac{3}{8} = \\frac{8}{8} - \\frac{3}{8}\\]\n\n\\[\\boxed{\\frac{5}{8}}\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "fraction",
    "answer": [
     5,
     8
    ],
-   "group": "Card 3 · Example a · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · a1"
+   "group": "Card 3 · Example a · The chance that something does not happen",
+   "title": "The chance that something does not happen · a1"
   },
   {
-   "prompt": "P(a red sweet) = \\(\\dfrac{4}{9}\\).\n\nFind P(not a red sweet).",
-   "solution": "\\[P(\\text{not}) = 1 - \\frac{4}{9}\\]\n\n\\[= \\frac{9}{9} - \\frac{4}{9}\\]\n\n\\[\\boxed{\\frac{5}{9}}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+   "prompt": "The probability that you pick a red sweet is \\(\\dfrac{4}{9}\\).\n\nWhat is the probability that you do not pick a red sweet?",
+   "solution": "\\[1 - \\frac{4}{9} = \\frac{9}{9} - \\frac{4}{9}\\]\n\n\\[\\boxed{\\frac{5}{9}}\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "fraction",
    "answer": [
     5,
     9
    ],
-   "group": "Card 3 · Example a · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · a2"
+   "group": "Card 3 · Example a · The chance that something does not happen",
+   "title": "The chance that something does not happen · a2"
   },
   {
-   "prompt": "P(a goal) = 0.65.\n\nFind P(not a goal).",
-   "solution": "\\[P(\\text{not}) = 1 - 0.65\\]\n\n\\[\\boxed{0.35}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+   "prompt": "The probability that the team scores a goal is 0.65.\n\nWhat is the probability that the team does not score a goal?",
+   "solution": "\\[1 - 0.65\\]\n\n\\[\\boxed{0.35}\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "numeric",
    "answer": 0.35,
    "tolerance": 1e-06,
-   "group": "Card 3 · Example b · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · b1"
+   "group": "Card 3 · Example b · The chance that something does not happen",
+   "title": "The chance that something does not happen · b1"
   },
   {
-   "prompt": "P(a flat tyre) = 0.08.\n\nFind P(not a flat tyre).",
-   "solution": "\\[P(\\text{not}) = 1 - 0.08\\]\n\n\\[\\boxed{0.92}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+   "prompt": "The probability that a car gets a flat tyre is 0.08.\n\nWhat is the probability that the car does not get a flat tyre?",
+   "solution": "\\[1 - 0.08\\]\n\n\\[\\boxed{0.92}\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "numeric",
    "answer": 0.92,
    "tolerance": 1e-06,
-   "group": "Card 3 · Example b · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · b2"
+   "group": "Card 3 · Example b · The chance that something does not happen",
+   "title": "The chance that something does not happen · b2"
   },
   {
-   "prompt": "P(a late ferry) = 15%.\n\nFind P(not a late ferry) as a percentage.",
-   "solution": "\\[P(\\text{not}) = 100\\% - 15\\%\\]\n\n\\[\\boxed{85}\\%\\]\n\n- An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).\n- Enter the number only.",
+   "prompt": "The probability that the ferry is late is 15%.\n\nWhat is the probability that the ferry is not late?\n\nType the percentage as a number only.",
+   "solution": "\\[100\\% - 15\\%\\]\n\n\\[\\boxed{85}\\%\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "numeric",
    "answer": 85,
    "tolerance": 1e-06,
-   "group": "Card 3 · Example c · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · c1"
+   "group": "Card 3 · Example c · The chance that something does not happen",
+   "title": "The chance that something does not happen · c1"
   },
   {
-   "prompt": "P(snow) = 37%.\n\nFind P(not snow) as a percentage.",
-   "solution": "\\[P(\\text{not}) = 100\\% - 37\\%\\]\n\n\\[\\boxed{63}\\%\\]\n\n- An event either happens or does not happen, so the two probabilities add up to 1 (or 100%).\n- Enter the number only.",
+   "prompt": "The probability that it snows is 37%.\n\nWhat is the probability that it does not snow?\n\nType the percentage as a number only.",
+   "solution": "\\[100\\% - 37\\%\\]\n\n\\[\\boxed{63}\\%\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "numeric",
    "answer": 63,
    "tolerance": 1e-06,
-   "group": "Card 3 · Example c · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · c2"
+   "group": "Card 3 · Example c · The chance that something does not happen",
+   "title": "The chance that something does not happen · c2"
   },
   {
-   "prompt": "A bag has 5 red, 7 blue and 3 green counters.\n\nOne is picked at random.\n\nFind P(not green).",
-   "solution": "\\[P(\\text{green}) = \\frac{3}{15}\\]\n\n\\[P(\\text{not}) = 1 - \\frac{3}{15}\\]\n\n\\[\\boxed{\\frac{4}{5}}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+   "prompt": "A bag has 5 red, 7 blue and 3 green counters.\n\nYou take out one counter without looking.\n\nWhat is the probability that it is not green?",
+   "solution": "\\[\\text{Probability of green} = \\frac{3}{15}\\]\n\n\\[\\text{Probability of not} = 1 - \\frac{3}{15}\\]\n\n\\[\\boxed{\\frac{4}{5}}\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "fraction",
    "answer": [
     4,
     5
    ],
-   "group": "Card 3 · Example d · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · d1"
+   "group": "Card 3 · Example d · The chance that something does not happen",
+   "title": "The chance that something does not happen · d1"
   },
   {
-   "prompt": "Cards are numbered 1 to 10.\n\nOne is picked at random.\n\nFind P(not a multiple of 3).",
-   "solution": "\\[P(\\text{a multiple of 3}) = \\frac{3}{10}\\]\n\n\\[P(\\text{not}) = 1 - \\frac{3}{10}\\]\n\n\\[\\boxed{\\frac{7}{10}}\\]\n\nAn event either happens or does not happen, so the two probabilities add up to 1 (or 100%).",
+   "prompt": "A box has 10 cards with the numbers 1 to 10.\n\nYou take out one card without looking.\n\nWhat is the probability that its number is not a multiple of 3?",
+   "solution": "\\[\\text{Probability of a multiple of 3} = \\frac{3}{10}\\]\n\n\\[\\text{Probability of not} = 1 - \\frac{3}{10}\\]\n\n\\[\\boxed{\\frac{7}{10}}\\]\n\nSomething either happens or does not happen, so the two probabilities always add up to 1 (or to 100% with percentages).",
    "type": "fraction",
    "answer": [
     7,
     10
    ],
-   "group": "Card 3 · Example d · Complement: P(not A) = 1 − P(A)",
-   "title": "Complement: P(not A) = 1 − P(A) · d2"
+   "group": "Card 3 · Example d · The chance that something does not happen",
+   "title": "The chance that something does not happen · d2"
   },
   {
-   "prompt": "A fair dice is rolled once.\n\nFind P(a 2 or an odd number).",
-   "solution": "\\[P(\\text{a 2}) = \\frac{1}{6}\\]\n\n\\[P(\\text{an odd number}) = \\frac{1}{2}\\]\n\n\\[P(\\text{a 2 or an odd number}) = \\frac{1}{6} + \\frac{1}{2}\\]\n\n\\[\\boxed{\\frac{2}{3}}\\]\n\nThe two events cannot happen together on one roll, so add their probabilities.",
+   "prompt": "You roll a normal dice with the numbers 1 to 6.\n\nYou roll it once.\n\nWhat is the probability of getting a 2 or an odd number?",
+   "solution": "\\[\\text{Probability of a 2} = \\frac{1}{6}\\]\n\n\\[\\text{Probability of an odd number} = \\frac{1}{2}\\]\n\n\\[\\frac{1}{6} + \\frac{1}{2}\\]\n\n\\[\\boxed{\\frac{2}{3}}\\]\n\nOne roll cannot give both at the same time, so add the two probabilities.",
    "type": "fraction",
    "answer": [
     2,
     3
    ],
-   "group": "Card 4 · Example a · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · a1"
+   "group": "Card 4 · Example a · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · a1"
   },
   {
-   "prompt": "A fair dice is rolled once.\n\nFind P(a 6 or a number less than 3).",
-   "solution": "\\[P(\\text{a 6}) = \\frac{1}{6}\\]\n\n\\[P(\\text{a number less than 3}) = \\frac{1}{3}\\]\n\n\\[P(\\text{a 6 or a number less than 3}) = \\frac{1}{6} + \\frac{1}{3}\\]\n\n\\[\\boxed{\\frac{1}{2}}\\]\n\nThe two events cannot happen together on one roll, so add their probabilities.",
+   "prompt": "You roll a normal dice with the numbers 1 to 6.\n\nYou roll it once.\n\nWhat is the probability of getting a 6 or a number less than 3?",
+   "solution": "\\[\\text{Probability of a 6} = \\frac{1}{6}\\]\n\n\\[\\text{Probability of a number less than 3} = \\frac{1}{3}\\]\n\n\\[\\frac{1}{6} + \\frac{1}{3}\\]\n\n\\[\\boxed{\\frac{1}{2}}\\]\n\nOne roll cannot give both at the same time, so add the two probabilities.",
    "type": "fraction",
    "answer": [
     1,
     2
    ],
-   "group": "Card 4 · Example a · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · a2"
+   "group": "Card 4 · Example a · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · a2"
   },
   {
-   "prompt": "A spinner has four colours.\n\nP(green) = 0.15 and P(yellow) = 0.35.\n\nFind P(green or yellow).",
-   "solution": "\\[P(\\text{green or yellow}) = 0.15 + 0.35\\]\n\n\\[\\boxed{0.5}\\]\n\nThe spinner lands on one colour only, so the events are mutually exclusive: add.",
+   "prompt": "A spinner has four colours.\n\nThe probability of green is 0.15, and the probability of yellow is 0.35.\n\nWhat is the probability that it lands on green or yellow?",
+   "solution": "\\[0.15 + 0.35\\]\n\n\\[\\boxed{0.5}\\]\n\nThe spinner can only land on one colour at a time, so add the two probabilities.",
    "type": "numeric",
    "answer": 0.5,
    "tolerance": 1e-06,
-   "group": "Card 4 · Example b · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · b1"
+   "group": "Card 4 · Example b · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · b1"
   },
   {
-   "prompt": "A spinner has four colours.\n\nP(red) = 0.32 and P(green) = 0.45.\n\nFind P(red or green).",
-   "solution": "\\[P(\\text{red or green}) = 0.32 + 0.45\\]\n\n\\[\\boxed{0.77}\\]\n\nThe spinner lands on one colour only, so the events are mutually exclusive: add.",
+   "prompt": "A spinner has four colours.\n\nThe probability of red is 0.32, and the probability of green is 0.45.\n\nWhat is the probability that it lands on red or green?",
+   "solution": "\\[0.32 + 0.45\\]\n\n\\[\\boxed{0.77}\\]\n\nThe spinner can only land on one colour at a time, so add the two probabilities.",
    "type": "numeric",
    "answer": 0.77,
    "tolerance": 1e-06,
-   "group": "Card 4 · Example b · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · b2"
+   "group": "Card 4 · Example b · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · b2"
   },
   {
-   "prompt": "A spinner lands on one of four colours.\n\n| Colour | Probability |\n|---|---|\n| red | 0.1 |\n| blue | 0.45 |\n| green | ? |\n| yellow | 0.25 |\n\nFind P(green).",
-   "solution": "\\[0.1 + 0.45 + 0.25 = 0.8\\]\n\n\\[P(\\text{green}) = 1 - 0.8\\]\n\n\\[\\boxed{0.2}\\]\n\nAll the outcomes together have probability 1, so subtract the known ones from 1.",
+   "prompt": "A spinner always lands on one of four colours.\n\nThe table shows the probability of each colour.\n\n| Colour | Probability |\n|---|---|\n| red | 0.1 |\n| blue | 0.45 |\n| green | ? |\n| yellow | 0.25 |\n\nWhat is the probability of green?",
+   "solution": "\\[0.1 + 0.45 + 0.25 = 0.8\\]\n\n\\[1 - 0.8\\]\n\n\\[\\boxed{0.2}\\]\n\nAll the colours together must add up to 1.\n\nAdd the ones you know, then take that away from 1.",
    "type": "numeric",
    "answer": 0.2,
    "tolerance": 1e-06,
-   "group": "Card 4 · Example c · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · c1"
+   "group": "Card 4 · Example c · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · c1"
   },
   {
-   "prompt": "A spinner lands on one of four colours.\n\n| Colour | Probability |\n|---|---|\n| red | 0.05 |\n| blue | 0.3 |\n| green | 0.4 |\n| yellow | ? |\n\nFind P(yellow).",
-   "solution": "\\[0.05 + 0.3 + 0.4 = 0.75\\]\n\n\\[P(\\text{yellow}) = 1 - 0.75\\]\n\n\\[\\boxed{0.25}\\]\n\nAll the outcomes together have probability 1, so subtract the known ones from 1.",
+   "prompt": "A spinner always lands on one of four colours.\n\nThe table shows the probability of each colour.\n\n| Colour | Probability |\n|---|---|\n| red | 0.05 |\n| blue | 0.3 |\n| green | 0.4 |\n| yellow | ? |\n\nWhat is the probability of yellow?",
+   "solution": "\\[0.05 + 0.3 + 0.4 = 0.75\\]\n\n\\[1 - 0.75\\]\n\n\\[\\boxed{0.25}\\]\n\nAll the colours together must add up to 1.\n\nAdd the ones you know, then take that away from 1.",
    "type": "numeric",
    "answer": 0.25,
    "tolerance": 1e-06,
-   "group": "Card 4 · Example c · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · c2"
+   "group": "Card 4 · Example c · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · c2"
   },
   {
-   "prompt": "A spinner is red, blue or green.\n\nP(red) = 0.2.\n\nBlue and green are equally likely.\n\nFind P(blue).",
-   "solution": "\\[\\begin{aligned} P(\\text{blue}) + P(\\text{green}) &= 1 - 0.2 \\\\ &= 0.8 \\end{aligned}\\]\n\n\\[P(\\text{blue}) = 0.8 \\div 2\\]\n\n\\[\\boxed{0.4}\\]\n\nFirst find what is left for blue and green together, then split it into two equal parts.",
+   "prompt": "A spinner is red, blue or green.\n\nThe probability of red is 0.2.\n\nBlue and green have the same probability.\n\nWhat is the probability of blue?",
+   "solution": "\\[\\begin{aligned} \\text{Blue and green together} &= 1 - 0.2 \\\\ &= 0.8 \\end{aligned}\\]\n\n\\[\\text{Blue} = 0.8 \\div 2\\]\n\n\\[\\boxed{0.4}\\]\n\nFirst find what is left for blue and green together.\n\nThen split it into two equal parts.",
    "type": "numeric",
    "answer": 0.4,
    "tolerance": 1e-06,
-   "group": "Card 4 · Example d · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · d1"
+   "group": "Card 4 · Example d · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · d1"
   },
   {
-   "prompt": "A spinner is red, blue or green.\n\nP(red) = 0.5.\n\nBlue and green are equally likely.\n\nFind P(blue).",
-   "solution": "\\[\\begin{aligned} P(\\text{blue}) + P(\\text{green}) &= 1 - 0.5 \\\\ &= 0.5 \\end{aligned}\\]\n\n\\[P(\\text{blue}) = 0.5 \\div 2\\]\n\n\\[\\boxed{0.25}\\]\n\nFirst find what is left for blue and green together, then split it into two equal parts.",
+   "prompt": "A spinner is red, blue or green.\n\nThe probability of red is 0.5.\n\nBlue and green have the same probability.\n\nWhat is the probability of blue?",
+   "solution": "\\[\\begin{aligned} \\text{Blue and green together} &= 1 - 0.5 \\\\ &= 0.5 \\end{aligned}\\]\n\n\\[\\text{Blue} = 0.5 \\div 2\\]\n\n\\[\\boxed{0.25}\\]\n\nFirst find what is left for blue and green together.\n\nThen split it into two equal parts.",
    "type": "numeric",
    "answer": 0.25,
    "tolerance": 1e-06,
-   "group": "Card 4 · Example d · Mutually exclusive: add for “or”; all outcomes add to 1",
-   "title": "Mutually exclusive: add for “or”; all outcomes add to 1 · d2"
+   "group": "Card 4 · Example d · One or the other, and everything adds up to 1",
+   "title": "One or the other, and everything adds up to 1 · d2"
   },
   {
-   "prompt": "A drawing pin is dropped 40 times and lands point up 26 times.\n\nFind the experimental probability as a decimal.",
-   "solution": "\\[\\frac{26}{40} = 26 \\div 40\\]\n\n\\[\\boxed{0.65}\\]\n\nExperimental probability = number of times it happened ÷ number of trials.",
+   "prompt": "You drop a drawing pin 40 times.\n\nIt lands point up 26 times.\n\nUsing these results, what is the probability of point up?\n\nGive it as a decimal.",
+   "solution": "\\[\\frac{26}{40} = 26 \\div 40\\]\n\n\\[\\boxed{0.65}\\]\n\nFrom real results: probability = number of times it happened ÷ number of tries.",
    "type": "numeric",
    "answer": 0.65,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example a · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · a1"
+   "group": "Card 5 · Example a · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · a1"
   },
   {
-   "prompt": "A spinner is spun 80 times and lands on red 12 times.\n\nFind the experimental probability as a decimal.",
-   "solution": "\\[\\frac{12}{80} = 12 \\div 80\\]\n\n\\[\\boxed{0.15}\\]\n\nExperimental probability = number of times it happened ÷ number of trials.",
+   "prompt": "You spin a spinner 80 times.\n\nIt lands on red 12 times.\n\nUsing these results, what is the probability of red?\n\nGive it as a decimal.",
+   "solution": "\\[\\frac{12}{80} = 12 \\div 80\\]\n\n\\[\\boxed{0.15}\\]\n\nFrom real results: probability = number of times it happened ÷ number of tries.",
    "type": "numeric",
    "answer": 0.15,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example a · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · a2"
+   "group": "Card 5 · Example a · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · a2"
   },
   {
-   "prompt": "A fair coin is tossed.\n\nThe event is landing heads.\n\nHow many times would you expect it in 90 trials?",
-   "solution": "\\[\\text{Expected} = 0.5 \\times 90\\]\n\n\\[\\boxed{45}\\]\n\n- Expected number = probability × number of trials.\n- It is an estimate, not a promise.",
+   "prompt": "You toss a coin 90 times.\n\nAbout how many times would you expect heads?",
+   "solution": "\\[\\frac{1}{2} \\times 90\\]\n\n\\[\\boxed{45}\\]\n\nExpected number = probability × number of tries.\n\nIt is a good guess, not an exact result.",
    "type": "numeric",
    "answer": 45,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example b · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · b1"
+   "group": "Card 5 · Example b · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · b1"
   },
   {
-   "prompt": "A spinner has P(red) = 0.3.\n\nThe event is landing on red.\n\nHow many times would you expect it in 200 trials?",
-   "solution": "\\[\\text{Expected} = 0.3 \\times 200\\]\n\n\\[\\boxed{60}\\]\n\n- Expected number = probability × number of trials.\n- It is an estimate, not a promise.",
+   "prompt": "A spinner lands on red with probability 0.3.\n\nYou spin it 200 times.\n\nAbout how many times would you expect red?",
+   "solution": "\\[0.3 \\times 200\\]\n\n\\[\\boxed{60}\\]\n\nExpected number = probability × number of tries.\n\nIt is a good guess, not an exact result.",
    "type": "numeric",
    "answer": 60,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example b · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · b2"
+   "group": "Card 5 · Example b · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · b2"
   },
   {
-   "prompt": "A bus was late on 12 of 40 school days.\n\nEstimate how many times this happens in 200 trials.",
-   "solution": "\\[P \\approx \\frac{12}{40}\\]\n\n\\[\\frac{12}{40} \\times 200\\]\n\n\\[\\boxed{60}\\]\n\nUse the experimental probability as the estimate, then multiply by the new number of trials.",
+   "prompt": "A bus was late on 12 out of 40 school days.\n\nAbout how many late days would you expect in 200 school days?",
+   "solution": "\\[\\text{Probability from the results} = \\frac{12}{40}\\]\n\n\\[\\frac{12}{40} \\times 200\\]\n\n\\[\\boxed{60}\\]\n\nUse the results to get a probability, then multiply by the new number of tries.",
    "type": "numeric",
    "answer": 60,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example c · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · c1"
+   "group": "Card 5 · Example c · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · c1"
   },
   {
-   "prompt": "A machine made 9 faulty bottles in a test of 30.\n\nEstimate how many times this happens in 500 trials.",
-   "solution": "\\[P \\approx \\frac{9}{30}\\]\n\n\\[\\frac{9}{30} \\times 500\\]\n\n\\[\\boxed{150}\\]\n\nUse the experimental probability as the estimate, then multiply by the new number of trials.",
+   "prompt": "A machine made 9 broken bottles out of 30 in a test.\n\nAbout how many broken bottles would you expect out of 500?",
+   "solution": "\\[\\text{Probability from the results} = \\frac{9}{30}\\]\n\n\\[\\frac{9}{30} \\times 500\\]\n\n\\[\\boxed{150}\\]\n\nUse the results to get a probability, then multiply by the new number of tries.",
    "type": "numeric",
    "answer": 150,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example c · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · c2"
+   "group": "Card 5 · Example c · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · c2"
   },
   {
-   "prompt": "A fair coin is tossed 100 times and lands heads 62 times.\n\nThe theoretical probability is \\(\\dfrac{1}{2}\\).\n\nBy how many does the result differ from the expected number?",
-   "solution": "\\[\\begin{aligned} \\text{Expected} &= \\frac{1}{2} \\times 100 \\\\ &= 50 \\end{aligned}\\]\n\n\\[|62 - 50|\\]\n\n\\[\\boxed{12}\\]\n\n- Theoretical probability predicts; an experiment only gets close.\n- More trials usually get closer.",
+   "prompt": "You toss a coin 100 times and get heads 62 times.\n\nThe chance of heads on each try is \\(\\dfrac{1}{2}\\).\n\nHow many times would you expect heads, and what is the difference between that and what you got?",
+   "solution": "\\[\\begin{aligned} \\text{Expected} &= \\frac{1}{2} \\times 100 \\\\ &= 50 \\end{aligned}\\]\n\n\\[\\text{Difference} = 62 - 50\\]\n\n\\[\\boxed{12}\\]\n\nThe worked-out chance tells you what should happen.\n\nReal results only come close, and they usually get closer when you try more times.",
    "type": "numeric",
    "answer": 12,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example d · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · d1"
+   "group": "Card 5 · Example d · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · d1"
   },
   {
-   "prompt": "A fair spinner with 4 equal colours is spun 80 times and lands on red 26 times.\n\nThe theoretical probability is \\(\\dfrac{1}{4}\\).\n\nBy how many does the result differ from the expected number?",
-   "solution": "\\[\\begin{aligned} \\text{Expected} &= \\frac{1}{4} \\times 80 \\\\ &= 20 \\end{aligned}\\]\n\n\\[|26 - 20|\\]\n\n\\[\\boxed{6}\\]\n\n- Theoretical probability predicts; an experiment only gets close.\n- More trials usually get closer.",
+   "prompt": "A spinner has 4 equal parts: red, blue, green and yellow.\n\nYou spin it 80 times and get red 26 times.\n\nThe chance of red on each try is \\(\\dfrac{1}{4}\\).\n\nHow many times would you expect red, and what is the difference between that and what you got?",
+   "solution": "\\[\\begin{aligned} \\text{Expected} &= \\frac{1}{4} \\times 80 \\\\ &= 20 \\end{aligned}\\]\n\n\\[\\text{Difference} = 26 - 20\\]\n\n\\[\\boxed{6}\\]\n\nThe worked-out chance tells you what should happen.\n\nReal results only come close, and they usually get closer when you try more times.",
    "type": "numeric",
    "answer": 6,
    "tolerance": 1e-06,
-   "group": "Card 5 · Example d · Experimental and theoretical probability",
-   "title": "Experimental and theoretical probability · d2"
+   "group": "Card 5 · Example d · Working it out, or trying it many times",
+   "title": "Working it out, or trying it many times · d2"
   },
   {
-   "prompt": "A fair dice is rolled and a spinner numbered 1 to 4 is spun.\n\nHow many outcomes are in the sample space?",
-   "solution": "\\[6 \\times 4\\]\n\n\\[\\boxed{24}\\]\n\nEach of the first outcomes can pair with each of the second: multiply, or draw the grid.",
+   "prompt": "You roll a normal dice with the numbers 1 to 6 and spin a spinner with the numbers 1 to 4.\n\nHow many different pairs of results are possible altogether?\n\nFor example, 5 and 2 is one pair.",
+   "solution": "\\[6 \\times 4\\]\n\n\\[\\boxed{24}\\]\n\nEvery result of the first thing can go with every result of the second, so multiply.\n\nYou can also draw a grid and count the boxes.",
    "type": "numeric",
    "answer": 24,
    "tolerance": 1e-06,
-   "group": "Card 6 · Example a · Two events: the sample space",
-   "title": "Two events: the sample space · a1"
+   "group": "Card 6 · Example a · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · a1"
   },
   {
-   "prompt": "A coin is tossed and a spinner with 5 colours is spun.\n\nHow many outcomes are in the sample space?",
-   "solution": "\\[2 \\times 5\\]\n\n\\[\\boxed{10}\\]\n\nEach of the first outcomes can pair with each of the second: multiply, or draw the grid.",
+   "prompt": "You toss a coin and spin a spinner with 5 colours.\n\nHow many different pairs of results are possible altogether?\n\nFor example, tails and red is one pair.",
+   "solution": "\\[2 \\times 5\\]\n\n\\[\\boxed{10}\\]\n\nEvery result of the first thing can go with every result of the second, so multiply.\n\nYou can also draw a grid and count the boxes.",
    "type": "numeric",
    "answer": 10,
    "tolerance": 1e-06,
-   "group": "Card 6 · Example a · Two events: the sample space",
-   "title": "Two events: the sample space · a2"
+   "group": "Card 6 · Example a · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · a2"
   },
   {
-   "prompt": "A coin is tossed and a fair dice is rolled.\n\nFind P(tails and a number greater than 4).",
-   "solution": "\\[\\text{12 outcomes: H1, …, H6, T1, …, T6}\\]\n\n\\[\\text{Wanted: } T5, T6\\]\n\n\\[P = \\frac{2}{12}\\]\n\n\\[\\boxed{\\frac{1}{6}}\\]\n\nList or draw the 12 outcomes, then count the ones that match both parts.",
+   "prompt": "You toss a coin and roll a normal dice with the numbers 1 to 6.\n\nWhat is the probability of getting tails and a number greater than 4?",
+   "solution": "\\[\\text{All pairs: H1, …, H6, T1, …, T6} = 12\\]\n\n\\[\\text{Pairs you want: } T5, T6\\]\n\n\\[\\text{Probability} = \\frac{2}{12}\\]\n\n\\[\\boxed{\\frac{1}{6}}\\]\n\nWrite out the 12 pairs (or draw the grid), then count the pairs that match both parts.",
    "type": "fraction",
    "answer": [
     1,
     6
    ],
-   "group": "Card 6 · Example b · Two events: the sample space",
-   "title": "Two events: the sample space · b1"
+   "group": "Card 6 · Example b · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · b1"
   },
   {
-   "prompt": "A coin is tossed and a fair dice is rolled.\n\nFind P(heads and a multiple of 3).",
-   "solution": "\\[\\text{12 outcomes: H1, …, H6, T1, …, T6}\\]\n\n\\[\\text{Wanted: } H3, H6\\]\n\n\\[P = \\frac{2}{12}\\]\n\n\\[\\boxed{\\frac{1}{6}}\\]\n\nList or draw the 12 outcomes, then count the ones that match both parts.",
+   "prompt": "You toss a coin and roll a normal dice with the numbers 1 to 6.\n\nWhat is the probability of getting heads and a multiple of 3?",
+   "solution": "\\[\\text{All pairs: H1, …, H6, T1, …, T6} = 12\\]\n\n\\[\\text{Pairs you want: } H3, H6\\]\n\n\\[\\text{Probability} = \\frac{2}{12}\\]\n\n\\[\\boxed{\\frac{1}{6}}\\]\n\nWrite out the 12 pairs (or draw the grid), then count the pairs that match both parts.",
    "type": "fraction",
    "answer": [
     1,
     6
    ],
-   "group": "Card 6 · Example b · Two events: the sample space",
-   "title": "Two events: the sample space · b2"
+   "group": "Card 6 · Example b · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · b2"
   },
   {
-   "prompt": "Two fair dice are rolled and the scores are added.\n\nFind P(a total of 9).",
-   "solution": "\\[\\text{Wanted: } (3,6), (4,5), (5,4), (6,3)\\]\n\n\\[P = \\frac{4}{36}\\]\n\n\\[\\boxed{\\frac{1}{9}}\\]\n\nThe sum grid has 6 × 6 = 36 cells; count the cells with the wanted total.",
+   "prompt": "You roll two normal dice and add the two numbers.\n\nWhat is the probability that the total is 9?",
+   "solution": "\\[\\text{Pairs you want: } (3,6), (4,5), (5,4), (6,3)\\]\n\n\\[\\text{Probability} = \\frac{4}{36}\\]\n\n\\[\\boxed{\\frac{1}{9}}\\]\n\nA 6 by 6 grid of totals has 36 boxes.\n\nCount the boxes with the total you want.",
    "type": "fraction",
    "answer": [
     1,
     9
    ],
-   "group": "Card 6 · Example c · Two events: the sample space",
-   "title": "Two events: the sample space · c1"
+   "group": "Card 6 · Example c · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · c1"
   },
   {
-   "prompt": "Two fair dice are rolled and the scores are added.\n\nFind P(a total greater than 10).",
-   "solution": "\\[\\text{Wanted: } (5,6), (6,5), (6,6)\\]\n\n\\[P = \\frac{3}{36}\\]\n\n\\[\\boxed{\\frac{1}{12}}\\]\n\nThe sum grid has 6 × 6 = 36 cells; count the cells with the wanted total.",
+   "prompt": "You roll two normal dice and add the two numbers.\n\nWhat is the probability that the total is more than 10?",
+   "solution": "\\[\\text{Pairs you want: } (5,6), (6,5), (6,6)\\]\n\n\\[\\text{Probability} = \\frac{3}{36}\\]\n\n\\[\\boxed{\\frac{1}{12}}\\]\n\nA 6 by 6 grid of totals has 36 boxes.\n\nCount the boxes with the total you want.",
    "type": "fraction",
    "answer": [
     1,
     12
    ],
-   "group": "Card 6 · Example c · Two events: the sample space",
-   "title": "Two events: the sample space · c2"
+   "group": "Card 6 · Example c · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · c2"
   },
   {
-   "prompt": "Spinner A shows 1, 2, 3.\n\nSpinner B shows 1, 2, 3.\n\nBoth are spun and the scores are added.\n\nFind P(a total of 4).",
-   "solution": "\\[\\begin{aligned} \\text{Outcomes} &= 3 \\times 3 \\\\ &= 9 \\end{aligned}\\]\n\n\\[\\text{Wanted: } (1,3), (2,2), (3,1)\\]\n\n\\[P = \\frac{3}{9}\\]\n\n\\[\\boxed{\\frac{1}{3}}\\]\n\nMake the grid of all pairs, then count the pairs with the wanted total.",
+   "prompt": "Spinner A has the numbers 1, 2, 3.\n\nSpinner B has the numbers 1, 2, 3.\n\nYou spin both and add the two numbers.\n\nWhat is the probability that the total is 4?",
+   "solution": "\\[\\begin{aligned} \\text{All pairs} &= 3 \\times 3 \\\\ &= 9 \\end{aligned}\\]\n\n\\[\\text{Pairs you want: } (1,3), (2,2), (3,1)\\]\n\n\\[\\text{Probability} = \\frac{3}{9}\\]\n\n\\[\\boxed{\\frac{1}{3}}\\]\n\nDraw the grid of all pairs, then count the pairs with the total you want.",
    "type": "fraction",
    "answer": [
     1,
     3
    ],
-   "group": "Card 6 · Example d · Two events: the sample space",
-   "title": "Two events: the sample space · d1"
+   "group": "Card 6 · Example d · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · d1"
   },
   {
-   "prompt": "Spinner A shows 1, 2.\n\nSpinner B shows 1, 2, 3, 4, 5.\n\nBoth are spun and the scores are added.\n\nFind P(an even total).",
-   "solution": "\\[\\begin{aligned} \\text{Outcomes} &= 2 \\times 5 \\\\ &= 10 \\end{aligned}\\]\n\n\\[\\text{Wanted: } (1,1), (1,3), (1,5), (2,2), (2,4)\\]\n\n\\[P = \\frac{5}{10}\\]\n\n\\[\\boxed{\\frac{1}{2}}\\]\n\nMake the grid of all pairs, then count the pairs with the wanted total.",
+   "prompt": "Spinner A has the numbers 1, 2.\n\nSpinner B has the numbers 1, 2, 3, 4, 5.\n\nYou spin both and add the two numbers.\n\nWhat is the probability that the total is an even number?",
+   "solution": "\\[\\begin{aligned} \\text{All pairs} &= 2 \\times 5 \\\\ &= 10 \\end{aligned}\\]\n\n\\[\\text{Pairs you want: } (1,1), (1,3), (1,5), (2,2), (2,4)\\]\n\n\\[\\text{Probability} = \\frac{5}{10}\\]\n\n\\[\\boxed{\\frac{1}{2}}\\]\n\nDraw the grid of all pairs, then count the pairs with the total you want.",
    "type": "fraction",
    "answer": [
     1,
     2
    ],
-   "group": "Card 6 · Example d · Two events: the sample space",
-   "title": "Two events: the sample space · d2"
+   "group": "Card 6 · Example d · Two things at once: list every pair",
+   "title": "Two things at once: list every pair · d2"
   }
  ],
  "link": [
