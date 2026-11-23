@@ -216,6 +216,7 @@ Animated SVG concept figures (GitHub plays the SMIL animation inline).
 | [AP Statistics Roadmap](topics/animations/ap-roadmap-statistics/content.md) | What are the five units of AP Statistics and what does each one look like? | Concept note |
 | [UK Thunderball — Two Drums and What a £1 Line Is Worth](topics/animations/uk-thunderball-two-drums/content.md) | Why do the two Thunderball drums multiply to 8,060,598 lines, and what is the expected value of a £1 line? | Concept note |
 | [AP Precalculus 2.6: Residuals, Under or Over?](topics/animations/ap-precalculus-2-6-residuals-under-or-over/content.md) | How does a residual show whether a model underestimates or overestimates, and what does a U-shape in the residuals say about a straight line? | Concept note |
+| [AP Precalculus: Formula Recap — Functions, Sequences, Division](topics/animations/ap-precalculus-formula-recap-functions-sequences-division/content.md) | How do numbers flow through y = f(x), a line, a shifted parabola, the arithmetic and geometric sequence formulas, and a long division into quotient and remainder? | Concept note |
 
 ## Field Notes
 

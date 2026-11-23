@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formula Recap</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+<style>
+    :root { --ink: #ECECEC; --dim: #9AA0A6; --line: #3a4150; --red: #FC6255; --blue: #58C4DD; --hl: #FFFF00; --ok: #83C167; }
+    html, body { margin: 0; padding: 0; background: #07090d; overflow: hidden; height: 100%;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #stage { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; transform-origin: 0 0; overflow: hidden; color: var(--ink);
+        background: radial-gradient(ellipse at 50% 45%, #1c2230 0%, #11151d 55%, #07090d 100%); }
+    .scene { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; opacity: 0; }
+    .series { position: absolute; left: 48px; top: 16px; font-size: 14px; color: var(--dim); letter-spacing: .3px; }
+    h2 { position: absolute; left: 48px; top: 40px; font-size: 30px; margin: 0; font-weight: 600; white-space: nowrap; }
+    .subtitle { position: absolute; left: 48px; top: 84px; font-size: 19px; color: var(--dim); white-space: nowrap; }
+    .cc { position: absolute; transform: translate(-50%, -50%); white-space: nowrap; }
+    .chip { position: absolute; height: 64px; border: 2px solid var(--dim); border-radius: 10px; box-sizing: border-box; background: rgba(28,34,48,.6); }
+    .chip .cl { position: absolute; left: 10px; top: 4px; font-size: 14px; color: var(--dim); white-space: nowrap; }
+    .chip .cv { position: absolute; left: 0; top: 24px; width: 100%; text-align: center; font-size: 26px; opacity: 0; }
+    .machine { position: absolute; border: 2px solid var(--blue); border-radius: 10px; box-sizing: border-box; font-size: 26px; }
+    .machine .mc { position: absolute; left: 0; width: 100%; text-align: center; white-space: nowrap; opacity: 0; }
+    .machine .enclosing { border: 1.5px dashed var(--dim); border-radius: 6px; padding: 1px 7px; margin: 0 2px; }
+    .machine .filled .enclosing { border: 1.5px solid var(--hl); }
+    .machine .msupsub .enclosing { padding: 0 3px; border-width: 1px; }
+    .machine .enclosing[id$="-n0"] { border-color: transparent !important; padding: 0 1px !important; margin: 0 !important; }
+    .mlab { position: absolute; left: 12px; top: 5px; font-size: 14px; color: var(--dim); white-space: nowrap; }
+    .rc { position: absolute; left: 0; top: 0; height: 42px; padding: 0 14px; border: 2px solid var(--ok); border-radius: 8px; box-sizing: border-box;
+        background: rgba(28,34,48,.92); font-size: 24px; line-height: 38px; opacity: 0; white-space: nowrap; color: var(--ok); }
+    .fly { position: absolute; left: 0; top: 0; opacity: 0; white-space: nowrap; font-size: 26px; pointer-events: none;
+        padding: 1px 8px; border: 1.5px solid var(--dim); border-radius: 6px; background: rgba(28,34,48,.92); box-sizing: border-box; }
+    .fly.g { border-color: var(--ok); color: var(--ok); } .fly.y { border-color: var(--hl); color: var(--hl); }
+    .fly.b { border-color: var(--blue); color: var(--blue); } .fly.r { border-color: var(--red); color: var(--red); }
+    .cap { position: absolute; font-size: 20px; line-height: 30px; opacity: 0; white-space: nowrap; }
+    .card { position: absolute; border: 1.5px solid var(--line); border-radius: 10px; box-sizing: border-box; background: rgba(28,34,48,.45); }
+    .glab { font-size: 18px; }
+    .term { width: 84px; height: 58px; border: 2px solid var(--line); border-radius: 8px; box-sizing: border-box; background: rgba(28,34,48,.6); font-size: 28px; }
+    .term > div { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+    .lad { font-size: 30px; padding: 0 6px; border-radius: 6px; }
+    .red { color: var(--red); } .blue { color: var(--blue); } .ok { color: var(--ok); } .hl { color: var(--hl); } .dim { color: var(--dim); }
+    svg text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    .axis { stroke: #555c66; stroke-width: 2; } .grid { stroke: #252b37; stroke-width: 1; } .slab { fill: var(--dim); font-size: 14px; }
+    .katex-display { margin: 0; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+<script>
+    // ================= helpers =================================================================
+    const R = String.raw, $ = id => document.getElementById(id), stage = $('stage');
+    const KOPT = { trust: true, strict: false, throwOnError: false };
+    const COL = { ink: '#ECECEC', dim: '#9AA0A6', line: '#3a4150', red: '#FC6255', blue: '#58C4DD', hl: '#FFFF00', ok: '#83C167' };
+    const FADE = 0.6;
+    const clamp01 = x => Math.max(0, Math.min(1, x)), ease = p => p * p * (3 - 2 * p);
+    const seg = (t, a, d) => ease(clamp01((t - a) / d));
+    const win = (t, a, b, d = .4) => seg(t, a, d) - seg(t, b, d);
+    const lerp = (a, b, p) => a + (b - a) * p;
+    const fmt = v => { const n = Math.round(v * 10) / 10; return (n < 0 ? '−' : '') + Math.abs(n); };
+    const O = (el, v) => { el.style.opacity = Math.max(0, Math.min(1, v)); };
+    const at = (x, y) => `left:${x}px;top:${y}px;`;
+    function E(p, tag, cls, css, html) { const e = document.createElement(tag); if (cls) e.className = cls; if (css) e.style.cssText = css; if (html != null) e.innerHTML = html; p.appendChild(e); return e; }
+    function K(e, s) { katex.render(s, e, KOPT); return e; }
+    function TX(p, s, cls, css) { return K(E(p, 'div', cls, css), s); }
+    function svgAdd(p, s) { p.insertAdjacentHTML('beforeend', s); return p.lastElementChild; }
+
+    // stage-coordinate measurement (static elements only)
+    let SC = 1;
+    function box(el) { const s = stage.getBoundingClientRect(), r = el.getBoundingClientRect();
+        return { x: (r.left - s.left) / SC, y: (r.top - s.top) / SC, w: r.width / SC, h: r.height / SC }; }
+    const CM = new Map();
+    function C(el) { if (el.x != null) return el; if (!CM.has(el)) { const b = box(el); CM.set(el, { x: b.x + b.w / 2, y: b.y + b.h / 2 }); } return CM.get(el); }
+
+    function place(el, x, y, s = 1) { el.style.transform = `translate(${x - el.offsetWidth / 2}px, ${y - el.offsetHeight / 2}px) scale(${s})`; }
+    function fly(el, from, to, p, bend = 0, s0 = 1, s1 = 1) {
+        if (p <= 0 || p >= 1) { el.style.opacity = 0; return; }
+        from = C(from); to = C(to);
+        const x = lerp(from.x, to.x, p), y = lerp(from.y, to.y, p) - bend * 4 * p * (1 - p);
+        el.style.opacity = p < .9 ? 1 : (1 - p) / .1;
+        place(el, x, y, lerp(s0, s1, p));
+    }
+    const flight = (t, el, from, to, a, bend = -60) => fly(el, from, to, seg(t, a, 1.35), bend, 1.05, 1);
+    function emerge(t, el, te, tf, pos, target, bend = 40, s1 = .8) {
+        const pe = seg(t, te, .8), pf = seg(t, tf, 1.6);
+        if (pe <= 0) { el.style.opacity = 0; return; }
+        if (pf <= 0) { el.style.opacity = pe; place(el, pos.x, pos.y, .5 + .5 * pe); return; }
+        fly(el, pos, target, pf, bend, 1, s1);
+    }
+    function pulse(el, t, a, d = .9) { const pr = t - a; if (pr < 0 || pr > d) return false;
+        const k = .5 + .5 * Math.sin(2 * Math.PI * pr / d); el.style.boxShadow = `0 0 ${10 + 14 * k}px rgba(255,255,0,${.35 * k})`; return true; }
+    const GLW = new Map();
+    function gl(el, a) { GLW.set(el, Math.max(GLW.get(el) || 0, a)); }
+    function glowFlush() { for (const [el, a] of GLW) { el.style.boxShadow = a > .001 ? `0 0 0 2px rgba(255,255,0,${a}), 0 0 14px rgba(255,255,0,${.45 * a})` : 'none'; GLW.set(el, 0); } }
+    function seqOp(t, seq, d = .55) { const o = {};
+        seq.forEach(([a, k], i) => { const nx = seq[i + 1]; o[k] = (o[k] || 0) + seg(t, a, d) - (nx ? seg(t, nx[0], d) : 0); }); return o; }
+    function drawLen(el, p) { const L = el.getTotalLength(); el.style.strokeDasharray = `${L} ${L}`; el.style.strokeDashoffset = L * (1 - p); O(el, p > 0 ? 1 : 0); }
+
+    // scenes
+    const SCENES = [], MACHINES = [];
+    function scene(start, end, series, title, sub, hold) {
+        const el = E(stage, 'div', 'scene');
+        E(el, 'div', 'series', '', 'AP Precalculus &middot; Formula Recap &middot; ' + series);
+        const h = E(el, 'h2', '', '', title), s = E(el, 'div', 'subtitle', '', sub);
+        const sc = { el, start, end, hold, appear: [[h, .4], [s, .8]], render: () => {}, post: () => {} };
+        sc.fly = E(el, 'div', '', 'position:absolute;left:0;top:0;width:0;height:0;');
+        SCENES.push(sc); return sc;
+    }
+    const A = (sc, el, a, b) => (sc.appear.push([el, a, b]), el);
+    const top_ = sc => sc.el.appendChild(sc.fly);           // flyers above everything else in the scene
+    function chip(sc, x, y, w, label, vals) {
+        const el = E(sc.el, 'div', 'chip', at(x, y) + `width:${w}px;`);
+        E(el, 'div', 'cl', '', label);
+        return { el, v: vals.map(s => TX(el, s, 'cv')) };
+    }
+    // a formula "machine": lines of stacked copies (symbol copy + filled copies) at the same place
+    function machine(sc, mid, css, lines, label, border) {
+        const el = E(sc.el, 'div', 'machine', css + (border ? `border-color:${border};` : '')); el.id = mid;
+        if (label) E(el, 'div', 'mlab', '', label);
+        const cp = {};
+        for (const L of lines) for (const [name, s] of Object.entries(L.copies)) {
+            const sym = name.startsWith('s') || name.endsWith('s');
+            const d = E(el, 'div', 'mc' + (sym ? '' : ' filled'), `top:${L.top}px;` + (L.css || ''));
+            K(d, s.replaceAll('§', `S-${mid}-${L.key}-${name}-`)); cp[L.key + ':' + name] = d;
+        }
+        const m = { el, cp, mid, lines, slot: (key, name, sl) => $(`S-${mid}-${key}-${name}-${sl}`) };
+        MACHINES.push(m); return m;
+    }
+    function showCopies(m, o) { for (const [k, e] of Object.entries(m.cp)) O(e, o[k] || 0); }
+    function equalise(prefix) {           // slot rule: every slot of a group gets the width of its widest content
+        const groups = {};
+        document.querySelectorAll(`.enclosing[id^="${prefix}"]`).forEach(el => { const g = el.id.split('-').pop(); (groups[g] ||= []).push(el); });
+        for (const g in groups) { const w = Math.max(...groups[g].map(el => el.getBoundingClientRect().width / SC));
+            groups[g].forEach(el => { el.style.display = 'inline-block'; el.style.textAlign = 'center'; el.style.boxSizing = 'border-box'; el.style.width = Math.ceil(w) + 'px'; }); }
+    }
+    // graph panel (SVG, pixel viewBox, so stage coords = left + X(x))
+    function graph(sc, gid, o) {
+        const X = x => (x - o.x0) / (o.x1 - o.x0) * o.w, Y = y => o.h - (y - o.y0) / (o.y1 - o.y0) * o.h;
+        let s = `<svg viewBox="0 0 ${o.w} ${o.h}" width="${o.w}" height="${o.h}" style="overflow:visible;display:block">`;
+        s += `<defs><clipPath id="${gid}-cl"><rect x="0" y="0" width="${o.w}" height="${o.h}"/></clipPath>`;
+        for (const [k, c] of Object.entries(COL)) s += `<marker id="${gid}-ah-${k}" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="13" markerHeight="13" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${c}"/></marker>`;
+        s += `</defs>`;
+        for (const x of o.xt) s += `<line class="grid" x1="${X(x)}" x2="${X(x)}" y1="0" y2="${o.h}"/>`;
+        for (const y of o.yt) s += `<line class="grid" x1="0" x2="${o.w}" y1="${Y(y)}" y2="${Y(y)}"/>`;
+        const ax = o.x0 <= 0 && 0 <= o.x1 ? X(0) : 0, ay = o.y0 <= 0 && 0 <= o.y1 ? Y(0) : o.h;
+        s += `<line class="axis" x1="0" x2="${o.w + 8}" y1="${ay}" y2="${ay}" marker-end="url(#${gid}-ah-dim)"/>`;
+        s += `<line class="axis" x1="${ax}" x2="${ax}" y1="${o.h}" y2="-8" marker-end="url(#${gid}-ah-dim)"/>`;
+        const lab = v => v < 0 ? '−' + (-v) : v;
+        for (const x of o.xt) if (x !== 0) s += `<text class="slab" x="${X(x)}" y="${ay + 20}" text-anchor="middle">${lab(x)}</text>`;
+        for (const y of o.yt) if (y !== 0) s += `<text class="slab" x="${ax - 8}" y="${Y(y) + 5}" text-anchor="end">${lab(y)}</text>`;
+        s += `<text class="slab" x="${o.w + 16}" y="${ay + 6}" font-style="italic" font-size="18">${o.xl || 'x'}</text>`;
+        s += `<text class="slab" x="${ax}" y="-16" text-anchor="middle" font-style="italic" font-size="18">${o.yl || 'y'}</text>`;
+        s += `<g id="${gid}-c" clip-path="url(#${gid}-cl)"></g><g id="${gid}-o"></g></svg>`;
+        const el = E(sc.el, 'div', '', at(o.left, o.top) + `position:absolute;width:${o.w}px;height:${o.h}px;`, s);
+        return { el, o, X, Y, sx: x => o.left + X(x), sy: y => o.top + Y(y), c: el.querySelector(`#${gid}-c`), ov: el.querySelector(`#${gid}-o`), gid };
+    }
+    function fpath(G, f, a, b, n = 160) {
+        const span = G.o.y1 - G.o.y0, lo = G.o.y0 - 2 * span, hi = G.o.y1 + 2 * span; let d = '';
+        for (let i = 0; i <= n; i++) { const x = lerp(a, b, i / n), y = Math.max(lo, Math.min(hi, f(x)));
+            d += (i ? 'L' : 'M') + G.X(x).toFixed(1) + ',' + G.Y(y).toFixed(1); }
+        return d;
+    }
+    const partial = (G, f, a, b, p) => p > 0 ? fpath(G, f, a, lerp(a, b, p)) : '';
+
+    // ================= scene 1: what y = f(x) means ===========================================
+    const f1 = x => 2 * x + 1, X1 = [1, 3];
+    console.assert(f1(1) === 3 && f1(3) === 7, 'scene 1 numbers');
+    const S1 = scene(0, 34, 'Functions', R`What $y = f(x)$ means`, R`Put a number $x$ into the formula $f$. The number that comes out is $y$.`);
+    const ch1 = chip(S1, 48, 150, 170, R`$x$ (goes in)`, X1.map(String)); A(S1, ch1.el, 2.0);
+    const M1 = machine(S1, 'mA', 'left:48px;top:250px;width:560px;height:110px;', [{ key: 'L', top: 40, css: 'font-size:30px;', copies: Object.assign(
+        { s: R`f(\htmlId{§a}{x}) = 2\cdot\htmlId{§b}{x} + 1` }, ...X1.map(x => ({ ['k' + x]: R`f(\htmlId{§a}{${x}}) = 2\cdot\htmlId{§b}{${x}} + 1` }))) }], 'formula f');
+    A(S1, M1.el, 2.0);
+    const caps1 = X1.map((x, k) => E(S1.el, 'div', 'cap', at(48, 396 + 44 * k),
+        R`$x_${k + 1} = ${x}$ goes in, $y_${k + 1} = f(${x}) = ${f1(x)}$ comes out: the point $(${x},\ ${f1(x)})$.`));
+    const cap1c = A(S1, E(S1.el, 'div', 'cap', at(48, 510), R`Every $x$ has its own $y = f(x)$.<br>All the points $(x,\ y)$ together make the graph of $f$.`), 26.5);
+    const G1 = graph(S1, 'gA', { left: 770, top: 130, w: 440, h: 480, x0: -1, x1: 5.5, y0: -1, y1: 10.5, xt: [1, 2, 3, 4, 5], yt: [2, 4, 6, 8, 10] });
+    A(S1, G1.el, 1.5);
+    const L1 = svgAdd(G1.c, `<path fill="none" stroke="${COL.blue}" stroke-width="3"/>`);
+    const L1lab = A(S1, TX(S1.el, 'y = 2x + 1', 'cc glab blue', at(G1.sx(1.3), G1.sy(9.3)) + 'font-size:22px;'), 25.5);
+    const P1 = X1.map((x, k) => { const y = f1(x), G = G1; return { x, y,
+        xd: svgAdd(G.ov, `<circle cx="${G.X(x)}" cy="${G.Y(0)}" r="7" fill="${COL.hl}" style="opacity:0"/>`),
+        xl: TX(S1.el, `x_${k + 1} = ${x}`, 'cc glab hl', at(G.sx(x), G.sy(0) + 42)),
+        v: svgAdd(G.ov, `<line x1="${G.X(x)}" y1="${G.Y(0)}" x2="${G.X(x)}" y2="${G.Y(0)}" stroke="${COL.hl}" stroke-width="3" marker-end="url(#gA-ah-hl)" style="opacity:0"/>`),
+        h: svgAdd(G.ov, `<line x1="${G.X(x)}" y1="${G.Y(y)}" x2="${G.X(x)}" y2="${G.Y(y)}" stroke="${COL.ok}" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#gA-ah-ok)" style="opacity:0"/>`),
+        pt: svgAdd(G.ov, `<circle cx="${G.X(x)}" cy="${G.Y(y)}" r="7" fill="${COL.ink}" style="opacity:0"/>`),
+        pl: TX(S1.el, `(${x},\\ ${y})`, 'cc glab', at(G.sx(x) + 50, G.sy(y) + 4)),
+        yl: TX(S1.el, `y_${k + 1} = ${y}`, 'cc glab ok', at(G.sx(0) - 46, G.sy(y))) }; });
+    const FL1 = X1.map(x => [TX(S1.fly, String(x), 'fly y'), TX(S1.fly, String(x), 'fly y')]);
+    const RC1 = X1.map((x, k) => TX(S1.fly, `y_${k + 1} = ${f1(x)}`, 'rc'));
+    const SW = { xd: svgAdd(G1.ov, `<circle r="7" fill="${COL.hl}" style="opacity:0"/>`),
+        v: svgAdd(G1.ov, `<line stroke="${COL.hl}" stroke-width="2.5" stroke-dasharray="5 5" style="opacity:0"/>`),
+        pt: svgAdd(G1.ov, `<circle r="8" fill="${COL.hl}" style="opacity:0"/>`),
+        lab: E(S1.el, 'div', 'glab hl', 'position:absolute;left:48px;top:604px;opacity:0;white-space:nowrap;font-size:24px;') };
+    top_(S1);
+    const T1 = [4.0, 14.0];
+    S1.render = t => {
+        const cv = seqOp(t, [[T1[0], 0], [T1[1], 1]]);
+        ch1.v.forEach((e, i) => O(e, cv[i] || 0));
+        showCopies(M1, seqOp(t, [[-1, 'L:s'], [T1[0] + 2.5, 'L:k1'], [T1[0] + 8.4, 'L:s'], [T1[1] + 2.5, 'L:k3'], [T1[1] + 8.4, 'L:s']]));
+        M1.el.style.boxShadow = 'none'; T1.forEach(a => pulse(M1.el, t, a + 3.2));
+        X1.forEach((x, k) => { const t0 = T1[k], P = P1[k], y = P.y;
+            gl(ch1.el, win(t, t0 + .5, t0 + 2.2));
+            flight(t, FL1[k][0], ch1.el, M1.slot('L', 'k' + x, 'a'), t0 + .6, -60);
+            flight(t, FL1[k][1], ch1.el, M1.slot('L', 'k' + x, 'b'), t0 + 1.0, 60);
+            emerge(t, RC1[k], t0 + 4.1, t0 + 5.0, { x: 690, y: 305 }, { x: G1.sx(x), y: G1.sy(y) }, 30, .6);
+            O(P.xd, seg(t, t0, .6)); O(P.xl, seg(t, t0, .6));
+            const pv = seg(t, t0 + 5.0, 1.6); P.v.setAttribute('y2', G1.Y(lerp(0, y, pv))); O(P.v, pv > 0 ? 1 : 0);
+            O(P.pt, seg(t, t0 + 6.5, .4)); O(P.pl, seg(t, t0 + 6.8, .6));
+            const ph = seg(t, t0 + 6.8, .8); P.h.setAttribute('x2', G1.X(lerp(x, 0, ph))); O(P.h, ph > 0 ? 1 : 0);
+            O(P.yl, seg(t, t0 + 7.4, .6)); O(caps1[k], seg(t, t0 + 4.4, .6));
+        });
+        L1.setAttribute('d', partial(G1, f1, -0.6, 4.8, seg(t, 24.0, 2.0)));
+        // sweep: any x goes in, its y comes out
+        const on = seg(t, 27.6, .5), xs = lerp(0, 4.5, seg(t, 28.0, 3.8)), ys = f1(xs);
+        [SW.xd, SW.v, SW.pt, SW.lab].forEach(e => O(e, on));
+        SW.xd.setAttribute('cx', G1.X(xs)); SW.xd.setAttribute('cy', G1.Y(0));
+        SW.v.setAttribute('x1', G1.X(xs)); SW.v.setAttribute('x2', G1.X(xs)); SW.v.setAttribute('y1', G1.Y(0)); SW.v.setAttribute('y2', G1.Y(ys));
+        SW.pt.setAttribute('cx', G1.X(xs)); SW.pt.setAttribute('cy', G1.Y(ys));
+        const xr = Math.round(xs * 10) / 10; SW.lab.textContent = `x = ${fmt(xr)}   →   y = 2 · ${fmt(xr)} + 1 = ${fmt(f1(xr))}`;
+    };
+
+    // ================= scene 2: lines y = m x + b ============================================
+    const S2 = scene(34, 66, 'Lines', R`Line: $y = m\,x + b$`, R`$m$ = slope: how steep the line is. &nbsp; $b$ = where the line crosses the $y$ axis.`);
+    const chM = chip(S2, 48, 150, 180, R`$m$ (slope)`, ['3', '1', '-1', '3']); A(S2, chM.el, 2.0);
+    const chB = chip(S2, 248, 150, 250, R`$b$ (crosses the $y$ axis)`, ['3', '6', '-2']); A(S2, chB.el, 2.0);
+    const mb = (m, b) => R`y = \htmlId{§m}{${m}}\,x + \htmlId{§b}{${b}}`;
+    const M2 = machine(S2, 'mB', 'left:48px;top:250px;width:560px;height:130px;', [
+        { key: 'L', top: 28, css: 'font-size:32px;', copies: { s: mb('m', 'b'), k0: mb(3, 3), k1: mb(1, 3), k2: mb(-1, 3), k4: mb(3, 6), k5: mb(3, '(-2)') } },
+        { key: 'Z', top: 86, css: 'font-size:21px;color:#9AA0A6;', copies: { zs: R`\phantom{y}`, z0: 'y = 3x + 3', z1: 'y = x + 3', z2: 'y = -x + 3', z4: 'y = 3x + 6', z5: 'y = 3x - 2' } }], 'formula');
+    A(S2, M2.el, 2.0);
+    const G2 = graph(S2, 'gB', { left: 770, top: 120, w: 460, h: 506, x0: -5, x1: 5, y0: -4, y1: 7, xt: [-4, -3, -2, -1, 1, 2, 3, 4], yt: [-3, -2, -1, 1, 2, 3, 4, 5, 6] });
+    A(S2, G2.el, 1.5);
+    const STATES = [[3, 3], [1, 3], [-1, 3], [3, 3], [3, 6], [3, -2]];
+    const GH = [[0, 10.1, 16.5], [1, 14.6, 16.5], [3, 23.1, 99], [4, 27.6, 99]].map(([i, a, b]) => ({ i, a, b,
+        el: svgAdd(G2.c, `<path fill="none" stroke="${COL.dim}" stroke-width="2.5" stroke-dasharray="8 7" d="${fpath(G2, x => STATES[i][0] * x + STATES[i][1], -5, 5, 2)}" style="opacity:0"/>`) }));
+    const L2 = svgAdd(G2.c, `<path fill="none" stroke="${COL.blue}" stroke-width="3.5"/>`);
+    const TRI = svgAdd(G2.ov, `<polyline fill="none" stroke="${COL.ok}" stroke-width="3" style="opacity:0"/>`);
+    const tri1 = E(S2.el, 'div', 'cc glab ok', 'opacity:0;', '1'), triM = E(S2.el, 'div', 'glab ok', 'position:absolute;opacity:0;white-space:nowrap;');
+    const BI = svgAdd(G2.ov, `<circle r="8" fill="${COL.hl}" style="opacity:0"/>`);
+    const FL2 = [['m', '3', 2.9, 'k0'], ['b', '3', 3.3, 'k0'], ['m', '1', 8.1, 'k1'], ['m', '-1', 12.6, 'k2'], ['m', '3', 17.1, 'k0'], ['b', '6', 21.1, 'k4'], ['b', '-2', 25.6, 'k5']]
+        .map(([s, v, a, k]) => ({ s, a, k, el: TX(S2.fly, v, 'fly y') }));
+    const CAP2 = [[R`$y = 3x + 3$ crosses the $y$ axis at $3$.`, 5.0, 7.5], [R`$m = 1$: a smaller slope, the line is less steep.`, 10.1, 12.0],
+        [R`$m = -1$: a negative slope, the line goes down to the right.`, 14.6, 16.5], [R`Back to $m = 3$. Now change $b$ only.`, 17.0, 20.5],
+        [R`$b = 6$: the same line moves up $3$.`, 23.1, 25.0], [R`$b = -2$: the line moves down and crosses the $y$ axis at $-2$.`, 27.6, 99]]
+        .map(([s, a, b]) => A(S2, E(S2.el, 'div', 'cap', at(48, 404) + 'font-size:21px;', s), a, b));
+    A(S2, E(S2.el, 'div', 'cap dim', at(48, 460), R`Slope triangle: go right $1$, the line goes up $m$.`), 6.0, 16.5);
+    A(S2, E(S2.el, 'div', 'cap dim', at(48, 460), R`Same $m$: the lines are parallel. $b$ moves them up or down.`), 23.6);
+    top_(S2);
+    const MORPH = [[10.1, 1], [14.6, 2], [19.1, 3], [23.1, 4], [27.6, 5]];
+    S2.render = t => {
+        const om = seqOp(t, [[2.5, 0], [7.5, 1], [12.0, 2], [16.5, 3]]), ob = seqOp(t, [[2.5, 0], [20.5, 1], [25.0, 2]]);
+        chM.v.forEach((e, i) => O(e, om[i] || 0)); chB.v.forEach((e, i) => O(e, ob[i] || 0));
+        showCopies(M2, seqOp(t, [[-1, 'L:s'], [4.4, 'L:k0'], [9.5, 'L:k1'], [14.0, 'L:k2'], [18.5, 'L:k0'], [22.5, 'L:k4'], [27.0, 'L:k5']]));
+        const oz = seqOp(t, [[-1, 'Z:zs'], [4.4, 'Z:z0'], [9.5, 'Z:z1'], [14.0, 'Z:z2'], [18.5, 'Z:z0'], [22.5, 'Z:z4'], [27.0, 'Z:z5']]);
+        Object.entries(M2.cp).forEach(([k, e]) => { if (k.startsWith('Z:')) O(e, oz[k] || 0); });
+        M2.el.style.boxShadow = 'none'; [5.1, 9.9, 14.4, 18.9, 22.9, 27.4].forEach(a => pulse(M2.el, t, a, .7));
+        FL2.forEach(f => { flight(t, f.el, f.s === 'm' ? chM.el : chB.el, M2.slot('L', f.k, f.s), f.a, -50); gl(f.s === 'm' ? chM.el : chB.el, win(t, f.a - .6, f.a + .9)); });
+        let m = 3, b = 3; for (const [tm, i] of MORPH) { const p = seg(t, tm, 1.1); m = lerp(m, STATES[i][0], p); b = lerp(b, STATES[i][1], p); }
+        L2.setAttribute('d', partial(G2, x => m * x + b, -5, 5, seg(t, 5.0, 1.2)));
+        GH.forEach(g => O(g.el, .32 * win(t, g.a, g.b, .6)));
+        O(BI, seg(t, 5.6, .5)); BI.setAttribute('cx', G2.X(0)); BI.setAttribute('cy', G2.Y(b));
+        const ot = win(t, 6.0, 16.5, .6);
+        TRI.setAttribute('points', `${G2.X(0)},${G2.Y(b)} ${G2.X(1)},${G2.Y(b)} ${G2.X(1)},${G2.Y(b + m)}`); O(TRI, ot);
+        O(tri1, ot); tri1.style.left = G2.sx(.5) + 'px'; tri1.style.top = (G2.sy(b) + (m >= 0 ? 16 : -16)) + 'px';
+        O(triM, ot); triM.innerHTML = `<i>m</i> = ${fmt(m)}`; triM.style.left = (G2.sx(1) + 10) + 'px'; triM.style.top = (G2.sy(b + m / 2) - 12) + 'px';
+    };
+
+    // ================= scene 3: shift a parabola ==============================================
+    const S3 = scene(66, 97, 'Shifting a graph', 'Shift a parabola left and right', R`Inside the bracket: $x - 3$ moves the curve right $3$, &nbsp; $x + 4$ moves it left $4$.`);
+    const M3 = machine(S3, 'mC', 'left:48px;top:160px;width:560px;height:160px;', [
+        { key: 'F', top: 26, css: 'font-size:32px;', copies: { s: R`y = x^2`, f1: R`\textcolor{#FC6255}{y = (x}\textcolor{#FFFF00}{{}-3}\textcolor{#FC6255}{)^2}`, f2: R`\textcolor{#58C4DD}{y = (x}\textcolor{#FFFF00}{{}+4}\textcolor{#58C4DD}{)^2}` } },
+        { key: 'C', top: 100, css: 'font-size:28px;', copies: { c1s: R`(\htmlId{§a}{x} - 3)^2`, c1f: R`(\htmlId{§a}{3} - 3)^2`, c2s: R`(\htmlId{§a}{x} + 4)^2`, c2f: R`(\htmlId{§a}{-4} + 4)^2` } }], 'formula');
+    A(S3, M3.el, 1.5);
+    A(S3, E(M3.el, 'div', 'mlab', 'top:80px;', 'lowest point: the bracket is 0'), 8.5);
+    const G3 = graph(S3, 'gC', { left: 770, top: 150, w: 460, h: 400, x0: -7, x1: 6, y0: -2, y1: 10, xt: [-6, -5, -4, -3, -2, -1, 1, 2, 3, 4, 5], yt: [2, 4, 6, 8] });
+    A(S3, G3.el, 1.5);
+    const par = h => x => (x - h) ** 2;
+    const cur0 = svgAdd(G3.c, `<path fill="none" stroke="${COL.ink}" stroke-width="3"/>`);
+    const curA = svgAdd(G3.c, `<path fill="none" stroke="${COL.red}" stroke-width="3.5" style="opacity:0"/>`);
+    const curB = svgAdd(G3.c, `<path fill="none" stroke="${COL.blue}" stroke-width="3.5" style="opacity:0"/>`);
+    const v0 = svgAdd(G3.ov, `<circle cx="${G3.X(0)}" cy="${G3.Y(0)}" r="7" fill="${COL.hl}" style="opacity:0"/>`);
+    const vA = svgAdd(G3.ov, `<circle cy="${G3.Y(0)}" r="7" fill="${COL.hl}" style="opacity:0"/>`);
+    const vB = svgAdd(G3.ov, `<circle cy="${G3.Y(0)}" r="7" fill="${COL.hl}" style="opacity:0"/>`);
+    const arR = svgAdd(G3.ov, `<line y1="${G3.Y(-1.15)}" y2="${G3.Y(-1.15)}" x1="${G3.X(0)}" stroke="${COL.red}" stroke-width="3" marker-end="url(#gC-ah-red)" style="opacity:0"/>`);
+    const arL = svgAdd(G3.ov, `<line y1="${G3.Y(-1.15)}" y2="${G3.Y(-1.15)}" x1="${G3.X(0)}" stroke="${COL.blue}" stroke-width="3" marker-end="url(#gC-ah-blue)" style="opacity:0"/>`);
+    const labR = A(S3, E(S3.el, 'div', 'cc glab red', at(G3.sx(1.5), G3.sy(-1.65)), 'right 3'), 7.0, 15.0);
+    const labL = A(S3, E(S3.el, 'div', 'cc glab blue', at(G3.sx(-2), G3.sy(-1.65)), 'left 4'), 17.0);
+    const lA = A(S3, TX(S3.el, 'x = 3', 'cc glab hl', at(G3.sx(3), G3.sy(2.4))), 8.0);
+    const lB = A(S3, TX(S3.el, 'x = -4', 'cc glab hl', at(G3.sx(-4), G3.sy(2.4))), 18.3);
+    const capA = A(S3, E(S3.el, 'div', 'cap', at(48, 346), R`$x = 3$ makes $x - 3 = 0$, so the lowest point moves to $x = 3$.`), 12.4);
+    const capB = A(S3, E(S3.el, 'div', 'cap', at(48, 388), R`$x = -4$ makes $x + 4 = 0$, so the lowest point moves to $x = -4$.`), 22.4);
+    const sum3 = A(S3, E(S3.el, 'div', 'card', at(48, 452) + 'width:560px;height:104px;'), 25.0);
+    E(sum3, 'div', 'cap', 'left:20px;top:14px;opacity:1;font-size:22px;', R`<span class="red">$y = (x - 3)^2$</span>: the curve of $y = x^2$ moves right $3$.`);
+    E(sum3, 'div', 'cap', 'left:20px;top:56px;opacity:1;font-size:22px;', R`<span class="blue">$y = (x + 4)^2$</span>: the curve of $y = x^2$ moves left $4$.`);
+    const F3A = TX(S3.fly, '3', 'fly y'), F3B = TX(S3.fly, '-4', 'fly y');
+    const rcA = TX(S3.fly, '= 0', 'rc'), rcB = TX(S3.fly, '= 0', 'rc');
+    top_(S3);
+    S3.render = t => {
+        showCopies(M3, Object.assign(seqOp(t, [[-1, 'F:s'], [5.0, 'F:f1'], [15.0, 'F:f2']]), seqOp(t, [[8.5, 'C:c1s'], [10.5, 'C:c1f'], [15.0, 'C:c2s'], [20.5, 'C:c2f']])));
+        M3.el.style.boxShadow = 'none'; pulse(M3.el, t, 11.1); pulse(M3.el, t, 21.1);
+        cur0.setAttribute('d', partial(G3, par(0), -3.3, 3.3, seg(t, 2.0, 1.5))); O(cur0, 1 - .7 * seg(t, 6.0, .6));
+        const hA = 3 * seg(t, 6.0, 2.0), hB = -4 * seg(t, 15.8, 2.5);
+        curA.setAttribute('d', fpath(G3, par(hA), hA - 3.3, hA + 3.3)); O(curA, seg(t, 6.0, .3) - .72 * seg(t, 15.0, .6));
+        curB.setAttribute('d', fpath(G3, par(hB), hB - 3.3, hB + 3.3)); O(curB, seg(t, 15.0, .6));
+        O(v0, seg(t, 3.5, .5) - seg(t, 6.0, .3));
+        vA.setAttribute('cx', G3.X(hA)); O(vA, seg(t, 6.0, .3) - .6 * seg(t, 15.0, .6));
+        vB.setAttribute('cx', G3.X(hB)); O(vB, seg(t, 15.0, .6));
+        arR.setAttribute('x2', G3.X(hA)); O(arR, (hA > .15 ? 1 : 0) * (1 - seg(t, 15.0, .6)));
+        arL.setAttribute('x2', G3.X(hB)); O(arL, hB < -.15 ? 1 : 0);
+        flight(t, F3A, lA, M3.slot('C', 'c1f', 'a'), 9.0, -40); gl(lA, win(t, 8.6, 10.2));
+        flight(t, F3B, lB, M3.slot('C', 'c2f', 'a'), 19.0, -40); gl(lB, win(t, 18.6, 20.2));
+        emerge(t, rcA, 12.0, 12.9, { x: 680, y: 272 }, { x: G3.sx(3), y: G3.sy(0) }, 40, .6);
+        emerge(t, rcB, 22.0, 22.9, { x: 680, y: 272 }, { x: G3.sx(-4), y: G3.sy(0) }, 40, .6);
+    };
+
+    // ================= scenes 4 + 5: sequences =================================================
+    function seqScene(start, end, P) {
+        const S = scene(start, end, P.series, P.title, P.sub);
+        const CX = [100, 210, 320, 430, 540], TY = 214;
+        P.terms.forEach((v, j) => console.assert(P.val(j + 1) === v, 'term ' + (j + 1)));
+        const boxes = P.terms.map((v, j) => { const b = A(S, E(S.el, 'div', 'cc term', at(CX[j], TY)), 1.5 + .3 * j);
+            return { b, w: K(E(b, 'div'), String(v)), g: K(E(b, 'div', 'ok', 'opacity:0;'), String(v)) }; });
+        const labs = P.terms.map((v, j) => A(S, TX(S.el, `a_{${j + 1}}`, 'cc glab dim', at(CX[j], TY + 50)), 1.7 + .3 * j));
+        const ov = E(S.el, 'div', '', 'position:absolute;left:0;top:0;width:700px;height:320px;',
+            `<svg width="700" height="320" style="overflow:visible"><defs><marker id="${P.id}-ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="${COL.hl}"/></marker></defs></svg>`).firstChild;
+        const arcs = [0, 1, 2, 3].map(j => svgAdd(ov, `<path d="M${CX[j] + 14},${TY - 32} Q${(CX[j] + CX[j + 1]) / 2},${TY - 80} ${CX[j + 1] - 14},${TY - 32}" fill="none" stroke="${COL.hl}" stroke-width="2.5" marker-end="url(#${P.id}-ah)" style="opacity:0"/>`));
+        const arcL = [0, 1, 2, 3].map(j => A(S, E(S.el, 'div', 'cc glab hl', at((CX[j] + CX[j + 1]) / 2, TY - 74) + 'font-size:20px;', P.op), 3.9 + .25 * j));
+        const c0 = chip(S, 48, 292, 170, P.chips[0].label, [P.chips[0].val]), c1 = chip(S, 238, 292, 250, P.chips[1].label, [P.chips[1].val]);
+        A(S, c0.el, 5.0); A(S, c1.el, 5.0);
+        const M = machine(S, P.id + 'm', 'left:48px;top:376px;width:560px;height:96px;', [{ key: 'L', top: 30, css: 'font-size:30px;',
+            copies: Object.assign({ s: P.sym }, ...P.ns.map(n => ({ ['k' + n]: P.fill(n) }))) }], P.mlabel);
+        A(S, M.el, 7.5);
+        const Q = A(S, TX(S.el, R`a_n = \;?`, 'cc', at(330, 508) + 'font-size:32px;'), 32.5);
+        const MG = machine(S, P.id + 'g', 'left:48px;top:540px;width:560px;height:72px;', [{ key: 'G', top: 16, css: 'font-size:28px;', copies: { s: P.gs, k: P.gk } }]);
+        A(S, MG.el, 35.5);
+        const FIN = A(S, TX(S.el, P.fin, 'cc ok', at(330, 662) + 'font-size:30px;border:2px solid #83C167;border-radius:8px;padding:4px 18px;background:rgba(28,34,48,.6);'), 39.2);
+        const G = graph(S, P.id + 'G', { left: 800, top: 170, w: 400, h: 400, x0: 0, x1: 6, y0: 0, y1: P.y1, xt: [1, 2, 3, 4, 5], yt: P.yt, xl: 'n', yl: 'aₙ' });
+        A(S, G.el, 1.2);
+        P.terms.forEach((v, j) => A(S, svgAdd(G.ov, `<circle cx="${G.X(j + 1)}" cy="${G.Y(v)}" r="7" fill="${COL.ink}" style="opacity:0"/>`), 1.5 + .3 * j));
+        const cur = svgAdd(G.c, `<path fill="none" stroke="${COL.ok}" stroke-width="2.5" stroke-dasharray="8 7"/>`);
+        A(S, TX(S.el, P.fin, 'cc glab ok', at(P.flab[0], P.flab[1]) + 'font-size:20px;'), 40.5);
+        A(S, E(S.el, 'div', 'cap dim', at(800, 612) + 'font-size:18px;', P.gcap), 40.5);
+        const Fa = TX(S.fly, P.chips[0].val, 'fly y'), Fd = TX(S.fly, P.op.replace(/[+×]/, ''), 'fly y');
+        const FS = P.ns.map(n => [TX(S.fly, String(n), 'fly y', 'font-size:17px;padding:0 5px;'), TX(S.fly, String(n), 'fly y'), TX(S.fly, P.chips[0].val, 'fly'), TX(S.fly, P.chips[1].val, 'fly')]);
+        const RCS = P.ns.map(n => TX(S.fly, `a_{${n}} = ${P.val(n)}`, 'rc'));
+        const FG = [TX(S.fly, P.chips[0].val, 'fly'), TX(S.fly, P.chips[1].val, 'fly')];
+        top_(S);
+        const T = [8.5, 16.5, 24.5];
+        S.render = t => {
+            arcs.forEach((a, j) => drawLen(a, seg(t, 3.5 + .25 * j, .6)));
+            fly(Fa, boxes[0].b, c0.el, seg(t, 5.5, 1.35), -50, 1.05, 1); O(c0.v[0], seg(t, 6.85, .4));
+            fly(Fd, arcL[0], c1.el, seg(t, 6.0, 1.35), 50, 1.05, 1); O(c1.v[0], seg(t, 7.35, .4));
+            const seq = [[-1, 'L:s']]; T.forEach((t0, k) => seq.push([t0 + 2.9, 'L:k' + P.ns[k]], [t0 + 7.0, 'L:s']));
+            showCopies(M, seqOp(t, seq));
+            M.el.style.boxShadow = 'none'; MG.el.style.boxShadow = 'none';
+            boxes.forEach(bx => { O(bx.w, 1); O(bx.g, 0); });
+            P.ns.forEach((n, k) => { const t0 = T[k], j = n - 1, bx = boxes[j], name = 'k' + n;
+                gl(bx.b, win(t, t0, t0 + 7.4));
+                const land = seg(t, t0 + 6.9, .55); O(bx.w, (1 - .65 * seg(t, t0 + .2, .4)) * (1 - land)); O(bx.g, land);
+                flight(t, FS[k][0], labs[j], M.slot('L', name, 'n0'), t0 + .3, -40);
+                flight(t, FS[k][1], labs[j], M.slot('L', name, 'n'), t0 + .7, -40);
+                flight(t, FS[k][2], c0.el, M.slot('L', name, 'a'), t0 + 1.1, -40);
+                flight(t, FS[k][3], c1.el, M.slot('L', name, 'd'), t0 + 1.5, -40);
+                gl(labs[j], win(t, t0 + .1, t0 + 1.4)); gl(c0.el, win(t, t0 + .9, t0 + 2.2)); gl(c1.el, win(t, t0 + 1.3, t0 + 2.6));
+                pulse(M.el, t, t0 + 3.5);
+                emerge(t, RCS[k], t0 + 4.4, t0 + 5.3, { x: 690, y: 424 }, bx.b, 60, .75);
+            });
+            showCopies(MG, seqOp(t, [[-1, 'G:s'], [37.8, 'G:k']]));
+            flight(t, FG[0], c0.el, MG.slot('G', 'k', 'a'), 36.0, -40); flight(t, FG[1], c1.el, MG.slot('G', 'k', 'd'), 36.4, -40);
+            pulse(MG.el, t, 38.4);
+            cur.setAttribute('d', partial(G, P.curve, P.c0, P.c1, seg(t, 39.2, 1.5)));
+        };
+        return S;
+    }
+    const S4 = seqScene(97, 141, { id: 'ar', series: 'Arithmetic sequence', title: 'Arithmetic sequence: add the same number each time',
+        sub: R`$a_1$ = first term, &nbsp; $d$ = the number added each time, &nbsp; $n$ = position of the term`,
+        terms: [1, 3, 5, 7, 9], op: '+2', chips: [{ label: R`$a_1$ (first term)`, val: '1' }, { label: R`$d$ (added each time)`, val: '2' }],
+        mlabel: 'formula for term number n',
+        sym: R`a_{\htmlId{§n0}{n}} = \htmlId{§a}{a_1} + (\htmlId{§n}{n} - 1)\cdot\htmlId{§d}{d}`,
+        fill: n => R`a_{\htmlId{§n0}{${n}}} = \htmlId{§a}{1} + (\htmlId{§n}{${n}} - 1)\cdot\htmlId{§d}{2}`,
+        ns: [2, 3, 5], val: n => 1 + (n - 1) * 2,
+        gs: R`a_n = \htmlId{§a}{a_1} + (n - 1)\cdot\htmlId{§d}{d}`, gk: R`a_n = \htmlId{§a}{1} + (n - 1)\cdot\htmlId{§d}{2}`,
+        fin: R`a_n = 2n - 1`, y1: 11, yt: [2, 4, 6, 8, 10], curve: n => 2 * n - 1, c0: .5, c1: 5.9, flab: [905, 215],
+        gcap: 'The dots lie on a straight line.' });
+    const S5 = seqScene(141, 185, { id: 'ge', series: 'Geometric sequence', title: 'Geometric sequence: multiply by the same number each time',
+        sub: R`$a_1$ = first term, &nbsp; $r$ = the number multiplied each time, &nbsp; $n$ = position of the term`,
+        terms: [3, 6, 12, 24, 48], op: '×2', chips: [{ label: R`$a_1$ (first term)`, val: '3' }, { label: R`$r$ (multiplied each time)`, val: '2' }],
+        mlabel: 'formula for term number n',
+        sym: R`a_{\htmlId{§n0}{n}} = \htmlId{§a}{a_1}\cdot\htmlId{§d}{r}^{\htmlId{§n}{n} - 1}`,
+        fill: n => R`a_{\htmlId{§n0}{${n}}} = \htmlId{§a}{3}\cdot\htmlId{§d}{2}^{\htmlId{§n}{${n}} - 1}`,
+        ns: [2, 3, 5], val: n => 3 * 2 ** (n - 1),
+        gs: R`a_n = \htmlId{§a}{a_1}\cdot\htmlId{§d}{r}^{\,n - 1}`, gk: R`a_n = \htmlId{§a}{3}\cdot\htmlId{§d}{2}^{\,n - 1}`,
+        fin: R`a_n = 3\cdot 2^{\,n - 1}`, y1: 54, yt: [10, 20, 30, 40, 50], curve: n => 3 * 2 ** (n - 1), c0: .5, c1: 5.15, flab: [905, 215],
+        gcap: 'The dots lie on a curve that bends up.' });
+
+    // ================= scene 6: 1.7 long division ==============================================
+    // (x^2 + 3x + 5) / (x - 1): quotient x + 4, remainder 9 (checked here, numbers in the page come from this)
+    (() => { const p = [1, 3, 5], q = [p[0]]; q.push(p[1] + q[0]); const r = p[2] + q[1];
+        console.assert(q[0] === 1 && q[1] === 4 && r === 9, 'division'); })();
+    const S6 = scene(185, 262, '1.7 Rational functions', R`1.7 &nbsp;Divide $x^2 + 3x + 5$ by $x - 1$`, 'Long division: divide, multiply, subtract, bring down. Then the same again.', true);
+    const LAD = (s, x, y, cls) => TX(S6.el, s, 'cc lad ' + (cls || ''), at(x, y));
+    const c2 = 300, c1 = 400, c0 = 500, yQ = 172, yD = 240, y1 = 300, y2 = 362, y3 = 422, y4 = 484;
+    const DVx = A(S6, LAD('x', 160, yD), 1.5), DV1 = A(S6, LAD(R`-\,1`, 203, yD), 1.5);
+    A(S6, E(S6.el, 'div', 'cc dim', at(182, yD + 36) + 'font-size:14px;', 'divisor'), 1.8);
+    const D2 = A(S6, LAD('x^2', c2, yD), 2.1), D1 = A(S6, LAD(R`+\,3x`, c1, yD), 2.3), D0 = A(S6, LAD(R`+\,5`, c0, yD), 2.5);
+    const Q1 = LAD('x', c1, yQ), Q0 = LAD(R`+\,4`, c0, yQ);
+    const R1a = LAD('x^2', c2, y1), R1b = LAD(R`-\,x`, c1, y1), R1aF = LAD(R`-\,x^2`, c2, y1, 'red'), R1bF = LAD(R`+\,x`, c1, y1, 'red');
+    const R2a = LAD('4x', c1, y2), R2b = LAD(R`+\,5`, c0, y2);
+    const R3a = LAD('4x', c1, y3), R3b = LAD(R`-\,4`, c0, y3), R3aF = LAD(R`-\,4x`, c1, y3, 'red'), R3bF = LAD(R`+\,4`, c0, y3, 'red');
+    const R4 = LAD('9', c0, y4);
+    const lsv = E(S6.el, 'div', '', 'position:absolute;left:0;top:0;width:760px;height:720px;', '<svg width="760" height="720" style="overflow:visible"></svg>').firstChild;
+    const BR = svgAdd(lsv, `<path d="M580,206 L250,206 Q268,240 250,274" fill="none" stroke="${COL.ink}" stroke-width="2.5" style="opacity:0"/>`);
+    const RU1 = svgAdd(lsv, `<line x1="258" x2="448" y1="330" y2="330" stroke="${COL.ink}" stroke-width="2" style="opacity:0"/>`);
+    const RU2 = svgAdd(lsv, `<line x1="358" x2="548" y1="452" y2="452" stroke="${COL.ink}" stroke-width="2" style="opacity:0"/>`);
+    const STK = new Map();
+    S6.post = () => { for (const el of [D2, R1aF, R2a, R3aF]) { const b = box(el);
+        STK.set(el, svgAdd(lsv, `<line x1="${b.x + 4}" y1="${b.y + b.h - 8}" x2="${b.x + b.w - 4}" y2="${b.y + 8}" stroke="${COL.red}" stroke-width="2.5" style="opacity:0"/>`)); } };
+    const MOV = ['Divide the first terms', 'Multiply back', 'Subtract: change the signs, then add', 'Bring down the next term'];
+    const MV = MOV.map((s, i) => ({ a: A(S6, E(S6.el, 'div', '', at(790, 140 + 36 * i) + 'position:absolute;font-size:20px;color:#9AA0A6;white-space:nowrap;', `${i + 1}. ${s}`), 2.8, 55.0),
+        b: E(S6.el, 'div', '', at(790, 140 + 36 * i) + 'position:absolute;font-size:20px;color:#FFFF00;white-space:nowrap;opacity:0;', `${i + 1}. ${s}`) }));
+    const W = machine(S6, 'mW', 'left:780px;top:296px;width:440px;height:130px;', [
+        { key: 'D', top: 46, css: 'font-size:30px;', copies: { D1s: R`\htmlId{§a}{\phantom{x^2}}\div\htmlId{§b}{\phantom{x}}`, D1f: R`\htmlId{§a}{x^2}\div\htmlId{§b}{x}`,
+            D2s: R`\htmlId{§a}{\phantom{4x}}\div\htmlId{§b}{\phantom{x}}`, D2f: R`\htmlId{§a}{4x}\div\htmlId{§b}{x}` } },
+        { key: 'M', top: 46, css: 'font-size:30px;', copies: { M1s: R`\htmlId{§a}{\phantom{x}}\cdot(x - 1)`, M1f: R`\htmlId{§a}{x}\cdot(x - 1)`,
+            M2s: R`\htmlId{§a}{\phantom{4}}\cdot(x - 1)`, M2f: R`\htmlId{§a}{4}\cdot(x - 1)` } },
+        { key: 'X', top: 48, css: 'font-size:27px;', copies: { x1a: R`x^2 - x\ \ \to\ \ -x^2 + x`, x1b: R`x^2 - x^2 = 0`, x1c: R`3x + x = 4x`, x1d: R`\text{bring down } {+5}`,
+            x2a: R`4x - 4\ \ \to\ \ -4x + 4`, x2b: R`4x - 4x = 0`, x2c: R`5 + 4 = 9`, x2d: R`\text{nothing left to bring down}` } }], 'working');
+    A(S6, W.el, 3.2, 55.0);
+    const RD = [{ t0: 4.0, lead: D2, top: D1, a: R1a, b: R1b, aF: R1aF, bF: R1bF, q: Q1, ru: RU1, nw: R2a, rowC: { x: 350, y: y1 },
+                  fl: ['x^2', 'x', 'x', '3x', 'x'], rD: 'x', rM: 'x^2 - x' },
+                { t0: 29.0, lead: R2a, top: R2b, a: R3a, b: R3b, aF: R3aF, bF: R3bF, q: Q0, ru: RU2, nw: R4, rowC: { x: 450, y: y3 },
+                  fl: ['4x', 'x', '4', '5', '4'], rD: '4', rM: '4x - 4' }];
+    RD.forEach(r => { r.F = r.fl.map((s, i) => TX(S6.fly, s, 'fly' + (i === 4 ? ' r' : ' y'))); r.FB = TX(S6.fly, '+5', 'fly y');
+        r.RCD = TX(S6.fly, r.rD, 'rc'); r.RCM = TX(S6.fly, r.rM, 'rc'); });
+    const EP = { x: 1000, y: 474 };
+    // phase D: name the parts, write the result, check it
+    const qLab = A(S6, E(S6.el, 'div', 'cap blue', at(552, yQ - 15), R`quotient $S(x) = x + 4$`), 55.0);
+    const rLab = A(S6, E(S6.el, 'div', 'cap hl', at(548, y4 - 15), R`remainder $R(x) = 9$`), 55.6);
+    const MR = machine(S6, 'mR', 'left:48px;top:548px;width:660px;height:132px;', [{ key: 'Q', top: 24, css: 'font-size:28px;', copies: {
+        s: R`\dfrac{x^2 + 3x + 5}{x - 1} = \htmlId{§S}{S(x)} + \dfrac{\htmlId{§R}{R(x)}}{x - 1}`,
+        k: R`\dfrac{x^2 + 3x + 5}{x - 1} = \htmlId{§S}{(x + 4)} + \dfrac{\htmlId{§R}{9}}{x - 1}` } }], 'result', COL.ok);
+    A(S6, MR.el, 56.0);
+    const FS6 = TX(S6.fly, 'x + 4', 'fly b'), FR6 = TX(S6.fly, '9', 'fly y');
+    const CK = A(S6, E(S6.el, 'div', 'card', at(800, 136) + 'width:420px;height:250px;'), 59.5, 65.5);
+    const ck = [[R`\text{Check: quotient} \times \text{divisor} + \text{remainder}`, 166, 59.5, 'dim', 17], [R`(x - 1)(x + 4) + 9`, 222, 60.0, '', 28],
+        [R`= x^2 + 3x - 4 + 9`, 280, 61.5, '', 28], [R`= x^2 + 3x + 5`, 338, 63.0, 'ok', 28]]
+        .map(([s, y, a, cls, fs]) => A(S6, TX(S6.el, s, 'cc ' + cls, at(1010, y) + `font-size:${fs}px;`), a, 65.5));
+    // phase E: the graph
+    const f6 = x => x + 4 + 9 / (x - 1);
+    const G6 = graph(S6, 'gF', { left: 800, top: 130, w: 420, h: 380, x0: -6, x1: 8, y0: -8, y1: 18, xt: [-4, -2, 2, 4, 6], yt: [-5, 5, 10, 15] });
+    A(S6, G6.el, 66.0);
+    const AS = svgAdd(G6.c, `<line x1="${G6.X(1)}" x2="${G6.X(1)}" y1="0" y2="${G6.o.h}" stroke="${COL.dim}" stroke-width="2" stroke-dasharray="6 6" style="opacity:0"/>`);
+    const SL = svgAdd(G6.c, `<path fill="none" stroke="${COL.blue}" stroke-width="2.5" stroke-dasharray="9 7"/>`);
+    const BL = svgAdd(G6.c, `<path fill="none" stroke="${COL.red}" stroke-width="3.5"/>`), BRt = svgAdd(G6.c, `<path fill="none" stroke="${COL.red}" stroke-width="3.5"/>`);
+    A(S6, TX(S6.el, 'x = 1', 'cc glab dim', at(G6.sx(1) + 34, G6.sy(-6.5))), 66.8);
+    A(S6, TX(S6.el, 'y = x + 4', 'cc glab blue', at(G6.sx(6.1), G6.sy(7.4))), 68.2);
+    A(S6, TX(S6.el, 'f(x)', 'cc glab red', at(G6.sx(3.2), G6.sy(15.6))), 70.5);
+    A(S6, E(S6.el, 'div', 'cap', at(800, 540) + 'font-size:19px;line-height:34px;', R`Far from $x = 1$, $\frac{9}{x - 1}$ is close to $0$,<br>so $f(x) \approx x + 4$: the curve hugs the line.`), 72.0);
+    top_(S6);
+    S6.render = t => {
+        drawLen(BR, seg(t, 1.8, .7));
+        const wseq = [[-1, 'none']], mseq = [[-1, 'none']];
+        RD.forEach((r, i) => { const t0 = r.t0, n = i + 1;
+            wseq.push([t0, `D:D${n}s`], [t0 + 2.5, `D:D${n}f`], [t0 + 7, `M:M${n}s`], [t0 + 9, `M:M${n}f`], [t0 + 14, `X:x${n}a`], [t0 + 16.3, `X:x${n}b`], [t0 + 18, `X:x${n}c`], [t0 + 21.5, `X:x${n}d`]);
+            mseq.push([t0, 0], [t0 + 7, 1], [t0 + 14, 2], [t0 + 21.5, 3], [t0 + 25, 'none']); });
+        wseq.push([55.0, 'none']);
+        showCopies(W, seqOp(t, wseq));
+        const om = seqOp(t, mseq), fadeOut = 1 - seg(t, 55.0, .6);
+        MV.forEach((m, i) => O(m.b, (om[i] || 0) * fadeOut));
+        W.el.style.boxShadow = 'none'; MR.el.style.boxShadow = 'none';
+        RD.forEach((r, i) => { const t0 = r.t0, n = i + 1;
+            // 1 divide
+            gl(r.lead, win(t, t0, t0 + 6.5)); gl(DVx, win(t, t0, t0 + 6.5));
+            flight(t, r.F[0], r.lead, W.slot('D', `D${n}f`, 'a'), t0 + .6, -50);
+            flight(t, r.F[1], DVx, W.slot('D', `D${n}f`, 'b'), t0 + 1.0, -50);
+            pulse(W.el, t, t0 + 3.1);
+            emerge(t, r.RCD, t0 + 4.0, t0 + 4.9, EP, r.q, 80, .8);
+            O(r.q, seg(t, t0 + 6.5, .4));
+            // 2 multiply
+            gl(r.q, win(t, t0 + 7, t0 + 12.6)); gl(DVx, win(t, t0 + 7, t0 + 12.6)); gl(DV1, win(t, t0 + 7, t0 + 12.6));
+            flight(t, r.F[2], r.q, W.slot('M', `M${n}f`, 'a'), t0 + 7.6, -50);
+            pulse(W.el, t, t0 + 9.6);
+            emerge(t, r.RCM, t0 + 10.5, t0 + 11.4, EP, r.rowC, 60, .9);
+            const flip = seg(t, t0 + 14.6, .55), shown = seg(t, t0 + 13.0, .4);
+            O(r.a, shown * (1 - flip)); O(r.b, shown * (1 - flip)); O(r.aF, flip); O(r.bF, flip);
+            // 3 subtract: change signs, line, cancel, add
+            drawLen(r.ru, seg(t, t0 + 15.5, .6));
+            gl(r.lead, win(t, t0 + 16.3, t0 + 17.8)); gl(r.aF, win(t, t0 + 16.3, t0 + 17.8));
+            const st = seg(t, t0 + 16.9, .5); [r.lead, r.aF].forEach(e => { const L = STK.get(e); if (L) { L.setAttribute('stroke-dasharray', '80'); L.setAttribute('stroke-dashoffset', 80 * (1 - st)); O(L, st > 0 ? 1 : 0); } });
+            gl(r.top, win(t, t0 + 18.0, t0 + 20.4)); gl(r.bF, win(t, t0 + 18.0, t0 + 20.4));
+            flight(t, r.F[3], r.top, r.nw, t0 + 18.5, -30); flight(t, r.F[4], r.bF, r.nw, t0 + 18.8, 30);
+            O(r.nw, seg(t, t0 + 20.1, .4)); gl(r.nw, win(t, t0 + 20.1, t0 + 21.3));
+        });
+        // 4 bring down (round 1 only); round 2 boxes the remainder
+        gl(D0, win(t, 25.5, 27.6)); flight(t, RD[0].FB, D0, R2b, 26.0, 0); O(R2b, seg(t, 27.35, .4));
+        gl(R4, .9 * seg(t, 51.5, .6));
+        // phase D
+        Q1.style.color = Q0.style.color = t >= 55.0 ? COL.blue : '';
+        showCopies(MR, seqOp(t, [[-1, 'Q:s'], [58.3, 'Q:k']]));
+        flight(t, FS6, { x: 450, y: yQ }, MR.slot('Q', 'k', 'S'), 56.6, -60); flight(t, FR6, R4, MR.slot('Q', 'k', 'R'), 57.0, -40);
+        pulse(MR.el, t, 58.9);
+        // phase E
+        O(AS, seg(t, 66.5, .8));
+        SL.setAttribute('d', partial(G6, x => x + 4, -6, 8, seg(t, 67.2, 1.5)));
+        const pc = seg(t, 69.0, 2.5);
+        BL.setAttribute('d', partial(G6, f6, -6, .72, pc)); BRt.setAttribute('d', partial(G6, f6, 8, 1.3, pc));
+    };
+
+    // ================= assembly + deterministic timeline ======================================
+    const TOTAL = 262;
+    renderMathInElement(stage, { delimiters: [{ left: '$', right: '$', display: false }], ...KOPT });
+    function renderAt(t) {
+        for (const sc of SCENES) {
+            const vis = t >= sc.start && (sc.hold || t <= sc.end);
+            if (!vis) { sc.el.style.opacity = 0; sc.el.style.visibility = 'hidden'; continue; }
+            sc.el.style.visibility = 'visible';
+            const lt = t - sc.start, fin = clamp01(lt / FADE), fout = sc.hold ? 1 : clamp01((sc.end - t) / FADE);
+            sc.el.style.opacity = ease(Math.min(fin, fout));
+            for (const [el, a, b] of sc.appear) O(el, seg(lt, a, FADE) - (b != null ? seg(lt, b, FADE) : 0));
+            sc.render(lt);
+        }
+        glowFlush();
+    }
+    window.renderAt = renderAt; window.TOTAL = TOTAL;
+
+    function fit() { const s = Math.min(innerWidth / 1280, innerHeight / 720); SC = s;
+        stage.style.transform = `scale(${s})`; stage.style.left = (innerWidth - 1280 * s) / 2 + 'px'; stage.style.top = (innerHeight - 720 * s) / 2 + 'px'; }
+    addEventListener('resize', () => { fit(); CM.clear(); }); fit();
+
+    void document.body.offsetHeight;
+    Promise.all(['30px KaTeX_Main', 'italic 30px KaTeX_Math', '30px KaTeX_Size1', '30px KaTeX_Size2'].map(f => document.fonts.load(f))).then(() => document.fonts.ready).then(() => {
+        MACHINES.forEach(m => m.lines.forEach(L => equalise(`S-${m.mid}-${L.key}-`)));
+        SCENES.forEach(s => s.post());
+        renderAt(0); window.__ready = true;
+        if (location.hash === '#manual') return;
+        let t0 = performance.now();
+        const tick = now => { renderAt(Math.min(TOTAL, (now - t0) / 1000)); requestAnimationFrame(tick); };
+        requestAnimationFrame(tick);
+        addEventListener('click', () => { t0 = performance.now(); });
+    });
+</script>
+</body>
+</html>
