@@ -40,13 +40,19 @@ Chapter 9 works with number patterns.
 
 **Examples:**
 
-- **a)** $3, 7, 11, 15, \ldots$
+**a)** $3, 7, 11, 15, \ldots$
 
-- **b)** $20, 17, 14, 11, \ldots$
+---
 
-- **c)** $5, 12, 19, 26, \ldots$
+**b)** $20, 17, 14, 11, \ldots$
 
-- **d)** $-6, -2, 2, 6, \ldots$
+---
+
+**c)** $5, 12, 19, 26, \ldots$
+
+---
+
+**d)** $-6, -2, 2, 6, \ldots$
 
 <details>
 <summary><b>Working</b></summary>
@@ -100,13 +106,19 @@ $$
 
 **Examples:**
 
-- **a)** $2, 6, 18, \ldots$
+**a)** $2, 6, 18, \ldots$
 
-- **b)** $64, 32, 16, \ldots$
+---
 
-- **c)** $1, 10, 100, \ldots$
+**b)** $64, 32, 16, \ldots$
 
-- **d)** $5, 10, 20, \ldots$
+---
+
+**c)** $1, 10, 100, \ldots$
+
+---
+
+**d)** $5, 10, 20, \ldots$
 
 <details>
 <summary><b>Working</b></summary>
@@ -149,13 +161,19 @@ Not 25: the gaps are 5, then 10, so it is not $+5$.
 
 **Examples:**
 
-- **a)** $4, 9, 14, 19, \ldots$
+**a)** $4, 9, 14, 19, \ldots$
 
-- **b)** $30, 26, 22, 18, \ldots$
+---
 
-- **c)** $1, 3, 5, 7, \ldots$
+**b)** $30, 26, 22, 18, \ldots$
 
-- **d)** $-5, -2, 1, 4, \ldots$
+---
+
+**c)** $1, 3, 5, 7, \ldots$
+
+---
+
+**d)** $-5, -2, 1, 4, \ldots$
 
 <details>
 <summary><b>Working</b></summary>
@@ -193,13 +211,19 @@ $$
 
 **Examples:**
 
-- **a)** $7, \ \square, \ 15, \ 19$
+**a)** $7, \ \square, \ 15, \ 19$
 
-- **b)** $3, \ \square, \ \square, \ 12$
+---
 
-- **c)** $50, \ 44, \ \square, \ 32$
+**b)** $3, \ \square, \ \square, \ 12$
 
-- **d)** $\square, \ 9, \ 14, \ 19$
+---
+
+**c)** $50, \ 44, \ \square, \ 32$
+
+---
+
+**d)** $\square, \ 9, \ 14, \ 19$
 
 <details>
 <summary><b>Working</b></summary>
@@ -239,13 +263,19 @@ $$
 
 **Examples:**
 
-- **a)** $3n + 2$
+**a)** $3n + 2$
 
-- **b)** $2n - 1$
+---
 
-- **c)** $4n + 3$
+**b)** $2n - 1$
 
-- **d)** $10 - n$
+---
+
+**c)** $4n + 3$
+
+---
+
+**d)** $10 - n$
 
 <details>
 <summary><b>Working</b></summary>
@@ -291,13 +321,19 @@ Terms: $\boxed{9, 8, 7, 6}$
 
 **Examples:**
 
-- **a)** 10th term of $3n + 2$
+**a)** 10th term of $3n + 2$
 
-- **b)** 20th term of $5n - 4$
+---
 
-- **c)** 50th term of $2n + 7$
+**b)** 20th term of $5n - 4$
 
-- **d)** 10th term of $100 - 3n$
+---
+
+**c)** 50th term of $2n + 7$
+
+---
+
+**d)** 10th term of $100 - 3n$
 
 <details>
 <summary><b>Working</b></summary>
@@ -341,48 +377,50 @@ For a sequence that adds the same $d$ each time:
 
 **Examples:**
 
-- **a)** $5, 8, 11, 14, \ldots$
+**a)** $5, 8, 11, 14, \ldots$
 
-- **b)** $4, 6, 8, 10, \ldots$
+---
 
-- **c)** $7, 12, 17, 22, \ldots$
+**b)** $4, 6, 8, 10, \ldots$
 
-- **d)** $1, 5, 9, 13, \ldots$
+---
+
+**c)** $7, 12, 17, 22, \ldots$
+
+---
+
+**d)** $1, 5, 9, 13, \ldots$
 
 <details>
 <summary><b>Working</b></summary>
 
-**a)**
+**a)** $d = 3$, so start with $3n$.
 
-- $d = 3$, so start with $3n$.
-- At $n = 1$ that gives 3, but the first term is 5:
+At $n = 1$ that gives 3, but the first term is 5:
 
 $$
 5 - 3 = 2
 $$ Rule: $\boxed{3n + 2}$
 
-**b)**
+**b)** $d = 2$, so start with $2n$.
 
-- $d = 2$, so start with $2n$.
-- At $n = 1$ that gives 2, but the first term is 4:
+At $n = 1$ that gives 2, but the first term is 4:
 
 $$
 4 - 2 = 2
 $$ Rule: $\boxed{2n + 2}$
 
-**c)**
+**c)** $d = 5$, so start with $5n$.
 
-- $d = 5$, so start with $5n$.
-- At $n = 1$ that gives 5, but the first term is 7:
+At $n = 1$ that gives 5, but the first term is 7:
 
 $$
 7 - 5 = 2
 $$ Rule: $\boxed{5n + 2}$
 
-**d)**
+**d)** $d = 4$, so start with $4n$.
 
-- $d = 4$, so start with $4n$.
-- At $n = 1$ that gives 4, but the first term is 1:
+At $n = 1$ that gives 4, but the first term is 1:
 
 $$
 1 - 4 = -3
@@ -397,13 +435,19 @@ $$ Rule: $\boxed{4n - 3}$
 
 **Examples:**
 
-- **a)** Which term of $3n + 2$ is 47?
+**a)** Which term of $3n + 2$ is 47?
 
-- **b)** Which term of $2n + 1$ is 41?
+---
 
-- **c)** Which term of $5n - 3$ is 72?
+**b)** Which term of $2n + 1$ is 41?
 
-- **d)** Which term of $4n + 4$ is 60?
+---
+
+**c)** Which term of $5n - 3$ is 72?
+
+---
+
+**d)** Which term of $4n + 4$ is 60?
 
 <details>
 <summary><b>Working</b></summary>
@@ -447,24 +491,32 @@ Count each pattern, then treat the counts as a sequence:
 
 **Examples:**
 
-- **a)** Squares in a row: 4, 7, 10 sticks. The rule?
+**a)** Squares in a row: 4, 7, 10 sticks.
 
-- **b)** How many sticks in pattern 10?
+The rule?
 
-- **c)** How many sticks in pattern 20?
+---
 
-- **d)** Which pattern uses 46 sticks?
+**b)** How many sticks in pattern 10?
+
+---
+
+**c)** How many sticks in pattern 20?
+
+---
+
+**d)** Which pattern uses 46 sticks?
 
 ![Patterns 1, 2 and 3 of squares in a row made of matchsticks: 4, 7 and 10 sticks.](media/ch9-matchstick-squares.svg)
 
 <details>
 <summary><b>Working</b></summary>
 
-**a)**
+**a)** Each square adds 3 sticks, so start with $3n$.
 
-- Each square adds 3 sticks, so start with $3n$.
-- Pattern 1 has 4: $4 - 3 = 1$.
-- Rule: $\boxed{3n + 1}$
+Pattern 1 has 4: $4 - 3 = 1$.
+
+Rule: $\boxed{3n + 1}$
 
 **b)**
 
