@@ -25,10 +25,19 @@ author: Wei-Che Hung
 
 **Worked example:** calculate without a calculator.
 
-- **(a)** $13^2$
-- **(b)** $\sqrt{225}$
-- **(c)** $7^2+9^2$
-- **(d)** $\sqrt{144}+\sqrt{81}$
+**a)** $13^2$
+
+---
+
+**b)** $\sqrt{225}$
+
+---
+
+**c)** $7^2+9^2$
+
+---
+
+**d)** $\sqrt{144}+\sqrt{81}$
 
 - **Your turn:** Calculate each part without a calculator.
 - Show your working on paper.

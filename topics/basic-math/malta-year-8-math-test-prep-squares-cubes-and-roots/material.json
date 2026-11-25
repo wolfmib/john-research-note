@@ -9,7 +9,7 @@
  "questions": [
   {
    "title": "Style 1 · Squares and square roots",
-   "prompt": "**How it works**\n\n- A square uses two copies of the number, not multiplication by 2.\n- The square-root symbol asks for the **non-negative** number whose square gives the value.\n- Calculate each square or root before adding.\n\n**Worked example:** calculate without a calculator.\n\n- **(a)** \\(13^2\\)\n- **(b)** \\(\\sqrt{225}\\)\n- **(c)** \\(7^2+9^2\\)\n- **(d)** \\(\\sqrt{144}+\\sqrt{81}\\)",
+   "prompt": "**How it works**\n\n- A square uses two copies of the number, not multiplication by 2.\n- The square-root symbol asks for the **non-negative** number whose square gives the value.\n- Calculate each square or root before adding.\n\n**Worked example:** calculate without a calculator.\n\n**a)** \\(13^2\\)\n\n---\n\n**b)** \\(\\sqrt{225}\\)\n\n---\n\n**c)** \\(7^2+9^2\\)\n\n---\n\n**d)** \\(\\sqrt{144}+\\sqrt{81}\\)",
    "steps": [
     "**(a) Multiply two copies.**\n\n\\[\n\\begin{aligned}\n13^2&=13\\times13 \\\\\n&=\\boxed{169}\n\\end{aligned}\n\\]",
     "**(b) Find the number that squares to 225.**\n\n\\[\n15\\times15=225\n\\]\n\n\\[\n\\sqrt{225}=\\boxed{15}\n\\]",
