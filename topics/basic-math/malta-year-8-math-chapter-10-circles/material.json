@@ -14,7 +14,7 @@
   {
    "group": "10.1 Parts of a Circle",
    "title": "Radius and diameter",
-   "prompt": "- The **radius** \\(r\\) goes from the centre to the edge.\n- The **diameter** \\(d\\) goes right across, through the centre: two radii.\n\n\\[\\begin{aligned} d &= 2r \\\\ r &= d\\div2 \\end{aligned}\\]\n\n**Examples:**\n\n- **a)** radius 4 cm: find the diameter\n\n- **b)** radius 9 m: find the diameter\n\n- **c)** diameter 18 cm: find the radius\n\n- **d)** diameter 50 cm: find the radius",
+   "prompt": "- The **radius** \\(r\\) goes from the centre to the edge.\n- The **diameter** \\(d\\) goes right across, through the centre: two radii.\n\n\\[\\begin{aligned} d &= 2r \\\\ r &= d\\div2 \\end{aligned}\\]\n\n**Examples:**\n\n**a)** radius 4 cm: find the diameter\n\n---\n\n**b)** radius 9 m: find the diameter\n\n---\n\n**c)** diameter 18 cm: find the radius\n\n---\n\n**d)** diameter 50 cm: find the radius",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} d &= 2\\times4 \\\\ &= \\boxed{8 \\text{ cm}} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} d &= 2\\times9 \\\\ &= \\boxed{18 \\text{ m}} \\end{aligned}\\]",
@@ -27,7 +27,7 @@
   {
    "group": "10.1 Parts of a Circle",
    "title": "Name the part",
-   "prompt": "The parts of a circle:\n\n- **centre**: the middle point\n- **circumference**: the distance all the way round\n- **chord**: a straight line from edge to edge that does **not** go through the centre\n- **arc**: a piece of the curved edge\n- **sector**: a slice, like a pizza slice (two radii and an arc)\n- **tangent**: a straight line outside that touches the circle at **one** point\n\n**Examples:**\n\n- **a)** a straight line across the circle that misses the centre\n\n- **b)** the shape of one pizza slice\n\n- **c)** a straight line that just touches the circle once\n\n- **d)** a piece of the curved edge",
+   "prompt": "The parts of a circle:\n\n- **centre**: the middle point\n- **circumference**: the distance all the way round\n- **chord**: a straight line from edge to edge that does **not** go through the centre\n- **arc**: a piece of the curved edge\n- **sector**: a slice, like a pizza slice (two radii and an arc)\n- **tangent**: a straight line outside that touches the circle at **one** point\n\n**Examples:**\n\n**a)** a straight line across the circle that misses the centre\n\n---\n\n**b)** the shape of one pizza slice\n\n---\n\n**c)** a straight line that just touches the circle once\n\n---\n\n**d)** a piece of the curved edge",
    "steps": [
     "**a)** Edge to edge, not through the centre:\n\n\\[\\boxed{\\text{chord}}\\]",
     "**b)** Two radii and an arc:\n\n\\[\\boxed{\\text{sector}}\\]",
@@ -40,7 +40,7 @@
   {
    "group": "10.2 Circumference",
    "title": "Circumference from the diameter",
-   "prompt": "- Roll a circle out flat: it is a bit more than 3 diameters long.\n- That number is \\(\\pi \\approx 3.14\\).\n\n\\[C = \\pi d\\]\n\n**Examples:**\n\n- **a)** diameter 10 cm\n\n- **b)** diameter 5 cm\n\n- **c)** diameter 8 m\n\n- **d)** diameter 100 cm",
+   "prompt": "- Roll a circle out flat: it is a bit more than 3 diameters long.\n- That number is \\(\\pi \\approx 3.14\\).\n\n\\[C = \\pi d\\]\n\n**Examples:**\n\n**a)** diameter 10 cm\n\n---\n\n**b)** diameter 5 cm\n\n---\n\n**c)** diameter 8 m\n\n---\n\n**d)** diameter 100 cm",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} C &= 3.14\\times10 \\\\ &= \\boxed{31.4 \\text{ cm}} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} C &= 3.14\\times5 \\\\ &= \\boxed{15.7 \\text{ cm}} \\end{aligned}\\]",
@@ -53,7 +53,7 @@
   {
    "group": "10.2 Circumference",
    "title": "Circumference from the radius",
-   "prompt": "Double the radius first to get the diameter, then times \\(3.14\\).\n\n\\[C = 2\\pi r\\]\n\n**Examples:**\n\n- **a)** radius 5 cm\n\n- **b)** radius 3 cm\n\n- **c)** radius 10 m\n\n- **d)** radius 1 m",
+   "prompt": "Double the radius first to get the diameter, then times \\(3.14\\).\n\n\\[C = 2\\pi r\\]\n\n**Examples:**\n\n**a)** radius 5 cm\n\n---\n\n**b)** radius 3 cm\n\n---\n\n**c)** radius 10 m\n\n---\n\n**d)** radius 1 m",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} d &= 10 \\\\ C &= 3.14\\times10 \\\\ &= \\boxed{31.4 \\text{ cm}} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} d &= 6 \\\\ C &= 3.14\\times6 \\\\ &= \\boxed{18.84 \\text{ cm}} \\end{aligned}\\]",
@@ -64,7 +64,7 @@
   {
    "group": "10.3 Area",
    "title": "Area from the radius",
-   "prompt": "- \\(r^2\\) means \\(r\\times r\\).\n- The area is about 3.14 squares of side \\(r\\).\n\n\\[A = \\pi r^2\\]\n\n**Examples:**\n\n- **a)** radius 10 cm\n\n- **b)** radius 5 cm\n\n- **c)** radius 4 m\n\n- **d)** radius 3 cm",
+   "prompt": "- \\(r^2\\) means \\(r\\times r\\).\n- The area is about 3.14 squares of side \\(r\\).\n\n\\[A = \\pi r^2\\]\n\n**Examples:**\n\n**a)** radius 10 cm\n\n---\n\n**b)** radius 5 cm\n\n---\n\n**c)** radius 4 m\n\n---\n\n**d)** radius 3 cm",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} r^2 &= 10\\times10 \\\\ &= 100 \\\\ A &= 3.14\\times100 \\\\ &= \\boxed{314 \\text{ cm}^2} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} r^2 &= 5\\times5 \\\\ &= 25 \\\\ A &= 3.14\\times25 \\\\ &= \\boxed{78.5 \\text{ cm}^2} \\end{aligned}\\]",
@@ -77,7 +77,7 @@
   {
    "group": "10.3 Area",
    "title": "Area from the diameter: halve first",
-   "prompt": "- The area formula uses the **radius**.\n- Given the diameter, halve it, then use \\(A = \\pi r^2\\).\n\n**Examples:**\n\n- **a)** diameter 10 cm\n\n- **b)** diameter 6 cm\n\n- **c)** diameter 20 m\n\n- **d)** diameter 8 cm",
+   "prompt": "- The area formula uses the **radius**.\n- Given the diameter, halve it, then use \\(A = \\pi r^2\\).\n\n**Examples:**\n\n**a)** diameter 10 cm\n\n---\n\n**b)** diameter 6 cm\n\n---\n\n**c)** diameter 20 m\n\n---\n\n**d)** diameter 8 cm",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} r &= 5 \\\\ A &= 3.14\\times25 \\\\ &= \\boxed{78.5 \\text{ cm}^2} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} r &= 3 \\\\ A &= 3.14\\times9 \\\\ &= \\boxed{28.26 \\text{ cm}^2} \\end{aligned}\\]",
@@ -90,7 +90,7 @@
   {
    "group": "10.4 Semicircles and Real Life",
    "title": "Semicircles and quarter circles",
-   "prompt": "A **semicircle** is half a circle; a **quarter circle** is a quarter.\n\n- area: half (or a quarter) of \\(\\pi r^2\\)\n- perimeter of a semicircle: half of \\(\\pi d\\), **plus** the straight edge \\(d\\)\n\n**Examples:**\n\n- **a)** semicircle, radius 10 cm: area\n\n- **b)** semicircle, diameter 10 cm: perimeter\n\n- **c)** quarter circle, radius 2 m: area\n\n- **d)** semicircle, radius 4 cm: area",
+   "prompt": "A **semicircle** is half a circle; a **quarter circle** is a quarter.\n\n- area: half (or a quarter) of \\(\\pi r^2\\)\n- perimeter of a semicircle: half of \\(\\pi d\\), **plus** the straight edge \\(d\\)\n\n**Examples:**\n\n**a)** semicircle, radius 10 cm: area\n\n---\n\n**b)** semicircle, diameter 10 cm: perimeter\n\n---\n\n**c)** quarter circle, radius 2 m: area\n\n---\n\n**d)** semicircle, radius 4 cm: area",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} \\pi r^2 &= 3.14\\times100 \\\\ &= 314 \\\\ 314\\div2 &= \\boxed{157 \\text{ cm}^2} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} \\pi d &= 31.4 \\\\ 31.4\\div2 &= 15.7 \\\\ 15.7 + 10 &= \\boxed{25.7 \\text{ cm}} \\end{aligned}\\]",
@@ -103,7 +103,7 @@
   {
    "group": "10.4 Semicircles and Real Life",
    "title": "Round or cover? Pick the formula",
-   "prompt": "**Distance round** (a fence, a ribbon, a wheel turning once): circumference \\(C = \\pi d\\).\n\n**Space inside** (cloth, paint, grass, pizza): area \\(A = \\pi r^2\\).\n\n**Examples:**\n\n- **a)** a wheel of diameter 0.5 m turns once: how far does it go?\n\n- **b)** a fence round a round fountain of radius 3 m\n\n- **c)** a round tablecloth of radius 1 m: how much cloth?\n\n- **d)** a pizza of diameter 30 cm: how much pizza?",
+   "prompt": "**Distance round** (a fence, a ribbon, a wheel turning once): circumference \\(C = \\pi d\\).\n\n**Space inside** (cloth, paint, grass, pizza): area \\(A = \\pi r^2\\).\n\n**Examples:**\n\n**a)** a wheel of diameter 0.5 m turns once: how far does it go?\n\n---\n\n**b)** a fence round a round fountain of radius 3 m\n\n---\n\n**c)** a round tablecloth of radius 1 m: how much cloth?\n\n---\n\n**d)** a pizza of diameter 30 cm: how much pizza?",
    "steps": [
     "**a)** Distance round:\n\n\\[\\begin{aligned} C &= 3.14\\times0.5 \\\\ &= \\boxed{1.57 \\text{ m}} \\end{aligned}\\]",
     "**b)** Distance round,:\n\n\\[\\begin{aligned} d &= 6 \\\\ C &= 3.14\\times6 \\\\ &= \\boxed{18.84 \\text{ m}} \\end{aligned}\\]",

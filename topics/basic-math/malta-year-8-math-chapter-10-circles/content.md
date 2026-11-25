@@ -40,13 +40,19 @@ $$
 
 **Examples:**
 
-- **a)** radius 4 cm: find the diameter
+**a)** radius 4 cm: find the diameter
 
-- **b)** radius 9 m: find the diameter
+---
 
-- **c)** diameter 18 cm: find the radius
+**b)** radius 9 m: find the diameter
 
-- **d)** diameter 50 cm: find the radius
+---
+
+**c)** diameter 18 cm: find the radius
+
+---
+
+**d)** diameter 50 cm: find the radius
 
 ![A circle with its radius r from the centre to the edge and its dashed diameter d right across.](media/ch10-radius-diameter.svg)
 
@@ -94,13 +100,19 @@ The parts of a circle:
 
 **Examples:**
 
-- **a)** a straight line across the circle that misses the centre
+**a)** a straight line across the circle that misses the centre
 
-- **b)** the shape of one pizza slice
+---
 
-- **c)** a straight line that just touches the circle once
+**b)** the shape of one pizza slice
 
-- **d)** a piece of the curved edge
+---
+
+**c)** a straight line that just touches the circle once
+
+---
+
+**d)** a piece of the curved edge
 
 ![A circle with its radius, diameter, a chord, an arc, a shaded sector and a tangent, each labelled.](media/ch10-parts.svg)
 
@@ -148,13 +160,19 @@ $$
 
 **Examples:**
 
-- **a)** diameter 10 cm
+**a)** diameter 10 cm
 
-- **b)** diameter 5 cm
+---
 
-- **c)** diameter 8 m
+**b)** diameter 5 cm
 
-- **d)** diameter 100 cm
+---
+
+**c)** diameter 8 m
+
+---
+
+**d)** diameter 100 cm
 
 ![A circle rolled out along a line: the line is a bit more than 3 diameters long.](media/ch10-unrolled.svg)
 
@@ -199,13 +217,19 @@ $$
 
 **Examples:**
 
-- **a)** radius 5 cm
+**a)** radius 5 cm
 
-- **b)** radius 3 cm
+---
 
-- **c)** radius 10 m
+**b)** radius 3 cm
 
-- **d)** radius 1 m
+---
+
+**c)** radius 10 m
+
+---
+
+**d)** radius 1 m
 
 <details>
 <summary><b>Working</b></summary>
@@ -251,13 +275,19 @@ $$
 
 **Examples:**
 
-- **a)** radius 10 cm
+**a)** radius 10 cm
 
-- **b)** radius 5 cm
+---
 
-- **c)** radius 4 m
+**b)** radius 5 cm
 
-- **d)** radius 3 cm
+---
+
+**c)** radius 4 m
+
+---
+
+**d)** radius 3 cm
 
 ![A filled circle with its radius r and a dashed r by r square: the area is about 3.14 of those squares.](media/ch10-area.svg)
 
@@ -299,13 +329,19 @@ Not $3.14\times3\times2$ for d): $r^2$ is $r\times r$, not $r\times2$.
 
 **Examples:**
 
-- **a)** diameter 10 cm
+**a)** diameter 10 cm
 
-- **b)** diameter 6 cm
+---
 
-- **c)** diameter 20 m
+**b)** diameter 6 cm
 
-- **d)** diameter 8 cm
+---
+
+**c)** diameter 20 m
+
+---
+
+**d)** diameter 8 cm
 
 ![A filled circle with its diameter labelled d; the radius is half of d.](media/ch10-area-from-diameter.svg)
 
@@ -351,13 +387,19 @@ A **semicircle** is half a circle; a **quarter circle** is a quarter.
 
 **Examples:**
 
-- **a)** semicircle, radius 10 cm: area
+**a)** semicircle, radius 10 cm: area
 
-- **b)** semicircle, diameter 10 cm: perimeter
+---
 
-- **c)** quarter circle, radius 2 m: area
+**b)** semicircle, diameter 10 cm: perimeter
 
-- **d)** semicircle, radius 4 cm: area
+---
+
+**c)** quarter circle, radius 2 m: area
+
+---
+
+**d)** semicircle, radius 4 cm: area
 
 ![A semicircle with a 10 cm straight edge; its curved edge and its straight edge are both marked.](media/ch10-semicircle.svg)
 
@@ -400,13 +442,19 @@ Not $15.7$ for b): the straight edge is part of the perimeter too.
 
 **Examples:**
 
-- **a)** a wheel of diameter 0.5 m turns once: how far does it go?
+**a)** a wheel of diameter 0.5 m turns once: how far does it go?
 
-- **b)** a fence round a round fountain of radius 3 m
+---
 
-- **c)** a round tablecloth of radius 1 m: how much cloth?
+**b)** a fence round a round fountain of radius 3 m
 
-- **d)** a pizza of diameter 30 cm: how much pizza?
+---
+
+**c)** a round tablecloth of radius 1 m: how much cloth?
+
+---
+
+**d)** a pizza of diameter 30 cm: how much pizza?
 
 ![A wheel of diameter 0.5 m on the ground; one turn moves it one circumference.](media/ch10-wheel.svg)
 
