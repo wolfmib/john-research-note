@@ -36,13 +36,19 @@ Chapter 8 solves equations step by step.
 
 **Examples:**
 
-- **a)** $x + 16 + 2x$
+**a)** $x + 16 + 2x$
 
-- **b)** $3x + 10 + x$
+---
 
-- **c)** $5 + 2x - 1$
+**b)** $3x + 10 + x$
 
-- **d)** $4x - x + 7$
+---
+
+**c)** $5 + 2x - 1$
+
+---
+
+**d)** $4x - x + 7$
 
 <details>
 <summary><b>Working</b></summary>
@@ -82,13 +88,19 @@ $$
 
 **Examples:**
 
-- **a)** $x + 7 = 12$
+**a)** $x + 7 = 12$
 
-- **b)** $x - 4 = 9$
+---
 
-- **c)** $x + 6 = 2$
+**b)** $x - 4 = 9$
 
-- **d)** $x - 3 = -1$
+---
+
+**c)** $x + 6 = 2$
+
+---
+
+**d)** $x - 3 = -1$
 
 ![A balance: a bag x and 7 cubes on the left, 12 cubes on the right.](media/ch8-balance-x-plus-7.svg)
 
@@ -128,13 +140,19 @@ $$
 
 **Examples:**
 
-- **a)** $3x = 21$
+**a)** $3x = 21$
 
-- **b)** $5x = 40$
+---
 
-- **c)** $\dfrac{x}{4} = 6$
+**b)** $5x = 40$
 
-- **d)** $\dfrac{x}{2} = 9$
+---
+
+**c)** $\dfrac{x}{4} = 6$
+
+---
+
+**d)** $\dfrac{x}{2} = 9$
 
 <details>
 <summary><b>Working</b></summary>
@@ -175,13 +193,19 @@ $$
 
 **Examples:**
 
-- **a)** $2x + 5 = 17$
+**a)** $2x + 5 = 17$
 
-- **b)** $3x - 2 = 13$
+---
 
-- **c)** $4x + 1 = 29$
+**b)** $3x - 2 = 13$
 
-- **d)** $5x - 6 = 14$
+---
+
+**c)** $4x + 1 = 29$
+
+---
+
+**d)** $5x - 6 = 14$
 
 <details>
 <summary><b>Working</b></summary>
@@ -219,13 +243,19 @@ $$
 
 **Examples:**
 
-- **a)** $2x + 9 = 3$
+**a)** $2x + 9 = 3$
 
-- **b)** $5x + 12 = 2$
+---
 
-- **c)** $3x - 4 = -19$
+**b)** $5x + 12 = 2$
 
-- **d)** $6x + 25 = 1$
+---
+
+**c)** $3x - 4 = -19$
+
+---
+
+**d)** $6x + 25 = 1$
 
 <details>
 <summary><b>Working</b></summary>
@@ -265,13 +295,19 @@ $$
 
 **Examples:**
 
-- **a)** $x + 3 = 2x + 1$
+**a)** $x + 3 = 2x + 1$
 
-- **b)** $2x + 5 = x + 9$
+---
 
-- **c)** $4x - 1 = x + 8$
+**b)** $2x + 5 = x + 9$
 
-- **d)** $5x + 2 = 3x + 10$
+---
+
+**c)** $4x - 1 = x + 8$
+
+---
+
+**d)** $5x + 2 = 3x + 10$
 
 <details>
 <summary><b>Working</b></summary>
@@ -309,13 +345,19 @@ $$
 
 **Examples:**
 
-- **a)** $6x + 1 = 2x + 13 + x$
+**a)** $6x + 1 = 2x + 13 + x$
 
-- **b)** $4x - 5 = x + 7 + x$
+---
 
-- **c)** $7x + 2 = 3x + 17 + x$
+**b)** $4x - 5 = x + 7 + x$
 
-- **d)** $5x + 8 = 2x - 4 + x$
+---
+
+**c)** $7x + 2 = 3x + 17 + x$
+
+---
+
+**d)** $5x + 8 = 2x - 4 + x$
 
 <details>
 <summary><b>Working</b></summary>
@@ -354,13 +396,19 @@ $$
 
 **Examples:**
 
-- **a)** $2x = 8$
+**a)** $2x = 8$
 
-- **b)** $5x = -20$
+---
 
-- **c)** $-3x = 12$
+**b)** $5x = -20$
 
-- **d)** $\dfrac{x}{3} = 4$
+---
+
+**c)** $-3x = 12$
+
+---
+
+**d)** $\dfrac{x}{3} = 4$
 
 <details>
 <summary><b>Working</b></summary>
@@ -405,13 +453,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{4x}{4} + \dfrac{2}{4} = 5$
+**a)** $\dfrac{4x}{4} + \dfrac{2}{4} = 5$
 
-- **b)** $\dfrac{6x}{3} + \dfrac{5}{10} = x + 3$
+---
 
-- **c)** $\dfrac{3x}{3} + \dfrac{2}{8} = \dfrac{9}{4} - x$
+**b)** $\dfrac{6x}{3} + \dfrac{5}{10} = x + 3$
 
-- **d)** $\dfrac{10x}{5} - \dfrac{3}{9} = x + \dfrac{5}{3}$
+---
+
+**c)** $\dfrac{3x}{3} + \dfrac{2}{8} = \dfrac{9}{4} - x$
+
+---
+
+**d)** $\dfrac{10x}{5} - \dfrac{3}{9} = x + \dfrac{5}{3}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -450,13 +504,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{x}{2} + \dfrac{x}{4} = 6$
+**a)** $\dfrac{x}{2} + \dfrac{x}{4} = 6$
 
-- **b)** $\dfrac{x}{2} + 1 = \dfrac{x}{3} + 3$
+---
 
-- **c)** $\dfrac{x}{3} + \dfrac{x}{6} = 5$
+**b)** $\dfrac{x}{2} + 1 = \dfrac{x}{3} + 3$
 
-- **d)** $\dfrac{3x}{4} - 2 = \dfrac{x}{4} + 1$
+---
+
+**c)** $\dfrac{x}{3} + \dfrac{x}{6} = 5$
+
+---
+
+**d)** $\dfrac{3x}{4} - 2 = \dfrac{x}{4} + 1$
 
 <details>
 <summary><b>Working</b></summary>

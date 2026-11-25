@@ -14,7 +14,7 @@
   {
    "group": "8.1 Like Terms",
    "title": "Collect like terms",
-   "prompt": "- **Like terms** have the same letter: \\(3x\\) and \\(2x\\) are like terms, \\(5\\) and \\(1\\) are like terms.\n- Add the \\(x\\) terms together and the plain numbers together.\n\n**Examples:**\n\n- **a)** \\(x + 16 + 2x\\)\n\n- **b)** \\(3x + 10 + x\\)\n\n- **c)** \\(5 + 2x - 1\\)\n\n- **d)** \\(4x - x + 7\\)",
+   "prompt": "- **Like terms** have the same letter: \\(3x\\) and \\(2x\\) are like terms, \\(5\\) and \\(1\\) are like terms.\n- Add the \\(x\\) terms together and the plain numbers together.\n\n**Examples:**\n\n**a)** \\(x + 16 + 2x\\)\n\n---\n\n**b)** \\(3x + 10 + x\\)\n\n---\n\n**c)** \\(5 + 2x - 1\\)\n\n---\n\n**d)** \\(4x - x + 7\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} x + 2x &= 3x \\\\ x + 16 + 2x &= \\boxed{3x + 16} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} 3x + x &= 4x \\\\ 3x + 10 + x &= \\boxed{4x + 10} \\end{aligned}\\]",
@@ -25,7 +25,7 @@
   {
    "group": "8.2 One-Step Equations",
    "title": "Add or subtract",
-   "prompt": "- An equation is a **balance**: both sides weigh the same.\n- Do the **opposite** to get \\(x\\) alone: \\(+7\\) is undone by \\(-7\\).\n\n**Examples:**\n\n- **a)** \\(x + 7 = 12\\)\n\n- **b)** \\(x - 4 = 9\\)\n\n- **c)** \\(x + 6 = 2\\)\n\n- **d)** \\(x - 3 = -1\\)",
+   "prompt": "- An equation is a **balance**: both sides weigh the same.\n- Do the **opposite** to get \\(x\\) alone: \\(+7\\) is undone by \\(-7\\).\n\n**Examples:**\n\n**a)** \\(x + 7 = 12\\)\n\n---\n\n**b)** \\(x - 4 = 9\\)\n\n---\n\n**c)** \\(x + 6 = 2\\)\n\n---\n\n**d)** \\(x - 3 = -1\\)",
    "steps": [
     "**a)** Take 7 from both sides:\n\n\\[\\begin{aligned} x &= 12 - 7 \\\\ x &= \\boxed{5} \\end{aligned}\\]",
     "**b)** Add 4 to both sides:\n\n\\[\\begin{aligned} x &= 9 + 4 \\\\ x &= \\boxed{13} \\end{aligned}\\]",
@@ -38,7 +38,7 @@
   {
    "group": "8.2 One-Step Equations",
    "title": "Multiply or divide",
-   "prompt": "- \\(3x\\) means \\(3\\times x\\), so undo it by **dividing** by 3.\n- \\(\\dfrac{x}{4}\\) means \\(x\\div4\\), so undo it by **multiplying** by 4.\n\n**Examples:**\n\n- **a)** \\(3x = 21\\)\n\n- **b)** \\(5x = 40\\)\n\n- **c)** \\(\\dfrac{x}{4} = 6\\)\n\n- **d)** \\(\\dfrac{x}{2} = 9\\)",
+   "prompt": "- \\(3x\\) means \\(3\\times x\\), so undo it by **dividing** by 3.\n- \\(\\dfrac{x}{4}\\) means \\(x\\div4\\), so undo it by **multiplying** by 4.\n\n**Examples:**\n\n**a)** \\(3x = 21\\)\n\n---\n\n**b)** \\(5x = 40\\)\n\n---\n\n**c)** \\(\\dfrac{x}{4} = 6\\)\n\n---\n\n**d)** \\(\\dfrac{x}{2} = 9\\)",
    "steps": [
     "**a)** Divide both sides by 3:\n\n\\[\\begin{aligned} x &= 21\\div3 \\\\ x &= \\boxed{7} \\end{aligned}\\]",
     "**b)** Divide both sides by 5:\n\n\\[\\begin{aligned} x &= 40\\div5 \\\\ x &= \\boxed{8} \\end{aligned}\\]",
@@ -49,7 +49,7 @@
   {
    "group": "8.3 Two-Step Equations",
    "title": "Two steps",
-   "prompt": "- Two steps, in this order.\n- **First** move the plain number (do the opposite of + or −).\n- **Then** divide by the number in front of \\(x\\).\n\n**Examples:**\n\n- **a)** \\(2x + 5 = 17\\)\n\n- **b)** \\(3x - 2 = 13\\)\n\n- **c)** \\(4x + 1 = 29\\)\n\n- **d)** \\(5x - 6 = 14\\)",
+   "prompt": "- Two steps, in this order.\n- **First** move the plain number (do the opposite of + or −).\n- **Then** divide by the number in front of \\(x\\).\n\n**Examples:**\n\n**a)** \\(2x + 5 = 17\\)\n\n---\n\n**b)** \\(3x - 2 = 13\\)\n\n---\n\n**c)** \\(4x + 1 = 29\\)\n\n---\n\n**d)** \\(5x - 6 = 14\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} 2x &= 17 - 5 \\\\ 2x &= 12 \\\\ x &= 12\\div2 \\\\ x &= \\boxed{6} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} 3x &= 13 + 2 \\\\ 3x &= 15 \\\\ x &= 15\\div3 \\\\ x &= \\boxed{5} \\end{aligned}\\]",
@@ -60,7 +60,7 @@
   {
    "group": "8.3 Two-Step Equations",
    "title": "Two steps, negative answers",
-   "prompt": "- The same two steps.\n- When the right side gets smaller than the plain number, the answer is **negative**.\n\n**Examples:**\n\n- **a)** \\(2x + 9 = 3\\)\n\n- **b)** \\(5x + 12 = 2\\)\n\n- **c)** \\(3x - 4 = -19\\)\n\n- **d)** \\(6x + 25 = 1\\)",
+   "prompt": "- The same two steps.\n- When the right side gets smaller than the plain number, the answer is **negative**.\n\n**Examples:**\n\n**a)** \\(2x + 9 = 3\\)\n\n---\n\n**b)** \\(5x + 12 = 2\\)\n\n---\n\n**c)** \\(3x - 4 = -19\\)\n\n---\n\n**d)** \\(6x + 25 = 1\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} 2x &= 3 - 9 \\\\ 2x &= -6 \\\\ x &= -6\\div2 \\\\ x &= \\boxed{-3} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} 5x &= 2 - 12 \\\\ 5x &= -10 \\\\ x &= -10\\div5 \\\\ x &= \\boxed{-2} \\end{aligned}\\]",
@@ -71,7 +71,7 @@
   {
    "group": "8.4 Unknowns on Both Sides",
    "title": "Trick 2: the sign flips across =",
-   "prompt": "- A term that moves across \"=\" is multiplied by \\((-1)\\): **its sign flips**.\n- Move the \\(x\\) terms to one side and the plain numbers to the other.\n\n**Examples:**\n\n- **a)** \\(x + 3 = 2x + 1\\)\n\n- **b)** \\(2x + 5 = x + 9\\)\n\n- **c)** \\(4x - 1 = x + 8\\)\n\n- **d)** \\(5x + 2 = 3x + 10\\)",
+   "prompt": "- A term that moves across \"=\" is multiplied by \\((-1)\\): **its sign flips**.\n- Move the \\(x\\) terms to one side and the plain numbers to the other.\n\n**Examples:**\n\n**a)** \\(x + 3 = 2x + 1\\)\n\n---\n\n**b)** \\(2x + 5 = x + 9\\)\n\n---\n\n**c)** \\(4x - 1 = x + 8\\)\n\n---\n\n**d)** \\(5x + 2 = 3x + 10\\)",
    "steps": [
     "**a)** \\(+1\\) moves left as \\(-1\\); \\(+x\\) moves right as \\(-x\\):\n\n\\[\\begin{aligned} 3 - 1 &= 2x - x \\\\ x &= \\boxed{2} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} 2x - x &= 9 - 5 \\\\ x &= \\boxed{4} \\end{aligned}\\]",
@@ -82,7 +82,7 @@
   {
    "group": "8.4 Unknowns on Both Sides",
    "title": "Two terms = three terms",
-   "prompt": "- Five terms in all.\n- Use Trick 2 for every term that moves, then collect like terms on each side.\n\n**Examples:**\n\n- **a)** \\(6x + 1 = 2x + 13 + x\\)\n\n- **b)** \\(4x - 5 = x + 7 + x\\)\n\n- **c)** \\(7x + 2 = 3x + 17 + x\\)\n\n- **d)** \\(5x + 8 = 2x - 4 + x\\)",
+   "prompt": "- Five terms in all.\n- Use Trick 2 for every term that moves, then collect like terms on each side.\n\n**Examples:**\n\n**a)** \\(6x + 1 = 2x + 13 + x\\)\n\n---\n\n**b)** \\(4x - 5 = x + 7 + x\\)\n\n---\n\n**c)** \\(7x + 2 = 3x + 17 + x\\)\n\n---\n\n**d)** \\(5x + 8 = 2x - 4 + x\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} 6x - 2x - x &= 13 - 1 \\\\ 3x &= 12 \\\\ x &= \\boxed{4} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} 4x - x - x &= 7 + 5 \\\\ 2x &= 12 \\\\ x &= \\boxed{6} \\end{aligned}\\]",
@@ -93,7 +93,7 @@
   {
    "group": "8.4 Unknowns on Both Sides",
    "title": "Careful: × moves across as ÷",
-   "prompt": "- Trick 2 is only for terms that are **added or subtracted**.\n- A number that **multiplies** \\(x\\) moves across as **÷** and keeps its sign.\n- A number that divides \\(x\\) moves across as **×**.\n\n**Examples:**\n\n- **a)** \\(2x = 8\\)\n\n- **b)** \\(5x = -20\\)\n\n- **c)** \\(-3x = 12\\)\n\n- **d)** \\(\\dfrac{x}{3} = 4\\)",
+   "prompt": "- Trick 2 is only for terms that are **added or subtracted**.\n- A number that **multiplies** \\(x\\) moves across as **÷** and keeps its sign.\n- A number that divides \\(x\\) moves across as **×**.\n\n**Examples:**\n\n**a)** \\(2x = 8\\)\n\n---\n\n**b)** \\(5x = -20\\)\n\n---\n\n**c)** \\(-3x = 12\\)\n\n---\n\n**d)** \\(\\dfrac{x}{3} = 4\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} x &= 8\\div2 \\\\ x &= \\boxed{4} \\end{aligned}\\]\n\nNot \\(8 - 2 = 6\\): the 2 multiplies, it is not added.",
     "**b)**\n\n\\[\\begin{aligned} x &= -20\\div5 \\\\ x &= \\boxed{-4} \\end{aligned}\\]",
@@ -104,7 +104,7 @@
   {
    "group": "8.5 Equations with Fractions",
    "title": "Simplify the fractions first",
-   "prompt": "- First simplify every fraction (\\(\\dfrac{4x}{4} = x\\), \\(\\dfrac{2}{4} = \\dfrac{1}{2}\\)).\n- Then solve with Trick 2 as before.\n- The answer can be a fraction.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{4x}{4} + \\dfrac{2}{4} = 5\\)\n\n- **b)** \\(\\dfrac{6x}{3} + \\dfrac{5}{10} = x + 3\\)\n\n- **c)** \\(\\dfrac{3x}{3} + \\dfrac{2}{8} = \\dfrac{9}{4} - x\\)\n\n- **d)** \\(\\dfrac{10x}{5} - \\dfrac{3}{9} = x + \\dfrac{5}{3}\\)",
+   "prompt": "- First simplify every fraction (\\(\\dfrac{4x}{4} = x\\), \\(\\dfrac{2}{4} = \\dfrac{1}{2}\\)).\n- Then solve with Trick 2 as before.\n- The answer can be a fraction.\n\n**Examples:**\n\n**a)** \\(\\dfrac{4x}{4} + \\dfrac{2}{4} = 5\\)\n\n---\n\n**b)** \\(\\dfrac{6x}{3} + \\dfrac{5}{10} = x + 3\\)\n\n---\n\n**c)** \\(\\dfrac{3x}{3} + \\dfrac{2}{8} = \\dfrac{9}{4} - x\\)\n\n---\n\n**d)** \\(\\dfrac{10x}{5} - \\dfrac{3}{9} = x + \\dfrac{5}{3}\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} x + \\frac{1}{2} &= 5 \\\\ x &= 5 - \\frac{1}{2} \\\\ x &= \\boxed{\\frac{9}{2}} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} 2x + \\frac{1}{2} &= x + 3 \\\\ 2x - x &= 3 - \\frac{1}{2} \\\\ x &= \\boxed{\\frac{5}{2}} \\end{aligned}\\]",
@@ -115,7 +115,7 @@
   {
    "group": "8.5 Equations with Fractions",
    "title": "x over a number",
-   "prompt": "- \\(\\dfrac{x}{2}\\) is half of \\(x\\).\n- Add or subtract them like fractions, with the same bottom: \\(\\dfrac{x}{2} + \\dfrac{x}{4} = \\dfrac{3x}{4}\\).\n- Last step: multiply away the bottom.\n\n**Examples:**\n\n- **a)** \\(\\dfrac{x}{2} + \\dfrac{x}{4} = 6\\)\n\n- **b)** \\(\\dfrac{x}{2} + 1 = \\dfrac{x}{3} + 3\\)\n\n- **c)** \\(\\dfrac{x}{3} + \\dfrac{x}{6} = 5\\)\n\n- **d)** \\(\\dfrac{3x}{4} - 2 = \\dfrac{x}{4} + 1\\)",
+   "prompt": "- \\(\\dfrac{x}{2}\\) is half of \\(x\\).\n- Add or subtract them like fractions, with the same bottom: \\(\\dfrac{x}{2} + \\dfrac{x}{4} = \\dfrac{3x}{4}\\).\n- Last step: multiply away the bottom.\n\n**Examples:**\n\n**a)** \\(\\dfrac{x}{2} + \\dfrac{x}{4} = 6\\)\n\n---\n\n**b)** \\(\\dfrac{x}{2} + 1 = \\dfrac{x}{3} + 3\\)\n\n---\n\n**c)** \\(\\dfrac{x}{3} + \\dfrac{x}{6} = 5\\)\n\n---\n\n**d)** \\(\\dfrac{3x}{4} - 2 = \\dfrac{x}{4} + 1\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} \\frac{3x}{4} &= 6 \\\\ 3x &= 24 \\\\ x &= \\boxed{8} \\end{aligned}\\]",
     "**b)**\n\n\\[\\begin{aligned} \\frac{x}{2} - \\frac{x}{3} &= 3 - 1 \\\\ \\frac{x}{6} &= 2 \\\\ x &= \\boxed{12} \\end{aligned}\\]",
