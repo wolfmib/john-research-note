@@ -41,10 +41,19 @@ author: Wei-Che Hung
 
 **Examples:**
 
-- **a)** Which is bigger: $-3$ or $2$?
-- **b)** Which is bigger: $-1$ or $-6$?
-- **c)** Which is bigger: $0$ or $-4$?
-- **d)** Which is bigger: $-10$ or $-9$?
+**a)** Which is bigger: $-3$ or $2$?
+
+---
+
+**b)** Which is bigger: $-1$ or $-6$?
+
+---
+
+**c)** Which is bigger: $0$ or $-4$?
+
+---
+
+**d)** Which is bigger: $-10$ or $-9$?
 
 <details>
 <summary><b>Working</b></summary>
@@ -82,10 +91,19 @@ $$
 
 **Examples:**
 
-- **a)** $-5 \;\square\; 3$
-- **b)** $6 \;\square\; -6$
-- **c)** $0 \;\square\; -7$
-- **d)** $-12 \;\square\; 4$
+**a)** $-5 \;\square\; 3$
+
+---
+
+**b)** $6 \;\square\; -6$
+
+---
+
+**c)** $0 \;\square\; -7$
+
+---
+
+**d)** $-12 \;\square\; 4$
 
 <details>
 <summary><b>Working</b></summary>
@@ -124,10 +142,19 @@ $$
 
 **Examples:**
 
-- **a)** $-15 \;\square\; -51$
-- **b)** $-33 \;\square\; -32$
-- **c)** $-9 \;\square\; -90$
-- **d)** $-250 \;\square\; -205$
+**a)** $-15 \;\square\; -51$
+
+---
+
+**b)** $-33 \;\square\; -32$
+
+---
+
+**c)** $-9 \;\square\; -90$
+
+---
+
+**d)** $-250 \;\square\; -205$
 
 <details>
 <summary><b>Working</b></summary>
@@ -165,9 +192,15 @@ $$
 
 **Examples:**
 
-- **a)** $4,\ -2,\ 0,\ -7,\ 9$
-- **b)** $-11,\ 3,\ -1,\ 12,\ -30$
-- **c)** $15,\ -15,\ -5,\ 50,\ -50,\ 0$
+**a)** $4,\ -2,\ 0,\ -7,\ 9$
+
+---
+
+**b)** $-11,\ 3,\ -1,\ 12,\ -30$
+
+---
+
+**c)** $15,\ -15,\ -5,\ 50,\ -50,\ 0$
 
 <details>
 <summary><b>Working</b></summary>
@@ -199,9 +232,15 @@ $$
 
 **Examples:**
 
-- **a)** $-3,\ 8,\ -12,\ 0,\ 5$
-- **b)** $-64,\ -46,\ 20,\ -6,\ 2$
-- **c)** $101,\ -110,\ -101,\ 110,\ -1$
+**a)** $-3,\ 8,\ -12,\ 0,\ 5$
+
+---
+
+**b)** $-64,\ -46,\ 20,\ -6,\ 2$
+
+---
+
+**c)** $101,\ -110,\ -101,\ 110,\ -1$
 
 <details>
 <summary><b>Working</b></summary>
@@ -235,10 +274,19 @@ $$
 
 **Examples:**
 
-- **a)** $-3+8$
-- **b)** $-5+6$
-- **c)** $-9+15$
-- **d)** $-12+20$
+**a)** $-3+8$
+
+---
+
+**b)** $-5+6$
+
+---
+
+**c)** $-9+15$
+
+---
+
+**d)** $-12+20$
 
 <details>
 <summary><b>Working</b></summary>
@@ -276,10 +324,19 @@ $$
 
 **Examples:**
 
-- **a)** $-9+4$
-- **b)** $-6+2$
-- **c)** $-14+5$
-- **d)** $-20+13$
+**a)** $-9+4$
+
+---
+
+**b)** $-6+2$
+
+---
+
+**c)** $-14+5$
+
+---
+
+**d)** $-20+13$
 
 <details>
 <summary><b>Working</b></summary>
@@ -317,10 +374,19 @@ $$
 
 **Examples:**
 
-- **a)** $-13+13$
-- **b)** $-4+4+3$
-- **c)** $-10+10-2$
-- **d)** $7-7-5$
+**a)** $-13+13$
+
+---
+
+**b)** $-4+4+3$
+
+---
+
+**c)** $-10+10-2$
+
+---
+
+**d)** $7-7-5$
 
 <details>
 <summary><b>Working</b></summary>
@@ -358,10 +424,19 @@ $$
 
 **Examples:**
 
-- **a)** $6-10$
-- **b)** $15-18$
-- **c)** $30-45$
-- **d)** $24-50$
+**a)** $6-10$
+
+---
+
+**b)** $15-18$
+
+---
+
+**c)** $30-45$
+
+---
+
+**d)** $24-50$
 
 <details>
 <summary><b>Working</b></summary>
@@ -399,10 +474,19 @@ $$
 
 **Examples:**
 
-- **a)** $-2-5$
-- **b)** $-8-7$
-- **c)** $-12-9$
-- **d)** $-25-25$
+**a)** $-2-5$
+
+---
+
+**b)** $-8-7$
+
+---
+
+**c)** $-12-9$
+
+---
+
+**d)** $-25-25$
 
 <details>
 <summary><b>Working</b></summary>
@@ -440,10 +524,19 @@ $$
 
 **Examples:**
 
-- **a)** $-6-2+5$
-- **b)** $12-20+3$
-- **c)** $-40-5+2$
-- **d)** $-9+14-8-1$
+**a)** $-6-2+5$
+
+---
+
+**b)** $12-20+3$
+
+---
+
+**c)** $-40-5+2$
+
+---
+
+**d)** $-9+14-8-1$
 
 <details>
 <summary><b>Working</b></summary>
@@ -466,11 +559,11 @@ $$
 \begin{aligned} -40-5+2 &= -45 + 2 \\ &= \boxed{-43} \end{aligned}
 $$
 
-**d)**
+**d)** Minus parts: $-9 - 8 - 1 = -18$.
 
-- Minus parts: $-9 - 8 - 1 = -18$.
-- Plus part: $14$.
-- Combine them:
+Plus part: $14$.
+
+Combine them:
 
 $$
 \begin{aligned} -9+14-8-1 &= -18 + 14 \\ &= \boxed{-4} \end{aligned}
@@ -485,10 +578,19 @@ $$
 
 **Examples:**
 
-- **a)** $-3 + \square = -10$
-- **b)** $-8 + \square = -2$
-- **c)** $-15 + \square = -20$
-- **d)** $4 + \square = -3$
+**a)** $-3 + \square = -10$
+
+---
+
+**b)** $-8 + \square = -2$
+
+---
+
+**c)** $-15 + \square = -20$
+
+---
+
+**d)** $4 + \square = -3$
 
 <details>
 <summary><b>Working</b></summary>
@@ -526,48 +628,56 @@ $$
 
 **Examples:**
 
-- **a)** $-5 - 2 + \square = -3 - 6$
-- **b)** $-1 - 4 + \square = -8 + 10$
-- **c)** $-9 + \square = -20 + 15$
-- **d)** $3 - 8 + \square = -1 - 1$
+**a)** $-5 - 2 + \square = -3 - 6$
+
+---
+
+**b)** $-1 - 4 + \square = -8 + 10$
+
+---
+
+**c)** $-9 + \square = -20 + 15$
+
+---
+
+**d)** $3 - 8 + \square = -1 - 1$
 
 <details>
 <summary><b>Working</b></summary>
 
-**a)**
+**a)** Left side: $-5 - 2 = -7$.
 
-- Left side: $-5 - 2 = -7$.
-- Right side: $-3 - 6 = -9$.
-- From $-7$ to $-9$ is 2 steps left:
+Right side: $-3 - 6 = -9$.
+
+From $-7$ to $-9$ is 2 steps left:
 
 $$
 -7 + (\boxed{-2}) = -9
 $$
 
-**b)**
+**b)** Left side: $-1 - 4 = -5$.
 
-- Left side: $-1 - 4 = -5$.
-- Right side: $-8 + 10 = 2$.
-- From $-5$ to $2$ is 7 steps right:
+Right side: $-8 + 10 = 2$.
+
+From $-5$ to $2$ is 7 steps right:
 
 $$
 -5 + \boxed{7} = 2
 $$
 
-**c)**
+**c)** Right side: $-20 + 15 = -5$.
 
-- Right side: $-20 + 15 = -5$.
-- From $-9$ to $-5$ is 4 steps right:
+From $-9$ to $-5$ is 4 steps right:
 
 $$
 -9 + \boxed{4} = -5
 $$
 
-**d)**
+**d)** Left side: $3 - 8 = -5$.
 
-- Left side: $3 - 8 = -5$.
-- Right side: $-1 - 1 = -2$.
-- From $-5$ to $-2$ is 3 steps right:
+Right side: $-1 - 1 = -2$.
+
+From $-5$ to $-2$ is 3 steps right:
 
 $$
 -5 + \boxed{3} = -2
@@ -581,10 +691,19 @@ Adding a negative is the same as **taking away**: $+(-4)$ becomes $-4$.
 
 **Examples:**
 
-- **a)** $9+(-5)$
-- **b)** $-2+(-6)$
-- **c)** $3+(-11)$
-- **d)** $-7+(-7)$
+**a)** $9+(-5)$
+
+---
+
+**b)** $-2+(-6)$
+
+---
+
+**c)** $3+(-11)$
+
+---
+
+**d)** $-7+(-7)$
 
 <details>
 <summary><b>Working</b></summary>
@@ -622,10 +741,19 @@ $$
 
 **Examples:**
 
-- **a)** $4-(-2)$
-- **b)** $-7-(-3)$
-- **c)** $-1-(-9)$
-- **d)** $10-(-10)$
+**a)** $4-(-2)$
+
+---
+
+**b)** $-7-(-3)$
+
+---
+
+**c)** $-1-(-9)$
+
+---
+
+**d)** $10-(-10)$
 
 <details>
 <summary><b>Working</b></summary>
@@ -668,10 +796,19 @@ $$
 
 **Examples:**
 
-- **a)** $3\times(-4)$
-- **b)** $(-5)\times2$
-- **c)** $(-6)\times(-3)$
-- **d)** $(-7)\times(-1)$
+**a)** $3\times(-4)$
+
+---
+
+**b)** $(-5)\times2$
+
+---
+
+**c)** $(-6)\times(-3)$
+
+---
+
+**d)** $(-7)\times(-1)$
 
 <details>
 <summary><b>Working</b></summary>
@@ -708,10 +845,19 @@ Two negatives make a positive; one negative makes a negative.
 
 **Examples:**
 
-- **a)** $(-8)\times5$
-- **b)** $(-9)\times(-9)$
-- **c)** $4\times(-12)$
-- **d)** $(-10)\times(-6)$
+**a)** $(-8)\times5$
+
+---
+
+**b)** $(-9)\times(-9)$
+
+---
+
+**c)** $4\times(-12)$
+
+---
+
+**d)** $(-10)\times(-6)$
 
 <details>
 <summary><b>Working</b></summary>
@@ -748,10 +894,19 @@ Division uses **the same sign rules** as multiplication.
 
 **Examples:**
 
-- **a)** $(-20)\div4$
-- **b)** $18\div(-3)$
-- **c)** $(-35)\div(-7)$
-- **d)** $(-48)\div(-6)$
+**a)** $(-20)\div4$
+
+---
+
+**b)** $18\div(-3)$
+
+---
+
+**c)** $(-35)\div(-7)$
+
+---
+
+**d)** $(-48)\div(-6)$
 
 <details>
 <summary><b>Working</b></summary>
@@ -788,10 +943,19 @@ Divide the sizes, then decide the sign.
 
 **Examples:**
 
-- **a)** $(-100)\div10$
-- **b)** $63\div(-9)$
-- **c)** $(-56)\div(-8)$
-- **d)** $(-81)\div9$
+**a)** $(-100)\div10$
+
+---
+
+**b)** $63\div(-9)$
+
+---
+
+**c)** $(-56)\div(-8)$
+
+---
+
+**d)** $(-81)\div9$
 
 <details>
 <summary><b>Working</b></summary>
@@ -828,9 +992,15 @@ Count the minus signs: an **even** number of them gives **+**, an **odd** number
 
 **Examples:**
 
-- **a)** $(-2)\times(-3)\times(-1)$
-- **b)** $(-2)\times5\times(-4)$
-- **c)** $(-1)\times(-1)\times(-1)\times(-1)$
+**a)** $(-2)\times(-3)\times(-1)$
+
+---
+
+**b)** $(-2)\times5\times(-4)$
+
+---
+
+**c)** $(-1)\times(-1)\times(-1)\times(-1)$
 
 <details>
 <summary><b>Working</b></summary>
@@ -864,10 +1034,29 @@ $$
 
 **Examples:**
 
-- **a)** A freezer is at $-18\,^\circ\text{C}$. In a power cut it warms up by $7\,^\circ\text{C}$. New temperature?
-- **b)** On Mount Etna it is $-4\,^\circ\text{C}$ at noon and it falls by $6\,^\circ\text{C}$ at night. Night temperature?
-- **c)** Valletta is at $15\,^\circ\text{C}$ and the top of Etna is at $-5\,^\circ\text{C}$. What is the difference?
-- **d)** An ice tray at $-3\,^\circ\text{C}$ warms up to $21\,^\circ\text{C}$. By how many degrees did it rise?
+**a)** A freezer is at $-18\,^\circ\text{C}$.
+
+In a power cut it warms up by $7\,^\circ\text{C}$.
+
+New temperature?
+
+---
+
+**b)** On Mount Etna it is $-4\,^\circ\text{C}$ at noon and it falls by $6\,^\circ\text{C}$ at night.
+
+Night temperature?
+
+---
+
+**c)** Valletta is at $15\,^\circ\text{C}$ and the top of Etna is at $-5\,^\circ\text{C}$.
+
+What is the difference?
+
+---
+
+**d)** An ice tray at $-3\,^\circ\text{C}$ warms up to $21\,^\circ\text{C}$.
+
+By how many degrees did it rise?
 
 <details>
 <summary><b>Working</b></summary>
@@ -909,10 +1098,19 @@ In a car park:
 
 **Examples:**
 
-- **a)** Start at level $-3$ and go up 5 floors.
-- **b)** Start at level $4$ and go down 6 floors.
-- **c)** How many floors up is it from level $-2$ to level $7$?
-- **d)** How many floors down is it from level $3$ to level $-1$?
+**a)** Start at level $-3$ and go up 5 floors.
+
+---
+
+**b)** Start at level $4$ and go down 6 floors.
+
+---
+
+**c)** How many floors up is it from level $-2$ to level $7$?
+
+---
+
+**d)** How many floors down is it from level $3$ to level $-1$?
 
 <details>
 <summary><b>Working</b></summary>
@@ -954,10 +1152,27 @@ $$
 
 **Examples:**
 
-- **a)** A balance is €25. A payment of €40 goes out.
-- **b)** A balance is −€12. Then €30 is paid in.
-- **c)** A balance is −€8. Another €5 goes out.
-- **d)** Three friends each owe €6. Write the total as a directed number.
+**a)** A balance is €25.
+
+A payment of €40 goes out.
+
+---
+
+**b)** A balance is −€12.
+
+Then €30 is paid in.
+
+---
+
+**c)** A balance is −€8.
+
+Another €5 goes out.
+
+---
+
+**d)** Three friends each owe €6.
+
+Write the total as a directed number.
 
 <details>
 <summary><b>Working</b></summary>
@@ -1003,10 +1218,21 @@ Together they owe €18: −€18.
 
 **Examples:**
 
-- **a)** A diver at Ċirkewwa is at $-12$ m and goes down 9 m more.
-- **b)** A diver at $-30$ m comes up 18 m.
-- **c)** The top of Dingli Cliffs is about $250$ m above the sea. How far is it above a diver at $-20$ m?
-- **d)** A diver starts at the surface and goes down 4 m every minute for 5 minutes.
+**a)** A diver at Ċirkewwa is at $-12$ m and goes down 9 m more.
+
+---
+
+**b)** A diver at $-30$ m comes up 18 m.
+
+---
+
+**c)** The top of Dingli Cliffs is about $250$ m above the sea.
+
+How far is it above a diver at $-20$ m?
+
+---
+
+**d)** A diver starts at the surface and goes down 4 m every minute for 5 minutes.
 
 <details>
 <summary><b>Working</b></summary>
