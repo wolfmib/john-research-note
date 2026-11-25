@@ -1,0 +1,142 @@
+{
+ "slug": "math-material-semi-log-plots",
+ "title": "Math Material — Semi-log Plots",
+ "course": "Math Material",
+ "unit": "AP Precalculus 2.15",
+ "question": "Semi-log plots in four cards: the log scale, why exponentials are straight, the ratio test, reading the model off the line.",
+ "intro": "**A semi-log plot draws \\(\\log y\\) against \\(x\\):**\n\n\\[\n\\begin{aligned}\ny &= a\\cdot b^{x} \\\\\n\\log y &= \\log a+x\\log b\n\\end{aligned}\n\\]\n\n- Exponential data lies on a **straight line**.\n- Slope \\(=\\log b\\), intercept \\(=\\log a\\).\n\n**A calculator is allowed. Type each answer, then press Check.**",
+ "link": [
+  "Quiz 2.15 ›",
+  "../ap-precalculus-2-15-semi-log-plots/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "The log scale: equal gaps, equal factors",
+   "prompt": "- On a **semi-log plot** the \\(y\\)-axis is a log scale; the \\(x\\)-axis stays ordinary.\n- The labels go \\(1,\\ 10,\\ 100,\\ 1000\\): every equal gap is a factor of \\(10\\).\n- So the height of a point is really \\(\\log y\\).\n\n**Practice:** one gap = one step = \\(\\times10\\).",
+   "figure": "2-15-log-scale.svg",
+   "figure_alt": "A log scale 1, 10, 100, 1000, 10000 with equal gaps, each gap marked times 10",
+   "steps": [
+    "**Example 1:** one step up from \\(4\\).\n\n\\[\n\\begin{aligned}\n4\\times10 &= \\boxed{40}\n\\end{aligned}\n\\]",
+    "**Example 2:** halfway between \\(10\\) and \\(100\\) is **not** \\(55\\).\n\n- Halfway in height means halfway in \\(\\log y\\): from \\(1\\) to \\(2\\), so \\(1.5\\).\n\n\\[\n\\begin{aligned}\n\\log y &= 1.5 \\\\\ny &= 10^{1.5} \\\\\n&\\approx \\boxed{31.6}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "30\\text{, up 1 step}"
+     ],
+     [
+      "5\\text{, up 2 steps}"
+     ],
+     [
+      "2000\\text{, down 1 step}"
+     ]
+    ],
+    "answers": [
+     300.0,
+     500.0,
+     200.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "title": "Why an exponential becomes a straight line",
+   "prompt": "Take \\(\\log\\) of both sides of an exponential:\n\n\\[\n\\begin{aligned}\ny &= a\\cdot b^{x} \\\\\n\\log y &= \\log a+x\\log b\n\\end{aligned}\n\\]\n\n- This is a straight line in \\(x\\).\n- **Slope** \\(=\\log b\\).\n- **Vertical intercept** \\(=\\log a\\).\n\n**Practice:** \\(\\log\\) means base \\(10\\). Give the last one to 3 decimal places.\n\n- **A:** \\(y=100\\cdot10^{x}\\)\n- **B:** \\(y=5\\cdot2^{x}\\)",
+   "steps": [
+    "**Example:** \\(y=3\\cdot2^{x}\\).\n\n\\[\n\\begin{aligned}\n\\log y &= \\log 3+x\\log 2 \\\\\n&\\approx 0.477+0.301x\n\\end{aligned}\n\\]",
+    "- Slope \\(\\approx0.301\\): every step of \\(1\\) in \\(x\\) multiplies \\(y\\) by \\(2\\).\n- Intercept \\(\\approx0.477\\): at \\(x=0\\), \\(y=3\\).\n\n\\[\n\\begin{aligned}\n\\text{slope} &= \\boxed{\\log 2}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{A: slope}"
+     ],
+     [
+      "\\text{A: intercept}"
+     ],
+     [
+      "\\text{B: slope}"
+     ]
+    ],
+    "answers": [
+     1.0,
+     2.0,
+     0.301
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "title": "Straight or not? Test the ratios",
+   "prompt": "- Equal steps in \\(x\\).\n- **Same ratio** every step (\\(\\times\\) the same number): exponential, **straight** on a semi-log plot.\n- **Same difference** every step (\\(+\\) the same number): linear, it **bends** on a semi-log plot.\n\n**Practice:** \\(x=0,1,2,3\\) in each set.\n\n- **A:** \\(6,\\ 12,\\ 24,\\ 48\\)\n- **B:** \\(6,\\ 12,\\ 18,\\ 24\\)\n- **C:** \\(3,\\ 12,\\ 48,\\ 192\\)",
+   "steps": [
+    "**Example:** \\(5,\\ 15,\\ 45,\\ 135\\).\n\n\\[\n\\begin{aligned}\n15\\div5 &= 3 \\\\\n45\\div15 &= 3 \\\\\n135\\div45 &= 3\n\\end{aligned}\n\\]\n\n- Same ratio \\(3\\): straight on a semi-log plot.",
+    "**Example:** \\(5,\\ 10,\\ 15,\\ 20\\).\n\n\\[\n\\begin{aligned}\n10\\div5 &= 2 \\\\\n15\\div10 &= 1.5\n\\end{aligned}\n\\]\n\n- The ratio changes (it adds \\(5\\) instead): **not** straight.\n\n\\[\n\\begin{aligned}\n\\text{test} &= \\boxed{\\text{same ratio?}}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{A: } y(1)\\div y(0)"
+     ],
+     [
+      "\\text{B: } y(2)\\div y(1)"
+     ],
+     [
+      "\\text{C: } y(3)\\div y(2)"
+     ]
+    ],
+    "answers": [
+     2.0,
+     1.5,
+     4.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "title": "Read the model off the line",
+   "prompt": "- A straight line on a semi-log plot means \\(y=a\\cdot b^{x}\\).\n- The point at \\(x=0\\) gives \\(a\\), because \\(b^{0}=1\\).\n- A second point gives \\(b\\).\n\n**Practice:** the line in the figure passes through \\((0,\\,5)\\) and \\((3,\\,40)\\).",
+   "figure": "2-15-read-line.svg",
+   "figure_alt": "Semi-log plot, y from 1 to 1000; a straight line through the points (0, 5) and (3, 40)",
+   "steps": [
+    "**Example:** a line through \\((0,\\,3)\\) and \\((4,\\,48)\\).\n\n\\[\n\\begin{aligned}\na &= 3 \\\\\n48 &= 3\\cdot b^{4} \\\\\nb^{4} &= 16 \\\\\nb &= 2\n\\end{aligned}\n\\]\n\nCheck with the slope: \\(\\dfrac{\\log48-\\log3}{4}\\approx0.301=\\log2\\).",
+    "So the model is:\n\n\\[\n\\begin{aligned}\ny &= \\boxed{3\\cdot2^{x}}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "b"
+     ],
+     [
+      "y \\text{ at } x=4"
+     ],
+     [
+      "y \\text{ at } x=6"
+     ]
+    ],
+    "answers": [
+     2.0,
+     80.0,
+     320.0
+    ],
+    "tolerance": 0.001
+   }
+  }
+ ]
+}
