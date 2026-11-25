@@ -36,13 +36,19 @@ Chapter 13 works with coordinates and graphs.
 
 **Examples:**
 
-- **a)** point A
+**a)** point A
 
-- **b)** point B
+---
 
-- **c)** point C
+**b)** point B
 
-- **d)** point D
+---
+
+**c)** point C
+
+---
+
+**d)** point D
 
 ![A grid from 0 to 6 across and 0 to 5 up with A (2, 3), B (5, 1), C (0, 4) and D (3, 0); arrows show across first, then up.](media/ch13-read-points.svg)
 
@@ -84,13 +90,19 @@ Not $(3, 2)$ for A: across comes first.
 
 **Examples:**
 
-- **a)** point E
+**a)** point E
 
-- **b)** point F
+---
 
-- **c)** point G
+**b)** point F
 
-- **d)** point H
+---
+
+**c)** point G
+
+---
+
+**d)** point H
 
 ![A grid from −6 to 6 across and −5 to 5 up with E (−3, 2), F (−2, −4), G (4, −1) and H (−5, 0).](media/ch13-four-quarters.svg)
 
@@ -134,13 +146,19 @@ Not $(2, -3)$ for E: still across first, then up or down.
 
 **Examples:**
 
-- **a)** the line through $(3, 1)$ and $(3, 4)$
+**a)** the line through $(3, 1)$ and $(3, 4)$
 
-- **b)** the line through $(-1, -2)$ and $(4, -2)$
+---
 
-- **c)** the $y$-axis
+**b)** the line through $(-1, -2)$ and $(4, -2)$
 
-- **d)** the line through $(-4, 5)$ and $(2, 5)$
+---
+
+**c)** the $y$-axis
+
+---
+
+**d)** the line through $(-4, 5)$ and $(2, 5)$
 
 ![A grid with the vertical line x = 3 through (3, 1) and (3, 4), and the horizontal line y = −2 through (−1, −2) and (4, −2).](media/ch13-vertical-horizontal.svg)
 
@@ -182,13 +200,19 @@ Not $y = 3$ for a): the 3 is the $x$ that stays the same, so $x = 3$ (and the li
 
 **Examples:**
 
-- **a)** $(2, 5)$ and $y = 2x + 1$
+**a)** $(2, 5)$ and $y = 2x + 1$
 
-- **b)** $(3, 6)$ and $y = 2x + 1$
+---
 
-- **c)** $(0, 1)$ and $y = 2x + 1$
+**b)** $(3, 6)$ and $y = 2x + 1$
 
-- **d)** $(-1, -1)$ and $y = 2x + 1$
+---
+
+**c)** $(0, 1)$ and $y = 2x + 1$
+
+---
+
+**d)** $(-1, -1)$ and $y = 2x + 1$
 
 ![The line y = 2x + 1 with the points a (2, 5), c (0, 1) and d (−1, −1) on it, and b (3, 6) just off it.](media/ch13-on-the-line.svg)
 
@@ -231,13 +255,19 @@ Pick some $x$ values, work out each $y$ with the rule, then plot the pairs $(x, 
 
 **Examples:**
 
-- **a)** $y = x + 2$ at $x = 0$
+**a)** $y = x + 2$ at $x = 0$
 
-- **b)** $y = x + 2$ at $x = 1$
+---
 
-- **c)** $y = x + 2$ at $x = 2$
+**b)** $y = x + 2$ at $x = 1$
 
-- **d)** $y = x + 2$ at $x = 3$
+---
+
+**c)** $y = x + 2$ at $x = 2$
+
+---
+
+**d)** $y = x + 2$ at $x = 3$
 
 ![A table x = 0, 1, 2, 3 and y = 2, 3, 4, 5, and the four points plotted on a grid and joined: the line y = x + 2.](media/ch13-table-plot.svg)
 
@@ -279,13 +309,19 @@ If one point is off the straight line, check that $y$ again.
 
 **Examples:**
 
-- **a)** $y$ when $x = 2$
+**a)** $y$ when $x = 2$
 
-- **b)** $y$ when $x = 4$
+---
 
-- **c)** $x$ when $y = 5$
+**b)** $y$ when $x = 4$
 
-- **d)** $x$ when $y = 1$
+---
+
+**c)** $x$ when $y = 5$
+
+---
+
+**d)** $x$ when $y = 1$
 
 ![The line y = 2x − 1 on a grid; a dashed path goes up from x = 2 to the line and across to y = 3.](media/ch13-read-the-line.svg)
 
@@ -327,13 +363,19 @@ $$ Check: $2\times1 - 1 = 1$
 
 **Examples:**
 
-- **a)** 16 km in miles
+**a)** 16 km in miles
 
-- **b)** 32 km in miles
+---
 
-- **c)** 15 miles in km
+**b)** 32 km in miles
 
-- **d)** 5 miles in km
+---
+
+**c)** 15 miles in km
+
+---
+
+**d)** 5 miles in km
 
 ![A straight conversion line from 0 to 40 km = 25 miles; a dashed path goes up from 16 km and across to 10 miles.](media/ch13-conversion.svg)
 
@@ -375,13 +417,19 @@ Check with $8 \text{ km} = 5 \text{ miles}$: 16 km is twice 8, so twice 5.
 
 **Examples:**
 
-- **a)** how far after 20 minutes?
+**a)** how far after 20 minutes?
 
-- **b)** how long is the stop?
+---
 
-- **c)** how far is the whole trip?
+**b)** how long is the stop?
 
-- **d)** how long does the whole trip take?
+---
+
+**c)** how far is the whole trip?
+
+---
+
+**d)** how long does the whole trip take?
 
 ![A distance–time graph of a bus trip: 10 km in 20 minutes, flat from 20 to 30 minutes, then up to 18 km at 50 minutes.](media/ch13-distance-time.svg)
 

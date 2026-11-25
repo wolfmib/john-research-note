@@ -14,7 +14,7 @@
   {
    "group": "13.1 Coordinates",
    "title": "Read a point: across, then up",
-   "prompt": "- A point is written \\((x, y)\\).\n- Start at 0.\n- Go **across** \\(x\\), then **up** \\(y\\).\n\n**Examples:**\n\n- **a)** point A\n\n- **b)** point B\n\n- **c)** point C\n\n- **d)** point D",
+   "prompt": "- A point is written \\((x, y)\\).\n- Start at 0.\n- Go **across** \\(x\\), then **up** \\(y\\).\n\n**Examples:**\n\n**a)** point A\n\n---\n\n**b)** point B\n\n---\n\n**c)** point C\n\n---\n\n**d)** point D",
    "steps": [
     "**a)** 2 across, 3 up:\n\n\\[\\boxed{(2, 3)}\\]",
     "**b)** 5 across, 1 up:\n\n\\[\\boxed{(5, 1)}\\]",
@@ -27,7 +27,7 @@
   {
    "group": "13.1 Coordinates",
    "title": "Four quarters: negative coordinates",
-   "prompt": "- Left of 0, \\(x\\) is **negative**.\n- Below 0, \\(y\\) is **negative**.\n\n**Examples:**\n\n- **a)** point E\n\n- **b)** point F\n\n- **c)** point G\n\n- **d)** point H",
+   "prompt": "- Left of 0, \\(x\\) is **negative**.\n- Below 0, \\(y\\) is **negative**.\n\n**Examples:**\n\n**a)** point E\n\n---\n\n**b)** point F\n\n---\n\n**c)** point G\n\n---\n\n**d)** point H",
    "steps": [
     "**a)** 3 left, 2 up:\n\n\\[\\boxed{(-3, 2)}\\]",
     "**b)** 2 left, 4 down:\n\n\\[\\boxed{(-2, -4)}\\]",
@@ -40,7 +40,7 @@
   {
    "group": "13.2 Horizontal and Vertical Lines",
    "title": "Vertical x = …, horizontal y = …",
-   "prompt": "- On a **vertical** line every point has the same \\(x\\): the line is \\(x = \\ldots\\).\n- On a **horizontal** line every point has the same \\(y\\): the line is \\(y = \\ldots\\).\n\n**Examples:**\n\n- **a)** the line through \\((3, 1)\\) and \\((3, 4)\\)\n\n- **b)** the line through \\((-1, -2)\\) and \\((4, -2)\\)\n\n- **c)** the \\(y\\)-axis\n\n- **d)** the line through \\((-4, 5)\\) and \\((2, 5)\\)",
+   "prompt": "- On a **vertical** line every point has the same \\(x\\): the line is \\(x = \\ldots\\).\n- On a **horizontal** line every point has the same \\(y\\): the line is \\(y = \\ldots\\).\n\n**Examples:**\n\n**a)** the line through \\((3, 1)\\) and \\((3, 4)\\)\n\n---\n\n**b)** the line through \\((-1, -2)\\) and \\((4, -2)\\)\n\n---\n\n**c)** the \\(y\\)-axis\n\n---\n\n**d)** the line through \\((-4, 5)\\) and \\((2, 5)\\)",
    "steps": [
     "**a)** \\(x\\) is 3 both times:\n\n\\[\\boxed{x = 3}\\]",
     "**b)** \\(y\\) is \\(-2\\) both times:\n\n\\[\\boxed{y = -2}\\]",
@@ -53,7 +53,7 @@
   {
    "group": "13.2 Horizontal and Vertical Lines",
    "title": "Is the point on the line?",
-   "prompt": "- Put the \\(x\\) of the point into the rule.\n- If you get its \\(y\\), the point is **on** the line.\n\n**Examples:**\n\n- **a)** \\((2, 5)\\) and \\(y = 2x + 1\\)\n\n- **b)** \\((3, 6)\\) and \\(y = 2x + 1\\)\n\n- **c)** \\((0, 1)\\) and \\(y = 2x + 1\\)\n\n- **d)** \\((-1, -1)\\) and \\(y = 2x + 1\\)",
+   "prompt": "- Put the \\(x\\) of the point into the rule.\n- If you get its \\(y\\), the point is **on** the line.\n\n**Examples:**\n\n**a)** \\((2, 5)\\) and \\(y = 2x + 1\\)\n\n---\n\n**b)** \\((3, 6)\\) and \\(y = 2x + 1\\)\n\n---\n\n**c)** \\((0, 1)\\) and \\(y = 2x + 1\\)\n\n---\n\n**d)** \\((-1, -1)\\) and \\(y = 2x + 1\\)",
    "steps": [
     "**a)**\n\n\\[2\\times2 + 1 = 5\\] It gives 5: \\(\\boxed{\\text{on the line}}\\)",
     "**b)**\n\n\\[2\\times3 + 1 = 7\\] 7, not 6: \\(\\boxed{\\text{not on the line}}\\)",
@@ -66,7 +66,7 @@
   {
    "group": "13.3 Straight-Line Graphs",
    "title": "Table of values, then plot",
-   "prompt": "Pick some \\(x\\) values, work out each \\(y\\) with the rule, then plot the pairs \\((x, y)\\) and join them: a straight line.\n\n**Examples:**\n\n- **a)** \\(y = x + 2\\) at \\(x = 0\\)\n\n- **b)** \\(y = x + 2\\) at \\(x = 1\\)\n\n- **c)** \\(y = x + 2\\) at \\(x = 2\\)\n\n- **d)** \\(y = x + 2\\) at \\(x = 3\\)",
+   "prompt": "Pick some \\(x\\) values, work out each \\(y\\) with the rule, then plot the pairs \\((x, y)\\) and join them: a straight line.\n\n**Examples:**\n\n**a)** \\(y = x + 2\\) at \\(x = 0\\)\n\n---\n\n**b)** \\(y = x + 2\\) at \\(x = 1\\)\n\n---\n\n**c)** \\(y = x + 2\\) at \\(x = 2\\)\n\n---\n\n**d)** \\(y = x + 2\\) at \\(x = 3\\)",
    "steps": [
     "**a)**\n\n\\[\\begin{aligned} y &= 0 + 2 \\\\ &= \\boxed{2} \\end{aligned}\\] plot \\((0, 2)\\)",
     "**b)**\n\n\\[\\begin{aligned} y &= 1 + 2 \\\\ &= \\boxed{3} \\end{aligned}\\] plot \\((1, 3)\\)",
@@ -79,7 +79,7 @@
   {
    "group": "13.3 Straight-Line Graphs",
    "title": "Read the line: y from x, x from y",
-   "prompt": "- To find \\(y\\): go **up** from \\(x\\) to the line, then **across** to the \\(y\\)-axis.\n- To find \\(x\\): go across from \\(y\\) to the line, then down.\n\n**Examples:**\n\n- **a)** \\(y\\) when \\(x = 2\\)\n\n- **b)** \\(y\\) when \\(x = 4\\)\n\n- **c)** \\(x\\) when \\(y = 5\\)\n\n- **d)** \\(x\\) when \\(y = 1\\)",
+   "prompt": "- To find \\(y\\): go **up** from \\(x\\) to the line, then **across** to the \\(y\\)-axis.\n- To find \\(x\\): go across from \\(y\\) to the line, then down.\n\n**Examples:**\n\n**a)** \\(y\\) when \\(x = 2\\)\n\n---\n\n**b)** \\(y\\) when \\(x = 4\\)\n\n---\n\n**c)** \\(x\\) when \\(y = 5\\)\n\n---\n\n**d)** \\(x\\) when \\(y = 1\\)",
    "steps": [
     "**a)** up from 2, across:\n\n\\[y = \\boxed{3}\\] Check: \\(2\\times2 - 1 = 3\\)",
     "**b)** up from 4, across:\n\n\\[y = \\boxed{7}\\] Check: \\(2\\times4 - 1 = 7\\)",
@@ -92,7 +92,7 @@
   {
    "group": "13.4 Real-Life Graphs",
    "title": "Conversion graph",
-   "prompt": "- A straight line through 0 changes one unit into another.\n- Go up from one axis to the line, then across.\n\n**Examples:**\n\n- **a)** 16 km in miles\n\n- **b)** 32 km in miles\n\n- **c)** 15 miles in km\n\n- **d)** 5 miles in km",
+   "prompt": "- A straight line through 0 changes one unit into another.\n- Go up from one axis to the line, then across.\n\n**Examples:**\n\n**a)** 16 km in miles\n\n---\n\n**b)** 32 km in miles\n\n---\n\n**c)** 15 miles in km\n\n---\n\n**d)** 5 miles in km",
    "steps": [
     "**a)** up from 16, across:\n\n\\[\\boxed{10 \\text{ miles}}\\]",
     "**b)** up from 32, across:\n\n\\[\\boxed{20 \\text{ miles}}\\]",
@@ -105,7 +105,7 @@
   {
    "group": "13.4 Real-Life Graphs",
    "title": "Distance–time graph",
-   "prompt": "- Time goes across, distance goes up.\n- A **flat** part means the bus is **stopped**: time passes, the distance stays.\n\n**Examples:**\n\n- **a)** how far after 20 minutes?\n\n- **b)** how long is the stop?\n\n- **c)** how far is the whole trip?\n\n- **d)** how long does the whole trip take?",
+   "prompt": "- Time goes across, distance goes up.\n- A **flat** part means the bus is **stopped**: time passes, the distance stays.\n\n**Examples:**\n\n**a)** how far after 20 minutes?\n\n---\n\n**b)** how long is the stop?\n\n---\n\n**c)** how far is the whole trip?\n\n---\n\n**d)** how long does the whole trip take?",
    "steps": [
     "**a)** up from 20, across:\n\n\\[\\boxed{10 \\text{ km}}\\]",
     "**b)** flat from 20 to 30:\n\n\\[30 - 20 = \\boxed{10 \\text{ minutes}}\\]",
