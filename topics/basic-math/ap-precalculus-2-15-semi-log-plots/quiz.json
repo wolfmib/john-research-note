@@ -1,0 +1,88 @@
+{
+ "slug": "ap-precalculus-2-15-semi-log-plots",
+ "title": "AP Precalculus 2.15 — Semi-log Plots",
+ "course": "AP Precalculus",
+ "unit": "2.15",
+ "question": "Semi-log plots: read a log scale, spot straight data, turn the line into a model, predict, and read a growth rate.",
+ "intro": "**Quick recap:**\n\n\\[\n\\begin{aligned}\ny &= a\\cdot b^{x} \\\\\n\\log y &= \\log a+x\\log b\n\\end{aligned}\n\\]\n\n- On a semi-log plot exponential data is a **straight line**.\n- Slope \\(=\\log b\\), intercept \\(=\\log a\\).\n- Equal gaps on the log axis are equal factors.\n\n**A calculator is allowed. Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Read a log scale",
+   "prompt": "On the log-scale \\(y\\)-axis of a semi-log plot, a point sits exactly halfway between the gridlines \\(10\\) and \\(100\\). What is its \\(y\\)-value?",
+   "choices": [
+    "\\(55\\)",
+    "about \\(31.6\\)",
+    "\\(50\\)",
+    "\\(15\\)"
+   ],
+   "solution_title": "Halfway in height is halfway in log y",
+   "solution": "- The height on a log scale is \\(\\log y\\).\n- \\(\\log10=1\\) and \\(\\log100=2\\), so halfway is \\(1.5\\).\n\n\\[\n\\begin{aligned}\n\\log y &= 1.5 \\\\\ny &= 10^{1.5} \\\\\n&\\approx 31.6\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{y\\approx31.6}\n\\]\n\n- Not \\(55\\): that is halfway on an ordinary scale.\n- Not \\(50\\) or \\(15\\): the gap from \\(10\\) to \\(100\\) is a factor of \\(10\\), so halfway is a factor of \\(\\sqrt{10}\\approx3.16\\).",
+   "answer": "B",
+   "type": "mcq"
+  },
+  {
+   "title": "Which data is straight?",
+   "prompt": "Each set has \\(x=0,1,2,3\\). Which set of \\(y\\)-values lies on a **straight line** on a semi-log plot?",
+   "choices": [
+    "\\(2,\\ 4,\\ 6,\\ 8\\)",
+    "\\(1,\\ 4,\\ 9,\\ 16\\)",
+    "\\(7,\\ 21,\\ 63,\\ 189\\)",
+    "\\(10,\\ 20,\\ 40,\\ 70\\)"
+   ],
+   "solution_title": "Look for the same ratio each step",
+   "solution": "\\[\n\\begin{aligned}\n21\\div7 &= 3 \\\\\n63\\div21 &= 3 \\\\\n189\\div63 &= 3\n\\end{aligned}\n\\]\n\n- Same ratio \\(3\\) every step: exponential, so straight on a semi-log plot.\n\n\\[\n\\boxed{7,\\ 21,\\ 63,\\ 189}\n\\]\n\n- Not \\(2,4,6,8\\): adds \\(2\\) each step (linear).\n- Not \\(1,4,9,16\\): \\(y=x^{2}\\), the ratios \\(4,\\ 2.25,\\ 1.78\\) change.\n- Not \\(10,20,40,70\\): \\(\\times2,\\ \\times2,\\) then \\(\\times1.75\\). One different ratio is enough to bend.",
+   "answer": "C",
+   "type": "mcq"
+  },
+  {
+   "title": "From the line to the model",
+   "prompt": "On a semi-log plot (\\(\\log\\) base \\(10\\)) the data lie on the line\n\n\\[\n\\log y=0.3+0.6x\n\\]\n\nWhich model fits, to one decimal place?",
+   "choices": [
+    "\\(y\\approx2.0\\cdot(4.0)^{x}\\)",
+    "\\(y\\approx4.0\\cdot(2.0)^{x}\\)",
+    "\\(y=0.3+0.6x\\)",
+    "\\(y=0.3\\cdot(0.6)^{x}\\)"
+   ],
+   "solution_title": "Intercept is log a, slope is log b",
+   "solution": "\\[\n\\begin{aligned}\n\\log a &= 0.3 \\\\\na &= 10^{0.3} \\\\\n&\\approx 2.0 \\\\\n\\log b &= 0.6 \\\\\nb &= 10^{0.6} \\\\\n&\\approx 4.0\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{y\\approx2.0\\cdot(4.0)^{x}}\n\\]\n\n- Not \\(4.0\\cdot(2.0)^{x}\\): intercept and slope swapped.\n- Not \\(0.3+0.6x\\) or \\(0.3\\cdot0.6^{x}\\): the line is for \\(\\log y\\); undo the \\(\\log\\) with \\(10^{(\\ )}\\).",
+   "answer": "A",
+   "type": "mcq"
+  },
+  {
+   "title": "Predict from two points",
+   "prompt": "The figure shows a semi-log plot. The data lie on a straight line through \\((0,\\,6)\\) and \\((2,\\,54)\\). Predict \\(y\\) at \\(x=3\\).",
+   "figure": "2-15-quiz-two-points.svg",
+   "figure_alt": "Semi-log plot: a straight line through (0, 6) and (2, 54); a dashed guide at x = 3 marked y = ?",
+   "choices": [
+    "\\(78\\)",
+    "\\(108\\)",
+    "\\(486\\)",
+    "\\(162\\)"
+   ],
+   "solution_title": "Straight on semi-log means exponential",
+   "solution": "\\[\n\\begin{aligned}\ny &= a\\cdot b^{x} \\\\\na &= 6 \\\\\n54 &= 6\\cdot b^{2} \\\\\nb^{2} &= 9 \\\\\nb &= 3 \\\\\ny(3) &= 6\\cdot3^{3} \\\\\n&= 162\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{162}\n\\]\n\n- Not \\(78\\): a straight line on an ordinary graph (\\(6+24x\\)) is the wrong model here.\n- Not \\(108\\): one step multiplies by \\(3\\), not by \\(2\\).\n- Not \\(486\\): \\(54\\cdot9\\) jumps two steps; \\(x=3\\) is one step after \\(x=2\\).",
+   "answer": "D",
+   "type": "mcq"
+  },
+  {
+   "title": "Growth rate from the slope",
+   "prompt": "An app's monthly downloads lie on a straight line on a semi-log plot (\\(\\log\\) base \\(10\\)). The slope of the line is \\(0.0792\\) per month. By what percent do the downloads grow each month?",
+   "choices": [
+    "about \\(7.92\\%\\)",
+    "about \\(20\\%\\)",
+    "about \\(0.0792\\%\\)",
+    "about \\(120\\%\\)"
+   ],
+   "solution_title": "Slope is log b; b - 1 is the rate",
+   "solution": "\\[\n\\begin{aligned}\n\\log b &= 0.0792 \\\\\nb &= 10^{0.0792} \\\\\n&\\approx 1.20\n\\end{aligned}\n\\]\n\n- \\(b=1.20\\) means \\(\\times1.20\\) each month: \\(+20\\%\\).\n\n\\[\n\\boxed{\\text{about }20\\%}\n\\]\n\n- Not \\(7.92\\%\\) or \\(0.0792\\%\\): the slope is \\(\\log b\\), not the rate.\n- Not \\(120\\%\\): \\(1.20\\) is the factor; the growth is the part above \\(1\\).",
+   "answer": "B",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "Straight on a semi-log plot means exponential: slope = log b, intercept = log a.",
+ "link": [
+  "Math Material — Semi-log Plots",
+  "../math-material-semi-log-plots/material.html"
+ ],
+ "send_to": "John"
+}

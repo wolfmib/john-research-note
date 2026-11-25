@@ -187,6 +187,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 8 — Algebra Word Problems](topics/basic-math/malta-year-8-math-chapter-8-algebra-word-problems/content.md) | Four stories with two unknown prices. Write the two equations yourself, then solve them. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-8-algebra-word-problems/quiz.html) |
 | [Math Material — Semi-log Plots](topics/basic-math/math-material-semi-log-plots/content.md) | Semi-log plots in four cards: the log scale, why exponentials are straight, the ratio test, reading the model off the line. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-semi-log-plots/material.html) |
 | [Math Material — Periodic Phenomena](topics/basic-math/math-material-periodic-phenomena/content.md) | Periodic patterns in four cards: period, midline and amplitude, predicting with the period, rising and falling. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-periodic-phenomena/material.html) |
+| [AP Precalculus 2.15 — Semi-log Plots](topics/basic-math/ap-precalculus-2-15-semi-log-plots/content.md) | Semi-log plots: read a log scale, spot straight data, turn the line into a model, predict, and read a growth rate. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-15-semi-log-plots/quiz.html) |
 
 ## Animations
 
