@@ -36,10 +36,19 @@ Chapter 2 builds the number skills that every later chapter uses.
 
 **Examples:**
 
-- **a)** the 7 in $4\,725$
-- **b)** the 7 in $73\,018$
-- **c)** the 7 in $12.7$
-- **d)** the 7 in $3.07$
+**a)** the 7 in $4\,725$
+
+---
+
+**b)** the 7 in $73\,018$
+
+---
+
+**c)** the 7 in $12.7$
+
+---
+
+**d)** the 7 in $3.07$
 
 <details>
 <summary><b>Working</b></summary>
@@ -76,10 +85,19 @@ Look at the digit **just after** the place you are rounding to: **5 or more** ro
 
 **Examples:**
 
-- **a)** $347$ to the nearest 10
-- **b)** $2\,461$ to the nearest 100
-- **c)** $18\,499$ to the nearest 1000
-- **d)** $795$ to the nearest 10
+**a)** $347$ to the nearest 10
+
+---
+
+**b)** $2\,461$ to the nearest 100
+
+---
+
+**c)** $18\,499$ to the nearest 1000
+
+---
+
+**d)** $795$ to the nearest 10
 
 <details>
 <summary><b>Working</b></summary>
@@ -116,10 +134,19 @@ The same rule works after the decimal point: count the decimal places, then look
 
 **Examples:**
 
-- **a)** $3.46$ to 1 decimal place
-- **b)** $12.83$ to the nearest whole number
-- **c)** $0.372$ to 2 decimal places
-- **d)** $9.96$ to 1 decimal place
+**a)** $3.46$ to 1 decimal place
+
+---
+
+**b)** $12.83$ to the nearest whole number
+
+---
+
+**c)** $0.372$ to 2 decimal places
+
+---
+
+**d)** $9.96$ to 1 decimal place
 
 <details>
 <summary><b>Working</b></summary>
@@ -159,10 +186,19 @@ $$
 
 **Examples:**
 
-- **a)** $5 + 3\times4$
-- **b)** $20 - 12\div4$
-- **c)** $6\times2 + 8\div2$
-- **d)** $30 - 4\times5 + 1$
+**a)** $5 + 3\times4$
+
+---
+
+**b)** $20 - 12\div4$
+
+---
+
+**c)** $6\times2 + 8\div2$
+
+---
+
+**d)** $30 - 4\times5 + 1$
 
 <details>
 <summary><b>Working</b></summary>
@@ -199,10 +235,19 @@ Work out the **brackets first** — they change the order.
 
 **Examples:**
 
-- **a)** $(5 + 3)\times4$
-- **b)** $20\div(2 + 3)$
-- **c)** $3\times(10 - 4)$
-- **d)** $(8 - 2)\times(1 + 4)$
+**a)** $(5 + 3)\times4$
+
+---
+
+**b)** $20\div(2 + 3)$
+
+---
+
+**c)** $3\times(10 - 4)$
+
+---
+
+**d)** $(8 - 2)\times(1 + 4)$
 
 <details>
 <summary><b>Working</b></summary>
@@ -239,10 +284,19 @@ $$
 
 **Examples:**
 
-- **a)** $2\times3^2$
-- **b)** $4^2 - 6$
-- **c)** $(1 + 2)^2$
-- **d)** $10 + 2^3\div4$
+**a)** $2\times3^2$
+
+---
+
+**b)** $4^2 - 6$
+
+---
+
+**c)** $(1 + 2)^2$
+
+---
+
+**d)** $10 + 2^3\div4$
 
 <details>
 <summary><b>Working</b></summary>
@@ -282,10 +336,19 @@ $$
 
 **Examples:**
 
-- **a)** the factors of 18
-- **b)** the factors of 20
-- **c)** the factors of 36
-- **d)** the factors of 13
+**a)** the factors of 18
+
+---
+
+**b)** the factors of 20
+
+---
+
+**c)** the factors of 36
+
+---
+
+**d)** the factors of 13
 
 <details>
 <summary><b>Working</b></summary>
@@ -325,10 +388,19 @@ $$
 
 **Examples:**
 
-- **a)** the first five multiples of 6
-- **b)** the first five multiples of 9
-- **c)** Is 84 a multiple of 7?
-- **d)** Is 50 a multiple of 4?
+**a)** the first five multiples of 6
+
+---
+
+**b)** the first five multiples of 9
+
+---
+
+**c)** Is 84 a multiple of 7?
+
+---
+
+**d)** Is 50 a multiple of 4?
 
 <details>
 <summary><b>Working</b></summary>
@@ -367,10 +439,19 @@ $$
 
 **Examples:**
 
-- **a)** Is 17 prime?
-- **b)** Is 21 prime?
-- **c)** Is 29 prime?
-- **d)** Is 1 prime?
+**a)** Is 17 prime?
+
+---
+
+**b)** Is 21 prime?
+
+---
+
+**c)** Is 29 prime?
+
+---
+
+**d)** Is 1 prime?
 
 <details>
 <summary><b>Working</b></summary>
@@ -408,10 +489,19 @@ $$
 
 **Examples:**
 
-- **a)** $12$
-- **b)** $30$
-- **c)** $40$
-- **d)** $45$
+**a)** $12$
+
+---
+
+**b)** $30$
+
+---
+
+**c)** $40$
+
+---
+
+**d)** $45$
 
 <details>
 <summary><b>Working</b></summary>
@@ -451,45 +541,50 @@ $$
 
 **Examples:**
 
-- **a)** HCF of 12 and 18
-- **b)** HCF of 8 and 20
-- **c)** HCF of 15 and 25
-- **d)** HCF of 14 and 21
+**a)** HCF of 12 and 18
+
+---
+
+**b)** HCF of 8 and 20
+
+---
+
+**c)** HCF of 15 and 25
+
+---
+
+**d)** HCF of 14 and 21
 
 <details>
 <summary><b>Working</b></summary>
 
-**a)**
+**a)** Factors of 12: 1, 2, 3, 4, **6**, 12.
 
-- Factors of 12: 1, 2, 3, 4, **6**, 12.
-- Factors of 18: 1, 2, 3, **6**, 9, 18.
+Factors of 18: 1, 2, 3, **6**, 9, 18.
 
 $$
 \text{HCF} = \boxed{6}
 $$
 
-**b)**
+**b)** Factors of 8: 1, 2, **4**, 8.
 
-- Factors of 8: 1, 2, **4**, 8.
-- Factors of 20: 1, 2, **4**, 5, 10, 20.
+Factors of 20: 1, 2, **4**, 5, 10, 20.
 
 $$
 \text{HCF} = \boxed{4}
 $$
 
-**c)**
+**c)** Factors of 15: 1, 3, **5**, 15.
 
-- Factors of 15: 1, 3, **5**, 15.
-- Factors of 25: 1, **5**, 25.
+Factors of 25: 1, **5**, 25.
 
 $$
 \text{HCF} = \boxed{5}
 $$
 
-**d)**
+**d)** Factors of 14: 1, 2, **7**, 14.
 
-- Factors of 14: 1, 2, **7**, 14.
-- Factors of 21: 1, 3, **7**, 21.
+Factors of 21: 1, 3, **7**, 21.
 
 $$
 \text{HCF} = \boxed{7}
@@ -504,45 +599,50 @@ $$
 
 **Examples:**
 
-- **a)** LCM of 4 and 6
-- **b)** LCM of 3 and 5
-- **c)** LCM of 6 and 8
-- **d)** LCM of 10 and 15
+**a)** LCM of 4 and 6
+
+---
+
+**b)** LCM of 3 and 5
+
+---
+
+**c)** LCM of 6 and 8
+
+---
+
+**d)** LCM of 10 and 15
 
 <details>
 <summary><b>Working</b></summary>
 
-**a)**
+**a)** Multiples of 4: 4, 8, **12**.
 
-- Multiples of 4: 4, 8, **12**.
-- Multiples of 6: 6, **12**.
+Multiples of 6: 6, **12**.
 
 $$
 \text{LCM} = \boxed{12}
 $$
 
-**b)**
+**b)** Multiples of 3: 3, 6, 9, 12, **15**.
 
-- Multiples of 3: 3, 6, 9, 12, **15**.
-- Multiples of 5: 5, 10, **15**.
+Multiples of 5: 5, 10, **15**.
 
 $$
 \text{LCM} = \boxed{15}
 $$
 
-**c)**
+**c)** Multiples of 6: 6, 12, 18, **24**.
 
-- Multiples of 6: 6, 12, 18, **24**.
-- Multiples of 8: 8, 16, **24**.
+Multiples of 8: 8, 16, **24**.
 
 $$
 \text{LCM} = \boxed{24}
 $$
 
-**d)**
+**d)** Multiples of 10: 10, 20, **30**.
 
-- Multiples of 10: 10, 20, **30**.
-- Multiples of 15: 15, **30**.
+Multiples of 15: 15, **30**.
 
 $$
 \text{LCM} = \boxed{30}
@@ -556,10 +656,33 @@ $$
 
 **Examples:**
 
-- **a)** Two buses leave Valletta together at 9:00. One route leaves every 10 minutes, the other every 15 minutes. When do they next leave together?
-- **b)** 24 pastizzi and 36 qassatat are packed into bags. Every bag holds the same number of pastries, one kind per bag, with none left over. What is the most each bag can hold?
-- **c)** Ribbons of 18 cm and 27 cm are cut into pieces all the same length, with nothing left over. What is the longest each piece can be?
-- **d)** One lighthouse flashes every 6 seconds and another every 8 seconds. They flash together now. After how many seconds do they flash together again?
+**a)** Two buses leave Valletta together at 9:00.
+
+One route leaves every 10 minutes, the other every 15 minutes.
+
+When do they next leave together?
+
+---
+
+**b)** 24 pastizzi and 36 qassatat are packed into bags.
+
+Every bag holds the same number of pastries, one kind per bag, with none left over.
+
+What is the most each bag can hold?
+
+---
+
+**c)** Ribbons of 18 cm and 27 cm are cut into pieces all the same length, with nothing left over.
+
+What is the longest each piece can be?
+
+---
+
+**d)** One lighthouse flashes every 6 seconds and another every 8 seconds.
+
+They flash together now.
+
+After how many seconds do they flash together again?
 
 <details>
 <summary><b>Working</b></summary>
@@ -601,10 +724,19 @@ $$
 
 **Examples:**
 
-- **a)** $6^2$
-- **b)** $9^2$
-- **c)** $11^2$
-- **d)** $15^2$
+**a)** $6^2$
+
+---
+
+**b)** $9^2$
+
+---
+
+**c)** $11^2$
+
+---
+
+**d)** $15^2$
 
 <details>
 <summary><b>Working</b></summary>
@@ -644,10 +776,19 @@ $$
 
 **Examples:**
 
-- **a)** $\sqrt{64}$
-- **b)** $\sqrt{100}$
-- **c)** $\sqrt{144}$
-- **d)** $\sqrt{49}$
+**a)** $\sqrt{64}$
+
+---
+
+**b)** $\sqrt{100}$
+
+---
+
+**c)** $\sqrt{144}$
+
+---
+
+**d)** $\sqrt{49}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -685,10 +826,19 @@ $$
 
 **Examples:**
 
-- **a)** $2^3$
-- **b)** $4^3$
-- **c)** $\sqrt[3]{27}$
-- **d)** $\sqrt[3]{125}$
+**a)** $2^3$
+
+---
+
+**b)** $4^3$
+
+---
+
+**c)** $\sqrt[3]{27}$
+
+---
+
+**d)** $\sqrt[3]{125}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -725,10 +875,19 @@ In $3^4$ the **base** 3 is multiplied by itself, and the **power** 4 says how ma
 
 **Examples:**
 
-- **a)** $3^4$
-- **b)** $10^3$
-- **c)** $2^5$
-- **d)** $5^2\times2$
+**a)** $3^4$
+
+---
+
+**b)** $10^3$
+
+---
+
+**c)** $2^5$
+
+---
+
+**d)** $5^2\times2$
 
 <details>
 <summary><b>Working</b></summary>
