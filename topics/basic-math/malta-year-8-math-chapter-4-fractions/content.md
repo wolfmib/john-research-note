@@ -38,13 +38,19 @@ Chapter 4 works with fractions step by step.
 
 **Examples:**
 
-- **a)** $\dfrac{6}{8}$
+**a)** $\dfrac{6}{8}$
 
-- **b)** $\dfrac{10}{15}$
+---
 
-- **c)** $\dfrac{12}{18}$
+**b)** $\dfrac{10}{15}$
 
-- **d)** $\dfrac{20}{24}$
+---
+
+**c)** $\dfrac{12}{18}$
+
+---
+
+**d)** $\dfrac{20}{24}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -82,13 +88,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{2}{3} = \dfrac{?}{12}$
+**a)** $\dfrac{2}{3} = \dfrac{?}{12}$
 
-- **b)** $\dfrac{3}{4} = \dfrac{?}{20}$
+---
 
-- **c)** $\dfrac{5}{6} = \dfrac{?}{18}$
+**b)** $\dfrac{3}{4} = \dfrac{?}{20}$
 
-- **d)** $\dfrac{1}{5} = \dfrac{4}{?}$
+---
+
+**c)** $\dfrac{5}{6} = \dfrac{?}{18}$
+
+---
+
+**d)** $\dfrac{1}{5} = \dfrac{4}{?}$
 
 ![Two bars of the same length: 2 of 3 parts shaded, and 8 of 12 parts shaded, ending at the same place.](media/ch4-equivalent-2-3.svg)
 
@@ -131,13 +143,19 @@ $$
 
 **Examples:**
 
-- **a)** $2\dfrac{1}{3}$
+**a)** $2\dfrac{1}{3}$
 
-- **b)** $1\dfrac{3}{4}$
+---
 
-- **c)** $3\dfrac{2}{5}$
+**b)** $1\dfrac{3}{4}$
 
-- **d)** $4\dfrac{1}{2}$
+---
+
+**c)** $3\dfrac{2}{5}$
+
+---
+
+**d)** $4\dfrac{1}{2}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -175,13 +193,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{11}{4}$
+**a)** $\dfrac{11}{4}$
 
-- **b)** $\dfrac{17}{5}$
+---
 
-- **c)** $\dfrac{13}{6}$
+**b)** $\dfrac{17}{5}$
 
-- **d)** $\dfrac{9}{2}$
+---
+
+**c)** $\dfrac{13}{6}$
+
+---
+
+**d)** $\dfrac{9}{2}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -222,13 +246,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{2}{9} + \dfrac{5}{9}$
+**a)** $\dfrac{2}{9} + \dfrac{5}{9}$
 
-- **b)** $\dfrac{7}{10} - \dfrac{3}{10}$
+---
 
-- **c)** $\dfrac{3}{8} + \dfrac{1}{8}$
+**b)** $\dfrac{7}{10} - \dfrac{3}{10}$
 
-- **d)** $\dfrac{5}{6} - \dfrac{1}{6}$
+---
+
+**c)** $\dfrac{3}{8} + \dfrac{1}{8}$
+
+---
+
+**d)** $\dfrac{5}{6} - \dfrac{1}{6}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -267,13 +297,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{1}{2} + \dfrac{1}{3}$
+**a)** $\dfrac{1}{2} + \dfrac{1}{3}$
 
-- **b)** $\dfrac{2}{5} + \dfrac{1}{4}$
+---
 
-- **c)** $\dfrac{3}{4} - \dfrac{1}{6}$
+**b)** $\dfrac{2}{5} + \dfrac{1}{4}$
 
-- **d)** $\dfrac{5}{8} - \dfrac{1}{4}$
+---
+
+**c)** $\dfrac{3}{4} - \dfrac{1}{6}$
+
+---
+
+**d)** $\dfrac{5}{8} - \dfrac{1}{4}$
 
 ![One half and one third drawn as bars; underneath, one bar cut into 6 parts with 3 blue and 2 green parts, and a question mark.](media/ch4-add-1-2-1-3.svg)
 
@@ -315,13 +351,19 @@ $$
 
 **Examples:**
 
-- **a)** $10\times\dfrac{4}{5}$
+**a)** $10\times\dfrac{4}{5}$
 
-- **b)** $\dfrac{3}{5}\times20$
+---
 
-- **c)** $\dfrac{2}{7}\times21$
+**b)** $\dfrac{3}{5}\times20$
 
-- **d)** $\dfrac{5}{6}\times30$
+---
+
+**c)** $\dfrac{2}{7}\times21$
+
+---
+
+**d)** $\dfrac{5}{6}\times30$
 
 <details>
 <summary><b>Working</b></summary>
@@ -359,13 +401,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{4}{9}\times\dfrac{3}{8}$
+**a)** $\dfrac{4}{9}\times\dfrac{3}{8}$
 
-- **b)** $\dfrac{5}{6}\times\dfrac{9}{10}$
+---
 
-- **c)** $\dfrac{2}{3}\times\dfrac{9}{14}$
+**b)** $\dfrac{5}{6}\times\dfrac{9}{10}$
 
-- **d)** $\dfrac{7}{12}\times\dfrac{8}{21}$
+---
+
+**c)** $\dfrac{2}{3}\times\dfrac{9}{14}$
+
+---
+
+**d)** $\dfrac{7}{12}\times\dfrac{8}{21}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -403,13 +451,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{3}{4}\div\dfrac{1}{2}$
+**a)** $\dfrac{3}{4}\div\dfrac{1}{2}$
 
-- **b)** $\dfrac{5}{6}\div\dfrac{5}{12}$
+---
 
-- **c)** $\dfrac{4}{5}\div2$
+**b)** $\dfrac{5}{6}\div\dfrac{5}{12}$
 
-- **d)** $\dfrac{3}{8}\div\dfrac{3}{4}$
+---
+
+**c)** $\dfrac{4}{5}\div2$
+
+---
+
+**d)** $\dfrac{3}{8}\div\dfrac{3}{4}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -449,13 +503,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8}$
+**a)** $\dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8}$
 
-- **b)** $\dfrac{2}{3} + \dfrac{1}{6} - \dfrac{1}{2}$
+---
 
-- **c)** $\dfrac{3}{4} - \dfrac{1}{3} + \dfrac{1}{6}$
+**b)** $\dfrac{2}{3} + \dfrac{1}{6} - \dfrac{1}{2}$
 
-- **d)** $\dfrac{1}{5} + \dfrac{1}{2} - \dfrac{3}{10}$
+---
+
+**c)** $\dfrac{3}{4} - \dfrac{1}{3} + \dfrac{1}{6}$
+
+---
+
+**d)** $\dfrac{1}{5} + \dfrac{1}{2} - \dfrac{3}{10}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -493,13 +553,19 @@ $$
 
 **Examples:**
 
-- **a)** $\dfrac{1}{2} + \dfrac{1}{4}\times\dfrac{2}{3}$
+**a)** $\dfrac{1}{2} + \dfrac{1}{4}\times\dfrac{2}{3}$
 
-- **b)** $\dfrac{5}{6} - \dfrac{1}{3}\times\dfrac{3}{4}$
+---
 
-- **c)** $\dfrac{1}{3} + \dfrac{2}{5}\times\dfrac{5}{8} - \dfrac{1}{4}$
+**b)** $\dfrac{5}{6} - \dfrac{1}{3}\times\dfrac{3}{4}$
 
-- **d)** $\dfrac{3}{4}\times\dfrac{2}{9} + \dfrac{1}{2} - \dfrac{1}{4}$
+---
+
+**c)** $\dfrac{1}{3} + \dfrac{2}{5}\times\dfrac{5}{8} - \dfrac{1}{4}$
+
+---
+
+**d)** $\dfrac{3}{4}\times\dfrac{2}{9} + \dfrac{1}{2} - \dfrac{1}{4}$
 
 <details>
 <summary><b>Working</b></summary>
@@ -538,13 +604,19 @@ To find $\dfrac{2}{5}$ of an amount: **divide by the bottom**, then **multiply b
 
 **Examples:**
 
-- **a)** $\dfrac{2}{5}$ of €30
+**a)** $\dfrac{2}{5}$ of €30
 
-- **b)** $\dfrac{3}{4}$ of 24 sweets
+---
 
-- **c)** $\dfrac{5}{8}$ of 40 km
+**b)** $\dfrac{3}{4}$ of 24 sweets
 
-- **d)** $\dfrac{2}{3}$ of 45 minutes
+---
+
+**c)** $\dfrac{5}{8}$ of 40 km
+
+---
+
+**d)** $\dfrac{2}{3}$ of 45 minutes
 
 <details>
 <summary><b>Working</b></summary>
@@ -590,13 +662,27 @@ So it is 30 minutes.
 
 **Examples:**
 
-- **a)** A pizza: you eat $\dfrac{1}{4}$, a friend eats $\dfrac{3}{8}$. What fraction is left?
+**a)** A pizza: you eat $\dfrac{1}{4}$, a friend eats $\dfrac{3}{8}$.
 
-- **b)** €60 pocket money: $\dfrac{1}{3}$ on a book, $\dfrac{1}{4}$ of the €60 on a cinema ticket. How much is left?
+What fraction is left?
 
-- **c)** A bus with 40 people: $\dfrac{1}{4}$ get off in Mosta, then $\dfrac{1}{2}$ of the **rest** get off in Naxxar. How many are left?
+---
 
-- **d)** $\dfrac{2}{3}$ of a litre of juice is shared equally into 4 glasses. How much in each glass?
+**b)** €60 pocket money: $\dfrac{1}{3}$ on a book, $\dfrac{1}{4}$ of the €60 on a cinema ticket.
+
+How much is left?
+
+---
+
+**c)** A bus with 40 people: $\dfrac{1}{4}$ get off in Mosta, then $\dfrac{1}{2}$ of the **rest** get off in Naxxar.
+
+How many are left?
+
+---
+
+**d)** $\dfrac{2}{3}$ of a litre of juice is shared equally into 4 glasses.
+
+How much in each glass?
 
 <details>
 <summary><b>Working</b></summary>
@@ -607,10 +693,9 @@ $$
 \begin{aligned} 1 - \frac{1}{4} - \frac{3}{8} &= \frac{8}{8} - \frac{2}{8} - \frac{3}{8} \\ &= \boxed{\frac{3}{8}} \end{aligned}
 $$
 
-**b)**
+**b)** Book: $60\div3 = 20$.
 
-- Book: $60\div3 = 20$.
-- Cinema: $60\div4 = 15$.
+Cinema: $60\div4 = 15$.
 
 $$
 60 - 20 - 15 = \boxed{25}
@@ -618,10 +703,9 @@ $$
 
 So €25 is left.
 
-**c)**
+**c)** Mosta: $40\div4 = 10$ get off, 30 stay.
 
-- Mosta: $40\div4 = 10$ get off, 30 stay.
-- Naxxar: half of 30 is 15.
+Naxxar: half of 30 is 15.
 
 $$
 30 - 15 = \boxed{15}
