@@ -36,13 +36,19 @@ Chapter 6 works with per cent: out of 100.
 
 **Examples:**
 
-- **a)** $50\%$
+**a)** $50\%$
 
-- **b)** $20\%$
+---
 
-- **c)** $75\%$
+**b)** $20\%$
 
-- **d)** $5\%$
+---
+
+**c)** $75\%$
+
+---
+
+**d)** $5\%$
 
 ![A 10 by 10 grid with 25 of the 100 squares shaded: 25 out of 100 is 25%.](media/ch6-hundred-square-25.svg)
 
@@ -101,13 +107,19 @@ Not $0.5$: $5\%$ is 5 hundredths, so $0.05$.
 
 **Examples:**
 
-- **a)** $\dfrac{3}{5}$
+**a)** $\dfrac{3}{5}$
 
-- **b)** $0.35$
+---
 
-- **c)** $\dfrac{9}{25}$
+**b)** $0.35$
 
-- **d)** $0.8$
+---
+
+**c)** $\dfrac{9}{25}$
+
+---
+
+**d)** $0.8$
 
 <details>
 <summary><b>Working</b></summary>
@@ -153,13 +165,19 @@ Four quick ones:
 
 **Examples:**
 
-- **a)** $50\%$ of 36 pastizzi
+**a)** $50\%$ of 36 pastizzi
 
-- **b)** $25\%$ of €48
+---
 
-- **c)** $10\%$ of 70 km
+**b)** $25\%$ of €48
 
-- **d)** $1\%$ of €300
+---
+
+**c)** $10\%$ of 70 km
+
+---
+
+**d)** $1\%$ of €300
 
 <details>
 <summary><b>Working</b></summary>
@@ -202,13 +220,19 @@ $$ so €3
 
 **Examples:**
 
-- **a)** $15\%$ of €40
+**a)** $15\%$ of €40
 
-- **b)** $35\%$ of €60
+---
 
-- **c)** $12\%$ of 50
+**b)** $35\%$ of €60
 
-- **d)** $45\%$ of 80
+---
+
+**c)** $12\%$ of 50
+
+---
+
+**d)** $45\%$ of 80
 
 ![€40 as a bar of 10 equal parts; one part is 10% = €4, and 5% is half a part = €2.](media/ch6-ten-percent-bar-40.svg)
 
@@ -249,13 +273,19 @@ $$With a calculator this works for every percentage. Without one, pick the easie
 
 **Examples:**
 
-- **a)** $18\%$ of 50
+**a)** $18\%$ of 50
 
-- **b)** $7\%$ of €200
+---
 
-- **c)** $64\%$ of 25
+**b)** $7\%$ of €200
 
-- **d)** $30\%$ of 45
+---
+
+**c)** $64\%$ of 25
+
+---
+
+**d)** $30\%$ of 45
 
 <details>
 <summary><b>Working</b></summary>
@@ -294,13 +324,19 @@ Write it as a fraction **part over whole**, then make the bottom 100 (or $\times
 
 **Examples:**
 
-- **a)** 18 out of 25 in a test
+**a)** 18 out of 25 in a test
 
-- **b)** 12 out of 20 students walk
+---
 
-- **c)** 9 out of 10 goals
+**b)** 12 out of 20 students walk
 
-- **d)** 21 out of 50 seats taken
+---
+
+**c)** 9 out of 10 goals
+
+---
+
+**d)** 21 out of 50 seats taken
 
 <details>
 <summary><b>Working</b></summary>
@@ -341,13 +377,19 @@ Two steps: **find** the percentage, then **take it away** from the price.
 
 **Examples:**
 
-- **a)** €80 jacket, $25\%$ off
+**a)** €80 jacket, $25\%$ off
 
-- **b)** €45 shoes, $10\%$ off
+---
 
-- **c)** €120 bike, $15\%$ off
+**b)** €45 shoes, $10\%$ off
 
-- **d)** €36 game, $50\%$ off
+---
+
+**c)** €120 bike, $15\%$ off
+
+---
+
+**d)** €36 game, $50\%$ off
 
 <details>
 <summary><b>Working</b></summary>
@@ -387,13 +429,19 @@ Not €20 for the jacket: $20$ is the money **off**, not the new price.
 
 **Examples:**
 
-- **a)** €50 + VAT $18\%$
+**a)** €50 + VAT $18\%$
 
-- **b)** rent €200 rises by $5\%$
+---
 
-- **c)** 30 festa visitors grow by $20\%$
+**b)** rent €200 rises by $5\%$
 
-- **d)** €15 meal + $10\%$ tip
+---
+
+**c)** 30 festa visitors grow by $20\%$
+
+---
+
+**d)** €15 meal + $10\%$ tip
 
 <details>
 <summary><b>Working</b></summary>
@@ -435,13 +483,19 @@ Multiply once.
 
 **Examples:**
 
-- **a)** €50 up $18\%$
+**a)** €50 up $18\%$
 
-- **b)** €80 down $25\%$
+---
 
-- **c)** €200 up $5\%$
+**b)** €80 down $25\%$
 
-- **d)** €40 down $10\%$
+---
+
+**c)** €200 up $5\%$
+
+---
+
+**d)** €40 down $10\%$
 
 <details>
 <summary><b>Working</b></summary>
