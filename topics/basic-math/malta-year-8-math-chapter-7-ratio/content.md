@@ -24,19 +24,25 @@ author: Wei-Che Hung
 
 **Examples:**
 
-- **a)** 3 notebooks cost €6.
+**a)** 3 notebooks cost €6.
 
 How much do 5 notebooks cost?
 
-- **b)** A recipe for 4 people uses 300 g of flour.
+---
+
+**b)** A recipe for 4 people uses 300 g of flour.
 
 How many grams of flour are needed for 6 people?
 
-- **c)** 3 kg of apples costs €6.
+---
+
+**c)** 3 kg of apples costs €6.
 
 What is the cost of 5 kg at the same price per kg?
 
-- **d)** 3 identical full bottles hold 1.5 litres altogether.
+---
+
+**d)** 3 identical full bottles hold 1.5 litres altogether.
 
 How many litres do 8 full bottles hold?
 
@@ -145,13 +151,19 @@ Find one unit first, then multiply by the number needed; both quantities scale t
 
 **Examples:**
 
-- **a)** Write $50$ cm : $2$ m in simplest form.
+**a)** Write $50$ cm : $2$ m in simplest form.
 
-- **b)** Write $1.5$ kg : $500$ g in simplest form.
+---
 
-- **c)** Write $45$ min : $1.5$ hours in simplest form.
+**b)** Write $1.5$ kg : $500$ g in simplest form.
 
-- **d)** Write $2.5$ litres : $4.5$ litres in simplest form.
+---
+
+**c)** Write $45$ min : $1.5$ hours in simplest form.
+
+---
+
+**d)** Write $2.5$ litres : $4.5$ litres in simplest form.
 
 ![Convert 2 metres to 200 centimetres before simplifying the ratio with 50 centimetres.](media/ch7-card-2.svg)
 
@@ -182,8 +194,9 @@ $$
 50 : 200=\boxed{1 : 4}
 $$
 
-- Use the same units first; clear decimals if needed, then divide both terms by their HCF.
-- Keep the order.
+Use the same units first; clear decimals if needed, then divide both terms by their HCF.
+
+Keep the order.
 
 **b)**
 
@@ -203,8 +216,9 @@ $$
 1500 : 500=\boxed{3 : 1}
 $$
 
-- Use the same units first; clear decimals if needed, then divide both terms by their HCF.
-- Keep the order.
+Use the same units first; clear decimals if needed, then divide both terms by their HCF.
+
+Keep the order.
 
 **c)**
 
@@ -224,8 +238,9 @@ $$
 45 : 90=\boxed{1 : 2}
 $$
 
-- Use the same units first; clear decimals if needed, then divide both terms by their HCF.
-- Keep the order.
+Use the same units first; clear decimals if needed, then divide both terms by their HCF.
+
+Keep the order.
 
 **d)**
 
@@ -241,8 +256,9 @@ $$
 5 : 9=\boxed{5 : 9}
 $$
 
-- Use the same units first; clear decimals if needed, then divide both terms by their HCF.
-- Keep the order.
+Use the same units first; clear decimals if needed, then divide both terms by their HCF.
+
+Keep the order.
 
 </details>
 
@@ -256,25 +272,31 @@ $$
 
 **Examples:**
 
-- **a)** Find $x$:
+**a)** Find $x$:
 
 $$
 2:3=8:x
 $$
 
-- **b)** Find $x$:
+---
+
+**b)** Find $x$:
 
 $$
 8:12=2:x
 $$
 
-- **c)** Find $x$, or decide that no solution exists:
+---
+
+**c)** Find $x$, or decide that no solution exists:
 
 $$
 2:3:7=x:6:14
 $$
 
-- **d)** Find $x$, or decide that no solution exists:
+---
+
+**d)** Find $x$, or decide that no solution exists:
 
 $$
 2:3:7=x:2:3
@@ -385,8 +407,9 @@ $$
 \boxed{\text{No solution}}
 $$
 
-- All three terms need one common multiplier.
-- A value from just one known pair cannot repair the other pair.
+All three terms need one common multiplier.
+
+A value from just one known pair cannot repair the other pair.
 
 </details>
 
@@ -401,19 +424,25 @@ $$
 
 **Examples:**
 
-- **a)** Share €40 in the ratio $2 : 3$.
+**a)** Share €40 in the ratio $2 : 3$.
 
 How many euros are in the first share?
 
-- **b)** Share €45 in the ratio $4 : 5$.
+---
+
+**b)** Share €45 in the ratio $4 : 5$.
 
 How many euros are in the second share?
 
-- **c)** Share €72 in the ratio $5 : 7$.
+---
+
+**c)** Share €72 in the ratio $5 : 7$.
 
 How many euros are in the first share?
 
-- **d)** Share €84 in the ratio $2 : 3 : 7$.
+---
+
+**d)** Share €84 in the ratio $2 : 3 : 7$.
 
 How many euros are in the third share?
 
@@ -456,8 +485,9 @@ $$
 \boxed{16}\text{ euros}
 $$
 
-- Add all the ratio parts before dividing the total.
-- A ratio does not mean equal shares.
+Add all the ratio parts before dividing the total.
+
+A ratio does not mean equal shares.
 
 **b)**
 
@@ -485,8 +515,9 @@ $$
 \boxed{25}\text{ euros}
 $$
 
-- Add all the ratio parts before dividing the total.
-- A ratio does not mean equal shares.
+Add all the ratio parts before dividing the total.
+
+A ratio does not mean equal shares.
 
 **c)**
 
@@ -514,8 +545,9 @@ $$
 \boxed{30}\text{ euros}
 $$
 
-- Add all the ratio parts before dividing the total.
-- A ratio does not mean equal shares.
+Add all the ratio parts before dividing the total.
+
+A ratio does not mean equal shares.
 
 **d)**
 
@@ -543,8 +575,9 @@ $$
 \boxed{49}\text{ euros}
 $$
 
-- Add all the ratio parts before dividing the total.
-- A ratio does not mean equal shares.
+Add all the ratio parts before dividing the total.
+
+A ratio does not mean equal shares.
 
 </details>
 
@@ -558,25 +591,31 @@ $$
 
 **Examples:**
 
-- **a)** Amounts are in the ratio $2 : 3$.
+**a)** Amounts are in the ratio $2 : 3$.
 
 The first amount is €10.
 
 Find the second amount in euros.
 
-- **b)** Amounts are in the ratio $3 : 5$.
+---
+
+**b)** Amounts are in the ratio $3 : 5$.
 
 The second amount is €20.
 
 Find the first amount in euros.
 
-- **c)** Amounts are in the ratio $4 : 7$.
+---
+
+**c)** Amounts are in the ratio $4 : 7$.
 
 The first amount is €16.
 
 Find the total amount in euros.
 
-- **d)** Amounts are in the ratio $2 : 3 : 5$.
+---
+
+**d)** Amounts are in the ratio $2 : 3 : 5$.
 
 The second amount is €12.
 
@@ -613,8 +652,9 @@ $$
 \boxed{15}\text{ euros}
 $$
 
-- The given amount is one share, not the whole total.
-- Divide it by its own number of parts.
+The given amount is one share, not the whole total.
+
+Divide it by its own number of parts.
 
 **b)**
 
@@ -634,8 +674,9 @@ $$
 \boxed{12}\text{ euros}
 $$
 
-- The given amount is one share, not the whole total.
-- Divide it by its own number of parts.
+The given amount is one share, not the whole total.
+
+Divide it by its own number of parts.
 
 **c)**
 
@@ -655,8 +696,9 @@ $$
 \boxed{44}\text{ euros}
 $$
 
-- The given amount is one share, not the whole total.
-- Divide it by its own number of parts.
+The given amount is one share, not the whole total.
+
+Divide it by its own number of parts.
 
 **d)**
 
@@ -676,8 +718,9 @@ $$
 \boxed{20}\text{ euros}
 $$
 
-- The given amount is one share, not the whole total.
-- Divide it by its own number of parts.
+The given amount is one share, not the whole total.
+
+Divide it by its own number of parts.
 
 </details>
 
@@ -692,25 +735,31 @@ $$
 
 **Examples:**
 
-- **a)** A map has scale $1:10000$.
+**a)** A map has scale $1:10000$.
 
 Two places are $3$ cm apart on the map.
 
 Find the real distance in m.
 
-- **b)** A map has scale $1:10000$.
+---
+
+**b)** A map has scale $1:10000$.
 
 The real distance is $500$ m.
 
 Find the map distance in cm.
 
-- **c)** A map has scale $1:50000$.
+---
+
+**c)** A map has scale $1:50000$.
 
 Two places are $4$ cm apart on the map.
 
 Find the real distance in km.
 
-- **d)** A map has scale $1:75000$.
+---
+
+**d)** A map has scale $1:75000$.
 
 The real distance is $3$ km.
 
@@ -747,8 +796,9 @@ $$
 \boxed{300}\text{ m}
 $$
 
-- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
-- Convert units carefully.
+The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
+
+Convert units carefully.
 
 **b)**
 
@@ -764,8 +814,9 @@ $$
 \boxed{5}\text{ cm}
 $$
 
-- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
-- Convert units carefully.
+The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
+
+Convert units carefully.
 
 **c)**
 
@@ -785,8 +836,9 @@ $$
 \boxed{2}\text{ km}
 $$
 
-- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
-- Convert units carefully.
+The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
+
+Convert units carefully.
 
 **d)**
 
@@ -802,7 +854,8 @@ $$
 \boxed{4}\text{ cm}
 $$
 
-- The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
-- Convert units carefully.
+The scale compares matching units: 1 cm on the map represents the scale number of centimetres in real life.
+
+Convert units carefully.
 
 </details>
