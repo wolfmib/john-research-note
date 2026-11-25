@@ -4,135 +4,272 @@
  "course": "Malta Year 8 Math",
  "unit": "Chapter 3",
  "root": "chapters",
- "question": "How do you name angles and find missing angles on a line, around a point, in a triangle and on parallel lines?",
- "intro": "Chapter 3 is about naming and finding angles.\n\n**The angle facts** (drawn in the figure):\n\n- angles on a straight line add up to \\(180^\\circ\\)\n- angles around a point add up to \\(360^\\circ\\)\n- vertically opposite angles are equal\n- the angles of a triangle add up to \\(180^\\circ\\)\n- an exterior angle equals the two opposite inside angles\n- on parallel lines, F and Z angles are equal, and C angles add up to \\(180^\\circ\\)\n\n**Chapter 3 has five parts** (the labels name the parts of this page):\n\n- 3.1 Types of angles\n- 3.2 Angles on a straight line\n- 3.3 Angles at a point and vertically opposite angles\n- 3.4 Angles in a triangle\n- 3.5 Angles on parallel lines\n\n**By the end of the chapter:**\n\n- name an angle by its size\n- find a missing angle on a straight line, around a point, in a triangle and on parallel lines",
- "figure": "angle-facts.svg",
- "figure_alt": "Six angle facts: angles on a straight line add to 180°, around a point to 360°, vertically opposite angles are equal, a triangle's angles add to 180°, an exterior angle equals the two opposite inside angles, and parallel lines give equal F and Z angles and C angles that add to 180°.",
+ "question": "Angle types, then the angle facts: straight line, around a point, crossing lines, triangles, parallel lines.",
+ "intro": "**Ten cards, one idea each.**\n\n- Look at the figure.\n- Tap **Show working** for the example.\n- Type your answer and press **Check**.\n\n**Key facts:**\n\n\\[\\begin{aligned} \\text{straight line} &= 180^\\circ \\\\ \\text{around a point} &= 360^\\circ \\\\ \\text{triangle} &= 180^\\circ \\end{aligned}\\]",
  "link": [
-  "Recap quiz ›",
-  "../malta-year-8-math-chapter-3-angles-recap/quiz.html"
+  "Practice quiz ›",
+  "../malta-year-8-math-chapter-3-angles-practice/quiz.html"
  ],
  "questions": [
   {
-   "group": "3.1 Types of Angles",
-   "title": "Name the angle",
-   "prompt": "An angle is named by its size:\n\n\\[\\begin{aligned} \\text{acute} &: \\text{less than } 90^\\circ \\\\ \\text{right} &: \\text{exactly } 90^\\circ \\\\ \\text{obtuse} &: \\text{between } 90^\\circ \\text{ and } 180^\\circ \\\\ \\text{straight} &: \\text{exactly } 180^\\circ \\\\ \\text{reflex} &: \\text{between } 180^\\circ \\text{ and } 360^\\circ \\end{aligned}\\]\n\n**Examples:**\n\n- **a)** \\(35^\\circ\\)\n- **b)** \\(90^\\circ\\)\n- **c)** \\(128^\\circ\\)\n- **d)** \\(210^\\circ\\)",
+   "group": "3.1 Types of angles",
+   "title": "Types of angles",
+   "prompt": "- **acute**: less than \\(90^\\circ\\)\n- **right**: exactly \\(90^\\circ\\)\n- **obtuse**: between \\(90^\\circ\\) and \\(180^\\circ\\)\n- **straight**: exactly \\(180^\\circ\\)\n- **reflex**: between \\(180^\\circ\\) and \\(360^\\circ\\)",
+   "figure": "a01-types.svg",
+   "figure_alt": "Five angles side by side: acute, right, obtuse, straight and reflex.",
    "steps": [
-    "**a)** Less than \\(90^\\circ\\):\n\n\\[35^\\circ \\to \\boxed{\\text{acute}}\\]",
-    "**b)** Exactly a quarter turn:\n\n\\[90^\\circ \\to \\boxed{\\text{right angle}}\\]",
-    "**c)** Between \\(90^\\circ\\) and \\(180^\\circ\\):\n\n\\[128^\\circ \\to \\boxed{\\text{obtuse}}\\]",
-    "**d)** More than \\(180^\\circ\\):\n\n\\[210^\\circ \\to \\boxed{\\text{reflex}}\\]"
-   ]
+    "**Example:** an angle of \\(128^\\circ\\).\n\nIt is more than \\(90^\\circ\\) and less than \\(180^\\circ\\).\n\n\\[128^\\circ \\to \\boxed{\\text{obtuse}}\\]"
+   ],
+   "practice": {
+    "intro": "A reflex angle is less than one full turn.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{One full turn (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     360
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.1 Types of Angles",
-   "title": "Close to the borders",
-   "prompt": "Check the border numbers carefully: \\(89^\\circ\\) is still acute, but \\(91^\\circ\\) is already obtuse.\n\n**Examples:**\n\n- **a)** \\(89^\\circ\\)\n- **b)** \\(91^\\circ\\)\n- **c)** \\(180^\\circ\\)\n- **d)** \\(345^\\circ\\)",
+   "group": "3.2 Angles on a straight line",
+   "title": "Angles on a straight line",
+   "prompt": "- Angles on a straight line **add up to \\(180^\\circ\\)**.\n- Missing angle = \\(180^\\circ\\) − the angle you know.",
+   "figure": "a02-line.svg",
+   "figure_alt": "A straight line with one ray; the left angle is 130 degrees and the right angle is x.",
    "steps": [
-    "**a)** Just under \\(90^\\circ\\):\n\n\\[89^\\circ \\to \\boxed{\\text{acute}}\\]",
-    "**b)** Just over \\(90^\\circ\\):\n\n\\[91^\\circ \\to \\boxed{\\text{obtuse}}\\]",
-    "**c)** Half a turn — a straight line:\n\n\\[180^\\circ \\to \\boxed{\\text{straight angle}}\\]",
-    "**d)** Between \\(180^\\circ\\) and \\(360^\\circ\\):\n\n\\[345^\\circ \\to \\boxed{\\text{reflex}}\\]"
-   ]
+    "**Example:** \\(130^\\circ\\) and \\(x\\) on a straight line.\n\n\\[\\begin{aligned} x &= 180^\\circ - 130^\\circ \\\\ &= \\boxed{50^\\circ} \\end{aligned}\\]"
+   ],
+   "practice": {
+    "intro": "Two angles on a straight line: \\(72^\\circ\\) and \\(x\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "x\\ (^\\circ)"
+     ]
+    ],
+    "answers": [
+     108
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.2 Angles on a Straight Line",
-   "title": "Two angles on a straight line",
-   "prompt": "- Angles on a straight line **add up to \\(180^\\circ\\)**.\n- The missing angle is \\(180^\\circ\\) minus the angle you know.\n\n**Examples:**\n\n- **a)** \\(x\\) and \\(130^\\circ\\)\n- **b)** \\(x\\) and \\(72^\\circ\\)\n- **c)** \\(x\\) and \\(90^\\circ\\)\n- **d)** \\(x\\) and \\(155^\\circ\\)",
-   "steps": [
-    "**a)**\n\n\\[\\begin{aligned} x &= 180^\\circ - 130^\\circ \\\\ &= \\boxed{50^\\circ} \\end{aligned}\\]",
-    "**b)**\n\n\\[\\begin{aligned} x &= 180^\\circ - 72^\\circ \\\\ &= \\boxed{108^\\circ} \\end{aligned}\\]",
-    "**c)**\n\n\\[\\begin{aligned} x &= 180^\\circ - 90^\\circ \\\\ &= \\boxed{90^\\circ} \\end{aligned}\\]",
-    "**d)**\n\n\\[\\begin{aligned} x &= 180^\\circ - 155^\\circ \\\\ &= \\boxed{25^\\circ} \\end{aligned}\\]"
-   ]
-  },
-  {
-   "group": "3.2 Angles on a Straight Line",
-   "title": "Three angles on a straight line",
-   "prompt": "Add the angles you know, then take the total from \\(180^\\circ\\).\n\n**Examples:**\n\n- **a)** \\(40^\\circ\\), \\(65^\\circ\\) and \\(x\\)\n- **b)** \\(90^\\circ\\), \\(35^\\circ\\) and \\(x\\)\n- **c)** \\(25^\\circ\\), \\(25^\\circ\\) and \\(x\\)\n- **d)** \\(x\\), \\(x\\) and \\(100^\\circ\\) (two equal angles)",
-   "steps": [
-    "**a)**\n\n\\[\\begin{aligned} 40^\\circ + 65^\\circ &= 105^\\circ \\\\ x &= 180^\\circ - 105^\\circ \\\\ &= \\boxed{75^\\circ} \\end{aligned}\\]",
-    "**b)**\n\n\\[\\begin{aligned} 90^\\circ + 35^\\circ &= 125^\\circ \\\\ x &= 180^\\circ - 125^\\circ \\\\ &= \\boxed{55^\\circ} \\end{aligned}\\]",
-    "**c)**\n\n\\[\\begin{aligned} 25^\\circ + 25^\\circ &= 50^\\circ \\\\ x &= 180^\\circ - 50^\\circ \\\\ &= \\boxed{130^\\circ} \\end{aligned}\\]",
-    "**d)** The two \\(x\\) angles share \\(180^\\circ - 100^\\circ = 80^\\circ\\):\n\n\\[\\begin{aligned} x &= 80^\\circ\\div2 \\\\ &= \\boxed{40^\\circ} \\end{aligned}\\]"
-   ]
-  },
-  {
-   "group": "3.3 Angles at a Point and Vertically Opposite Angles",
+   "group": "3.3 Angles at a point",
    "title": "Angles around a point",
-   "prompt": "Angles all the way **around a point add up to \\(360^\\circ\\)** — one full turn.\n\n**Examples:**\n\n- **a)** \\(150^\\circ\\), \\(120^\\circ\\) and \\(x\\)\n- **b)** \\(200^\\circ\\) and \\(x\\)\n- **c)** \\(90^\\circ\\), \\(90^\\circ\\), \\(110^\\circ\\) and \\(x\\)\n- **d)** \\(100^\\circ\\), \\(85^\\circ\\), \\(95^\\circ\\) and \\(x\\)",
+   "prompt": "- Angles all the way **around a point add up to \\(360^\\circ\\)**: one full turn.\n- Add the angles you know, then take the total from \\(360^\\circ\\).",
+   "figure": "a03-point.svg",
+   "figure_alt": "Three rays from one point make angles of 150 degrees, 120 degrees and x.",
    "steps": [
-    "**a)**\n\n\\[\\begin{aligned} 150^\\circ + 120^\\circ &= 270^\\circ \\\\ x &= 360^\\circ - 270^\\circ \\\\ &= \\boxed{90^\\circ} \\end{aligned}\\]",
-    "**b)**\n\n\\[\\begin{aligned} x &= 360^\\circ - 200^\\circ \\\\ &= \\boxed{160^\\circ} \\end{aligned}\\]",
-    "**c)**\n\n\\[\\begin{aligned} 90^\\circ + 90^\\circ + 110^\\circ &= 290^\\circ \\\\ x &= 360^\\circ - 290^\\circ \\\\ &= \\boxed{70^\\circ} \\end{aligned}\\]",
-    "**d)**\n\n\\[\\begin{aligned} 100^\\circ + 85^\\circ + 95^\\circ &= 280^\\circ \\\\ x &= 360^\\circ - 280^\\circ \\\\ &= \\boxed{80^\\circ} \\end{aligned}\\]"
-   ]
+    "**Example:** \\(150^\\circ\\), \\(120^\\circ\\) and \\(x\\) around a point.\n\n\\[\\begin{aligned} 150^\\circ + 120^\\circ &= 270^\\circ \\\\ x &= 360^\\circ - 270^\\circ \\\\ &= \\boxed{90^\\circ} \\end{aligned}\\]"
+   ],
+   "practice": {
+    "intro": "Two angles around a point: \\(200^\\circ\\) and \\(x\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "x\\ (^\\circ)"
+     ]
+    ],
+    "answers": [
+     160
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.3 Angles at a Point and Vertically Opposite Angles",
+   "group": "3.3 Angles at a point",
    "title": "Vertically opposite angles",
-   "prompt": "- When two straight lines cross they make four angles.\n- **Opposite angles are equal**, and **neighbouring angles add up to \\(180^\\circ\\)** because they sit on a straight line.\n\n**Examples:**\n\n- **a)** One of the four angles is \\(40^\\circ\\). Find the other three.\n- **b)** One of the four angles is \\(115^\\circ\\). Find the other three.\n- **c)** One of the four angles is \\(90^\\circ\\). Find the other three.\n- **d)** One of the four angles is \\(72^\\circ\\). Find the other three.",
+   "prompt": "- Two straight lines cross: **opposite angles are equal**.\n- Neighbouring angles sit on a straight line, so they **add up to \\(180^\\circ\\)**.",
+   "figure": "a04-crossing.svg",
+   "figure_alt": "Two crossing lines: an angle of 40 degrees, x opposite it, and y next to it.",
    "steps": [
-    "**a)**\n\n- Opposite: \\(40^\\circ\\).\n- Neighbours: \\(180^\\circ - 40^\\circ = 140^\\circ\\).\n\n\\[\\boxed{40^\\circ,\\ 140^\\circ,\\ 140^\\circ}\\]",
-    "**b)**\n\n- Opposite: \\(115^\\circ\\).\n- Neighbours: \\(180^\\circ - 115^\\circ = 65^\\circ\\).\n\n\\[\\boxed{115^\\circ,\\ 65^\\circ,\\ 65^\\circ}\\]",
-    "**c)**\n\n- Opposite: \\(90^\\circ\\).\n- Neighbours: \\(180^\\circ - 90^\\circ = 90^\\circ\\) — all four are right angles.\n\n\\[\\boxed{90^\\circ,\\ 90^\\circ,\\ 90^\\circ}\\]",
-    "**d)**\n\n- Opposite: \\(72^\\circ\\).\n- Neighbours: \\(180^\\circ - 72^\\circ = 108^\\circ\\).\n\n\\[\\boxed{72^\\circ,\\ 108^\\circ,\\ 108^\\circ}\\]"
-   ]
+    "**Example:** one angle is \\(40^\\circ\\).\n\n\\[\\begin{aligned} x &= \\boxed{40^\\circ} \\\\ y &= 180^\\circ - 40^\\circ \\\\ &= \\boxed{140^\\circ} \\end{aligned}\\]"
+   ],
+   "practice": {
+    "intro": "- Two lines cross.\n- One angle is \\(115^\\circ\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Its neighbour (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     65
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.4 Angles in a Triangle",
+   "group": "3.4 Angles in a triangle",
    "title": "Angles in a triangle",
-   "prompt": "- The three angles of any triangle **add up to \\(180^\\circ\\)**.\n- Two angles are given; find the third.\n\n**Examples:**\n\n- **a)** \\(50^\\circ\\) and \\(60^\\circ\\)\n- **b)** \\(90^\\circ\\) and \\(35^\\circ\\)\n- **c)** \\(110^\\circ\\) and \\(25^\\circ\\)\n- **d)** \\(60^\\circ\\) and \\(60^\\circ\\)",
+   "prompt": "- The three angles of any triangle **add up to \\(180^\\circ\\)**.\n- Add the two you know, take the total from \\(180^\\circ\\).",
+   "figure": "a05-triangle.svg",
+   "figure_alt": "A triangle with angles 50 degrees and 60 degrees at the base and x at the top.",
    "steps": [
-    "**a)**\n\n\\[\\begin{aligned} 50^\\circ + 60^\\circ &= 110^\\circ \\\\ 180^\\circ - 110^\\circ &= \\boxed{70^\\circ} \\end{aligned}\\]",
-    "**b)**\n\n\\[\\begin{aligned} 90^\\circ + 35^\\circ &= 125^\\circ \\\\ 180^\\circ - 125^\\circ &= \\boxed{55^\\circ} \\end{aligned}\\]",
-    "**c)**\n\n\\[\\begin{aligned} 110^\\circ + 25^\\circ &= 135^\\circ \\\\ 180^\\circ - 135^\\circ &= \\boxed{45^\\circ} \\end{aligned}\\]",
-    "**d)**\n\n\\[\\begin{aligned} 60^\\circ + 60^\\circ &= 120^\\circ \\\\ 180^\\circ - 120^\\circ &= \\boxed{60^\\circ} \\end{aligned}\\]\n\nAll three angles are \\(60^\\circ\\): an equilateral triangle."
-   ]
+    "**Example:** \\(50^\\circ\\), \\(60^\\circ\\) and \\(x\\).\n\n\\[\\begin{aligned} 50^\\circ + 60^\\circ &= 110^\\circ \\\\ x &= 180^\\circ - 110^\\circ \\\\ &= \\boxed{70^\\circ} \\end{aligned}\\]"
+   ],
+   "practice": {
+    "intro": "A triangle has angles \\(90^\\circ\\) and \\(35^\\circ\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Third angle (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     55
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.4 Angles in a Triangle",
+   "group": "3.4 Angles in a triangle",
    "title": "Isosceles triangles",
-   "prompt": "An **isosceles** triangle has two equal sides, and the two **base angles** next to the third side are **equal**.\n\n**Examples:**\n\n- **a)** The top angle is \\(40^\\circ\\). Find each base angle.\n- **b)** Each base angle is \\(65^\\circ\\). Find the top angle.\n- **c)** The top angle is \\(100^\\circ\\). Find each base angle.\n- **d)** Each base angle is \\(45^\\circ\\). Find the top angle.",
+   "prompt": "- **Isosceles**: two equal sides (the tick marks).\n- The two **base angles** next to the third side are **equal**.",
+   "figure": "a06-isosceles.svg",
+   "figure_alt": "An isosceles triangle with ticks on its two equal sides; the top angle is 40 degrees and both base angles are x.",
    "steps": [
-    "**a)** The base angles share:\n\n\\[\\begin{aligned} 180^\\circ - 40^\\circ &= 140^\\circ \\\\ 140^\\circ\\div2 &= \\boxed{70^\\circ} \\end{aligned}\\]",
-    "**b)** The two base angles make:\n\n\\[\\begin{aligned} 2\\times65^\\circ &= 130^\\circ \\\\ 180^\\circ - 130^\\circ &= \\boxed{50^\\circ} \\end{aligned}\\]",
-    "**c)** The base angles share:\n\n\\[\\begin{aligned} 180^\\circ - 100^\\circ &= 80^\\circ \\\\ 80^\\circ\\div2 &= \\boxed{40^\\circ} \\end{aligned}\\]",
-    "**d)** The two base angles make \\(90^\\circ\\):\n\n\\[180^\\circ - 90^\\circ = \\boxed{90^\\circ}\\]\n\nA right angle at the top: a right-angled isosceles triangle."
-   ]
+    "**Example:** the top angle is \\(40^\\circ\\).\n\n\\[\\begin{aligned} x + x &= 180^\\circ - 40^\\circ \\\\ 2x &= 140^\\circ \\\\ x &= \\boxed{70^\\circ} \\end{aligned}\\]"
+   ],
+   "practice": {
+    "intro": "An isosceles triangle has a top angle of \\(100^\\circ\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Each base angle (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     40
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.4 Angles in a Triangle",
-   "title": "Exterior angle",
-   "prompt": "- Extend one side of a triangle.\n- The **exterior angle** outside the triangle equals the **sum of the two opposite inside angles**.\n- The two opposite inside angles are given; find the exterior angle.\n\n**Examples:**\n\n- **a)** \\(50^\\circ\\) and \\(60^\\circ\\)\n- **b)** \\(35^\\circ\\) and \\(80^\\circ\\)\n- **c)** \\(90^\\circ\\) and \\(42^\\circ\\)\n- **d)** \\(28^\\circ\\) and \\(47^\\circ\\)",
+   "group": "3.4 Angles in a triangle",
+   "title": "The exterior angle",
+   "prompt": "- Make one side of a triangle longer: the angle outside is the **exterior angle**.\n- Exterior angle = the **two opposite inside angles added**.",
+   "figure": "a07-exterior.svg",
+   "figure_alt": "A triangle with inside angles 50 and 60 degrees; the base is extended on the right and the outside angle is y.",
    "steps": [
-    "**a)**\n\n\\[50^\\circ + 60^\\circ = \\boxed{110^\\circ}\\]\n\nCheck: the third inside angle is \\(180^\\circ - 110^\\circ = 70^\\circ\\), and \\(70^\\circ + 110^\\circ = 180^\\circ\\) on the straight line.",
-    "**b)**\n\n\\[35^\\circ + 80^\\circ = \\boxed{115^\\circ}\\]",
-    "**c)**\n\n\\[90^\\circ + 42^\\circ = \\boxed{132^\\circ}\\]",
-    "**d)**\n\n\\[28^\\circ + 47^\\circ = \\boxed{75^\\circ}\\]"
-   ]
+    "**Example:** the inside angles opposite are \\(50^\\circ\\) and \\(60^\\circ\\).\n\n\\[\\begin{aligned} y &= 50^\\circ + 60^\\circ \\\\ &= \\boxed{110^\\circ} \\end{aligned}\\]"
+   ],
+   "practice": {
+    "intro": "The two opposite inside angles are \\(45^\\circ\\) and \\(75^\\circ\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Exterior angle (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     120
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.5 Angles on Parallel Lines",
-   "title": "Corresponding and alternate angles",
-   "prompt": "- A line crossing two **parallel** lines makes matching angles (see the figure).\n- **Corresponding** angles, in an **F** shape, are **equal**.\n- **Alternate** angles, in a **Z** shape, are **equal**.\n\n**Examples:**\n\n- **a)** Find the angle corresponding to \\(70^\\circ\\).\n- **b)** Find the angle alternate to \\(125^\\circ\\).\n- **c)** Find the angle corresponding to \\(48^\\circ\\).\n- **d)** Find the angle alternate to \\(90^\\circ\\).",
+   "group": "3.5 Angles on parallel lines",
+   "title": "Corresponding angles (F)",
+   "prompt": "- The arrows mark **parallel** lines.\n- Angles in the **same position** at each crossing are **equal**: an **F** shape.",
+   "figure": "a08-corresponding.svg",
+   "figure_alt": "Two parallel lines cut by a slanted line; 65 degrees at the top crossing and x in the same position at the bottom.",
    "steps": [
-    "**a)** Corresponding angles are equal:\n\n\\[\\boxed{70^\\circ}\\]",
-    "**b)** Alternate angles are equal:\n\n\\[\\boxed{125^\\circ}\\]",
-    "**c)** Corresponding angles are equal:\n\n\\[\\boxed{48^\\circ}\\]",
-    "**d)** Alternate angles are equal:\n\n\\[\\boxed{90^\\circ}\\]\n\nThe crossing line is at right angles to both lines."
-   ]
+    "**Example:** the top angle is \\(65^\\circ\\).\n\nSame position at the bottom crossing:\n\n\\[x = \\boxed{65^\\circ}\\]"
+   ],
+   "practice": {
+    "intro": "- A corresponding angle is \\(70^\\circ\\).\n- Find its neighbour on the straight line.",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Neighbour (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     110
+    ],
+    "tolerance": 1e-06
+   }
   },
   {
-   "group": "3.5 Angles on Parallel Lines",
-   "title": "Co-interior angles",
-   "prompt": "- **Co-interior** angles, in a **C** shape, sit between the parallel lines on the same side.\n- They **add up to \\(180^\\circ\\)**.\n\n**Examples:**\n\n- **a)** One co-interior angle is \\(110^\\circ\\). Find the other.\n- **b)** One co-interior angle is \\(75^\\circ\\). Find the other.\n- **c)** One co-interior angle is \\(90^\\circ\\). Find the other.\n- **d)** One co-interior angle is \\(136^\\circ\\). Find the other.",
+   "group": "3.5 Angles on parallel lines",
+   "title": "Alternate angles (Z)",
+   "prompt": "- Between the parallel lines, on **opposite sides** of the slanted line.\n- Alternate angles are **equal**: a **Z** shape.",
+   "figure": "a09-alternate.svg",
+   "figure_alt": "Two parallel lines and a slanted line; 48 degrees below the top line on the left and x above the bottom line on the right.",
    "steps": [
-    "**a)**\n\n\\[180^\\circ - 110^\\circ = \\boxed{70^\\circ}\\]",
-    "**b)**\n\n\\[180^\\circ - 75^\\circ = \\boxed{105^\\circ}\\]",
-    "**c)**\n\n\\[180^\\circ - 90^\\circ = \\boxed{90^\\circ}\\]",
-    "**d)**\n\n\\[180^\\circ - 136^\\circ = \\boxed{44^\\circ}\\]"
-   ]
+    "**Example:** \\(48^\\circ\\) inside the Z.\n\n\\[x = \\boxed{48^\\circ}\\]"
+   ],
+   "practice": {
+    "intro": "An alternate angle is \\(57^\\circ\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{The other one (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     57
+    ],
+    "tolerance": 1e-06
+   }
+  },
+  {
+   "group": "3.5 Angles on parallel lines",
+   "title": "Co-interior angles (C)",
+   "prompt": "- Between the parallel lines, on the **same side** of the slanted line.\n- Co-interior angles **add up to \\(180^\\circ\\)**: a **C** shape.",
+   "figure": "a10-cointerior.svg",
+   "figure_alt": "Two parallel lines and a slanted line; on the left side between the lines, 110 degrees at the bottom and x at the top.",
+   "steps": [
+    "**Example:** one is \\(110^\\circ\\).\n\n\\[\\begin{aligned} x &= 180^\\circ - 110^\\circ \\\\ &= \\boxed{70^\\circ} \\end{aligned}\\]"
+   ],
+   "practice": {
+    "intro": "One co-interior angle is \\(75^\\circ\\).",
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{The other one (}^\\circ\\text{)}"
+     ]
+    ],
+    "answers": [
+     105
+    ],
+    "tolerance": 1e-06
+   }
   }
  ]
 }

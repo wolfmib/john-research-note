@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 320' width='560' height='320' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='558' height='318' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='473.2' y1='123.2' x2='86.8' y2='226.8' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='394.7' y1='11.2' x2='165.3' y2='338.8' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<path d='M280.0,175.0 L318.6,164.6 A40,40 0 0 0 302.9,142.2 Z' fill='#fff8c5' stroke='none'/>
+<path d='M318.6,164.6 A40,40 0 0 0 302.9,142.2' stroke='#bc4c00' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='335.7' y='144.0' font-size='24' font-weight='700' text-anchor='middle' fill='#bc4c00'>40°</text>
+<path d='M280.0,175.0 L241.4,185.4 A40,40 0 0 0 257.1,207.8 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M241.4,185.4 A40,40 0 0 0 257.1,207.8' stroke='#0969da' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='224.3' y='222.0' font-size='24' font-weight='700' text-anchor='middle' fill='#0969da'>x</text>
+<path d='M280.0,175.0 L302.9,142.2 A40,40 0 0 0 241.4,185.4 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M302.9,142.2 A40,40 0 0 0 241.4,185.4' stroke='#0969da' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='241.0' y='127.3' font-size='24' font-weight='700' text-anchor='middle' fill='#0969da'>y</text>
+<circle cx='280.0' cy='175.0' r='4.5' fill='#1f2328' stroke='#1f2328' stroke-width='1'/>
+<text x='280.0' y='34.0' font-size='21' font-weight='600' text-anchor='middle' fill='#57606a'>two lines cross</text>
+</svg>
