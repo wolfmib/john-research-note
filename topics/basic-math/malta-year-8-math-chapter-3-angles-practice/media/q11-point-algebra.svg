@@ -1,0 +1,17 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 330' width='560' height='330' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='558' height='328' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='280.0' y1='180.0' x2='405.0' y2='180.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='280.0' y1='180.0' x2='322.8' y2='62.5' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='280.0' y1='180.0' x2='171.7' y2='242.5' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<path d='M280.0,180.0 L316.0,180.0 A36,36 0 0 0 292.3,146.2 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M316.0,180.0 A36,36 0 0 0 292.3,146.2' stroke='#0969da' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='332.4' y='151.3' font-size='24' font-weight='700' text-anchor='middle' fill='#0969da'>x</text>
+<path d='M280.0,180.0 L295.0,138.7 A44,44 0 0 0 241.9,202.0 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M295.0,138.7 A44,44 0 0 0 241.9,202.0' stroke='#0969da' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='224.8' y='141.7' font-size='24' font-weight='700' text-anchor='middle' fill='#0969da'>2x</text>
+<path d='M280.0,180.0 L248.8,198.0 A36,36 0 0 0 316.0,180.0 Z' fill='#fff8c5' stroke='none'/>
+<path d='M248.8,198.0 A36,36 0 0 0 316.0,180.0' stroke='#bc4c00' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='296.6' y='249.8' font-size='24' font-weight='700' text-anchor='middle' fill='#bc4c00'>150°</text>
+<circle cx='280.0' cy='180.0' r='4.5' fill='#1f2328' stroke='#1f2328' stroke-width='1'/>
+</svg>

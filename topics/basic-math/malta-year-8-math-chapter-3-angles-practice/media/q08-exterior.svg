@@ -1,0 +1,15 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 330' width='560' height='330' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='558' height='328' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='420.0' y1='270.0' x2='525.0' y2='270.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round' stroke-dasharray='2 0'/>
+<polygon points='110.0,270.0 420.0,270.0 366.3,69.7' fill='#f6f8fa' stroke='#1f2328' stroke-width='3' stroke-linejoin='round'/>
+<path d='M110.0,270.0 L144.0,270.0 A34,34 0 0 0 136.8,249.1 Z' fill='#fff8c5' stroke='none'/>
+<path d='M144.0,270.0 A34,34 0 0 0 136.8,249.1' stroke='#bc4c00' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='168.6' y='257.8' font-size='22' font-weight='700' text-anchor='middle' fill='#bc4c00'>38°</text>
+<path d='M366.3,69.7 L339.5,90.7 A34,34 0 0 0 375.1,102.6 Z' fill='#fff8c5' stroke='none'/>
+<path d='M339.5,90.7 A34,34 0 0 0 375.1,102.6' stroke='#bc4c00' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='346.7' y='136.5' font-size='22' font-weight='700' text-anchor='middle' fill='#bc4c00'>67°</text>
+<path d='M420.0,270.0 L450.0,270.0 A30,30 0 0 0 412.2,241.0 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M450.0,270.0 A30,30 0 0 0 412.2,241.0' stroke='#0969da' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='455.3' y='232.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>y</text>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 330' width='560' height='330' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='558' height='328' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='339.6' y1='270.0' x2='525.0' y2='270.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round' stroke-dasharray='2 0'/>
+<polygon points='190.4,270.0 339.6,270.0 265.0,65.0' fill='#f6f8fa' stroke='#1f2328' stroke-width='3' stroke-linejoin='round'/>
+<path d='M265.0,65.0 L253.4,96.9 A34,34 0 0 0 276.6,96.9 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M253.4,96.9 A34,34 0 0 0 276.6,96.9' stroke='#0969da' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='265.0' y='135.0' font-size='22' font-weight='700' text-anchor='middle' fill='#0969da'>x</text>
+<path d='M339.6,270.0 L369.6,270.0 A30,30 0 0 0 329.4,241.8 Z' fill='#fff8c5' stroke='none'/>
+<path d='M369.6,270.0 A30,30 0 0 0 329.4,241.8' stroke='#bc4c00' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='372.9' y='230.5' font-size='22' font-weight='700' text-anchor='middle' fill='#bc4c00'>110°</text>
+<line x1='219.2' y1='164.4' x2='236.2' y2='170.6' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round'/>
+<line x1='293.8' y1='170.6' x2='310.8' y2='164.4' stroke='#1f2328' stroke-width='2.5' stroke-linecap='round'/>
+</svg>

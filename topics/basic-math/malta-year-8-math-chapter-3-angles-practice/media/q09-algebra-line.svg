@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 270' width='560' height='270' font-family='-apple-system, Segoe UI, Helvetica, Arial, sans-serif'>
+<rect x='1' y='1' width='558' height='268' rx='14' fill='#ffffff' stroke='#d0d7de' stroke-width='2'/>
+<defs><marker id='m0' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1f2328'/></marker><marker id='m1' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#0969da'/></marker><marker id='m2' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#cf222e'/></marker><marker id='m3' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#1a7f37'/></marker><marker id='m4' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#bc4c00'/></marker><marker id='m5' viewBox='0 0 10 10' refX='8' refY='5' markerWidth='6' markerHeight='6' orient='auto-start-reverse'><path d='M0,0 L10,5 L0,10 z' fill='#57606a'/></marker></defs>
+<line x1='50.0' y1='210.0' x2='510.0' y2='210.0' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<line x1='280.0' y1='210.0' x2='410.2' y2='100.7' stroke='#1f2328' stroke-width='3' stroke-linecap='round'/>
+<path d='M280.0,210.0 L320.0,210.0 A40,40 0 0 0 310.6,184.3 Z' fill='#fff8c5' stroke='none'/>
+<path d='M320.0,210.0 A40,40 0 0 0 310.6,184.3' stroke='#bc4c00' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='343.9' y='194.7' font-size='24' font-weight='700' text-anchor='middle' fill='#bc4c00'>40°</text>
+<path d='M280.0,210.0 L319.8,176.6 A52,52 0 0 0 228.0,210.0 Z' fill='#ddf4ff' stroke='none'/>
+<path d='M319.8,176.6 A52,52 0 0 0 228.0,210.0' stroke='#0969da' stroke-width='2.6' fill='none' stroke-linejoin='round'/>
+<text x='252.6' y='142.8' font-size='24' font-weight='700' text-anchor='middle' fill='#0969da'>2x</text>
+<circle cx='280.0' cy='210.0' r='4.5' fill='#1f2328' stroke='#1f2328' stroke-width='1'/>
+</svg>

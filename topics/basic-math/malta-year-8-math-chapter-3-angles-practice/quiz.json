@@ -1,0 +1,149 @@
+{
+ "slug": "malta-year-8-math-chapter-3-angles-practice",
+ "title": "Malta Year 8 Math Chapter 3 — Angles Practice",
+ "course": "Malta Year 8 Math",
+ "unit": "Chapter 3",
+ "root": "chapters",
+ "question": "12 angle questions, each with a picture: 4 Easy, 4 Medium, 4 Hard.",
+ "intro": "**Three levels:**\n\n- Easy: one angle fact\n- Medium: isosceles, three angles on a line, parallel lines, outside angle\n- Hard: two facts together, or a little algebra\n\n**Answers:** type the number of degrees only.",
+ "questions": [
+  {
+   "group": "Easy",
+   "title": "On a line",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 116,
+   "answer_display": "116°",
+   "figure": "q01-line.svg",
+   "figure_alt": "A straight line with one ray: 64 degrees on the right, x on the left.",
+   "solution": "\\[\\begin{aligned}x &= 180^\\circ - 64^\\circ \\\\ &= \\boxed{116^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Easy",
+   "title": "Around a point",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 125,
+   "answer_display": "125°",
+   "figure": "q02-point.svg",
+   "figure_alt": "Three rays from one point: 140 degrees, 95 degrees and x.",
+   "solution": "\\[\\begin{aligned}140^\\circ + 95^\\circ &= 235^\\circ \\\\ x &= 360^\\circ - 235^\\circ \\\\ &= \\boxed{125^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Easy",
+   "title": "In a triangle",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 67,
+   "answer_display": "67°",
+   "figure": "q03-triangle.svg",
+   "figure_alt": "A triangle with base angles 72 and 41 degrees and x at the top.",
+   "solution": "\\[\\begin{aligned}72^\\circ + 41^\\circ &= 113^\\circ \\\\ x &= 180^\\circ - 113^\\circ \\\\ &= \\boxed{67^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Easy",
+   "title": "Two lines cross",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 122,
+   "answer_display": "122°",
+   "figure": "q04-crossing.svg",
+   "figure_alt": "Two crossing lines: 58 degrees and x next to it.",
+   "solution": "\\[\\begin{aligned}x &= 180^\\circ - 58^\\circ \\\\ &= \\boxed{122^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Medium",
+   "title": "Isosceles",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 76,
+   "answer_display": "76°",
+   "figure": "q05-isosceles.svg",
+   "figure_alt": "An isosceles triangle with equal sides marked; one base angle is 52 degrees and the top angle is x.",
+   "solution": "\\[\\begin{aligned}52^\\circ + 52^\\circ &= 104^\\circ \\\\ x &= 180^\\circ - 104^\\circ \\\\ &= \\boxed{76^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Medium",
+   "title": "Three on a line",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 55,
+   "answer_display": "55°",
+   "figure": "q06-three-on-line.svg",
+   "figure_alt": "A straight line with two rays: a right angle, 35 degrees, and x between them.",
+   "solution": "\\[\\begin{aligned}90^\\circ + 35^\\circ &= 125^\\circ \\\\ x &= 180^\\circ - 125^\\circ \\\\ &= \\boxed{55^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Medium",
+   "title": "Parallel lines",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 56,
+   "answer_display": "56°",
+   "figure": "q07-parallel.svg",
+   "figure_alt": "Two parallel lines and a slanted line: 124 degrees at the top crossing, x at the bottom crossing.",
+   "solution": "\\[\\begin{aligned}x &= 180^\\circ - 124^\\circ \\\\ &= \\boxed{56^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Medium",
+   "title": "Outside the triangle",
+   "prompt": "Find \\(y\\).",
+   "type": "numeric",
+   "answer": 105,
+   "answer_display": "105°",
+   "figure": "q08-exterior.svg",
+   "figure_alt": "A triangle with inside angles 38 and 67 degrees; the base is extended and the outside angle is y.",
+   "solution": "\\[\\begin{aligned}y &= 38^\\circ + 67^\\circ \\\\ &= \\boxed{105^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Hard",
+   "title": "With algebra",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 70,
+   "answer_display": "70°",
+   "figure": "q09-algebra-line.svg",
+   "figure_alt": "A straight line with one ray: 40 degrees on the right and 2x on the left.",
+   "solution": "\\[\\begin{aligned}2x + 40^\\circ &= 180^\\circ \\\\ 2x &= 140^\\circ \\\\ x &= \\boxed{70^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Hard",
+   "title": "Isosceles and outside",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 40,
+   "answer_display": "40°",
+   "figure": "q10-isosceles-exterior.svg",
+   "figure_alt": "An isosceles triangle with equal sides marked; the base is extended on the right with an outside angle of 110 degrees; the top angle is x.",
+   "solution": "\\[\\begin{aligned}\\text{base angle} &= 180^\\circ - 110^\\circ \\\\ &= 70^\\circ \\\\ x &= 180^\\circ - 70^\\circ - 70^\\circ \\\\ &= \\boxed{40^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Hard",
+   "title": "Around a point with algebra",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 70,
+   "answer_display": "70°",
+   "figure": "q11-point-algebra.svg",
+   "figure_alt": "Three rays from one point: angles x, 2x and 150 degrees.",
+   "solution": "\\[\\begin{aligned}x + 2x + 150^\\circ &= 360^\\circ \\\\ 3x &= 210^\\circ \\\\ x &= \\boxed{70^\\circ}\\end{aligned}\\]"
+  },
+  {
+   "group": "Hard",
+   "title": "Parallel lines with algebra",
+   "prompt": "Find \\(x\\).",
+   "type": "numeric",
+   "answer": 60,
+   "answer_display": "60°",
+   "figure": "q12-parallel-algebra.svg",
+   "figure_alt": "Two parallel lines and a slanted line: on the left side between the lines, x at the top and 2x at the bottom.",
+   "solution": "\\[\\begin{aligned}x + 2x &= 180^\\circ \\\\ 3x &= 180^\\circ \\\\ x &= \\boxed{60^\\circ}\\end{aligned}\\]"
+  }
+ ],
+ "takeaway": "- Straight line: \\(180^\\circ\\). Around a point: \\(360^\\circ\\). Triangle: \\(180^\\circ\\).\n- Opposite angles, F angles and Z angles are equal. C angles add up to \\(180^\\circ\\).",
+ "link": [
+  "Concepts ›",
+  "../malta-year-8-math-chapter-3-angles/material.html"
+ ],
+ "send_to": "John"
+}

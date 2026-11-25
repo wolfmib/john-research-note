@@ -189,6 +189,7 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — Periodic Phenomena](topics/basic-math/math-material-periodic-phenomena/content.md) | Periodic patterns in four cards: period, midline and amplitude, predicting with the period, rising and falling. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-periodic-phenomena/material.html) |
 | [AP Precalculus 2.15 — Semi-log Plots](topics/basic-math/ap-precalculus-2-15-semi-log-plots/content.md) | Semi-log plots: read a log scale, spot straight data, turn the line into a model, predict, and read a growth rate. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-15-semi-log-plots/quiz.html) |
 | [AP Precalculus 3.1 — Periodic Phenomena](topics/basic-math/ap-precalculus-3-1-periodic-phenomena/content.md) | Periodic patterns: find a period, a midline and an amplitude, predict later values, and read where a graph falls. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-3-1-periodic-phenomena/quiz.html) |
+| [Malta Year 8 Math Chapter 3 — Angles Practice](topics/basic-math/malta-year-8-math-chapter-3-angles-practice/content.md) | 12 angle questions, each with a picture: 4 Easy, 4 Medium, 4 Hard. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-3-angles-practice/quiz.html) |
 
 ## Animations
 
