@@ -1,0 +1,88 @@
+{
+ "slug": "ap-precalculus-3-1-periodic-phenomena",
+ "title": "AP Precalculus 3.1 — Periodic Phenomena",
+ "course": "AP Precalculus",
+ "unit": "3.1",
+ "question": "Periodic patterns: find a period, a midline and an amplitude, predict later values, and read where a graph falls.",
+ "intro": "**Quick recap:**\n\n\\[\n\\begin{aligned}\nf(x+P) &= f(x) \\\\\n\\text{midline} &= \\frac{\\max+\\min}{2} \\\\\n\\text{amplitude} &= \\frac{\\max-\\min}{2}\n\\end{aligned}\n\\]\n\n- The period \\(P\\) is the length of one full cycle.\n- To predict a later value, take away whole periods first.\n\n**Show your calculation before choosing A–D.**",
+ "questions": [
+  {
+   "title": "Find the period",
+   "prompt": "A function takes these values at \\(x=0,1,2,3,\\dots\\)\n\n\\[\n0,\\ 2,\\ 2,\\ 0,\\ -2,\\ -2,\\ 0,\\ 2,\\ 2,\\ 0,\\ -2,\\ -2,\\ \\dots\n\\]\n\nWhat is its period?",
+   "choices": [
+    "\\(3\\)",
+    "\\(6\\)",
+    "\\(2\\)",
+    "\\(4\\)"
+   ],
+   "solution_title": "Find where the whole pattern starts again",
+   "solution": "- One full cycle: \\(0,\\ 2,\\ 2,\\ 0,\\ -2,\\ -2\\), then it starts again.\n\n\\[\n\\begin{aligned}\nf(x+6) &= f(x)\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{P=6}\n\\]\n\n- Not \\(3\\): \\(0\\) comes back after \\(3\\) steps, but then the values go down, not up.\n- Not \\(2\\) or \\(4\\): \\(f(2)=2\\) but \\(f(4)=-2\\); the pattern does not repeat there.",
+   "answer": "B",
+   "type": "mcq"
+  },
+  {
+   "title": "Midline and amplitude",
+   "prompt": "On a summer day in Valletta the temperature goes up to \\(31^\\circ\\text{C}\\) in the afternoon and down to \\(23^\\circ\\text{C}\\) at night, day after day. Which pair is correct?",
+   "choices": [
+    "midline \\(27^\\circ\\text{C}\\), amplitude \\(8^\\circ\\text{C}\\)",
+    "midline \\(4^\\circ\\text{C}\\), amplitude \\(27^\\circ\\text{C}\\)",
+    "midline \\(8^\\circ\\text{C}\\), amplitude \\(4^\\circ\\text{C}\\)",
+    "midline \\(27^\\circ\\text{C}\\), amplitude \\(4^\\circ\\text{C}\\)"
+   ],
+   "solution_title": "Average for the midline, half the range for the amplitude",
+   "solution": "\\[\n\\begin{aligned}\n\\text{midline} &= \\frac{31+23}{2} \\\\\n&= 27 \\\\\n\\text{amplitude} &= \\frac{31-23}{2} \\\\\n&= 4\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{27\\,^\\circ\\text{C and }4\\,^\\circ\\text{C}}\n\\]\n\n- Not amplitude \\(8\\): that is \\(\\max-\\min\\); the amplitude is half of it.\n- Not midline \\(4\\) or \\(8\\): the midline is a temperature level between \\(23\\) and \\(31\\).",
+   "answer": "D",
+   "type": "mcq"
+  },
+  {
+   "title": "Predict with the period",
+   "prompt": "A periodic function \\(f\\) has period \\(5\\) and \\(f(2)=7\\). What is \\(f(17)\\)?",
+   "choices": [
+    "\\(7\\)",
+    "\\(17\\)",
+    "\\(2\\)",
+    "\\(35\\)"
+   ],
+   "solution_title": "Take away whole periods",
+   "solution": "\\[\n\\begin{aligned}\n17-3\\cdot5 &= 2 \\\\\nf(17) &= f(2) \\\\\n&= 7\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{f(17)=7}\n\\]\n\n- Not \\(17\\) or \\(2\\): those are inputs, not outputs.\n- Not \\(35\\): \\(7\\cdot5\\); the period moves the input, it never multiplies the output.",
+   "answer": "A",
+   "type": "mcq"
+  },
+  {
+   "title": "A Ferris wheel later",
+   "prompt": "A Ferris wheel has diameter \\(30\\) m and its centre is \\(18\\) m above the ground. It turns once every \\(10\\) minutes. A seat is at the bottom (\\(3\\) m) at \\(t=0\\). How high is the seat at \\(t=25\\) minutes?",
+   "choices": [
+    "\\(3\\) m",
+    "\\(18\\) m",
+    "\\(33\\) m",
+    "\\(25\\) m"
+   ],
+   "solution_title": "Back to the first turn, then half a turn",
+   "solution": "\\[\n\\begin{aligned}\n25-2\\cdot10 &= 5 \\\\\nh(25) &= h(5)\n\\end{aligned}\n\\]\n\n- \\(t=5\\) is half a turn after the bottom: the top.\n\n\\[\n\\begin{aligned}\n\\text{top} &= 18+15 \\\\\n&= 33\n\\end{aligned}\n\\]\n\n\\[\n\\boxed{33\\text{ m}}\n\\]\n\n- Not \\(3\\) m: that is the bottom, at \\(t=0,\\ 10,\\ 20,\\ 30\\).\n- Not \\(18\\) m: the centre height is passed at \\(t=2.5\\) and \\(7.5\\) in each turn.\n- Not \\(25\\) m: the time is not the height.",
+   "answer": "C",
+   "type": "mcq"
+  },
+  {
+   "title": "Where is it decreasing?",
+   "prompt": "The figure shows a periodic function \\(g\\) with high points \\((2,\\,3)\\) and \\((10,\\,3)\\) and a low point \\((6,\\,-1)\\). On which interval is \\(g\\) **decreasing**?",
+   "figure": "3-1-quiz-wave.svg",
+   "figure_alt": "A periodic wave from x = -2 to 12: high points (2, 3) and (10, 3), low point (6, -1)",
+   "choices": [
+    "\\(-2<x<2\\)",
+    "\\(2<x<6\\)",
+    "\\(6<x<10\\)",
+    "\\(0<x<4\\)"
+   ],
+   "solution_title": "High point to the next low point",
+   "solution": "- From the high point at \\(x=2\\) down to the low point at \\(x=6\\), \\(g\\) falls the whole time.\n\n\\[\n\\boxed{2<x<6}\n\\]\n\n- Not \\(-2<x<2\\) or \\(6<x<10\\): low to high, so \\(g\\) is increasing.\n- Not \\(0<x<4\\): \\(g\\) rises until \\(x=2\\), then falls. Mixed.",
+   "answer": "B",
+   "type": "mcq"
+  }
+ ],
+ "takeaway": "One full cycle tells you everything: period, midline, amplitude, and every later value.",
+ "link": [
+  "Math Material — Periodic Phenomena",
+  "../math-material-periodic-phenomena/material.html"
+ ],
+ "send_to": "John"
+}

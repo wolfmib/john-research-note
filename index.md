@@ -188,6 +188,7 @@ Practice quizzes and worked math material by course and topic.
 | [Math Material — Semi-log Plots](topics/basic-math/math-material-semi-log-plots/content.md) | Semi-log plots in four cards: the log scale, why exponentials are straight, the ratio test, reading the model off the line. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-semi-log-plots/material.html) |
 | [Math Material — Periodic Phenomena](topics/basic-math/math-material-periodic-phenomena/content.md) | Periodic patterns in four cards: period, midline and amplitude, predicting with the period, rising and falling. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-periodic-phenomena/material.html) |
 | [AP Precalculus 2.15 — Semi-log Plots](topics/basic-math/ap-precalculus-2-15-semi-log-plots/content.md) | Semi-log plots: read a log scale, spot straight data, turn the line into a model, predict, and read a growth rate. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-2-15-semi-log-plots/quiz.html) |
+| [AP Precalculus 3.1 — Periodic Phenomena](topics/basic-math/ap-precalculus-3-1-periodic-phenomena/content.md) | Periodic patterns: find a period, a midline and an amplitude, predict later values, and read where a graph falls. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/ap-precalculus-3-1-periodic-phenomena/quiz.html) |
 
 ## Animations
 
