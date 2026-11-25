@@ -186,6 +186,7 @@ Practice quizzes and worked math material by course and topic.
 | [Malta Year 8 Math Chapter 15 — Probability Practice](topics/basic-math/malta-year-8-math-chapter-15-probability-practice/content.md) | 48 new questions: two for each of the 24 worked examples in the Probability Material. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-15-probability-practice/quiz.html) |
 | [Malta Year 8 Math Chapter 8 — Algebra Word Problems](topics/basic-math/malta-year-8-math-chapter-8-algebra-word-problems/content.md) | Four stories with two unknown prices. Write the two equations yourself, then solve them. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/malta-year-8-math-chapter-8-algebra-word-problems/quiz.html) |
 | [Math Material — Semi-log Plots](topics/basic-math/math-material-semi-log-plots/content.md) | Semi-log plots in four cards: the log scale, why exponentials are straight, the ratio test, reading the model off the line. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-semi-log-plots/material.html) |
+| [Math Material — Periodic Phenomena](topics/basic-math/math-material-periodic-phenomena/content.md) | Periodic patterns in four cards: period, midline and amplitude, predicting with the period, rising and falling. | [Open](https://wolfmib.github.io/john-research-note/topics/basic-math/math-material-periodic-phenomena/material.html) |
 
 ## Animations
 

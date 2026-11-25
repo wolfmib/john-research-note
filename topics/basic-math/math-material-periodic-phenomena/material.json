@@ -1,0 +1,141 @@
+{
+ "slug": "math-material-periodic-phenomena",
+ "title": "Math Material — Periodic Phenomena",
+ "course": "Math Material",
+ "unit": "AP Precalculus 3.1",
+ "question": "Periodic patterns in four cards: period, midline and amplitude, predicting with the period, rising and falling.",
+ "intro": "**A periodic function repeats every period \\(P\\):**\n\n\\[\n\\begin{aligned}\nf(x+P) &= f(x)\n\\end{aligned}\n\\]\n\n- Ferris wheels, tides and daylight are periodic.\n- Midline: the middle level. Amplitude: midline up to a high point.\n\n**Type each answer, then press Check.**",
+ "link": [
+  "Quiz 3.1 ›",
+  "../ap-precalculus-3-1-periodic-phenomena/quiz.html"
+ ],
+ "questions": [
+  {
+   "title": "Period: the length of one full cycle",
+   "prompt": "- A **periodic** function repeats the same pattern again and again.\n- The **period** \\(P\\) is the length of one full cycle:\n\n\\[\n\\begin{aligned}\nf(x+P) &= f(x)\n\\end{aligned}\n\\]\n\n- Measure it from one high point to the next high point (or low to low).\n\n**Practice:** use the graph. For the last one, give the number between \\(0\\) and \\(6\\).",
+   "figure": "3-1-wave.svg",
+   "figure_alt": "A wave repeating every 6 units: highest point (1.5, 5), lowest point (4.5, -1), drawn from x = 0 to 12",
+   "steps": [
+    "**Example:** a Ferris wheel seat is at the top at \\(t=3\\) min and next at the top at \\(t=11\\) min.\n\n\\[\n\\begin{aligned}\nP &= 11-3 \\\\\n&= \\boxed{8\\text{ min}}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Period } P"
+     ],
+     [
+      "\\text{Next high: } x=?"
+     ],
+     [
+      "f(20)=f(\\,?\\,)"
+     ]
+    ],
+    "answers": [
+     6.0,
+     7.5,
+     2.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "title": "Midline and amplitude",
+   "prompt": "\\[\n\\begin{aligned}\n\\text{midline} &= \\frac{\\max+\\min}{2} \\\\\n\\text{amplitude} &= \\frac{\\max-\\min}{2}\n\\end{aligned}\n\\]\n\n- The midline is the middle level.\n- The amplitude is the distance from the midline up to a high point.\n\n**Practice:** the first two use the graph. The sea around Malta is about \\(27^\\circ\\text{C}\\) at its warmest and \\(15^\\circ\\text{C}\\) at its coolest.",
+   "figure": "3-1-wave.svg",
+   "figure_alt": "A wave repeating every 6 units: highest point (1.5, 5), lowest point (4.5, -1), drawn from x = 0 to 12",
+   "steps": [
+    "**Example:** a Ferris wheel seat goes from \\(2\\) m up to \\(42\\) m.\n\n\\[\n\\begin{aligned}\n\\text{midline} &= \\frac{42+2}{2} \\\\\n&= 22\n\\end{aligned}\n\\]",
+    "Half of the full height change:\n\n\\[\n\\begin{aligned}\n\\text{amplitude} &= \\frac{42-2}{2} \\\\\n&= \\boxed{20\\text{ m}}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Midline } y=?"
+     ],
+     [
+      "\\text{Amplitude}"
+     ],
+     [
+      "\\text{Sea amplitude}"
+     ]
+    ],
+    "answers": [
+     2.0,
+     3.0,
+     6.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "title": "Predict with the period",
+   "prompt": "- Know one cycle, know them all.\n- To find a later value, take away whole periods until you are back in the first cycle.\n\n**Practice:** a wheel turns once every \\(12\\) minutes. A seat is at the top at \\(t=3\\) min. For the last one, give the time between \\(0\\) and \\(12\\).",
+   "steps": [
+    "**Example:** period \\(8\\) min, and the seat is at the top at \\(t=4\\). Where is it at \\(t=20\\)?\n\n\\[\n\\begin{aligned}\n20-2\\cdot8 &= 4 \\\\\nh(20) &= h(4)\n\\end{aligned}\n\\]",
+    "At \\(t=4\\) the seat is at the top, so at \\(t=20\\) it is:\n\n\\[\n\\begin{aligned}\nh(20) &= \\boxed{\\text{top}}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Next top}"
+     ],
+     [
+      "\\text{Top after that}"
+     ],
+     [
+      "t=50\\text{ matches } t=?"
+     ]
+    ],
+    "answers": [
+     15.0,
+     27.0,
+     2.0
+    ],
+    "tolerance": 0.001
+   }
+  },
+  {
+   "title": "Rising and falling in one cycle",
+   "prompt": "- From a high point to the next low point the graph **decreases**.\n- From a low point to the next high point it **increases**.\n- High to low is **half** a period.\n\n**Practice:** in a harbour, high tide is at \\(2\\) h and the next low tide is at \\(8\\) h.",
+   "steps": [
+    "**Example:** high tide \\(03{:}00\\), low tide \\(09{:}12\\).\n\n\\[\n\\begin{aligned}\n\\text{half period} &= 6.2\\text{ h} \\\\\nP &= 12.4\\text{ h}\n\\end{aligned}\n\\]",
+    "- \\(03{:}00\\) to \\(09{:}12\\): the level **decreases**.\n- \\(09{:}12\\) to \\(15{:}24\\): the level **increases**.\n\n\\[\n\\begin{aligned}\n\\text{next high} &= \\boxed{15{:}24}\n\\end{aligned}\n\\]"
+   ],
+   "practice": {
+    "head": [
+     "Question",
+     "Answer"
+    ],
+    "rows": [
+     [
+      "\\text{Next high (h)}"
+     ],
+     [
+      "\\text{Falling (h)}"
+     ],
+     [
+      "\\text{Next low (h)}"
+     ]
+    ],
+    "answers": [
+     14.0,
+     6.0,
+     20.0
+    ],
+    "tolerance": 0.001
+   }
+  }
+ ]
+}
